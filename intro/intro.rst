@@ -61,33 +61,28 @@ possibilities of GIS, and how to harness their power via QGIS.
 Intermediate
 ------------
 
-In this category, it is assumed that you have extensive knowledge and
+In this category, it is assumed that you have working knowledge and
 experience of the everyday uses of GIS.
 
 Following the instructions for the beginner level will provide you with
 familiar ground, as well as to make you aware of the cases where QGIS does
 things slightly differently from other software you may be used to. You will
-also learn how to use QGIS's advanced analysis functions and plugin framework.
+also learn how to use analysis functions in QGIS.
 
 When you complete the course, you should be comfortable with using QGIS for all
-the functions you usually need from a GIS, as well as QGIS's more unique
-features.
+the functions you usually need from a GIS for everyday use.
 
 Advanced
 --------
 
-In this category, the assumption is that you are experienced with either QGIS
-or another GIS software package, and have an interest and background in
-programming and/or writing scripts for GIS analyses.
+In this category, the assumption is that you are experienced with GIS, with
+knowledge and experience of spatial databases, using data on a remote server,
+perhaps writing scripts for analysis purposes, etc.
 
-Following the instructions for the other two experience levels will give you
-insight into the everyday user's experience in QGIS, and will ensure that
-you're familiar with current developments in the latest release branch of QGIS.
-You will also learn about plugin development for QGIS, and how to get started
-if you want to get more involved in the QGIS project as a developer.
+Following the instructions for the other two levels will familiarize you with
+the approach that the QGIS interface follows, and will ensure that you know how
+to access the basic functions that you need. You will also be shown how to make
+use of QGIS' plugin system, database access system, and so on.
 
-When you complete the course, you should be familiar with the operation of QGIS
-from a user perspective, as well as understanding how to get started with
-plugin development and further involvement in the project.
-
-
+When you complete the course, you should be well-acquainted with the everyday
+operation of QGIS, as well as its more advanced functions.
