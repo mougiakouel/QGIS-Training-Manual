@@ -13,6 +13,8 @@ Contents:
 .. toctree::
    :maxdepth: 4
 
+   intro/intro
+
    vector/vector
 
 
