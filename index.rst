@@ -11,8 +11,9 @@ We hope you enjoy learning QGIS with us!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
+   vector/vector
 
 
 Indices and tables
