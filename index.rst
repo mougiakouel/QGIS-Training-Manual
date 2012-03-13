@@ -15,8 +15,9 @@ Contents:
 
    intro/intro
 
-   vector/vector
+   interface/interface
 
+   vector/vector
 
 Indices and tables
 ==================

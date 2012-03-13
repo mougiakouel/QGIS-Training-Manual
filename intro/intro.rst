@@ -32,6 +32,8 @@ Here are only some of the reasons:
   anything, you can turn to the extensive documentation, your fellow QGIS
   users, or even the developers.
 
+- *Cross-platform.* QGIS can be installed on MacOS, Windows and Linux.
+
 .. todo:: Add more reasons.
 
 Now that you know why you want to use QGIS, we can show you how.
