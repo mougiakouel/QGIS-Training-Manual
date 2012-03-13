@@ -28,10 +28,11 @@ Click on it to open the following dialog:
 
 Now click on the "Browse" button and navigate to the file :kbd:`LINE_PATH`.
 With this file selected, click "Open". You will see the original dialog, but
-with the file path filled in. Click "Open" here as well.
+with the file path filled in. Click "Open" here as well. The data you specified
+will now load.
 
-The data you specified will now load. Congratulations! You now have a basic
-map. Now would be a good time to save your work. Click on the "Save As" button:
+Congratulations! You now have a basic map. Now would be a good time to save
+your work. Click on the "Save As" button:
 
 .. image:: ../../../../_static/interface/004.png
 
@@ -94,7 +95,7 @@ contains the Save button), you can still save your map by clicking on the
 The Map Canvas
 --------------
 
-This is where the map itself will be displayed.
+This is where the map itself is displayed.
 
 The Status Bar
 --------------
