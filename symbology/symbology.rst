@@ -85,6 +85,9 @@ colors for the objects. For example, a road should not be red or blue, but can
 be gray or black. The :guilabel:`rural` layer, showing farms, should be green
 or yellow, for example. And so on.
 
+Also feel free to experiment with different :guilabel:`Fill Style` and
+:guilabel:`Border Style` settings.
+
 Exercise: Symbol layers
 =======================
 
@@ -95,6 +98,46 @@ Exercise: Symbol layers
 
 Go back to the :guilabel:`Symbol properties` dialog as before:
 
-.. image:: ../../../../_static/symbology/009.png
+.. image:: ../../../../_static/symbology/009.svg
 
+Note the highlighted button. Clicking on it should do something like this:
 
+.. image:: ../../../../_static/symbology/010.png
+
+Now there's a second symbol layer. Being a solid color, it will of
+course completely hide the previous kind of symbol. Plus, it has a
+:guilabel:`Solid Line` border style, which we don't want. Clearly this symbol
+has to be changed.
+
+.. note:: It's important not to get confused between a map layer and a symbol
+   layer. A map layer is a vector (or raster) that has been loaded into the
+   map. A symbol layer is part of the symbol used to represent a map layer.
+   This course will usually refer to a map layer as just a layer, but a symbol
+   layer will always be called a symbol layer, to prevent confusion.
+
+First, set the border style to :guilabel:`No Pen`, as before.
+
+Next, change the fill style to something other than :guilabel:`Solid` or
+:guilabel:`No brush`. For example:
+
+.. image:: ../../../../_static/symbology/011.png
+
+Click :guilabel:`OK` in this dialog and :guilabel:`Apply` in the one after
+that. Now you can see your results and tweak them as needed.
+
+You can even add multiple extra symbol layers and create a kind of texture for
+your layer that way.
+
+.. image:: ../../../../_static/symbology/012.png
+
+It's fun! But it probably has too many colors to use in a real map...
+
+Check your results
+------------------
+
+Customize your layers as you like, but remember that it has to be easy to tell
+different layers apart on the map.
+
+Here's an example:
+
+.. image:: ../../../../_static/symbology/013.png
