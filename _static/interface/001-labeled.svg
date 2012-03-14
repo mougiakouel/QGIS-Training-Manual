@@ -58,12 +58,13 @@
      id="layer1"
      transform="translate(46.214287,-179.21933)">
     <image
-       y="179.21933"
-       x="-46.214287"
-       id="image3047"
-       xlink:href="file:///home/rudi/Documents/qgis-training-manual/_static/interface/001.png"
+       sodipodi:absref="/home/rudi/Documents/qgis-training-manual/_static/interface/001.png"
+       xlink:href="001.png"
+       width="841"
        height="712"
-       width="841" />
+       id="image3047"
+       x="-46.214287"
+       y="179.21933" />
     <rect
        style="fill:none;stroke:#e44a00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3054"
@@ -76,7 +77,7 @@
        transform="translate(-19,271)">
       <path
          transform="matrix(2.3,0,0,2.3,725.83571,220.56933)"
-         d="m -220,140.5 a 8.5,8.5 0 1 1 -17,0 8.5,8.5 0 1 1 17,0 z"
+         d="m -220,140.5 c 0,4.69442 -3.80558,8.5 -8.5,8.5 -4.69442,0 -8.5,-3.80558 -8.5,-8.5 0,-4.69442 3.80558,-8.5 8.5,-8.5 4.69442,0 8.5,3.80558 8.5,8.5 z"
          sodipodi:ry="8.5"
          sodipodi:rx="8.5"
          sodipodi:cy="140.5"
@@ -117,7 +118,7 @@
            sodipodi:cy="140.5"
            sodipodi:rx="8.5"
            sodipodi:ry="8.5"
-           d="m -220,140.5 a 8.5,8.5 0 1 1 -17,0 8.5,8.5 0 1 1 17,0 z"
+           d="m -220,140.5 c 0,4.69442 -3.80558,8.5 -8.5,8.5 -4.69442,0 -8.5,-3.80558 -8.5,-8.5 0,-4.69442 3.80558,-8.5 8.5,-8.5 4.69442,0 8.5,3.80558 8.5,8.5 z"
            transform="matrix(2.3,0,0,2.3,1133.3357,-69.93067)" />
       </g>
       <text
@@ -154,7 +155,7 @@
            sodipodi:cy="140.5"
            sodipodi:rx="8.5"
            sodipodi:ry="8.5"
-           d="m -220,140.5 a 8.5,8.5 0 1 1 -17,0 8.5,8.5 0 1 1 17,0 z"
+           d="m -220,140.5 c 0,4.69442 -3.80558,8.5 -8.5,8.5 -4.69442,0 -8.5,-3.80558 -8.5,-8.5 0,-4.69442 3.80558,-8.5 8.5,-8.5 4.69442,0 8.5,3.80558 8.5,8.5 z"
            transform="matrix(2.3,0,0,2.3,1133.3357,-69.93067)" />
       </g>
       <text
@@ -191,7 +192,7 @@
            sodipodi:cy="140.5"
            sodipodi:rx="8.5"
            sodipodi:ry="8.5"
-           d="m -220,140.5 a 8.5,8.5 0 1 1 -17,0 8.5,8.5 0 1 1 17,0 z"
+           d="m -220,140.5 c 0,4.69442 -3.80558,8.5 -8.5,8.5 -4.69442,0 -8.5,-3.80558 -8.5,-8.5 0,-4.69442 3.80558,-8.5 8.5,-8.5 4.69442,0 8.5,3.80558 8.5,8.5 z"
            transform="matrix(2.3,0,0,2.3,1133.3357,-69.93067)" />
       </g>
       <text

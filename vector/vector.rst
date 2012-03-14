@@ -1,5 +1,5 @@
 ************************
-Working with vector data
+Working with Vector Data
 ************************
 
 Vector data represents features in terms of points, lines and polygons on a
@@ -39,9 +39,13 @@ For example, this layer order...
 ... would result in roads and places being hidden as they run *underneath*
 urban areas.
 
-To resolve this problem, simply click and drag on a layer in the TOC. Reorder
-them thus:
+To resolve this problem, simply click and drag on a layer in the Layers list.
+Reorder them thus:
 
 .. image:: ../../../../_static/vector/003.png
 
+Check your results
+------------------
+
+Verify that your Layers list resembles the one in the figure above.
 

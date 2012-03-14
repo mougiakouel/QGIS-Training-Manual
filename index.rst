@@ -19,6 +19,8 @@ Contents:
 
    vector/vector
 
+   symbology/symbology
+
 Indices and tables
 ==================
 

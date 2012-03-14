@@ -63,7 +63,7 @@ An Overview of the Interface
 
 The elements identified in the figure above are:
 
-1. Table of Contents (TOC)
+1. Layers list
 
 2. Toolbars
 
@@ -71,10 +71,11 @@ The elements identified in the figure above are:
 
 4. Status bar
 
-The TOC
--------
+The Layers List
+---------------
 
-In the TOC, you can see a list, at any time, of the layers available to you.
+In the Layers list, you can see a list, at any time, of all the layers
+available to you.
 
 .. note:: A vector layer is a dataset, usually of a specific kind of object,
    such as roads, trees, etc. A vector layer can consist of either points,
@@ -86,9 +87,9 @@ will provide you with more information on the layer's current appearance.
 Right-clicking on a layer will give you a menu with lots of extra options.
 You'll be using some of them before long, so take a look around!
 
-Some versions of QGIS have a separate :guilabel:`Control rendering order` checkbox just
-underneath the TOC. Don't worry if you can't see it. It will be addressed
-later.
+Some versions of QGIS have a separate :guilabel:`Control rendering order`
+checkbox just underneath the Layers list. Don't worry if you can't see it. It
+will be addressed later.
 
 Toolbars
 --------
@@ -96,13 +97,14 @@ Toolbars
 Your most oft-used sets of tools can be turned into toolbars for easy access.
 For example, the File toolbar allows you to save, load, print, and start a new
 project. You can easily customize the interface to see only the tools you use
-most often, adding or removing toolnars as necessary via the
+most often, adding or removing toolbars as necessary via the
 :menuselection:`View --> Toolbars` menu.
 
 Even if they are not vsible in as a toolbar, all of your tools will remain
-accessible via the menus. For example, if you remove the File toolbar (which
-contains the Save button), you can still save your map by clicking on the
-:kbd:`File` menu and then clicking on :kbd:`Save`.
+accessible via the menus. For example, if you remove the :guilabel:`File`
+toolbar (which contains the :guilabel:`Save` button), you can still save your
+map by clicking on the :guilabel:`File` menu and then clicking on
+:guilabel:`Save`.
 
 The Map Canvas
 --------------
