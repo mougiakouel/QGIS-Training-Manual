@@ -85,11 +85,16 @@ colors for the objects. For example, a road should not be red or blue, but can
 be gray or black. The :guilabel:`rural` layer, showing farms, should be green
 or yellow, for example. And so on.
 
-Exercise: Symbol levels
+Exercise: Symbol layers
 =======================
 
 .. note:: Beginner-level users don't need to do this exercise, but it may be
    interesting to watch how it's done. This will give you an idea of the
    possibilities. You can also try to do this exercise if you like, but it's
    not necessary if you don't want to.
+
+Go back to the :guilabel:`Symbol properties` dialog as before:
+
+.. image:: ../../../../_static/symbology/009.png
+
 

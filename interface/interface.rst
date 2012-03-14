@@ -123,3 +123,11 @@ Exercise: Get to Know the Interface
 Identify these elements on your own screen, without referring to the diagram
 above. See if you can identify their names and functions. You will become more
 familiar with these elements as you use them in the coming days.
+
+Try to find each of these tools on your screen. What is their purpose?
+
+#. .. image:: ../../../../_static/interface/004.png
+#. .. image:: ../../../../_static/interface/005.png
+#. .. image:: ../../../../_static/interface/006.png
+#. .. image:: ../../../../_static/interface/007.png
+#. .. image:: ../../../../_static/interface/008.png

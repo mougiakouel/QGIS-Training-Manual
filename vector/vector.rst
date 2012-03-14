@@ -20,17 +20,19 @@ have to remedy this situation.
 Check your results
 ------------------
 
-All the vector layers should be loaded into the map. It probably won't be much
-to look at:
+All the vector layers should be loaded into the map. It probably won't look
+nice yet:
 
 .. image:: ../../../../_static/vector/001.png
+
+(We'll fix the ugly colors later.)
 
 Exercise: Reordering the layers
 ===============================
 
 The order in which the layers have been loaded into the map is probably not
-logical at this stage. What we need to prevent is to have the features on any
-one layer being hidden by a layer being drawn over it.
+logical at this stage. It's possible that the road layer is completely hidden
+because other layers are on top of it.
 
 For example, this layer order...
 
@@ -40,7 +42,7 @@ For example, this layer order...
 urban areas.
 
 To resolve this problem, simply click and drag on a layer in the Layers list.
-Reorder them thus:
+Reorder them to look like this:
 
 .. image:: ../../../../_static/vector/003.png
 
