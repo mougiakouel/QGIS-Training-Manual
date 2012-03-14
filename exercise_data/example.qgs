@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>20.077948</xmin>
-            <ymin>-34.419028</ymin>
-            <xmax>20.826204</xmax>
-            <ymax>-33.601854</ymax>
+            <xmin>20.362617</xmin>
+            <ymin>-34.158628</ymin>
+            <xmax>20.565387</xmax>
+            <ymax>-33.937216</ymax>
         </extent>
         <projections>0</projections>
         <destinationsrs>
@@ -24,24 +24,24 @@
         </destinationsrs>
     </mapcanvas>
     <legend updateDrawingOrder="true">
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="places" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="places" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="streets" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="streets" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="streets20120313170415599" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="streets20120313170415599" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="water" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="water" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="urban" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="urban" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="urban20120313170415581" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="urban20120313170415581" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="rural" showFeatureCount="0">
@@ -77,7 +77,7 @@
                     <symbol outputUnit="MM" alpha="1" type="marker" name="0">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="224,115,204,255"/>
+                            <prop k="color" v="255,85,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
@@ -111,6 +111,14 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype type="0" name="ADDR_CITY"/>
+                <edittype type="0" name="ADDR_FLATS"/>
+                <edittype type="0" name="ADDR_HOUSE"/>
+                <edittype type="0" name="ADDR_POSTC"/>
+                <edittype type="0" name="NAME"/>
+                <edittype type="0" name="PLACE"/>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <annotationform>.</annotationform>
@@ -145,6 +153,22 @@
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
+                            <prop k="style_border" v="no"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="138,171,84,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="dense6"/>
+                            <prop k="style_border" v="no"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="206,255,126,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="dense7"/>
                             <prop k="style_border" v="no"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
@@ -230,13 +254,13 @@
                     <symbol outputUnit="MM" alpha="1" type="line" name="0">
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="square"/>
-                            <prop k="color" v="90,2,128,255"/>
+                            <prop k="color" v="50,50,50,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.26"/>
+                            <prop k="width" v="0.5"/>
                         </layer>
                     </symbol>
                 </symbols>
@@ -266,6 +290,12 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype type="0" name="LANES"/>
+                <edittype type="0" name="NAME"/>
+                <edittype type="0" name="ONEWAY"/>
+                <edittype type="0" name="TYPE"/>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <annotationform>.</annotationform>
@@ -296,11 +326,11 @@
                 <symbols>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="153,153,153,255"/>
+                            <prop k="color" v="106,106,106,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
+                            <prop k="style_border" v="no"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
                     </symbol>
