@@ -34,8 +34,7 @@ applied to the layer.
 Check your results
 ------------------
 
-Verify that the colors are changing as you expect them to change. If you are a
-Beginner, you need to change the colors of all the layers. If not, it is enough
+Verify that the colors are changing as you expect them to change. It is enough
 to change only the :guilabel:`urban` layer for now.
 
 .. note:: If you want to work on only one layer at a time and don't want the
