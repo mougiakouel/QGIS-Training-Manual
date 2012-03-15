@@ -1,13 +1,9 @@
-********************************
-Working with Vector Data in QGIS
-********************************
+*******
+Heading
+*******
 
-Key Concepts
-============
-
-
-Before we begin
-===============
+Subheading
+==========
 
 .. _vector_exercise:
 
@@ -15,7 +11,7 @@ Exercise (Beginner)
 -------------------
 
 Load data
-^^^^^^^^^
+.........
 
 .. todo:: Fix this
 
@@ -32,6 +28,6 @@ This is a verbatim text block::
    rm -rf /
 
 
-See `Linfinit Gentle Intro <http://linfiniti.com>`_
+See `Linfiniti Gentle Intro <http://linfiniti.com>`_
 
 See also :ref:`vector_exercise`
