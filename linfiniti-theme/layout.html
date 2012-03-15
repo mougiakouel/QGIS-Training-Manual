@@ -32,6 +32,7 @@
 {%- macro sidebar() %}
       {%- if render_sidebar %}
       <div class="well sidebar-nav">
+          <img src="{{ pathto('_static/img/logo_header_200.png', 1) }}"/>
           {%- if sidebars != None %}
             {#- new style sidebar: explicitly include/exclude templates #}
             {%- for sidebartemplate in sidebars %}
@@ -134,7 +135,7 @@
               <img src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
           {%- endif %}
           {%- endblock %}
-          Quantum GIS</a>
+          Quantum GIS Training Manual</a>
         </div>
       </div>
     </div>
