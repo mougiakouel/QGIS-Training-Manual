@@ -59,7 +59,7 @@ the general layout of the QGIS interface.
 An Overview of the Interface
 ============================
 
-.. image:: ../../../../_static/interface/001-labeled.svg
+.. image:: ../../../../_static/interface/001-diagram.svg
 
 The elements identified in the figure above are:
 

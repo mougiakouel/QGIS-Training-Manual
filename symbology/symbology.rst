@@ -20,7 +20,7 @@ changing the color of the :guilabel:`urban` layer.
 In the :guilabel:`Properties` window, select the :guilabel:`Style` tab at the
 extreme left:
 
-.. image:: ../../../../_static/symbology/004.svg
+.. image:: ../../../../_static/symbology/004-diagram.png
 
 Click the :guilabel:`Change` button next to the :guilabel:`Color` label
 (outlined in orange above).  A standard color dialog will appear:
@@ -55,7 +55,7 @@ see the same kind of dialog as before. This time, however, you're doing more
 than just quickly changing the color. So click on the :guilabel:`Change...`
 button below the color display, outlined in the image below:
 
-.. image:: ../../../../_static/symbology/006.svg
+.. image:: ../../../../_static/symbology/006-diagram.png
 
 This dialog will appear:
 
@@ -97,7 +97,7 @@ Exercise: Symbol layers
 
 Go back to the :guilabel:`Symbol properties` dialog as before:
 
-.. image:: ../../../../_static/symbology/009.svg
+.. image:: ../../../../_static/symbology/009-diagram.png
 
 Note the highlighted button. Clicking on it should do something like this:
 
