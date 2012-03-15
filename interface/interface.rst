@@ -21,16 +21,19 @@ depending on how you configured its installation.
    available, and the instructions will work on any OS and recent QGIS
    version.
 
+Let's get started right away! To begin, you will prepare the basis of the map
+that will be the basis for examples and further exercises for this course.
+
 Exercise: Prepare a map
-=======================
+-----------------------
 
 With QGIS open, look for the following button:
 
-.. image:: ../../../../_static/interface/002.png
+.. image:: ../_static/interface/002.png
 
 Click on it to open the following dialog:
 
-.. image:: ../../../../_static/interface/003.png
+.. image:: ../_static/interface/003.png
 
 Now click on the :guilabel:`Browse` button and navigate to the file
 :kbd:`LINE_PATH`.  With this file selected, click :guilabel:`Open`. You will
@@ -40,13 +43,13 @@ see the original dialog, but with the file path filled in. Click
 Congratulations! You now have a basic map. Now would be a good time to save
 your work. Click on the :guilabel:`Save As` button:
 
-.. image:: ../../../../_static/interface/004.png
+.. image:: ../_static/interface/004.png
 
 Save the map under :kbd:`SAVE_PATH`, using your surname and initials as the
 file name.
 
 Check your results
-------------------
+..................
 
 You should see a lot of lines, symbolizing roads. All these lines are in the
 vector layer that you just loaded to create a basic map.
@@ -59,7 +62,7 @@ the general layout of the QGIS interface.
 An Overview of the Interface
 ============================
 
-.. image:: ../../../../_static/interface/001-diagram.svg
+.. image:: ../_static/interface/001-diagram.png
 
 The elements identified in the figure above are:
 
@@ -117,17 +120,30 @@ The Status Bar
 Shows you information about the current map. Also allows you to adjust the map
 scale and see the mouse cursor's coordinates on the map.
 
-Exercise: Get to Know the Interface
-===================================
+Get to Know the Interface
+=========================
 
-Identify these elements on your own screen, without referring to the diagram
-above. See if you can identify their names and functions. You will become more
-familiar with these elements as you use them in the coming days.
+Try to identify the four elements listed above on your own screen, without
+referring to the diagram above. See if you can identify their names and
+functions. You will become more familiar with these elements as you use them in
+the coming days.
+
+Exercise: Understanding the controls
+------------------------------------
 
 Try to find each of these tools on your screen. What is their purpose?
 
-#. .. image:: ../../../../_static/interface/004.png
-#. .. image:: ../../../../_static/interface/005.png
-#. .. image:: ../../../../_static/interface/006.png
-#. .. image:: ../../../../_static/interface/007.png
-#. .. image:: ../../../../_static/interface/008.png
+#. .. image:: ../_static/interface/004.png
+#. .. image:: ../_static/interface/005.png
+#. .. image:: ../_static/interface/006.png
+#. .. image:: ../_static/interface/007.png
+#. .. image:: ../_static/interface/008.png
+
+Check your results
+..................
+
+#. :guilabel:`Save as`
+#. :guilabel:`Zoom to layer`
+#. :guilabel:`Help`
+#. :guilabel:`Rendering on/off`
+#. :guilabel:`Measure line`

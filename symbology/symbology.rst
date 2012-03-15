@@ -2,12 +2,15 @@
 Symbology
 *********
 
-Exercise: Changing colors
-=========================
+Colors
+======
 
 Using the random palette automatically assigned when loading the layers, your
 current map is probably not very pleasing to the eye. It would be preferable
 to assign your own choice of colors and symbols.
+
+Exercise: Changing colors
+-------------------------
 
 To change a layer's symbology, open its :guilabel:`Layer Properties`. This is
 done by right-clicking on the layer in the Layers list, and then selecting the
@@ -20,19 +23,19 @@ changing the color of the :guilabel:`urban` layer.
 In the :guilabel:`Properties` window, select the :guilabel:`Style` tab at the
 extreme left:
 
-.. image:: ../../../../_static/symbology/004-diagram.png
+.. image:: ../_static/symbology/004-diagram.png
 
 Click the :guilabel:`Change` button next to the :guilabel:`Color` label
 (outlined in orange above).  A standard color dialog will appear:
 
-.. image:: ../../../../_static/symbology/005.png
+.. image:: ../_static/symbology/005.png
 
 Choose a gray color and click :guilabel:`OK`. Click :guilabel:`OK` again in the
 :guilabel:`Layer Properties` window, and you will see the color change being
 applied to the layer.
 
 Check your results
-------------------
+..................
 
 Verify that the colors are changing as you expect them to change. It is enough
 to change only the :guilabel:`urban` layer for now.
@@ -41,13 +44,16 @@ to change only the :guilabel:`urban` layer for now.
    other layers to distract you, you can hide a layer by clicking in the check
    box next to its name in the Layers list.
 
-Exercise: Changing symbology
-============================
+Symbology
+=========
 
 This is good stuff so far, but there's more to a layer's symbology than just
 its color. Next we want to change the color of the farms (the :guilabel:`rural`
 layer), but we also want to eliminate the lines between the different farms so
 as to make the map less visually cluttered.
+
+Exercise: Changing symbology
+----------------------------
 
 First, open the :guilabel:`Layer Properties` window again, but for the
 :guilabel:`rural` layer this time. Under the :guilabel:`Style` tab, you will
@@ -55,11 +61,11 @@ see the same kind of dialog as before. This time, however, you're doing more
 than just quickly changing the color. So click on the :guilabel:`Change...`
 button below the color display, outlined in the image below:
 
-.. image:: ../../../../_static/symbology/006-diagram.png
+.. image:: ../_static/symbology/006-diagram.png
 
 This dialog will appear:
 
-.. image:: ../../../../_static/symbology/007.png
+.. image:: ../_static/symbology/007.png
 
 First, change the color inside the polygons in the layer by clicking the button
 next to the :guilabel:`Color` label. In the dialog that appears, choose a new
@@ -72,11 +78,11 @@ Pen`. Then click :guilabel:`OK`, and then :guilabel:`OK` again. Now the
 :guilabel:`rural` layer should not have any lines!
 
 Check your results
-------------------
+..................
 
 Seen alone, your rural layer should look more or less like this:
 
-.. image:: ../../../../_static/symbology/008.png
+.. image:: ../_static/symbology/008.png
 
 If you are a Beginner-level user, you may stop here. Use the method above to
 change the colors and styles for all the remaining layers. Try using natural
@@ -87,8 +93,15 @@ or yellow, for example. And so on.
 Also feel free to experiment with different :guilabel:`Fill Style` and
 :guilabel:`Border Style` settings.
 
-Exercise: Symbol layers
-=======================
+Symbol layers
+=============
+
+Now that you know how to change simple symbology for layers, the next step is
+to create more complex symbology. QGIS allows you to do this using symbol
+layers.
+
+Exercise: Adding symbol layers
+------------------------------
 
 .. note:: Beginner-level users don't need to do this exercise, but it may be
    interesting to watch how it's done. This will give you an idea of the
@@ -97,11 +110,11 @@ Exercise: Symbol layers
 
 Go back to the :guilabel:`Symbol properties` dialog as before:
 
-.. image:: ../../../../_static/symbology/009-diagram.png
+.. image:: ../_static/symbology/009-diagram.png
 
 Note the highlighted button. Clicking on it should do something like this:
 
-.. image:: ../../../../_static/symbology/010.png
+.. image:: ../_static/symbology/010.png
 
 Now there's a second symbol layer. Being a solid color, it will of
 course completely hide the previous kind of symbol. Plus, it has a
@@ -119,7 +132,7 @@ First, set the border style to :guilabel:`No Pen`, as before.
 Next, change the fill style to something other than :guilabel:`Solid` or
 :guilabel:`No brush`. For example:
 
-.. image:: ../../../../_static/symbology/011.png
+.. image:: ../_static/symbology/011.png
 
 Click :guilabel:`OK` in this dialog and :guilabel:`Apply` in the one after
 that. Now you can see your results and tweak them as needed.
@@ -127,16 +140,60 @@ that. Now you can see your results and tweak them as needed.
 You can even add multiple extra symbol layers and create a kind of texture for
 your layer that way.
 
-.. image:: ../../../../_static/symbology/012.png
+.. image:: ../_static/symbology/012.png
 
 It's fun! But it probably has too many colors to use in a real map...
 
 Check your results
-------------------
+..................
 
 Customize your layers as you like, but remember that it has to be easy to tell
 different layers apart on the map.
 
 Here's an example:
 
-.. image:: ../../../../_static/symbology/013.png
+.. image:: ../_static/symbology/013.png
+
+Symbol levels
+=============
+
+When symbol layers are rendered, they are also rendered in a sequence, similar
+to how the different map layers are rendered. This means that in some cases,
+having many symbol layers in one symbol can cause unexpected results.
+
+Exercise: Enabling symbol levels
+--------------------------------
+
+If you haven't done so already, try giving the :guilabel:`streets` layer an
+extra symbol layer. Give the base line a thickness of 2, and then add another
+symbol layer on top of it with a thickness of 0.5.
+
+You'll notice that this happens:
+
+.. image:: ../_static/symbology/014.png
+
+Well that's not what we want at all!
+
+To prevent this from happening, you can enable symbol levels, which will
+control the order in which the different symbol layers are rendered. In the
+:guilabel:`Layer Properties` dialog, click on this button:
+
+.. image:: ../_static/symbology/015-diagram.png
+
+The :guilabel:`Symbol Levels` dialog will appear. Alter its values to match
+this example:
+
+.. image:: ../_static/symbology/016.png
+
+Click :guilabel:`OK`, then :guilabel:`OK` again.
+
+Check your results
+..................
+
+If all goes well, the map will now look like this:
+
+.. image:: ../_static/symbology/017.png
+
+This was just for demonstration purposes. Feel free to change the appearance of
+the :guilabel:`streets` layer to something that looks nicer once you have
+completed this exercise.

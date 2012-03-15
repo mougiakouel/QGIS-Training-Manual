@@ -19,7 +19,7 @@ roads.
 
 To see all the data available to you, find this button in QGIS:
 
-.. image:: ../../../../_static/vector/004.png
+.. image:: ../_static/vector/004.png
 
 Clicking it will show you a table with more data about the :guilabel:`streets`
 layer. This extra data is called *attribute data*. The lines that you can see
@@ -62,11 +62,11 @@ Exercise: Loading vector data from a database
 
 Find this icon in QGIS:
 
-.. image:: ../../../../_static/vector/005.png
+.. image:: ../_static/vector/005.png
 
 Clicking it will give you this dialog:
 
-.. image:: ../../../../_static/vector/006.png
+.. image:: ../_static/vector/006.png
 
 In this dialog, click the :guilabel:`New` button. In the same folder as the
 other data, you should find the file :guilabel:`land_use.db`. Select it and
@@ -77,7 +77,7 @@ the three buttons now reads "land_use.db@...", followed by the path of the
 database file on your computer. Click the :guilabel:`Connect` button. You
 should see this in the previously empty box:
 
-.. image:: ../../../../_static/vector/007.png
+.. image:: ../_static/vector/007.png
 
 Click on the first layer to select it, then use :kbd:`shift+click` to select
 all of them at once.
@@ -92,7 +92,7 @@ Check your results
 All the vector layers should be loaded into the map. It probably won't look
 nice yet:
 
-.. image:: ../../../../_static/vector/001.png
+.. image:: ../_static/vector/001.png
 
 (We'll fix the ugly colors later.)
 
@@ -119,7 +119,7 @@ because other layers are on top of it.
 
 For example, this layer order...
 
-.. image:: ../../../../_static/vector/002.png
+.. image:: ../_static/vector/002.png
 
 ... would result in roads and places being hidden as they run *underneath*
 urban areas.
@@ -127,7 +127,7 @@ urban areas.
 To resolve this problem, simply click and drag on a layer in the Layers list.
 Reorder them to look like this:
 
-.. image:: ../../../../_static/vector/003.png
+.. image:: ../_static/vector/003.png
 
 Check your results
 ..................
