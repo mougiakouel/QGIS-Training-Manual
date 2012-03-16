@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>20.362617</xmin>
-            <ymin>-34.158628</ymin>
-            <xmax>20.565387</xmax>
-            <ymax>-33.937216</ymax>
+            <xmin>20.077948</xmin>
+            <ymin>-34.254320</ymin>
+            <xmax>20.826204</xmax>
+            <ymax>-33.766512</ymax>
         </extent>
         <projections>0</projections>
         <destinationsrs>
@@ -249,12 +249,22 @@
             <transparencyLevelInt>255</transparencyLevelInt>
             <provider encoding="UTF-8">ogr</provider>
             <vectorjoins/>
-            <renderer-v2 symbollevels="0" type="singleSymbol">
+            <renderer-v2 symbollevels="1" type="singleSymbol">
                 <symbols>
                     <symbol outputUnit="MM" alpha="1" type="line" name="0">
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="50,50,50,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1"/>
+                        </layer>
+                        <layer pass="1" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="203,203,203,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
@@ -417,8 +427,8 @@
                 <symbols>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="45,86,182,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="color" v="0,170,255,255"/>
+                            <prop k="color_border" v="55,96,192,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -452,6 +462,10 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype type="0" name="NAME"/>
+                <edittype type="0" name="TYPE"/>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <annotationform>.</annotationform>

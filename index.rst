@@ -21,6 +21,8 @@ Contents:
 
    symbology/symbology
 
+   labels/labels
+
 Indices and tables
 ==================
 
