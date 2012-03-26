@@ -18,6 +18,15 @@ import sys, os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
+
+# Added by Tim for icon replacements
+
+rst_epilog = """
+.. |user_beg| image:: ../_static/global/user_beg.png
+.. |user_int| image:: ../_static/global/user_int.png
+.. |user_adv| image:: ../_static/global/user_adv.png
+"""
+
 # -- General configuration -----------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.

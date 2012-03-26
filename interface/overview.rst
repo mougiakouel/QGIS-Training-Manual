@@ -1,81 +1,34 @@
-*************
-The Interface
-*************
+An Overview of the Interface
+============================
 
-Objectives
-==========
+**Goal:** To understand the basics of the QGIS user interface.
 
-After completing this section, you should be able to correctly identify the
-main elements of the screen in QGIS and know what each of them does.
+**Description:** We will explore the QGIS user interface so that you are
+familiar with the menus, toolbars, map canvas and layers list that compose the
+application.
 
-Preparation
-===========
-
-Before starting the next exercise, QGIS should be installed on your computer.
-To begin the exercise, launch QGIS from its desktop shortcut, menu item, etc.,
-depending on how you configured its installation.
-
-.. note:: The screenshots for this course were taken in QGIS 1.8 running on
-   Ubuntu Linux. Depending on your setup, the screens you encounter may well
-   appear somewhat different. However, all the same buttons will still be
-   available, and the instructions will work on any OS and recent QGIS
-   version.
-
-Let's get started right away! To begin, you will prepare the basis of the map
-that will be the basis for examples and further exercises for this course.
-
-Exercise: Prepare a map
------------------------
-
-With QGIS open, look for the following button:
-
-.. image:: ../_static/interface/002.png
-
-Click on it to open the following dialog:
-
-.. image:: ../_static/interface/003.png
-
-Now click on the :guilabel:`Browse` button and navigate to the file
-:kbd:`LINE_PATH`.  With this file selected, click :guilabel:`Open`. You will
-see the original dialog, but with the file path filled in. Click
-:guilabel:`Open` here as well. The data you specified will now load.
-
-Congratulations! You now have a basic map. Now would be a good time to save
-your work. Click on the :guilabel:`Save As` button:
-
-.. image:: ../_static/interface/004.png
-
-Save the map under :kbd:`SAVE_PATH`, using your surname and initials as the
-file name.
-
-Check your results
-..................
-
-You should see a lot of lines, symbolizing roads. All these lines are in the
-vector layer that you just loaded to create a basic map.
+The Basics 
+----------
 
 Now you're already familiar with the function of the :guilabel:`Add Vector
 Layer` button, but what about all the others? How does this interface work?
 Before we go on with the more involved stuff, let's first take a good look at
 the general layout of the QGIS interface.
 
-An Overview of the Interface
-============================
-
 .. image:: ../_static/interface/001-diagram.png
 
 The elements identified in the figure above are:
 
-1. Layers list
+#. Layers list
+#. Toolbars
+#. Map canvas
+#. Status bar
 
-2. Toolbars
-
-3. Map canvas
-
-4. Status bar
+.. Don't reorder these list items! They refer to elements as numbered on an
+   image.
 
 The Layers List
----------------
+...............
 
 In the Layers list, you can see a list, at any time, of all the layers
 available to you.
@@ -87,15 +40,15 @@ available to you.
 Expanding collapsed items (by clicking the arrow or plus symbol beside them)
 will provide you with more information on the layer's current appearance.
 
-Right-clicking on a layer will give you a menu with lots of extra options.
-You'll be using some of them before long, so take a look around!
+Right-clicking on a layer will give you a menu with lots of extra options. You
+will be using some of them before long, so take a look around!
 
 Some versions of QGIS have a separate :guilabel:`Control rendering order`
 checkbox just underneath the Layers list. Don't worry if you can't see it. It
 will be addressed later.
 
 Toolbars
---------
+........
 
 Your most oft-used sets of tools can be turned into toolbars for easy access.
 For example, the File toolbar allows you to save, load, print, and start a new
@@ -110,26 +63,38 @@ map by clicking on the :guilabel:`File` menu and then clicking on
 :guilabel:`Save`.
 
 The Map Canvas
---------------
+..............
 
 This is where the map itself is displayed.
 
 The Status Bar
---------------
+..............
 
 Shows you information about the current map. Also allows you to adjust the map
 scale and see the mouse cursor's coordinates on the map.
 
-Get to Know the Interface
-=========================
+Intermediate Use
+----------------
+
+(TBA)
+
+.. _interface-overview-advanced:
+
+Advanced Use
+------------
+
+(TBA)
+
+Exercises
+---------
 
 Try to identify the four elements listed above on your own screen, without
 referring to the diagram above. See if you can identify their names and
 functions. You will become more familiar with these elements as you use them in
 the coming days.
 
-Exercise: Understanding the controls
-------------------------------------
+Understanding the controls
+..........................
 
 Try to find each of these tools on your screen. What is their purpose?
 
