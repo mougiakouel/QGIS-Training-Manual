@@ -47,8 +47,8 @@ course outcomes. Each category contains information that is essential for the
 next one, so it's important to do all exercises that are at or below your level
 of experience.
 
-|user_beg| Beginner
--------------------
+|basic| Basic
+----------------
 
 In this category, the course assumes that you have little or no prior
 experience with theoretical GIS knowledge or the operation of a GIS program.
@@ -60,7 +60,7 @@ by doing.
 When you complete the course, you will have a better concept of the
 possibilities of GIS, and how to harness their power via QGIS.
 
-|user_int| Intermediate
+|medium| Intermediate
 -----------------------
 
 In this category, it is assumed that you have working knowledge and
@@ -74,7 +74,7 @@ also learn how to use analysis functions in QGIS.
 When you complete the course, you should be comfortable with using QGIS for all
 the functions you usually need from a GIS for everyday use.
 
-|user_adv| Advanced
+|hard| Advanced
 -------------------
 
 In this category, the assumption is that you are experienced with GIS, with

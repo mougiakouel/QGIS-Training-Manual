@@ -50,7 +50,7 @@ will be addressed later.
 Toolbars
 ........
 
-Your most oft-used sets of tools can be turned into toolbars for easy access.
+Your most oft-used sets of tools can be turned into toolbars for basic access.
 For example, the File toolbar allows you to save, load, print, and start a new
 project. You can easily customize the interface to see only the tools you use
 most often, adding or removing toolbars as necessary via the

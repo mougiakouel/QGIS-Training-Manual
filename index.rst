@@ -13,10 +13,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   interface/index
-   vector/index
+   .. interface/index
+   .. vector/index
    symbology/index
-   labels/index
+   .. labels/index
 
 Indices and tables
 ==================

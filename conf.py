@@ -18,13 +18,15 @@ import sys, os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
-
-# Added by Tim for icon replacements
-
+# Replacements
 rst_epilog = """
-.. |user_beg| image:: ../_static/global/user_beg.png
-.. |user_int| image:: ../_static/global/user_int.png
-.. |user_adv| image:: ../_static/global/user_adv.png
+.. |basic| image:: ../_static/global/basic.png
+.. |medium| image:: ../_static/global/medium.png
+.. |hard| image:: ../_static/global/hard.png
+.. |L1| replace:: Module:
+.. |L2| replace:: Lesson:
+.. |L3| replace:: Practical
+.. |L4| replace:: Answers to
 """
 
 # -- General configuration -----------------------------------------------------

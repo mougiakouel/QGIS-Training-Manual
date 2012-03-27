@@ -19,8 +19,8 @@ configured its installation.
 Let's get started right away! To begin, you will prepare the basis of the map
 that will be the basis for examples and further exercises for this course.
 
-Exercise: Prepare a map
------------------------
+|basic| Exercise: Prepare a map
+----------------------------------
 
 With QGIS open, look for the following button:
 
