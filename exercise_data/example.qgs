@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>20.077948</xmin>
-            <ymin>-34.254320</ymin>
-            <xmax>20.826204</xmax>
-            <ymax>-33.766512</ymax>
+            <xmin>20.390130</xmin>
+            <ymin>-34.070598</ymin>
+            <xmax>20.490254</xmax>
+            <ymax>-33.976388</ymax>
         </extent>
         <projections>0</projections>
         <destinationsrs>
@@ -24,9 +24,9 @@
         </destinationsrs>
     </mapcanvas>
     <legend updateDrawingOrder="true">
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="places" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="places" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="streets" showFeatureCount="0">
@@ -34,9 +34,9 @@
                 <legendlayerfile isInOverview="0" layerid="streets20120313170415599" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="water" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="water" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="urban" showFeatureCount="0">
@@ -254,7 +254,17 @@
                     <symbol outputUnit="MM" alpha="1" type="line" name="0">
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="square"/>
-                            <prop k="color" v="50,50,50,255"/>
+                            <prop k="color" v="255,226,0,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1.5"/>
+                        </layer>
+                        <layer pass="1" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="47,47,47,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
@@ -262,15 +272,15 @@
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="1"/>
                         </layer>
-                        <layer pass="1" class="SimpleLine" locked="0">
+                        <layer pass="2" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="square"/>
-                            <prop k="color" v="203,203,203,255"/>
+                            <prop k="color" v="255,255,255,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
+                            <prop k="penstyle" v="dot"/>
                             <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.5"/>
+                            <prop k="width" v="0.35"/>
                         </layer>
                     </symbol>
                 </symbols>
