@@ -1,5 +1,5 @@
-An Overview of the Interface
-============================
+|L2| An Overview of the Interface
+===============================================================================
 
 **Goal:** To understand the basics of the QGIS user interface.
 
@@ -7,8 +7,8 @@ An Overview of the Interface
 familiar with the menus, toolbars, map canvas and layers list that compose the
 application.
 
-The Basics 
-----------
+|basic| |L3| The Basics 
+-------------------------------------------------------------------------------
 
 Now you're already familiar with the function of the :guilabel:`Add Vector
 Layer` button, but what about all the others? How does this interface work?
@@ -27,8 +27,8 @@ The elements identified in the figure above are:
 .. Don't reorder these list items! They refer to elements as numbered on an
    image.
 
-The Layers List
-...............
+|basic| The Layers List
+...............................................................................
 
 In the Layers list, you can see a list, at any time, of all the layers
 available to you.
@@ -47,8 +47,8 @@ Some versions of QGIS have a separate :guilabel:`Control rendering order`
 checkbox just underneath the Layers list. Don't worry if you can't see it. It
 will be addressed later.
 
-Toolbars
-........
+|basic| Toolbars
+...............................................................................
 
 Your most oft-used sets of tools can be turned into toolbars for basic access.
 For example, the File toolbar allows you to save, load, print, and start a new
@@ -62,39 +62,29 @@ toolbar (which contains the :guilabel:`Save` button), you can still save your
 map by clicking on the :guilabel:`File` menu and then clicking on
 :guilabel:`Save`.
 
-The Map Canvas
-..............
+|basic| The Map Canvas
+...............................................................................
 
 This is where the map itself is displayed.
 
-The Status Bar
-..............
+|basic| The Status Bar
+...............................................................................
 
 Shows you information about the current map. Also allows you to adjust the map
 scale and see the mouse cursor's coordinates on the map.
 
-Intermediate Use
-----------------
-
-(TBA)
-
-.. _interface-overview-advanced:
-
-Advanced Use
-------------
-
-(TBA)
-
-Exercises
----------
+|basic| |L3| Challenge 1
+-------------------------------------------------------------------------------
 
 Try to identify the four elements listed above on your own screen, without
 referring to the diagram above. See if you can identify their names and
 functions. You will become more familiar with these elements as you use them in
 the coming days.
 
-Understanding the controls
-..........................
+:ref:`Check your results <interface-overview-1>`
+
+|basic| |L3| Challenge 2
+-------------------------------------------------------------------------------
 
 Try to find each of these tools on your screen. What is their purpose?
 
@@ -104,11 +94,4 @@ Try to find each of these tools on your screen. What is their purpose?
 #. .. image:: ../_static/interface/007.png
 #. .. image:: ../_static/interface/008.png
 
-Check your results
-..................
-
-#. :guilabel:`Save as`
-#. :guilabel:`Zoom to layer`
-#. :guilabel:`Help`
-#. :guilabel:`Rendering on/off`
-#. :guilabel:`Measure line`
+:ref:`Check your results <interface-overview-2>`

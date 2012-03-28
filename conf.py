@@ -21,12 +21,12 @@ import sys, os
 # Replacements
 rst_epilog = """
 .. |basic| image:: ../_static/global/basic.png
-.. |medium| image:: ../_static/global/medium.png
+.. |moderate| image:: ../_static/global/moderate.png
 .. |hard| image:: ../_static/global/hard.png
 .. |L1| replace:: Module:
 .. |L2| replace:: Lesson:
 .. |L3| replace:: Practical
-.. |L4| replace:: Answers to
+.. |L4| replace:: Results for
 """
 
 # -- General configuration -----------------------------------------------------

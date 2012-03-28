@@ -1,20 +1,14 @@
-*************
-Adding Labels
-*************
+*******************************************************************************
+|L1| Classifying Vector Data
+*******************************************************************************
 
-Labels can be added to a map to show any information about an object. Any
-vector layer can have labels associated with it. These labels rely on the
-attribute data of a layer for their content.
+(Definition of classification.)
 
 .. toctree::
    :maxdepth: 2
 
    attribute_data
    label_tool
-
-
-
-
 
 - changing font options etc. (global)
 - get rid of points for layer, use "over point", other style options

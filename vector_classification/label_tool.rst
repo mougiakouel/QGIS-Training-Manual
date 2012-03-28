@@ -1,12 +1,16 @@
-The Label Tool
-===============
+|L2| The Label Tool
+===============================================================================
+
+Labels can be added to a map to show any information about an object. Any
+vector layer can have labels associated with it. These labels rely on the
+attribute data of a layer for their content.
 
 The :guilabel:`Layer Properties` dialog does have a :guilabel:`Labels` tag, but
 for this example we will not be using it. Instead, we'll use the separate
 :guilabel:`Label tool`, which has more options.
 
-Exercise: Using labels
-----------------------
+|L3| Exercise: Using labels
+-------------------------------------------------------------------------------
 
 Before being able to access the Label tool, you will need to ensure that it has
 been activated. First, go to the menu item :menuselection:`View --> Toolbars`,
@@ -37,3 +41,5 @@ labels. Previously, you decided it would be the *NAME* field. Select
 ... and click :guilabel:`OK`. The map should now have labels like this:
 
 .. image:: ../_static/labels/005.png
+
+[lesson still being written]

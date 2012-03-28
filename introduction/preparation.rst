@@ -1,5 +1,5 @@
-Adding your first layer
-=======================
+|L2| Adding your first layer
+===============================================================================
 
 **Goal:** To get started with an example map.
 
@@ -19,8 +19,8 @@ configured its installation.
 Let's get started right away! To begin, you will prepare the basis of the map
 that will be the basis for examples and further exercises for this course.
 
-|basic| Exercise: Prepare a map
-----------------------------------
+|basic| |L3| Exercise: Prepare a map
+-------------------------------------------------------------------------------
 
 With QGIS open, look for the following button:
 
@@ -43,10 +43,4 @@ your work. Click on the :guilabel:`Save As` button:
 Save the map under :kbd:`SAVE_PATH`, using your surname and initials as the
 file name.
 
-Check your results
-..................
-
-You should see a lot of lines, symbolizing roads. All these lines are in the
-vector layer that you just loaded to create a basic map.
-
-You should see how :ref:`foo <interface-overview-advanced>` great this is in the next chapter.
+:ref:`Check your results <interface-preparation-1>`
