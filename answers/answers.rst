@@ -146,6 +146,17 @@ Which, on the map, gives you this kind of effect:
 
 
 
+.. _symbology-levels-2:
+
+|hard| *Symbol Levels* challenge
+...............................................................................
+
+Adjust your symbol levels to these values:
+
+.. image:: ../_static/symbology/026.png
+
+
+
 |L4| **Adding Labels**
 -------------------------------------------------------------------------------
 

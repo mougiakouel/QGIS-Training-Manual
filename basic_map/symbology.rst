@@ -194,6 +194,15 @@ If all goes well, the map will now look like this:
 
 .. image:: ../_static/symbology/017.png
 
+When you're done, remember to save the symbol itself so as not to lose your
+work if you change the symbol again in the future. You can save your current
+symbol style by clicking the :guilabel:`Save Style ...` button under the
+:guilabel:`Style` tab of the :guilabel:`Layer Properties` dialog. In the root
+directory for this course, save your style under :kbd:`exercise_data/styles`.
+You can load a previously saved style at any time by clicking the
+:guilabel:`Load Style ...` button, but keep in mind that any unsaved style you
+are replacing will be lost.
+
 |moderate| |L3| Challenge
 -------------------------------------------------------------------------------
 
@@ -202,3 +211,20 @@ be dark gray or black, with a thin yellow outline, and a dashed white line
 running in the middle to make them resemble a real road.
 
 :ref:`Check your results <symbology-levels-1>`
+
+|hard| |L3| Challenge
+-------------------------------------------------------------------------------
+
+Symbol levels also work for classified layers (i.e., layers having multiple
+symbols).  Since we haven't covered classification yet, you will work with some
+rudimentary preclassified data.
+
+Create a new map and add only the :guilabel:`streets` dataset. Apply the style
+:kbd:`advanced_levels_demo.qml` provided in :kbd:`exercise_data/styles`. Zoom
+to the Swellendam area (the cluster of roads near the center of the layer).
+Using symbol layers, ensure that the outlines of layers flow into one another
+as per the image below:
+
+.. image:: ../_static/symbology/025.png
+
+:ref:`Check your results <symbology-levels-2>`
