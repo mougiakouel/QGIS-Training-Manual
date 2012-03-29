@@ -32,4 +32,10 @@
   font-size: larger;
   display: block;
   border-bottom: 1px #ddd solid;
+  margin-left: 38px;
+}
+.admonition {
+  background-image: url("img/note.png");
+  background-position: 22px 15px;
+  background-repeat: no-repeat;
 }
