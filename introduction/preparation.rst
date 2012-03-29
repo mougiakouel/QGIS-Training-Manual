@@ -19,6 +19,8 @@ configured its installation.
 Let's get started right away! To begin, you will prepare the basis of the map
 that will be the basis for examples and further exercises for this course.
 
+.. _backlink-interface-preparation-1:
+
 |basic| |L3| Exercise: Prepare a map
 -------------------------------------------------------------------------------
 

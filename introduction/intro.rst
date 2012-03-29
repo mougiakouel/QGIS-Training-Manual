@@ -1,41 +1,10 @@
 |L2| A Brief Introduction
 ===============================================================================
 
-Welcome to our course! Over the next three days, we'll be showing you how to
-use QGIS easily and efficiently. If you're new to GIS, we'll tell you what you
-need to get started. If you're an experienced user, you'll see how QGIS
-fulfills all the functions you expect from a GIS program, and more!
-
-Why QGIS?
--------------------------------------------------------------------------------
-
-As information becomes increasingly spatially aware, there is no shortage of
-tools able to fulfill some or all commonly used GIS functions. Why should
-anyone be using QGIS over some other GIS software package?
-
-Here are only some of the reasons:
-
-- *It's free, as in lunch.* Installing and using the QGIS program costs you a
-  grand total of zero money. No initial fee, no recurring fee, nothing.
-
-- *It's free, as in liberty.* If you need extra functionality in QGIS, you
-  can do more than just hope it will be included in the next release. You can
-  sponsor the development of a feature, or add it yourself if you are
-  familiar with programming. 
-
-- *It's constantly developing.* Because anyone can add new features and improve
-  on existing ones, QGIS never stagnates. The development of a new tool can
-  happen as quickly as you need it to.
-
-- *Extensive help and documentation is available.* If you're stuck with
-  anything, you can turn to the extensive documentation, your fellow QGIS
-  users, or even the developers.
-
-- *Cross-platform.* QGIS can be installed on MacOS, Windows and Linux.
-
-.. todo:: Add more reasons.
-
-Now that you know why you want to use QGIS, we can show you how.
+Welcome to our course! Over the next few days, we'll be showing you how to use
+QGIS easily and efficiently. If you're new to GIS, we'll tell you what you need
+to get started. If you're an experienced user, you'll see how QGIS fulfills all
+the functions you expect from a GIS program, and more!
 
 Tiered course objectives
 -------------------------------------------------------------------------------
@@ -87,3 +56,34 @@ use of QGIS' plugin system, database access system, and so on.
 
 When you complete the course, you should be well-acquainted with the everyday
 operation of QGIS, as well as its more advanced functions.
+
+
+Why QGIS?
+-------------------------------------------------------------------------------
+
+As information becomes increasingly spatially aware, there is no shortage of
+tools able to fulfill some or all commonly used GIS functions. Why should
+anyone be using QGIS over some other GIS software package?
+
+Here are only some of the reasons:
+
+- *It's free, as in lunch.* Installing and using the QGIS program costs you a
+  grand total of zero money. No initial fee, no recurring fee, nothing.
+
+- *It's free, as in liberty.* If you need extra functionality in QGIS, you
+  can do more than just hope it will be included in the next release. You can
+  sponsor the development of a feature, or add it yourself if you are
+  familiar with programming. 
+
+- *It's constantly developing.* Because anyone can add new features and improve
+  on existing ones, QGIS never stagnates. The development of a new tool can
+  happen as quickly as you need it to.
+
+- *Extensive help and documentation is available.* If you're stuck with
+  anything, you can turn to the extensive documentation, your fellow QGIS
+  users, or even the developers.
+
+- *Cross-platform.* QGIS can be installed on MacOS, Windows and Linux.
+
+Now that you know why you want to use QGIS, we can show you how. The first
+lesson will guide you in creating your first QGIS map.

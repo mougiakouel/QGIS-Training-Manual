@@ -29,6 +29,8 @@ coordinate plane. It is usually used to store discrete features, like roads and
 city blocks.
 
 
+.. _backlink-vector-load-shapefiles-1:
+
 |basic| |L3| Exercise: Loading vector data from shapefiles
 -------------------------------------------------------------------------------
 
@@ -44,19 +46,23 @@ map following the same method.
 :ref:`Check your results <vector-load-shapefiles-1>`
 
 
+.. _backlink-vector-load-from-database-1:
+
 |basic| |L3| Exercise: Loading vector data from a database
 -------------------------------------------------------------------------------
 
 Databases allow you to store a large volume of associated data in one file. You
 may already be familiar with database management systems (DBMS) such as
 Microsoft Access. GIS applications can also make use of databases. GIS-specific
-databases have extra functions, because they need to handle spatial data.
+DBMSes (such as PostGIS) have extra functions, because they need to handle
+spatial data.
 
 Find this icon in QGIS:
 
 .. image:: ../_static/vector/005.png
 
-Clicking it will give you this dialog:
+(If you're sure you can't see it at all, check that the :guilabel:`Manage
+Layers` toolbar is enabled.) Clicking it will give you this dialog:
 
 .. image:: ../_static/vector/006.png
 
@@ -76,7 +82,8 @@ all of them at once.
 
 Click :guilabel:`Add`. This will add all three layers to the map at once.
 
-Remember to save the map often!
+.. note:: Remember to save the map often! The map file doesn't contain any of
+   the data directly, but it remembers which layers you loaded into your map.
 
 :ref:`Check your results <vector-load-from-database-1>`
 
@@ -93,7 +100,8 @@ change the order they are drawn in.
    checkbox beneath your Layers list reading :guilabel:`Control rendering
    order`. This must be checked (switched on) so that moving the layers up and
    down in the Layers list will bring them to the front or send them to the
-   back in the map.
+   back in the map. If your version of QGIS doesn't have this option, then it
+   is switched on by default and you don't need to worry about it.
 
 The order in which the layers have been loaded into the map is probably not
 logical at this stage. It's possible that the road layer is completely hidden

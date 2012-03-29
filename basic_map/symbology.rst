@@ -108,10 +108,10 @@ Now that you know how to change simple symbology for layers,
 the next step is to create more complex symbology. QGIS allows you to do this
 using symbol layers.
 
-.. note:: Users learing basic-level functions don't need to do this exercise,
-   but it may be interesting to watch how it's done. This will give you an idea
-   of the possibilities. You can also try to do this exercise if you like, but
-   it's not necessary if you don't want to.
+.. note:: If you are learing basic-level functions, you don't need to do this
+   exercise, but it may be interesting to watch how it's done. This will give
+   you an idea of the possibilities. You can also try to do this exercise if
+   you like, but it's not necessary if you don't want to.
 
 Go back to the :guilabel:`Symbol properties` dialog as before. In this example,
 the current symbol has no outline (i.e., it uses the :guilabel:`No Pen` border
@@ -203,6 +203,7 @@ You can load a previously saved style at any time by clicking the
 :guilabel:`Load Style ...` button, but keep in mind that any unsaved style you
 are replacing will be lost.
 
+
 |moderate| |L3| Challenge
 -------------------------------------------------------------------------------
 
@@ -210,7 +211,10 @@ Change the appearance of the :guilabel:`streets` layer again.  The roads must
 be dark gray or black, with a thin yellow outline, and a dashed white line
 running in the middle to make them resemble a real road.
 
+.. image:: ../_static/symbology/027.png
+
 :ref:`Check your results <symbology-levels-1>`
+
 
 |hard| |L3| Challenge
 -------------------------------------------------------------------------------
@@ -228,3 +232,21 @@ as per the image below:
 .. image:: ../_static/symbology/025.png
 
 :ref:`Check your results <symbology-levels-2>`
+
+
+|hard| |L3| Exercise: Symbol layer types
+-------------------------------------------------------------------------------
+
+In addition to setting fill colors and using predefined patterns, you can use
+different symbol layer types entirely. The only type we've been using up to now
+was the *Simple Fill* type. The more advanced symbol layer types allow you to
+customize your symbols even further.
+
+Each type of vector (point, line and polygon) has its own set of symbol layer
+types. First we will look at the types available for points.
+
+Change the symbol properties for the :guilabel:`places` layer:
+
+.. image:: ../_static/symbology/028.png
+
+[exercise still being written]

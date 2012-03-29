@@ -12,6 +12,7 @@ Answer Sheet
 You should see a lot of lines, symbolizing roads. All these lines are in the
 vector layer that you just loaded to create a basic map.
 
+:ref:`Back to text <backlink-interface-preparation-1>`
 
 
 .. _interface-overview-1:
@@ -22,6 +23,7 @@ vector layer that you just loaded to create a basic map.
 Refer back to the image showing the interface layout and check that you
 remember the names and functions of the screen elements.
 
+:ref:`Back to text <backlink-interface-overview-1>`
 
 
 .. _interface-overview-2:
@@ -35,6 +37,7 @@ remember the names and functions of the screen elements.
 #. :guilabel:`Rendering on/off`
 #. :guilabel:`Measure line`
 
+:ref:`Back to text <backlink-interface-overview-2>`
 
 
 |L4| **Working with Vectors**
@@ -48,6 +51,7 @@ remember the names and functions of the screen elements.
 There should be two layers on your map: :guilabel:`places` and
 :guilabel:`streets`.
 
+:ref:`Back to text <backlink-vector-load-shapefiles-1>`
 
 
 .. _vector-load-from-database-1:
@@ -62,6 +66,7 @@ nice yet:
 
 (We'll fix the ugly colors later.)
 
+:ref:`Back to text <backlink-vector-load-from-database-1>`
 
 
 |L4| **Symbology**
@@ -90,7 +95,7 @@ may look different depending on the color you chose.
 |basic| *Symbol Structure* challenge
 ...............................................................................
 
-Seen alone, your rural layer should look more or less like this:
+Seen together, your rural and urban layers should look more or less like this:
 
 .. image:: ../_static/symbology/020.png
 
@@ -100,7 +105,7 @@ colors for the objects. For example, a road should not be red or blue, but can
 be gray or black.
 
 Also feel free to experiment with different :guilabel:`Fill Style` and
-:guilabel:`Border Style` settings.
+:guilabel:`Border Style` settings for the polygons.
 
 
 
@@ -154,6 +159,8 @@ Which, on the map, gives you this kind of effect:
 Adjust your symbol levels to these values:
 
 .. image:: ../_static/symbology/026.png
+
+Experiment with different values to get different results.
 
 
 

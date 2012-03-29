@@ -11,6 +11,9 @@ But the whole strength of GIS is that all the objects that are visible on the
 map, also have attributes. Maps in a GIS aren't just pictures. They represent
 not only objects in locations, but also information about those objects.
 
+
+.. _backlink-labels-attribute-data-1:
+
 |basic| |L3| Exercise: Attribute data
 -------------------------------------------------------------------------------
 

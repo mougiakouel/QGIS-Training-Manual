@@ -7,7 +7,7 @@
 familiar with the menus, toolbars, map canvas and layers list that compose the
 application.
 
-|basic| |L3| The Basics 
+|basic| |L3|: The Basics 
 -------------------------------------------------------------------------------
 
 Now you're already familiar with the function of the :guilabel:`Add Vector
@@ -56,7 +56,7 @@ project. You can easily customize the interface to see only the tools you use
 most often, adding or removing toolbars as necessary via the
 :menuselection:`View --> Toolbars` menu.
 
-Even if they are not vsible in as a toolbar, all of your tools will remain
+Even if they are not visible in as a toolbar, all of your tools will remain
 accessible via the menus. For example, if you remove the :guilabel:`File`
 toolbar (which contains the :guilabel:`Save` button), you can still save your
 map by clicking on the :guilabel:`File` menu and then clicking on
@@ -73,6 +73,9 @@ This is where the map itself is displayed.
 Shows you information about the current map. Also allows you to adjust the map
 scale and see the mouse cursor's coordinates on the map.
 
+
+.. _backlink-interface-overview-1:
+
 |basic| |L3| Challenge 1
 -------------------------------------------------------------------------------
 
@@ -82,6 +85,9 @@ functions. You will become more familiar with these elements as you use them in
 the coming days.
 
 :ref:`Check your results <interface-overview-1>`
+
+
+.. _backlink-interface-overview-2:
 
 |basic| |L3| Challenge 2
 -------------------------------------------------------------------------------
