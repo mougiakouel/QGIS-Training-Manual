@@ -7,7 +7,7 @@ menus, toolbars, map canvas and layers list that compose the application.
 **The goal for this lesson:** To understand the basics of the QGIS user
 interface.
 
-|basic| |L3|: The Basics 
+|basic| |TY|: The Basics 
 -------------------------------------------------------------------------------
 
 .. image:: ../_static/interface/001-diagram.png
@@ -28,7 +28,7 @@ The elements identified in the figure above are:
 In the Layers list, you can see a list, at any time, of all the layers
 available to you.
 
-.. note:: A vector layer is a dataset, usually of a specific kind of object,
+.. note:: |note| A vector layer is a dataset, usually of a specific kind of object,
    such as roads, trees, etc. A vector layer can consist of either points,
    lines or polygons.
 
@@ -71,7 +71,7 @@ scale and see the mouse cursor's coordinates on the map.
 
 .. _backlink-interface-overview-1:
 
-|basic| |L3| Challenge 1
+|basic| |TY| 1
 -------------------------------------------------------------------------------
 
 Try to identify the four elements listed above on your own screen, without
@@ -84,7 +84,7 @@ the coming days.
 
 .. _backlink-interface-overview-2:
 
-|basic| |L3| Challenge 2
+|basic| |TY| 2
 -------------------------------------------------------------------------------
 
 Try to find each of these tools on your screen. What is their purpose?

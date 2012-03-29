@@ -9,7 +9,7 @@ connected into lines and polygons. Every object in a vector dataset is called a
 **The goal for this lesson:** To learn about the structure of vector data, and
 how to load vector datasets into a map.
 
-|basic| |L3| Exercise: Viewing layer attributes
+|basic| |FA| Viewing layer attributes
 -------------------------------------------------------------------------------
 
 It's important to know that the data you will be working with does not only
@@ -38,7 +38,7 @@ city blocks.
 
 .. _backlink-vector-load-shapefiles-1:
 
-|basic| |L3| Exercise: Loading vector data from shapefiles
+|basic| |FA| Loading vector data from shapefiles
 -------------------------------------------------------------------------------
 
 The Shapefile is a specific file format that allows you to store GIS data in an
@@ -55,7 +55,7 @@ map following the same method.
 
 .. _backlink-vector-load-from-database-1:
 
-|basic| |L3| Exercise: Loading vector data from a database
+|basic| |FA| Loading vector data from a database
 -------------------------------------------------------------------------------
 
 Databases allow you to store a large volume of associated data in one file. You
@@ -95,7 +95,7 @@ Click :guilabel:`Add`. This will add all three layers to the map at once.
 :ref:`Check your results <vector-load-from-database-1>`
 
 
-|L3| Exercise: Reordering the layers
+|FA| Reordering the layers
 -------------------------------------------------------------------------------
 
 The layers in your Layers list are drawn on the map in a certain order. The

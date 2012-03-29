@@ -12,7 +12,7 @@ for this example we will not be using it. Instead, we'll use the separate
 **The goal for this lesson:** To apply useful and good-looking labels to a
 layer.
 
-|L3| Exercise: Using labels
+|FA| Using labels
 -------------------------------------------------------------------------------
 
 Before being able to access the Label tool, you will need to ensure that it has

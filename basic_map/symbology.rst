@@ -19,7 +19,7 @@ information that people will be able to use.
 **The goal for this lesson:** To be able to create any symbology you want for
 any vector layer.
 
-|basic| |L3| Exercise: Changing colors
+|basic| |FA| Changing colors
 -------------------------------------------------------------------------------
 
 To change a layer's symbology, open its :guilabel:`Layer Properties`. This is
@@ -46,7 +46,7 @@ applied to the layer.
 
 .. image:: ../_static/symbology/019.png
 
-|basic| |L3| Challenge
+|basic| |TY|
 -------------------------------------------------------------------------------
 
 Change the :guilabel:`rural` layer to a new color that you associate with rural
@@ -54,7 +54,7 @@ farming areas.
 
 :ref:`Check your results <symbology-colors-1>`
 
-|basic| |L3| Exercise: Changing symbol structure
+|basic| |FA| Changing symbol structure
 -------------------------------------------------------------------------------
 
 This is good stuff so far, but there's more to a layer's
@@ -85,7 +85,7 @@ short line and the words :guilabel:`Solid Line`. Change this to :guilabel:`No
 Pen`. Then click :guilabel:`OK`, and then :guilabel:`OK` again. Now the
 :guilabel:`rural` layer won't have any lines between farms.
 
-|basic| |L3| Challenge
+|basic| |TY|
 -------------------------------------------------------------------------------
 
 First change the :guilabel:`urban` layer's symbology so that it is orange and
@@ -97,7 +97,7 @@ which are just a bit darker than the fill color for that layer.
 :ref:`Check your results <symbology-structure-1>`
 
 
-|moderate| |L3| Exercise: Adding symbol layers
+|moderate| |FA| Adding symbol layers
 -------------------------------------------------------------------------------
 
 Now that you know how to change simple symbology for layers,
@@ -145,7 +145,7 @@ your layer that way.
 
 It's fun! But it probably has too many colors to use in a real map...
 
-|moderate| |L3| Challenge
+|moderate| |TY|
 -------------------------------------------------------------------------------
 
 Create a simple, but not distracting texture for the :guilabel:`rural` layer
@@ -154,7 +154,7 @@ using the methods above.
 :ref:`Check your results <symbology-layers-1>`
 
 
-|moderate| |L3| Exercise: Enabling symbol levels
+|moderate| |FA| Enabling symbol levels
 -------------------------------------------------------------------------------
 
 When symbol layers are rendered, they are also rendered in a
@@ -199,7 +199,7 @@ You can load a previously saved style at any time by clicking the
 are replacing will be lost.
 
 
-|moderate| |L3| Challenge
+|moderate| |TY|
 -------------------------------------------------------------------------------
 
 Change the appearance of the :guilabel:`streets` layer again.  The roads must
@@ -211,7 +211,7 @@ running in the middle to make them resemble a real road.
 :ref:`Check your results <symbology-levels-1>`
 
 
-|hard| |L3| Challenge
+|hard| |TY|
 -------------------------------------------------------------------------------
 
 Symbol levels also work for classified layers (i.e., layers having multiple
@@ -229,7 +229,7 @@ as per the image below:
 :ref:`Check your results <symbology-levels-2>`
 
 
-|moderate| |L3| Exercise: Symbol layer types
+|moderate| |FA| Symbol layer types
 -------------------------------------------------------------------------------
 
 In addition to setting fill colors and using predefined patterns, you can use
@@ -303,7 +303,7 @@ As a result, you have a textured symbol for the urban layer, with the added
 benefit that you can change the size, shape and distance of the individual dots
 that make up the texture.
 
-|hard| |L3| Exercise: Creating a custom SVG fill
+|hard| |FA| Creating a custom SVG fill
 -------------------------------------------------------------------------------
 
 .. note:: To do this exercise, you will need to have the free vector editing
@@ -379,19 +379,19 @@ Your rural layer should now have a texture like on this map:
 
 .. image:: ../_static/symbology/048.png
 
-In conclusion
+|IC|
 -------------------------------------------------------------------------------
 
 Changing the symbology for the different layers has transformed a collection of
 vector files into a legible map. Not only can you see what's happening, it's
 even nice to look at!
 
-Further Reading
+|FR|
 -------------------------------------------------------------------------------
 
 `Examples of Beautiful Maps <http://gis.stackexchange.com/questions/3083/examples-of-beautiful-maps>`
 
-What's Next?
+|WN|
 -------------------------------------------------------------------------------
 
 Changing symbols for whole layers is useful, but the information contained

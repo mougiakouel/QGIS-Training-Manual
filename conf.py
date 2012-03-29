@@ -22,11 +22,17 @@ import sys, os
 rst_epilog = """
 .. |basic| image:: ../_static/global/basic.png
 .. |moderate| image:: ../_static/global/moderate.png
+.. |medium| image:: ../_static/global/medium.png
 .. |hard| image:: ../_static/global/hard.png
+.. |note| image:: ../_static/global/png/32x32/comment.png
 .. |L1| replace:: Module:
 .. |L2| replace:: Lesson:
-.. |L3| replace:: Practical
+.. |TY| replace:: Try yourself...
+.. |FA| replace:: Follow along:
 .. |L4| replace:: Results for
+.. |WN| replace:: What's next?
+.. |FR| replace:: Further reading
+.. |IC| replace:: In conclusion
 """
 
 # -- General configuration -----------------------------------------------------

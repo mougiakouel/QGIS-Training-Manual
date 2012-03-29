@@ -17,7 +17,7 @@ understand what the various data can be useful for.
 
 .. _backlink-labels-attribute-data-1:
 
-|basic| |L3| Exercise: Attribute data
+|basic| |FA| Attribute data
 -------------------------------------------------------------------------------
 
 Open the attribute table for the :guilabel:`places` layer (refer back to the

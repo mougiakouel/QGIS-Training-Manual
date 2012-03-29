@@ -23,7 +23,7 @@ that will be the basis for examples and further exercises for this course.
 
 .. _backlink-interface-preparation-1:
 
-|basic| |L3| Exercise: Prepare a map
+|basic| |FA| Prepare a map
 -------------------------------------------------------------------------------
 
 With QGIS open, look for the following button:
