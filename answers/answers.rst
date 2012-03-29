@@ -162,6 +162,8 @@ Adjust your symbol levels to these values:
 
 Experiment with different values to get different results.
 
+Open your original map again before continuing with the next exercise.
+
 
 
 |L4| **Adding Labels**

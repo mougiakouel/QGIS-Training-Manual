@@ -1,12 +1,14 @@
 |L2| Adding your first layer
 ===============================================================================
 
-**Goal:** To get started with an example map.
+We will start the application, and create a basic map to use for examples and
+exercises.
 
-**Description:** We will start the application, and create a basic map to use
-for examples and exercises.
+**The goal for this lesson:** To get started with an example map.
 
-Before starting this exercise, QGIS should be installed on your computer.
+.. note:: Before starting this exercise, QGIS must be installed on your
+   computer.
+
 Launch QGIS from its desktop shortcut, menu item, etc., depending on how you
 configured its installation.
 
@@ -33,16 +35,30 @@ Click on it to open the following dialog:
 .. image:: ../_static/interface/003.png
 
 Now click on the :guilabel:`Browse` button and navigate to the file
-:kbd:`LINE_PATH`. With this file selected, click :guilabel:`Open`. You will see
-the original dialog, but with the file path filled in. Click :guilabel:`Open`
-here as well. The data you specified will now load.
+:kbd:`exercise_data/streets.shp` (in your course directory). With this file
+selected, click :guilabel:`Open`. You will see the original dialog, but with
+the file path filled in. Click :guilabel:`Open` here as well. The data you
+specified will now load.
 
 Congratulations! You now have a basic map. Now would be a good time to save
 your work. Click on the :guilabel:`Save As` button:
 
 .. image:: ../_static/interface/004.png
 
-Save the map under :kbd:`SAVE_PATH`, using your surname and initials as the
-file name.
+Save the map under :kbd:`exercise_data/`, using your surname and initials as
+the file name.
 
 :ref:`Check your results <interface-preparation-1>`
+
+In conclusion
+-------------------------------------------------------------------------------
+
+You've learned how to add a layer and create a basic map!
+
+What's next?
+-------------------------------------------------------------------------------
+
+Now you're familiar with the function of the :guilabel:`Add Vector Layer`
+button, but what about all the others? How does this interface work?  Before we
+go on with the more involved stuff, let's first take a good look at the general
+layout of the QGIS interface. This is the topic of the next lesson.

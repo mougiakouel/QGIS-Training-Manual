@@ -1,19 +1,14 @@
 |L2| An Overview of the Interface
 ===============================================================================
 
-**Goal:** To understand the basics of the QGIS user interface.
+We will explore the QGIS user interface so that you are familiar with the
+menus, toolbars, map canvas and layers list that compose the application.
 
-**Description:** We will explore the QGIS user interface so that you are
-familiar with the menus, toolbars, map canvas and layers list that compose the
-application.
+**The goal for this lesson:** To understand the basics of the QGIS user
+interface.
 
 |basic| |L3|: The Basics 
 -------------------------------------------------------------------------------
-
-Now you're already familiar with the function of the :guilabel:`Add Vector
-Layer` button, but what about all the others? How does this interface work?
-Before we go on with the more involved stuff, let's first take a good look at
-the general layout of the QGIS interface.
 
 .. image:: ../_static/interface/001-diagram.png
 
@@ -101,3 +96,9 @@ Try to find each of these tools on your screen. What is their purpose?
 #. .. image:: ../_static/interface/008.png
 
 :ref:`Check your results <interface-overview-2>`
+
+In conclusion
+-------------------------------------------------------------------------------
+
+Now you've seen how the QGIS interface works, you can use the tools available
+to you and start improving on your map! This is the topic of the next lesson.

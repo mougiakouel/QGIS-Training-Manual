@@ -11,6 +11,9 @@ But the whole strength of GIS is that all the objects that are visible on the
 map, also have attributes. Maps in a GIS aren't just pictures. They represent
 not only objects in locations, but also information about those objects.
 
+**The goal of this lesson:** To explore the attribute data of an object and
+understand what the various data can be useful for.
+
 
 .. _backlink-labels-attribute-data-1:
 
@@ -22,3 +25,10 @@ section *"Working with Vector Data"* if necessary). Which field would be the
 most useful to represent in label form, and why?
 
 :ref:`Check your results <labels-attribute-data-1>`
+
+In conclusion
+-------------------------------------------------------------------------------
+
+Different attributes are useful for different purposes. Some of them can be
+represented directly as text for the map user to see. You'll learn how to do
+this in the next lesson.

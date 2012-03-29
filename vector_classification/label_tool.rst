@@ -9,6 +9,9 @@ The :guilabel:`Layer Properties` dialog does have a :guilabel:`Labels` tag, but
 for this example we will not be using it. Instead, we'll use the separate
 :guilabel:`Label tool`, which has more options.
 
+**The goal for this lesson:** To apply useful and good-looking labels to a
+layer.
+
 |L3| Exercise: Using labels
 -------------------------------------------------------------------------------
 

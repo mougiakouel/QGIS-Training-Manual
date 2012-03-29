@@ -1,6 +1,13 @@
 |L2| Working with Vector Data
 ===============================================================================
 
+Vector data is arguably the most common kind of data you will find in the daily
+use of GIS. It describes geographic data in terms of points, that may be
+connected into lines and polygons. Every object in a vector dataset is called a
+**feature**, and is associated with data that describes that feature.
+
+**The goal for this lesson:** To learn about the structure of vector data, and
+how to load vector datasets into a map.
 
 |basic| |L3| Exercise: Viewing layer attributes
 -------------------------------------------------------------------------------
@@ -118,3 +125,22 @@ To resolve this problem, simply click and drag on a layer in the Layers list.
 Reorder them to look like this:
 
 .. image:: ../_static/vector/003.png
+
+In conclusion
+-------------------------------------------------------------------------------
+
+Now you've added all the layers you need, from all the different sources where
+they were.
+
+Further Reading
+-------------------------------------------------------------------------------
+
+@todo
+
+What's Next?
+-------------------------------------------------------------------------------
+
+Using the random palette automatically assigned when loading the layers, your
+current map is probably not easy to read. It would be preferable to assign your
+own choice of colors and symbols. This is what you'll learn to do in the next
+lesson.
