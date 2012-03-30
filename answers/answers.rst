@@ -1,7 +1,7 @@
 Answer Sheet
 ===============================================================================
 
-|RF| **The Interface**
+|RF| *Adding Your First Layer*
 -------------------------------------------------------------------------------
 
 .. _interface-preparation-1:
@@ -14,6 +14,9 @@ vector layer that you just loaded to create a basic map.
 
 :ref:`Back to text <backlink-interface-preparation-1>`
 
+
+|RF| *An Overview of the Interface*
+-------------------------------------------------------------------------------
 
 .. _interface-overview-1:
 
@@ -40,7 +43,7 @@ remember the names and functions of the screen elements.
 :ref:`Back to text <backlink-interface-overview-2>`
 
 
-|RF| **Working with Vectors**
+|RF| *Working with Vector Data*
 -------------------------------------------------------------------------------
 
 .. _vector-load-shapefiles-1:
@@ -69,7 +72,7 @@ nice yet:
 :ref:`Back to text <backlink-vector-load-from-database-1>`
 
 
-|RF| **Symbology**
+|RF| *Symbology*
 -------------------------------------------------------------------------------
 
 .. _symbology-colors-1:
@@ -88,6 +91,7 @@ may look different depending on the color you chose.
    box next to its name in the Layers list. If the box is blank, then the layer
    is hidden.
 
+:ref:`Back to text <backlink-symbology-colors-1>`
 
 
 .. _symbology-structure-1:
@@ -107,6 +111,7 @@ be gray or black.
 Also feel free to experiment with different :guilabel:`Fill Style` and
 :guilabel:`Border Style` settings for the polygons.
 
+:ref:`Back to text <backlink-symbology-structure-1>`
 
 
 .. _symbology-layers-1:
@@ -121,6 +126,7 @@ Here's an example:
 
 .. image:: ../_static/symbology/013.png
 
+:ref:`Back to text <backlink-symbology-layers-1>`
 
 
 .. _symbology-levels-1:
@@ -149,6 +155,7 @@ Which, on the map, gives you this kind of effect:
 
 .. image:: ../_static/symbology/024.png
 
+:ref:`Back to text <backlink-symbology-levels-1>`
 
 
 .. _symbology-levels-2:
@@ -164,9 +171,10 @@ Experiment with different values to get different results.
 
 Open your original map again before continuing with the next exercise.
 
+:ref:`Back to text <backlink-symbology-levels-2>`
 
 
-|RF| **Adding Labels**
+|RF| *Attribute Data*
 -------------------------------------------------------------------------------
 
 .. _labels-attribute-data-1:
@@ -177,3 +185,5 @@ Open your original map again before continuing with the next exercise.
 The *NAME* field is the most useful to show as labels. This is because all its
 values are unique for every object, and it contains no "null" values (i.e.,
 fields with no value).
+
+:ref:`Back to text <backlink-labels-attribute-data-1>`

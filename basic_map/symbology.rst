@@ -46,6 +46,9 @@ applied to the layer.
 
 .. image:: ../_static/symbology/019.png
 
+
+.. _backlink-symbology-colors-1:
+
 |basic| |TY|
 -------------------------------------------------------------------------------
 
@@ -85,6 +88,9 @@ short line and the words :guilabel:`Solid Line`. Change this to :guilabel:`No
 Pen`. Then click :guilabel:`OK`, and then :guilabel:`OK` again. Now the
 :guilabel:`rural` layer won't have any lines between farms.
 
+
+.. _backlink-symbology-structure-1:
+
 |basic| |TY|
 -------------------------------------------------------------------------------
 
@@ -96,6 +102,32 @@ which are just a bit darker than the fill color for that layer.
 
 :ref:`Check your results <symbology-structure-1>`
 
+|moderate| |FA| Scale-based visibility
+-------------------------------------------------------------------------------
+
+Sometimes you will find that a layer is not suitable for a given scale. For
+example, a dataset of all the continents may have low detail, and not be very
+accurate at street level. When that happens, you want to be able to hide the
+dataset at inappropriate scales.
+
+In our case, we may decide to hide the streets from view at small scales. This
+map, for example ...
+
+.. image:: ../_static/symbology/049.png
+
+... is not very useful. The streets are just a blob at that scale.
+
+To enable scale-based rendering, open the :guilabel:`Layer Properties` dialog
+for the :guilabel:`streets` layer, and activate the :guilabel:`General` tab.
+Then enable scale-based rendering by clicking on the checkbox labeled
+:guilabel:`Use scale dependent rendering`:
+
+.. image:: ../_static/symbology/050.png
+
+Change the :guilabel:`Maximum` value to :kbd:`100000` and click :guilabel:`OK`.
+
+Test the effects of this by zooming in and out in your map, noting when the
+:guilabel:`streets` layer disappears and reappears.
 
 |moderate| |FA| Adding symbol layers
 -------------------------------------------------------------------------------
@@ -144,6 +176,8 @@ your layer that way.
 .. image:: ../_static/symbology/012.png
 
 It's fun! But it probably has too many colors to use in a real map...
+
+.. _backlink-symbology-layers-1:
 
 |moderate| |TY|
 -------------------------------------------------------------------------------
@@ -199,6 +233,8 @@ You can load a previously saved style at any time by clicking the
 are replacing will be lost.
 
 
+.. _backlink-symbology-levels-1:
+
 |moderate| |TY|
 -------------------------------------------------------------------------------
 
@@ -210,6 +246,8 @@ running in the middle to make them resemble a real road.
 
 :ref:`Check your results <symbology-levels-1>`
 
+
+.. _backlink-symbology-levels-2:
 
 |hard| |TY|
 -------------------------------------------------------------------------------
@@ -389,7 +427,7 @@ even nice to look at!
 |FR|
 -------------------------------------------------------------------------------
 
-`Examples of Beautiful Maps <http://gis.stackexchange.com/questions/3083/examples-of-beautiful-maps>`
+`Examples of Beautiful Maps <http://gis.stackexchange.com/questions/3083/examples-of-beautiful-maps>`_
 
 |WN|
 -------------------------------------------------------------------------------

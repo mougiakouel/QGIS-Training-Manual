@@ -26,7 +26,21 @@ most useful to represent in label form, and why?
 
 :ref:`Check your results <labels-attribute-data-1>`
 
-In conclusion
+|IC|
+-------------------------------------------------------------------------------
+
+You now know how to use the attribute table to see what is actually in the data
+you're using. Any dataset will only be useful to you if it has the attributes
+that you care about. If you know which attributes you need, you can quickly
+decide if you're able to use a given dataset, or if you need to look for
+another one that has the required attribute data.
+
+|FR|
+-------------------------------------------------------------------------------
+
+.. @todo
+
+|WN|
 -------------------------------------------------------------------------------
 
 Different attributes are useful for different purposes. Some of them can be
