@@ -1,4 +1,4 @@
-|L2| A Brief Introduction
+|LS| A Brief Introduction
 ===============================================================================
 
 Welcome to our course! Over the next few days, we'll be showing you how to use

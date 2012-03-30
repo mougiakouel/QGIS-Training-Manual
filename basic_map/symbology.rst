@@ -1,4 +1,4 @@
-|L2| Symbology
+|LS| Symbology
 ===============================================================================
 
 The symbology of a layer is its visual appearance on the map.

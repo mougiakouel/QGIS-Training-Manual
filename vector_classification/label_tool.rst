@@ -1,4 +1,4 @@
-|L2| The Label Tool
+|LS| The Label Tool
 ===============================================================================
 
 Labels can be added to a map to show any information about an object. Any

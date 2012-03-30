@@ -1,4 +1,4 @@
-|L2| An Overview of the Interface
+|LS| An Overview of the Interface
 ===============================================================================
 
 We will explore the QGIS user interface so that you are familiar with the

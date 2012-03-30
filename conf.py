@@ -22,14 +22,13 @@ import sys, os
 rst_epilog = """
 .. |basic| image:: ../_static/global/basic.png
 .. |moderate| image:: ../_static/global/moderate.png
-.. |medium| image:: ../_static/global/medium.png
 .. |hard| image:: ../_static/global/hard.png
-.. |note| image:: ../_static/global/png/32x32/comment.png
-.. |L1| replace:: Module:
-.. |L2| replace:: Lesson:
+.. |note| image:: ../_static/global/comment.png
+.. |MOD| replace:: Module:
+.. |LS| replace:: Lesson:
 .. |TY| replace:: Try yourself...
 .. |FA| replace:: Follow along:
-.. |L4| replace:: Results for
+.. |RF| replace:: Results for
 .. |WN| replace:: What's next?
 .. |FR| replace:: Further reading
 .. |IC| replace:: In conclusion

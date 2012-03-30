@@ -1,4 +1,4 @@
-|L2| Adding your first layer
+|LS| Adding your first layer
 ===============================================================================
 
 We will start the application, and create a basic map to use for examples and

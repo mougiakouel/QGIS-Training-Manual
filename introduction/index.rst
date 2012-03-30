@@ -1,5 +1,5 @@
 *******************************************************************************
-|L1| The Interface
+|MOD| The Interface
 *******************************************************************************
 
 In this module we introduce the QGIS project itself, as well as explaining the

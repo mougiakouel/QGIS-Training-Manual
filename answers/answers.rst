@@ -1,7 +1,7 @@
 Answer Sheet
 ===============================================================================
 
-|L4| **The Interface**
+|RF| **The Interface**
 -------------------------------------------------------------------------------
 
 .. _interface-preparation-1:
@@ -40,7 +40,7 @@ remember the names and functions of the screen elements.
 :ref:`Back to text <backlink-interface-overview-2>`
 
 
-|L4| **Working with Vectors**
+|RF| **Working with Vectors**
 -------------------------------------------------------------------------------
 
 .. _vector-load-shapefiles-1:
@@ -69,7 +69,7 @@ nice yet:
 :ref:`Back to text <backlink-vector-load-from-database-1>`
 
 
-|L4| **Symbology**
+|RF| **Symbology**
 -------------------------------------------------------------------------------
 
 .. _symbology-colors-1:
@@ -166,7 +166,7 @@ Open your original map again before continuing with the next exercise.
 
 
 
-|L4| **Adding Labels**
+|RF| **Adding Labels**
 -------------------------------------------------------------------------------
 
 .. _labels-attribute-data-1:

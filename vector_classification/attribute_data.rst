@@ -1,4 +1,4 @@
-|L2| Attribute Data
+|LS| Attribute Data
 ===============================================================================
 
 Up to now, none of the changes we have made to the map have been influenced by

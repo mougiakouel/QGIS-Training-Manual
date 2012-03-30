@@ -1,5 +1,5 @@
 *******************************************************************************
-|L1| Classifying Vector Data
+|MOD| Classifying Vector Data
 *******************************************************************************
 
 Classifying vector data allows you to assign different symbols to features

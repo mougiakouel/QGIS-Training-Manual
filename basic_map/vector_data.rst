@@ -1,4 +1,4 @@
-|L2| Working with Vector Data
+|LS| Working with Vector Data
 ===============================================================================
 
 Vector data is arguably the most common kind of data you will find in the daily
