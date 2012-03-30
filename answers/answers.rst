@@ -243,3 +243,25 @@ Your results, if using the above values, should be this:
 .. image:: ../_static/labels/027.png
 
 :ref:`Back to text <backlink-label-data-defined-1>`
+
+
+|RF| *Classification*
+-------------------------------------------------------------------------------
+
+.. _classification-refine-1:
+
+|moderate| *Refine the Classification* challenge
+...............................................................................
+
+Use the same method as in the first exercise of the lesson to get rid of the
+lines:
+
+.. image:: ../_static/classification/027.png
+
+The settings you used may not be the same, but with the values
+:guilabel:`Classes` = :kbd:`7` and :guilabel:`Mode` = :guilabel:`Natural Breaks
+(Jenks)` (and using the same colors, of course), the map will look like this:
+
+.. image:: ../_static/classification/028.png
+
+:ref:`Back to text <backlink-classification-refine-1>`
