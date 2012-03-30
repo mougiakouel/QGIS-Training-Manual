@@ -14,6 +14,7 @@ Contents:
 
    attribute_data
    label_tool
+   classification
 
 .. changing font options etc. (global)
    get rid of points for layer, use "over point", other style options

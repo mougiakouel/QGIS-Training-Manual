@@ -250,10 +250,17 @@ key in the :kbd:`PLACE` field).
 We can't cover every option in this course, but be aware that the
 :guilabel:`Label tool` has many other useful functions. You can set scale-based
 rendering, alter the rendering priority for labels in a layer, and set every
-label option using layer attributes. You can even set the XY position of a
-label using an attribute field, which means that you could use non-spatial data
-for the label coordinates. Feel free to explore more possibilities of the
-labeling system.
+label option using layer attributes. You can even set the rotation, XY
+position, and other properties of a label (if you have attribute fields
+allocated for the purpose), then edit these properties using the tools adjacent
+to the main :guilabel:`Label tool`:
+
+.. image:: ../_static/labels/028.png
+
+(These tools will be active if the required attribute fields exist and you are
+in edit mode.)
+
+Feel free to explore more possibilities of the labeling system.
 
 |IC|
 -------------------------------------------------------------------------------
