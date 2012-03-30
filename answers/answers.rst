@@ -187,3 +187,59 @@ values are unique for every object, and it contains no "null" values (i.e.,
 fields with no value).
 
 :ref:`Back to text <backlink-labels-attribute-data-1>`
+
+
+|RF| *The Label Tool*
+-------------------------------------------------------------------------------
+
+.. _label-tool-1:
+
+|moderate| *Label Customization* challenge (Part 1)
+...............................................................................
+
+Your map should look like this:
+
+.. image:: ../_static/labels/010.png
+
+:ref:`Back to text <backlink-label-tool-1>`
+
+
+.. _label-tool-2:
+
+|moderate| *Label Customization* challenge (Part 2)
+...............................................................................
+
+One possible solution has this final product:
+
+.. image:: ../_static/labels/015.png
+
+To arrive at this result, use the font type :kbd:`Arial` of size :kbd:`10` and
+a :guilabel:`Label distance` of :kbd:`1,5 mm`. In addition, this example uses
+the :guilabel:`Wrap label on character` option:
+
+.. image:: ../_static/labels/016.png
+
+Enter a :kbd:`space` in this field and click :guilabel:`Apply` to achieve the
+same effect.
+
+:ref:`Back to text <backlink-label-tool-1>`
+
+
+.. _label-data-defined-1:
+
+|hard| *Using Data Defined Settings* challenge
+...............................................................................
+
+Still in edit mode, set the :kbd:`FONT_SIZE` values to whatever you prefer. The
+example uses :kbd:`12` for towns, :kbd:`10` for suburbs and villages, and
+:kbd:`8` for the null entries. (Remember to save changes and exit edit mode.)
+
+In :guilabel:`Data defined settings`, do this:
+
+.. image:: ../_static/labels/026.png
+
+Your results, if using the above values, should be this:
+
+.. image:: ../_static/labels/027.png
+
+:ref:`Back to text <backlink-label-data-defined-1>`

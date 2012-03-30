@@ -88,7 +88,7 @@ Back to the problem of the labels that overlap points. Go to the
 
 .. image:: ../_static/labels/010.png
 
-|FA| |moderate| Using labels instead of layer symbology
+|moderate| |FA| Using labels instead of layer symbology
 -------------------------------------------------------------------------------
 
 In many cases, the location of a point doesn't need to be very specific. For
@@ -124,9 +124,149 @@ many points, but at other times you will lose useful information this way.
 There is another possibility for handling cases like this, which we'll cover in
 a later exercise in this lesson.
 
-|TY| |moderate| Customize the labels
+
+.. _backlink-label-tool-1:
+
+|moderate| |TY| Customize the labels
 -------------------------------------------------------------------------------
 
 First, return the label and symbol settings to the way they were before.
 
+:ref:`Check your results <label-tool-1>`
 
+Next, set the map to the scale :kbd:`1:50000`. You can do this by typing it
+into the :guilabel:`Scale` box in the :guilabel:`Status Bar`.
+
+Modify your labels to be suitable for viewing at this scale.
+
+:ref:`Check your results <label-tool-2>`
+
+
+|moderate| |FA| Labeling lines
+-------------------------------------------------------------------------------
+
+Now that you know how labeling works, there's an additional problem. Points and
+polygons are easy to label, but what about lines? If you label them the same
+way as the points, your results would look like this:
+
+.. image:: ../_static/labels/017.png
+
+This is not very useful! To make lines behave, we'll need to edit some options.
+
+First, hide the :guilabel:`places` layer so that it doesn't distract you. Then
+activate labels for the :guilabel:`streets` layer as before. (Remember to use
+the :guilabel:`Label tool` on the toolbar, not the one in :guilabel:`Label
+Properties`!)
+
+Set the font :guilabel:`Size` to :kbd:`9` so that you can see more labels, and
+be sure to zoom in on the Swellendam town area. In the :guilabel:`Label tool`
+dialog's :guilabel:`Advanced` tab, choose the following settings:
+
+.. image:: ../_static/labels/018.png
+
+The map will look somewhat like this, depending on scale:
+
+.. image:: ../_static/labels/019.png
+
+It's better than before, but still not ideal. For a start, some of the names
+appear more than once, and that's not always necessary. To prevent that from
+happening, enable the option :guilabel:`Merge connected lines to avoid
+duplicate labels` (also under the :guilabel:`Advanced` tab - you may need to
+scroll down to see it).
+
+Another useful function is to prevent labels being drawn for features too short
+to be of notice. This is the :guilabel:`Suppress labeling of features smaller
+than` option. Set this value to :kbd:`5mm` and note the results when you click
+:guilabel:`Apply`.
+
+Try out different :guilabel:`Placement` settings as well (also under the
+:guilabel:`Advanced` tab). As we've seen before, the :guilabel:`horizontal`
+option is not a good idea in this case, so let's try the :guilabel:`curved`
+option instead! Here's the result:
+
+.. image:: ../_static/labels/020.png
+
+As you can see, this hides a lot of the labels that were prviously visible,
+because of the difficulty of making some of them follow twisting street lines
+and still be legible. You can decide in the map that you're working on which of
+these options to use, depending on what you think seems more useful or what
+looks better.
+
+|hard| |FA| Data defined settings
+-------------------------------------------------------------------------------
+
+First, deactivate labeling for the :guilabel:`streets` layer and reactivate it
+for :guilabel:`places`.
+
+Now open the attribute table for :guilabel:`places`. It has two fields that are
+of interest to us now: :kbd:`ADDR_CITY` and :kbd:`IN_SWD`. :kbd:`ADDR_CITY` is
+the city that the feature is in. :kbd:`IN_SWD` is derived from it, and tells
+you whether or not that feature is in Swellendam (:kbd:`1` if it is, :kbd:`0`
+if not).
+
+We can use this data to influence the label styles. Navigate to the
+:guilabel:`Data defined settings` tab:
+
+.. image:: ../_static/labels/021.png
+
+In the :guilabel:`Italic` dropdown, select :kbd:`IN_SWD` and click
+:guilabel:`Apply`. Notice its effects:
+
+.. image:: ../_static/labels/022.png
+
+
+.. _backlink-label-data-defined-1:
+
+|hard| |TY| Using data defined settings
+-------------------------------------------------------------------------------
+
+.. note:: We're jumping ahead a bit here to demonstrate some advanced labeling
+   settings. At the advanced level, it's assumed that you'll know what the
+   following means. If you don't, feel free to leave out this section and come
+   back later when you've covered the requisite materials.
+
+Open the attribute table for :guilabel:`places`. Enter edit mode by clicking
+this button (at the lower edge of the attribute table):
+
+.. image:: ../_static/labels/023.png
+
+Add a new column:
+
+.. image:: ../_static/labels/024.png
+
+And configure it thus:
+
+.. image:: ../_static/labels/025.png
+
+Use this to set custom font sizes for each different type of place (i.e., each
+key in the :kbd:`PLACE` field).
+
+:ref:`Check your results <label-data-defined-1>`
+
+
+|hard| Further possibilities with labeling
+-------------------------------------------------------------------------------
+
+We can't cover every option in this course, but be aware that the
+:guilabel:`Label tool` has many other useful functions. You can set scale-based
+rendering, alter the rendering priority for labels in a layer, and set every
+label option using layer attributes. You can even set the XY position of a
+label using an attribute field, which means that you could use non-spatial data
+for the label coordinates. Feel free to explore more possibilities of the
+labeling system.
+
+|IC|
+-------------------------------------------------------------------------------
+
+You've learned how to use layer attributes to create dynamic labels. This can
+make your map a lot more informative and stylish!
+
+|FR|
+-------------------------------------------------------------------------------
+
+|WN|
+-------------------------------------------------------------------------------
+
+Now that you know how attributes can make a visual difference for your map, how
+about using them to change the symbology of objects themselves? That's the
+topic for the next lesson!

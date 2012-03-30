@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>20.289910</xmin>
-            <ymin>-34.117703</ymin>
-            <xmax>20.590474</xmax>
-            <ymax>-33.929283</ymax>
+            <xmin>20.375664</xmin>
+            <ymin>-34.070560</ymin>
+            <xmax>20.515456</xmax>
+            <ymax>-33.982927</ymax>
         </extent>
         <projections>0</projections>
         <destinationsrs>
@@ -34,9 +34,9 @@
                 <legendlayerfile isInOverview="0" layerid="streets20120313170415599" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="water" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="water" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="urban" showFeatureCount="0">
@@ -51,7 +51,7 @@
         </legendlayer>
     </legend>
     <projectlayers layercount="5">
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="100000" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>places20120313170415640</id>
             <datasource>./places.shp</datasource>
             <title></title>
@@ -102,7 +102,7 @@
                 <property key="labeling/dataDefinedProperty12" value=""/>
                 <property key="labeling/dataDefinedProperty13" value=""/>
                 <property key="labeling/dataDefinedProperty14" value=""/>
-                <property key="labeling/dataDefinedProperty2" value=""/>
+                <property key="labeling/dataDefinedProperty2" value="6"/>
                 <property key="labeling/dataDefinedProperty3" value=""/>
                 <property key="labeling/dataDefinedProperty4" value=""/>
                 <property key="labeling/dataDefinedProperty5" value=""/>
@@ -111,13 +111,13 @@
                 <property key="labeling/dataDefinedProperty8" value=""/>
                 <property key="labeling/dataDefinedProperty9" value=""/>
                 <property key="labeling/decimals" value="0"/>
-                <property key="labeling/dist" value="0"/>
+                <property key="labeling/dist" value="1.5"/>
                 <property key="labeling/distInMapUnits" value="false"/>
                 <property key="labeling/enabled" value="true"/>
                 <property key="labeling/fieldName" value="NAME"/>
-                <property key="labeling/fontFamily" value="Ubuntu"/>
+                <property key="labeling/fontFamily" value="Arial"/>
                 <property key="labeling/fontItalic" value="false"/>
-                <property key="labeling/fontSize" value="11"/>
+                <property key="labeling/fontSize" value="10"/>
                 <property key="labeling/fontSizeInMapUnits" value="false"/>
                 <property key="labeling/fontStrikeout" value="false"/>
                 <property key="labeling/fontUnderline" value="false"/>
@@ -137,7 +137,7 @@
                 <property key="labeling/textColorB" value="0"/>
                 <property key="labeling/textColorG" value="0"/>
                 <property key="labeling/textColorR" value="0"/>
-                <property key="labeling/wrapChar" value=""/>
+                <property key="labeling/wrapChar" value=" "/>
             </customproperties>
             <displayfield>NAME</displayfield>
             <label>0</label>
@@ -166,6 +166,7 @@
                 <edittype type="0" name="ADDR_FLATS"/>
                 <edittype type="0" name="ADDR_HOUSE"/>
                 <edittype type="0" name="ADDR_POSTC"/>
+                <edittype type="0" name="IN_SWD"/>
                 <edittype type="0" name="NAME"/>
                 <edittype type="0" name="PLACE"/>
             </edittypes>
@@ -278,7 +279,7 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="100000" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>streets20120313170415599</id>
             <datasource>./streets.shp</datasource>
             <title></title>
@@ -327,11 +328,62 @@
                 <rotation field=""/>
                 <sizescale field=""/>
             </renderer-v2>
-            <customproperties/>
+            <customproperties>
+                <property key="labeling" value="pal"/>
+                <property key="labeling/addDirectionSymbol" value="false"/>
+                <property key="labeling/bufferColorB" value="255"/>
+                <property key="labeling/bufferColorG" value="255"/>
+                <property key="labeling/bufferColorR" value="255"/>
+                <property key="labeling/bufferSize" value="1"/>
+                <property key="labeling/dataDefinedProperty0" value=""/>
+                <property key="labeling/dataDefinedProperty1" value=""/>
+                <property key="labeling/dataDefinedProperty10" value=""/>
+                <property key="labeling/dataDefinedProperty11" value=""/>
+                <property key="labeling/dataDefinedProperty12" value=""/>
+                <property key="labeling/dataDefinedProperty13" value=""/>
+                <property key="labeling/dataDefinedProperty14" value=""/>
+                <property key="labeling/dataDefinedProperty2" value=""/>
+                <property key="labeling/dataDefinedProperty3" value=""/>
+                <property key="labeling/dataDefinedProperty4" value=""/>
+                <property key="labeling/dataDefinedProperty5" value=""/>
+                <property key="labeling/dataDefinedProperty6" value=""/>
+                <property key="labeling/dataDefinedProperty7" value=""/>
+                <property key="labeling/dataDefinedProperty8" value=""/>
+                <property key="labeling/dataDefinedProperty9" value=""/>
+                <property key="labeling/decimals" value="0"/>
+                <property key="labeling/dist" value="0"/>
+                <property key="labeling/distInMapUnits" value="false"/>
+                <property key="labeling/enabled" value="false"/>
+                <property key="labeling/fieldName" value="NAME"/>
+                <property key="labeling/fontFamily" value="Ubuntu"/>
+                <property key="labeling/fontItalic" value="false"/>
+                <property key="labeling/fontSize" value="8"/>
+                <property key="labeling/fontSizeInMapUnits" value="false"/>
+                <property key="labeling/fontStrikeout" value="false"/>
+                <property key="labeling/fontUnderline" value="false"/>
+                <property key="labeling/fontWeight" value="50"/>
+                <property key="labeling/formatNumbers" value="false"/>
+                <property key="labeling/isExpression" value="false"/>
+                <property key="labeling/labelPerPart" value="false"/>
+                <property key="labeling/mergeLines" value="true"/>
+                <property key="labeling/minFeatureSize" value="5"/>
+                <property key="labeling/obstacle" value="true"/>
+                <property key="labeling/placement" value="3"/>
+                <property key="labeling/placementFlags" value="9"/>
+                <property key="labeling/plussign" value="true"/>
+                <property key="labeling/priority" value="5"/>
+                <property key="labeling/scaleMax" value="0"/>
+                <property key="labeling/scaleMin" value="0"/>
+                <property key="labeling/textColorB" value="0"/>
+                <property key="labeling/textColorG" value="0"/>
+                <property key="labeling/textColorR" value="0"/>
+                <property key="labeling/wrapChar" value=""/>
+            </customproperties>
             <displayfield>TYPE</displayfield>
             <label>0</label>
+            <labelfield>NAME</labelfield>
             <labelattributes>
-                <label fieldname="" text="Label"/>
+                <label fieldname="NAME" text=""/>
                 <family fieldname="" name="Ubuntu"/>
                 <size fieldname="" units="pt" value="12"/>
                 <bold fieldname="" on="0"/>
@@ -386,7 +438,7 @@
                 <symbols>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="122,122,122,255"/>
+                            <prop k="color" v="113,113,113,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
