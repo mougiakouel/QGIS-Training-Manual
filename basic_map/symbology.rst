@@ -438,3 +438,5 @@ the streets called? Which administrative regions do certain areas belong to?
 What are the relative surface areas of the farms? All of this information is
 still hidden. The next lesson will explain how to represent this data on your
 map.
+
+.. note:: Did you remember to save your map recently?

@@ -11,6 +11,8 @@ this:
 Obviously this is not ideal, so we need another solution. That's what this
 lesson is about!
 
+**The goal for this lesson:** To learn how to classify vector data effectively.
+
 |basic| |FA| Classifying nominal data
 -------------------------------------------------------------------------------
 

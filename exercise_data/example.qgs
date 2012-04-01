@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>19.886392</xmin>
-            <ymin>-34.377278</ymin>
-            <xmax>21.004728</xmax>
-            <ymax>-33.676209</ymax>
+            <xmin>20.289614</xmin>
+            <ymin>-34.142302</ymin>
+            <xmax>20.619295</xmax>
+            <ymax>-33.935630</ymax>
         </extent>
         <projections>0</projections>
         <destinationsrs>
@@ -24,24 +24,24 @@
         </destinationsrs>
     </mapcanvas>
     <legend updateDrawingOrder="true">
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="places" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="places" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="streets" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="streets" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="streets20120313170415599" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="streets20120313170415599" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="water" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="water" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="urban" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="urban" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="urban20120313170415581" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="urban20120313170415581" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="rural" showFeatureCount="0">
@@ -50,6 +50,9 @@
             </filegroup>
         </legendlayer>
     </legend>
+    <Composer title="Composer 1" visible="1">
+        <Composition printResolution="300" paperWidth="297" snapGridOffsetX="0" snapGridResolution="0" snapGridOffsetY="0" snapping="0" paperHeight="210" printAsRaster="0"/>
+    </Composer>
     <projectlayers layercount="5">
         <maplayer minimumScale="0" maximumScale="100000" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>places20120313170415640</id>
@@ -72,12 +75,25 @@
             <transparencyLevelInt>255</transparencyLevelInt>
             <provider encoding="UTF-8">ogr</provider>
             <vectorjoins/>
-            <renderer-v2 symbollevels="0" type="singleSymbol">
+            <renderer-v2 symbollevels="0" type="RuleRenderer" firstrule="1">
+                <rules>
+                    <rule scalemaxdenom="0" description="" filter="IS_TOWN != 1" symbol="0" scalemindenom="0" label=""/>
+                </rules>
                 <symbols>
                     <symbol outputUnit="MM" alpha="1" type="marker" name="0">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="238,61,61,255"/>
+                            <prop k="color" v="146,219,0,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="name" v="circle"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="size" v="2"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="marker" name="default">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="146,219,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
@@ -85,8 +101,6 @@
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field=""/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -95,14 +109,14 @@
                 <property key="labeling/bufferColorG" value="255"/>
                 <property key="labeling/bufferColorR" value="255"/>
                 <property key="labeling/bufferSize" value="1"/>
-                <property key="labeling/dataDefinedProperty0" value=""/>
-                <property key="labeling/dataDefinedProperty1" value=""/>
+                <property key="labeling/dataDefinedProperty0" value="7"/>
+                <property key="labeling/dataDefinedProperty1" value="8"/>
                 <property key="labeling/dataDefinedProperty10" value=""/>
                 <property key="labeling/dataDefinedProperty11" value=""/>
                 <property key="labeling/dataDefinedProperty12" value=""/>
                 <property key="labeling/dataDefinedProperty13" value=""/>
                 <property key="labeling/dataDefinedProperty14" value=""/>
-                <property key="labeling/dataDefinedProperty2" value=""/>
+                <property key="labeling/dataDefinedProperty2" value="6"/>
                 <property key="labeling/dataDefinedProperty3" value=""/>
                 <property key="labeling/dataDefinedProperty4" value=""/>
                 <property key="labeling/dataDefinedProperty5" value=""/>
@@ -167,7 +181,9 @@
                 <edittype type="0" name="ADDR_HOUSE"/>
                 <edittype type="0" name="ADDR_POSTC"/>
                 <edittype type="0" name="D"/>
+                <edittype type="0" name="FONT_SIZE"/>
                 <edittype type="0" name="IN_SWD"/>
+                <edittype type="0" name="IS_TOWN"/>
                 <edittype type="0" name="NAME"/>
                 <edittype type="0" name="PLACE"/>
                 <edittype type="0" name="X"/>
@@ -176,7 +192,6 @@
             <editform>.</editform>
             <editforminit></editforminit>
             <annotationform>.</annotationform>
-            <aliases/>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -200,54 +215,107 @@
             <transparencyLevelInt>255</transparencyLevelInt>
             <provider encoding="UTF-8">ogr</provider>
             <vectorjoins/>
-            <renderer-v2 symbollevels="0" type="RuleRenderer" firstrule="1">
-                <rules>
-                    <rule scalemaxdenom="0" description="" filter="TOWN != 'Swellendam Rural'" symbol="0" scalemindenom="0" label=""/>
-                    <rule scalemaxdenom="0" description="" filter="AREA >= 0.00085&#xa;" symbol="1" scalemindenom="0" label=""/>
-                    <rule scalemaxdenom="0" description="" filter="AREA &lt;= 0.00085" symbol="2" scalemindenom="0" label=""/>
-                </rules>
+            <renderer-v2 attr="AREA" symbollevels="0" type="graduatedSymbol">
+                <ranges>
+                    <range symbol="0" lower="0" upper="0" label="0.0000 - 0.0000"/>
+                    <range symbol="1" lower="0" upper="0" label="0.0000 - 0.0000"/>
+                    <range symbol="2" lower="0" upper="0.001" label="0.0000 - 0.0010"/>
+                    <range symbol="3" lower="0.001" upper="0.003" label="0.0010 - 0.0030"/>
+                    <range symbol="4" lower="0.003" upper="0.004" label="0.0030 - 0.0040"/>
+                    <range symbol="5" lower="0.004" upper="0.006" label="0.0040 - 0.0060"/>
+                    <range symbol="6" lower="0.006" upper="0.011" label="0.0060 - 0.0110"/>
+                </ranges>
                 <symbols>
-                    <symbol outputUnit="MM" alpha="0.1450980392156863" type="fill" name="0">
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="0,0,0,37"/>
-                            <prop k="color_border" v="0,0,0,37"/>
+                            <prop k="color" v="207,255,180,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
+                            <prop k="style_border" v="no"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
                     </symbol>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="1">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="255,85,0,255"/>
+                            <prop k="color" v="182,226,160,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
+                            <prop k="style_border" v="no"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
                     </symbol>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="2">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="255,170,0,255"/>
+                            <prop k="color" v="158,198,140,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
+                            <prop k="style_border" v="no"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
                     </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="default">
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="3">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="164,229,252,255"/>
+                            <prop k="color" v="133,170,120,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
+                            <prop k="style_border" v="no"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="4">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="109,141,100,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="no"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="5">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="84,113,80,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="no"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="6">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="60,85,60,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="no"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
                     </symbol>
                 </symbols>
+                <source-symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="157,206,51,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="no"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </source-symbol>
+                <colorramp type="gradient" name="[source]">
+                    <prop k="color1" v="207,255,180,255"/>
+                    <prop k="color2" v="60,85,60,255"/>
+                </colorramp>
+                <mode name="jenks"/>
+                <rotation field=""/>
+                <sizescale field=""/>
             </renderer-v2>
             <customproperties/>
             <displayfield>AG_CAD_ID</displayfield>
@@ -563,7 +631,57 @@
                 <rotation field=""/>
                 <sizescale field=""/>
             </renderer-v2>
-            <customproperties/>
+            <customproperties>
+                <property key="labeling" value="pal"/>
+                <property key="labeling/addDirectionSymbol" value="false"/>
+                <property key="labeling/bufferColorB" value="255"/>
+                <property key="labeling/bufferColorG" value="255"/>
+                <property key="labeling/bufferColorR" value="255"/>
+                <property key="labeling/bufferSize" value="1"/>
+                <property key="labeling/dataDefinedProperty0" value=""/>
+                <property key="labeling/dataDefinedProperty1" value=""/>
+                <property key="labeling/dataDefinedProperty10" value=""/>
+                <property key="labeling/dataDefinedProperty11" value=""/>
+                <property key="labeling/dataDefinedProperty12" value=""/>
+                <property key="labeling/dataDefinedProperty13" value=""/>
+                <property key="labeling/dataDefinedProperty14" value=""/>
+                <property key="labeling/dataDefinedProperty2" value=""/>
+                <property key="labeling/dataDefinedProperty3" value=""/>
+                <property key="labeling/dataDefinedProperty4" value=""/>
+                <property key="labeling/dataDefinedProperty5" value=""/>
+                <property key="labeling/dataDefinedProperty6" value=""/>
+                <property key="labeling/dataDefinedProperty7" value=""/>
+                <property key="labeling/dataDefinedProperty8" value=""/>
+                <property key="labeling/dataDefinedProperty9" value=""/>
+                <property key="labeling/decimals" value="0"/>
+                <property key="labeling/dist" value="0"/>
+                <property key="labeling/distInMapUnits" value="false"/>
+                <property key="labeling/enabled" value="true"/>
+                <property key="labeling/fieldName" value="NAME"/>
+                <property key="labeling/fontFamily" value="Ubuntu"/>
+                <property key="labeling/fontItalic" value="true"/>
+                <property key="labeling/fontSize" value="10"/>
+                <property key="labeling/fontSizeInMapUnits" value="false"/>
+                <property key="labeling/fontStrikeout" value="false"/>
+                <property key="labeling/fontUnderline" value="false"/>
+                <property key="labeling/fontWeight" value="25"/>
+                <property key="labeling/formatNumbers" value="false"/>
+                <property key="labeling/isExpression" value="false"/>
+                <property key="labeling/labelPerPart" value="false"/>
+                <property key="labeling/mergeLines" value="false"/>
+                <property key="labeling/minFeatureSize" value="0"/>
+                <property key="labeling/obstacle" value="true"/>
+                <property key="labeling/placement" value="0"/>
+                <property key="labeling/placementFlags" value="0"/>
+                <property key="labeling/plussign" value="true"/>
+                <property key="labeling/priority" value="5"/>
+                <property key="labeling/scaleMax" value="0"/>
+                <property key="labeling/scaleMin" value="0"/>
+                <property key="labeling/textColorB" value="108"/>
+                <property key="labeling/textColorG" value="108"/>
+                <property key="labeling/textColorR" value="108"/>
+                <property key="labeling/wrapChar" value=""/>
+            </customproperties>
             <displayfield>NAME</displayfield>
             <label>0</label>
             <labelattributes>
