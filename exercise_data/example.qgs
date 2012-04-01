@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>20.375664</xmin>
-            <ymin>-34.070560</ymin>
-            <xmax>20.515456</xmax>
-            <ymax>-33.982927</ymax>
+            <xmin>19.886392</xmin>
+            <ymin>-34.377278</ymin>
+            <xmax>21.004728</xmax>
+            <ymax>-33.676209</ymax>
         </extent>
         <projections>0</projections>
         <destinationsrs>
@@ -24,24 +24,24 @@
         </destinationsrs>
     </mapcanvas>
     <legend updateDrawingOrder="true">
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="places" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="places" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="streets" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="streets" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="streets20120313170415599" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="streets20120313170415599" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="water" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="water" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="urban" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="urban" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="urban20120313170415581" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="urban20120313170415581" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="rural" showFeatureCount="0">
@@ -77,7 +77,7 @@
                     <symbol outputUnit="MM" alpha="1" type="marker" name="0">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="255,85,0,255"/>
+                            <prop k="color" v="238,61,61,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
@@ -102,7 +102,7 @@
                 <property key="labeling/dataDefinedProperty12" value=""/>
                 <property key="labeling/dataDefinedProperty13" value=""/>
                 <property key="labeling/dataDefinedProperty14" value=""/>
-                <property key="labeling/dataDefinedProperty2" value="6"/>
+                <property key="labeling/dataDefinedProperty2" value=""/>
                 <property key="labeling/dataDefinedProperty3" value=""/>
                 <property key="labeling/dataDefinedProperty4" value=""/>
                 <property key="labeling/dataDefinedProperty5" value=""/>
@@ -166,13 +166,17 @@
                 <edittype type="0" name="ADDR_FLATS"/>
                 <edittype type="0" name="ADDR_HOUSE"/>
                 <edittype type="0" name="ADDR_POSTC"/>
+                <edittype type="0" name="D"/>
                 <edittype type="0" name="IN_SWD"/>
                 <edittype type="0" name="NAME"/>
                 <edittype type="0" name="PLACE"/>
+                <edittype type="0" name="X"/>
+                <edittype type="0" name="Y"/>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <annotationform>.</annotationform>
+            <aliases/>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -196,37 +200,54 @@
             <transparencyLevelInt>255</transparencyLevelInt>
             <provider encoding="UTF-8">ogr</provider>
             <vectorjoins/>
-            <renderer-v2 symbollevels="0" type="singleSymbol">
+            <renderer-v2 symbollevels="0" type="RuleRenderer" firstrule="1">
+                <rules>
+                    <rule scalemaxdenom="0" description="" filter="TOWN != 'Swellendam Rural'" symbol="0" scalemindenom="0" label=""/>
+                    <rule scalemaxdenom="0" description="" filter="AREA >= 0.00085&#xa;" symbol="1" scalemindenom="0" label=""/>
+                    <rule scalemaxdenom="0" description="" filter="AREA &lt;= 0.00085" symbol="2" scalemindenom="0" label=""/>
+                </rules>
                 <symbols>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                    <symbol outputUnit="MM" alpha="0.1450980392156863" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="178,221,109,255"/>
+                            <prop k="color" v="0,0,0,37"/>
+                            <prop k="color_border" v="0,0,0,37"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="1">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="255,85,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
+                            <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="2">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="138,171,84,255"/>
+                            <prop k="color" v="255,170,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
-                            <prop k="style" v="dense6"/>
-                            <prop k="style_border" v="no"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="default">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="206,255,126,255"/>
+                            <prop k="color" v="164,229,252,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
-                            <prop k="style" v="dense7"/>
-                            <prop k="style_border" v="no"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field=""/>
             </renderer-v2>
             <customproperties/>
             <displayfield>AG_CAD_ID</displayfield>
@@ -259,6 +280,7 @@
                 <edittype type="0" name="AG_SUB_CDE"/>
                 <edittype type="0" name="AG_SUB_ID"/>
                 <edittype type="0" name="AG_TOWN_ID"/>
+                <edittype type="0" name="AREA"/>
                 <edittype type="0" name="AREA_TABLE"/>
                 <edittype type="0" name="FARM_NO"/>
                 <edittype type="0" name="MAJ_REGION"/>
@@ -575,8 +597,17 @@
         </maplayer>
     </projectlayers>
     <properties>
+        <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+        <WMSOnlineResource type="QString"></WMSOnlineResource>
+        <WMSContactPerson type="QString"></WMSContactPerson>
+        <Identify>
+            <disabledLayers type="QStringList"/>
+        </Identify>
+        <WMSContactPhone type="QString"></WMSContactPhone>
         <SpatialRefSys>
+            <ProjectCRSProj4String type="QString">+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs +towgs84=0,0,0</ProjectCRSProj4String>
             <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+            <ProjectionsEnabled type="int">0</ProjectionsEnabled>
         </SpatialRefSys>
         <Paths>
             <Absolute type="bool">false</Absolute>
@@ -590,9 +621,14 @@
             <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
             <CanvasColorBluePart type="int">255</CanvasColorBluePart>
         </Gui>
+        <WMSContactMail type="QString"></WMSContactMail>
         <PositionPrecision>
             <DecimalPlaces type="int">2</DecimalPlaces>
             <Automatic type="bool">true</Automatic>
         </PositionPrecision>
+        <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+        <WMSContactOrganization type="QString"></WMSContactOrganization>
+        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+        <WMSServiceTitle type="QString"></WMSServiceTitle>
     </properties>
 </qgis>
