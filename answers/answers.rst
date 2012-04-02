@@ -6,7 +6,7 @@ Answer Sheet
 
 .. _interface-preparation-1:
 
-|basic| *Preparation* exercise
+|basic| *Preparation*
 ...............................................................................
 
 You should see a lot of lines, symbolizing roads. All these lines are in the
@@ -20,7 +20,7 @@ vector layer that you just loaded to create a basic map.
 
 .. _interface-overview-1:
 
-|basic| *Overview* challenge 1
+|basic| *Overview* (Part 1)
 ...............................................................................
 
 Refer back to the image showing the interface layout and check that you
@@ -31,7 +31,7 @@ remember the names and functions of the screen elements.
 
 .. _interface-overview-2:
 
-|basic| *Overview* challenge 2
+|basic| *Overview* (Part 2)
 ...............................................................................
 
 #. :guilabel:`Save as`
@@ -48,7 +48,7 @@ remember the names and functions of the screen elements.
 
 .. _vector-load-shapefiles-1:
 
-|basic| *Shapefiles* challenge
+|basic| *Shapefiles*
 ...............................................................................
 
 There should be two layers on your map: :guilabel:`places` and
@@ -59,7 +59,7 @@ There should be two layers on your map: :guilabel:`places` and
 
 .. _vector-load-from-database-1:
 
-|basic| *Databases* challenge
+|basic| *Databases*
 ...............................................................................
 
 All the vector layers should be loaded into the map. It probably won't look
@@ -77,7 +77,7 @@ nice yet:
 
 .. _symbology-colors-1:
 
-|basic| *Colors* challenge
+|basic| *Colors*
 ...............................................................................
 
 Verify that the colors are changing as you expect them to change. It is enough
@@ -96,7 +96,7 @@ may look different depending on the color you chose.
 
 .. _symbology-structure-1:
 
-|basic| *Symbol Structure* challenge
+|basic| *Symbol Structure*
 ...............................................................................
 
 Seen together, your rural and urban layers should look more or less like this:
@@ -116,7 +116,7 @@ Also feel free to experiment with different :guilabel:`Fill Style` and
 
 .. _symbology-layers-1:
 
-|moderate| *Symbol Layers* challenge
+|moderate| *Symbol Layers*
 ...............................................................................
 
 Customize your layers as you like, but remember that it has to be easy to tell
@@ -131,7 +131,7 @@ Here's an example:
 
 .. _symbology-levels-1:
 
-|moderate| *Symbol Levels* challenge
+|moderate| *Symbol Levels*
 ...............................................................................
 
 To make the required symbol, you need at least three symbol layers:
@@ -160,7 +160,7 @@ Which, on the map, gives you this kind of effect:
 
 .. _symbology-levels-2:
 
-|hard| *Symbol Levels* challenge
+|hard| *Symbol Levels*
 ...............................................................................
 
 Adjust your symbol levels to these values:
@@ -179,7 +179,7 @@ Open your original map again before continuing with the next exercise.
 
 .. _labels-attribute-data-1:
 
-|basic| *Attribute Data* challenge
+|basic| *Attribute Data*
 ...............................................................................
 
 The *NAME* field is the most useful to show as labels. This is because all its
@@ -194,7 +194,7 @@ fields with no value).
 
 .. _label-tool-1:
 
-|moderate| *Label Customization* challenge (Part 1)
+|moderate| *Label Customization* (Part 1)
 ...............................................................................
 
 Your map should look like this:
@@ -206,7 +206,7 @@ Your map should look like this:
 
 .. _label-tool-2:
 
-|moderate| *Label Customization* challenge (Part 2)
+|moderate| *Label Customization* (Part 2)
 ...............................................................................
 
 One possible solution has this final product:
@@ -227,7 +227,7 @@ same effect.
 
 .. _label-data-defined-1:
 
-|hard| *Using Data Defined Settings* challenge
+|hard| *Using Data Defined Settings*
 ...............................................................................
 
 Still in edit mode, set the :kbd:`FONT_SIZE` values to whatever you prefer. The
@@ -250,7 +250,7 @@ Your results, if using the above values, should be this:
 
 .. _classification-refine-1:
 
-|moderate| *Refine the Classification* challenge
+|moderate| *Refine the Classification*
 ...............................................................................
 
 Use the same method as in the first exercise of the lesson to get rid of the
@@ -265,3 +265,19 @@ The settings you used may not be the same, but with the values
 .. image:: ../_static/classification/028.png
 
 :ref:`Back to text <backlink-classification-refine-1>`
+
+
+|RF| *Creating a New Vector Dataset*
+-------------------------------------------------------------------------------
+
+.. _create-vector-digitize-1:
+
+|basic| *Digitizing*
+...............................................................................
+
+The symbology doesn't matter, but the results should look more or less like
+this:
+
+.. image:: ../_static/create_vector_data/017.png
+
+:ref:`Back to text <backlink-create-vector-digitize-1>`

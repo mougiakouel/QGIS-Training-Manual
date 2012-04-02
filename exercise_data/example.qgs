@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>20.289614</xmin>
-            <ymin>-34.142302</ymin>
-            <xmax>20.619295</xmax>
-            <ymax>-33.935630</ymax>
+            <xmin>20.463249</xmin>
+            <ymin>-34.008642</ymin>
+            <xmax>20.497038</xmax>
+            <ymax>-33.985509</ymax>
         </extent>
         <projections>0</projections>
         <destinationsrs>
@@ -24,24 +24,39 @@
         </destinationsrs>
     </mapcanvas>
     <legend updateDrawingOrder="true">
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="places" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="1"/>
-            </filegroup>
-        </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="streets" showFeatureCount="0">
             <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="streets20120313170415599" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="water" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="school_property" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="school_property20120402164922779" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="urban" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="places" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="urban20120313170415581" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="places20120313170415640" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="water" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="water20120313170415555" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3320D_2010_315_RGB_LATLNG" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="3320D_2010_315_RGB_LATLNG20120402094613661" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3420B_2010_328_RGB_LATLNG" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="3420B_2010_328_RGB_LATLNG20120402094611921" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="urban" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="urban20120313170415581" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="rural" showFeatureCount="0">
@@ -49,11 +64,258 @@
                 <legendlayerfile isInOverview="0" layerid="rural20120313170415619" visible="1"/>
             </filegroup>
         </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="rivers" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="rivers20120402171744855" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3320C_2010_314_RGB_LATLNG" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="3320C_2010_314_RGB_LATLNG20120402094615562" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="3420C_2010_327_RGB_LATLNG" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="3420C_2010_327_RGB_LATLNG20120402091850350" visible="0"/>
+            </filegroup>
+        </legendlayer>
     </legend>
-    <Composer title="Composer 1" visible="1">
+    <Composer title="Composer 1" visible="0">
         <Composition printResolution="300" paperWidth="297" snapGridOffsetX="0" snapGridResolution="0" snapGridOffsetY="0" snapping="0" paperHeight="210" printAsRaster="0"/>
     </Composer>
-    <projectlayers layercount="5">
+    <projectlayers layercount="11">
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>3320C_2010_314_RGB_LATLNG20120402094615562</id>
+            <datasource>./raster/3320C_2010_314_RGB_LATLNG.tif</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>3320C_2010_314_RGB_LATLNG</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider>gdal</provider>
+            <rasterproperties>
+                <mDrawingStyle>MultiBandColor</mDrawingStyle>
+                <mColorShadingAlgorithm>UndefinedShader</mColorShadingAlgorithm>
+                <mInvertColor boolean="false"/>
+                <mRedBandName>Band 1</mRedBandName>
+                <mGreenBandName>Band 2</mGreenBandName>
+                <mBlueBandName>Band 3</mBlueBandName>
+                <mGrayBandName>Not Set</mGrayBandName>
+                <mStandardDeviations>0</mStandardDeviations>
+                <mUserDefinedRGBMinimumMaximum boolean="false"/>
+                <mRGBMinimumMaximumEstimated boolean="true"/>
+                <mUserDefinedGrayMinimumMaximum boolean="false"/>
+                <mGrayMinimumMaximumEstimated boolean="true"/>
+                <mContrastEnhancementAlgorithm>NoEnhancement</mContrastEnhancementAlgorithm>
+                <contrastEnhancementMinMaxValues>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                </contrastEnhancementMinMaxValues>
+                <mNoDataValue mValidNoDataValue="true">0.000000</mNoDataValue>
+                <singleValuePixelList>
+                    <pixelListEntry pixelValue="0.000000" percentTransparent="100"/>
+                </singleValuePixelList>
+                <threeValuePixelList>
+                    <pixelListEntry red="0.000000" blue="0.000000" green="0.000000" percentTransparent="100"/>
+                </threeValuePixelList>
+            </rasterproperties>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>3320D_2010_315_RGB_LATLNG20120402094613661</id>
+            <datasource>./raster/3320D_2010_315_RGB_LATLNG.tif</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>3320D_2010_315_RGB_LATLNG</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider>gdal</provider>
+            <rasterproperties>
+                <mDrawingStyle>MultiBandColor</mDrawingStyle>
+                <mColorShadingAlgorithm>UndefinedShader</mColorShadingAlgorithm>
+                <mInvertColor boolean="false"/>
+                <mRedBandName>Band 1</mRedBandName>
+                <mGreenBandName>Band 2</mGreenBandName>
+                <mBlueBandName>Band 3</mBlueBandName>
+                <mGrayBandName>Not Set</mGrayBandName>
+                <mStandardDeviations>0</mStandardDeviations>
+                <mUserDefinedRGBMinimumMaximum boolean="false"/>
+                <mRGBMinimumMaximumEstimated boolean="true"/>
+                <mUserDefinedGrayMinimumMaximum boolean="false"/>
+                <mGrayMinimumMaximumEstimated boolean="true"/>
+                <mContrastEnhancementAlgorithm>NoEnhancement</mContrastEnhancementAlgorithm>
+                <contrastEnhancementMinMaxValues>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                </contrastEnhancementMinMaxValues>
+                <mNoDataValue mValidNoDataValue="true">0.000000</mNoDataValue>
+                <singleValuePixelList>
+                    <pixelListEntry pixelValue="0.000000" percentTransparent="100"/>
+                </singleValuePixelList>
+                <threeValuePixelList>
+                    <pixelListEntry red="0.000000" blue="0.000000" green="0.000000" percentTransparent="100"/>
+                </threeValuePixelList>
+            </rasterproperties>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>3420B_2010_328_RGB_LATLNG20120402094611921</id>
+            <datasource>./raster/3420B_2010_328_RGB_LATLNG.tif</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>3420B_2010_328_RGB_LATLNG</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider>gdal</provider>
+            <rasterproperties>
+                <mDrawingStyle>MultiBandColor</mDrawingStyle>
+                <mColorShadingAlgorithm>UndefinedShader</mColorShadingAlgorithm>
+                <mInvertColor boolean="false"/>
+                <mRedBandName>Band 1</mRedBandName>
+                <mGreenBandName>Band 2</mGreenBandName>
+                <mBlueBandName>Band 3</mBlueBandName>
+                <mGrayBandName>Not Set</mGrayBandName>
+                <mStandardDeviations>0</mStandardDeviations>
+                <mUserDefinedRGBMinimumMaximum boolean="false"/>
+                <mRGBMinimumMaximumEstimated boolean="true"/>
+                <mUserDefinedGrayMinimumMaximum boolean="false"/>
+                <mGrayMinimumMaximumEstimated boolean="true"/>
+                <mContrastEnhancementAlgorithm>NoEnhancement</mContrastEnhancementAlgorithm>
+                <contrastEnhancementMinMaxValues>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                </contrastEnhancementMinMaxValues>
+                <mNoDataValue mValidNoDataValue="true">0.000000</mNoDataValue>
+                <singleValuePixelList>
+                    <pixelListEntry pixelValue="0.000000" percentTransparent="100"/>
+                </singleValuePixelList>
+                <threeValuePixelList>
+                    <pixelListEntry red="0.000000" blue="0.000000" green="0.000000" percentTransparent="100"/>
+                </threeValuePixelList>
+            </rasterproperties>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>3420C_2010_327_RGB_LATLNG20120402091850350</id>
+            <datasource>./raster/3420C_2010_327_RGB_LATLNG.tif</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>3420C_2010_327_RGB_LATLNG</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider>gdal</provider>
+            <rasterproperties>
+                <mDrawingStyle>MultiBandColor</mDrawingStyle>
+                <mColorShadingAlgorithm>UndefinedShader</mColorShadingAlgorithm>
+                <mInvertColor boolean="false"/>
+                <mRedBandName>Band 1</mRedBandName>
+                <mGreenBandName>Band 2</mGreenBandName>
+                <mBlueBandName>Band 3</mBlueBandName>
+                <mGrayBandName>Not Set</mGrayBandName>
+                <mStandardDeviations>0</mStandardDeviations>
+                <mUserDefinedRGBMinimumMaximum boolean="false"/>
+                <mRGBMinimumMaximumEstimated boolean="true"/>
+                <mUserDefinedGrayMinimumMaximum boolean="false"/>
+                <mGrayMinimumMaximumEstimated boolean="true"/>
+                <mContrastEnhancementAlgorithm>NoEnhancement</mContrastEnhancementAlgorithm>
+                <contrastEnhancementMinMaxValues>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                </contrastEnhancementMinMaxValues>
+                <mNoDataValue mValidNoDataValue="true">0.000000</mNoDataValue>
+                <singleValuePixelList>
+                    <pixelListEntry pixelValue="0.000000" percentTransparent="100"/>
+                </singleValuePixelList>
+                <threeValuePixelList>
+                    <pixelListEntry red="0.000000" blue="0.000000" green="0.000000" percentTransparent="100"/>
+                </threeValuePixelList>
+            </rasterproperties>
+        </maplayer>
         <maplayer minimumScale="0" maximumScale="100000" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>places20120313170415640</id>
             <datasource>./places.shp</datasource>
@@ -78,16 +340,27 @@
             <renderer-v2 symbollevels="0" type="RuleRenderer" firstrule="1">
                 <rules>
                     <rule scalemaxdenom="0" description="" filter="IS_TOWN != 1" symbol="0" scalemindenom="0" label=""/>
+                    <rule scalemaxdenom="0" description="" filter="" symbol="1" scalemindenom="0" label=""/>
                 </rules>
                 <symbols>
                     <symbol outputUnit="MM" alpha="1" type="marker" name="0">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="146,219,0,255"/>
+                            <prop k="color" v="255,85,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="size" v="2"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="marker" name="1">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="141,79,191,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="name" v="circle"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="size" v="0"/>
                         </layer>
                     </symbol>
                     <symbol outputUnit="MM" alpha="1" type="marker" name="default">
@@ -194,6 +467,77 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>rivers20120402171744855</id>
+            <datasource>./rivers.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>rivers</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="UTF-8">ogr</provider>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="0,243,255,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.5"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield>id</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Ubuntu"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="id"/>
+                <edittype type="0" name="type"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>rural20120313170415619</id>
             <datasource>./rural.shp</datasource>
@@ -215,105 +559,19 @@
             <transparencyLevelInt>255</transparencyLevelInt>
             <provider encoding="UTF-8">ogr</provider>
             <vectorjoins/>
-            <renderer-v2 attr="AREA" symbollevels="0" type="graduatedSymbol">
-                <ranges>
-                    <range symbol="0" lower="0" upper="0" label="0.0000 - 0.0000"/>
-                    <range symbol="1" lower="0" upper="0" label="0.0000 - 0.0000"/>
-                    <range symbol="2" lower="0" upper="0.001" label="0.0000 - 0.0010"/>
-                    <range symbol="3" lower="0.001" upper="0.003" label="0.0010 - 0.0030"/>
-                    <range symbol="4" lower="0.003" upper="0.004" label="0.0030 - 0.0040"/>
-                    <range symbol="5" lower="0.004" upper="0.006" label="0.0040 - 0.0060"/>
-                    <range symbol="6" lower="0.006" upper="0.011" label="0.0060 - 0.0110"/>
-                </ranges>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="207,255,180,255"/>
+                            <prop k="color" v="170,255,127,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="1">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="182,226,160,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="2">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="158,198,140,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="3">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="133,170,120,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="4">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="109,141,100,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="5">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="84,113,80,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="6">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="60,85,60,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
+                            <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
                     </symbol>
                 </symbols>
-                <source-symbol>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="157,206,51,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                </source-symbol>
-                <colorramp type="gradient" name="[source]">
-                    <prop k="color1" v="207,255,180,255"/>
-                    <prop k="color2" v="60,85,60,255"/>
-                </colorramp>
-                <mode name="jenks"/>
                 <rotation field=""/>
                 <sizescale field=""/>
             </renderer-v2>
@@ -367,6 +625,125 @@
             <editform>.</editform>
             <editforminit></editforminit>
             <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>school_property20120402164922779</id>
+            <datasource>./school_property.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>school_property</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="UTF-8">ogr</provider>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="118,195,142,255"/>
+                            <prop k="color_border" v="0,255,127,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="no"/>
+                            <prop k="style_border" v="dash"/>
+                            <prop k="width_border" v="1"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties>
+                <property key="labeling" value="pal"/>
+                <property key="labeling/addDirectionSymbol" value="false"/>
+                <property key="labeling/bufferColorB" value="255"/>
+                <property key="labeling/bufferColorG" value="255"/>
+                <property key="labeling/bufferColorR" value="255"/>
+                <property key="labeling/bufferSize" value="1"/>
+                <property key="labeling/dataDefinedProperty0" value=""/>
+                <property key="labeling/dataDefinedProperty1" value=""/>
+                <property key="labeling/dataDefinedProperty10" value=""/>
+                <property key="labeling/dataDefinedProperty11" value=""/>
+                <property key="labeling/dataDefinedProperty12" value=""/>
+                <property key="labeling/dataDefinedProperty13" value=""/>
+                <property key="labeling/dataDefinedProperty14" value=""/>
+                <property key="labeling/dataDefinedProperty2" value=""/>
+                <property key="labeling/dataDefinedProperty3" value=""/>
+                <property key="labeling/dataDefinedProperty4" value=""/>
+                <property key="labeling/dataDefinedProperty5" value=""/>
+                <property key="labeling/dataDefinedProperty6" value=""/>
+                <property key="labeling/dataDefinedProperty7" value=""/>
+                <property key="labeling/dataDefinedProperty8" value=""/>
+                <property key="labeling/dataDefinedProperty9" value=""/>
+                <property key="labeling/decimals" value="0"/>
+                <property key="labeling/dist" value="0"/>
+                <property key="labeling/distInMapUnits" value="false"/>
+                <property key="labeling/enabled" value="true"/>
+                <property key="labeling/fieldName" value="name"/>
+                <property key="labeling/fontFamily" value="Ubuntu"/>
+                <property key="labeling/fontItalic" value="false"/>
+                <property key="labeling/fontSize" value="11"/>
+                <property key="labeling/fontSizeInMapUnits" value="false"/>
+                <property key="labeling/fontStrikeout" value="false"/>
+                <property key="labeling/fontUnderline" value="false"/>
+                <property key="labeling/fontWeight" value="50"/>
+                <property key="labeling/formatNumbers" value="false"/>
+                <property key="labeling/isExpression" value="false"/>
+                <property key="labeling/labelPerPart" value="false"/>
+                <property key="labeling/mergeLines" value="false"/>
+                <property key="labeling/minFeatureSize" value="0"/>
+                <property key="labeling/obstacle" value="true"/>
+                <property key="labeling/placement" value="1"/>
+                <property key="labeling/placementFlags" value="0"/>
+                <property key="labeling/plussign" value="true"/>
+                <property key="labeling/priority" value="5"/>
+                <property key="labeling/scaleMax" value="0"/>
+                <property key="labeling/scaleMin" value="0"/>
+                <property key="labeling/textColorB" value="0"/>
+                <property key="labeling/textColorG" value="0"/>
+                <property key="labeling/textColorR" value="0"/>
+                <property key="labeling/wrapChar" value=""/>
+            </customproperties>
+            <displayfield>name</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Ubuntu"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="id"/>
+                <edittype type="0" name="name"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="100000" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1">

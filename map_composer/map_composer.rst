@@ -235,12 +235,16 @@ This is the result:
 |basic| |FA| Adding Scale
 -------------------------------------------------------------------------------
 
-(Get info from Tim)
+@todo
+Get info from Tim: scale bar functionality is awkward at this stage. Should we
+use numeric scale for now?
 
 |basic| |FA| Adding Arrows
 -------------------------------------------------------------------------------
 
-(Get info from Tim)
+@todo
+Get info from Tim: do arrows point North, or just up? Should we address
+rotation, if so at what level (basic, int, adv)?
 
 |basic| |FA| Exporting Your Map
 -------------------------------------------------------------------------------

@@ -3,3 +3,5 @@ _build
 .*.*.swp
 .*.swp
 exercise_data/raster/
+exercise_data/school_property.*
+exercise_data/rivers.*

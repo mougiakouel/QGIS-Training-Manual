@@ -15,10 +15,3 @@ Contents:
    attribute_data
    label_tool
    classification
-
-.. changing font options etc. (global)
-   get rid of points for layer, use "over point", other style options
-   using STREETS layer: multipart objects - label each part setting label attrs
-   from field (intermediate + advanced) - may require that we modify the data to
-   put font sizes (e.g.) as an attribute
-
