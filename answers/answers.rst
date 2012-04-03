@@ -281,3 +281,30 @@ this:
 .. image:: ../_static/create_vector_data/017.png
 
 :ref:`Back to text <backlink-create-vector-digitize-1>`
+
+
+.. _create-vector-forms-1:
+
+|moderate| *Forms*
+...............................................................................
+
+For the :guilabel:`TYPE`, there is obviously a limited amount of types that a
+road can be, and if you check the attribute table for this layer, you'll see
+that they are predefined. Set the widget to :guilabel:`Unique values` and leave
+:guilabel:`Editable` as :kbd:`False`:
+
+.. image:: ../_static/create_vector_data/030.png
+
+A road is either a one-way or it isn't, so :guilabel:`ONEWAY` should be a
+:guilabel:`Checkbox`. Looking at the attribute table for :guilabel:`streets`,
+the value for when it's not a one-way seems to be :guilabel:`NULL`, and when it
+is, it's :guilabel:`yes`. Set those values:
+
+.. image:: ../_static/create_vector_data/031.png
+
+If you use the :guilabel:`Identify` tool on a street now while edit mode is
+active, the dialog you get should look like this:
+
+.. image:: ../_static/create_vector_data/032.png
+
+:ref:`Back to text <backlink-create-vector-forms-1>`

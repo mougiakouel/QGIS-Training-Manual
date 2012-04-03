@@ -1,4 +1,200 @@
 |LS| Forms
 ===============================================================================
 
+When you add new data via digitizing, you're presented with a dialog that lets
+you fill in the attributes for that feature. However, this dialog is not, by
+default, very nice to look at. This can cause a usability problem, especially
+if you have large datasets to create, or if you want other people to help you
+digitize and they find the default forms to be confusing.
 
+Fortunately, QGIS lets you create your own custom dialogs for a layer. This
+lesson shows you how.
+
+**The goal for this lesson:** To create a form for a layer.
+
+|basic| |FA| Using QGIS' Form Design Functionality
+-------------------------------------------------------------------------------
+
+Select the :guilabel:`streets` layer and enter *Edit Mode* as before. Open its
+:guilabel:`Attribute Table` and right-click on any cell in the table. A short
+menu will appear, with the only entry being :guilabel:`Open form`. Click on it
+to see the form that QGIS generates for this layer. 
+
+Obviously it would be nice to be able to do this while looking at the map,
+rather than needing to search for a specific street in the :guilabel:`Attribute
+Table` all the time. Go to the :menuselection:`Settings --> Options` menu (in
+the same row as the :menuselection:`File` menu, etc.). In the dialog that
+appears, select the :guilabel:`Map Tools` tab and check the :guilabel:`Open
+feature form ...` checkbox:
+
+.. image:: ../_static/create_vector_data/023.png
+
+Close the :guilabel:`Settings` dialog. Select the :guilabel:`streets` layer in
+the :guilabel:`Layers list`. Now, using the :guilabel:`Identify` tool ...
+
+.. image:: ../_static/create_vector_data/024.png
+
+... click on any street in the map. Instead of the normal :guilabel:`Identify`
+dialog, you'll see the now-familiar form instead:
+
+.. image:: ../_static/create_vector_data/026.png
+
+|basic| |TY| Using the Form to Edit Values
+-------------------------------------------------------------------------------
+
+If you are in edit mode, you can use this form to edit a feature's attributes!
+
+With edit mode active and the :guilabel:`Identify` tool selected, click on the
+main street running through Swellendam:
+
+.. image:: ../_static/create_vector_data/025.png
+
+Edit its :guilabel:`LANES` value to the correct value of :kbd:`2`, save your
+edits and exit edit mode. Open the :guilabel:`Attribute Table` and see your
+edit there!
+
+Note that there is more than one road on this map called
+:guilabel:`Voortrekker`. The one you edited had a :kbd:`TYPE` of
+:kbd:`tertiary`.
+
+|moderate| |FA| Setting Form Field Types
+-------------------------------------------------------------------------------
+
+It's nice to edit things using a form, but you still have to enter everything
+by hand. Fortunately, forms have different kinds of so-called *"widgets"* that
+allow you to edit data in various different ways.
+
+Open the :guilabel:`streets` layer's :guilabel:`Layer Properties` as usual,
+then switch to the :guilabel:`Fields` tab. You'll see this:
+
+.. image:: ../_static/create_vector_data/027.png
+
+Click on the :guilabel:`Line edit` button in the same row as :guilabel:`LANES`
+and you'll be given a new dialog. In its only dropdown list, set the value to
+:guilabel:`Range`:
+
+.. image:: ../_static/create_vector_data/028.png
+
+Set the values to this:
+
+.. image:: ../_static/create_vector_data/029.png
+
+Click :guilabel:`OK`, apply the changes to the :guilabel:`Layer Properties`.
+Enter edit mode and click on :guilabel:`Voortrekker` road with the
+:guilabel:`Identify` tool as before. Now instead of entering values manually,
+you can use the up and down arrows next to the :guilabel:`LANES` field to edit
+its values!
+
+.. _backlink-create-vector-forms-1:
+
+|moderate| |TY|
+-------------------------------------------------------------------------------
+
+Set new, more appropriate form widgets for the :guilabel:`TYPE` and
+:guilabel:`ONEWAY` fields.
+
+:ref:`Check your results <create-vector-forms-1>`
+
+|hard| |TY| Creating Test Data
+-------------------------------------------------------------------------------
+
+You can also design your own custom form completely from scratch.
+
+Let's start by creating a simple point layer with two attributes: Name (text)
+and Age (text).
+
+.. image:: ../_static/create_vector_data/018.png
+
+Capture a couple of points to your new layer using the digitizing tools so that
+you have a little data to play with. You should be presented with the default
+QGIS generated attribute capture form each time you capture a new point.
+
+.. image:: ../_static/create_vector_data/019.png
+
+Remember how you did this earlier; it's the same here.
+
+|hard| |FA| Creating a New Form
+-------------------------------------------------------------------------------
+
+Now we want to create our own custom form for the attribute data capture phase.
+To do this, you need to have *Qt4 Designer* installed (only needed for the
+person who creates the forms). It should be provided as part of your course
+materials, if you're using Windows. You may need to look for it if you're using
+another OS. In Ubuntu, do the following in the terminal:
+
+:kbd:`sudo apt-get install qt4-designer`
+
+... and it should install automatically. Otherwise, look for it in the
+*Software Center*.
+
+Now you can start *Designer* by opening its *Start Menu* entry in Windows (or
+whatever approach is appropriate in your OS).
+
+In the dialog that appears, create a new dialog:
+
+.. image:: ../_static/create_vector_data/020.png
+
+Look for the :guilabel:`Widget Box` along the left of your screen (default). It
+contains an item called :guilabel:`Line Edit`. Click and drag this item into
+your form. This creats a new :guilabel:`Line Edit` in the form. With it
+selected, you'll see its *properties* along the side of your screen (on the right
+by default):
+
+.. image:: ../_static/create_vector_data/021.png
+
+Set its name to :kbd:`Name`.
+
+Using the same approach, create a new spinbox and set its name to :kbd:`Age`.
+
+Add a :guilabel:`Label` with the text :kbd:`Add a New Person` in a bold font
+(look in the object *properties* to find out how to set this).
+
+Click anywhere in your dialog. Find the :guilabel:`Lay Out Vertically` button
+(in a toolbar along the top edge of the screen, by default):
+
+.. image:: ../_static/create_vector_data/022.png
+
+This lays out your dialog automatically. Resize the dialog to an appropriate
+size by clicking and dragging its corners.
+
+Lastly, save your new form as :kbd:`exercise_data/forms/add_people.ui`. When
+it's done saving, you can close the *Qt4 Designer* program.
+
+|hard| |FA| Associating the Form with Your Layer
+-------------------------------------------------------------------------------
+
+Jump back to QGIS and double click the layer in the legend to access its
+properties. Click on the :guilabel:`General` tab in the :guilabel:`Layer
+Properties` dialog, and then specify the path to your ui file in the
+:guilabel:`Edit UI` field. Click :guilabel:`OK` on the :guilabel:`Layer
+Properties` dialog.
+
+Now start editing and capture a new point. When you do so, you will be
+presented with your custom dialog (instead of the generic one that QGIS usually
+creates). Also, if you click on one of your points using the
+:guilabel:`Identify` tool, you can now bring up the form by right clicking in
+the identify results window and choosing :guilabel:`View Feature Form` from the
+context menu. If your layer has editing enabled, that context menu will show
+:guilabel:`Edit Feature Form` instead, and you can then adjust the attributes
+in the new form even after initial capture.
+
+|IC|
+-------------------------------------------------------------------------------
+
+Using forms, you can make life easier for yourself when editing or creating
+data. By editing widget types or creating an entirely new form from scratch,
+you can control the experience of someone who digitizes new data for that
+layer, thereby minimizing misunderstandings and unnecessary errors.
+
+|FR|
+-------------------------------------------------------------------------------
+
+If you completed the advanced section above and have knowledge of Python, you
+may want to check out `this blog entry <http://tinyurl.com/6tr42rb>`_ about
+creating custom feature forms with Python logic, which allows advanced
+functions including data validation, autocompletion, etc.
+
+|WN|
+-------------------------------------------------------------------------------
+
+@todo: lead-in for ACTIONS
