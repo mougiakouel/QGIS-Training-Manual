@@ -197,4 +197,6 @@ functions including data validation, autocompletion, etc.
 |WN|
 -------------------------------------------------------------------------------
 
-@todo: lead-in for ACTIONS
+Opening a form on identifying a feature is one of the standard actions that
+QGIS can perform. However, you can also direct it to perform custom actions
+that you define. This is the subject of the next lesson.

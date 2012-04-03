@@ -283,6 +283,54 @@ this:
 :ref:`Back to text <backlink-create-vector-digitize-1>`
 
 
+.. _create-vector-topology-3:
+
+|moderate| *Topology: Avoid Intersections*
+...............................................................................
+
+Your map should look like this:
+
+.. image:: ../_static/create_vector_data/071.png
+
+:ref:`Back to text <backlink-create-vector-topology-3>`
+
+
+.. _create-vector-topology-1:
+
+|moderate| *Topology: Add Ring Tool*
+...............................................................................
+
+The exact shape doesn't matter, but you should be getting a hole in your
+feature, like this one:
+
+.. image:: ../_static/create_vector_data/056.png
+
+Undo your edit before continuing with the exercise for the next tool.
+
+:ref:`Back to text <backlink-create-vector-topology-1>`
+
+
+.. _create-vector-topology-2:
+
+|moderate| *Topology: Add Part Tool*
+...............................................................................
+
+The exact shape and location doesn't matter, but you should be getting an extra
+part on your feature, like this one:
+
+.. image:: ../_static/create_vector_data/058.png
+
+Note that you first need to select the farm with the selection tool ...
+
+.. image:: ../_static/create_vector_data/059.png
+
+... so that QGIS knows which feature to add the new part to.
+
+Undo your edit before continuing with the exercise for the next tool.
+
+:ref:`Back to text <backlink-create-vector-topology-2>`
+
+
 .. _create-vector-forms-1:
 
 |moderate| *Forms*

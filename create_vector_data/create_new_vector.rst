@@ -225,6 +225,8 @@ because it's a very common activity in GIS programs.
 |FR|
 -------------------------------------------------------------------------------
 
+- Pasting a feature you copied to a text editor.
+
 |WN|
 -------------------------------------------------------------------------------
 

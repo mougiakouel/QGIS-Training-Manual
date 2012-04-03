@@ -2,14 +2,274 @@
 ===============================================================================
 
 Topology is a useful aspect of vector data layers, because it minimizes errors
-such as overlap or gaps. If two features share a border, and you edit the
-border using topology, then you won't need to edit first one feature, then
-another, and carefully line up the borders so that they match. Instead, you can
-edit their shared border and both features will change at the same time.
+such as overlap or gaps.
 
-**The goal for this lesson:** To understand topology using an example.
+For example: if two features share a border, and you edit the border using
+topology, then you won't need to edit first one feature, then another, and
+carefully line up the borders so that they match. Instead, you can edit their
+shared border and both features will change at the same time.
 
-|FA| 
+**The goal for this lesson:** To understand topology using examples.
+
+|FA| |moderate| Snapping
 -------------------------------------------------------------------------------
 
-(Ask Tim how to activate it... online documents dated?)
+To make topological editing easier, it's best if you enable snapping. This will
+allow your mouse cursor to snap to other objects while you digitize. To set
+snapping options, navigate to the menu entry :menuselection:`Settings -->
+Snapping Options...`. We'll use the rural layer for these examples, so set up
+your :guilabel:`Snapping options` dialog as shown:
+
+.. image:: ../_static/create_vector_data/044.png
+
+Click :guilabel:`OK` to save your changes and leave the dialog, then enter edit
+mode with the :guilabel:`rural` layer selected. Check under
+:menuselection:`View --> Toolbars` to make sure that your :guilabel:`Advanced
+Digitizing` toolbar is enabled. Now prepare for digitizing by zooming to this
+area:
+
+.. image:: ../_static/create_vector_data/045.png
+
+Digitize this new farm:
+
+.. image:: ../_static/create_vector_data/047.png
+
+(When prompted, give it an :guilabel:`id` of :kbd:`999` but feel free to leave
+the other values unchanged.)
+
+If you're careful while digitizing and allow the cursor to snap to the vertices
+of adjoining farms, you'll notice that there won't be any gaps between the
+farms adjacent to the new one you just digitized. There's no need to be too
+exact with the borders that don't adjoin other farms though, since this is new
+feature is just for demonstration purposes.
+
+Note the undo/redo tools in the :guilabel:`Advanced Digitizing` toolbar:
+
+.. image:: ../_static/create_vector_data/046.png
+
+Those buttons will become your best friends...
+
+|moderate| |FA| Closing the Gaps
+-------------------------------------------------------------------------------
+
+You've probably noticed some large holes in the :guilabel:`rural` dataset:
+
+.. image:: ../_static/create_vector_data/067.png
+
+Let's say you want to close them. If you were adding features normally, you'd
+have to be very accurate to avoid gaps and overlap. In fact, even if you're
+very accurate, without vertex snapping (which you activated above), digitizing
+features without such errors is impossible.
+
+However, this is not about snapping. Since we have topology enabled, it's
+possible to very quickly close a hole without even worrying about accuracy, and
+the topology will take care of the rest. For example, try digitizing a new farm
+to close up this gap:
+
+.. image:: ../_static/create_vector_data/068.png
+
+If you had to do this without help from the topology, you'd be digitizing that
+for a while. But at the moment, as per the directions above, you have
+:guilabel:`Avoid Int.` ("Avoid Intersections") enabled for the
+:guilabel:`rural` layer. This tells QGIS to use the topology to prevent
+overlap. So you can digitize even a very rough shape:
+
+.. image:: ../_static/create_vector_data/069.png
+
+(Use an :guilabel:`id` value of somewhere in the hundreds range to avoid a
+conflict with existing features.)
+
+But when you select the feature ...
+
+.. image:: ../_static/create_vector_data/070.png
+
+... you'll see that QGIS has automatically added all the detailed vertices and
+made sure that there was no overlap!
+
+.. note:: The "Avoid Intersections" option only works to eliminate overlap
+   (intersections). Obviously, if you leave a gap, that will not be filled,
+   because you might not actually want the gap to be filled!
+
+.. _backlink-create-vector-topology-3:
+
+|moderate| |TY|
+-------------------------------------------------------------------------------
+
+Close the remaining gaps using the approach above, but make sure not to create
+farms over urban areas.
+
+:ref:`Check your results <create-vector-topology-3>`
+
+
+|moderate| |FA| Correct topology errors
+-------------------------------------------------------------------------------
+
+Set the symbology for the :guilabel:`rural` layer to a single (preferably dark)
+color, and then set its :guilabel:`Transparency` slider to :kbd:`50%`. You
+should see results like these:
+
+.. image:: ../_static/create_vector_data/048.png
+
+There are several things to notice here. First, the new farm you added is
+lighter than the others. This is because in this dataset, there are several
+"levels" of farms: large farms and their subdivisions were digitized
+separately. So there is a large farm and its subdivisions resting on top of
+each other, which makes the color darker because you're seeing the lower one
+through the upper one. That's a feature of the dataset, not a problem.
+
+But you can also notice a definite problem: one of the farms is going
+underneath another one!  Obviously this is a mistake, because in the real world
+farms don't overlap, and two farms don't share the same subdivision.
+
+Let's correct this!
+
+Still in edit mode, select the :guilabel:`Node Tool` and click on one of the
+corners of the problematic farm. This will select that farm for editing and
+you'll see all the nodes appear:
+
+.. image:: ../_static/create_vector_data/049.png
+
+Now simply click and drag the nodes ...
+
+.. image:: ../_static/create_vector_data/050.png
+
+... until they snap into place. The topologically correct border looks like
+this:
+
+.. image:: ../_static/create_vector_data/051.png
+
+|moderate| |FA| Tool: Simplify Feature
+-------------------------------------------------------------------------------
+
+This is the :guilabel:`Simplify Feature` tool:
+
+.. image:: ../_static/create_vector_data/052.png
+
+Click on it and then on the new farm you created previously. You'll be
+presented with this dialog:
+
+.. image:: ../_static/create_vector_data/053.png
+
+Move the slider from side to side and watch what happens:
+
+.. image:: ../_static/create_vector_data/054.png
+
+This allows you to recude the amount of nodes in complex features. However,
+notice what it does to the topology! The simplified farm is now no longer
+touching the adjacent farms as it should. That's how you know that this tool is
+better suited to generalizing stand-alone features. The advantage is that it
+provides you with a simple, intuitive interface for generalization, and allows
+you to see what the effects would be before you even implement them.
+
+Before you go on, get the farm back in its previous state. Either cancel the
+:guilabel:`Simplify Feature` dialog, or if you already clicked :guilabel:`OK`,
+just undo the last change.
+
+
+.. _backlink-create-vector-topology-1:
+
+|moderate| |TY| Tool: Add Ring
+-------------------------------------------------------------------------------
+
+This is the :guilabel:`Add Ring` tool:
+
+.. image:: ../_static/create_vector_data/055.png
+
+It allows you to take a hole out of a feature, as long as the hole is bounded
+on all side by the feature. For example, if you've digitized the outer
+boundaries of South Africa and you need to add a hole for Lesotho, you'd use
+this tool. Try using it on the your farm.
+
+:ref:`Check your results <create-vector-topology-1>`
+
+
+.. _backlink-create-vector-topology-2:
+
+|moderate| |TY| Tool: Add Part
+-------------------------------------------------------------------------------
+
+This is the :guilabel:`Add Part` tool:
+
+.. image:: ../_static/create_vector_data/057.png
+
+It allows you to create an extra part of the feature, not directly connected to
+the main feature. For example, if you've digitized the boundaries of mainland
+South Africa but you haven't yet added the Prince Edward Islands, you'd use
+this tool to create them. Try using it to add an outlying property to your
+farm.
+
+:ref:`Check your results <create-vector-topology-2>`
+
+
+|moderate| |TY| Tools: Delete Ring and Delete Part
+-------------------------------------------------------------------------------
+
+These are the :guilabel:`Delete Ring` and :guilabel:`Delete Part` tools,
+respectively:
+
+.. image:: ../_static/create_vector_data/060.png
+
+Their functions should be obvious. Create new parts and rings as above and
+delete them to try see how these tools work. You need to click close to a node
+(corner) of a part or ring in order to delete it.
+
+
+|moderate| |FA| Tool: Reshape Features
+-------------------------------------------------------------------------------
+
+This is the :guilabel:`Reshape Features` tool:
+
+.. image:: ../_static/create_vector_data/061.png
+
+It can add a bump to an existing feature. With this tool selected, click inside
+of your farm. Then add yourself an extra piece of land, and right-click back
+inside the farm:
+
+.. image:: ../_static/create_vector_data/062.png
+
+The result of the above:
+
+.. image:: ../_static/create_vector_data/063.png
+
+You can do the opposite, too: start outside the feature, take a bite out of it,
+and right-click outside it again:
+
+.. image:: ../_static/create_vector_data/064.png
+
+The result of the above:
+
+.. image:: ../_static/create_vector_data/065.png
+
+
+|moderate| |TY| Tool: Split Features
+-------------------------------------------------------------------------------
+
+The :guilabel:`Split Features` tool is similar to how you took part of the farm
+away, except that it doesn't delete either of the two parts. Instead, it keeps
+them both. Try it and see!
+
+Undo your edit before continuing with the exercise for the next tool.
+
+
+|hard| |TY| Tool: Merge Features
+-------------------------------------------------------------------------------
+
+Select your farm and an adjacent one with the :guilabel:`Select` tool. Use the
+:guilabel:`Merge Selected Features` and :guilabel:`Merge Attributes of Selected
+Features` tools, and note the differences.
+
+|IC|
+-------------------------------------------------------------------------------
+
+Topology editing is a powerful tool that allows you to create and modify
+objects quickly and easily, while ensuring that they are topologically correct.
+
+|FR|
+-------------------------------------------------------------------------------
+
+|WN|
+-------------------------------------------------------------------------------
+
+Now you know how to digitize the shapf of the objects easily, but adding in the
+attributes is still a bit of a headache! Next we'll show you how to use forms
+so that attribute editing is simpler and more effective.
