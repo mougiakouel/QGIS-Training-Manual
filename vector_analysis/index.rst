@@ -3,8 +3,9 @@
 *******************************************************************************
 
 Now that you have edited a few features, you must want to know what else one
-can do with them. Having features with attributes is nice, but this doesn't
-really tell you anything that a normal, non-GIS map can't.
+can do with them. Having features with attributes is nice, but when all is said
+and done, this doesn't really tell you anything that a normal, non-GIS map
+can't.
 
 The key advantage of a GIS is this: *a GIS can answer questions.*
 

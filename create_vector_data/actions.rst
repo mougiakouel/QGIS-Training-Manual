@@ -177,14 +177,15 @@ Usually when you use Google, you enter your search phrase into the Google
 Search bar. But in this case, you want your computer to do this for you. The
 way you tell Google to search for something (if you don't want to use its
 search bar directly) is by giving your Internet browser the address
-:kbd:`http://www.google.co.za/search?q=PHRASE`, where :kbd:`PHRASE` is the word
-you want to search for. Since we don't know what phrase to search for yet, just
-enter the first part (without the phrase):
+:kbd:`http://www.google.co.za/search?q=SEARCH_PHRASE`, where
+:kbd:`SEARCH_PHRASE` is what you want to search for. Since we don't know what
+phrase to search for yet, just enter the first part (without the phrase):
 :kbd:`http://www.google.co.za/search?q=`. Remember to add a space after your
 initial command before writing this in!
 
 Now you want QGIS to tell the browser to tell Google to search for the value of
-:kbd:`SGADMIN` for any feature that you could click on. Complicated!
+:kbd:`SGADMIN` for any feature that you could click on. Complicated? Not really
+- QGIS lets you do this easily.
 
 Select the :guilabel:`SGADMIN` field and click :guilabel:`Insert field`:
 
@@ -196,11 +197,11 @@ This will tell QGIS to add the phrase next:
 
 What this means is that QGIS is going to open the browser and send it to the
 address :kbd:`http://www.google.co.za/search?q=[% "SGADMIN" %]`. But :kbd:`[%
-"SGADMIN" %]` is a direction to tell QGIS to use the contents of the
-:kbd:`SGADMIN` field as the phrase to search for. So if, for example, the farm
-you clicked on is in the :kbd:`Montagu` area, then QGIS is going to send the
-browser to :kbd:`http://www.google.co.za/search?q=Montagu`, which will cause
-the browser to visit Google, which will in turn search for the word "Montagu".
+"SGADMIN" %]` tells QGIS to use the contents of the :kbd:`SGADMIN` field as the
+phrase to search for. So if, for example, the farm you clicked on is in the
+:kbd:`Montagu` area, then QGIS is going to send the browser to
+:kbd:`http://www.google.co.za/search?q=Montagu`, which will cause the browser
+to visit Google, which will in turn search for the word "Montagu".
 
 If you haven't done so already, set everything up as explained above, then
 click the :guilabel:`Add to action list` button. The new action will appear in
@@ -220,7 +221,73 @@ recorded as that farm's :kbd:`SGADMIN` value.
    your OS doesn't understand the command QGIS is giving it. Since we can't
    test this ourselves in every OS ever made, your input would be appreciated!
 
-|hard| |TY| Run Any Shell Command
+|hard| |FA| Open a Webpage Directly in QGIS
 -------------------------------------------------------------------------------
 
-(Check if planned command is possible on Windows ...)
+Above, you've seen how to open a webpage in an external browser. There are some
+shortcomings with this approach in that it adds an unknowable dependency – will
+the end-user have the software required to execute the action on their system?
+As you've seen, they don't necessarily even have the same kind of base command
+for the same kind of action, if you don't know which OS they'll be using. It
+looks like quite the insurmountable problem.
+
+However, QGIS sits on top of the incredibly powerful and versatile Qt4 library.
+All that goodness is just a heartbeat away with a Python line or two. Also,
+QGIS actions can be arbitrary, tokenized (i.e. using variable information based
+on the contents of a field attribute) Python commands!
+
+Now you'll see how to use an a python action to show a web page. It's the same
+general idea as opening a site in an external browser, but it requires no
+browser on the user’s system since it uses the Qt4 QWebView class (which is a
+webkit based html widget) to display the content in a pop up window.
+
+Instead of Google, let's use Wikipedia this time. So the URL you request will
+look like this:
+
+:kbd:`http://wikipedia.org/wiki/SEARCH_PHRASE`
+
+To create the layer action, open the :guilabel:`Layer Properties` dialog and
+head over to the :guilabel:`Actions` tab, as before. Now set up a new action
+using the following properties for the action:
+
+:guilabel:`Type`: :kbd:`Python`
+:guilabel:`Name`: :kbd:`Wikipedia`
+:guilabel:`Action` (all on one line): :kbd:`from PyQt4.QtCore import QUrl; from
+PyQt4.QtWebKit import QWebView;  myWV = QWebView(None);
+myWV.load(QUrl('http://wikipedia.org/wiki/[% "SGADMIN" %]')); myWV.show()`
+
+There are a couple of things going on here:
+
+- All the python code is in a single line with semi-colons separating commands
+  (instead of newlines, the usual way of separating Python commands).
+- [% "SGADMIN" %] will be replaced by the actual attribute value when the
+  action is invoked (as before).
+- The code simply creates a new :kbd:`QWebView` instance, sets its URL, and
+  then calls :kbd:`show()` on it to make it visible as a window on the user’s
+  desktop.
+
+Note that this is a somewhat contrived example. Python works with semantically
+significant indentation, so separating things with semicolons isn't the best
+way to write it. So, in the real world, you'd be more likely to import your
+logic from a Python module and then call a function with a field attribute as
+parameter. You could equally use the approach to display an image without
+requiring that the user has a particular image viewer on their system.
+
+|IC|
+-------------------------------------------------------------------------------
+
+Actions allow you to give your map extra functionality, useful to the end-user
+who views the same map in QGIS. Due to the fact that you can use shell commands
+for any operating system, as well as Python, the sky's the limit in terms of
+the functions you could incorporate!
+
+|FR|
+-------------------------------------------------------------------------------
+
+- Run any other shell commands using an action.
+
+|WN|
+-------------------------------------------------------------------------------
+
+Now that you've done all kinds of vector data creation, you'll learn how to
+analyze this data to solve problems! That's the topic of the next module.

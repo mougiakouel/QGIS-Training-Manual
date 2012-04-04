@@ -6,3 +6,7 @@ exercise_data/raster/
 exercise_data/school_property.*
 exercise_data/rivers.*
 exercise_data/test.*
+exercise_data/Natural_Earth_quick_start/
+exercise_data/rural_reprojected.*
+exercise_data_original/
+*.odt#
