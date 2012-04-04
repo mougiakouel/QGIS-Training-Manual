@@ -356,3 +356,55 @@ active, the dialog you get should look like this:
 .. image:: ../_static/create_vector_data/032.png
 
 :ref:`Back to text <backlink-create-vector-forms-1>`
+
+
+|RF| *Vector Analysis*
+-------------------------------------------------------------------------------
+
+.. _vector-analysis-basic-1:
+
+|basic| *Find Important Roads*
+...............................................................................
+
+Your layer should now have these roads:
+
+.. image:: ../_static/vector_analysis/017.png
+
+Save this new layer (the same way you did before) under
+:kbd:`exercise_data/residential_development/`, as :kbd:`important_roads.shp`.
+Once the new layer has been added to your map, remove the old layer.
+
+If for some reason it gives you an error message saying that it can't add the
+layer to the map (this can happen), remember that you can add the layer
+yourself by using the :guilabel:`Add Vector Layer` button as you did before.
+
+:ref:`Back to text <backlink-vector-analysis-basic-1>`
+
+.. _vector-analysis-basic-2:
+
+|basic| *Distance from Classy Schools*
+...............................................................................
+
+Your buffer dialog should look like this:
+
+.. image:: ../_static/vector_analysis/024.png
+
+The :guilabel:`Buffer distance` is :kbd:`10000` meters (i.e., :kbd:`10`
+kilometers).
+
+The :guilabel:`Segments to approximate` value is set to :kbd:`20`. This is
+optional, but it's recommended, because makes the output buffers look smoother.
+Compare this:
+
+.. image:: ../_static/vector_analysis/025.png
+
+To this:
+
+.. image:: ../_static/vector_analysis/026.png
+
+The red circle is the buffer with :guilabel:`Segments to approximate` set to
+:kbd:`20`; the gray circle on top of it is the buffer with :guilabel:`Segments
+to approximate` set to :kbd:`5`.
+
+:ref:`Back to text <backlink-vector-analysis-basic-2>`
+

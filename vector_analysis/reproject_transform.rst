@@ -147,7 +147,7 @@ value to :guilabel:`Selected CRS`, then click the :guilabel:`Browse` button
 beneath the dropdown. The :guilabel:`CRS Selector` dialog will now appear. In
 its :guilabel:`Filter` field, search for :kbd:`33S` and choose :guilabel:`WGS
 84 / UTM zone 33S` from the list, then click :guilabel:`OK`. The
-   :guilabel:`Save vector layer as...` dialog now looks like this:
+:guilabel:`Save vector layer as...` dialog now looks like this:
 
 .. image:: ../_static/vector_analysis/004.png
 
