@@ -13,7 +13,8 @@ tools.
 |basic| The GIS Process
 -------------------------------------------------------------------------------
 
-Before we start, it would be useful to give a brief overview of a process that can be used to solve any GIS problem. The way to go about it is:
+Before we start, it would be useful to give a brief overview of a process that
+can be used to solve any GIS problem. The way to go about it is:
 
 i. State the Problem
 ii. Get the Data
@@ -310,6 +311,13 @@ Click :guilabel:`OK`. Your results should look like this:
 .. image:: ../_static/vector_analysis/038.png
 
 That's it! Those red farms are the ones satisfying your criteria. Well done!
+
+|basic| |TY|
+-------------------------------------------------------------------------------
+
+Save your solution as a new layer, using the approach you learned above for
+doing so. The file should be saved under the usual directory, with the name
+:kbd:`solution.shp`.
 
 |IC|
 -------------------------------------------------------------------------------

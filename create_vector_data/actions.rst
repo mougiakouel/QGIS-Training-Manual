@@ -60,9 +60,10 @@ should be active and look like this:
 .. image:: ../_static/create_vector_data/041.png
 
 Click on the browse button (the :guilabel:`...` next to the :guilabel:`image`
-field) and select the path for your image. The images are in :kbd:`PATH` and
-are named the same as the features they should be associated with. Once you're
-done, click :guilabel:`OK`.
+field) and select the path for your image. The images are in
+:kbd:`exercise_data/school_property_photos/` and are named the same as the
+features they should be associated with. Once you're done, click
+:guilabel:`OK`.
 
 Associate all of the images with the correct features using this method. Then
 save your edits and exit edit mode. Refer back to where you learned about these
