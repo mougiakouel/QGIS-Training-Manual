@@ -277,9 +277,9 @@ have the selection as a separate layer.
 |basic| |FA| Select Farms of the Right Size
 -------------------------------------------------------------------------------
 
-To see which farms are the right area, we first need to calculate the area!
-Open the attribute table for the :guilabel:`well_located_farms` layer, then
-enter edit mode:
+To see which farms are the right area (between 100 and 150 ha), we first need
+to calculate their areas in hectares.  Open the attribute table for the
+:guilabel:`well_located_farms` layer, then enter edit mode:
 
 .. image:: ../_static/vector_analysis/033.png
 
@@ -314,14 +314,17 @@ That's it! Those red farms are the ones satisfying your criteria. Well done!
 |IC|
 -------------------------------------------------------------------------------
 
-TBA
+Using the GIS problem-solving approach together with QGIS vector analysis
+tools, you were able to solve a problem with multiple criteria quickly and
+easily.
 
 |FR|
 -------------------------------------------------------------------------------
 
-TBA
+
 
 |WN|
 -------------------------------------------------------------------------------
 
-TBA
+In the next lesson, we'll look at how to calculate the shortest distance along
+the road from one point to another.

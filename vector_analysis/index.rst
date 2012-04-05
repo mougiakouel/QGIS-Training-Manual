@@ -31,3 +31,4 @@ Contents:
 
    reproject_transform
    basic_analysis
+   network_analysis

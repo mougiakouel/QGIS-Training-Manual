@@ -393,8 +393,8 @@ The :guilabel:`Buffer distance` is :kbd:`10000` meters (i.e., :kbd:`10`
 kilometers).
 
 The :guilabel:`Segments to approximate` value is set to :kbd:`20`. This is
-optional, but it's recommended, because makes the output buffers look smoother.
-Compare this:
+optional, but it's recommended, because it makes the output buffers look
+smoother.  Compare this:
 
 .. image:: ../_static/vector_analysis/025.png
 
