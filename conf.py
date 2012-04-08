@@ -187,25 +187,31 @@ htmlhelp_basename = 'LinfinitiQGISTrainingManualdoc'
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': '\usepackage{wallpaper}\n\LRCornerWallPaper{1}{../../linfiniti-footer.png}',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
+# howto style == article cls
+#latex_documents = [
+#  ('index', 'LinfinitiQGISTrainingManual.tex', u'Linfiniti QGIS Training Manual',
+#   u'Tim Sutton, Rudi Thiede', 'howto'),
+#]
+# manual style = report cls
 latex_documents = [
-  ('index', 'LinfinitiQGISTrainingManual.tex', u'Linfiniti QGIS Training Manual Documentation',
+  ('index', 'LinfinitiQGISTrainingManual.tex', u'Linfiniti QGIS Training Manual',
    u'Tim Sutton, Rudi Thiede', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = 'linfiniti-theme/static/img/logo_header_200.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -215,7 +221,8 @@ latex_documents = [
 #latex_show_pagerefs = False
 
 # If true, show URL addresses after external links.
-#latex_show_urls = False
+# Set by Tim to show urls in footnote area
+latex_show_urls = 'footnote'
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []
