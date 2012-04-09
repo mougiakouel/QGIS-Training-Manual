@@ -205,13 +205,13 @@ latex_elements = {
 #]
 # manual style = report cls
 latex_documents = [
-  ('index', 'LinfinitiQGISTrainingManual.tex', u'Linfiniti QGIS Training Manual',
+  ('index', 'LinfinitiQGISTrainingManual.tex', u'Quantum GIS Training Manual',
    u'Tim Sutton, Rudi Thiede', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = 'linfiniti-theme/static/img/logo_header_200.png'
+latex_logo = 'qgis-logo-large.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
