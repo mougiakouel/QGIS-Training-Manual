@@ -1,3 +1,6 @@
+body {
+  padding-top: 18px;
+}
 .guilabel { 
   font-weight: bold; 
   border: 1px solid #ddd; 
@@ -34,8 +37,15 @@
   border-bottom: 1px #ddd solid;
   margin-left: 38px;
 }
-.admonition {
+/* theming of warning boxes class=".admonition .warning" */
+.warning{
+  background-image: url("img/warning.png");
+}
+/* theming of warning boxes class=".admonition .note" */
+.note {
   background-image: url("img/note.png");
+}
+.admonition {
   background-position: 22px 15px;
   background-repeat: no-repeat;
 }
@@ -52,13 +62,18 @@ ul > .current > a:hover {
 .sidebar-nav > ul > li > ul{
   list-style: none;
 }
-
+/* Selected lesson */
 .sidebar-nav > ul > li > ul > li {
   margin-left: -10px;
-  margin-right: 0px;
+  margin-right: -0px;
 }
-
+/* Selected module */
 .sidebar-nav > ul {
   margin-left: -20px;
-  margin-right: -15px;
+  margin-right: -20px;
+}
+
+.brand {
+  font-weight: heavy;
+  font-size: larger;
 }

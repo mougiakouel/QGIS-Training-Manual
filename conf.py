@@ -56,8 +56,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Linfiniti QGIS Training Manual'
-copyright = u'2012, Tim Sutton, Rudi Thiede'
+project = u'Quantum GIS Training Manual'
+copyright = u'2012, Linfiniti Consulting CC'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -126,7 +126,7 @@ html_theme_path = ['.']
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = 'logo_header_200.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
