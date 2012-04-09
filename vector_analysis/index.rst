@@ -28,6 +28,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    reproject_transform
    basic_analysis
