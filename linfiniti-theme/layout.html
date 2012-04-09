@@ -41,7 +41,7 @@
           {%- else %}
             {#- old style sidebars: using blocks -- should be deprecated #}
             {%- block sidebartoc %}
-            {%- include "localtoc.html" %}
+            {{ toctree() }}
             {%- endblock %}
             {%- block sidebarrel %}
             {%- include "relations.html" %}
