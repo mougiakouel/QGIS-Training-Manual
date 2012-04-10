@@ -135,7 +135,9 @@ It will bring up this dialog:
 .. image:: ../_static/rasters/007.png
 
 You can choose to process entire directories instead of single files, giving
-you a very useful built-in batch processing capability.
+you a very useful built-in batch processing capability. You can specify a
+virtual raster as input file, too, and all of the rasters that it consists of
+will be processed.
 
 You can also add your own command line options using the :guilabel:`Creation
 Options` checkbox and list. This only applies if you have knowledge of the GDAL
