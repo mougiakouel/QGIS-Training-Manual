@@ -6,6 +6,13 @@ QGIS easily and efficiently. If you're new to GIS, we'll tell you what you need
 to get started. If you're an experienced user, you'll see how QGIS fulfills all
 the functions you expect from a GIS program, and more!
 
+.. warning::
+
+   This course includes instructions on adding, deleting and altering GIS
+   datasets. We have provided training datasets for this purpose. Before using
+   the techniques described here on your own data, always ensure you have
+   proper backups!
+
 Tiered course objectives
 -------------------------------------------------------------------------------
 

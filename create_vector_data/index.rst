@@ -9,6 +9,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    create_new_vector
    topo_editing

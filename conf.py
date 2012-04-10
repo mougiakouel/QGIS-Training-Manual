@@ -56,8 +56,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Linfiniti QGIS Training Manual'
-copyright = u'2012, Tim Sutton, Rudi Thiede'
+project = u'Quantum GIS Training Manual'
+copyright = u'2012, Linfiniti Consulting CC'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -107,7 +107,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'linfiniti-theme'
+html_theme = 'linfiniti-sphinx-theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -126,7 +126,7 @@ html_theme_path = ['.']
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = 'logo_header_200.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -187,25 +187,31 @@ htmlhelp_basename = 'LinfinitiQGISTrainingManualdoc'
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': '\usepackage{wallpaper}\n\LRCornerWallPaper{1}{../../linfiniti-footer.png}',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
+# howto style == article cls
+#latex_documents = [
+#  ('index', 'LinfinitiQGISTrainingManual.tex', u'Linfiniti QGIS Training Manual',
+#   u'Tim Sutton, Rudi Thiede', 'howto'),
+#]
+# manual style = report cls
 latex_documents = [
-  ('index', 'LinfinitiQGISTrainingManual.tex', u'Linfiniti QGIS Training Manual Documentation',
+  ('index', 'LinfinitiQGISTrainingManual.tex', u'Quantum GIS Training Manual',
    u'Tim Sutton, Rudi Thiede', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = 'qgis-logo-large.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -215,7 +221,8 @@ latex_documents = [
 #latex_show_pagerefs = False
 
 # If true, show URL addresses after external links.
-#latex_show_urls = False
+# Set by Tim to show urls in footnote area
+latex_show_urls = 'footnote'
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []

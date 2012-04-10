@@ -12,6 +12,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    introduction/index
    basic_map/index

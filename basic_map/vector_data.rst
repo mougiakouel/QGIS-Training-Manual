@@ -125,6 +125,9 @@ To resolve this problem, simply click and drag on a layer in the Layers list.
 Reorder them to look like this:
 
 .. image:: ../_static/vector/003.png
+   :scale: 50 %
+   :class: screenshot
+   :align: center
 
 In conclusion
 -------------------------------------------------------------------------------
