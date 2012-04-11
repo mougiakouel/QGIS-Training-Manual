@@ -408,3 +408,70 @@ to approximate` set to :kbd:`5`.
 
 :ref:`Back to text <backlink-vector-analysis-basic-2>`
 
+
+|RF| *Raster Analysis*
+-------------------------------------------------------------------------------
+
+.. _raster-analysis-1:
+
+|basic| *Calculate Aspect*
+...............................................................................
+
+Set your :guilabel:`DEM (Terrain analysis)` dialog up like this:
+
+.. image:: ../_static/rasters/026.png
+
+Your result:
+
+.. image:: ../_static/rasters/027.png
+
+:ref:`Back to text <backlink-raster-analysis-1>`
+
+
+.. _raster-analysis-2:
+
+|moderate| *Calculate Slope (less than 2 and 5 degrees)*
+...............................................................................
+
+Set your :guilabel:`Raster calculator` dialog up like this:
+
+.. image:: ../_static/rasters/031.png
+
+For the 5 degree version, replace the :kbd:`2` in the expression and file name
+with :kbd:`5`.
+
+Your results:
+
+- 2 degrees:
+
+.. image:: ../_static/rasters/032.png
+
+- 5 degrees:
+
+.. image:: ../_static/rasters/033.png
+
+:ref:`Back to text <backlink-raster-analysis-2>`
+
+
+|RF| *Completing the Analysis*
+-------------------------------------------------------------------------------
+
+.. _complete-analysis-1:
+
+|moderate| *Raster to Vector*
+...............................................................................
+
+First, open the :guilabel:`Query` dialog by right-clicking on the
+:guilabel:`all_terrain` layer in the :guilabel:`Layers list`. Then build the
+query :kbd:`"suitable" = 1`. Clicking :guilabel:`OK` will filter out all the
+polygons where this condition isn't met. When viewed over the original raster,
+the areas should overlap perfectly:
+
+.. image:: ../_static/complete_analysis/002.png
+
+You can save this layer by right-clicking on the :guilabel:`all_terrain` layer
+in the :guilabel:`Layers list` and choosing :guilabel:`Save As...`, then
+continue as per the instructions.
+
+:ref:`Back to text <backlink-complete-analysis-1>`
+

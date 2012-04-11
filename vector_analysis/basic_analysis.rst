@@ -72,9 +72,12 @@ Once you've got these layers in your :guilabel:`Layers list`, rename them by
 right-clicking on them and selecting the :guilabel:`Rename` option. Give them
 the new, less messy names :kbd:`roads`, :kbd:`schools` and :kbd:`farms`.
 
-Save your map. Using the :guilabel:`Create Folder` button, create a new folder
-under :guilabel:`exercise_data` and call it :kbd:`residential_development`,
-then save your map under there as :kbd:`analysis.qgs`.
+Save your map under :guilabel:`exercise_data`, as :kbd:`analysis.qgs`.
+
+In your operating system's file manager, create a new folder under
+:guilabel:`exercise_data` and call it :kbd:`residential_development`. This is
+where you'll save the datasets that will be the results of the analysis
+functions.
 
 Now that we've got the data, let's analyze the problem!
 

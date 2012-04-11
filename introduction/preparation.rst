@@ -45,8 +45,7 @@ your work. Click on the :guilabel:`Save As` button:
 
 .. image:: ../_static/interface/004.png
 
-Save the map under :kbd:`exercise_data/`, using your surname and initials as
-the file name.
+Save the map under :kbd:`exercise_data/` and call it :kbd:`basic_map.qgs`.
 
 :ref:`Check your results <interface-preparation-1>`
 

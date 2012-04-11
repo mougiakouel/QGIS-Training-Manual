@@ -14,4 +14,3 @@ Contents:
    data_manipulation
    changing_symbology
    terrain_analysis
-   layer_arithmetic
