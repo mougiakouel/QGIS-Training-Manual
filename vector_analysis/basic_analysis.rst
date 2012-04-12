@@ -251,6 +251,8 @@ satisfied at once!
 You may remove the two buffer layers and only keep the one that shows where
 they overlap, since that's what we really wanted to know in the first place.
 
+.. _select-by-location:
+
 |basic| |FA| Select the Farms
 -------------------------------------------------------------------------------
 

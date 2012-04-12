@@ -475,3 +475,28 @@ continue as per the instructions.
 
 :ref:`Back to text <backlink-complete-analysis-1>`
 
+
+.. _complete-analysis-2:
+
+|moderate| *Inspecting the Results*
+...............................................................................
+
+In this map, farms that are definitely not suitable are orange; farms that may
+still be suitable are blue:
+
+.. image:: ../_static/complete_analysis/002.png
+
+The orange farms have almost no suitable terrain within them, and so can't be
+used for the intended purpose.
+
+:ref:`Back to text <backlink-complete-analysis-2>`
+
+
+.. _complete-analysis-3:
+
+|moderate| *Refining the Analysis*
+...............................................................................
+
+[Screenshots to follow.]
+
+:ref:`Back to text <backlink-complete-analysis-3>`

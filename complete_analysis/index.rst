@@ -13,3 +13,4 @@ Contents:
    :numbered:
 
    raster_to_vector
+   analysis_combination
