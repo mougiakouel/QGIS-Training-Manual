@@ -14,3 +14,4 @@ Contents:
 
    raster_to_vector
    analysis_combination
+   assignment

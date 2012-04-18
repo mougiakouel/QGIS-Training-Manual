@@ -500,3 +500,54 @@ used for the intended purpose.
 [Screenshots to follow.]
 
 :ref:`Back to text <backlink-complete-analysis-3>`
+
+
+.. _wms-1:
+
+|basic| *Adding Another WMS Layer*
+...............................................................................
+
+Your map should look like this:
+
+.. image:: ../_static/online_resources/012.png
+
+:ref:`Back to text <backlink-wms-1>`
+
+
+.. _wms-2:
+
+|moderate| *Adding a New WMS Server*
+...............................................................................
+
+Use the same approach as before to add the new server and the appropriate
+layer as hosted on that server:
+
+.. image:: ../_static/online_resources/013.png
+
+.. image:: ../_static/online_resources/014.png
+
+If you zoom into the Swellendam area, you'll notice that this dataset has a low
+resolution:
+
+.. image:: ../_static/online_resources/015.png
+
+Therefore, it's better not to use this data for the current map. The Blue
+Marble data is more suitable at global or national scales.
+
+:ref:`Back to text <backlink-wms-2>`
+
+
+.. _wms-3:
+
+|moderate| *Finding a WMS Server*
+...............................................................................
+
+You may notice that many WMS servers are not always available. Sometimes this
+is temporary, sometimes it is permanent. An example of a WMS server that worked
+at the time of writing is the :guilabel:`World Mineral Deposits` WMS at
+:kbd:`http://apps1.gdr.nrcan.gc.ca/cgi-bin/worldmin_en-ca_ows`. It does not
+require fees or have access constraints, and it is global. Therefore, it does
+satisfy the requirements. Keep in mind, however, that this is merely an
+example. There are many other WMS servers to choose from.
+
+:ref:`Back to text <backlink-wms-3>`
