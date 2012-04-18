@@ -103,7 +103,7 @@ again...
 Now enable the tool you'll need by enabling :menuselection:`View --> Toolbars
 --> Raster`. These icons will appear in the interface:
 
-.. image:: ../_static/rasters/019.png
+.. image:: ../_static/rasters/018.png
 
 The button on the right will stretch the minimum and maximum values to give you
 the best contrast in the loacl area that you're zoomed into. It's useful for
