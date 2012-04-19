@@ -71,11 +71,18 @@ that they contain, unless you allow these plugins to be displayed. Open the
 Select the option :guilabel:`Show all plugins except those marked as
 experimental`.
 
-If you now switch back to the :guilabel:`Plugins` tab, you will see that many more plugins are now available for installation.
+If you now switch back to the :guilabel:`Plugins` tab, you will see that many
+more plugins are now available for installation.
 
-construction in progress
+To install a plugin, simply click on it in the list and then click the
+:guilabel:`Install plugin` button.
 
-|basic| |FA| Using the :guilabel:`` Plugin
+|IC|
 -------------------------------------------------------------------------------
 
+Installing plugins in QGIS is simple and effective!
 
+|WN|
+-------------------------------------------------------------------------------
+
+Next we'll introduce you to some useful plugins as examples.

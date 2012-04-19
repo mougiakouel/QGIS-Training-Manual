@@ -12,3 +12,4 @@ Contents:
    :numbered:
 
    fetching_plugins
+   plugin_examples
