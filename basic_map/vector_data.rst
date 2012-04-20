@@ -13,8 +13,8 @@ how to load vector datasets into a map.
 -------------------------------------------------------------------------------
 
 It's important to know that the data you will be working with does not only
-represent where objects are in space, but also tells you what those objects
-are.
+represent **where** objects are in space, but also tells you **what** those
+objects are.
 
 From the previous exercise, you should have the :guilabel:`streets` layer
 loaded in your map. What you can see right now is merely the position of the
@@ -43,7 +43,7 @@ city blocks.
 
 The Shapefile is a specific file format that allows you to store GIS data in an
 associated group of files. Each layer consists of several files with the same
-name, but different file types. Shapefiles are basic to send back and forth, and
+name, but different file types. Shapefiles are easy to send back and forth, and
 most GIS software can read them.
 
 Refer back to the introductory exercise in the previous section for
@@ -132,8 +132,7 @@ Reorder them to look like this:
 In conclusion
 -------------------------------------------------------------------------------
 
-Now you've added all the layers you need, from all the different sources where
-they were.
+Now you've added all the layers you need from several different sources.
 
 Further Reading
 -------------------------------------------------------------------------------

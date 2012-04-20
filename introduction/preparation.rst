@@ -18,8 +18,7 @@ configured its installation.
    available, and the instructions will work on any OS. You will need QGIS 1.8
    (the latest version at time of writing) to use this course.
 
-Let's get started right away! To begin, you will prepare the basis of the map
-that will be the basis for examples and further exercises for this course.
+Let's get started right away!
 
 .. _backlink-interface-preparation-1:
 

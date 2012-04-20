@@ -47,14 +47,14 @@ things slightly differently from other software you may be used to. You will
 also learn how to use analysis functions in QGIS.
 
 When you complete the course, you should be comfortable with using QGIS for all
-the functions you usually need from a GIS for everyday use.
+of the functions you usually need from a GIS for everyday use.
 
 |hard| Advanced
 ...............................................................................
 
-In this category, the assumption is that you are experienced with GIS, with
-knowledge and experience of spatial databases, using data on a remote server,
-perhaps writing scripts for analysis purposes, etc.
+In this category, the assumption is that you are experienced with GIS, have
+knowledge of and experience with spatial databases, using data on a remote
+server, perhaps writing scripts for analysis purposes, etc.
 
 Following the instructions for the other two levels will familiarize you with
 the approach that the QGIS interface follows, and will ensure that you know how

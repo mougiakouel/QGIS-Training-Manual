@@ -4,8 +4,8 @@
 
 Classifying vector data allows you to assign different symbols to features
 (different objects in the same layer), depending on their attributes. This
-allows someone who uses the map to see the attributes of various features on
-your map easily.
+allows someone who uses the map to easily see the attributes of various
+features.
 
 Contents:
 

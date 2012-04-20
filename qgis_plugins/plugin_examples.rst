@@ -7,6 +7,51 @@ you in practice by looking at some examples of useful plugins.
 **The goal for this lesson:** To familiarize yourself with the plugin interface
 and get acquainted with some useful plugins.
 
+|basic| |FA| The Raster Terrain Analysis Plugin
+-------------------------------------------------------------------------------
+
+Start a new map with only the :guilabel:`srtm_41_19.tif` raster dataset in it
+(look in :kbd:`exercise_data/raster/SRTM`).
+
+From the lesson on raster analysis, you're already familiar with raster
+analysis functions. You used GDAL tools (accessible via :guilabel:`Raster -->
+Analysis`) for this. However, you should also know about the Raster Terrain
+Analysis plugin. This ships standard with newer versions of QGIS, and so you
+don't need to install it separately.
+
+Open the :guilabel:`Plugin Manager` and check that the Raster Terrain Analysis
+plugin is enabled:
+
+.. image:: ../_static/qgis_plugins/026.png
+
+Open the :menuselection:`Raster` menu. You should see a :menuselection:`Terrain
+analysis` submenu. Click on :menuselection:`Terrain analysis --> Relief` to
+open this dialog:
+
+.. image:: ../_static/qgis_plugins/027.png
+
+Save the new file under :kbd:`exercise_data/plugins/relief.tif` (create a new
+folder if necessary). Leave the :guilabel:`Output format` and :guilabel:`Z
+factor` unchanged.
+
+Check the box :guilabel:`Add result to project`, then click the
+:guilabel:`Create automatically` button. The list below will be populated:
+
+.. image:: ../_static/qgis_plugins/028.png
+
+These are the colors that the plugin will use to create the relief. If you
+like, you can change these now. For example:
+
+.. image:: ../_static/qgis_plugins/029.png
+
+Click :guilabel:`OK` and the relief will be created:
+
+.. image:: ../_static/qgis_plugins/030.png
+
+This achieves a similar effect to when you used the semi-transparent hillshade
+as an overlay over another raster layer. The advantage of this plugin is that
+is creates this effect using only one layer.
+
 |basic| |FA| The Google Layers Plugin
 -------------------------------------------------------------------------------
 

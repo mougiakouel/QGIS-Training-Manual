@@ -219,7 +219,7 @@ this example:
 
 Click :guilabel:`OK`, then :guilabel:`OK` again.
 
-If all goes well, the map will now look like this:
+The map will now look like this:
 
 .. image:: ../_static/symbology/017.png
 
@@ -413,7 +413,7 @@ Now change the settings as shown:
 
 .. image:: ../_static/symbology/047.png
 
-Your rural layer should now have a texture like on this map:
+Your rural layer should now have a texture like the one on this map:
 
 .. image:: ../_static/symbology/048.png
 
