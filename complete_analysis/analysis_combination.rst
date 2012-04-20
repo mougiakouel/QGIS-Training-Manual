@@ -53,20 +53,12 @@ deem to be unsuitable?
 -------------------------------------------------------------------------------
 
 Now that you can see from the results that some farms were included that were
-not really suitable, it becomes possible to refine the analysis. Save your
-current map, then open the :guilabel:`raster_analysis.qgs` map again. Recall
-that the :guilabel:`all_conditions_simple` layer was used to arrive at the new
-solution, so to refine the analysis, we should decrease the area that is
-considered suitable. This will prevent the farms that were just touching
-suitable areas from being included.
+not really suitable, it becomes possible to refine the analysis.
 
-Use the :guilabel:`Raster --> Analysis --> Proximity (Raster distance)` tool on
-the :guilabel:`all_conditions_simple` layer to filter out all the suitable
-pixels that are one pixel away from unsuitable pixels, then repeat the rest of
-the analysis from that point on.
-
-How do your results differ this time?
+We can see that there are some farms which do have suitable areas in them, but
+these areas are too small to be useful. The decision is made that for a farm to
+be considered, it must have suitable areas on it that are continuous for 350
+meters or more. How would you ensure that the farms meet this requirement? Use
+(a) **vector** analysis tool(s) for this.
 
 :ref:`Check your results <complete-analysis-3>`
-
-

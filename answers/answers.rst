@@ -497,7 +497,56 @@ used for the intended purpose.
 |moderate| *Refining the Analysis*
 ...............................................................................
 
-[Screenshots to follow.]
+At the moment, your analysis should look like this (ignore the symbology):
+
+.. image:: ../_static/complete_analysis/006.png
+
+Consider a circular area, continuous for 350 meters in all directions.
+
+.. image:: ../_static/complete_analysis/007.png
+
+If it is greater than 350 meters in radius, then subtracting 350 meters from
+its size (from all directions) will result in a part of it being left in the
+middle.
+
+.. image:: ../_static/complete_analysis/008.png
+
+Therefore, you can run an *interior buffer* of 350 meters on your existing
+:guilabel:`suitable_terrain` vector layer. In the output of the buffer
+function, whatever remains of the original layer will represent areas where
+there is suitable terrain for 350 meters beyond.
+
+To demonstrate: if you go to :menuselection:`Vector --> Geoprocessing Tools -->
+Buffer(s)`, you get the Buffer(s) dialog. Set it up like this:
+
+.. image:: ../_static/complete_analysis/009.png
+
+Use the :guilabel:`suitable_terrain` layer with :kbd:`10` segments and a buffer
+distance of :kbd:`-350`. (The distance is automatically in meters because your
+map is using a projected CRS.) Save the output in
+:kbd:`exercise_data/residential_development/` as
+:kbd:`suitable_terrain_continuous350m.shp`.
+
+Your results will look like this:
+
+.. image:: ../_static/complete_analysis/010.png
+
+Now use the "Select by Location" tool (:menuselection:`Vector --> Research
+Tools --> Select by location`), set up like this:
+
+.. image:: ../_static/complete_analysis/011.png
+
+Select features in :guilabel:`new_solution` that intersect features in
+:guilabel:`suitable_terrain_continuous350m.shp`. This is the result:
+
+.. image:: ../_static/complete_analysis/012.png
+
+The yellow farms are selected. Save the selection under
+:kbd:`exercise_data/residential_development/` as :kbd:`final_answer.shp`. The
+farms that meet the revised criteria are here:
+
+.. image:: ../_static/complete_analysis/013.png
+
 
 :ref:`Back to text <backlink-complete-analysis-3>`
 
