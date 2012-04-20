@@ -13,6 +13,17 @@ the functions you expect from a GIS program, and more!
    the techniques described here on your own data, always ensure you have
    proper backups!
 
+How to use this tutorial
+-------------------------------------------------------------------------------
+
+Any text :guilabel:`that looks like this` refers to something on the screen
+that you can click on.
+
+Text that :menuselection:`looks --> like --> this` directs you through menus.
+
+:kbd:`This kind of text` refers to something you can type, such as a command,
+path, or file name.
+
 Tiered course objectives
 -------------------------------------------------------------------------------
 
