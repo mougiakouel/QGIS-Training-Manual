@@ -1,4 +1,111 @@
 |LS| GRASS Setup
 ===============================================================================
 
-Huzzah.
+Using GRASS in QGIS requires you to think of the interface in a slightly
+different way. Remember that you're not working in QGIS directly, but working
+in GRASS *via* QGIS.
+
+**The goal for this lesson:** To begin a GRASS project in QGIS.
+
+|basic| |FA| Start a New GRASS Project
+-------------------------------------------------------------------------------
+
+To launch GRASS from within QGIS, you need to activate it as with any other
+plugin. In the :guilabel:`Plugin Manager`, enable :guilabel:`GRASS` in the
+list:
+
+.. image:: ../_static/grass/001.png
+
+The GRASS toolbar will appear:
+
+.. image:: ../_static/grass/002.png
+
+Before you can use GRASS, you need to create a **mapset**. GRASS always works
+in a database environment, which means that you need to import all the
+data you want to use into a GRASS database.
+
+To start, click on the :guilabel:`New mapset` button:
+
+.. image:: ../_static/grass/004.png
+
+You'll see a dialog like the one below, explaining the structure of a GRASS
+mapset.
+
+.. image:: ../_static/grass/003.png
+
+Create a new directory called :kbd:`grass_db` in :guilabel:`exercise_data` and
+set it as the directory that will be used by GRASS to set up its database:
+
+.. image:: ../_static/grass/005.png
+
+GRASS needs to create a "location", which describes the maximum extents of the
+geographic area you'll be working in. Call it :kbd:`South_Africa`:
+
+.. image:: ../_static/grass/006.png
+
+We're working with :kbd:`UTM 33S / WGS 84`, so search for and select this CRS:
+
+.. image:: ../_static/grass/007.png
+
+Now select the region :guilabel:`South Africa`, which is already defined in
+GRASS:
+
+.. image:: ../_static/grass/008.png
+
+Create a mapset, which is the map file that you'll be working with.
+
+.. image:: ../_static/grass/009.png
+
+Once you're done, you'll see a dialog asking you to confirm that the settings
+it displays are correct:
+
+.. image:: ../_static/grass/010.png
+
+Click :guilabel:`Finish`, then click :guilabel:`OK` on the success dialog:
+
+.. image:: ../_static/grass/011.png
+
+|basic| |FA| Loading Vector Data into GRASS
+-------------------------------------------------------------------------------
+
+You'll now have a blank map. To load data into GRASS, you need to follow a
+two-step process. First, load data into QGIS as usual. Use the :kbd:`streets`
+dataset for now. As soon as it's loaded, click on the :guilabel:`GRASS Tools`
+button:
+
+.. image:: ../_static/grass/013.png
+
+You'll be presented with this dialog:
+
+.. image:: ../_static/grass/012.png
+
+Find the vector import tool by entering the term :kbd:`v.in.ogr.qgis` in the
+:guilabel:`Filter` field. The :kbd:`v` stands for "vector", :kbd:`in` means its
+a function to import data into the GRASS database, :kbd:`ogr` is the software
+library used to read vector data, and :kbd:`qgis` means that the tool will look
+for a vector from among the vectors already loaded into QGIS.
+
+Once you've found this tool, clicking on it will bring up the tool itself:
+
+.. image:: ../_static/grass/014.png
+
+Set the loaded layer to :guilabel:`streets` and its GRASS version's name to
+:kbd:`g_streets` to prevent confusion.
+
+.. note:: |hard| Note the extra import options provided under
+   :guilabel:`Advanced Options`. These include the ability to write the WHERE
+   clause for the SQL query used for the import into the GDAL database.
+
+Click :guilabel:`Run` to begin the import. When it's done, click the
+:guilabel:`View output` button to see the newly imported GRASS layer in the
+map. Close first the import tool itself (click the :guilabel:`Close` button to
+the immediate right of :guilabel:`View output`), then close the :guilabel:`GDAL
+Tools` window. Remove the original :guilabel:`streets` layer.
+
+Now you are left with only the imported GRASS layer as displayed in your QGIS
+map.
+
+|basic| |FA|
+-------------------------------------------------------------------------------
+
+NOTE: problem with raster import - shows up in completely different area from vector - projection?
