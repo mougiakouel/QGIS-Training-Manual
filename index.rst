@@ -26,6 +26,8 @@ Contents:
    online_resources/index
    grass/index
    assessment/index
+   postgres/index
+   postgis/index
 
    answers/answers
 
