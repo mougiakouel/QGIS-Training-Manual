@@ -51,5 +51,19 @@ separately. To export a table from PostGIS to GML, you can use this command:
 
 spit
 -------------------------------------------------------------------------------
+
 SPIT is a QGIS plugin which is delivered with QGIS. You can use SPIT for
 uploading ESRI shapefiles to postgis.
+
+|IC|
+-------------------------------------------------------------------------------
+
+Importing and exporting data to and from the database can be done in many
+various ways. Especially when using disparate data sources, you will probably
+use these functions (or others like them) on a regular basis.
+
+|WN|
+-------------------------------------------------------------------------------
+
+Next you'll be shown some advanced functions that could not be covered
+elsewhere.

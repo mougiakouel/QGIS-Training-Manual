@@ -113,3 +113,15 @@ Result:
   |
 
 :ref:`Check your results <spatial-queries-2>`
+
+|IC|
+-------------------------------------------------------------------------------
+
+You have seen how to query spatial objects using the new database functions
+from PostGIS.
+
+|WN|
+-------------------------------------------------------------------------------
+
+Next we're going to investigate the structures of more complex geometries and
+how to create them using PostGIS.

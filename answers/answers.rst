@@ -755,7 +755,7 @@ check the entries in your cities table and use any :kbd:`id` which exists.
 
   select people.name, 
          streets.name as street_name, 
-         astext(people.the_geom) as geometry
+         st_astext(people.the_geom) as geometry
   from   streets, people 
   where  people.street_id=streets.id;
 

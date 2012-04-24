@@ -113,6 +113,17 @@ table:
 Why? :kbd:`geometry_columns` is used by certain applications to be aware of
 which tables in the database contain geometry data.
 
+.. note:: If the above :kbd:`INSERT` statement causes a complaint, run this
+   query first:
+
+   ::
+
+     select * from geometry_columns;
+
+   If the column :kbd:`f_table_name` contains the value :kbd:`people`, then
+   this table has already been registered and you don't need to do anything
+   more.
+
 The value :kbd:`2` refers to the number of dimensions; in this case, two: **x**
 and **y**.
 
@@ -231,3 +242,14 @@ and add layers to your project as usual.
   |
 
 :ref:`Check your results <simple-feature-3>`
+
+|IC|
+-------------------------------------------------------------------------------
+
+You have seen how to add spatial objects to your database and view them in GIS
+software.
+
+|WN|
+-------------------------------------------------------------------------------
+
+Next we'll look at how to query the data we've just created.

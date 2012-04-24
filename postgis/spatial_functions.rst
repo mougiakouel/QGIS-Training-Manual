@@ -236,3 +236,14 @@ One last example before we really get into the detail of using PostGIS:
 
 What did that do? It created a buffer of 1 degree around our point, and
 returned it as text. Nifty hey?
+
+|IC|
+-------------------------------------------------------------------------------
+
+You now have PostGIS functions installed in your copy of PostgreSQL. With this
+you'll be able to make use of PostGIS' extensive spatial functions.
+
+|WN|
+-------------------------------------------------------------------------------
+
+Next you'll learn how spatial features are represented in a database.

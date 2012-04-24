@@ -289,3 +289,18 @@ use the PostgreSQL keyword :kbd:`EXCEPT`.
 
 As the result, you will get all records from table_a which are not stored in
 table_b.
+
+|IC|
+-------------------------------------------------------------------------------
+
+You've learned how to create more complex geometries using PostGIS statements.
+Keep in mind that this is mostly to improve your tacit knowledge when working
+with geo-enabled databases through a GIS frontend. You usually won't need to
+actually enter these statements manually, but having a general idea of their
+structure will help you when using a GIS, especially if you encounter errors
+that would otherwise seem cryptic.
+
+|WN|
+-------------------------------------------------------------------------------
+
+Next you'll see how to import data into, and export data from, your database.
