@@ -600,3 +600,33 @@ satisfy the requirements. Keep in mind, however, that this is merely an
 example. There are many other WMS servers to choose from.
 
 :ref:`Back to text <backlink-wms-3>`
+
+
+.. _spatial-queries-1:
+
+|basic| *The Units Used in Spatial Queries*
+...............................................................................
+
+The units being used by the example query are degrees, because the CRS that the
+layer is using is WGS 84. This is a Geographic CRS, which means that its units
+are in degrees. A Projected CRS, like the UTM projections, is in meters.
+
+Remember that when you write a query, you need to know which units the layer's
+CRS is in. This will allow you to write a query that will return the results
+that you expect.
+
+:ref:`Back to text <backlink-spatial-queries-1>`
+
+
+.. _spatial-queries-2:
+
+|basic| *Creating a Spatial Index*
+...............................................................................
+
+::
+
+  CREATE INDEX cities_geo_idx  
+    ON cities
+    USING gist (the_geom);
+
+:ref:`Back to text <backlink-spatial-queries-2>`
