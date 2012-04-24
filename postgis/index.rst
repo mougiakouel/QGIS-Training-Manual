@@ -24,3 +24,6 @@ Contents:
    spatial_functions
    simple_feature_model
    spatial_queries
+   geometry
+   import_export
+   advanced

@@ -61,9 +61,10 @@ Result:
 
   address=# \d people
   Table "public.people"
-     Column   |         Type          |                      Modifiers                      
-   -----------+-----------------------+-----------------------------------------------------
-    id        | integer               | not null default nextval('people_id_seq'::regclass)
+     Column   |         Type          |                Modifiers                      
+   -----------+-----------------------+----------------------------------------
+    id        | integer               | not null default
+              |                       | nextval('people_id_seq'::regclass)
     name      | character varying(50) | 
     house_no  | integer               | not null
     street_id | integer               | not null
@@ -74,7 +75,8 @@ Result:
     "people_geo_idx" gist (the_geom)  <-- new spatial key added
     "people_name_idx" btree (name)
   Check constraints:
-    "people_geom_point_chk" CHECK (st_geometrytype(the_geom) = 'ST_Point'::text OR the_geom IS NULL)
+    "people_geom_point_chk" CHECK (st_geometrytype(the_geom) = 'ST_Point'::text
+    OR the_geom IS NULL)
   Foreign-key constraints:
     "people_street_id_fkey" FOREIGN KEY (street_id) REFERENCES streets(id)
 

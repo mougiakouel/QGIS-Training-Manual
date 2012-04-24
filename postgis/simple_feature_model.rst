@@ -41,6 +41,9 @@ Let's add a point field to our people table:
 
   alter table people add column the_geom geometry;
 
+
+.. _backlink-simple-feature-1:
+
 Add a constraint based on geometry type
 -------------------------------------------------------------------------------
 
@@ -91,16 +94,10 @@ Now you try:
   |
   |
 
-Solution:
+:ref:`Check your results <simple-feature-1>`
 
-::
 
-  create table cities (id serial not null primary key, 
-                       name varchar(50), 
-                       the_geom geometry not null);
-   alter table cities 
-   add constraint cities_geom_point_chk 
-   check (st_geometrytype(the_geom) = 'ST_Polygon'::text );
+.. _backlink-simple-feature-2:
 
 Populate geometry_columns table
 -------------------------------------------------------------------------------
@@ -144,12 +141,10 @@ about the EPSG).
   |
   |
 
-Solution:
+:ref:`Check your results <simple-feature-2>`
 
-::
 
-  insert into geometry_columns values 
-        ('','public','cities','the_geom',2,4326,'POLYGON');
+.. _backlink-simple-feature-3:
 
 Add geometry record to table using SQL
 -------------------------------------------------------------------------------
@@ -235,30 +230,4 @@ and add layers to your project as usual.
   |
   |
 
-View a point as WKT
--------------------------------------------------------------------------------
-
-Let's take a look at the solution to the above query:
-
-::
-
-  select people.name, 
-         streets.name as street_name, 
-         astext(people.the_geom) as geometry
-  from   streets, people 
-  where  people.street_id=streets.id;
-
-Result:
-
-::
-
-         name       |   street_name   |    geometry
-  ------------------+-----------------+---------------
-   Rusty Bedsprings | High street     | 
-   QGIS Geek        | High street     | 
-   Joe Bloggs       | New Main Street | 
-   IP Knightly      | QGIS Road       | 
-   Fault Towers     | QGIS Road       | POINT(33 -33)
-  (5 rows)
-
-As you can see, our constraint allows nulls to be added into the database.
+:ref:`Check your results <simple-feature-3>`
