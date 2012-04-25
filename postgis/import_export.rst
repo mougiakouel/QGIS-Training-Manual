@@ -24,6 +24,19 @@ Under Windows, you have to perform the import process in two steps:
   shp2pgsql -s <SRID> -c -D -I <path to shapefile> <schema>.<table> > import.sql
   psql psql -d <databasename> -h <hostname> -U <username> -f import.sql
 
+You may encounter this error:
+
+::
+
+  ERROR:  operator class "gist_geometry_ops" does not exist for access method
+  "gist"
+
+This is a known issue regarding the creation *in situ* of a spatial index for
+the data you're importing. To avoid the error, exclude the :kbd:`-I` parameter.
+This will mean that no spatial index is being created directly, and you'll need
+to create it in the database after the data have been imported. (The creation
+of a spatial index will be covered in the next lesson.)
+
 pgsql2shp
 -------------------------------------------------------------------------------
 
@@ -49,11 +62,23 @@ separately. To export a table from PostGIS to GML, you can use this command:
   ogr2ogr -f GML export.gml PG:'dbname=<databasename> user=<username>
           host=<hostname>' <Name of PostGIS-Table>
 
-spit
+SPIT
 -------------------------------------------------------------------------------
 
 SPIT is a QGIS plugin which is delivered with QGIS. You can use SPIT for
-uploading ESRI shapefiles to postgis.
+uploading ESRI shapefiles to PostGIS.
+
+Once you've added the SPIT plugin via the :guilabel:`Plugin Manager`, look for
+this button:
+
+.. image:: ../_static/postgis/008.png
+
+Clicking on it will give you the SPIT dialog:
+
+.. image:: ../_static/postgis/009.png
+
+You can add shapefiles to the database by clicking the :guilabel:`Add` button,
+which will give you a file browser window.
 
 |IC|
 -------------------------------------------------------------------------------
@@ -65,5 +90,4 @@ use these functions (or others like them) on a regular basis.
 |WN|
 -------------------------------------------------------------------------------
 
-Next you'll be shown some advanced functions that could not be covered
-elsewhere.
+Next we'll look at how to query the data we've created before.

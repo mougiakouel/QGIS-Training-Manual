@@ -303,4 +303,5 @@ that would otherwise seem cryptic.
 |WN|
 -------------------------------------------------------------------------------
 
-Next you'll see how to import data into, and export data from, your database.
+Next you'll be shown some advanced functions that could not be covered
+elsewhere.

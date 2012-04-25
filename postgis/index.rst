@@ -23,7 +23,7 @@ Contents:
 
    spatial_functions
    simple_feature_model
+   import_export
    spatial_queries
    geometry
-   import_export
    advanced

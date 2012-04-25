@@ -1,4 +1,4 @@
-PostGIS Setup
+|LS| PostGIS Setup
 ===============================================================================
 
 Setting up PostGIS functions will allow you to access spatial functions from

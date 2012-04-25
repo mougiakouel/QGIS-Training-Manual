@@ -114,6 +114,41 @@ Result:
 
 :ref:`Check your results <spatial-queries-2>`
 
+
+PostGIS Spatial Functions Demo
+-------------------------------------------------------------------------------
+
+In order to demo PostGIS spatial functions, we'll create a new database
+containing some fictional data.
+
+To start, create a new database:
+
+::
+  
+  createdb postgis_demo
+
+Remember to install PLPGSQL:
+
+::
+
+  createlang plpgsql postgis_demo
+
+Then install the PostGIS functions and the spatial reference system. For
+example, on Linux:
+
+::
+
+  psql postgis_demo < /usr/share/postgresql/9.1/contrib/postgis-1.5/postgis.sql
+  psql postgis_demo < /usr/share/postgresql/9.1/contrib/postgis-1.5/spatial_ref_sys.sql
+
+Next, import the data provided in the :kbd:`exercise_data/postgis/` directory.
+
+Import using the command line
+...............................................................................
+
+You can import the data the same way you did in the previous lesson using the
+command line.
+
 |IC|
 -------------------------------------------------------------------------------
 

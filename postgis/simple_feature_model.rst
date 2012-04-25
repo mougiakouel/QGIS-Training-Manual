@@ -252,4 +252,4 @@ software.
 |WN|
 -------------------------------------------------------------------------------
 
-Next we'll look at how to query the data we've just created.
+Next you'll see how to import data into, and export data from, your database.
