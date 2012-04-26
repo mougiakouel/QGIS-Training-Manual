@@ -43,7 +43,7 @@ geographic area you'll be working in. Call it :kbd:`South_Africa`:
 
 .. image:: ../_static/grass/006.png
 
-We're working with :kbd:`UTM 33S / WGS 84`, so search for and select this CRS:
+We'll be working with :kbd:`WGS 84`, so search for and select this CRS:
 
 .. image:: ../_static/grass/007.png
 
@@ -70,8 +70,8 @@ Click :guilabel:`Finish`, then click :guilabel:`OK` on the success dialog:
 
 You'll now have a blank map. To load data into GRASS, you need to follow a
 two-step process. First, load data into QGIS as usual. Use the
-:kbd:`roads_33S.shp` dataset (found under :kbd:`exercise_data/projected_data/`)
-for now. As soon as it's loaded, click on the :guilabel:`GRASS Tools` button:
+:kbd:`streets.shp` dataset (found under :kbd:`exercise_data/`) for now. As soon
+as it's loaded, click on the :guilabel:`GRASS Tools` button:
 
 .. image:: ../_static/grass/013.png
 
@@ -89,8 +89,8 @@ Once you've found this tool, clicking on it will bring up the tool itself:
 
 .. image:: ../_static/grass/014.png
 
-Set the loaded layer to :guilabel:`roads_33S` and its GRASS version's name to
-:kbd:`g_roads` to prevent confusion.
+Set the loaded layer to :guilabel:`streets` and its GRASS version's name to
+:kbd:`g_streets` to prevent confusion.
 
 .. image:: ../_static/grass/015.png
 
@@ -110,6 +110,22 @@ map.
 |basic| |FA| Loading Raster Data into GRASS
 -------------------------------------------------------------------------------
 
+Recall that our DEM is in the Projected CRS :kbd:`UTM 33S / WGS 84`, but our
+GRASS project is in the Geographic CRS :kbd:`WGS 84`. So let's reproject the
+DEM first. To start, load the :kbd:`srtm_41_19.tif` dataset (found under
+:kbd:`exercise_data/raster/SRTM/`) into the QGIS map as usual, using QGIS'
+:guilabel:`Add Raster Layer` tool. Then reproject it using GDAL Warp tool
+(:menuselection:`Raster --> Projections --> Warp (Reproject)`), setting it up
+as shown:
+
+.. image:: ../_static/grass/017.png
+
+Save the raster under the same folder as the original, but with the file name
+:kbd:`DEM_WGS84.tif`. Once it appears in your map, remove the
+:kbd:`srtm_41_19.tif` dataset from your :guilabel:`Layers list`.
+
+Now that it's reprojected, you can load it into your GRASS database.
+
 Open the :guilabel:`GRASS Tools` dialog again and click on the
 :guilabel:`Modules List` tab.
 
@@ -119,14 +135,16 @@ Search for :kbd:`r.in.gdal.qgis`:
 
 Which gives you this tool:
 
-.. image:: ../_static/grass/017.png
+.. image:: ../_static/grass/018.png
 
-Set it up as shown (inut layer is :guilabel:`srtm_41_19.tif`, output is
+Set it up as shown (input layer is :guilabel:`DEM_WGS84`, output is
 :kbd:`g_dem`), then click :guilabel:`Run`. When the process is done, click
 :guilabel:`View output`, then :guilabel:`Close` the current tab, and then
 :guilabel:`Close` the whole dialog.
 
-You may now remove the original :guilabel:`srtm_41_19` layer.
+.. image:: ../_static/grass/019.png
+
+You may now remove the original :guilabel:`DEM_WGS84` layer.
 
 |IC|
 -------------------------------------------------------------------------------

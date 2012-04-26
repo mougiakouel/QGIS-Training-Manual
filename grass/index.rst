@@ -14,3 +14,4 @@ Contents:
    :numbered:
    
    grass_setup
+   grass_tools
