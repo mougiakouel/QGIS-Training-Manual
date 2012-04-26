@@ -69,9 +69,9 @@ Click :guilabel:`Finish`, then click :guilabel:`OK` on the success dialog:
 -------------------------------------------------------------------------------
 
 You'll now have a blank map. To load data into GRASS, you need to follow a
-two-step process. First, load data into QGIS as usual. Use the :kbd:`streets`
-dataset for now. As soon as it's loaded, click on the :guilabel:`GRASS Tools`
-button:
+two-step process. First, load data into QGIS as usual. Use the
+:kbd:`roads_33S.shp` dataset (found under :kbd:`exercise_data/projected_data/`)
+for now. As soon as it's loaded, click on the :guilabel:`GRASS Tools` button:
 
 .. image:: ../_static/grass/013.png
 
@@ -89,23 +89,55 @@ Once you've found this tool, clicking on it will bring up the tool itself:
 
 .. image:: ../_static/grass/014.png
 
-Set the loaded layer to :guilabel:`streets` and its GRASS version's name to
-:kbd:`g_streets` to prevent confusion.
+Set the loaded layer to :guilabel:`roads_33S` and its GRASS version's name to
+:kbd:`g_roads` to prevent confusion.
+
+.. image:: ../_static/grass/015.png
 
 .. note:: |hard| Note the extra import options provided under
-   :guilabel:`Advanced Options`. These include the ability to write the WHERE
-   clause for the SQL query used for the import into the GDAL database.
+   :guilabel:`Advanced Options`. These include the ability to add a WHERE
+   clause for the SQL query used for importing the data.
 
 Click :guilabel:`Run` to begin the import. When it's done, click the
 :guilabel:`View output` button to see the newly imported GRASS layer in the
 map. Close first the import tool itself (click the :guilabel:`Close` button to
 the immediate right of :guilabel:`View output`), then close the :guilabel:`GDAL
-Tools` window. Remove the original :guilabel:`streets` layer.
+Tools` window. Remove the original :guilabel:`roads_33S` layer.
 
 Now you are left with only the imported GRASS layer as displayed in your QGIS
 map.
 
-|basic| |FA|
+|basic| |FA| Loading Raster Data into GRASS
 -------------------------------------------------------------------------------
 
-NOTE: problem with raster import - shows up in completely different area from vector - projection?
+Open the :guilabel:`GRASS Tools` dialog again and click on the
+:guilabel:`Modules List` tab.
+
+Search for :kbd:`r.in.gdal.qgis`:
+
+.. image:: ../_static/grass/016.png
+
+Which gives you this tool:
+
+.. image:: ../_static/grass/017.png
+
+Set it up as shown (inut layer is :guilabel:`srtm_41_19.tif`, output is
+:kbd:`g_dem`), then click :guilabel:`Run`. When the process is done, click
+:guilabel:`View output`, then :guilabel:`Close` the current tab, and then
+:guilabel:`Close` the whole dialog.
+
+You may now remove the original :guilabel:`srtm_41_19` layer.
+
+|IC|
+-------------------------------------------------------------------------------
+
+The GRASS workflow for ingesting data is somewhat different from the QGIS
+method, because GRASS loads its data into a spatial database structure.
+However, by using QGIS as a frontend, you can make the setup of a GRASS mapset
+easier by using existing layers in QGIS as data sources for GRASS.
+
+|WN|
+-------------------------------------------------------------------------------
+
+Now that the data is imported into GRASS, we can look at the advanced analysis
+operations that GRASS offers.
