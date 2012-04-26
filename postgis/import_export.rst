@@ -47,6 +47,11 @@ queries. To do this under Unix:
 
   pgsql2shp -f <path to new shapefile> -g <geometry column name> \
     -h <hostname> -U <username> <databasename> <table | view>
+
+To export the data using a query:    
+
+::
+
   pgsql2shp -f <path to new shapefile> -g <geometry column name> \
     -h <hostname> -U <username> "<query>"
 

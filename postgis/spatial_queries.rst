@@ -119,7 +119,7 @@ PostGIS Spatial Functions Demo
 -------------------------------------------------------------------------------
 
 In order to demo PostGIS spatial functions, we'll create a new database
-containing some fictional data.
+containing some (fictional) data.
 
 To start, create a new database:
 
@@ -134,7 +134,7 @@ Remember to install PLPGSQL:
   createlang plpgsql postgis_demo
 
 Then install the PostGIS functions and the spatial reference system. For
-example, on Linux:
+example, on Linux with PostgreSQL 9.1 and PostGIS 1.5:
 
 ::
 
@@ -142,12 +142,106 @@ example, on Linux:
   psql postgis_demo < /usr/share/postgresql/9.1/contrib/postgis-1.5/spatial_ref_sys.sql
 
 Next, import the data provided in the :kbd:`exercise_data/postgis/` directory.
+Refer back to the previous lesson for instructions. You can import from the
+terminal or via SPIT. Import the files into the following database tables:
 
-Import using the command line
+- :kbd:`points.shp` = :kbd:`building`
+- :kbd:`lines.shp` = :kbd:`road`
+- :kbd:`polygons.shp` = :kbd:`region`
+
+Load these three database layers into QGIS via the :guilabel:`Add PostGIS
+Layers` dialog, as usual. When you open their attribute tables, you'll note
+that they have both an :kbd:`id` field and a :kbd:`gid` field created by the
+PostGIS import.
+
+Now that the tables are imported, we can use PostGIS to query the data. Go back
+to your terminal (command line) and enter the psql prompt by doing:
+
+::
+
+  psql postgis_demo
+
+.. We'll demo some of these select statements by creating views from them, so that
+   you can open them in QGIS and see the results.
+
+Select by location
 ...............................................................................
 
-You can import the data the same way you did in the previous lesson using the
-command line.
+Get all the buildings in the KwaZulu region.
+
+::
+
+  SELECT a.id, a.name, st_astext(a.the_geom) as point
+    FROM building a, region b
+      WHERE WITHIN(a.the_geom, b.the_geom)
+      AND b.name = 'KwaZulu';
+
+.. CREATE VIEW select_location AS
+    SELECT a.id, a.name, a.the_geom
+      FROM building a, region b
+        WHERE WITHIN(a.the_geom, b.the_geom)
+        AND b.name = 'KwaZulu';
+
+Result:
+
+::     
+
+   id | name |                  point                 
+  ----+------+------------------------------------------
+   30 | York | POINT(1622345.23785063 6940490.65844485)
+   33 | York | POINT(1622495.65620524 6940403.87862489)
+   35 | York | POINT(1622403.09106394 6940212.96302097)
+   36 | York | POINT(1622287.38463732 6940357.59605424)
+   40 | York | POINT(1621888.19746548 6940508.01440885)
+  (5 rows)
+
+Select neighbors
+...............................................................................
+
+Show a list of all the names of regions adjoining the Hokkaido region.
+
+::
+
+  SELECT b.name
+    FROM region a, region b
+      WHERE TOUCHES(a.the_geom, b.the_geom)
+      AND a.name = 'Hokkaido';
+
+Result:
+
+::
+
+      name     
+  --------------
+   Missouri
+   Saskatchewan
+   Wales
+  (3 rows)
+
+Select uniques
+...............................................................................
+
+Show a list of unique town names for all buildings in the Queensland region.
+
+::
+
+  SELECT DISTINCT a.name
+    FROM building a, region b
+      WHERE WITHIN (a.the_geom, b.the_geom)
+      AND b.name = 'Queensland';
+
+Result:
+
+::
+
+    name   
+  ---------
+   Beijing
+   Berlin
+   Atlanta
+  (3 rows)
+
+
 
 |IC|
 -------------------------------------------------------------------------------

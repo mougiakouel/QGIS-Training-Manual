@@ -46,6 +46,8 @@ when this was done in the previous module.)
 
 PostGIS requires the PLPGSQL procedural language to be installed. So do this:
 
+.. TODO: WINDOWS (RESTART FROM POSTGRES) > DO EVERYTHING
+
 ::
 
   createlang plpgsql address
