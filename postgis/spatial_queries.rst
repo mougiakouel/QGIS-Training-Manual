@@ -161,8 +161,8 @@ to your terminal (command line) and enter the psql prompt by doing:
 
   psql postgis_demo
 
-.. We'll demo some of these select statements by creating views from them, so that
-   you can open them in QGIS and see the results.
+We'll demo some of these select statements by creating views from them, so that
+you can open them in QGIS and see the results.
 
 Select by location
 ...............................................................................
@@ -176,12 +176,6 @@ Get all the buildings in the KwaZulu region.
       WHERE WITHIN(a.the_geom, b.the_geom)
       AND b.name = 'KwaZulu';
 
-.. CREATE VIEW select_location AS
-    SELECT a.id, a.name, a.the_geom
-      FROM building a, region b
-        WHERE WITHIN(a.the_geom, b.the_geom)
-        AND b.name = 'KwaZulu';
-
 Result:
 
 ::     
@@ -194,6 +188,20 @@ Result:
    36 | York | POINT(1622287.38463732 6940357.59605424)
    40 | York | POINT(1621888.19746548 6940508.01440885)
   (5 rows)
+
+Or, if we create a view from it:
+
+::
+
+  CREATE VIEW vw_select_location AS
+    SELECT a.gid, a.name, a.the_geom
+      FROM building a, region b
+        WHERE WITHIN(a.the_geom, b.the_geom)
+        AND b.name = 'KwaZulu';
+
+And view it in QGIS:
+
+.. image:: ../_static/postgis/010.png
 
 Select neighbors
 ...............................................................................
@@ -217,6 +225,80 @@ Result:
    Saskatchewan
    Wales
   (3 rows)
+
+As a view:
+
+::
+
+  CREATE VIEW vw_regions_adjoining_hokkaido AS
+    SELECT b.gid, b.name, b.the_geom
+      FROM region a, region b
+        WHERE TOUCHES(a.the_geom, b.the_geom)
+        AND a.name = 'Hokkaido';
+
+In QGIS:
+
+.. image:: ../_static/postgis/011.png
+
+Note the missing region (Queensland). This may be due to a topology error.
+Artifacts such as this can alert us to potential problems in the data. To solve
+this enigma without getting caught up in the anomalies the data may have, we
+could use a buffer intersect instead:
+
+::
+
+  CREATE VIEW vw_hokkaido_buffer AS
+    SELECT gid, ST_BUFFER(the_geom, 100) as the_geom
+      FROM region
+        WHERE name = 'Hokkaido';
+
+This creates a buffer of 100 meters around the region Hokkaido.
+
+The darker area is the buffer:
+
+.. image:: ../_static/postgis/012.png
+
+Select using the buffer:
+
+::
+
+  CREATE VIEW vw_hokkaido_buffer_select AS
+    SELECT b.gid, b.name, b.the_geom
+      FROM
+      (
+        SELECT * FROM
+          vw_hokkaido_buffer
+      ) a,
+      region b
+      WHERE ST_INTERSECTS(a.the_geom, b.the_geom)
+      AND b.name != 'Hokkaido';
+
+In this query, the original buffer view is used as any other table would be. It
+is given the alias :kbd:`a`, and its geometry field, :kbd:`a.the_geom`, is used
+to select any polygon in the :kbd:`region` table (alias :kbd:`b`) that
+intersects it. However, Hokkaido itself is excluded from this select statement,
+because we don't want it; we only want the regions adjoining it.
+
+In QGIS:
+
+.. image:: ../_static/postgis/013.png
+
+It is also possible to select all objects within a given distance, without the
+extra step of creating a buffer:
+
+::
+
+  CREATE VIEW vw_hokkaido_distance_select AS
+    SELECT b.gid, b.name, b.the_geom
+      FROM region a, region b
+        WHERE ST_DISTANCE (a.the_geom, b.the_geom) < 100
+        AND a.name = 'Hokkaido'
+        AND b.name != 'Hokkaido';
+
+This achieves the same result, without need for the interim buffer step:
+
+.. image:: ../_static/postgis/014.png
+
 
 Select uniques
 ...............................................................................
