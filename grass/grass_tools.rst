@@ -56,7 +56,51 @@ Experiment with the :guilabel:`height`, :guilabel:`z-exag`, and :guilabel:`View
 method` settings to change your view of the data. The navigation methods may
 take some getting used to.
 
-TODO: GRASS raster calculator
+|moderate| |FA| The Mapcalc Tool
+-------------------------------------------------------------------------------
+
+Open the :guilabel:`GRASS Tools` dialog's :guilabel:`Modules List` tab and
+search for :kbd:`calc`. From the list of modules, select :guilabel:`r.mapcalc`
+(not :guilabel:`r.mapcalculator`, which is more basic).
+
+Start the tool and you will be presented with this dialog:
+
+.. image:: ../_static/grass/026.png
+
+The Mapcalc dialog allows you to construct a sequence of analyses to be
+performed on a raster, or collection of rasters. You will use these tools to do
+so:
+
+.. image:: ../_static/grass/027.png
+
+In order, they are:
+
+- :kbd:`Add map`: Add a raster file from your current GRASS mapset.
+- :kbd:`Add constant value`: Add a constant value to be used in functions.
+- :kbd:`Add operator or function`: Add an operator or function to be connected
+  to inputs and outputs.
+- :kbd:`Add connection`: Connect elements. Using this tool, click and drag from
+  the red dot on one item to the red dot on another item. Dots that are
+  correctly connected to a connector line will turn gray. If the line or dot is
+  red, it is not properly connected!
+- :kbd:`Select item`: Select an item and move selected items.
+- :kbd:`Delete selected item`: Removes the selected item from the current
+  mapcalc sheet, but not from the mapset (if it is an existing raster).
+
+Using these tools, construct the following algorithm:
+
+.. image:: ../_static/grass/028.png
+
+When you click :guilabel:`Run`, your output should look like this:
+
+.. image:: ../_static/grass/029.png
+
+Click :guilabel:`View output` to see the output displayed in your map:
+
+.. image:: ../_static/grass/030.png
+
+This shows all the areas where the terrain is lower than 500 meters or higher
+than 1000 meters.
 
 |IC|
 -------------------------------------------------------------------------------
