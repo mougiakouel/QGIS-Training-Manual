@@ -48,13 +48,22 @@ means that it won't do anything at all if you don't set it up first. To do
 that, find and click on :menuselection:`Plugins --> Road graph --> Road graph
 settings`.
 
-A dialog will appear. Make sure it's set up like this:
+A dialog will appear. Make sure it's set up like this (use defaults unless
+otherwise specified):
 
 .. image:: ../_static/vector_analysis/040.png
    :align: center
 
+- :guilabel:`Time unit`: :guilabel:`hour`
+- :guilabel:`Distance unit`: :guilabel:`kilometer`
+- :guilabel:`Layer`: :guilabel:`roads_33S`
+- :guilabel:`Speed field`: :guilabel:`Always use default` / :guilabel:`km/h`
+
 .. image:: ../_static/vector_analysis/041.png
    :align: center
+
+- :guilabel:`Direction`: :guilabel:`Two-way direction`
+- :guilabel:`Speed`: :guilabel:`60`
 
 
 |basic| |FA| Use the Tool
