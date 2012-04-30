@@ -202,6 +202,7 @@ Or, if we create a view from it:
 And view it in QGIS:
 
 .. image:: ../_static/postgis/010.png
+   :align: center
 
 Select neighbors
 ...............................................................................
@@ -239,6 +240,7 @@ As a view:
 In QGIS:
 
 .. image:: ../_static/postgis/011.png
+   :align: center
 
 Note the missing region (Queensland). This may be due to a topology error.
 Artifacts such as this can alert us to potential problems in the data. To solve
@@ -257,6 +259,7 @@ This creates a buffer of 100 meters around the region Hokkaido.
 The darker area is the buffer:
 
 .. image:: ../_static/postgis/012.png
+   :align: center
 
 Select using the buffer:
 
@@ -282,6 +285,7 @@ because we don't want it; we only want the regions adjoining it.
 In QGIS:
 
 .. image:: ../_static/postgis/013.png
+   :align: center
 
 It is also possible to select all objects within a given distance, without the
 extra step of creating a buffer:
@@ -298,6 +302,7 @@ extra step of creating a buffer:
 This achieves the same result, without need for the interim buffer step:
 
 .. image:: ../_static/postgis/014.png
+   :align: center
 
 
 Select uniques

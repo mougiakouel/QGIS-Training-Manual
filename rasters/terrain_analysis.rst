@@ -24,6 +24,7 @@ models)` analysis tool. Go to :menuselection:`Raster --> Analysis --> DEM
 (Terrain models)`. Clicking on this menu item will bring up the tool you need:
 
 .. image:: ../_static/rasters/019.png
+   :align: center
 
 Ensure that the :guilabel:`Input file` is the :guilabel:`DEM` layer. Set the
 :guilabel:`Output file` to :kbd:`hillshade.tif` in the directory
@@ -39,6 +40,7 @@ You will now have a new layer called :guilabel:`hillshade` that looks like
 this:
 
 .. image:: ../_static/rasters/020.png
+   :align: center
 
 That looks nice and 3D, but can we improve on this? On its own, the hillshade
 looks like a plaster cast. Can't we use it together with our other, more
@@ -63,11 +65,13 @@ Now set the :guilabel:`hillshade` layer to be transparent. Open its
 the :guilabel:`Global transparency` to :kbd:`90%`:
 
 .. image:: ../_static/rasters/021.png
+   :align: center
 
 Now click :guilabel:`OK` on the :guilabel:`Layer Properties` dialog. You'll get
 a result like this:
 
 .. image:: ../_static/rasters/022.png
+   :align: center
 
 Switch the :guilabel:`hillshade` layer off and back on in the :guilabel:`Layers
 list` to see the difference it makes. Using a hillshade in this way, it's
@@ -86,6 +90,7 @@ layer more visible by setting its :guilabel:`Global transparency` to
 :guilabel:`DEM` visible, you'll get this:
 
 .. image:: ../_static/rasters/023.png
+   :align: center
 
 You can decide which of these two settings you'd prefer to use. When you are
 done, save your map.
@@ -108,6 +113,7 @@ To do this, you need to use the :guilabel:`Slope` mode of the :guilabel:`DEM
 :guilabel:`Mode`, select the option :guilabel:`Slope`:
 
 .. image:: ../_static/rasters/024.png
+   :align: center
 
 Set the save location to :kbd:`exercise_data/residential_development/slope.tif`
 and enable the :guilabel:`Load into canvas...` checkbox. Click :guilabel:`OK`
@@ -119,6 +125,7 @@ Dataset` button. Now you'll see the slope of the terrain, with black pixels
 being flat terrain and white pixels, steep terrain:
 
 .. image:: ../_static/rasters/025.png
+   :align: center
 
 .. _backlink-raster-analysis-1:
 
@@ -153,6 +160,7 @@ The answer lies with the :guilabel:`Raster calculator`. Click on
 You will see this dialog:
 
 .. image:: ../_static/rasters/028.png
+   :align: center
 
 To make use of the :guilabel:`aspect` dataset, double-click on the item
 :guilabel:`aspect@1` in the :guilabel:`Raster bands` list on the left. It will
@@ -170,10 +178,12 @@ Set the output file to :kbd:`aspect_north.tif` in the directory
 processing.
 
 .. image:: ../_static/rasters/029.png
+   :align: center
 
 Your result will be this:
 
 .. image:: ../_static/rasters/030.png
+   :align: center
 
 
 .. _backlink-raster-analysis-2:
@@ -225,6 +235,7 @@ Save the output under :kbd:`exercise_data/residential_development/` as
 calculator`. Your results:
 
 .. image:: ../_static/rasters/034.png
+   :align: center
 
 
 |moderate| |FA| Simplifying the Raster
@@ -239,6 +250,7 @@ To do this, you'll use the :guilabel:`Sieve` tool (:menuselection:`Raster -->
 Analysis --> Sieve`):
 
 .. image:: ../_static/rasters/035.png
+   :align: center
 
 [ISSUE WITH NULL VALUES]
 

@@ -15,6 +15,7 @@ To open the :guilabel:`Plugin Manager`, click on the menu item
 :guilabel:`GdalTools` plugin:
 
 .. image:: ../_static/qgis_plugins/005.png
+   :align: center
 
 Click in the box next to this plugin and uncheck it, then click :guilabel:`OK`.
 
@@ -40,6 +41,7 @@ To start the :guilabel:`Plugin Installer`, click on the menu item
 appear:
 
 .. image:: ../_static/qgis_plugins/001.png
+   :align: center
 
 The amount of plugins that you see here will differ, depending on your setup.
 
@@ -56,17 +58,20 @@ you want to check in all available repositories. To do this, open the
 :guilabel:`Repositories` tab on the :guilabel:`Plugin Installer` dialog:
 
 .. image:: ../_static/qgis_plugins/002.png
+   :align: center
 
 Click the :guilabel:`Add 3rd party repositories` button. A disclaimer will
 appear. Click :guilabel:`OK` to find and add these extra repositories:
 
 .. image:: ../_static/qgis_plugins/003.png
+   :align: center
 
 However, even with these extra repositories enabled, you won't see the plugins
 that they contain, unless you allow these plugins to be displayed. Open the
 :guilabel:`Options` tab:
 
 .. image:: ../_static/qgis_plugins/004.png
+   :align: center
 
 Select the option :guilabel:`Show all plugins except those marked as
 experimental`.

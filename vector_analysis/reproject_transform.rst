@@ -53,6 +53,7 @@ Status` button in the :guilabel:`Status Bar` along the bottom of the QGIS
 window:
 
 .. image:: ../_static/vector_analysis/001.png
+   :align: center
 
 In the dialog that appears, check the box next to :guilabel:`Enable 'on the
 fly' CRS transformation`, and then type the word :kbd:`global` into the
@@ -104,6 +105,7 @@ because they're made to project in the same CRS, the two datasets fit
 perfectly:
 
 .. image:: ../_static/vector_analysis/002.png
+   :align: center
 
 When combining data from different sources, it's important to remember that
 they might not be in the same CRS. "On the fly" reprojection helps you to
@@ -133,6 +135,7 @@ select :guilabel:`Save As...` in the menu that appears. You will be shown this
 dialog: 
 
 .. image:: ../_static/vector_analysis/003.png
+   :align: center
 
 Click on the :guilabel:`Browse` button next to the :guilabel:`Save as` field.
 Navigate to :kbd:`exercise_data/` and specify the name of the new layer as
@@ -148,25 +151,30 @@ its :guilabel:`Filter` field, search for :kbd:`33S` and choose :guilabel:`WGS
 :guilabel:`Save vector layer as...` dialog now looks like this:
 
 .. image:: ../_static/vector_analysis/004.png
+   :align: center
 
 Click :guilabel:`OK` and after an instant, you should be presented with:
 
 .. image:: ../_static/vector_analysis/005.png
+   :align: center
 
 Click :guilabel:`OK` and start a new map:
 
 .. image:: ../_static/vector_analysis/006.png
+   :align: center
 
 Refer back to the lesson on :guilabel:`Classification` to remember how you
 calculated areas. Update the :kbd:`AREAS` field by running the same expression
 as before:
 
 .. image:: ../_static/vector_analysis/007.png
+   :align: center
 
 This will update the :kbd:`AREAS` field with the areas of the farms in square
 meters. To calculate the area in hectares, do this:
 
 .. image:: ../_static/vector_analysis/008.png
+   :align: center
 
 Look at the new values in your attribute table. This is much more useful, as
 people actually quote property areas in hectares, not in degrees. And
@@ -186,6 +194,7 @@ Start a new map and load the :kbd:`world/oceans.shp` dataset.
 Go to :menuselection:`Settings --> Custom CRS...` and you'll see this dialog:
 
 .. image:: ../_static/vector_analysis/009.png
+   :align: center
 
 Click on the button with the star icon to create a new projection. You'll
 notice that the name and parameters are now blank.
@@ -202,6 +211,7 @@ For its parameters, use the following string:
 Then click the :guilabel:`Save` button:
 
 .. image:: ../_static/vector_analysis/010.png
+   :align: center
 
 Then click :guilabel:`OK`.
 
@@ -210,6 +220,7 @@ Now enable "on the fly" reprojection and choose your newly defined projection
 projection, the map will be reprojected thus:
 
 .. image:: ../_static/vector_analysis/011.png
+   :align: center
 
 |IC|
 -------------------------------------------------------------------------------

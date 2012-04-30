@@ -331,6 +331,7 @@ we have to define a foreign key that points to the primary key of the streets
 table.
 
 .. image:: ../_static/postgres/er-beispiel.png
+   :align: center
 
 There are two ways to do this: 
  - adding the key after the table has been created

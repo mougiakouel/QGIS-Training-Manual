@@ -23,6 +23,7 @@ Polygonize (Raster to Vector)`.
 The tool dialog will appear. Set it up like this:
 
 .. image:: ../_static/complete_analysis/001.png
+   :align: center
 
 Change the field name (describing the values of the raster) to :kbd:`suitable`.
 
@@ -55,6 +56,7 @@ Click on :menuselection:`Raster --> Conversion --> Rasterize (Vector to
 Raster)` to start this tool, then set it up as in the screenshot below:
 
 .. image:: ../_static/complete_analysis/003.png
+   :align: center
 
 The :guilabel:`Input file` is :guilabel:`all_terrain`; the :guilabel:`Output
 file...` is :kbd:`exercise_data/residential_development/raster_conversion.tif`;

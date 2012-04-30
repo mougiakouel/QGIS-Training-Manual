@@ -16,6 +16,7 @@ Open the :guilabel:`Layer Properties` dialog for the :guilabel:`rural` layer as
 always. Click on the :guilabel:`Actions` tab to see this interface:
 
 .. image:: ../_static/create_vector_data/033.png
+   :align: center
 
 Seems intimidating! But it doesn't need to be. Let's see how it works by adding
 a new action.
@@ -38,19 +39,23 @@ property yet. First we'll create a field for this purpose. Open the
 Toggle editing mode:
 
 .. image:: ../_static/create_vector_data/037.png
+   :align: center
 
 Then add a new column:
 
 .. image:: ../_static/create_vector_data/038.png
+   :align: center
 
 Enter the values below:
 
 .. image:: ../_static/create_vector_data/039.png
+   :align: center
 
 After the field has been created, click on the :guilabel:`Line edit` button
 next to the new field. Set it up for a :guilabel:`File name`:
 
 .. image:: ../_static/create_vector_data/040.png
+   :align: center
 
 Click :guilabel:`OK` on the :guilabel:`Layer Properties` dialog. Then use the
 :guilabel:`Identify` tool to click on one of the three features in the
@@ -58,6 +63,7 @@ Click :guilabel:`OK` on the :guilabel:`Layer Properties` dialog. Then use the
 should be active and look like this:
 
 .. image:: ../_static/create_vector_data/041.png
+   :align: center
 
 Click on the browse button (the :guilabel:`...` next to the :guilabel:`image`
 field) and select the path for your image. The images are in
@@ -69,6 +75,7 @@ Associate all of the images with the correct features using this method. Then
 save your edits and exit edit mode.
 
 .. image:: ../_static/create_vector_data/072.png
+   :align: center
 
 |basic| |FA| Creating an Action
 -------------------------------------------------------------------------------
@@ -78,6 +85,7 @@ explained above for the :guilabel:`rural` layer. Enter the words :kbd:`Show
 Image` into the :guilabel:`Name` field:
 
 .. image:: ../_static/create_vector_data/042.png
+   :align: center
 
 What to do next varies according to your operating system, so choose the
 appropriate course to follow:
@@ -109,6 +117,7 @@ image is. All it needs to do is to tell the :guilabel:`Action` where the image
 is. Select :guilabel:`image` from the list:
 
 .. image:: ../_static/create_vector_data/043.png
+   :align: center
 
 Then click the :guilabel:`Insert field` button. QGIS will add the phrase
 :kbd:`[% "image" %]` in the :guilabel:`Action` field.
@@ -122,6 +131,7 @@ in the :guilabel:`Layers list`, find the :guilabel:`Run feature action` button
 (on the same toolbar as the :guilabel:`Open Attribute Table` button):
 
 .. image:: ../_static/create_vector_data/036.png
+   :align: center
 
 Click on the down arrow to the right of this button. There's only one action
 defined for this layer so far, which is the one you just created. Now click the
@@ -192,10 +202,12 @@ Now you want QGIS to tell the browser to tell Google to search for the value of
 Select the :guilabel:`SGADMIN` field and click :guilabel:`Insert field`:
 
 .. image:: ../_static/create_vector_data/034.png
+   :align: center
 
 This will tell QGIS to add the phrase next:
 
 .. image:: ../_static/create_vector_data/035.png
+   :align: center
 
 What this means is that QGIS is going to open the browser and send it to the
 address :kbd:`http://www.google.co.za/search?q=[% "SGADMIN" %]`. But :kbd:`[%

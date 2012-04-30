@@ -15,10 +15,12 @@ plugin. In the :guilabel:`Plugin Manager`, enable :guilabel:`GRASS` in the
 list:
 
 .. image:: ../_static/grass/001.png
+   :align: center
 
 The GRASS toolbar will appear:
 
 .. image:: ../_static/grass/002.png
+   :align: center
 
 Before you can use GRASS, you need to create a **mapset**. GRASS always works
 in a database environment, which means that you need to import all the
@@ -27,43 +29,52 @@ data you want to use into a GRASS database.
 To start, click on the :guilabel:`New mapset` button:
 
 .. image:: ../_static/grass/004.png
+   :align: center
 
 You'll see a dialog like the one below, explaining the structure of a GRASS
 mapset.
 
 .. image:: ../_static/grass/003.png
+   :align: center
 
 Create a new directory called :kbd:`grass_db` in :guilabel:`exercise_data` and
 set it as the directory that will be used by GRASS to set up its database:
 
 .. image:: ../_static/grass/005.png
+   :align: center
 
 GRASS needs to create a "location", which describes the maximum extents of the
 geographic area you'll be working in. Call it :kbd:`South_Africa`:
 
 .. image:: ../_static/grass/006.png
+   :align: center
 
 We'll be working with :kbd:`WGS 84`, so search for and select this CRS:
 
 .. image:: ../_static/grass/007.png
+   :align: center
 
 Now select the region :guilabel:`South Africa`, which is already defined in
 GRASS:
 
 .. image:: ../_static/grass/008.png
+   :align: center
 
 Create a mapset, which is the map file that you'll be working with.
 
 .. image:: ../_static/grass/009.png
+   :align: center
 
 Once you're done, you'll see a dialog asking you to confirm that the settings
 it displays are correct:
 
 .. image:: ../_static/grass/010.png
+   :align: center
 
 Click :guilabel:`Finish`, then click :guilabel:`OK` on the success dialog:
 
 .. image:: ../_static/grass/011.png
+   :align: center
 
 |basic| |FA| Loading Vector Data into GRASS
 -------------------------------------------------------------------------------
@@ -74,10 +85,12 @@ two-step process. First, load data into QGIS as usual. Use the
 as it's loaded, click on the :guilabel:`GRASS Tools` button:
 
 .. image:: ../_static/grass/013.png
+   :align: center
 
 You'll be presented with this dialog:
 
 .. image:: ../_static/grass/012.png
+   :align: center
 
 Find the vector import tool by entering the term :kbd:`v.in.ogr.qgis` in the
 :guilabel:`Filter` field. The :kbd:`v` stands for "vector", :kbd:`in` means its
@@ -88,11 +101,13 @@ for a vector from among the vectors already loaded into QGIS.
 Once you've found this tool, clicking on it will bring up the tool itself:
 
 .. image:: ../_static/grass/014.png
+   :align: center
 
 Set the loaded layer to :guilabel:`streets` and its GRASS version's name to
 :kbd:`g_streets` to prevent confusion.
 
 .. image:: ../_static/grass/015.png
+   :align: center
 
 .. note:: |hard| Note the extra import options provided under
    :guilabel:`Advanced Options`. These include the ability to add a WHERE
@@ -119,6 +134,7 @@ DEM first. To start, load the :kbd:`srtm_41_19.tif` dataset (found under
 as shown:
 
 .. image:: ../_static/grass/017.png
+   :align: center
 
 Save the raster under the same folder as the original, but with the file name
 :kbd:`DEM_WGS84.tif`. Once it appears in your map, remove the
@@ -132,10 +148,12 @@ Open the :guilabel:`GRASS Tools` dialog again and click on the
 Search for :kbd:`r.in.gdal.qgis`:
 
 .. image:: ../_static/grass/016.png
+   :align: center
 
 Which gives you this tool:
 
 .. image:: ../_static/grass/018.png
+   :align: center
 
 Set it up as shown (input layer is :guilabel:`DEM_WGS84`, output is
 :kbd:`g_dem`), then click :guilabel:`Run`. When the process is done, click
@@ -143,6 +161,7 @@ Set it up as shown (input layer is :guilabel:`DEM_WGS84`, output is
 :guilabel:`Close` the whole dialog.
 
 .. image:: ../_static/grass/019.png
+   :align: center
 
 You may now remove the original :guilabel:`DEM_WGS84` layer.
 

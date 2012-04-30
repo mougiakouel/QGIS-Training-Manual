@@ -24,6 +24,7 @@ roads.
 To see all the data available to you, find this button in QGIS:
 
 .. image:: ../_static/vector/004.png
+   :align: center
 
 Clicking it will show you a table with more data about the :guilabel:`streets`
 layer. This extra data is called *attribute data*. The lines that you can see
@@ -67,11 +68,13 @@ spatial data.
 Find this icon in QGIS:
 
 .. image:: ../_static/vector/005.png
+   :align: center
 
 (If you're sure you can't see it at all, check that the :guilabel:`Manage
 Layers` toolbar is enabled.) Clicking it will give you this dialog:
 
 .. image:: ../_static/vector/006.png
+   :align: center
 
 In this dialog, click the :guilabel:`New` button. In the same folder as the
 other data, you should find the file :guilabel:`land_use.db`. Select it and
@@ -83,6 +86,7 @@ database file on your computer. Click the :guilabel:`Connect` button. You
 should see this in the previously empty box:
 
 .. image:: ../_static/vector/007.png
+   :align: center
 
 Click on the first layer to select it, then use :kbd:`shift+click` to select
 all of them at once.
@@ -117,6 +121,7 @@ because other layers are on top of it.
 For example, this layer order...
 
 .. image:: ../_static/vector/002.png
+   :align: center
 
 ... would result in roads and places being hidden as they run *underneath*
 urban areas.
@@ -125,8 +130,6 @@ To resolve this problem, simply click and drag on a layer in the Layers list.
 Reorder them to look like this:
 
 .. image:: ../_static/vector/003.png
-   :scale: 50 %
-   :class: screenshot
    :align: center
 
 In conclusion

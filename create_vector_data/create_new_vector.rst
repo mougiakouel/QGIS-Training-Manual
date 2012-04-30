@@ -22,6 +22,7 @@ New --> New Shapefile Layer`.
 You'll be presented with the following dialog:
 
 .. image:: ../_static/create_vector_data/001.png
+   :align: center
 
 It's important to decide which kind of dataset you want at this stage. Each
 different vector layer type is "built differently" in the background, so once
@@ -32,6 +33,7 @@ areas. For such features, you'll need to create a polygon dataset. To do so,
 click on the :guilabel:`Polygon` radio button:
 
 .. image:: ../_static/create_vector_data/002.png
+   :align: center
 
 This has no impact on the rest of the dialog, but it will cause the correct
 type of geometry to be used when the vector dataset is created.
@@ -42,6 +44,7 @@ because there are many different ways to do this, there are many different CRSs.
 The CRS of this project is WGS84, so it's already correct by default:
 
 .. image:: ../_static/create_vector_data/003.png
+   :align: center
 
 Next there is a collection of fields grouped under :guilabel:`New attribute`.
 By default, a new layer has only one attribute, the :kbd:`id` field (which you
@@ -52,10 +55,12 @@ will be enough to add one field called :kbd:`name`. Replicate the setup
 below, then click the :guilabel:`Add to attributes list` button:
 
 .. image:: ../_static/create_vector_data/004.png
+   :align: center
 
 Check that your dialog now looks like this:
 
 .. image:: ../_static/create_vector_data/005.png
+   :align: center
 
 Then click :guilabel:`OK`. A save dialog will appear. Navigate to the
 :kbd:`exercise_data` directory and save your new layer as
@@ -83,6 +88,7 @@ are provided, so you'll need to import them as necessary.
 To do this, click on the :guilabel:`Add Raster Layer` button:
 
 .. image:: ../_static/create_vector_data/006.png
+   :align: center
 
 Navigate to :kbd:`exercise_data/raster/` and select the file
 :kbd:`3420C_2010_327_RGB_LATLNG.tif`, then click :guilabel:`Open`.
@@ -94,10 +100,12 @@ other layers.
 Next, find and zoom to this area:
 
 .. image:: ../_static/create_vector_data/007.png
+   :align: center
 
 You'll be digitizing these three fields:
 
-@todo: add image when done
+.. image:: ../_static/create_vector_data/014.png
+   :align: center
 
 To simplify matters, hide all the layers except the raster and the
 :guilabel:`school_property` layer.
@@ -112,6 +120,7 @@ is selected, otherwise you'll edit the wrong layer!) As soon as it's selected,
 click on the :guilabel:`Toggle Editing` button:
 
 .. image:: ../_static/create_vector_data/008.png
+   :align: center
 
 If you can't find this button, check that the :guilabel:`Digitizing` toolbar is
 enabled. There should be a check mark next to the :menuselection:`View -->
@@ -121,6 +130,7 @@ As soon as you are in edit mode, you'll see the digitizing tools are now
 active:
 
 .. image:: ../_static/create_vector_data/009.png
+   :align: center
 
 From left to right on the image above, they are:
 
@@ -150,6 +160,7 @@ and dragging around in the map.
 The first feature you'll be digitizing is the athletics field:
 
 .. image:: ../_static/create_vector_data/010.png
+   :align: center
 
 Start digitizing by clicking on a point somewhere along the edge of the field.
 Place more points by clicking further along the edge, until the shape you're
@@ -158,6 +169,7 @@ where you want it to be. This will finalize the feature and show you the
 :guilabel:`Attributes` dialog. Fill in the values as below:
 
 .. image:: ../_static/create_vector_data/013.png
+   :align: center
 
 Click :guilabel:`OK` and you've created a new feature!
 
@@ -167,6 +179,7 @@ digitizing until you're done creating the feature as above. Then select the
 feature with the :guilabel:`Select Single Feature` tool:
 
 .. image:: ../_static/create_vector_data/012.png
+   :align: center
 
 You can use the :guilabel:`Move Feature(s)` tool to move the entire feature,
 the :guilabel:`Node Tool` to move only one point where you may have misclicked,
@@ -181,6 +194,7 @@ shortcut.
 Digitize the school itself and the upper field. Use this image to assist you:
 
 .. image:: ../_static/create_vector_data/014.png
+   :align: center
 
 Remember that each new feature needs to have a unique :kbd:`id` value!
 
@@ -197,10 +211,12 @@ Create a new line feature called :kbd:`river.shp` with attributes :kbd:`id` and
 runs through town. Start where the sandy riverbanks first become visible:
 
 .. image:: ../_static/create_vector_data/015.png
+   :align: center
 
 And stop when our river joins another river:
 
 .. image:: ../_static/create_vector_data/016.png
+   :align: center
 
 It's not always clear where the river runs. In such cases, use your better
 judgment and estimate where the river goes. Remember that you're capturing the

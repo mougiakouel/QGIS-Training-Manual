@@ -28,25 +28,30 @@ Once it has been activated (or if it already had a check mark), click on the
 highlighted. Then look for the following toolbar button:
 
 .. image:: ../_static/labels/001.png
+   :align: center
 
 This gives you the following dialog:
 
 .. image:: ../_static/labels/002.png
+   :align: center
 
 Checking the box next to :guilabel:`Label this layer with...` will result in
 this:
 
 .. image:: ../_static/labels/003.png
+   :align: center
 
 You'll need to choose which field in the attributes will be used for the
 labels. In the previous lesson, you decided that the *NAME* field was the most
 suitable one for this purpose. Select :guilabel:`NAME` from the list:
 
 .. image:: ../_static/labels/004.png
+   :align: center
 
 ... and click :guilabel:`OK`. The map should now have labels like this:
 
 .. image:: ../_static/labels/005.png
+   :align: center
 
 |basic| |FA| Changing label options
 -------------------------------------------------------------------------------
@@ -59,12 +64,14 @@ Open the :guilabel:`Label tool` again by clicking on its button as before. To
 change the text properties, click on the ellipsis (:guilabel:`...`) button:
 
 .. image:: ../_static/labels/006.png
+   :align: center
 
 A standard text change dialog appears, similar to those in many other programs.
 Change the font to :kbd:`Arial` size :kbd:`9`. Your labels will now look like
 this:
 
 .. image:: ../_static/labels/007.png
+   :align: center
 
 That's the font problem solved! Now let's look at the problem of the labels
 overlapping the points, but before we do that, let's take a look at the
@@ -74,6 +81,7 @@ says :guilabel:`Buffer`, then clicking :guilabel:`Apply`. Note the effects in
 the map:
 
 .. image:: ../_static/labels/008.png
+   :align: center
 
 Now you can see why we usually need label buffers! Reactivate them by clicking
 in the same checkbox as before, and then clicking :guilabel:`Apply`.
@@ -83,10 +91,12 @@ Back to the problem of the labels that overlap points. Go to the
 :kbd:`2`...
 
 .. image:: ../_static/labels/009.png
+   :align: center
 
 ... then click :guilabel:`Apply`. This is the result:
 
 .. image:: ../_static/labels/010.png
+   :align: center
 
 |moderate| |FA| Using labels instead of layer symbology
 -------------------------------------------------------------------------------
@@ -108,15 +118,18 @@ the point symbols and replace them completely with labels.
 In QGIS, you can do this by changing the position of the labels:
 
 .. image:: ../_static/labels/011.png
+   :align: center
 
 Now hide the point symbols by editing the layer style as usual, and setting the
 size of points to :kbd:`0`:
 
 .. image:: ../_static/labels/012.png
+   :align: center
 
 Click :guilabel:`OK` and you'll see this result:
 
 .. image:: ../_static/labels/013.png
+   :align: center
 
 As you can see, some of the labels are now missing to prevent overlap (at this
 scale). Sometimes this is what you want when dealing with datasets that have
@@ -150,6 +163,7 @@ polygons are easy to label, but what about lines? If you label them the same
 way as the points, your results would look like this:
 
 .. image:: ../_static/labels/017.png
+   :align: center
 
 This is not very useful! To make lines behave, we'll need to edit some options.
 
@@ -163,10 +177,12 @@ be sure to zoom in on the Swellendam town area. In the :guilabel:`Label tool`
 dialog's :guilabel:`Advanced` tab, choose the following settings:
 
 .. image:: ../_static/labels/018.png
+   :align: center
 
 The map will look somewhat like this, depending on scale:
 
 .. image:: ../_static/labels/019.png
+   :align: center
 
 It's better than before, but still not ideal. For a start, some of the names
 appear more than once, and that's not always necessary. To prevent that from
@@ -185,6 +201,7 @@ option is not a good idea in this case, so let's try the :guilabel:`curved`
 option instead! Here's the result:
 
 .. image:: ../_static/labels/020.png
+   :align: center
 
 As you can see, this hides a lot of the labels that were prviously visible,
 because of the difficulty of making some of them follow twisting street lines
@@ -207,11 +224,13 @@ We can use this data to influence the label styles. Navigate to the
 :guilabel:`Data defined settings` tab:
 
 .. image:: ../_static/labels/021.png
+   :align: center
 
 In the :guilabel:`Italic` dropdown, select :kbd:`IN_SWD` and click
 :guilabel:`Apply`. Notice its effects:
 
 .. image:: ../_static/labels/022.png
+   :align: center
 
 
 .. _backlink-label-data-defined-1:
@@ -228,14 +247,17 @@ Open the attribute table for :guilabel:`places`. Enter edit mode by clicking
 this button (at the lower edge of the attribute table):
 
 .. image:: ../_static/labels/023.png
+   :align: center
 
 Add a new column:
 
 .. image:: ../_static/labels/024.png
+   :align: center
 
 And configure it thus:
 
 .. image:: ../_static/labels/025.png
+   :align: center
 
 Use this to set custom font sizes for each different type of place (i.e., each
 key in the :kbd:`PLACE` field).
@@ -255,6 +277,7 @@ allocated for the purpose), then edit these properties using the tools adjacent
 to the main :guilabel:`Label tool`:
 
 .. image:: ../_static/labels/028.png
+   :align: center
 
 (These tools will be active if the required attribute fields exist and you are
 in edit mode.)

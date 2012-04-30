@@ -21,6 +21,7 @@ Snapping Options...`. We'll use the rural layer for these examples, so set up
 your :guilabel:`Snapping options` dialog as shown:
 
 .. image:: ../_static/create_vector_data/044.png
+   :align: center
 
 Ensure that the box in the :guilabel:`Avoid Int.` column is checked (set to
 true).
@@ -32,10 +33,12 @@ Digitizing` toolbar is enabled. Now prepare for digitizing by zooming to this
 area:
 
 .. image:: ../_static/create_vector_data/045.png
+   :align: center
 
 Digitize this new (fictional) farm:
 
 .. image:: ../_static/create_vector_data/047.png
+   :align: center
 
 When prompted, give it an :guilabel:`id` of :kbd:`999` but feel free to leave
 the other values unchanged.
@@ -47,6 +50,7 @@ farms adjacent to the new one you just digitized.
 Note the undo/redo tools in the :guilabel:`Advanced Digitizing` toolbar:
 
 .. image:: ../_static/create_vector_data/046.png
+   :align: center
 
 Those buttons will become your best friends...
 
@@ -56,6 +60,7 @@ Those buttons will become your best friends...
 You've probably noticed some large holes in the :guilabel:`rural` dataset:
 
 .. image:: ../_static/create_vector_data/067.png
+   :align: center
 
 Let's say you want to close them. If you were adding features normally, you'd
 have to be very accurate to avoid gaps and overlap. In fact, even if you're
@@ -68,6 +73,7 @@ the topology will take care of the rest. For example, try digitizing a new farm
 to close up this gap:
 
 .. image:: ../_static/create_vector_data/068.png
+   :align: center
 
 If you had to do this without help from the topology, you'd be digitizing that
 for a while. But at the moment, as per the directions above, you have
@@ -76,6 +82,7 @@ for a while. But at the moment, as per the directions above, you have
 overlap. So you can digitize even a very rough shape:
 
 .. image:: ../_static/create_vector_data/069.png
+   :align: center
 
 (Use an :guilabel:`id` value of somewhere in the hundreds range to avoid a
 conflict with existing features.)
@@ -83,6 +90,7 @@ conflict with existing features.)
 But when you select the feature ...
 
 .. image:: ../_static/create_vector_data/070.png
+   :align: center
 
 ... you'll see that QGIS has automatically added all the detailed vertices and
 made sure that there was no overlap!
@@ -110,6 +118,7 @@ color, and then set its :guilabel:`Transparency` slider to :kbd:`50%`. You
 should see results like these:
 
 .. image:: ../_static/create_vector_data/048.png
+   :align: center
 
 There are several things to notice here. First, the new farm you added is
 lighter than the others. This is because in this dataset, there are several
@@ -129,15 +138,18 @@ corners of the problematic farm. This will select that farm for editing and
 you'll see all the nodes appear:
 
 .. image:: ../_static/create_vector_data/049.png
+   :align: center
 
 Now simply click and drag the nodes ...
 
 .. image:: ../_static/create_vector_data/050.png
+   :align: center
 
 ... until they snap into place. The topologically correct border looks like
 this:
 
 .. image:: ../_static/create_vector_data/051.png
+   :align: center
 
 |moderate| |FA| Tool: Simplify Feature
 -------------------------------------------------------------------------------
@@ -145,15 +157,18 @@ this:
 This is the :guilabel:`Simplify Feature` tool:
 
 .. image:: ../_static/create_vector_data/052.png
+   :align: center
 
 Click on it and then on the new farm you created previously. You'll be
 presented with this dialog:
 
 .. image:: ../_static/create_vector_data/053.png
+   :align: center
 
 Move the slider from side to side and watch what happens:
 
 .. image:: ../_static/create_vector_data/054.png
+   :align: center
 
 This allows you to recude the amount of nodes in complex features. However,
 notice what it does to the topology! The simplified farm is now no longer
@@ -175,6 +190,7 @@ just undo the last change.
 This is the :guilabel:`Add Ring` tool:
 
 .. image:: ../_static/create_vector_data/055.png
+   :align: center
 
 It allows you to take a hole out of a feature, as long as the hole is bounded
 on all side by the feature. For example, if you've digitized the outer
@@ -192,6 +208,7 @@ this tool. Try using it on your farm.
 This is the :guilabel:`Add Part` tool:
 
 .. image:: ../_static/create_vector_data/057.png
+   :align: center
 
 It allows you to create an extra part of the feature, not directly connected to
 the main feature. For example, if you've digitized the boundaries of mainland
@@ -209,6 +226,7 @@ These are the :guilabel:`Delete Ring` and :guilabel:`Delete Part` tools,
 respectively:
 
 .. image:: ../_static/create_vector_data/060.png
+   :align: center
 
 Their functions should be obvious. Create new parts and rings as above and
 delete them to try see how these tools work. You need to click close to a node
@@ -221,25 +239,30 @@ delete them to try see how these tools work. You need to click close to a node
 This is the :guilabel:`Reshape Features` tool:
 
 .. image:: ../_static/create_vector_data/061.png
+   :align: center
 
 It can add a bump to an existing feature. With this tool selected, click inside
 your farm. Then add an extra piece of land, and right-click back inside the
 farm:
 
 .. image:: ../_static/create_vector_data/062.png
+   :align: center
 
 The result of the above:
 
 .. image:: ../_static/create_vector_data/063.png
+   :align: center
 
 You can do the opposite, too: start outside the feature, take a bite out of it,
 and right-click outside it again:
 
 .. image:: ../_static/create_vector_data/064.png
+   :align: center
 
 The result of the above:
 
 .. image:: ../_static/create_vector_data/065.png
+   :align: center
 
 
 |moderate| |TY| Tool: Split Features

@@ -23,6 +23,7 @@ Manager` by clicking on the QGIS main window's menu item
 plugin like this:
 
 .. image:: ../_static/vector_analysis/039.png
+   :align: center
 
 Click :guilabel:`OK` on the :guilabel:`Plugin Manager` dialog.
 
@@ -32,6 +33,7 @@ ensure that :guilabel:`Shortest path` has a check mark next to it.
 This panel will appear in your interface:
 
 .. image:: ../_static/vector_analysis/042.png
+   :align: center
 
 
 |basic| |FA| Configure the Tool
@@ -49,8 +51,10 @@ settings`.
 A dialog will appear. Make sure it's set up like this:
 
 .. image:: ../_static/vector_analysis/040.png
+   :align: center
 
 .. image:: ../_static/vector_analysis/041.png
+   :align: center
 
 
 |basic| |FA| Use the Tool
@@ -59,11 +63,13 @@ A dialog will appear. Make sure it's set up like this:
 Let's say you want to get from Barrydale to Bonnievale:
 
 .. image:: ../_static/vector_analysis/043.png
+   :align: center
 
 In the plugin panel, click on the :guilabel:`Capture Point` button next to the
 :guilabel:`Start` field:
 
 .. image:: ../_static/vector_analysis/044.png
+   :align: center
 
 Then click somewhere in Barrydale. Next, use the :guilabel:`Capture Point`
 button next to the :guilabel:`Stop` field and capture a point somewhere in
@@ -72,8 +78,10 @@ Bonnievale.
 Now click on the :guilabel:`Calculate` button to see the solution:
 
 .. image:: ../_static/vector_analysis/045.png
+   :align: center
 
 .. image:: ../_static/vector_analysis/046.png
+   :align: center
 
 |IC|
 -------------------------------------------------------------------------------

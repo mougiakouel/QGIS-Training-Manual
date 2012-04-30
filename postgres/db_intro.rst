@@ -330,6 +330,7 @@ If we draw an ER Diagram for these two tables it would look something like
 this:
 
 .. image:: ../_static/postgres/er-beispiel.png
+   :align: center
 
 The ER Diagram helps us to express 'one to many' relationships. In this case
 the arrow symbol show that one street can have many people living on it.

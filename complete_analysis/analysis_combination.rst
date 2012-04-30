@@ -30,6 +30,7 @@ layer. Save the selection as :kbd:`new_solution.shp`.
 You should now have a layer with these farms as your solution:
 
 .. image:: ../_static/complete_analysis/004.png
+   :align: center
 
 
 .. _backlink-complete-analysis-2:

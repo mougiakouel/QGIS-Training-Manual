@@ -24,10 +24,12 @@ Loading raster data is much the same as loading vector data. Find the
 :guilabel:`Load Raster Layer` button:
 
 .. image:: ../_static/rasters/001.png
+   :align: center
 
 Click on it to bring up the :guilabel:`Load Raster Layer` dialog:
 
 .. image:: ../_static/rasters/002.png
+   :align: center
 
 The data for this project is in :kbd:`exercise_data/rasters`. Open all of the
 files that end in :kbd:`.tif`. Either load them all in separately, or hold down
@@ -49,12 +51,14 @@ Luckily, we've already seen what to do in this situation. Click on the
 :guilabel:`CRS Status` button:
 
 .. image:: ../_static/rasters/003.png
+   :align: center
 
 Enable "on the fly" reprojection and set it to the same projection as the rest
 of your data (:kbd:`WGS 84 / UTM zone 33S`). Click :guilabel:`OK` and the
 rasters should fit nicely:
 
 .. image:: ../_static/rasters/004.png
+   :align: center
 
 There we have it - four aerial photographs covering our whole study area.
 
@@ -76,6 +80,7 @@ To make a catalog, go to :menuselection:`Raster --> Miscellaneous --> Build
 Virtual Raster (Catalog)`. This dialog will appear:
 
 .. image:: ../_static/rasters/005.png
+   :align: center
 
 Check the box next to :guilabel:`Use visible raster layers for input` so that
 you don't need to specify which rasters to use again.
@@ -121,6 +126,7 @@ To reproject a raster, go to :menuselection:`Raster --> Projection --> Warp
 (Reproject)`. You'll see this dialog:
 
 .. image:: ../_static/rasters/008.png
+   :align: center
 
 Note that it features a handy batch option for reprojecting the contents of
 whole directories. You can also reproject virtual rasters (catalogs), as well
@@ -133,6 +139,7 @@ To merge rasters, go to :menuselection:`Raster --> Miscellaneous --> Merge`.
 It will bring up this dialog:
 
 .. image:: ../_static/rasters/007.png
+   :align: center
 
 You can choose to process entire directories instead of single files, giving
 you a very useful built-in batch processing capability. You can specify a

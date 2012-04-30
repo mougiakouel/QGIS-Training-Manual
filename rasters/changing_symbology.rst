@@ -24,6 +24,7 @@ Once it's loaded, you'll notice that it's basically a gray rectangle. It's seen
 here with the vector layers on top:
 
 .. image:: ../_static/rasters/009.png
+   :align: center
 
 That's because its symbology hasn't been customized. In a color aerial
 photograph, everything is already defined. But if you load a raster and it's
@@ -37,16 +38,19 @@ Open the :guilabel:`Layer Properties` dialog for the :guilabel:`SRTM` layer and
 switch to the :guilabel:`Style` tab:
 
 .. image:: ../_static/rasters/010.png
+   :align: center
 
 These are the current settings, and as we've seen, they don't give us much
 information on the layer. Does it even have any data in it? Let's see. Change
 the :guilabel:`Color map` to :guilabel:`Pseudocolor`:
 
 .. image:: ../_static/rasters/011.png
+   :align: center
 
 Now when you click :guilabel:`OK`, you'll see the raster looking like this:
 
 .. image:: ../_static/rasters/012.png
+   :align: center
 
 That does tell us what we need to know. There is data in this layer. But maybe
 we don't want to symbolize it using these colors. Open :guilabel:`Layer
@@ -59,6 +63,7 @@ white and all shades of gray in between).
 So let's tell it to use :guilabel:`Custom min / max values`:
 
 .. image:: ../_static/rasters/015.png
+   :align: center
 
 If you :guilabel:`Apply` changes now, you'll see that this does nothing,
 because QGIS hasn't been told what to use these :guilabel:`Custom min / max
@@ -68,6 +73,7 @@ So in the bottom of the dialog, set the value :guilabel:`Current` of
 :guilabel:`Contrast enhancement` to :guilabel:`Stretch To MinMax`:
 
 .. image:: ../_static/rasters/013.png
+   :align: center
 
 But what are the minimum and maximum values that should be used for the
 stretch? The ones that are currently under :guilabel:`Custom min / max values`
@@ -79,16 +85,19 @@ from band`, select :guilabel:`Estimate (faster)` and click the :guilabel:`Load`
 button:
 
 .. image:: ../_static/rasters/014.png
+   :align: center
 
 Notice how the :guilabel:`Custom min / max values` have changed:
 
 .. image:: ../_static/rasters/016.png
+   :align: center
 
 Now when you click :guilabel:`OK`, you'll see the values of the raster properly
 displayed, with the darker colors representing valleys and the lighter ones,
 mountains:
 
 .. image:: ../_static/rasters/017.png
+   :align: center
 
 But isn't there a quicker way?
 ...............................................................................
@@ -104,6 +113,7 @@ Now enable the tool you'll need by enabling :menuselection:`View --> Toolbars
 --> Raster`. These icons will appear in the interface:
 
 .. image:: ../_static/rasters/018.png
+   :align: center
 
 The button on the right will stretch the minimum and maximum values to give you
 the best contrast in the local area that you're zoomed into. It's useful for

@@ -28,10 +28,12 @@ Let's get started right away!
 With QGIS open, look for the :guilabel:`Add Vector Layer` button:
 
 .. image:: ../_static/interface/002.png
+   :align: center
 
 Click on it to open the following dialog:
 
 .. image:: ../_static/interface/003.png
+   :align: center
 
 Now click on the :guilabel:`Browse` button and navigate to the file
 :kbd:`exercise_data/streets.shp` (in your course directory). With this file
@@ -43,6 +45,7 @@ Congratulations! You now have a basic map. Now would be a good time to save
 your work. Click on the :guilabel:`Save As` button:
 
 .. image:: ../_static/interface/004.png
+   :align: center
 
 Save the map under :kbd:`exercise_data/` and call it :kbd:`basic_map.qgs`.
 

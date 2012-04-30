@@ -77,10 +77,12 @@ Once you've added the SPIT plugin via the :guilabel:`Plugin Manager`, look for
 this button:
 
 .. image:: ../_static/postgis/008.png
+   :align: center
 
 Clicking on it will give you the SPIT dialog:
 
 .. image:: ../_static/postgis/009.png
+   :align: center
 
 You can add shapefiles to the database by clicking the :guilabel:`Add` button,
 which will give you a file browser window.

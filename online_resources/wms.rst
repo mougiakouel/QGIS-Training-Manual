@@ -22,6 +22,7 @@ this example, we used the :guilabel:`places`, :guilabel:`new_solution` and
 :guilabel:`important_roads` layers:
 
 .. image:: ../_static/online_resources/001.png
+   :align: center
 
 Before starting to add the WMS layer, first deactivate "on the fly" projection.
 This may cause the layers to no longer overlap properly, but don't worry: we'll
@@ -31,10 +32,12 @@ Now to add our WMS layers! To do that, click on the :guilabel:`Add WMS Layer`
 button:
 
 .. image:: ../_static/online_resources/002.png
+   :align: center
 
 This will bring up the following dialog:
 
 .. image:: ../_static/online_resources/003.png
+   :align: center
 
 Remember how you connected to a SpatiaLite database at the beginning of the
 course? The :guilabel:`rural`, :guilabel:`urban`, and :guilabel:`water` layers
@@ -46,6 +49,7 @@ To create a new connection to a WMS, click on the :guilabel:`New` button. This
 dialog will appear:
 
 .. image:: ../_static/online_resources/004.png
+   :align: center
 
 As you can see, you'll need a WMS address to continue. There are several free
 WMS servers available on the Internet. One of these is `GIS-LAB.info
@@ -54,23 +58,27 @@ WMS servers available on the Internet. One of these is `GIS-LAB.info
 WMS, set it up in your current dialog, like this:
 
 .. image:: ../_static/online_resources/005.png
+   :align: center
 
 The value of the :guilabel:`Name` field should be :kbd:`gis-lab`, and the value
 of the :guilabel:`URL` field should be :kbd:`http://irs.gis-lab.info/`. When
 you're done, click :guilabel:`OK`. You should see the new WMS server listed:
 
 .. image:: ../_static/online_resources/006.png
+   :align: center
 
 Click :guilabel:`Connect`. In the list below, you should now see these new
 entries loading:
 
 .. image:: ../_static/online_resources/007.png
+   :align: center
 
 These are all the layers hosted by this WMS server. Click once on the
 :guilabel:`osm` layer (it stands for OpenStreetMap, which is the data we want).
 It will display its :guilabel:`Coordinate Reference System`:
 
 .. image:: ../_static/online_resources/008.png
+   :align: center
 
 Since we're not using :kbd:`WGS 84` for our map, let's see all the CRSs we have
 to choose from. Click the :guilabel:`Change` button. You will see a standard
@@ -90,6 +98,7 @@ but using the same projection as the :guilabel:`osm` layer, which is
 :kbd:`world` in the :guilabel:`Filter` field:
 
 .. image:: ../_static/online_resources/009.png
+   :align: center
 
 Choose :guilabel:`WGS 84 / World Mercator` from the list and click
 :guilabel:`OK`.
@@ -98,6 +107,7 @@ Now right-click on one of your own layers in the :guilabel:`Layers list` and
 click :guilabel:`Zoom to layer extent`. You should see the Swellendam area:
 
 .. image:: ../_static/online_resources/010.png
+   :align: center
 
 Note how the WMS layer's streets and our own streets overlap. That's a good
 sign!
@@ -144,6 +154,7 @@ you may want to set its :guilabel:`Encoding` to :guilabel:`JPEG` and its
 faster:
 
 .. image:: ../_static/online_resources/011.png
+   :align: center
 
 :ref:`Check your results <wms-1>`
 

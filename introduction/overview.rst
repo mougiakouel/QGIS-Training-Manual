@@ -12,6 +12,7 @@ interface.
 -------------------------------------------------------------------------------
 
 .. image:: ../_static/interface/001-diagram.png
+   :align: center
 
 The elements identified in the figure above are:
 
@@ -91,10 +92,15 @@ the coming days.
 Try to find each of these tools on your screen. What is their purpose?
 
 #. .. image:: ../_static/interface/004.png
+   :align: center
 #. .. image:: ../_static/interface/005.png
+   :align: center
 #. .. image:: ../_static/interface/006.png
+   :align: center
 #. .. image:: ../_static/interface/007.png
+   :align: center
 #. .. image:: ../_static/interface/008.png
+   :align: center
 
 :ref:`Check your results <interface-overview-2>`
 

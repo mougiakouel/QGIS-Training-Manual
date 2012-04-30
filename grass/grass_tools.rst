@@ -14,10 +14,12 @@ module by searching for it in the :guilabel:`Filter` field of the
 Open the tool and set it up like this:
 
 .. image:: ../_static/grass/020.png
+   :align: center
 
 When you run the tool, it will recolor your raster:
 
 .. image:: ../_static/grass/021.png
+   :align: center
 
 |basic| |FA| Visualize Data in 3D
 -------------------------------------------------------------------------------
@@ -28,6 +30,7 @@ set to the whole extent of South Africa, as you set it up before. To redefine
 the extent to cover only our raster dataset, click this button:
 
 .. image:: ../_static/grass/024.png
+   :align: center
 
 When this tool is activated, your cursor will turn into a cross whe over the
 QGIS map canvas. Use it to click and drag a rectangle around the edges of the
@@ -37,10 +40,12 @@ dialog when done.
 Search for the :kbd:`nviz` tool:
 
 .. image:: ../_static/grass/022.png
+   :align: center
 
 Set it up as shown:
 
 .. image:: ../_static/grass/023.png
+   :align: center
 
 Remember to enable both :guilabel:`Use region of this map` buttons to the right
 of the two raster selection dropdown menus. This will allow NVIZ to correctly
@@ -51,6 +56,7 @@ the raster and vector selected. This may take some time, depending on your
 hardware. When it's done, you will see the map rendered in 3D in a new window:
 
 .. image:: ../_static/grass/025.png
+   :align: center
 
 Experiment with the :guilabel:`height`, :guilabel:`z-exag`, and :guilabel:`View
 method` settings to change your view of the data. The navigation methods may
@@ -66,12 +72,14 @@ search for :kbd:`calc`. From the list of modules, select :guilabel:`r.mapcalc`
 Start the tool and you will be presented with this dialog:
 
 .. image:: ../_static/grass/026.png
+   :align: center
 
 The Mapcalc dialog allows you to construct a sequence of analyses to be
 performed on a raster, or collection of rasters. You will use these tools to do
 so:
 
 .. image:: ../_static/grass/027.png
+   :align: center
 
 In order, they are:
 
@@ -90,14 +98,17 @@ In order, they are:
 Using these tools, construct the following algorithm:
 
 .. image:: ../_static/grass/028.png
+   :align: center
 
 When you click :guilabel:`Run`, your output should look like this:
 
 .. image:: ../_static/grass/029.png
+   :align: center
 
 Click :guilabel:`View output` to see the output displayed in your map:
 
 .. image:: ../_static/grass/030.png
+   :align: center
 
 This shows all the areas where the terrain is lower than 500 meters or higher
 than 1000 meters.

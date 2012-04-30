@@ -177,6 +177,7 @@ Looking at our schema
 By now our schema should be looking like this:
 
 .. image:: ../_static/postgis/final_schema.png
+   :align: center
 
 
 .. Exercise
@@ -231,6 +232,7 @@ To avoid empty geometries, use:
   where not st_isempty(st_intersection(a.the_geom, b.the_geom))
 
 .. image:: ../_static/postgis/qgis_001.png
+   :align: center
 
 ::
 
@@ -240,6 +242,7 @@ To avoid empty geometries, use:
     b.the_geom));
 
 .. image:: ../_static/postgis/qgis_002.png
+   :align: center
 
 Building Geometries from Other Geometries
 -------------------------------------------------------------------------------
@@ -250,6 +253,7 @@ timestamp, such as the one you get when you capture waypoints with a GPS
 receiver.
 
 .. image:: ../_static/postgis/qgis_006.png
+   :align: center
 
 To create a linestring from a new point layer called 'points', you can run the
 following command:
@@ -268,6 +272,7 @@ command on the 'people' layer, although of course it would make little
 real-world sense to do this.
 
 .. image:: ../_static/postgis/qgis_007.png
+   :align: center
 
 Geometry Cleaning
 -------------------------------------------------------------------------------

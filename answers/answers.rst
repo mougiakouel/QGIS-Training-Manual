@@ -66,6 +66,7 @@ All the vector layers should be loaded into the map. It probably won't look
 nice yet:
 
 .. image:: ../_static/vector/001.png
+   :align: center
 
 (We'll fix the ugly colors later.)
 
@@ -85,6 +86,7 @@ to change only the :guilabel:`rural` layer for now. An example is below, but
 may look different depending on the color you chose.
 
 .. image:: ../_static/symbology/018.png
+   :align: center
 
 .. note:: If you want to work on only one layer at a time and don't want the
    other layers to distract you, you can hide a layer by clicking in the check
@@ -102,6 +104,7 @@ may look different depending on the color you chose.
 Seen together, your rural and urban layers should look more or less like this:
 
 .. image:: ../_static/symbology/020.png
+   :align: center
 
 If you are a Beginner-level user, you may stop here. Use the method above to
 change the colors and styles for all the remaining layers. Try using natural
@@ -125,6 +128,7 @@ different layers apart on the map.
 Here's an example:
 
 .. image:: ../_static/symbology/013.png
+   :align: center
 
 :ref:`Back to text <backlink-symbology-layers-1>`
 
@@ -137,6 +141,7 @@ Here's an example:
 To make the required symbol, you need at least three symbol layers:
 
 .. image:: ../_static/symbology/021.png
+   :align: center
 
 The lowest symbol layer is a broad, solid yellow line. On top of it there is a
 slightly thinner solid dark gray or black line. The symbol layer on top is a
@@ -146,14 +151,17 @@ If your symbol layers resemble the above but you're not getting the result you
 want, check that your symbol levels look something like this:
 
 .. image:: ../_static/symbology/022.png
+   :align: center
 
 Now your symbol should look like this:
 
 .. image:: ../_static/symbology/023.png
+   :align: center
 
 Which, on the map, gives you this kind of effect:
 
 .. image:: ../_static/symbology/024.png
+   :align: center
 
 :ref:`Back to text <backlink-symbology-levels-1>`
 
@@ -166,6 +174,7 @@ Which, on the map, gives you this kind of effect:
 Adjust your symbol levels to these values:
 
 .. image:: ../_static/symbology/026.png
+   :align: center
 
 Experiment with different values to get different results.
 
@@ -200,6 +209,7 @@ fields with no value).
 Your map should look like this:
 
 .. image:: ../_static/labels/010.png
+   :align: center
 
 :ref:`Back to text <backlink-label-tool-1>`
 
@@ -212,12 +222,14 @@ Your map should look like this:
 One possible solution has this final product:
 
 .. image:: ../_static/labels/015.png
+   :align: center
 
 To arrive at this result, use the font type :kbd:`Arial` of size :kbd:`10` and
 a :guilabel:`Label distance` of :kbd:`1,5 mm`. In addition, this example uses
 the :guilabel:`Wrap label on character` option:
 
 .. image:: ../_static/labels/016.png
+   :align: center
 
 Enter a :kbd:`space` in this field and click :guilabel:`Apply` to achieve the
 same effect.
@@ -237,10 +249,12 @@ example uses :kbd:`12` for towns, :kbd:`10` for suburbs and villages, and
 In :guilabel:`Data defined settings`, do this:
 
 .. image:: ../_static/labels/026.png
+   :align: center
 
 Your results, if using the above values, should be this:
 
 .. image:: ../_static/labels/027.png
+   :align: center
 
 :ref:`Back to text <backlink-label-data-defined-1>`
 
@@ -257,12 +271,14 @@ Use the same method as in the first exercise of the lesson to get rid of the
 lines:
 
 .. image:: ../_static/classification/027.png
+   :align: center
 
 The settings you used may not be the same, but with the values
 :guilabel:`Classes` = :kbd:`7` and :guilabel:`Mode` = :guilabel:`Natural Breaks
 (Jenks)` (and using the same colors, of course), the map will look like this:
 
 .. image:: ../_static/classification/028.png
+   :align: center
 
 :ref:`Back to text <backlink-classification-refine-1>`
 
@@ -279,6 +295,7 @@ The symbology doesn't matter, but the results should look more or less like
 this:
 
 .. image:: ../_static/create_vector_data/017.png
+   :align: center
 
 :ref:`Back to text <backlink-create-vector-digitize-1>`
 
@@ -291,6 +308,7 @@ this:
 Your map should look like this:
 
 .. image:: ../_static/create_vector_data/071.png
+   :align: center
 
 :ref:`Back to text <backlink-create-vector-topology-3>`
 
@@ -304,6 +322,7 @@ The exact shape doesn't matter, but you should be getting a hole in your
 feature, like this one:
 
 .. image:: ../_static/create_vector_data/056.png
+   :align: center
 
 Undo your edit before continuing with the exercise for the next tool.
 
@@ -319,10 +338,12 @@ The exact shape and location doesn't matter, but you should be getting an extra
 part on your feature, like this one:
 
 .. image:: ../_static/create_vector_data/058.png
+   :align: center
 
 Note that you first need to select the farm with the selection tool ...
 
 .. image:: ../_static/create_vector_data/059.png
+   :align: center
 
 ... so that QGIS knows which feature to add the new part to.
 
@@ -342,6 +363,7 @@ that they are predefined. Set the widget to :guilabel:`Unique values` and leave
 :guilabel:`Editable` as :kbd:`False`:
 
 .. image:: ../_static/create_vector_data/030.png
+   :align: center
 
 A road is either a one-way or it isn't, so :guilabel:`ONEWAY` should be a
 :guilabel:`Checkbox`. Looking at the attribute table for :guilabel:`streets`,
@@ -349,11 +371,13 @@ the value for when it's not a one-way seems to be :guilabel:`NULL`, and when it
 is, it's :guilabel:`yes`. Set those values:
 
 .. image:: ../_static/create_vector_data/031.png
+   :align: center
 
 If you use the :guilabel:`Identify` tool on a street now while edit mode is
 active, the dialog you get should look like this:
 
 .. image:: ../_static/create_vector_data/032.png
+   :align: center
 
 :ref:`Back to text <backlink-create-vector-forms-1>`
 
@@ -369,6 +393,7 @@ active, the dialog you get should look like this:
 Your layer should now have these roads:
 
 .. image:: ../_static/vector_analysis/017.png
+   :align: center
 
 Save this new layer (the same way you did before) under
 :kbd:`exercise_data/residential_development/`, as :kbd:`important_roads.shp`.
@@ -388,6 +413,7 @@ yourself by using the :guilabel:`Add Vector Layer` button as you did before.
 Your buffer dialog should look like this:
 
 .. image:: ../_static/vector_analysis/024.png
+   :align: center
 
 The :guilabel:`Buffer distance` is :kbd:`10000` meters (i.e., :kbd:`10`
 kilometers).
@@ -397,10 +423,12 @@ optional, but it's recommended, because it makes the output buffers look
 smoother.  Compare this:
 
 .. image:: ../_static/vector_analysis/025.png
+   :align: center
 
 To this:
 
 .. image:: ../_static/vector_analysis/026.png
+   :align: center
 
 The red circle is the buffer with :guilabel:`Segments to approximate` set to
 :kbd:`20`; the gray circle on top of it is the buffer with :guilabel:`Segments
@@ -420,10 +448,12 @@ to approximate` set to :kbd:`5`.
 Set your :guilabel:`DEM (Terrain analysis)` dialog up like this:
 
 .. image:: ../_static/rasters/026.png
+   :align: center
 
 Your result:
 
 .. image:: ../_static/rasters/027.png
+   :align: center
 
 :ref:`Back to text <backlink-raster-analysis-1>`
 
@@ -436,6 +466,7 @@ Your result:
 Set your :guilabel:`Raster calculator` dialog up like this:
 
 .. image:: ../_static/rasters/031.png
+   :align: center
 
 For the 5 degree version, replace the :kbd:`2` in the expression and file name
 with :kbd:`5`.
@@ -445,10 +476,12 @@ Your results:
 - 2 degrees:
 
 .. image:: ../_static/rasters/032.png
+   :align: center
 
 - 5 degrees:
 
 .. image:: ../_static/rasters/033.png
+   :align: center
 
 :ref:`Back to text <backlink-raster-analysis-2>`
 
@@ -468,6 +501,7 @@ polygons where this condition isn't met. When viewed over the original raster,
 the areas should overlap perfectly:
 
 .. image:: ../_static/complete_analysis/002.png
+   :align: center
 
 You can save this layer by right-clicking on the :guilabel:`all_terrain` layer
 in the :guilabel:`Layers list` and choosing :guilabel:`Save As...`, then
@@ -485,6 +519,7 @@ In this map, farms that are definitely not suitable are orange; farms that may
 still be suitable are blue:
 
 .. image:: ../_static/complete_analysis/002.png
+   :align: center
 
 The orange farms have almost no suitable terrain within them, and so can't be
 used for the intended purpose.
@@ -500,16 +535,19 @@ used for the intended purpose.
 At the moment, your analysis should look like this (ignore the symbology):
 
 .. image:: ../_static/complete_analysis/006.png
+   :align: center
 
 Consider a circular area, continuous for 350 meters in all directions.
 
 .. image:: ../_static/complete_analysis/007.png
+   :align: center
 
 If it is greater than 350 meters in radius, then subtracting 350 meters from
 its size (from all directions) will result in a part of it being left in the
 middle.
 
 .. image:: ../_static/complete_analysis/008.png
+   :align: center
 
 Therefore, you can run an *interior buffer* of 350 meters on your existing
 :guilabel:`suitable_terrain` vector layer. In the output of the buffer
@@ -520,6 +558,7 @@ To demonstrate: if you go to :menuselection:`Vector --> Geoprocessing Tools -->
 Buffer(s)`, you get the Buffer(s) dialog. Set it up like this:
 
 .. image:: ../_static/complete_analysis/009.png
+   :align: center
 
 Use the :guilabel:`suitable_terrain` layer with :kbd:`10` segments and a buffer
 distance of :kbd:`-350`. (The distance is automatically in meters because your
@@ -530,22 +569,26 @@ map is using a projected CRS.) Save the output in
 Your results will look like this:
 
 .. image:: ../_static/complete_analysis/010.png
+   :align: center
 
 Now use the "Select by Location" tool (:menuselection:`Vector --> Research
 Tools --> Select by location`), set up like this:
 
 .. image:: ../_static/complete_analysis/011.png
+   :align: center
 
 Select features in :guilabel:`new_solution` that intersect features in
 :guilabel:`suitable_terrain_continuous350m.shp`. This is the result:
 
 .. image:: ../_static/complete_analysis/012.png
+   :align: center
 
 The yellow farms are selected. Save the selection under
 :kbd:`exercise_data/residential_development/` as :kbd:`final_answer.shp`. The
 farms that meet the revised criteria are here:
 
 .. image:: ../_static/complete_analysis/013.png
+   :align: center
 
 
 :ref:`Back to text <backlink-complete-analysis-3>`
@@ -561,6 +604,7 @@ farms that meet the revised criteria are here:
 Your map should look like this:
 
 .. image:: ../_static/online_resources/012.png
+   :align: center
 
 :ref:`Back to text <backlink-wms-1>`
 
@@ -574,13 +618,16 @@ Use the same approach as before to add the new server and the appropriate
 layer as hosted on that server:
 
 .. image:: ../_static/online_resources/013.png
+   :align: center
 
 .. image:: ../_static/online_resources/014.png
+   :align: center
 
 If you zoom into the Swellendam area, you'll notice that this dataset has a low
 resolution:
 
 .. image:: ../_static/online_resources/015.png
+   :align: center
 
 Therefore, it's better not to use this data for the current map. The Blue
 Marble data is more suitable at global or national scales.

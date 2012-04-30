@@ -28,16 +28,19 @@ appears, select the :guilabel:`Map Tools` tab and check the :guilabel:`Open
 feature form ...` checkbox:
 
 .. image:: ../_static/create_vector_data/023.png
+   :align: center
 
 Close the :guilabel:`Settings` dialog. Select the :guilabel:`streets` layer in
 the :guilabel:`Layers list`. Now, using the :guilabel:`Identify` tool ...
 
 .. image:: ../_static/create_vector_data/024.png
+   :align: center
 
 ... click on any street in the map. Instead of the normal :guilabel:`Identify`
 dialog, you'll see the now-familiar form instead:
 
 .. image:: ../_static/create_vector_data/026.png
+   :align: center
 
 |basic| |TY| Using the Form to Edit Values
 -------------------------------------------------------------------------------
@@ -48,6 +51,7 @@ With edit mode active and the :guilabel:`Identify` tool selected, click on the
 main street running through Swellendam:
 
 .. image:: ../_static/create_vector_data/025.png
+   :align: center
 
 Edit its :guilabel:`LANES` value to the correct value of :kbd:`2`, save your
 edits and exit edit mode. Open the :guilabel:`Attribute Table` and see your
@@ -68,16 +72,19 @@ Open the :guilabel:`streets` layer's :guilabel:`Layer Properties` as usual,
 then switch to the :guilabel:`Fields` tab. You'll see this:
 
 .. image:: ../_static/create_vector_data/027.png
+   :align: center
 
 Click on the :guilabel:`Line edit` button in the same row as :guilabel:`LANES`
 and you'll be given a new dialog. In its only dropdown list, set the value to
 :guilabel:`Range`:
 
 .. image:: ../_static/create_vector_data/028.png
+   :align: center
 
 Set the values to this:
 
 .. image:: ../_static/create_vector_data/029.png
+   :align: center
 
 Click :guilabel:`OK`, apply the changes to the :guilabel:`Layer Properties`.
 Enter edit mode and click on :guilabel:`Voortrekker` road with the
@@ -104,12 +111,14 @@ Let's start by creating a simple point layer with two attributes: Name (text)
 and Age (text).
 
 .. image:: ../_static/create_vector_data/018.png
+   :align: center
 
 Capture a couple of points to your new layer using the digitizing tools so that
 you have a little data to play with. You should be presented with the default
 QGIS generated attribute capture form each time you capture a new point.
 
 .. image:: ../_static/create_vector_data/019.png
+   :align: center
 
 |hard| |FA| Creating a New Form
 -------------------------------------------------------------------------------
@@ -131,6 +140,7 @@ whatever approach is appropriate in your OS).
 In the dialog that appears, create a new dialog:
 
 .. image:: ../_static/create_vector_data/020.png
+   :align: center
 
 Look for the :guilabel:`Widget Box` along the left of your screen (default). It
 contains an item called :guilabel:`Line Edit`. Click and drag this item into
@@ -139,6 +149,7 @@ selected, you'll see its *properties* along the side of your screen (on the righ
 by default):
 
 .. image:: ../_static/create_vector_data/021.png
+   :align: center
 
 Set its name to :kbd:`Name`.
 
@@ -151,6 +162,7 @@ Click anywhere in your dialog. Find the :guilabel:`Lay Out Vertically` button
 (in a toolbar along the top edge of the screen, by default):
 
 .. image:: ../_static/create_vector_data/022.png
+   :align: center
 
 This lays out your dialog automatically. Resize the dialog to an appropriate
 size by clicking and dragging its corners.
