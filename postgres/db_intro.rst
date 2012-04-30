@@ -5,7 +5,7 @@ Before using PostgreSQL, let's make sure of our ground by covering general
 database theory. You will not need to enter any of the example code; it's only
 there for illustration purposes.
 
-**The goal for this lesson:** To understand fundamental database concetps.
+**The goal for this lesson:** To understand fundamental database concepts.
 
 What is a Database? 
 -------------------------------------------------------------------------------

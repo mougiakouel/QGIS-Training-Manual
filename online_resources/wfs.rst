@@ -124,8 +124,6 @@ sends only images.
 
 The most common type of WFS you'll encounter will therefore probably be on a
 local network or even on your own computer, rather than on the Internet.
-However, learning how to set up a WFS on a local server is beyond the scope of
-this course.
 
 |IC|
 -------------------------------------------------------------------------------
@@ -136,11 +134,7 @@ data that needs to be downloaded (which leads to speed problems and also a lack
 of easily available public WFS servers) it's not always possible to use a WFS
 instead of a WMS.
 
-|FR|
--------------------------------------------------------------------------------
-
 |WN|
 -------------------------------------------------------------------------------
 
-Now that we've covered all the pre-database material of the course, you will be
-given an assessment to test your knowledge.
+Next, you'll see how to use QGIS as a frontend for the famous GRASS GIS.

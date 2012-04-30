@@ -7,13 +7,13 @@ data properly so that it becomes properly visible and useful.
 
 **The goal for this lesson:** To change the symbology for a raster layer.
 
-|basic| |TY| loading the raster dataset
+|basic| |TY|
 -------------------------------------------------------------------------------
 
-Use the same approach you used to load raster datasets before. Into your
-current map (which, following from the previous lesson, should be
-:kbd:`analysis.qgs`) load the dataset :kbd:`srtm_41_19.tif` [1]_, found under
-the directory :kbd:`exercise_data/raster/SRTM/`. Once it appears in the
+Use the :guilabel:`Add Raster Layer` button to load the new raster dataset.
+Into your current map (which, following from the previous lesson, should be
+:kbd:`analysis.qgs`) load the dataset :kbd:`srtm_41_19.tif`, found under the
+directory :kbd:`exercise_data/raster/SRTM/`. Once it appears in the
 :guilabel:`Layers list`, rename it to :kbd:`DEM`.
 
 This dataset is a *Digital Elevation Model (DEM)*. It's a map of the elevation
@@ -106,7 +106,7 @@ Now enable the tool you'll need by enabling :menuselection:`View --> Toolbars
 .. image:: ../_static/rasters/018.png
 
 The button on the right will stretch the minimum and maximum values to give you
-the best contrast in the loacl area that you're zoomed into. It's useful for
+the best contrast in the local area that you're zoomed into. It's useful for
 large datasets. The button on the left will stretch  the minimum and maximum
 values to constant values across the whole image.
 
@@ -119,14 +119,13 @@ You'll see the data is now correctly represented as before!
 These are only the basic functions to get you started with raster symbology.
 QGIS also allows you many other options, such as symbolizing a layer using
 standard deviations, or representing different bands with different colors in a
-multispectral image. However, some of these functions require rather more
-theoretical background in raster imagery than it is practical to cover during
-this course.
+multispectral image.
 
-|FR|
+Reference
 -------------------------------------------------------------------------------
 
-.. [1] Data obtained from http://srtm.csi.cgiar.org/
+The SRTM dataset was obtained from `http://srtm.csi.cgiar.org/
+<http://srtm.csi.cgiar.org/>`_
 
 |WN|
 -------------------------------------------------------------------------------

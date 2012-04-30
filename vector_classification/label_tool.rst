@@ -188,9 +188,8 @@ option instead! Here's the result:
 
 As you can see, this hides a lot of the labels that were prviously visible,
 because of the difficulty of making some of them follow twisting street lines
-and still be legible. You can decide in the map that you're working on which of
-these options to use, depending on what you think seems more useful or what
-looks better.
+and still be legible. You can decide which of these options to use, depending
+on what you think seems more useful or what looks better.
 
 |hard| |FA| Data defined settings
 -------------------------------------------------------------------------------

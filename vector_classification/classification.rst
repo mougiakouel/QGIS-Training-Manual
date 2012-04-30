@@ -3,8 +3,8 @@
 
 Labels are a good way to communicate information such as the names of
 individual places, but they can't be used for everything. For example, let's
-say that someone wants to know which the farms are in. Using labels, you'd get
-this:
+say that someone wants to know which area the farms are in. Using labels, you'd
+get this:
 
 .. image:: ../_static/classification/001.png
 
@@ -168,6 +168,9 @@ In the :guilabel:`Function List`, select :menuselection:`Geometry --> $area`:
 Double-click on it so that it appears in the :guilabel:`Expression` field, then
 click :guilabel:`OK`. Now your :kbd:`AREA` field is populated with values!
 Admire them, then close the attribute table.
+
+.. note:: |note| These areas are in degrees. Later, we will compute them in
+   square meters.
 
 Open the :guilabel:`Layer properties` dialog's :guilabel:`Style` tab again,
 then change the classification style from :guilabel:`Classified` to

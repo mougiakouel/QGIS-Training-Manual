@@ -162,7 +162,7 @@ where you want it to be. This will finalize the feature and show you the
 Click :guilabel:`OK` and you've created a new feature!
 
 Remember, if you've made a mistake while digitizing a feature, you can always
-edit it after you're done creating it. After you've made a mistake, continue
+edit it after you're done creating it. If you've made a mistake, continue
 digitizing until you're done creating the feature as above. Then select the
 feature with the :guilabel:`Select Single Feature` tool:
 
@@ -173,8 +173,7 @@ the :guilabel:`Node Tool` to move only one point where you may have misclicked,
 or :guilabel:`Delete Selected` to get rid of the feature entirely so you can
 try again. Remember that you can undo any mistakes you make at this stage via
 the :menuselection:`Edit --> Undo` menu item or the :kbd:`ctrl + z` keyboard
-shortcut, exactly like in many other programs you're probably already familiar
-with.
+shortcut.
 
 |basic| |TY|
 -------------------------------------------------------------------------------
@@ -199,7 +198,7 @@ runs through town. Start where the sandy riverbanks first become visible:
 
 .. image:: ../_static/create_vector_data/015.png
 
-And stop when the river joins another one:
+And stop when our river joins another river:
 
 .. image:: ../_static/create_vector_data/016.png
 
@@ -221,11 +220,6 @@ complicated features (lines and polygons). It works exactly the same, except
 that you only click once where you want the point to be, give it attributes as
 usual, and then the feature is created. Knowing how to digitize is important
 because it's a very common activity in GIS programs.
-
-|FR|
--------------------------------------------------------------------------------
-
-- Pasting a feature you copied to a text editor.
 
 |WN|
 -------------------------------------------------------------------------------

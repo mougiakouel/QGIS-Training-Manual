@@ -129,6 +129,11 @@ Change the :guilabel:`Maximum` value to :kbd:`100000` and click :guilabel:`OK`.
 Test the effects of this by zooming in and out in your map, noting when the
 :guilabel:`streets` layer disappears and reappears.
 
+.. note:: |note| You can use your mouse wheel to zoom in increments.
+   Alternatively, use the zoom tools to zoom to a window:
+   
+   .. image:: ../_static/symbology/051.png
+
 |moderate| |FA| Adding symbol layers
 -------------------------------------------------------------------------------
 

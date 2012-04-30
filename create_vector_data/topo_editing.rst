@@ -11,7 +11,7 @@ shared border and both features will change at the same time.
 
 **The goal for this lesson:** To understand topology using examples.
 
-|FA| |moderate| Snapping
+|moderate| |FA| Snapping
 -------------------------------------------------------------------------------
 
 To make topological editing easier, it's best if you enable snapping. This will
@@ -22,6 +22,9 @@ your :guilabel:`Snapping options` dialog as shown:
 
 .. image:: ../_static/create_vector_data/044.png
 
+Ensure that the box in the :guilabel:`Avoid Int.` column is checked (set to
+true).
+
 Click :guilabel:`OK` to save your changes and leave the dialog, then enter edit
 mode with the :guilabel:`rural` layer selected. Check under
 :menuselection:`View --> Toolbars` to make sure that your :guilabel:`Advanced
@@ -30,18 +33,16 @@ area:
 
 .. image:: ../_static/create_vector_data/045.png
 
-Digitize this new farm:
+Digitize this new (fictional) farm:
 
 .. image:: ../_static/create_vector_data/047.png
 
-(When prompted, give it an :guilabel:`id` of :kbd:`999` but feel free to leave
-the other values unchanged.)
+When prompted, give it an :guilabel:`id` of :kbd:`999` but feel free to leave
+the other values unchanged.
 
 If you're careful while digitizing and allow the cursor to snap to the vertices
 of adjoining farms, you'll notice that there won't be any gaps between the
-farms adjacent to the new one you just digitized. There's no need to be too
-exact with the borders that don't adjoin other farms though, since this is new
-feature is just for demonstration purposes.
+farms adjacent to the new one you just digitized.
 
 Note the undo/redo tools in the :guilabel:`Advanced Digitizing` toolbar:
 
@@ -178,7 +179,7 @@ This is the :guilabel:`Add Ring` tool:
 It allows you to take a hole out of a feature, as long as the hole is bounded
 on all side by the feature. For example, if you've digitized the outer
 boundaries of South Africa and you need to add a hole for Lesotho, you'd use
-this tool. Try using it on the your farm.
+this tool. Try using it on your farm.
 
 :ref:`Check your results <create-vector-topology-1>`
 
@@ -222,8 +223,8 @@ This is the :guilabel:`Reshape Features` tool:
 .. image:: ../_static/create_vector_data/061.png
 
 It can add a bump to an existing feature. With this tool selected, click inside
-of your farm. Then add yourself an extra piece of land, and right-click back
-inside the farm:
+your farm. Then add an extra piece of land, and right-click back inside the
+farm:
 
 .. image:: ../_static/create_vector_data/062.png
 
@@ -270,6 +271,6 @@ objects quickly and easily, while ensuring that they are topologically correct.
 |WN|
 -------------------------------------------------------------------------------
 
-Now you know how to digitize the shapf of the objects easily, but adding in the
+Now you know how to digitize the shape of the objects easily, but adding in the
 attributes is still a bit of a headache! Next we'll show you how to use forms
 so that attribute editing is simpler and more effective.

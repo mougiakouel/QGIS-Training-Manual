@@ -2,8 +2,8 @@
 ===============================================================================
 
 Now that you've got a map, you need to be able to print it or to export it to a
-document. The reason is that a GIS map file is not an image! Rather, it saves
-the state of the GIS program, with references to all the layers, their labels,
+document. The reason is, a GIS map file is not an image! Rather, it saves the
+state of the GIS program, with references to all the layers, their labels,
 colors, etc. So for someone who doesn't have the data or the same GIS program
 (such as QGIS), the map file will be useless. Luckily, QGIS can export its map
 file to a format that anyone's computer can read, as well as printing out the

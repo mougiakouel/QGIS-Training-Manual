@@ -66,8 +66,9 @@ features they should be associated with. Once you're done, click
 :guilabel:`OK`.
 
 Associate all of the images with the correct features using this method. Then
-save your edits and exit edit mode. Refer back to where you learned about these
-buttons if you can't remember how to do that.
+save your edits and exit edit mode.
+
+.. image:: ../_static/create_vector_data/072.png
 
 |basic| |FA| Creating an Action
 -------------------------------------------------------------------------------
@@ -216,11 +217,7 @@ open, and will automatically start a Google search for the town that is
 recorded as that farm's :kbd:`SGADMIN` value.
 
 .. note:: If your action doesn't work, check that everything was entered
-   correctly; typos are common with this kind of work! If you're sure
-   everything is correct (and the problem isn't your internet connection), feel
-   free to send an error report to the authors of this course. It may be that
-   your OS doesn't understand the command QGIS is giving it. Since we can't
-   test this ourselves in every OS ever made, your input would be appreciated!
+   correctly; typos are common with this kind of work!
 
 |hard| |FA| Open a Webpage Directly in QGIS
 -------------------------------------------------------------------------------
@@ -237,7 +234,7 @@ All that goodness is just a heartbeat away with a Python line or two. Also,
 QGIS actions can be arbitrary, tokenized (i.e. using variable information based
 on the contents of a field attribute) Python commands!
 
-Now you'll see how to use an a python action to show a web page. It's the same
+Now you'll see how to use a python action to show a web page. It's the same
 general idea as opening a site in an external browser, but it requires no
 browser on the user’s system since it uses the Qt4 QWebView class (which is a
 webkit based html widget) to display the content in a pop up window.
@@ -281,11 +278,6 @@ Actions allow you to give your map extra functionality, useful to the end-user
 who views the same map in QGIS. Due to the fact that you can use shell commands
 for any operating system, as well as Python, the sky's the limit in terms of
 the functions you could incorporate!
-
-|FR|
--------------------------------------------------------------------------------
-
-- Run any other shell commands using an action.
 
 |WN|
 -------------------------------------------------------------------------------

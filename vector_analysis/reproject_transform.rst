@@ -25,11 +25,9 @@ changing? That's because you're moving away from the one point that you zoomed
 into at :kbd:`1:5000000`, which was at the center of your screen. All around
 that point, the scale is different.
 
-.. image:: ../_static/photos/unisphere.jpg
-
-To understand why, think about a globe of the Earth. It probably has lines
-running along it from North to South. These longitude lines are far apart at
-the equator, but they meet at the poles.
+To understand why, think about a globe of the Earth. It has lines running along
+it from North to South. These longitude lines are far apart at the equator, but
+they meet at the poles.
 
 In a GCS, you're working on this sphere, but your screen is flat. When you try
 to represent the sphere on a flat surface, distortion occurs, similar to what
@@ -108,8 +106,8 @@ perfectly:
 .. image:: ../_static/vector_analysis/002.png
 
 When combining data from different sources, it's important to remember that
-they may not be in the same CRS. "On the fly" reprojection helps you to display
-them together.
+they might not be in the same CRS. "On the fly" reprojection helps you to
+display them together.
 
 |moderate| |FA| Saving a Dataset to Another CRS
 -------------------------------------------------------------------------------
@@ -170,14 +168,14 @@ meters. To calculate the area in hectares, do this:
 
 .. image:: ../_static/vector_analysis/008.png
 
-Look at the new values in your attribute table. This is much more useful.
-People actually quote property areas in hectares, but not in degrees. And
+Look at the new values in your attribute table. This is much more useful, as
+people actually quote property areas in hectares, not in degrees. And
 projecting the data in an appropriate projection before calculating the area
 will actually give you the area in hectares. This is why it's a good idea to
 reproject your data, if necessary, before calculating areas, distances, and
 other values that are dependent on the spatial properties of the layer.
 
-|FA| |hard| Creating Your Own Projection
+|hard| |FA| Creating Your Own Projection
 -------------------------------------------------------------------------------
 
 There are many more projections available than just those included in QGIS by

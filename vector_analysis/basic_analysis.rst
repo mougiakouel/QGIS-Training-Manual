@@ -26,9 +26,9 @@ iv. Present the Results
 
 Let's start off the process by deciding on a problem to solve. Let's say you're
 a property developer, and you need to buy a farm to build a new residential
-development for people who have had enough of Cape Town and Joburg. You've done
-some market research, and you've come up with the following requirements that a
-farm needs to satisfy:
+development for people who have had enough of Cape Town and Johannesburg.
+You've done some market research, and you've come up with the following
+requirements that a farm needs to satisfy:
 
 #. It needs to be in Swellendam.
 #. You don't want to have to build a long access road (maximum distance 500
@@ -57,10 +57,9 @@ particular problem.
 
 So now that we know what we want to do, let's start doing it!
 
-First, start a new QGIS project (save your current one if you like). Then start
-adding new layers. They're all to be found in the
-:kbd:`exercise_data/projected_data` folder. Add the :kbd:`schools_33S`,
-:kbd:`roads_33S` and :kbd:`farms_33S` layers.
+First, start a new QGIS project. Then start adding new layers. They're all to
+be found in the :kbd:`exercise_data/projected_data` folder. Add the
+:kbd:`schools_33S`, :kbd:`roads_33S` and :kbd:`farms_33S` layers.
 
 They'll probably look very familiar. They're the same data we've been working
 with all along, except that they're now in a Projected Coordinate System. This
@@ -330,11 +329,6 @@ doing so. The file should be saved under the usual directory, with the name
 Using the GIS problem-solving approach together with QGIS vector analysis
 tools, you were able to solve a problem with multiple criteria quickly and
 easily.
-
-|FR|
--------------------------------------------------------------------------------
-
-
 
 |WN|
 -------------------------------------------------------------------------------

@@ -25,7 +25,7 @@ Let's get started right away!
 |basic| |FA| Prepare a map
 -------------------------------------------------------------------------------
 
-With QGIS open, look for the following button:
+With QGIS open, look for the :guilabel:`Add Vector Layer` button:
 
 .. image:: ../_static/interface/002.png
 

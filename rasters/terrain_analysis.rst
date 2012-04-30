@@ -32,7 +32,7 @@ Ensure that the :guilabel:`Input file` is the :guilabel:`DEM` layer. Set the
 
 You may leave all the other options unchanged. Click :guilabel:`OK` to generate
 the hillshade. When it tells you that processing is completed, click
-:guilabel:`OK` on the message to get rd of it, then click :guilabel:`Close` on
+:guilabel:`OK` on the message to get rid of it, then click :guilabel:`Close` on
 the main :guilabel:`DEM (Terrain models)` dialog.
 
 You will now have a new layer called :guilabel:`hillshade` that looks like
@@ -136,11 +136,12 @@ calculate the aspect of the terrain.
 |moderate| |FA| Using the Raster Calculator
 -------------------------------------------------------------------------------
 
-Think back to the residential property development problem. So far, you've
-identified several farms that would be suitable, but without taking the terrain
-into account. Let's say that an ideal farm for development needs to have areas
-on it that are north-facing, and with a slope of less than five degrees. But if
-the slope is less than 2 degrees, then the aspect doesn't matter.
+Think back to the residential property development problem, which we last
+addressed in the *Vector Analysis* lesson. So far, you've identified several
+farms that would be suitable, but without taking the terrain into account.
+Let's say that an ideal farm for development needs to have areas on it that are
+north-facing, and with a slope of less than five degrees. But if the slope is
+less than 2 degrees, then the aspect doesn't matter.
 
 Fortunately, you already have rasters showing you the slope as well as the
 aspect, but you have no way of knowing where both conditions are satisfied at
@@ -247,11 +248,6 @@ Analysis --> Sieve`):
 You've seen how to derive all kinds of analysis products from a DEM. These
 include hillshade, slope and aspect calculations. You've also seen how to use
 the raster calculator to further analyze and combine these results.
-
-|FR|
--------------------------------------------------------------------------------
-
-
 
 |WN|
 -------------------------------------------------------------------------------

@@ -29,10 +29,6 @@ The elements identified in the figure above are:
 In the Layers list, you can see a list, at any time, of all the layers
 available to you.
 
-.. note:: |note| A vector layer is a dataset, usually of a specific kind of object,
-   such as roads, trees, etc. A vector layer can consist of either points,
-   lines or polygons.
-
 Expanding collapsed items (by clicking the arrow or plus symbol beside them)
 will provide you with more information on the layer's current appearance.
 
@@ -42,6 +38,10 @@ will be using some of them before long, so take a look around!
 Some versions of QGIS have a separate :guilabel:`Control rendering order`
 checkbox just underneath the Layers list. Don't worry if you can't see it. It
 will be addressed later.
+
+.. note:: |note| A vector layer is a dataset, usually of a specific kind of object,
+   such as roads, trees, etc. A vector layer can consist of either points,
+   lines or polygons.
 
 |basic| Toolbars
 ...............................................................................

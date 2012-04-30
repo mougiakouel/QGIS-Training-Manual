@@ -111,8 +111,6 @@ QGIS generated attribute capture form each time you capture a new point.
 
 .. image:: ../_static/create_vector_data/019.png
 
-Remember how you did this earlier; it's the same here.
-
 |hard| |FA| Creating a New Form
 -------------------------------------------------------------------------------
 
