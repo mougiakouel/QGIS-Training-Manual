@@ -10,3 +10,4 @@ exercise_data/Natural_Earth_quick_start/
 exercise_data/rural_reprojected.*
 exercise_data_original/
 *.odt#
+linfiniti-sphinx-theme/*

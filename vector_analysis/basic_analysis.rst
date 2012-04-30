@@ -181,12 +181,7 @@ Buffer(s)` tool:
 .. image:: ../_static/vector_analysis/018.png
    :align: center
 
-This gives you a new dialog:
-
-.. image:: ../_static/vector_analysis/019.png
-   :align: center
-
-Set it up like this:
+This gives you a new dialog. Set it up like this:
 
 .. image:: ../_static/vector_analysis/020.png
    :align: center
@@ -270,12 +265,7 @@ they overlap, since that's what we really wanted to know in the first place.
 
 Now you've got the area that the farms must overlap. Next, you want to select
 the farms in that area. Go to :menuselection:`Vector --> Research Tools -->
-Select by location`. You'll get this dialog:
-
-.. image:: ../_static/vector_analysis/029.png
-   :align: center
-
-Set it up like this:
+Select by location`. A dialog will appear. Set it up like this:
 
 .. image:: ../_static/vector_analysis/030.png
    :align: center
