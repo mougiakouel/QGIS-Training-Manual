@@ -91,16 +91,20 @@ the coming days.
 
 Try to find each of these tools on your screen. What is their purpose?
 
-#. .. image:: ../_static/interface/004.png
-   :align: center
-#. .. image:: ../_static/interface/005.png
-   :align: center
-#. .. image:: ../_static/interface/006.png
-   :align: center
-#. .. image:: ../_static/interface/007.png
-   :align: center
-#. .. image:: ../_static/interface/008.png
-   :align: center
+1. .. image:: ../_static/interface/004.png
+      :align: center
+
+2. .. image:: ../_static/interface/005.png
+      :align: center
+
+3. .. image:: ../_static/interface/006.png
+      :align: center
+
+4. .. image:: ../_static/interface/007.png
+      :align: center
+   
+5. .. image:: ../_static/interface/008.png
+      :align: center
 
 :ref:`Check your results <interface-overview-2>`
 
