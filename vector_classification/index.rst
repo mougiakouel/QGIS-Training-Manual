@@ -7,8 +7,6 @@ Classifying vector data allows you to assign different symbols to features
 allows someone who uses the map to easily see the attributes of various
 features.
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
    :numbered:

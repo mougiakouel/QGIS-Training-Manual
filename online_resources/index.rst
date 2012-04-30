@@ -10,8 +10,6 @@ Internet.
 In this module, we'll cover two kinds of web-based GIS services: Web Mapping
 Services (WMS) and Web Feature Services (WFS).
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
    :numbered:

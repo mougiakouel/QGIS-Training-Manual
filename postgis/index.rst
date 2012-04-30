@@ -13,9 +13,7 @@ good friend is the `online
 <http://postgis.refractions.net/documentation/manual-1.5/>`_ PostGIS
 documentation.
 
-See also `PostGIS online <http://postgisonline.org/>`_
-
-Contents:
+See also `PostGIS online <http://postgisonline.org/>`_.
 
 .. toctree::
    :maxdepth: 2

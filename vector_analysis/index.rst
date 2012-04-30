@@ -24,8 +24,6 @@ Your market research has given you the following criteria. The farm must:
 Within the next few modules, we'll harness the power of GIS analysis tools to
 locate suitable farm properties for this new residential development.
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
    :numbered:
