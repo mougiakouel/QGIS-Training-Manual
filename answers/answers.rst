@@ -407,7 +407,7 @@ yourself by using the :guilabel:`Add Vector Layer` button as you did before.
 
 .. _vector-analysis-basic-2:
 
-|basic| *Distance from Classy Schools*
+|basic| *Distance from High Schools*
 ...............................................................................
 
 Your buffer dialog should look like this:

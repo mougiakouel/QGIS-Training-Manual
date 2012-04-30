@@ -153,19 +153,19 @@ clicked buttons, or you can copy and paste the command above.
 
 :ref:`Check your results <vector-analysis-basic-1>`
 
-|basic| |TY| find classy schools
+|basic| |TY| find high schools
 -------------------------------------------------------------------------------
 
-Your future customers only want to send their children to classy schools, so
+Your future customers will want to send their children to high schools, so
 use the same approach as before and build this query for the
 :guilabel:`schools` layer:
 
-:kbd:`"classy" = 'y'`
+:kbd:`"has_high_s" = 'y'`
 
 You should have only 3 out of the 4 original schools left.
 
 Save the resulting layer under :kbd:`exercise_data/residential_development/` as
-:kbd:`classy_schools.shp`.
+:kbd:`high_schools.shp`.
 
 
 |basic| |FA| Analyzing the Problem: Distances From Schools and Roads
@@ -228,12 +228,12 @@ That's more like it! Now there are no unnecessary subdivisions.
 
 .. _backlink-vector-analysis-basic-2:
 
-|basic| |TY| distance from classy schools
+|basic| |TY| distance from high schools
 -------------------------------------------------------------------------------
 
 Use the same approach as above and create a buffer for your schools. It needs
 to be :kbd:`10 km` in radius, and saved under the usual directory as
-:kbd:`classy_schools_buffer_10km.shp`.
+:kbd:`high_schools_buffer_10km.shp`.
 
 :ref:`Check your results <vector-analysis-basic-2>`
 
