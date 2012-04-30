@@ -27,7 +27,7 @@ done by right-clicking on the layer in the Layers list, and then selecting the
 menu item :guilabel:`Properties` in the menu that appears. Let's begin by
 changing the color of the :guilabel:`urban` layer.
 
-.. note:: You can also access a layer's properties by double-clicking on the
+.. note:: |note| You can also access a layer's properties by double-clicking on the
    layer in the Layers list.
 
 In the :guilabel:`Properties` window, select the :guilabel:`Style` tab at the
@@ -169,7 +169,7 @@ Now there's a second symbol layer. Being a solid color, it will of course
 completely hide the previous kind of symbol. Plus, it has a :guilabel:`Solid
 Line` border style, which we don't want. Clearly this symbol has to be changed.
 
-.. note:: It's important not to get confused between a map layer and a symbol
+.. note:: |note| It's important not to get confused between a map layer and a symbol
    layer. A map layer is a vector (or raster) that has been loaded into the
    map. A symbol layer is part of the symbol used to represent a map layer.
    This course will usually refer to a map layer as just a layer, but a symbol
@@ -375,7 +375,7 @@ that make up the texture.
 |hard| |FA| Creating a custom SVG fill
 -------------------------------------------------------------------------------
 
-.. note:: To do this exercise, you will need to have the free vector editing
+.. note:: |note| To do this exercise, you will need to have the free vector editing
    software Inkscape installed.
 
 Start the Inkscape program. You will see the following interface:
@@ -482,4 +482,4 @@ What are the relative surface areas of the farms? All of this information is
 still hidden. The next lesson will explain how to represent this data on your
 map.
 
-.. note:: Did you remember to save your map recently?
+.. note:: |note| Did you remember to save your map recently?

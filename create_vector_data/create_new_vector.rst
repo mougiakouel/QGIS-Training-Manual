@@ -198,7 +198,7 @@ Digitize the school itself and the upper field. Use this image to assist you:
 
 Remember that each new feature needs to have a unique :kbd:`id` value!
 
-.. note:: When you're done adding features to a layer, remember to save your
+.. note:: |note| When you're done adding features to a layer, remember to save your
    edits and then exit edit mode.
 
 .. _backlink-create-vector-digitize-1:

@@ -63,7 +63,7 @@ file...` is :kbd:`exercise_data/residential_development/raster_conversion.tif`;
 the :guilabel:`Width` and :guilabel:`Height` are :kbd:`837` and :kbd:`661`,
 respectively.
 
-.. note:: The size of the output image is specified here to be the same as the
+.. note:: |note| The size of the output image is specified here to be the same as the
    original raster which was vectorized. To view the dimensions of an image,
    open its metadata (:guilabel:`Metadata` tab in the :guilabel:`Layer
    Properties`).

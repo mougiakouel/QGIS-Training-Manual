@@ -95,7 +95,7 @@ But when you select the feature ...
 ... you'll see that QGIS has automatically added all the detailed vertices and
 made sure that there was no overlap!
 
-.. note:: The "Avoid Intersections" option only works to eliminate overlap
+.. note:: |note| The "Avoid Intersections" option only works to eliminate overlap
    (intersections). Obviously, if you leave a gap, that will not be filled,
    because you might not actually want the gap to be filled!
 

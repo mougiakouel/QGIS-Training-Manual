@@ -82,7 +82,7 @@ polygons have at least four vertices, with the last and first being co-located.
   insert into cities (name, the_geom)
   values ('Tokyo', 'SRID=4326;POLYGON((10 -10, 5 -32, 30 -27, 10 -10))');
 
-.. note:: A polygon requires double brackets around its coordinate list; this
+.. note:: |note| A polygon requires double brackets around its coordinate list; this
    is to allow you to add complex polygons with multiple unconnected areas. For
    instance:
 

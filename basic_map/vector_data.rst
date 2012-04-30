@@ -93,7 +93,7 @@ all of them at once.
 
 Click :guilabel:`Add`. This will add all three layers to the map at once.
 
-.. note:: Remember to save the map often! The map file doesn't contain any of
+.. note:: |note| Remember to save the map often! The map file doesn't contain any of
    the data directly, but it remembers which layers you loaded into your map.
 
 :ref:`Check your results <vector-load-from-database-1>`
@@ -107,7 +107,7 @@ layer at the bottom of the list is drawn first, and the layer at the top is
 drawn last. By changing the order that they are shown on the list, you can
 change the order they are drawn in.
 
-.. note:: Depending on the version of QGIS that you are using, you may have a
+.. note:: |note| Depending on the version of QGIS that you are using, you may have a
    checkbox beneath your Layers list reading :guilabel:`Control rendering
    order`. This must be checked (switched on) so that moving the layers up and
    down in the Layers list will bring them to the front or send them to the

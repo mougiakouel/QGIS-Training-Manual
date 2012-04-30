@@ -228,7 +228,7 @@ before. Now click on any farm you can see on the map. Your browser will now
 open, and will automatically start a Google search for the town that is
 recorded as that farm's :kbd:`SGADMIN` value.
 
-.. note:: If your action doesn't work, check that everything was entered
+.. note:: |note| If your action doesn't work, check that everything was entered
    correctly; typos are common with this kind of work!
 
 |hard| |FA| Open a Webpage Directly in QGIS

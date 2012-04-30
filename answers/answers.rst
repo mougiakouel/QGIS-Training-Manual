@@ -88,7 +88,7 @@ may look different depending on the color you chose.
 .. image:: ../_static/symbology/018.png
    :align: center
 
-.. note:: If you want to work on only one layer at a time and don't want the
+.. note:: |note| If you want to work on only one layer at a time and don't want the
    other layers to distract you, you can hide a layer by clicking in the check
    box next to its name in the Layers list. If the box is blank, then the layer
    is hidden.

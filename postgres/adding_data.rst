@@ -172,7 +172,7 @@ record to be changed:
 
 It should return :kbd:`UPDATE 1`.
 
-.. note:: the :kbd:`WHERE` statement criteria are case sensitive :kbd:`Main
+.. note:: |note| the :kbd:`WHERE` statement criteria are case sensitive :kbd:`Main
    Street` <> :kbd:`Main street`
 
 Delete Data
