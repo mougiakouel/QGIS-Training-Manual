@@ -329,6 +329,63 @@ Result:
   (3 rows)
 
 
+Further examples ...
+...............................................................................
+
+::
+
+  CREATE VIEW vw_shortestline AS
+    SELECT b.gid AS gid, ST_ASTEXT(ST_SHORTESTLINE(a.the_geom, b.the_geom)) as
+      text, ST_SHORTESTLINE(a.the_geom, b.the_geom) AS the_geom
+      FROM road a, building b
+        WHERE a.id=5 AND b.id=22;
+
+  CREATE VIEW vw_longestline AS
+    SELECT b.gid AS gid, ST_ASTEXT(ST_LONGESTLINE(a.the_geom, b.the_geom)) as
+      text, ST_LONGESTLINE(a.the_geom, b.the_geom) AS the_geom
+      FROM road a, building b
+        WHERE a.id=5 AND b.id=22;
+
+::
+  
+  CREATE VIEW vw_road_centroid AS
+    SELECT a.gid as gid, ST_CENTROID(a.the_geom) as the_geom
+      FROM road a
+        WHERE a.id = 1;
+
+  CREATE VIEW vw_region_centroid AS
+    SELECT a.gid as gid, ST_CENTROID(a.the_geom) as the_geom
+      FROM region a
+        WHERE a.name = 'Saskatchewan';
+
+::
+
+  SELECT ST_PERIMETER(a.the_geom)
+    FROM region a
+      WHERE a.name='Queensland';
+
+  SELECT ST_AREA(a.the_geom)
+    FROM region a
+      WHERE a.name='Queensland';
+
+::
+  
+  CREATE VIEW vw_simplify AS
+    SELECT gid, ST_Simplify(the_geom, 20) AS the_geom
+      FROM road;
+
+  CREATE VIEW vw_simplify_more AS
+    SELECT gid, ST_Simplify(the_geom, 50) AS the_geom
+      FROM road;
+::
+
+  CREATE VIEW vw_convex_hull AS
+    SELECT
+      ROW_NUMBER() over (order by a.name) as id,
+      a.name as town,
+      ST_CONVEXHULL(ST_COLLECT(a.the_geom)) AS the_geom
+      FROM building a
+      GROUP BY a.name;
 
 |IC|
 -------------------------------------------------------------------------------

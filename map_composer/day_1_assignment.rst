@@ -12,6 +12,10 @@ to read and understand for someone who's unfamiliar with the data? If I saw
 this map on the Internet, or on a poster, or in a magazine, would it capture my
 attention? Would I want to read this map if it wasn't mine?
 
+If you're doing this course at a |basic| Basic or |moderate| Intermediate
+level, read up on techniques from the more advanced sections. If you see
+something you'd like to do in your map, why not try to implement it?
+
 If this course is being presented to you, the course presenter may require you
 to submit a final version of your map, exported to PDF, for evaluation. If
 you're doing this course by yourself, it's recommended that you evaluate your
