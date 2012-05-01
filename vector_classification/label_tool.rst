@@ -290,9 +290,6 @@ Feel free to explore more possibilities of the labeling system.
 You've learned how to use layer attributes to create dynamic labels. This can
 make your map a lot more informative and stylish!
 
-|FR|
--------------------------------------------------------------------------------
-
 |WN|
 -------------------------------------------------------------------------------
 

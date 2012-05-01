@@ -132,17 +132,12 @@ Reorder them to look like this:
 .. image:: ../_static/vector/003.png
    :align: center
 
-In conclusion
+|IC|
 -------------------------------------------------------------------------------
 
 Now you've added all the layers you need from several different sources.
 
-Further Reading
--------------------------------------------------------------------------------
-
-@todo
-
-What's Next?
+|WN|
 -------------------------------------------------------------------------------
 
 Using the random palette automatically assigned when loading the layers, your

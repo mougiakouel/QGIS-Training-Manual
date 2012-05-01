@@ -98,11 +98,6 @@ Now click on the :guilabel:`Calculate` button to see the solution:
 Now you know how to use the :guilabel:`Road Graph` plugin to solve
 shortest-path problems.
 
-|FR|
--------------------------------------------------------------------------------
-
-
-
 |WN|
 -------------------------------------------------------------------------------
 

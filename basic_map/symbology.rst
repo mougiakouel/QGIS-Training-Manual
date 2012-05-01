@@ -33,7 +33,7 @@ changing the color of the :guilabel:`urban` layer.
 In the :guilabel:`Properties` window, select the :guilabel:`Style` tab at the
 extreme left:
 
-.. image:: ../_static/symbology/004-diagram.png
+.. image:: ../_static/symbology/052.png
    :align: center
 
 Click the :guilabel:`Change` button next to the :guilabel:`Color` label
@@ -71,10 +71,9 @@ the different farms so as to make the map less visually cluttered.
 First, open the :guilabel:`Layer Properties` window for the :guilabel:`rural`
 layer. Under the :guilabel:`Style` tab, you will see the same kind of dialog as
 before. This time, however, you're doing more than just quickly changing the
-color. So click on the :guilabel:`Change...` button below the color display,
-outlined in the image below:
+color. So click on the :guilabel:`Change...` button below the color display:
 
-.. image:: ../_static/symbology/006-diagram.png
+.. image:: ../_static/symbology/053.png
    :align: center
 
 This dialog will appear:
@@ -153,7 +152,7 @@ Go back to the :guilabel:`Symbol properties` dialog as before. In this example,
 the current symbol has no outline (i.e., it uses the :guilabel:`No Pen` border
 style).
 
-.. image:: ../_static/symbology/009-diagram.png
+.. image:: ../_static/symbology/054.png
    :align: center
 
 Note the highlighted button. Clicking on it will give you a dialog that looks
@@ -226,9 +225,10 @@ Well that's not what we want at all!
 
 To prevent this from happening, you can enable symbol levels, which will
 control the order in which the different symbol layers are rendered. In the
-:guilabel:`Layer Properties` dialog, click on this button:
+:guilabel:`Layer Properties` dialog, click on :menuselection:`Advanced -->
+Symbol levels`:
 
-.. image:: ../_static/symbology/015-diagram.png
+.. image:: ../_static/symbology/055.png
    :align: center
 
 The :guilabel:`Symbol Levels` dialog will appear. Alter its values to match

@@ -24,4 +24,3 @@ See also `PostGIS online <http://postgisonline.org/>`_.
    import_export
    spatial_queries
    geometry
-   advanced

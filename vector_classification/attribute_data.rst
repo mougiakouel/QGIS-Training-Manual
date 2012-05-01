@@ -35,11 +35,6 @@ that you care about. If you know which attributes you need, you can quickly
 decide if you're able to use a given dataset, or if you need to look for
 another one that has the required attribute data.
 
-|FR|
--------------------------------------------------------------------------------
-
-.. @todo
-
 |WN|
 -------------------------------------------------------------------------------
 

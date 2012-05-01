@@ -260,20 +260,6 @@ This is the result:
 .. image:: ../_static/map_composer/028.png
    :align: center
 
-|basic| |FA| Adding Scale
--------------------------------------------------------------------------------
-
-@todo
-Get info from Tim: scale bar functionality is awkward at this stage. Should we
-use numeric scale for now?
-
-|basic| |FA| Adding Arrows
--------------------------------------------------------------------------------
-
-@todo
-Get info from Tim: do arrows point North, or just up? Should we address
-rotation, if so at what level (basic, int, adv)?
-
 |basic| |FA| Exporting Your Map
 -------------------------------------------------------------------------------
 
@@ -328,9 +314,6 @@ Choose a save location and a file name as normal, then click :guilabel:`Save`.
 Close the :guilabel:`Composer` window and save your map. Find your exported PDF
 using your operating system's file manager and open it. Bask in its glory.
 Congratulations on your first completed QGIS map project!
-
-|FR|
--------------------------------------------------------------------------------
 
 |WN|
 -------------------------------------------------------------------------------

@@ -295,6 +295,22 @@ use the PostgreSQL keyword :kbd:`EXCEPT`.
 As the result, you will get all records from table_a which are not stored in
 table_b.
 
+Tablespaces
+-------------------------------------------------------------------------------
+
+You can define where postgres should store its data on disk by creating
+tablespaces.
+
+::
+
+  CREATE TABLESPACE homespace LOCATION '/home/pg';
+
+When you create a database, you can then specify which tablespace to use e.g.:
+
+::
+
+  createdb --tablespace=homespace t4a
+
 |IC|
 -------------------------------------------------------------------------------
 
@@ -304,9 +320,3 @@ with geo-enabled databases through a GIS frontend. You usually won't need to
 actually enter these statements manually, but having a general idea of their
 structure will help you when using a GIS, especially if you encounter errors
 that would otherwise seem cryptic.
-
-|WN|
--------------------------------------------------------------------------------
-
-Next you'll be shown some advanced functions that could not be covered
-elsewhere.

@@ -286,9 +286,6 @@ features, using any relevat attributes that we choose. Depending on the
 problems you face, you'll apply different classification techniques to solve
 them.
 
-|FR|
--------------------------------------------------------------------------------
-
 |WN|
 -------------------------------------------------------------------------------
 

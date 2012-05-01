@@ -78,10 +78,6 @@ They should match up exactly, pixel for pixel.
 Converting between raster and vector formats allows you to widen the
 applicability of data, and need not lead to data degradation.
 
-|FR|
--------------------------------------------------------------------------------
-
-
 |WN|
 -------------------------------------------------------------------------------
 

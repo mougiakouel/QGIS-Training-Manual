@@ -50,7 +50,7 @@ large scale), don't assign any point at all.
 Don't use point symbols to symbolize the layer at all. Instead, use labels
 centered over the points; the point symbols themselves should have no size.
 
-Furthermore, use :guilabels:`Data defined settings` to style the labels into
+Furthermore, use :guilabel:`Data defined settings` to style the labels into
 meaningful categories. Add appropriate columns to the attribute data if
 necessary. When doing so, don't create fictional data - rather, use the
 :guilabel:`Field Calculator` to populate the new columns, based on appropriate
@@ -140,7 +140,7 @@ these criteria:
 - it should be within a given distance from some category of points, like a
   hospital for example
 
-|moderate| Moderate / |hard| Hard
+|moderate| / |hard| 
 -------------------------------------------------------------------------------
 
 Include raster analysis in your results. Consider at least one derived property

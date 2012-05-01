@@ -275,21 +275,26 @@ them both. Try it and see!
 Undo your edit before continuing with the exercise for the next tool.
 
 
+.. _backlink-create-vector-topology-4:
+
 |hard| |TY| Tool: Merge Features
 -------------------------------------------------------------------------------
 
-Select your farm and an adjacent one with the :guilabel:`Select` tool. Use the
-:guilabel:`Merge Selected Features` and :guilabel:`Merge Attributes of Selected
-Features` tools, and note the differences.
+Find and select these farms:
+
+.. image:: ../_static/create_vector_data/073.png
+   :align: center
+
+Use the :guilabel:`Merge Selected Features` and :guilabel:`Merge Attributes of
+Selected Features` tools, and note the differences.
+
+:ref:`Check your results <create-vector-topology-4>`
 
 |IC|
 -------------------------------------------------------------------------------
 
 Topology editing is a powerful tool that allows you to create and modify
 objects quickly and easily, while ensuring that they are topologically correct.
-
-|FR|
--------------------------------------------------------------------------------
 
 |WN|
 -------------------------------------------------------------------------------

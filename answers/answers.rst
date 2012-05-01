@@ -352,6 +352,30 @@ Undo your edit before continuing with the exercise for the next tool.
 :ref:`Back to text <backlink-create-vector-topology-2>`
 
 
+.. _create-vector-topology-4:
+
+|hard| *Merge Features*
+...............................................................................
+
+Use the feature with the :guilabel:`id` of :kbd:`1237` as the source of your
+attributes (click on its entry in the dialog, then click the :guilabel:`Take
+attributes from selected feature` button):
+
+.. image:: ../_static/create_vector_data/074.png
+   :align: center
+
+Using :guilabel:`Merge Selected Features` will merge the attributes as well as
+the geometries:
+
+.. image:: ../_static/create_vector_data/075.png
+   :align: center
+
+Whereas :guilabel:`Merge Attributes of Selected Features` will keep the
+geometries distinct, but give them the same attributes.
+
+:ref:`Back to text <backlink-create-vector-topology-4>`
+
+
 .. _create-vector-forms-1:
 
 |moderate| *Forms*

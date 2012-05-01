@@ -108,7 +108,7 @@ Try to find each of these tools on your screen. What is their purpose?
 
 :ref:`Check your results <interface-overview-2>`
 
-In conclusion
+|WN|
 -------------------------------------------------------------------------------
 
 Now you've seen how the QGIS interface works, you can use the tools available

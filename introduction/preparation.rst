@@ -51,12 +51,12 @@ Save the map under :kbd:`exercise_data/` and call it :kbd:`basic_map.qgs`.
 
 :ref:`Check your results <interface-preparation-1>`
 
-In conclusion
+|IC|
 -------------------------------------------------------------------------------
 
 You've learned how to add a layer and create a basic map!
 
-What's next?
+|WN|
 -------------------------------------------------------------------------------
 
 Now you're familiar with the function of the :guilabel:`Add Vector Layer`

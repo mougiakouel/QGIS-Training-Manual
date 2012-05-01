@@ -252,7 +252,44 @@ Analysis --> Sieve`):
 .. image:: ../_static/rasters/035.png
    :align: center
 
-[ISSUE WITH NULL VALUES]
+Set the :guilabel:`Input file` to :kbd:`all_conditions`, and the
+:guilabel:`Output file` to :kbd:`all_conditions_sieve.tif` (under
+:kbd:`exercise_data/residential_development/`, as always). Set both the
+:guilabel:`Threshold` and :guilabel:`Pixel connections` values to :kbd:`8`,
+then run the tool.
+
+Once processing is done, the new layer will load into the canvas. But when you
+try to use the histogram stretch tool to view the data, this happens:
+
+.. image:: ../_static/rasters/036.png
+   :align: center
+
+What's going on? The answer lies in the new raster file's metadata (which you
+can find under the :guilabel:`Metadata` tab of the :guilabel:`Layer Properties`
+dialog). Whereas this raster, like the one it's derived from, should only
+feature the values :kbd:`1` and :kbd:`0`, it has the :kbd:`STATISTICS_MINIMUM`
+value of a very large negative number. Investigation of the data shows that
+this number acts as a null value. Since we're only after areas that weren't
+filtered out, let's set these null values to zero.
+
+Open the :guilabel:`Raster Calculator` again, and build this expression:
+
+:kbd:`(all_conditions_sieve@1 <= 0) = 0`
+
+This will maintain all existing zero values, while also setting the negative
+numbers to zero; which will leave all the areas with value :kbd:`1` intact.
+Save the output under :kbd:`exercise_data/residential_development/` as
+:kbd:`all_conditions_simple.tif`.
+
+Your output looks like this:
+
+.. image:: ../_static/rasters/037.png
+   :align: center
+
+This is what was expected: a simplified version of the earlier results.
+Remember that if the results you get from a tool aren't what you expected,
+viewing the metadata (and vector attributes, if applicable) can prove essential
+to solving the problem.
 
 |IC|
 -------------------------------------------------------------------------------

@@ -63,3 +63,15 @@ meters or more. How would you ensure that the farms meet this requirement? Use
 (a) **vector** analysis tool(s) for this.
 
 :ref:`Check your results <complete-analysis-3>`
+
+|IC|
+-------------------------------------------------------------------------------
+
+You have now answered the original research question, and can offer an opinion
+(with reasons, backed by analysis) for a recommendation regarding with property
+to develop.
+
+|WN|
+-------------------------------------------------------------------------------
+
+Next you will present these results as part of your second assignment.
