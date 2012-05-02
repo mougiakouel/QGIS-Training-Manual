@@ -107,7 +107,7 @@ Data
 The sample data that accompanies this resource is freely available and comes
 from the following sources:
 - Streets and Places datasets from OpenStreetMap (http://www.openstreetmap.org/)
-- Property boundaries (urban and rural), water bodies from DGI ()
+- Property boundaries (urban and rural), water bodies from NGI (http://www.ngi.gov.za/)
 - SRTM DEM from the CGIAR-CGI (http://srtm.csi.cgiar.org/)
 
 
