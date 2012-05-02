@@ -28,6 +28,13 @@ exercises complete with annotated answers throughout the text.
 License
 -------
 
+.. image:: _static/license.png 
+The Free Quantum GIS Training Manual by Linfiniti Consulting CC. is licensed
+under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported
+License.  Based on a work at https://github.com/qgis/QGIS-Training-Manual.
+Permissions beyond the scope of this license may be available at
+https://github.com/qgis/QGIS-Training-Manual/blob/master/index.rst.
+
 We have published this QGIS training manual under a liberal license that allows
 you to freely copy, modify and redistribute this work. A complete copy of the 
 license is available at the end of this document. In simple terms the usage
@@ -99,6 +106,17 @@ Data
 
 The sample data that accompanies this resource is freely available and comes
 from the following sources:
+
+
+Latest Version
+--------------
+
+You can always obtain the latest version of this document by visiting our `home
+page <http://readthedocs.org/builds/the-free-qgis-training-manual/>`_ which is
+kindly hosted by http://readthedocs.org.
+
+.. note:: There are links to PDF and epub versions of the documentation in the
+   lower right hand corner of the above mentioned home page.
 
 
 
