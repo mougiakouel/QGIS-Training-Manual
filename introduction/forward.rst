@@ -28,7 +28,7 @@ exercises complete with annotated answers throughout the text.
 License
 -------
 
-.. image:: _static/license.png 
+.. image:: ../_static/license.png 
 The Free Quantum GIS Training Manual by Linfiniti Consulting CC. is licensed
 under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported
 License.  Based on a work at https://github.com/qgis/QGIS-Training-Manual.
@@ -109,6 +109,10 @@ Data
 The sample data that accompanies this resource is freely available and comes
 from the following sources:
 
+- Streets and Places datasets from OpenStreetMap (http://www.openstreetmap.org/)
+- Property boundaries (urban and rural), water bodies from NGI (http://www.ngi.gov.za/)
+- SRTM DEM from the CGIAR-CGI (http://srtm.csi.cgiar.org/)
+- The Natural Eath quickstart dataset from (http://www.naturalearthdata.com/)
 
 Latest Version
 --------------
