@@ -206,7 +206,7 @@ latex_elements = {
 # manual style = report cls
 latex_documents = [
   ('index', 'LinfinitiQGISTrainingManual.tex', u'Quantum GIS Training Manual',
-   u'Tim Sutton, Rudi Thiede, Dr. Horst Düster', 'manual'),
+   u'Rudi Thiede, Tim Sutton, Dr. Horst Düster, Marcelle Sutton', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
