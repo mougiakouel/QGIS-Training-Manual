@@ -377,6 +377,7 @@ Further examples ...
   CREATE VIEW vw_simplify_more AS
     SELECT gid, ST_Simplify(the_geom, 50) AS the_geom
       FROM road;
+
 ::
 
   CREATE VIEW vw_convex_hull AS
