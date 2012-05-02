@@ -6,6 +6,15 @@ QGIS easily and efficiently. If you're new to GIS, we'll tell you what you need
 to get started. If you're an experienced user, you'll see how QGIS fulfills all
 the functions you expect from a GIS program, and more!
 
+
+In this module we introduce the QGIS project itself, as well as explaining the
+user interface.
+
+After completing this section, you will be able to correctly identify the
+main elements of the screen in QGIS and know what each of them does, and
+load a shapefile into QGIS.
+
+
 .. warning::
 
    This course includes instructions on adding, deleting and altering GIS

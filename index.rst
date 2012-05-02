@@ -3,6 +3,7 @@
    :maxdepth: 2
    :numbered:
 
+   forword/index
    introduction/index
    basic_map/index
    vector_classification/index
