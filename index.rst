@@ -1,33 +1,105 @@
-Welcome to Linfiniti QGIS Training Manual's documentation!
-==========================================================
+Forward
+=======
 
-GIS is becoming an increasingly important tool in environmental management,
-retail, military, police, tourism and many other spheres of our daily lives.
-If you use a computer or a cell phone, you have probably already used a GIS
-in some form without even realising it. Maybe it was a map on a web site,
-Google Earth, an information booth or your cell phone telling you where you
-are. Proprietary GIS software (software that cannot be freely shared or
-modified) is available that will let you do everything we describe in these
-worksheets and a lot more. However this software is usually very expensive or
-otherwise limits your freedom to copy, share and modify the software. GIS
-vendors sometimes make an exception for educational activities, providing
-cheaper or free copies of their software. They do this knowing that if
-teachers and learners get to know their software, they will be reluctant to
-learn other packages. When learners leave school they will go into the
-workplace and buy the commercial software, never knowing that there are free
-alternatives that they could be using.
+Background
+----------
 
-With Quantum GIS, we offer an alternative - software that is free of cost and
-free in a social sense. You can make as many copies as you like. When learners
-leave school one day they can use this software to build their skills, solve
-problems at work and make the world a better place.
+In 2008 we launched the `Gentle Introduction to GIS
+<http://linfiniti.com/dla>`_, a completely free, open content resource for
+people who want to learn about GIS without being overloaded with Jargon and new
+terminology. The was sponsored by the South African government and has been a
+phenomenal success, with people all over the world writing to us to tell us how
+they are using the materials to run University Training Courses, teach
+themselves GIS and so on. The Gentle Introduction is not a software tutorial,
+but rather aims to be a generic text (although we used QGIS in all examples)
+for someone learning about GIS. There is also the QGIS manual which provides a
+detailed functional overview of the QGIS application, but it is not structured
+as a tutorial, but rather as a reference guide. At Linfiniti Consulting CC. we
+frequently run training courses and have realised that a third resource is
+needed - one that leads the reader sequentially through learning the key
+aspects of QGIS in a trainer-trainee format - which prompted us to produce this
+work.
 
-When you buy commercial software, you limit your options for the future. By
-learning, using and sharing Free and Open Source Software, you are building
-your own skills, freeing money to be spent on important things like food and
-shelter and boosting your own economy.
+This training manual is intended to provide all the materials needed to run a 5
+day course on QGIS, PostgreSQL and PostGIS. The course is structured with
+content to suit novice, intermediate and advanced users alike and has many
+exercises complete with annotated answers throughout the text.
 
-We hope you enjoy using and learning QGIS in the spirit of Ubuntu!
+License
+-------
+
+We have published this QGIS training manual under a liberal license that allows
+you to freely copy, modify and redistribute this work. A complete copy of the 
+license is available at the end of this document. In simple terms the usage
+guidelines are as follows:
+
+* You may not represent this work as your own work, or remove any authorship
+  text or credits from this work.
+* You may not redistribute this work under more restrictive permissions than
+  those under which it was provided to you.
+* If you add a substantitive portion to the work and contribute it back to the
+  project (at least one complete module) you may add your name to the end of the
+  authors list for this document (which will appear on the front page)
+* If you contribute minor changes and corrections you may add yourself to the 
+  contributors list below.
+* If you translate this document in it's entirety, you may add your name to the 
+  authors list in the form "Translated by Joe blogs".
+* If you sponsor a module or lesson, you may request the author to include an
+  acknowledgement in the beginning of each lesson contributed e.g.
+
+.. note:: This lesson was sponsored by MegaCorp.
+
+* If you are unsure about what you may do under this license, please contact us
+  at office@linfiniti.com and we will advice you if what you intend doing is
+  acceptible.
+* If you publish this work under a self publishing site such as http:://lulu.com
+  we request that you donate the profits to the QGIS project.
+* You may not commercialise this work, except with the expressed permission of the
+  authors. To be clear, by commercialisation we mean that you may not sell for
+  profit, create commercial derivative works (e.g. selling content for use as
+  articles in a magazine). The exception to this is if all the profits are
+  given to the QGIS project. You may (and we encourage you to do so) use this
+  work as a text book when conducting training courses, even if the course
+  itself is commercial in nature. In other words, you are welcome to make money
+  by running a training course that uses this work as a text book, but you
+  may not profit off the sales of the book itself - all such profits should be
+  contributed back to QGIS.
+
+
+Sponsoring Chapters
+-------------------
+
+This work is by no means a complete treatise on all the things you can do with
+QGIS and we encourage others to add new materials to fill any gaps. Linfiniti
+Consulting CC. can also create additional materials for you as a commercial
+service, with the understanding that all such works produced should become part
+of the core content and be published under the same license.
+
+Authors
+-------
+
+* Rudi Thiede (rudi@linfiniti.com) - Rudi has written the QGIS instructional
+  materials and parts of the PostGIS materials.
+* Tim Sutton (tim@linfiniti.com) - Tim has overseen and guided the project and
+  co-authored the PostgreSQL and PostGIS parts. Tim also authored the custom
+  sphinx theme used for this manual.
+* Horst Düster (horst.duester@kappasys.ch ) - Horst co-authored the PostgreSQL
+  and PostGIS parts
+* Marcelle Sutton (marcelle@linfiniti.com) - Marcelle provided proof reading
+  and editorial advice during the creation of this work.
+
+Contributors
+------------
+
+Your name here!
+
+
+Data
+----
+
+The sample data that accompanies this resource is freely available and comes
+from the following sources:
+
 
 
 Tim Sutton, May 2012

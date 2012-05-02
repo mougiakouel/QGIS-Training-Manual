@@ -56,7 +56,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Quantum GIS Training Manual'
+project = u'The Free Quantum GIS Training Manual'
 copyright = u'2012, Linfiniti Consulting CC'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -206,7 +206,7 @@ latex_elements = {
 # manual style = report cls
 latex_documents = [
   ('index', 'LinfinitiQGISTrainingManual.tex', u'Quantum GIS Training Manual',
-   u'Tim Sutton, Rudi Thiede', 'manual'),
+   u'Tim Sutton, Rudi Thiede, Dr. Horst Düster', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
