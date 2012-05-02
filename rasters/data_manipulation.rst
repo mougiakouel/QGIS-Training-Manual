@@ -36,7 +36,7 @@ files that end in :kbd:`.tif`. Either load them all in separately, or hold down
 :kbd:`ctrl` and click on all four of them in turn, then open them at the same
 time.
 
-.. note:: |note| A file that ends in :kbd:`.tif.ovr` is an overview file. It is
+.. note::  A file that ends in :kbd:`.tif.ovr` is an overview file. It is
    associated with the :kbd:`.tif` file of the same names, and allows it to
    render faster in QGIS. Don't try to open the :kbd:`.tif.ovr` files yourself;
    they will load automatically when you open their associated :kbd:`.tif`
@@ -93,7 +93,7 @@ Lastly, check the :guilabel:`Load into canvas when finished` button.
 Notice the text field below. What this dialog is actually doing is that it's
 writing that text for you. It's a long command that QGIS is going to run.
 
-.. note:: |note| |hard| Keep in mind that the command text is editable, so you can
+.. note::  |hard| Keep in mind that the command text is editable, so you can
    customize the command further if preferred. Search online for the initial
    command (in this case, :kbd:`gdalbuildvrt`) for help on the syntax.
 

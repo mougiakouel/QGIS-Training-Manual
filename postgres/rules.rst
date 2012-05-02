@@ -51,7 +51,7 @@ this:
    Joe Bloggs | 2012-04-23 15:20:56.683382
   (1 row)
 
-.. note:: |note| The value of the :kbd:`time` field will depend on the current date
+.. note::  The value of the :kbd:`time` field will depend on the current date
    and time.
 
 |IC|

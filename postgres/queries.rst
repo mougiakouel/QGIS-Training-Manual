@@ -141,7 +141,7 @@ query. Lets look at an example:
   from people,streets
   where people.street_id=streets.id;
 
-.. note:: |note| With joins, you will always state the two tables the information is
+.. note::  With joins, you will always state the two tables the information is
    coming from, in this case people and streets.  You also need to specify
    which two keys must match (foreign key & primary key). If you don't specify
    that, you will get a list of all possible combinations of people and
@@ -262,7 +262,7 @@ Result:
        2 |         1
   (3 rows)
 
-.. note:: |note| Because there is no :kbd:`ORDER BY` clause, on your computer these
+.. note::  Because there is no :kbd:`ORDER BY` clause, on your computer these
    data may not be in the same order as shown here.
 
 Exercise:
@@ -306,7 +306,7 @@ Result:
        1 | QGIS Road
   (3 rows)
 
-.. note:: |note| You will notice that we have prefixed field names with table names
+.. note::  You will notice that we have prefixed field names with table names
    (e.g. people.name and streets.name). This needs to be done whenever the
    field name is ambiguous.
 

@@ -6,13 +6,13 @@ exercises.
 
 **The goal for this lesson:** To get started with an example map.
 
-.. note:: |note| Before starting this exercise, QGIS must be installed on your
+.. note::  Before starting this exercise, QGIS must be installed on your
    computer.
 
 Launch QGIS from its desktop shortcut, menu item, etc., depending on how you
 configured its installation.
 
-.. note:: |note| The screenshots for this course were taken in QGIS 1.8 running on
+.. note::  The screenshots for this course were taken in QGIS 1.8 running on
    Ubuntu Linux. Depending on your setup, the screens you encounter may well
    appear somewhat different. However, all the same buttons will still be
    available, and the instructions will work on any OS. You will need QGIS 1.8

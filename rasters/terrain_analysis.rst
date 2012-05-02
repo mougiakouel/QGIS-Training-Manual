@@ -95,7 +95,7 @@ layer more visible by setting its :guilabel:`Global transparency` to
 You can decide which of these two settings you'd prefer to use. When you are
 done, save your map.
 
-.. note:: |note| For the next two exercises, please use a new map. Load only the
+.. note::  For the next two exercises, please use a new map. Load only the
    :kbd:`DEM` raster dataset into it
    (:kbd:`exercise_data/raster/SRTM/srtm_41_19.tif`). This is to simplify
    matters while you're working with the raster analysis tools. Save the map as

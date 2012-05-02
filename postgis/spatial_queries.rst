@@ -31,7 +31,7 @@ Result:
     6 | Fault Towers |       34 |         3 | 072 812 31 28 | 01010008040C0
   (1 row)
 
-.. note:: |note| the_geom value above was truncated for space on this page. If you
+.. note::  the_geom value above was truncated for space on this page. If you
    want to see the point in human-readable coordinates, try something similar
    to what you did in the section "View a point as WKT", above.
 

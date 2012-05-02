@@ -82,7 +82,7 @@ And you can resize it by clicking and dragging the boxes in the corners:
 .. image:: ../_static/map_composer/008.png
    :align: center
 
-.. note:: |note| Your map may look a lot different, of course! This depends on how
+.. note::  Your map may look a lot different, of course! This depends on how
    your own project is set up. But not to worry! These instructions are
    general, so they will work the same regardless of what the map itself looks
    like.
@@ -263,7 +263,7 @@ This is the result:
 |basic| |FA| Exporting Your Map
 -------------------------------------------------------------------------------
 
-.. note:: |note| Did you remember to save your work often?
+.. note::  Did you remember to save your work often?
 
 Finally the map is ready for export! You'll see the export buttons near the top
 left corner of the :guilabel:`Composer` window:

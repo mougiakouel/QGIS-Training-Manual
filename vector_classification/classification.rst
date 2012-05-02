@@ -188,7 +188,7 @@ Double-click on it so that it appears in the :guilabel:`Expression` field, then
 click :guilabel:`OK`. Now your :kbd:`AREA` field is populated with values!
 Admire them, then close the attribute table.
 
-.. note:: |note| These areas are in degrees. Later, we will compute them in
+.. note::  These areas are in degrees. Later, we will compute them in
    square meters.
 
 Open the :guilabel:`Layer properties` dialog's :guilabel:`Style` tab again,

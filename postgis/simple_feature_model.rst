@@ -114,7 +114,7 @@ table:
 Why? :kbd:`geometry_columns` is used by certain applications to be aware of
 which tables in the database contain geometry data.
 
-.. note:: |note| If the above :kbd:`INSERT` statement causes a complaint, run this
+.. note::  If the above :kbd:`INSERT` statement causes a complaint, run this
    query first:
 
    ::
@@ -172,7 +172,7 @@ Now that our tables are geo-enabled, we can store geometries in them!
                    '072 812 31 28', 
                    'SRID=4326;POINT(33 -33)');
 
-.. note:: |note| In the new entry above, you will need to specify which projection
+.. note::  In the new entry above, you will need to specify which projection
    (SRID) you want to use. This is because you entered the geometry of the new
    point using a plain string of text, which does not automatically add the
    correct projection information. Obviously, the new point needs to use the

@@ -5,7 +5,7 @@ Labels can be added to a map to show any information about an object. Any
 vector layer can have labels associated with it. These labels rely on the
 attribute data of a layer for their content.
 
-.. note:: |note| The :guilabel:`Layer Properties` dialog does have a
+.. note::  The :guilabel:`Layer Properties` dialog does have a
    :guilabel:`Labels` tab, but for this example we will not be using it. It has
    too few options and may be difficult to work with, which is why it will
    probably be taken out of new versions of QGIS (after 1.8). Instead, for this
@@ -238,7 +238,7 @@ In the :guilabel:`Italic` dropdown, select :kbd:`IN_SWD` and click
 |hard| |TY| Using data defined settings
 -------------------------------------------------------------------------------
 
-.. note:: |note| We're jumping ahead a bit here to demonstrate some advanced labeling
+.. note::  We're jumping ahead a bit here to demonstrate some advanced labeling
    settings. At the advanced level, it's assumed that you'll know what the
    following means. If you don't, feel free to leave out this section and come
    back later when you've covered the requisite materials.
