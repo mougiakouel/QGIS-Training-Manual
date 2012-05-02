@@ -109,7 +109,7 @@ Set the loaded layer to :guilabel:`streets` and its GRASS version's name to
 .. image:: ../_static/grass/015.png
    :align: center
 
-.. note:: |note| |hard| Note the extra import options provided under
+.. note::  |hard| Note the extra import options provided under
    :guilabel:`Advanced Options`. These include the ability to add a WHERE
    clause for the SQL query used for importing the data.
 

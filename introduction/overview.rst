@@ -40,7 +40,7 @@ Some versions of QGIS have a separate :guilabel:`Control rendering order`
 checkbox just underneath the Layers list. Don't worry if you can't see it. It
 will be addressed later.
 
-.. note:: |note| A vector layer is a dataset, usually of a specific kind of object,
+.. note::  A vector layer is a dataset, usually of a specific kind of object,
    such as roads, trees, etc. A vector layer can consist of either points,
    lines or polygons.
 

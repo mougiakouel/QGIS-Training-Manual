@@ -319,7 +319,7 @@ The schema for the table (enter :kbd:`\\d people`) looks like this:
   Indexes:
     "people_pkey" PRIMARY KEY, btree (id)
 
-.. note:: |note| For illustration purposes, we have purposely omitted the fkey
+.. note::  For illustration purposes, we have purposely omitted the fkey
    constraint.
 
 Create Keys in SQL
@@ -461,7 +461,7 @@ This time it works fine! Why? Are people less important than streets?
   |
   |
 
-.. note:: |note| If you actually did enter that command and dropped the :kbd:`people`
+.. note::  If you actually did enter that command and dropped the :kbd:`people`
    table, now would be a good time to rebuild it, as you will need it in the
    next exercises.
 

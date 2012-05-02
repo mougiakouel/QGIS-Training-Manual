@@ -33,7 +33,7 @@ to install the postgis stack.
 Install plpgsql
 -------------------------------------------------------------------------------
 
-.. note:: |note| You can ensure that any database created on your system automatically
+.. note::  You can ensure that any database created on your system automatically
    gets these spatial extensions by running these commands (from this and the
    next two sections) on the :kbd:`template1` system database *before* you
    create any of your own databases.
@@ -55,7 +55,7 @@ PostGIS requires the PLPGSQL procedural language to be installed. So do this:
 Where the third argument is the name of the database that the procedural
 language should be installed into.
 
-.. note:: |note| You will need administrative permissions for your database to be able
+.. note::  You will need administrative permissions for your database to be able
    to do this.
 
 Install postgis.sql
