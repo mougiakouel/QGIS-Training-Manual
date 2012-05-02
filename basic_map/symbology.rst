@@ -36,8 +36,8 @@ extreme left:
 .. image:: ../_static/symbology/052.png
    :align: center
 
-Click the :guilabel:`Change` button next to the :guilabel:`Color` label
-(outlined in orange above).  A standard color dialog will appear:
+Click the :guilabel:`Change` button next to the :guilabel:`Color` label.  A
+standard color dialog will appear:
 
 .. image:: ../_static/symbology/005.png
    :align: center
@@ -98,8 +98,8 @@ Pen`. Then click :guilabel:`OK`, and then :guilabel:`OK` again. Now the
 |basic| |TY|
 -------------------------------------------------------------------------------
 
-First change the :guilabel:`urban` layer's symbology so that it is orange and
-without outlines. (Orange is a color often used to denote human habitation.)
+First change the :guilabel:`urban` layer's symbology so that it is gray and
+without outlines.
 
 Next, change the :guilabel:`rural` layer again so that it has dotted outlines
 which are just a bit darker than the fill color for that layer.
