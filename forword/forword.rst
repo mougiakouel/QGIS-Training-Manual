@@ -118,7 +118,7 @@ Latest Version
 --------------
 
 You can always obtain the latest version of this document by visiting our `home
-page <http://readthedocs.org/builds/the-free-qgis-training-manual/>`_ which is
+page <http://readthedocs.org/docs/the-free-qgis-training-manual/en/latest/>`_ which is
 kindly hosted by http://readthedocs.org.
 
 .. note:: There are links to PDF and epub versions of the documentation in the
