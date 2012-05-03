@@ -6,8 +6,8 @@ Background
 
 In 2008 we launched the `Gentle Introduction to GIS
 <http://linfiniti.com/dla>`_, a completely free, open content resource for
-people who want to learn about GIS without being overloaded with Jargon and new
-terminology. The was sponsored by the South African government and has been a
+people who want to learn about GIS without being overloaded with jargon and new
+terminology. Gentle Intro was sponsored by the South African government and has been a
 phenomenal success, with people all over the world writing to us to tell us how
 they are using the materials to run University Training Courses, teach
 themselves GIS and so on. The Gentle Introduction is not a software tutorial,
