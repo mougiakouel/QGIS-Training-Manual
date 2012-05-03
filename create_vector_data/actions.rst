@@ -122,6 +122,9 @@ is. Select :guilabel:`image` from the list:
 Then click the :guilabel:`Insert field` button. QGIS will add the phrase
 :kbd:`[% "image" %]` in the :guilabel:`Action` field.
 
+.. note:: In Windows, you may need to add double quote marks (") around the
+   :kbd:`[% "image" %]` string.
+
 That's all you need! Now click the :guilabel:`Add to action list` button and
 you're done creating the action! Click :guilabel:`OK` on the :guilabel:`Layer
 Properties` dialog.
