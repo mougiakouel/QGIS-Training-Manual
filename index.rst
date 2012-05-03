@@ -1,24 +1,24 @@
-Forward
-=======
+Foreword
+========
 
 Background
 ----------
 
 In 2008 we launched the `Gentle Introduction to GIS
 <http://linfiniti.com/dla>`_, a completely free, open content resource for
-people who want to learn about GIS without being overloaded with Jargon and new
+people who want to learn about GIS without being overloaded with jargon and new
 terminology. The was sponsored by the South African government and has been a
 phenomenal success, with people all over the world writing to us to tell us how
 they are using the materials to run University Training Courses, teach
 themselves GIS and so on. The Gentle Introduction is not a software tutorial,
 but rather aims to be a generic text (although we used QGIS in all examples)
 for someone learning about GIS. There is also the QGIS manual which provides a
-detailed functional overview of the QGIS application, but it is not structured
-as a tutorial, but rather as a reference guide. At Linfiniti Consulting CC. we
-frequently run training courses and have realised that a third resource is
-needed - one that leads the reader sequentially through learning the key
-aspects of QGIS in a trainer-trainee format - which prompted us to produce this
-work.
+detailed functional overview of the QGIS application. However, it is not
+structured as a tutorial, but rather as a reference guide. At Linfiniti
+Consulting CC. we frequently run training courses and have realised that a
+third resource is needed - one that leads the reader sequentially through
+learning the key aspects of QGIS in a trainer-trainee format - which prompted
+us to produce this work.
 
 This training manual is intended to provide all the materials needed to run a 5
 day course on QGIS, PostgreSQL and PostGIS. The course is structured with
@@ -38,7 +38,7 @@ https://github.com/qgis/QGIS-Training-Manual/blob/master/index.rst.
 
 We have published this QGIS training manual under a liberal license that allows
 you to freely copy, modify and redistribute this work. A complete copy of the 
-license is available at the end of this document. In simple terms the usage
+license is available at the end of this document. In simple terms, the usage
 guidelines are as follows:
 
 * You may not represent this work as your own work, or remove any authorship
@@ -46,31 +46,31 @@ guidelines are as follows:
 * You may not redistribute this work under more restrictive permissions than
   those under which it was provided to you.
 * If you add a substantitive portion to the work and contribute it back to the
-  project (at least one complete module) you may add your name to the end of the
-  authors list for this document (which will appear on the front page)
+  project (at least one complete module) you may add your name to the end of
+  the authors list for this document (which will appear on the front page)
 * If you contribute minor changes and corrections you may add yourself to the 
   contributors list below.
-* If you translate this document in it's entirety, you may add your name to the 
-  authors list in the form "Translated by Joe blogs".
+* If you translate this document in its entirety, you may add your name to the 
+  authors list in the form "Translated by Joe Blogs".
 * If you sponsor a module or lesson, you may request the author to include an
-  acknowledgement in the beginning of each lesson contributed e.g.
+  acknowledgement in the beginning of each lesson contributed, e.g.:
 
 .. note:: This lesson was sponsored by MegaCorp.
 
 * If you are unsure about what you may do under this license, please contact us
   at office@linfiniti.com and we will advice you if what you intend doing is
-  acceptible.
-* If you publish this work under a self publishing site such as http:://lulu.com
-  we request that you donate the profits to the QGIS project.
-* You may not commercialise this work, except with the expressed permission of the
-  authors. To be clear, by commercialisation we mean that you may not sell for
-  profit, create commercial derivative works (e.g. selling content for use as
-  articles in a magazine). The exception to this is if all the profits are
+  acceptable.
+* If you publish this work under a self publishing site such as
+  http:://lulu.com we request that you donate the profits to the QGIS project.
+* You may not commercialise this work, except with the expressed permission of
+  the authors. To be clear, by commercialisation we mean that you may not sell
+  for profit, create commercial derivative works (e.g. selling content for use
+  as articles in a magazine). The exception to this is if all the profits are
   given to the QGIS project. You may (and we encourage you to do so) use this
   work as a text book when conducting training courses, even if the course
   itself is commercial in nature. In other words, you are welcome to make money
-  by running a training course that uses this work as a text book, but you
-  may not profit off the sales of the book itself - all such profits should be
+  by running a training course that uses this work as a text book, but you may
+  not profit off the sales of the book itself - all such profits should be
   contributed back to QGIS.
 
 
