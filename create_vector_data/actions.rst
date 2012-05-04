@@ -93,8 +93,7 @@ appropriate course to follow:
 Windows
 ...............................................................................
 
-Click on the :guilabel:`Type` dropdown and choose :guilabel:`Windows`. Under
-:guilabel:`Action`, write :kbd:`explorer`.
+Click on the :guilabel:`Type` dropdown and choose :guilabel:`Open`.
 
 Ubuntu Linux
 ...............................................................................
@@ -122,9 +121,6 @@ is. Select :guilabel:`image` from the list:
 
 Then click the :guilabel:`Insert field` button. QGIS will add the phrase
 :kbd:`[% "image" %]` in the :guilabel:`Action` field.
-
-.. note:: In Windows, you need to add double quote marks (") around the 
-   :kbd:`[% "image" %]` string.
 
 That's all you need! Now click the :guilabel:`Add to action list` button and
 you're done creating the action! Click :guilabel:`OK` on the :guilabel:`Layer
@@ -166,8 +162,8 @@ operating system, so choose the appropriate course to follow:
 Windows
 ...............................................................................
 
-Under :guilabel:`Action`, write :kbd:`start`. This will tell Windows to open
-an Internet address with Internet Explorer.
+Under :guilabel:`Type`, choose :guilabel:`Open`. This will tell Windows to open
+an Internet address in your default browser, such as Internet Explorer.
 
 Ubuntu Linux
 ...............................................................................
