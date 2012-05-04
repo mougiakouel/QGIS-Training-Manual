@@ -144,9 +144,10 @@ In the dialog that appears, create a new dialog:
 
 Look for the :guilabel:`Widget Box` along the left of your screen (default). It
 contains an item called :guilabel:`Line Edit`. Click and drag this item into
-your form. This creats a new :guilabel:`Line Edit` in the form. With it
-selected, you'll see its *properties* along the side of your screen (on the right
-by default):
+your form. This creats a new :guilabel:`Line Edit` in the form.
+
+With the new line edit element selected, you'll see its *properties* along the
+side of your screen (on the right by default):
 
 .. image:: ../_static/create_vector_data/021.png
    :align: center
@@ -156,7 +157,9 @@ Set its name to :kbd:`Name`.
 Using the same approach, create a new spinbox and set its name to :kbd:`Age`.
 
 Add a :guilabel:`Label` with the text :kbd:`Add a New Person` in a bold font
-(look in the object *properties* to find out how to set this).
+(look in the object *properties* to find out how to set this). Alternatively,
+you may want to set the title of the dialog itself (rather than adding a
+label).
 
 Click anywhere in your dialog. Find the :guilabel:`Lay Out Vertically` button
 (in a toolbar along the top edge of the screen, by default):
@@ -164,8 +167,8 @@ Click anywhere in your dialog. Find the :guilabel:`Lay Out Vertically` button
 .. image:: ../_static/create_vector_data/022.png
    :align: center
 
-This lays out your dialog automatically. Resize the dialog to an appropriate
-size by clicking and dragging its corners.
+This lays out your dialog automatically.  Set the dialog's maximum size (in its
+properties) to :kbd:`200` (width) by :kbd:`100` (height).
 
 Lastly, save your new form as :kbd:`exercise_data/forms/add_people.ui`. When
 it's done saving, you can close the *Qt4 Designer* program.

@@ -260,18 +260,16 @@ To create the layer action, open the :guilabel:`Layer Properties` dialog and
 head over to the :guilabel:`Actions` tab, as before. Now set up a new action
 using the following properties for the action:
 
-:guilabel:`Type`: :kbd:`Python`
-:guilabel:`Name`: :kbd:`Wikipedia`
-:guilabel:`Action` (all on one line): :kbd:`from PyQt4.QtCore import QUrl; from
-PyQt4.QtWebKit import QWebView;  myWV = QWebView(None);
-myWV.load(QUrl('http://wikipedia.org/wiki/[% "SGADMIN" %]')); myWV.show()`
+* :guilabel:`Type`: :kbd:`Python`
+* :guilabel:`Name`: :kbd:`Wikipedia`
+* :guilabel:`Action` (all on one line): :kbd:`from PyQt4.QtCore import QUrl; from PyQt4.QtWebKit import QWebView;  myWV = QWebView(None); myWV.load(QUrl('http://wikipedia.org/wiki/[% "SGADMIN" %]')); myWV.show()`
 
 There are a couple of things going on here:
 
 - All the python code is in a single line with semi-colons separating commands
   (instead of newlines, the usual way of separating Python commands).
-- [% "SGADMIN" %] will be replaced by the actual attribute value when the
-  action is invoked (as before).
+- :kbd:`[% "SGADMIN" %]` will be replaced by the actual attribute value when
+  the action is invoked (as before).
 - The code simply creates a new :kbd:`QWebView` instance, sets its URL, and
   then calls :kbd:`show()` on it to make it visible as a window on the user’s
   desktop.
