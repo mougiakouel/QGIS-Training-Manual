@@ -28,19 +28,12 @@ Loading raster data is much the same as loading vector data. Find the
 
 Click on it to bring up the :guilabel:`Load Raster Layer` dialog:
 
-.. image:: ../_static/rasters/002.png
+.. image:: ../_static/rasters/038.png
    :align: center
 
-The data for this project is in :kbd:`exercise_data/rasters`. Open all of the
-files that end in :kbd:`.tif`. Either load them all in separately, or hold down
-:kbd:`ctrl` and click on all four of them in turn, then open them at the same
-time.
-
-.. note::  A file that ends in :kbd:`.tif.ovr` is an overview file. It is
-   associated with the :kbd:`.tif` file of the same names, and allows it to
-   render faster in QGIS. Don't try to open the :kbd:`.tif.ovr` files yourself;
-   they will load automatically when you open their associated :kbd:`.tif`
-   file.
+The data for this project is in :kbd:`exercise_data/rasters`. Either load them
+all in separately, or hold down :kbd:`ctrl` and click on all four of them in
+turn, then open them at the same time.
 
 The first thing you'll notice is that nothing seems to be happening in your
 map. Are the rasters not loading? Well, there they are in the :guilabel:`Layers
@@ -57,7 +50,7 @@ Enable "on the fly" reprojection and set it to the same projection as the rest
 of your data (:kbd:`WGS 84 / UTM zone 33S`). Click :guilabel:`OK` and the
 rasters should fit nicely:
 
-.. image:: ../_static/rasters/004.png
+.. image:: ../_static/rasters/039.png
    :align: center
 
 There we have it - four aerial photographs covering our whole study area.
