@@ -92,6 +92,134 @@ Now click on the :guilabel:`Calculate` button to see the solution:
 .. image:: ../_static/vector_analysis/046.png
    :align: center
 
+|moderate| |FA| Using Criteria
+-------------------------------------------------------------------------------
+
+.. note:: This section sponsored by Siddique Motala.
+
+Add the layer :guilabel:`exercise_data/projected_data/places_33S.shp` and the
+aerial photographs under :guilabel:`exercise_data/raster/`, and zoom to the
+Swellendam area (the town / cluster of roads in the center of the map).
+
+Select only the roads that are in the categories :kbd:`trunk`, :kbd:`primary`
+or :kbd:`tertiary` by running this attribute selection query on the road layer:
+
+::
+
+  "TYPE" = 'trunk' OR "TYPE" = 'primary' OR "TYPE" = 'tertiary'
+
+Right-click on the :guilabel:`roads_33S` layer in the :guilabel:`Layers list`
+and save it out to a new file, :kbd:`roads_subset`. Only the currently visible
+features will be saved. Remove the original :guilabel:`roads_33S` layer from
+the :guilabel:`Layers list`.
+
+Open the attribute table for the :guilabel:`roads_subset` layer and enter edit
+mode:
+
+.. image:: ../_static/vector_analysis/047.png
+   :align: center
+
+Add a new column:
+
+.. image:: ../_static/vector_analysis/050.png
+   :align: center
+
+Call this new column :kbd:`SPEED`, and give it the type :guilabel:`Whole
+integer (number)` with a width of :kbd:`3`.
+
+In the main window, activate the :guilabel:`Select Features by Rectangle` tool:
+
+.. image:: ../_static/vector_analysis/051.png
+   :align: center
+
+Select these roads:
+
+.. image:: ../_static/vector_analysis/052.png
+   :align: center
+
+(To select more than one road, hold the :kbd:`ctrl` button and drag a box
+across any road that you want to include in the selection.)
+
+In the attribute table, click on the :guilabel:`Show selected only` box. Set
+the :kbd:`SPEED` value for all the selected streets to :kbd:`60`:
+
+.. image:: ../_static/vector_analysis/053.png
+   :align: center
+
+In context, this means that you're setting the speed limit on those roads to
+:kbd:`60 km/h`. Next, select the highway outside of town:
+
+.. image:: ../_static/vector_analysis/054.png
+   :align: center
+
+Set the :kbd:`SPEED` value for all the selected streets to :kbd:`120`. Close
+the attribute table, save your edits, and exit edit mode.
+
+Check the :menuselection:`Vector --> Road graph --> Road graph settings` to
+ensure that it's set up as explained previously in this lesson.
+
+In the :guilabel:`Shortest path` panel, click the :guilabel:`Start point`
+button, and set the starting point to where the dirt road meets the
+on/off-rqamp at the edge of town on the east. Set the end point to the
+T-junction west of town.
+
+.. image:: ../_static/vector_analysis/055.png
+   :align: center
+
+In the :guilabel:`Criterion` drop-down list in the :guilabel:`Shortest path`
+panel, select :guilabel:`Length`, then click :guilabel:`Calculate`. The route
+will be:
+
+.. image:: ../_static/vector_analysis/048.png
+   :align: center
+
+Notice the values of :guilabel:`Length` and :guilabel:`Time` in the
+:guilabel:`Shortest path` panel.
+
+Next, set the :guilabel:`Criterion` to :guilabel:`Time`, then click
+:guilabel:`Calculate` again. The route will be:
+
+.. image:: ../_static/vector_analysis/049.png
+   :align: center
+
+You can switch back and forth between these criteria, recalculating each time,
+and note the changes in the :guilabel:`Length` and :guilabel:`Time` taken.
+Remember that the assumption being made to arrive at the time taken to travel a
+route does not account for acceleration, and assumes that you will be traveling
+at the speed limit at all times. In a real situation, you may want to split
+roads into smaller sections and note the average or expected speed in each
+section, rather than the speed limit. 
+
+|moderate| |TY|
+-------------------------------------------------------------------------------
+
+Digitize the roads in Railton. These are the main roads, type
+:guilabel:`tertiary`, speed :kbd:`60`:
+
+.. image:: ../_static/vector_analysis/056.png
+   :align: center
+
+And these are the smaller streets, type :guilabel:`residential`, speed
+:kbd:`40`:
+
+.. image:: ../_static/vector_analysis/057.png
+   :align: center
+
+Use the :guilabel:`Shortest path` tool to calculate the shortest and fastest
+ways to get from the southern extreme of town to the highway.
+
+If, on clicking :guilabel:`Calculate`, you're getting an error stating that a
+path could not be found, then make sure that the roads you digitized actually
+meet each other. If they're not quite touching, either fix them by modifying
+the features, or set the :guilabel:`Topology tolerance` (:guilabel:`Road graph
+plugin settings`). If they're passing over each other without intersecting, use
+the :guilabel:`Split features` tool to "split" roads at their intersections:
+
+.. image:: ../_static/vector_analysis/058.png
+   :align: center
+
+Remember that this tool only works in edit mode on selected features, though!
+
 |IC|
 -------------------------------------------------------------------------------
 

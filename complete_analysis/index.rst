@@ -13,3 +13,4 @@ present the final results.
    raster_to_vector
    analysis_combination
    assignment
+   analysis_exercise
