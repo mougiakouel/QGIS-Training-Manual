@@ -229,5 +229,4 @@ shortest-path problems.
 |WN|
 -------------------------------------------------------------------------------
 
-Now that we've covered vector analysis, why not see what can be done with
-rasters? That's what we'll do in the next module!
+Next you'll see how to run spatial statistics algorithms on vector datasets.

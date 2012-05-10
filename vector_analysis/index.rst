@@ -31,3 +31,4 @@ locate suitable farm properties for this new residential development.
    reproject_transform
    basic_analysis
    network_analysis
+   spatial_statistics
