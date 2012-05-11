@@ -10,7 +10,7 @@ analysis which prove useful in this regard.
 **The goal for this lesson:** To know how to use QGIS' spatial statistics
 tools.
 
-|moderate| |FA| Create a Test Dataset
+|basic| |FA| Create a Test Dataset
 -------------------------------------------------------------------------------
 
 In order to get a point dataset to work with, we'll need a point dataset. In
@@ -65,23 +65,107 @@ sampling tool`:
    :align: center
 
 Select :guilabel:`random_points` as the layer containing sampling points, and
-the SRTM raster as the band to get values from.
+the SRTM raster as the band to get values from. Save the output under
+:kbd:`exercise_data/spatial_statistics/` as :kbd:`random_samples.shp`. Add it
+to the TOC (:guilabel:`Layers list`) when prompted.
+
+A possible sample layer is shown here:
+
+.. image:: ../_static/vector_analysis/064.png
+   :align: center
+
+The sample points are classified by their value such that darker points are at
+a lower altitude.
 
 You'll be using this sample layer for the rest of the statistical exercises.
 
-|moderate| |FA| Basic Statistics
+|basic| |FA| Basic Statistics
 -------------------------------------------------------------------------------
 
 Now get the basic statistics for this layer by using the :menuselection:`Vector
---> Analysis Tools --> Basic statistics` tool. 
+--> Analysis Tools --> Basic statistics` tool. Use the
+:guilabel:`random_samples` layer as the source and click :guilabel:`OK`. You'll
+get results like this:
 
 .. image:: ../_static/vector_analysis/062.png
+   :align: center
+
+You can copy these results to a spreadsheet. The tool's output uses a colon
+(:kbd:`:`) delimiter.
+
+.. image:: ../_static/vector_analysis/065.png
+   :align: center
+
+Close the plugin dialog when done.
+
+|basic| |FA| Compute a Distance Matrix
+-------------------------------------------------------------------------------
+
+Create a new point layer in the same projection as the other datasets
+(:kbd:`WGS 84 / UTM 33S`). Enter edit mode and digitize three point somewhere
+among the other points.
+
+Alternatively, use the same random point generation method as before, but
+specify only three points.
+
+Save your new layer as :kbd:`distance_points.shp`.
+
+In order to compare layers using statistical tools, a layer needs to have a
+unique ID field. Create one for your :guilabel:`random_samples` layer. Open the
+attribute table for this layer, enter edit mode, and open the raster
+calculator. Create a new field called :kbd:`id`, with an integer field type and
+a width of :kbd:`3`. Look in the :guilabel:`Function list` under the category
+:guilabel:`Record`, and double-click on the item :guilabel:`$id`, so that it
+appears in the :guilabel:`Expression` field below. Click :guilabel:`OK` to
+generate a unique ID for this layer.
+
+To generate a distance matrix using these points, open the tool
+:menuselection:`Vector --> Analysis Tools --> Distance matrix`. Select the
+:guilabel:`distance_points` layer as the input layer, and the
+:guilabel:`random_samples` layer as the target layer. Set it up like this:
+
+.. image:: ../_static/vector_analysis/066.png
+   :align: center
+
+Click :guilabel:`OK` to generate the distance matrix. Open it in a spreadsheet
+program to see the results.
+
+|basic| |FA| Nearest Neighbor Analysis
+-------------------------------------------------------------------------------
+
+To do a nearest neighbor analysis, :menuselection:`Vector --> Analysis Tools
+--> Nearest neighbor analysis`. In the dialog that appears, select the
+:guilabel:`random_samples` layer and click :guilabel:`OK`. The results will
+appear in the dialog's text window. Note that, as before, you can copy and
+paste the results into a spreadsheet. The data uses a (colon :kbd:`:`)
+separator.
+
+|basic| |FA| Mean Coordinates
+-------------------------------------------------------------------------------
+
+To get the mean coordinates of a dataset, open the :menuselection:`Vector -->
+Analysis Tools --> Mean coordinate(s)` tool. Specify :guilabel:`random_samples`
+as the input layer, but leave the optional choices unchanged. Specify the
+output layer as :kbd:`mean_coords.shp` and click :guilabel:`OK`. Add the layer
+to the :guilabel:`Layers list` when prompted.
+
+Let's compare this to the central coordinate of the polygon that was used to
+create the random sample. Click on :menuselection:`Vector --> Geometry Tools
+--> Polygon centroids`. In the dialog that appears, select
+:guilabel:`roads_hull` as the input layer. Save the result as
+:kbd:`center_point` and add it to the :guilabel:`Layers list` when prompted.
+
+As you can see from the example below, the mean coordinates and the center of
+the study area (in orange) don't necessarily coincide:
+
+.. image:: ../_static/vector_analysis/067.png
    :align: center
 
 |IC|
 -------------------------------------------------------------------------------
 
-@todo
+QGIS allows many possibilities for analyzing the spatial statistical properties
+of datasets.
 
 |WN|
 -------------------------------------------------------------------------------
