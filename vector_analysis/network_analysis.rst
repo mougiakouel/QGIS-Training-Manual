@@ -95,7 +95,8 @@ Now click on the :guilabel:`Calculate` button to see the solution:
 |moderate| |FA| Using Criteria
 -------------------------------------------------------------------------------
 
-.. note:: This section sponsored by Siddique Motala.
+.. note:: Section developed by Linfiniti and S Motala (Cape Peninsula
+   University of Technology)
 
 Add the layer :guilabel:`exercise_data/projected_data/places_33S.shp` and the
 aerial photographs under :guilabel:`exercise_data/raster/`, and zoom to the

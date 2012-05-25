@@ -3,7 +3,8 @@
 
 In this lesson, you will be guided through a complete GIS analysis in QGIS.
 
-.. note:: This lesson sponsored by Siddique Motala.
+.. note:: Lesson developed by Linfiniti and S Motala (Cape Peninsula University
+   of Technology)
 
 Setting up the Map
 -------------------------------------------------------------------------------

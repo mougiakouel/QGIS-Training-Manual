@@ -1,7 +1,8 @@
 |LS| Spatial Statistics
 ===============================================================================
 
-.. note:: Add Siddique sponsorship message.
+.. note:: Lesson developed by Linfiniti and S Motala (Cape Peninsula University
+   of Technology)
 
 Spatial statistics allow you to analyze and understand what is going on in a
 given vector dataset. QGIS includes several standard tools for statistical
