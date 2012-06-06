@@ -6,6 +6,39 @@ In this lesson, you will be guided through a complete GIS analysis in QGIS.
 .. note:: Lesson developed by Linfiniti and S Motala (Cape Peninsula University
    of Technology)
 
+Problem Statement
+-------------------------------------------------------------------------------
+
+You are tasked with finding areas in and around the Cape Peninsula that are a
+suitable habitat for a rare fynbos plant species. The extent of your area of
+investigation in the Cape Peninsula is: south of Melkbosstrand, west of Strand.
+Botanists have provided you with the following preferences exhibited by the
+species in question:
+- It grows on east facing slopes.
+- It grows on slopes with a gradient between 15% and 60%.
+- It grows in areas that have a total annual rainfall of > 1200 mm.
+- It will only be found at least 250 m away from any human settlement.
+- The area of vegetation in which it occurs should be at least 6000m2 in area.
+
+As a volunteer for Cape Nature, you have agreed to search for the plant on the
+closest suitable piece of land to your house. Use your GIS skills to determine
+where you should go to look.
+
+Solution Outline
+-------------------------------------------------------------------------------
+
+In order to solve this problem, you will have to use the available data
+(available in :kbd:`exercise_data/more_analysis`) to find the candidate area
+that is closest to your house.  If you don't live in Cape Town (where this
+problem is based) you can choose any house in the Cape Town region. The
+solution will involve:
+- analysing the DEM to find the east facing slopes and the slopes with the
+  correct gradients;
+- analysing the rainfall raster to find the areas with the correct amount of
+  rainfall;
+- analysing the Zoning vector layer to find areas that are away from human
+  settlement and are of the correct size.
+
 Setting up the Map
 -------------------------------------------------------------------------------
 
