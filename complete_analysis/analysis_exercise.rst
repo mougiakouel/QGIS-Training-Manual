@@ -14,6 +14,7 @@ suitable habitat for a rare fynbos plant species. The extent of your area of
 investigation in the Cape Peninsula is: south of Melkbosstrand, west of Strand.
 Botanists have provided you with the following preferences exhibited by the
 species in question:
+
 - It grows on east facing slopes.
 - It grows on slopes with a gradient between 15% and 60%.
 - It grows in areas that have a total annual rainfall of > 1200 mm.
@@ -32,6 +33,7 @@ In order to solve this problem, you will have to use the available data
 that is closest to your house.  If you don't live in Cape Town (where this
 problem is based) you can choose any house in the Cape Town region. The
 solution will involve:
+
 - analysing the DEM to find the east facing slopes and the slopes with the
   correct gradients;
 - analysing the rainfall raster to find the areas with the correct amount of
