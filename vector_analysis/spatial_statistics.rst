@@ -236,7 +236,24 @@ The output will look like this (the symbology was changed for this example):
 The red dot is the mean center; the large circle is the standard distance,
 which gives an indication of how closely the points are distributed around the
 mean center; and the rectangle is the bounding box, describes the smallest
-possible rectangle which will enclose all the points.
+possible rectangle which will still enclose all the points.
+
+|moderate| |FA| Minimum Distance Analysis
+-------------------------------------------------------------------------------
+
+Often, the output of an algorithm will not be a shapefile, but rather a table
+summarizing the statistical properties of a dataset. One of these is the
+:guilabel:`Minimum Distance Analysis` tool. You can find it in the
+:guilabel:`SEXTANTE Toolbox` as :menuselection:`SAGA --> Geostatistics -->
+Minimum Distance Analysis`.
+
+It does not require any other input besides specifying the vector point dataset
+to be analyzed. Choose the :guilabel:`random_points` dataset and click
+:guilabel:`OK`. On completion, a DBF table will appear in the :guilabel:`Layers
+list`. Open it by selecting it, then opening its attribute table. Although the
+figures may vary, your results will be in this format:
+
+.. image:: ../_static/spatial_statistics/004.png
 
 |IC|
 -------------------------------------------------------------------------------
