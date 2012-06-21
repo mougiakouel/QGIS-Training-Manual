@@ -162,6 +162,82 @@ the study area (in orange) don't necessarily coincide:
 .. image:: ../_static/vector_analysis/067.png
    :align: center
 
+|moderate| |FA| Installing SEXTANTE
+-------------------------------------------------------------------------------
+
+The SEXTANTE plugin allows you to access various plugin tools from within a
+single interface. It is standard in QGIS starting with version 1.8. If you're
+unsure whether you have SEXTANTE, check if it's marked as installed in your
+:guilabel:`Plugin Installer`.
+
+Assuming you have it installed (and enabled in the :guilabel:`Plugin Manager`),
+you can access SEXTANTE by enabling the :menuselection:`View --> Panels -->
+SEXTANTE Toolbox` menu entry. The toolbox looks like this:
+
+.. image:: ../_static/spatial_statistics/001.png
+
+You will probably see it docked in QGIS to the right of the map. Note that the
+tools listed here are links to the actual tools. SEXTANTE doesn't have many
+tools of its own. To have access to spatial statistics tools, you will need to
+install the SAGA GIS program.
+
+|moderate| |FA| Installing SAGA
+-------------------------------------------------------------------------------
+
+SAGA is a GIS program with many useful analysis functions. To make use of these
+functions in QGIS via SEXTANTE, you need to install SAGA first.
+
+On Windows
+...............................................................................
+
+Included in your course materials you will find the SAGA installer for Windows.
+Start the program and follow its instructions to install SAGA on your Windows
+system. Take note of the path you are installing it under!
+
+Once you have installed SAGA, you'll need to configure SEXTANTE to find the
+path it was installed under. Click on the menu entry :menuselection:`Analysis
+--> SAGA options and configuration`. In the dialog that appears, expand the
+:guilabel:`SAGA` item and look for :guilabel:`SAGA folder`. Its value will be
+blank. In this space, insert the path where you installed SAGA.
+
+On Ubuntu
+...............................................................................
+
+Search for :guilabel:`SAGA GIS` in the :guilabel:`Software Center`, or enter
+the phrase :kbd:`sudo apt-get install saga-gis` in your terminal. You may first
+need to add a SAGA repository to your sources. QGIS will find SAGA
+automatically, although you may need to restart QGIS if it doesn't work
+straight away.
+
+After installing
+...............................................................................
+
+Now that you have installed and configured SAGA, its functions will become
+accessible to you.
+
+|moderate| |FA| Spatial Point Pattern Analysis
+-------------------------------------------------------------------------------
+
+For a simple indication of the spatial distribution of points in the
+:guilabel:`random_samples` dataset, we can make use of SAGA's
+:guilabel:`Spatial Point Pattern Analysis` tool.
+
+In the :guilabel:`SEXTANTE Toolbox`, find this tool under :menuselection:`SAGA
+--> Geostatistics --> Spatial Point Pattern Analysis`. Double-click on it to
+open its dialog. It produces three outputs, and so will require three output
+paths. Save the outputs under :kbd:`exercise_data/spatial_statistics/`.
+
+.. image:: ../_static/spatial_statistics/002.png
+
+The output will look like this (the symbology was changed for this example):
+
+.. image:: ../_static/spatial_statistics/003.png
+
+The red dot is the mean center; the large circle is the standard distance,
+which gives an indication of how closely the points are distributed around the
+mean center; and the rectangle is the bounding box, describes the smallest
+possible rectangle which will enclose all the points.
+
 |IC|
 -------------------------------------------------------------------------------
 
