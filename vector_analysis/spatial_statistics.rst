@@ -125,11 +125,14 @@ To generate a distance matrix using these points, open the tool
 :guilabel:`distance_points` layer as the input layer, and the
 :guilabel:`random_samples` layer as the target layer. Set it up like this:
 
-.. image:: ../_static/vector_analysis/066.png
+.. image:: ../_static/spatial_statistics/005.png
    :align: center
 
 Click :guilabel:`OK` to generate the distance matrix. Open it in a spreadsheet
-program to see the results.
+program to see the results. Here is an example:
+
+.. image:: ../_static/spatial_statistics/006.png
+   :align: center
 
 |basic| |FA| Nearest Neighbor Analysis
 -------------------------------------------------------------------------------
@@ -137,9 +140,13 @@ program to see the results.
 To do a nearest neighbor analysis, :menuselection:`Vector --> Analysis Tools
 --> Nearest neighbor analysis`. In the dialog that appears, select the
 :guilabel:`random_samples` layer and click :guilabel:`OK`. The results will
-appear in the dialog's text window. Note that, as before, you can copy and
-paste the results into a spreadsheet. The data uses a (colon :kbd:`:`)
-separator.
+appear in the dialog's text window, for example:
+
+.. image:: ../_static/spatial_statistics/007.png
+   :align: center
+
+Note that you can copy and paste the results into a spreadsheet. The data uses
+a (colon :kbd:`:`) separator.
 
 |basic| |FA| Mean Coordinates
 -------------------------------------------------------------------------------
@@ -162,6 +169,71 @@ the study area (in orange) don't necessarily coincide:
 .. image:: ../_static/vector_analysis/067.png
    :align: center
 
+|basic| |FA| Image Histograms
+-------------------------------------------------------------------------------
+
+The histogram of a dataset shows the distribution of its values. The simplest
+way to demonstrate this in QGIS is via the image histogram, available in the
+:guilabel:`Layer Properties` dialog of any image layer.
+
+In your :guilabel:`Layers list`, right-click on the SRTM DEM layer and select
+:menuselection:`Layer Properties`. Choose the tab :guilabel:`Histogram`. You
+will see a graph describing the frequency of values in the image. You can
+export it as an image:
+
+.. image:: ../_static/spatial_statistics/008.png
+   :align: center
+
+Now look at the metadata for this layer (under the :guilabel:`Metadata` tab).
+The mean value is :kbd:`332.8`, and the maximum value is :kbd:`1699`! But those
+values don't show up on the histogram. Why not? It's because there are so few
+of them, compared to the abundance of pixels with values below the mean. That's
+also why the histogram extends so far to the right, even though there is no
+visible red line marking the frequency of values higher than about :kbd:`250`.
+
+Therefore, keep in mind that a histogram shows you the distribution of values,
+and not all values are necessarily visible on the graph.
+
+(You may now close :guilabel:`Layer Properties`.)
+
+|basic| |FA| Spatial Interpolation
+-------------------------------------------------------------------------------
+
+Let's say you have a collection of sample points from which you would like to
+extrapolate data. For example, you might have access to the
+:guilabel:`random_samples` dataset we created earlier, and would like to have
+some idea of what the terrain looks like.
+
+To start, launch the :guilabel:`Grid (Interpolation)` tool by clicking on the
+:menuselection:`Raster --> Analysis --> Grid (Interpolation)` menu item.
+
+* In the :guilabel:`Input file` field, select :kbd:`random_samples`.
+* Check the :guilabel:`Z Field` box, and select the value field (not the
+  :kbd:`id` field).
+* Set the :guilabel:`Output file` location to
+  :kbd:`exercise_data/spatial_statistics/interpolation.tif`.
+* Check the :guilabel:`Algorithm` box and select :guilabel:`Inverse distance to
+  a power`.
+* Set the :guilabel:`Power` to :kbd:`5.0` and the :guilabel:`Smoothing` to
+  :kbd:`2.0`. Leave the other values as-is.
+* Check the :guilabel:`Load into canvas when finished` box and click
+  :guilabel:`OK`.
+* When it's done, click :guilabel:`OK` on the dialog that says :kbd:`Process
+  completed`, click :guilabel:`OK` on the dialog showing feedback information
+  (if it has appeared), and click :guilabel:`Close` on the :guilabel:`Grid
+  (Interpolation)` dialog.
+
+Here's a comparison of the original dataset (left) to the one constructed from
+our sample points (right). Yours may look different due to the random nature of
+the location of the sample points.
+
+.. image:: ../_static/spatial_statistics/009.png
+   :align: center
+
+As you can see, 100 sample points aren't really enough to get a detailed
+impression of the terrain. It gives a very general idea, but it can be
+misleading as well. For example, in the image above, there don't seem to be 
+
 |moderate| |FA| Installing SEXTANTE
 -------------------------------------------------------------------------------
 
@@ -175,6 +247,7 @@ you can access SEXTANTE by enabling the :menuselection:`View --> Panels -->
 SEXTANTE Toolbox` menu entry. The toolbox looks like this:
 
 .. image:: ../_static/spatial_statistics/001.png
+   :align: center
 
 You will probably see it docked in QGIS to the right of the map. Note that the
 tools listed here are links to the actual tools. SEXTANTE doesn't have many
@@ -228,10 +301,12 @@ open its dialog. It produces three outputs, and so will require three output
 paths. Save the outputs under :kbd:`exercise_data/spatial_statistics/`.
 
 .. image:: ../_static/spatial_statistics/002.png
+   :align: center
 
 The output will look like this (the symbology was changed for this example):
 
 .. image:: ../_static/spatial_statistics/003.png
+   :align: center
 
 The red dot is the mean center; the large circle is the standard distance,
 which gives an indication of how closely the points are distributed around the
@@ -254,6 +329,7 @@ list`. Open it by selecting it, then opening its attribute table. Although the
 figures may vary, your results will be in this format:
 
 .. image:: ../_static/spatial_statistics/004.png
+   :align: center
 
 |IC|
 -------------------------------------------------------------------------------

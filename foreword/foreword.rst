@@ -96,11 +96,15 @@ Authors
 * Marcelle Sutton (marcelle@linfiniti.com) - Marcelle provided proof reading
   and editorial advice during the creation of this work.
 
-Contributors
-------------
+Individual Contributors
+-----------------------
 
 Your name here!
 
+Sponsors
+--------
+
+* Cape Peninsula University of Technology
 
 Data
 ----
