@@ -37,8 +37,8 @@ Right-clicking on a layer will give you a menu with lots of extra options. You
 will be using some of them before long, so take a look around!
 
 Some versions of QGIS have a separate :guilabel:`Control rendering order`
-checkbox just underneath the Layers list. Don't worry if you can't see it. It
-will be addressed later.
+checkbox just underneath the Layers list. Don't worry if you can't see it. If
+it is present, ensure that it's checked for now.
 
 .. note::  A vector layer is a dataset, usually of a specific kind of object,
    such as roads, trees, etc. A vector layer can consist of either points,
@@ -105,6 +105,13 @@ Try to find each of these tools on your screen. What is their purpose?
    
 5. .. image:: ../_static/interface/008.png
       :align: center
+
+.. hint:: If any of these tools is not visible on the screen, try enabling
+   some toolbars that are currently hidden. Also keep in mind that if there
+   isn't enough space on the screen, a toolbar may be shortened by hiding some
+   of its tools. You can see the hidden tools by clicking on the double right
+   arrow button in any such collapsed toolbar. You can see a tooltip with the
+   name of any tool by holding your mouse over the tool for a while.
 
 :ref:`Check your results <interface-overview-2>`
 

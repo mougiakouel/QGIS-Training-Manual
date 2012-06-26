@@ -21,17 +21,21 @@ loaded in your map. What you can see right now is merely the position of the
 roads.
 
 
-To see all the data available to you, find this button in QGIS:
+To see all the data available to you:
+
+* Click on this button:
 
 .. image:: ../_static/vector/004.png
    :align: center
 
-Clicking it will show you a table with more data about the :guilabel:`streets`
-layer. This extra data is called *attribute data*. The lines that you can see
-on your map represent where the streets go; this is the *spatial data*.
+It will show you a table with more data about the :guilabel:`streets` layer.
+This extra data is called *attribute data*. The lines that you can see on your
+map represent where the streets go; this is the *spatial data*.
 
 These definitions are commonly used in GIS, so it's essential to remember them!
-(You may now close the attribute table.)
+
+* You may now close the attribute table.
+
 Vector data represents features in terms of points, lines and polygons on a
 coordinate plane. It is usually used to store discrete features, like roads and
 city blocks.
@@ -48,8 +52,9 @@ name, but different file types. Shapefiles are easy to send back and forth, and
 most GIS software can read them.
 
 Refer back to the introductory exercise in the previous section for
-instructions on how to add vector layers. Load the "places" dataset into your
-map following the same method.
+instructions on how to add vector layers.
+
+* Load the "places" dataset into your map following the same method.
 
 :ref:`Check your results <vector-load-shapefiles-1>`
 
@@ -60,38 +65,38 @@ map following the same method.
 -------------------------------------------------------------------------------
 
 Databases allow you to store a large volume of associated data in one file. You
-may already be familiar with database management systems (DBMS) such as
+may already be familiar with a database management system (DBMS) such as
 Microsoft Access. GIS applications can also make use of databases. GIS-specific
 DBMSes (such as PostGIS) have extra functions, because they need to handle
 spatial data.
 
-Find this icon in QGIS:
+* Click on this icon:
 
 .. image:: ../_static/vector/005.png
    :align: center
 
 (If you're sure you can't see it at all, check that the :guilabel:`Manage
-Layers` toolbar is enabled.) Clicking it will give you this dialog:
+Layers` toolbar is enabled.)
 
-.. image:: ../_static/vector/006.png
-   :align: center
+It will give you a new dialog.  In this dialog:
 
-In this dialog, click the :guilabel:`New` button. In the same folder as the
-other data, you should find the file :guilabel:`land_use.db`. Select it and
-click :guilabel:`Open`.
+* Click the :guilabel:`New` button.
+* In the same folder as the other data, you should find the file
+  :guilabel:`land_use.db`. Select it and click :guilabel:`Open`.
 
 You will now see the first dialog again. Notice that the dropdown select above
 the three buttons now reads "land_use.db@...", followed by the path of the
-database file on your computer. Click the :guilabel:`Connect` button. You
-should see this in the previously empty box:
+database file on your computer.
+
+* Click the :guilabel:`Connect` button. You should see this in the previously
+  empty box:
 
 .. image:: ../_static/vector/007.png
    :align: center
 
-Click on the first layer to select it, then use :kbd:`shift+click` to select
-all of them at once.
-
-Click :guilabel:`Add`. This will add all three layers to the map at once.
+* Click on the first layer to select it, then use :kbd:`shift+click` to select
+  all of them at once.
+* Click :guilabel:`Add`. This will add all three layers to the map at once.
 
 .. note::  Remember to save the map often! The map file doesn't contain any of
    the data directly, but it remembers which layers you loaded into your map.
@@ -126,8 +131,10 @@ For example, this layer order...
 ... would result in roads and places being hidden as they run *underneath*
 urban areas.
 
-To resolve this problem, simply click and drag on a layer in the Layers list.
-Reorder them to look like this:
+To resolve this problem:
+
+* Click and drag on a layer in the Layers list.
+* Reorder them to look like this:
 
 .. image:: ../_static/vector/003.png
    :align: center
