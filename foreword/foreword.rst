@@ -7,7 +7,7 @@ Background
 In 2008 we launched the `Gentle Introduction to GIS
 <http://linfiniti.com/dla>`_, a completely free, open content resource for
 people who want to learn about GIS without being overloaded with jargon and new
-terminology. The was sponsored by the South African government and has been a
+terminology. It was sponsored by the South African government and has been a
 phenomenal success, with people all over the world writing to us to tell us how
 they are using the materials to run University Training Courses, teach
 themselves GIS and so on. The Gentle Introduction is not a software tutorial,
@@ -86,7 +86,7 @@ of the core content and be published under the same license.
 Authors
 -------
 
-* Rudi Thiede (rudi@linfiniti.com) - Rudi has written the QGIS instructional
+* Rüdiger Thiede (rudi@linfiniti.com) - Rudi has written the QGIS instructional
   materials and parts of the PostGIS materials.
 * Tim Sutton (tim@linfiniti.com) - Tim has overseen and guided the project and
   co-authored the PostgreSQL and PostGIS parts. Tim also authored the custom

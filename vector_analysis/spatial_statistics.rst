@@ -232,7 +232,39 @@ the location of the sample points.
 
 As you can see, 100 sample points aren't really enough to get a detailed
 impression of the terrain. It gives a very general idea, but it can be
-misleading as well. For example, in the image above, there don't seem to be 
+misleading as well. For example, in the image above, it is not clear that there
+is a high, unbroken mountain running from east to west; rather, the image seems
+to show a valley, with high peaks to the west. Just using visual inspection, we
+can see that the sample dataset is not representative of the terrain.
+
+|moderate| |TY|
+-------------------------------------------------------------------------------
+
+Use the processes shown above to create a new set of :kbd:`1000` random points,
+then use these points to sample the original DEM. Use the :guilabel:`Spatial
+Interpolation` tool on this new dataset as above. Set the output filename to
+:kbd:`interpolation_1000.tif`, with :guilabel:`Power` and :guilabel:`Smoothing`
+set to :kbd:`5.0` and :kbd:`2.0`, respectively.
+
+The results (depending on the positioning of your random points) will look more
+or less like this:
+
+.. image:: ../_static/spatial_statistics/010.png
+   :align: center
+
+The border shows the :guilabel:`roads_hull` layer (which represents the
+boundary of the random sample points) to explain the sudden lack of detail
+beyond its edges. This is a much better representation of the terrain, due to
+the much greater density of sample points.
+
+Here is an example of what it looks like with :kbd:`10 000` sample points:
+
+.. image:: ../_static/spatial_statistics/011.png
+   :align: center
+
+It's not recommended that you try doing this if you are not working on a fast
+computer, however, as the size of the sample dataset requires a lot of
+processing time.
 
 |moderate| |FA| Installing SEXTANTE
 -------------------------------------------------------------------------------
