@@ -17,31 +17,33 @@ lesson is about!
 |basic| |FA| Classifying nominal data
 -------------------------------------------------------------------------------
 
-Open :guilabel:`Layer Properties` and go to the :guilabel:`Style` tab. Click on
-the dropdown that says :guilabel:`Single Symbol`:
+* Open :guilabel:`Layer Properties`.
+* Go to the :guilabel:`Style` tab.
+* Click on the dropdown that says :guilabel:`Single Symbol`:
 
 .. image:: ../_static/classification/002.png
    :align: center
 
-Change it to :guilabel:`Categorized` and the interface will change:
+* Change it to :guilabel:`Categorized` and the interface will change:
 
 .. image:: ../_static/classification/003.png
    :align: center
 
-Change the :guilabel:`Column` to :guilabel:`TOWN` and the :guilabel:`Color
-ramp` to :guilabel:`random`:
+* Change the :guilabel:`Column` to :guilabel:`TOWN` and the :guilabel:`Color
+  ramp` to :guilabel:`random`:
 
 .. image:: ../_static/classification/004.png
    :align: center
 
-Click the button labeled :guilabel:`Classify` and then click :guilabel:`OK`.
+* Click the button labeled :guilabel:`Classify` and then click :guilabel:`OK`.
+
 You'll see something like this:
 
 .. image:: ../_static/classification/005.png
    :align: center
 
-If you click the arrow (or plus sign) next to :guilabel:`rural` in the
-:guilabel:`Layer list`, you'll see the categories explained:
+* Click the arrow (or plus sign) next to :guilabel:`rural` in the
+  :guilabel:`Layer list`, you'll see the categories explained:
 
 .. image:: ../_static/classification/006.png
    :align: center
@@ -49,29 +51,29 @@ If you click the arrow (or plus sign) next to :guilabel:`rural` in the
 So, this is useful! But it hurts your eyes to look at it, so let's see what we
 can do about that.
 
-Open :guilabel:`Layer Properties` and go to the :guilabel:`Style` tab again.
-
-Let's change the symbol:
+* Open :guilabel:`Layer Properties` and go to the :guilabel:`Style` tab again.
+* Change the symbol:
 
 .. image:: ../_static/classification/007.png
    :align: center
 
-Get rid of the outline the same way you did before, and click :guilabel:`OK`.
-(If you need to, go back to the lesson where we covered this to remember how
-it's done.)
-
-Once you're back in the :guilabel:`Style` dialog, click the :guilabel:`Delete
-all` button:
+* Get rid of the outline the same way you did before, and click :guilabel:`OK`.
+  (If you need to, go back to the lesson where we covered this to remember how
+  it's done.)
+* Click the :guilabel:`Delete all` button:
 
 .. image:: ../_static/classification/008.png
    :align: center
 
-This gets rid of the ugly classes so you can try again. Click
-:guilabel:`Classify` again, and the new symbols will appear. You'll notice they
-don't have outlines, because you just removed the outlines!
+This gets rid of the ugly classes so you can try again.
 
-Now change the color for each town by double-clicking on the colored block
-representing its symbol:
+* Click :guilabel:`Classify` again, and the new symbols will appear.
+  
+You'll notice they don't have outlines. This is because because you just
+removed the outlines!
+
+* Change the color for each town by double-clicking on the colored block
+  representing its symbol:
 
 .. image:: ../_static/classification/009.png
    :align: center
@@ -95,9 +97,11 @@ By the way, there's one category that's empty:
 .. image:: ../_static/classification/012.png
    :align: center
 
-You can delete it by selecting it and then clicking the :guilabel:`Delete`
-button. This only gets rid of the symbol, not the data, so don't worry about
-messing up; you're not actually deleting anything that you can't recover.
+* Select the empty category.
+* Click the :guilabel:`Delete` button.
+
+This only gets rid of the symbol, not the data, so don't worry about messing
+up; you're not actually deleting anything that you can't recover.
 
 Remember to save your map now so that you don't lose all your hard-earned
 changes!
@@ -106,8 +110,8 @@ changes!
 -------------------------------------------------------------------------------
 
 If you're only following the basic-level content, use the knowledge you gained
-above to classify the towns. Use darker colors to set the towns apart from the
-farms.
+above to classify the :guilabel:`urban` areas. Use darker colors to set them
+apart from the farms.
 
 |moderate| |FA| Ratio classification
 -------------------------------------------------------------------------------
@@ -135,36 +139,42 @@ In the example above, we used nominal classification to assign each farm to the
 town that it is administered by. Now we will use ratio classification to
 classify the farms by area.
 
-First, save your rural symbology (if you want to keep it) by clicking on the
-:guilabel:`Save Style ...` button in the :guilabel:`Style` dialog. We're going
-to reclassify the layer, so existing classes will be lost if not saved.
+* Save your rural symbology (if you want to keep it) by clicking on the
+  :guilabel:`Save Style ...` button in the :guilabel:`Style` dialog.
 
-Once you're done, close the :guilabel:`Style` dialog and open the layer
-attributes for the :guilabel:`rural` layer. We want to classify these farms by
-area, but there's a problem: they don't have an area field! We'll have to make
-one.
+We're going to reclassify the layer, so existing classes will be lost if not
+saved.
 
-First, enter edit mode by clicking this button:
+* Close the :guilabel:`Style` dialog.
+* Open the layer attributes for the :guilabel:`rural` layer.
+  
+We want to classify these farms by area, but there's a problem: they don't have
+an area field! We'll have to make one.
+
+* Enter edit mode by clicking this button:
 
 .. image:: ../_static/classification/013.png
    :align: center
 
-Then add a new column with this button:
+* Add a new column with this button:
 
 .. image:: ../_static/classification/014.png
    :align: center
 
-A dialog appears. Set it up like this:
+* Set up the dialog that appears, like this:
 
 .. image:: ../_static/classification/015.png
    :align: center
 
-Now click :guilabel:`OK`. The new field will be added (at the far right of the
-table; you may need to scroll horizontally to see it). However, at the moment
-it is not populated, it just has a lot of :kbd:`NULL` values.
+* Click :guilabel:`OK`.
+  
+The new field will be added (at the far right of the table; you may need to
+scroll horizontally to see it). However, at the moment it is not populated, it
+just has a lot of :kbd:`NULL` values.
 
-To solve this problem, we'll need to calculate the areas. Open the field
-calculator:
+To solve this problem, we'll need to calculate the areas.
+
+* Open the field calculator:
 
 .. image:: ../_static/classification/016.png
    :align: center
@@ -174,61 +184,71 @@ You'll get this dialog:
 .. image:: ../_static/classification/018.png
    :align: center
 
-Change the values at the top of the dialog to look like this:
+* Change the values at the top of the dialog to look like this:
 
 .. image:: ../_static/classification/017.png
    :align: center
 
-In the :guilabel:`Function List`, select :menuselection:`Geometry --> $area`:
+* In the :guilabel:`Function List`, select :menuselection:`Geometry --> $area`:
 
 .. image:: ../_static/classification/019.png
    :align: center
 
-Double-click on it so that it appears in the :guilabel:`Expression` field, then
-click :guilabel:`OK`. Now your :kbd:`AREA` field is populated with values!
-Admire them, then close the attribute table.
+* Double-click on it so that it appears in the :guilabel:`Expression` field.
+* Click :guilabel:`OK`.
 
-.. note::  These areas are in degrees. Later, we will compute them in
+Now your :kbd:`AREA` field is populated with values! Admire them, then close
+the attribute table.
+
+.. note::  These areas are in degrees area. Later, we will compute them in
    square meters.
 
-Open the :guilabel:`Layer properties` dialog's :guilabel:`Style` tab again,
-then change the classification style from :guilabel:`Classified` to
-:guilabel:`Graduated`:
+* Open the :guilabel:`Layer properties` dialog's :guilabel:`Style` tab.
+* Change the classification style from :guilabel:`Classified` to
+  :guilabel:`Graduated`:
 
 .. image:: ../_static/classification/020.png
    :align: center
 
-Change the :guilabel:`Column` to :guilabel:`AREA`:
+* Change the :guilabel:`Column` to :guilabel:`AREA`:
 
 .. image:: ../_static/classification/021.png
    :align: center
 
-Under :guilabel:`Color ramp`, choose the option :guilabel:`New color ramp...`
-to get this dialog:
+* Under :guilabel:`Color ramp`, choose the option :guilabel:`New color ramp...`
+  to get this dialog:
 
 .. image:: ../_static/classification/022.png
    :align: center
 
-Choose :guilabel:`Gradient` (if it's not selected already) and click
-:guilabel:`OK`. You'll see this:
+* Choose :guilabel:`Gradient` (if it's not selected already) and click
+  :guilabel:`OK`. You'll see this:
 
 .. image:: ../_static/classification/023.png
    :align: center
 
 You'll be using this to denote area, with small areas as :guilabel:`Color 1`
-and large areas as :guilabel:`Color 2`, so choose colors accordingly. In the
-example, the result looks like this:
+and large areas as :guilabel:`Color 2`.
+
+* Choose appropriate colors.
+  
+In the example, the result looks like this:
 
 .. image:: ../_static/classification/024.png
    :align: center
 
-Click :guilabel:`OK` and choose a suitable name for the new color ramp. Click
-:guilabel:`OK` after filling in the name. Now you'll have something like this:
+* Click :guilabel:`OK`.
+* Choose a suitable name for the new color ramp.
+* Click :guilabel:`OK` after filling in the name.
+  
+Now you'll have something like this:
 
 .. image:: ../_static/classification/025.png
    :align: center
 
-Leave everything as-is and click :guilabel:`Apply`:
+Leave everything as-is.
+
+* Click :guilabel:`Apply`:
 
 .. image:: ../_static/classification/026.png
    :align: center
@@ -239,9 +259,9 @@ Leave everything as-is and click :guilabel:`Apply`:
 |moderate| |TY| Refine the classification
 -------------------------------------------------------------------------------
 
-Using your existing knowledge, get rid of the lines between the classes. Then
-change the values of :guilabel:`Mode` and :guilabel:`Classes` until you get a
-classification that makes sense.
+* Get rid of the lines between the classes.
+* Change the values of :guilabel:`Mode` and :guilabel:`Classes` until you get a
+  classification that makes sense.
 
 :ref:`Check your results <classification-refine-1>`
 
@@ -250,26 +270,34 @@ classification that makes sense.
 
 It's often useful to combine multiple criteria for a classification, but
 unfortunately normal classification only takes one attribute into account.
-That's where rule-based classification comes in handy. Switch the
-classification style to :guilabel:`Rule-based`. You'll get this:
+That's where rule-based classification comes in handy.
+
+* Open the :guilabel:`Layer Properties` dialog for the :guilabel:`rural` layer.
+* Switch to the :guilabel:`Style` tab.
+* Switch the classification style to :guilabel:`Rule-based`. You'll get this:
 
 .. image:: ../_static/classification/029.png
    :align: center
 
-Click the :guilabel:`Add` button. In the dialog that appears, click the
-ellipsis :guilabel:`...` button next to the :guilabel:`Filter` text area. Using
-the query builder that appears, enter the criterion :kbd:`AREA >= 0.00085` and
-choose a dark color for it. Then add the criterion :kbd:`AREA <= 0.00085` and
-choose a light color. Finally, add the criterion :kbd:`TOWN != 'Swellendam
-Rural'` and assign it the color black, with transparency at :kbd:`85%`.
+* Click the :guilabel:`Add` button.
+* A new dialog that appears.
+* Click the ellipsis :guilabel:`...` button next to the :guilabel:`Filter` text area.
+* Using the query builder that appears, enter the criterion :kbd:`AREA >=
+  0.00085` and choose a dark color for it.
+* Add the criterion :kbd:`AREA <= 0.00085` and choose a light color.
+* Add the criterion :kbd:`TOWN != 'Swellendam Rural'` and assign it the color
+  black, with transparency at :kbd:`85%`.
+* Click on the :kbd:`TOWN ...` criterion in the list of rules, and then on
+  :guilabel:`Increase priority`.
 
-Click on the :kbd:`TOWN ...` criterion in the list of rules, and then on
-:guilabel:`Increase priority`. Your dialog should look like this:
+Your dialog should look like this:
 
 .. image:: ../_static/classification/030.png
    :align: center
 
-Apply this symbology, and your map will look like this:
+* Apply this symbology.
+
+Your map will look like this:
 
 .. image:: ../_static/classification/031.png
    :align: center

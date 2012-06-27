@@ -19,36 +19,37 @@ layer.
 -------------------------------------------------------------------------------
 
 Before being able to access the Label tool, you will need to ensure that it has
-been activated. First, go to the menu item :menuselection:`View --> Toolbars`,
-and ensure that the :guilabel:`Label` item has a check mark next to it. If it
-doesn't, click on the :guilabel:`Label` item, and it will be activated.
+been activated.
 
-Once it has been activated (or if it already had a check mark), click on the
-:guilabel:`places` layer in the :guilabel:`Layers list`, so that it is
-highlighted. Then look for the following toolbar button:
+* Go to the menu item :menuselection:`View --> Toolbars`.
+* Ensure that the :guilabel:`Label` item has a check mark next to it. If it
+  doesn't, click on the :guilabel:`Label` item, and it will be activated.
+* Click on the :guilabel:`places` layer in the :guilabel:`Layers list`, so that
+  it is highlighted.
+* Click on the following toolbar button:
 
 .. image:: ../_static/labels/001.png
    :align: center
 
-This gives you the following dialog:
+This gives you the :guilabel:`Layer labeling settings` dialog.
 
-.. image:: ../_static/labels/002.png
-   :align: center
-
-Checking the box next to :guilabel:`Label this layer with...` will result in
-this:
+* Check the box next to :guilabel:`Label this layer with...`.
 
 .. image:: ../_static/labels/003.png
    :align: center
 
 You'll need to choose which field in the attributes will be used for the
-labels. In the previous lesson, you decided that the *NAME* field was the most
-suitable one for this purpose. Select :guilabel:`NAME` from the list:
+labels. In the previous lesson, you decided that the :kbd:`NAME` field was the
+most suitable one for this purpose.
+
+* Select :guilabel:`NAME` from the list:
 
 .. image:: ../_static/labels/004.png
    :align: center
 
-... and click :guilabel:`OK`. The map should now have labels like this:
+* Click :guilabel:`OK`.
+  
+The map should now have labels like this:
 
 .. image:: ../_static/labels/005.png
    :align: center
@@ -60,8 +61,8 @@ What we have so far is good, but as you can see, the labels are overlapping the
 points that they are associated with. That doesn't look very nice. The text is
 also a bit larger than it needs to be. Let's fix these problems!
 
-Open the :guilabel:`Label tool` again by clicking on its button as before. To
-change the text properties, click on the ellipsis (:guilabel:`...`) button:
+* Open the :guilabel:`Label tool` again by clicking on its button as before.
+* Click on the ellipsis (:guilabel:`...`) button to change the text properties:
 
 .. image:: ../_static/labels/006.png
    :align: center
@@ -75,25 +76,34 @@ this:
 
 That's the font problem solved! Now let's look at the problem of the labels
 overlapping the points, but before we do that, let's take a look at the
-:guilabel:`Buffer` option. You'll see it in the :guilabel:`Label tool` dialog.
-Deactivate the label buffer by clicking on the checkbox next to the text that
-says :guilabel:`Buffer`, then clicking :guilabel:`Apply`. Note the effects in
-the map:
+:guilabel:`Buffer` option.
+
+* Open the :guilabel:`Label tool` dialog.
+* Deactivate the label buffer by clicking on the checkbox next to the text that
+  says :guilabel:`Buffer`.
+* Click :guilabel:`Apply`.
+  
+Note the effects in the map:
 
 .. image:: ../_static/labels/008.png
    :align: center
 
-Now you can see why we usually need label buffers! Reactivate them by clicking
-in the same checkbox as before, and then clicking :guilabel:`Apply`.
+Now you can see why we usually need label buffers!
 
-Back to the problem of the labels that overlap points. Go to the
-:guilabel:`Advanced` tab and change the value of :guilabel:`Label distance` to
-:kbd:`2`...
+* Reactivate the buffers by clicking in the same checkbox as before, and then
+  clicking :guilabel:`Apply`.
+
+Back to the problem of the labels that overlap points.
+
+* In the :guilabel:`Label tool` dialog, go to the :guilabel:`Advanced` tab.
+* Change the value of :guilabel:`Label distance` to :kbd:`2`.
 
 .. image:: ../_static/labels/009.png
    :align: center
 
-... then click :guilabel:`Apply`. This is the result:
+* Click :guilabel:`Apply`.
+  
+This is the result:
 
 .. image:: ../_static/labels/010.png
    :align: center
@@ -115,18 +125,24 @@ of the European Union is therefore in Poland.
 So, to prevent this kind of misunderstanding, it's often useful to deactivate
 the point symbols and replace them completely with labels.
 
-In QGIS, you can do this by changing the position of the labels:
+In QGIS, you can do this by changing the position of the labels to be rendered
+directly over the points they refer to.
+
+* Open the :guilabel:`Layer labeling settings` dialog for the
+  :guilabel:`places` layer.
+* Go to the :guilabel:`Advanced` tab.
+* Click on the :guilabel:`over point` button.
 
 .. image:: ../_static/labels/011.png
    :align: center
 
-Now hide the point symbols by editing the layer style as usual, and setting the
-size of points to :kbd:`0`:
+* Hide the point symbols by editing the layer style as usual, and setting the
+  size of points to :kbd:`0`:
 
 .. image:: ../_static/labels/012.png
    :align: center
 
-Click :guilabel:`OK` and you'll see this result:
+* Click :guilabel:`OK` and you'll see this result:
 
 .. image:: ../_static/labels/013.png
    :align: center
@@ -143,14 +159,13 @@ a later exercise in this lesson.
 |moderate| |TY| Customize the labels
 -------------------------------------------------------------------------------
 
-First, return the label and symbol settings to the way they were before.
+* Return the label and symbol settings to the way they were before.
 
 :ref:`Check your results <label-tool-1>`
 
-Next, set the map to the scale :kbd:`1:50000`. You can do this by typing it
-into the :guilabel:`Scale` box in the :guilabel:`Status Bar`.
-
-Modify your labels to be suitable for viewing at this scale.
+* Set the map to the scale :kbd:`1:50000`. You can do this by typing it into
+  the :guilabel:`Scale` box in the :guilabel:`Status Bar`.
+* Modify your labels to be suitable for viewing at this scale.
 
 :ref:`Check your results <label-tool-2>`
 
@@ -167,14 +182,14 @@ way as the points, your results would look like this:
 
 This is not very useful! To make lines behave, we'll need to edit some options.
 
-First, hide the :guilabel:`places` layer so that it doesn't distract you. Then
-activate labels for the :guilabel:`streets` layer as before. (Remember to use
-the :guilabel:`Label tool` on the toolbar, not the one in :guilabel:`Label
-Properties`!)
-
-Set the font :guilabel:`Size` to :kbd:`9` so that you can see more labels, and
-be sure to zoom in on the Swellendam town area. In the :guilabel:`Label tool`
-dialog's :guilabel:`Advanced` tab, choose the following settings:
+* Hide the :guilabel:`places` layer so that it doesn't distract you.
+* Activate labels for the :guilabel:`streets` layer as before. (Remember to use
+  the :guilabel:`Label tool` on the toolbar, not the one in :guilabel:`Label
+  Properties`!)
+* Set the font :guilabel:`Size` to :kbd:`9` so that you can see more labels.
+* Zoom in on the Swellendam town area.
+* In the :guilabel:`Label tool` dialog's :guilabel:`Advanced` tab, choose the
+  following settings:
 
 .. image:: ../_static/labels/018.png
    :align: center
@@ -184,26 +199,34 @@ The map will look somewhat like this, depending on scale:
 .. image:: ../_static/labels/019.png
    :align: center
 
-It's better than before, but still not ideal. For a start, some of the names
+It's better than before, but still not ideal. For starters, some of the names
 appear more than once, and that's not always necessary. To prevent that from
-happening, enable the option :guilabel:`Merge connected lines to avoid
-duplicate labels` (also under the :guilabel:`Advanced` tab - you may need to
-scroll down to see it).
+happening:
+
+* Enable the option :guilabel:`Merge connected lines to avoid duplicate labels`
+  (also under the :guilabel:`Advanced` tab - you may need to scroll down to see
+  it).
 
 Another useful function is to prevent labels being drawn for features too short
-to be of notice. This is the :guilabel:`Suppress labeling of features smaller
-than` option. Set this value to :kbd:`5mm` and note the results when you click
-:guilabel:`Apply`.
+to be of notice.
+
+* Set the value of :guilabel:`Suppress labeling of features smaller than ...`
+  to :kbd:`5mm` and note the results when you click :guilabel:`Apply`.
 
 Try out different :guilabel:`Placement` settings as well (also under the
 :guilabel:`Advanced` tab). As we've seen before, the :guilabel:`horizontal`
 option is not a good idea in this case, so let's try the :guilabel:`curved`
-option instead! Here's the result:
+option instead!
+
+* Select the :guilabel:`curved` option under the :guilabel:`Advanced` tab of
+  the :guilabel:`Layer labeling settings` dialog.
+
+Here's the result:
 
 .. image:: ../_static/labels/020.png
    :align: center
 
-As you can see, this hides a lot of the labels that were prviously visible,
+As you can see, this hides a lot of the labels that were previously visible,
 because of the difficulty of making some of them follow twisting street lines
 and still be legible. You can decide which of these options to use, depending
 on what you think seems more useful or what looks better.
@@ -211,23 +234,21 @@ on what you think seems more useful or what looks better.
 |hard| |FA| Data defined settings
 -------------------------------------------------------------------------------
 
-First, deactivate labeling for the :guilabel:`streets` layer and reactivate it
-for :guilabel:`places`.
+* Deactivate labeling for the :guilabel:`streets` layer.
+* Reactivate labeling for the :guilabel:`places` layer.
+* Open the attribute table for :guilabel:`places`.
 
-Now open the attribute table for :guilabel:`places`. It has two fields that are
-of interest to us now: :kbd:`ADDR_CITY` and :kbd:`IN_SWD`. :kbd:`ADDR_CITY` is
-the city that the feature is in. :kbd:`IN_SWD` is derived from it, and tells
-you whether or not that feature is in Swellendam (:kbd:`1` if it is, :kbd:`0`
-if not).
+It has two fields that are of interest to us now: :kbd:`ADDR_CITY` and
+:kbd:`IN_SWD`. :kbd:`ADDR_CITY` is the city that the feature is in.
+:kbd:`IN_SWD` is derived from it, and tells you whether or not that feature is
+in Swellendam (:kbd:`1` if it is, :kbd:`0` if not). We can use this data to
+influence the label styles.
 
-We can use this data to influence the label styles. Navigate to the
-:guilabel:`Data defined settings` tab:
+* Navigate to the :guilabel:`Data defined settings` tab.
+* In the :guilabel:`Italic` dropdown, select :kbd:`IN_SWD` and click
+  :guilabel:`Apply`.
 
-.. image:: ../_static/labels/021.png
-   :align: center
-
-In the :guilabel:`Italic` dropdown, select :kbd:`IN_SWD` and click
-:guilabel:`Apply`. Notice its effects:
+Notice its effects:
 
 .. image:: ../_static/labels/022.png
    :align: center
@@ -243,24 +264,25 @@ In the :guilabel:`Italic` dropdown, select :kbd:`IN_SWD` and click
    following means. If you don't, feel free to leave out this section and come
    back later when you've covered the requisite materials.
 
-Open the attribute table for :guilabel:`places`. Enter edit mode by clicking
-this button (at the lower edge of the attribute table):
+* Open the attribute table for :guilabel:`places`.
+* Enter edit mode by clicking this button (at the lower edge of the attribute
+  table):
 
 .. image:: ../_static/labels/023.png
    :align: center
 
-Add a new column:
+* Add a new column:
 
 .. image:: ../_static/labels/024.png
    :align: center
 
-And configure it thus:
+* Configure it like this:
 
 .. image:: ../_static/labels/025.png
    :align: center
 
-Use this to set custom font sizes for each different type of place (i.e., each
-key in the :kbd:`PLACE` field).
+* Use this to set custom font sizes for each different type of place (i.e.,
+  each key in the :kbd:`PLACE` field).
 
 :ref:`Check your results <label-data-defined-1>`
 
