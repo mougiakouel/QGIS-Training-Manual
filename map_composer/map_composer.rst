@@ -17,23 +17,17 @@ map with all the required settings.
 -------------------------------------------------------------------------------
 
 QGIS allows you to create multiple maps using the same map file. For this
-reason, it has a tool called the :guilabel:`Composer Manager`. To open this
-tool, click on the :menuselection:`File --> Composer Manager` menu entry.
-You'll see this dialog appear:
+reason, it has a tool called the :guilabel:`Composer Manager`.
 
-.. image:: ../_static/map_composer/001.png
-   :align: center
-
-Click the :guilabel:`Add` button and a new composer will be added called
-:guilabel:`Composer 1` (it may be another number if you have tried using the
-:guilabel:`Composer Manager` before now). 
-
-With your new composer selected, click on the :guilabel:`Rename` button and
-rename it to :kbd:`Swellendam`, then click :guilabel:`OK`. Next, click
-:guilabel:`Show`:
-
-.. image:: ../_static/map_composer/002.png
-   :align: center
+* Click on the :menuselection:`File --> Composer Manager` menu entry to open
+  this tool.  You'll see a blank :guilabel:`Composer manager` dialog appear.
+* Click the :guilabel:`Add` button and a new composer will be added called
+  :guilabel:`Composer 1` (it may be another number if you have tried using the
+  :guilabel:`Composer Manager` before now). 
+* With your new composer selected, click on the :guilabel:`Rename` button and
+  rename it to :kbd:`Swellendam`.
+* Click :guilabel:`OK`.
+* Click the :guilabel:`Show` button.
 
 (You could also close the dialog and navigate to a composer via the
 :menuselection:`File --> Print Composers` menus, as in the image below.)
@@ -41,43 +35,45 @@ rename it to :kbd:`Swellendam`, then click :guilabel:`OK`. Next, click
 .. image:: ../_static/map_composer/003.png
    :align: center
 
-Whichever route you take to get there, you will be shown the :guilabel:`Print
-Composer` dialog, which looks like this:
-
-.. image:: ../_static/map_composer/004.png
-   :align: center
+Whichever route you take to get there, you will now see the :guilabel:`Print
+Composer` window.
 
 |basic| |FA| Basic Map Composition
 -------------------------------------------------------------------------------
 
-In this example, the composition was already the way we wanted it. To ensure
-that yours is as well, check that the values under :menuselection:`General -->
-Composition --> Paper and Quality` are set to the following:
+In this example, the composition was already the way we wanted it. Ensure that
+yours is as well.
+
+* Check that the values under :menuselection:`General --> Composition --> Paper
+  and Quality` are set to the following:
 
 - :guilabel:`Size`: :kbd:`A4 (210x297mm)`
 - :guilabel:`Orientation`: :kbd:`Landscape`
 - :guilabel:`Quality`: :kbd:`300dpi`
 
 Now you've got the page layout the way you wanted it, but this page is still
-blank. It clearly lacks a map. To add one, find and click on the :guilabel:`Add
-New Map` button:
+blank. It clearly lacks a map. Let's fix that!
+
+* Click on the :guilabel:`Add New Map` button:
 
 .. image:: ../_static/map_composer/005.png
    :align: center
 
-With this tool activated, you'll be able to place a map on the page. Click and
-drag a box on the blank page:
+With this tool activated, you'll be able to place a map on the page.
+
+* Click and drag a box on the blank page:
 
 .. image:: ../_static/map_composer/006.png
    :align: center
 
-The map will appear on the page. You can move the map by clicking and dragging
-it around:
+The map will appear on the page.
+
+* Move the map by clicking and dragging it around:
 
 .. image:: ../_static/map_composer/007.png
    :align: center
 
-And you can resize it by clicking and dragging the boxes in the corners:
+* Resize it by clicking and dragging the boxes in the corners:
 
 .. image:: ../_static/map_composer/008.png
    :align: center
@@ -87,19 +83,19 @@ And you can resize it by clicking and dragging the boxes in the corners:
    general, so they will work the same regardless of what the map itself looks
    like.
 
-When you're done, be sure to leave margins along the edges, and a space along
-the top for the title:
+* Be sure to leave margins along the edges, and a space along the top for the
+  title:
 
 .. image:: ../_static/map_composer/009.png
    :align: center
 
-You can zoom in and out on the page (but not the map!) by using these buttons:
+* Zoom in and out on the page (but not the map!) by using these buttons:
 
 .. image:: ../_static/map_composer/010.png
    :align: center
 
-You can zoom and pan the map in the main QGIS window. You can also pan the map
-using the :guilabel:`Move item content` tool:
+* Zoom and pan the map in the main QGIS window. You can also pan the map using
+  the :guilabel:`Move item content` tool:
 
 .. image:: ../_static/map_composer/023.png
    :align: center
@@ -107,8 +103,9 @@ using the :guilabel:`Move item content` tool:
 When zooming in, the map view will not refresh by itself. This is so that it
 doesn't waste your time redrawing the map while you're zooming the page to
 where you want it, but it also means that if you zoom in or out, the map will
-be at the wrong resolution and will look ugly or unreadable. Force the map to
-refresh by clicking this button:
+be at the wrong resolution and will look ugly or unreadable.
+
+* Force the map to refresh by clicking this button:
 
 .. image:: ../_static/map_composer/011.png
    :align: center
@@ -126,66 +123,74 @@ with before), and save your project from there as usual.
 
 Now your map is looking good on the page, but the reader is not being told
 what's going on yet. They need some context, which is what you'll provide for
-them by adding map elements.
+them by adding map elements. First, let's add a title.
 
-First, let's add a title. Click on this button:
+* Click on this button:
 
 .. image:: ../_static/map_composer/012.png
    :align: center
 
-Now click on the page, and a label will appear:
+* Click on the page, and a label will appear:
 
 .. image:: ../_static/map_composer/013.png
    :align: center
 
-Resize it and place it in the top center of the page. It can be resized and
-moved in the same way that you resized and moved the map.
+* Resize it and place it in the top center of the page. It can be resized and
+  moved in the same way that you resized and moved the map.
 
 .. image:: ../_static/map_composer/014.png
    :align: center
 
 But if you tried it, you'll see that it's difficult to align the label to be
-completely centered to the map! Luckily, there's a tool for that. First, click
-the map to select it. Next, hold in :kbd:`shift` on your keyboard, and click on
-the label. Now look for this tool (but don't click it yet):
+completely centered to the map! Luckily, there's a tool for that.
+
+* Click the map to select it. 
+* Hold in :kbd:`shift` on your keyboard and click on the label.
+* Look for this tool (but don't click it yet):
 
 .. image:: ../_static/map_composer/015.png
    :align: center
 
-Now click on the downwards arrow next to the button, and then click
-:guilabel:`Align center`:
+* Click on the downwards arrow next to the button. 
+* Click :guilabel:`Align center`:
 
 .. image:: ../_static/map_composer/016.png
    :align: center
 
 To make sure that you don't accidentally move these elements around now that
-you've aligned them, right-click on both the map and the label. A small lock
-icon will appear in the corner to tell you that an element can't be dragged
-right now. You can always right-click on an element again to unlock it, though.
+you've aligned them:
 
-Now the label is centered to the map, but not the contents. First, select the
-label by clicking on it, and then click on the :guilabel:`Item` tab in the side
-panel of the :guilabel:`Composer` window.
+* Right-click on both the map and the label.
 
-Next, change the text of the label to "Swellendam":
+A small lock icon will appear in the corner to tell you that an element can't
+be dragged right now. You can always right-click on an element again to unlock
+it, though.
+
+Now the label is centered to the map, but not the contents. To center the
+contents of the label:
+
+* Select the label by clicking on it.
+* Click on the :guilabel:`Item` tab in the side panel of the
+  :guilabel:`Composer` window.
+* Change the text of the label to "Swellendam":
 
 .. image:: ../_static/map_composer/017.png
    :align: center
 
-Now use this interface to set the font and alignment options:
+* Use this interface to set the font and alignment options:
 
 .. image:: ../_static/map_composer/018.png
    :align: center
 
-The :guilabel:`Font` and :guilabel:`Font color...` buttons will give you the
-obvious dialogs. Choose a large but sensible font (the example will use the
-default font with a size of :kbd:`48`), and keep the color subdued.  In fact,
-it's probably best to keep it black as per the default. The key is that the
-font should not be distracting, otherwise people who see the page will be
-looking at the heading instead of reading the map!
+* Choose a large but sensible font (the example will use the default font with
+  a size of :kbd:`48`), and keep the color subdued.
 
-You should also set the :guilabel:`Horizontal Alignment` to :guilabel:`Center`,
-so that the heading is properly centered within the label.
+In fact, it's probably best to keep it black as per the default. The key is
+that the font should not be distracting, otherwise people who see the page will
+be looking at the heading instead of reading the map!
+
+* Set the :guilabel:`Horizontal Alignment` to :guilabel:`Center`, so that the
+  heading is properly centered within the label.
 
 .. image:: ../_static/map_composer/019.png
    :align: center
@@ -196,10 +201,12 @@ it:
 .. image:: ../_static/map_composer/020.png
    :align: center
 
-To get rid of it, click on the :guilabel:`General options` slider at the bottom
-of the :guilabel:`Item` tab. The :guilabel:`Label` slider will slide away and
-you will see a new interface. On it, there is a :guilabel:`Show frame`
-checkbox. Click it to disable the frame:
+Let's get rid of it.
+
+* Click on the :guilabel:`General options` slider at the bottom of the
+  :guilabel:`Item` tab. The :guilabel:`Label` slider will slide away and you
+  will see a new interface.
+* Click the :guilabel:`Show frame` checkbox to disable the frame:
 
 .. image:: ../_static/map_composer/021.png
    :align: center
@@ -214,14 +221,15 @@ Here is our page so far:
 
 The map reader also needs to be able to see what various things on the map
 actually mean. In some cases, like the place names, this is quite obvious. In
-other cases, it's more difficult to guess, like the colors of the farms.
+other cases, it's more difficult to guess, like the colors of the farms. Let's
+add a new legend.
 
-To add a legend, click on this button:
+* Click on this button:
 
 .. image:: ../_static/map_composer/024.png
    :align: center
 
-Click on the page to place the legend, and move it to where you want it:
+* Click on the page to place the legend, and move it to where you want it:
 
 .. image:: ../_static/map_composer/025.png
    :align: center
@@ -230,30 +238,33 @@ Click on the page to place the legend, and move it to where you want it:
 -------------------------------------------------------------------------------
 
 Not everything on the legend is necessary, so let's remove some unwanted items.
-In the :guilabel:`Item` tab, click on the :guilabel:`Legend items` slider.
-Select the :guilabel:`places` entry and delete it from the legend by clicking
-the :guilabel:`minus` button:
+
+* In the :guilabel:`Item` tab, click on the :guilabel:`Legend items` slider.
+* Select the :guilabel:`places` entry.
+* Delete it from the legend by clicking the :guilabel:`minus` button:
 
 .. image:: ../_static/map_composer/026.png
    :align: center
 
-You can also rename items. Select a layer from the same list, then click the
-:guilabel:`Edit` button:
+You can also rename items.
+
+* Select a layer from the same list.
+* Click the :guilabel:`Edit` button:
 
 .. image:: ../_static/map_composer/027.png
    :align: center
 
-Rename the layers to :kbd:`Roads and Streets`, :kbd:`Surface Water`,
-:kbd:`Urban Areas`, and :kbd:`Farms`.
+* Rename the layers to :kbd:`Roads and Streets`, :kbd:`Surface Water`,
+  :kbd:`Urban Areas`, and :kbd:`Farms`.
+* Click the down arrow next to any item with multiple classes to rename the
+  classes (using the same method as above).
 
-Click the down arrow next to any item with multiple classes to rename the
-classes using the same method. In the example, the :guilabel:`Farms` layer's
-areas were computed in units that aren't easy to convert to land area directly.
-If your farms are classified by area or some other criteria, you should rename
-those classes to something that would make sense to the map reader. In the
-example, we renamed the smallest class :kbd:`small area` and the largest one
-:kbd:`large area`, with the one in the middle :kbd:`moderate area` and the rest
-blanked out.
+In the example, the :guilabel:`Farms` layer's areas were computed in units that
+aren't easy to convert to land area directly.  If your farms are classified by
+area or some other criteria, you should rename those classes to something that
+would make sense to the map reader. In the example, we renamed the smallest
+class :kbd:`small area` and the largest one :kbd:`large area`, with the one in
+the middle :kbd:`moderate area` and the rest blanked out.
 
 This is the result:
 
@@ -296,23 +307,28 @@ editing software.
 
 If you need to send the map to a client, it's most common to use a PDF, because
 it's easier to set up printing options for a PDF. Some cartographers may prefer
-PDF as well if they have a program that allows them to import and edit this
+PDF as well, if they have a program that allows them to import and edit this
 format.
 
 For our purposes, we're going to use PDF.
 
-Click the :guilabel:`Export as PDF` button:
+* Click the :guilabel:`Export as PDF` button:
 
 .. image:: ../_static/map_composer/030.png
    :align: center
 
-Choose a save location and a file name as normal, then click :guilabel:`Save`.
+* Choose a save location and a file name as usual.
+* Click :guilabel:`Save`.
 
 |IC|
 -------------------------------------------------------------------------------
 
-Close the :guilabel:`Composer` window and save your map. Find your exported PDF
-using your operating system's file manager and open it. Bask in its glory.
+* Close the :guilabel:`Composer` window.
+* Save your map.
+* Find your exported PDF using your operating system's file manager.
+* Open it.
+* Bask in its glory.
+
 Congratulations on your first completed QGIS map project!
 
 |WN|

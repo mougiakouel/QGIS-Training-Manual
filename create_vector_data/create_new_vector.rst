@@ -15,9 +15,11 @@ Before you can add new vector data, you need a vector dataset to add it to. In
 our case, you'll begin by creating new data entirely, rather than editing an
 existing dataset. Therefore, you'll need to define your own new dataset first.
 
-To open the :guilabel:`New Vector Layer` dialog that will allow you to define a
-new layer, navigate to and click on the menu entry :menuselection:`Layer -->
-New --> New Shapefile Layer`.
+You'll need to open the :guilabel:`New Vector Layer` dialog that will allow you
+to define a new layer.
+
+* Navigate to and click on the menu entry :menuselection:`Layer --> New --> New
+  Shapefile Layer`.
 
 You'll be presented with the following dialog:
 
@@ -29,8 +31,9 @@ different vector layer type is "built differently" in the background, so once
 you've created the layer, you can't change its type.
 
 For the next exercise, we're going to be creating new features which describe
-areas. For such features, you'll need to create a polygon dataset. To do so,
-click on the :guilabel:`Polygon` radio button:
+areas. For such features, you'll need to create a polygon dataset.
+
+* Click on the :guilabel:`Polygon` radio button:
 
 .. image:: ../_static/create_vector_data/002.png
    :align: center
@@ -51,20 +54,22 @@ By default, a new layer has only one attribute, the :kbd:`id` field (which you
 should see in the :guilabel:`Attributes list`) below. However, in order for the
 data you create to be useful, you actually need to say something about the
 features you'll be creating in this new layer! For our current purposes, it
-will be enough to add one field called :kbd:`name`. Replicate the setup
-below, then click the :guilabel:`Add to attributes list` button:
+will be enough to add one field called :kbd:`name`.
+
+* Replicate the setup below, then click the :guilabel:`Add to attributes list`
+  button:
 
 .. image:: ../_static/create_vector_data/004.png
    :align: center
 
-Check that your dialog now looks like this:
+* Check that your dialog now looks like this:
 
 .. image:: ../_static/create_vector_data/005.png
    :align: center
 
-Then click :guilabel:`OK`. A save dialog will appear. Navigate to the
-:kbd:`exercise_data` directory and save your new layer as
-:kbd:`school_property.shp`.
+* Click :guilabel:`OK`. A save dialog will appear.
+* Navigate to the :kbd:`exercise_data` directory.
+* Save your new layer as :kbd:`school_property.shp`.
 
 The new layer should appear in your :guilabel:`Layers list`.
 
@@ -77,27 +82,26 @@ somewhere.
 
 There are many different ways to obtain data about objects. For example, you
 could use a GPS to capture points in the real world, then import the data into
-QGS afterwards. Or you could survey points the old-fashioned way using a
-theodolite, and enter the coordinates manually to create new features. Or you
-could use the digitizing process to trace objects off of remote sensing data,
-such as satellite imagery or aerial photography.
+QGS afterwards. Or you could survey points using a theodolite, and enter the
+coordinates manually to create new features. Or you could use the digitizing
+process to trace objects off of remote sensing data, such as satellite imagery
+or aerial photography.
 
 For our example, you'll be using the digitizing approach. Sample raster datasets
 are provided, so you'll need to import them as necessary.
 
-To do this, click on the :guilabel:`Add Raster Layer` button:
+* Click on the :guilabel:`Add Raster Layer` button:
 
 .. image:: ../_static/create_vector_data/006.png
    :align: center
 
-Navigate to :kbd:`exercise_data/raster/` and select the file
-:kbd:`3420C_2010_327_RGB_LATLNG.tif`, then click :guilabel:`Open`.
-
-An image will load into your map. Find it in the :guilabel:`Layers list`, then
-click and drag it to the bottom of the list so that you can still see your
-other layers.
-
-Next, find and zoom to this area:
+* Navigate to :kbd:`exercise_data/raster/`.
+* Select the file :kbd:`3420C_2010_327_RGB_LATLNG.tif`.
+* Click :guilabel:`Open`. An image will load into your map.
+* Find the new image in the :guilabel:`Layers list`.
+* Click and drag it to the bottom of the list so that you can still see your
+  other layers.
+* Find and zoom to this area:
 
 .. image:: ../_static/create_vector_data/007.png
    :align: center
@@ -107,17 +111,19 @@ You'll be digitizing these three fields:
 .. image:: ../_static/create_vector_data/014.png
    :align: center
 
-To simplify matters, hide all the layers except the raster and the
-:guilabel:`school_property` layer.
+* Hide all the layers except the raster and the :guilabel:`school_property`
+  layer.
 
 In order to begin digitizing, you'll need to enter **edit mode**. GIS software
 commonly requires this to prevent you from accidentally editing or deleting
 important data. Edit mode is switched on or off individually for each layer.
 
-To enter edit mode for the :guilabel:`school_property` layer, first click on
-the layer in the :guilabel:`Layer list`. (Make very sure that the correct layer
-is selected, otherwise you'll edit the wrong layer!) As soon as it's selected,
-click on the :guilabel:`Toggle Editing` button:
+To enter edit mode for the :guilabel:`school_property` layer:
+
+* Click on the layer in the :guilabel:`Layer list` to select it. (Make very
+  sure that the correct layer is selected, otherwise you'll edit the wrong
+  layer!)
+* Click on the :guilabel:`Toggle Editing` button:
 
 .. image:: ../_static/create_vector_data/008.png
    :align: center
@@ -148,8 +154,10 @@ From left to right on the image above, they are:
 - :guilabel:`Paste Features`: paste a cut or copied feature back into the map
   (only active if a feature has been cut or copied).
 
-Since you want to add a new feature, click on the :guilabel:`Add Feature`
-button now to begin digitizing right away!
+You want to add a new feature.
+
+* Click on the :guilabel:`Add Feature` button now to begin digitizing right
+  away!
 
 You'll notice that your mouse cursor has become a crosshair. This allows you to
 more accurately place the points you'll be digitizing. Remember that even as
@@ -162,36 +170,42 @@ The first feature you'll be digitizing is the athletics field:
 .. image:: ../_static/create_vector_data/010.png
    :align: center
 
-Start digitizing by clicking on a point somewhere along the edge of the field.
-Place more points by clicking further along the edge, until the shape you're
-drawing completely covers the field. To place your last point, *right-click*
-where you want it to be. This will finalize the feature and show you the
-:guilabel:`Attributes` dialog. Fill in the values as below:
+* Start digitizing by clicking on a point somewhere along the edge of the
+  field.
+* Place more points by clicking further along the edge, until the shape you're
+  drawing completely covers the field.
+* To place your last point, *right-click* where you want it to be. This will
+  finalize the feature and show you the :guilabel:`Attributes` dialog.
+* Fill in the values as below:
 
 .. image:: ../_static/create_vector_data/013.png
    :align: center
 
-Click :guilabel:`OK` and you've created a new feature!
+* Click :guilabel:`OK` and you've created a new feature!
 
 Remember, if you've made a mistake while digitizing a feature, you can always
 edit it after you're done creating it. If you've made a mistake, continue
-digitizing until you're done creating the feature as above. Then select the
-feature with the :guilabel:`Select Single Feature` tool:
+digitizing until you're done creating the feature as above. Then:
+
+* Select the feature with the :guilabel:`Select Single Feature` tool:
 
 .. image:: ../_static/create_vector_data/012.png
    :align: center
 
-You can use the :guilabel:`Move Feature(s)` tool to move the entire feature,
-the :guilabel:`Node Tool` to move only one point where you may have misclicked,
-or :guilabel:`Delete Selected` to get rid of the feature entirely so you can
-try again. Remember that you can undo any mistakes you make at this stage via
-the :menuselection:`Edit --> Undo` menu item or the :kbd:`ctrl + z` keyboard
-shortcut.
+You can use:
+
+* the :guilabel:`Move Feature(s)` tool to move the entire feature,
+* the :guilabel:`Node Tool` to move only one point where you may have
+  misclicked,
+* :guilabel:`Delete Selected` to get rid of the feature entirely so you can try
+  again, and
+* the :menuselection:`Edit --> Undo` menu item or the :kbd:`ctrl + z` keyboard
+  shortcut to undo mistakes.
 
 |basic| |TY|
 -------------------------------------------------------------------------------
 
-Digitize the school itself and the upper field. Use this image to assist you:
+* Digitize the school itself and the upper field. Use this image to assist you:
 
 .. image:: ../_static/create_vector_data/014.png
    :align: center
@@ -206,9 +220,11 @@ Remember that each new feature needs to have a unique :kbd:`id` value!
 |basic| |TY|
 -------------------------------------------------------------------------------
 
-Create a new line feature called :kbd:`river.shp` with attributes :kbd:`id` and
-:kbd:`type`. (Use the approach above to guide you.) Digitize the river that
-runs through town. Start where the sandy riverbanks first become visible:
+* Create a new line feature called :kbd:`river.shp` with attributes :kbd:`id`
+  and :kbd:`type`. (Use the approach above to guide you.)
+* Digitize the river that runs through town.
+
+Start where the sandy riverbanks first become visible:
 
 .. image:: ../_static/create_vector_data/015.png
    :align: center
@@ -223,7 +239,8 @@ judgment and estimate where the river goes. Remember that you're capturing the
 river at a large scale, so try to follow it in detail. Take some time, don't
 let the line become too straight or make the corners too sharp!
 
-When creating the feature, give it the :kbd:`type` ":kbd:`stream`".
+When creating the feature, give it the :kbd:`type` attribute value of
+":kbd:`stream`".
 
 :ref:`Check your results <create-vector-digitize-1>`
 
@@ -234,8 +251,10 @@ Now you know how to create features! This course doesn't cover adding point
 features, because that's not really necessary once you've worked with more
 complicated features (lines and polygons). It works exactly the same, except
 that you only click once where you want the point to be, give it attributes as
-usual, and then the feature is created. Knowing how to digitize is important
-because it's a very common activity in GIS programs.
+usual, and then the feature is created.
+
+Knowing how to digitize is important because it's a very common activity in GIS
+programs.
 
 |WN|
 -------------------------------------------------------------------------------
