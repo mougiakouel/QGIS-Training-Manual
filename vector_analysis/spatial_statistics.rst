@@ -20,32 +20,35 @@ order to mimic a real dataset, let's create a random set of points.
 To do so, you'll need a polygon dataset defining the extents of the area you
 want to create the points in.
 
-We'll use the area covered by streets. Into a new empty map, load the
-:kbd:`roads_33S` layer from the :kbd:`exercise_data/projected_data` directory,
-as well as the :kbd:`srtm_41_19.tif` raster found in
-:kbd:`exercise_data/raster/SRTM/`. Use the :guilabel:`Convex hull(s)` tool
-(available under :menuselection:`Vector --> Geoprocessing Tools`) to generate
-an area enclosing all the roads:
+We'll use the area covered by streets.
+
+* Create a new empty map.
+* Add the :kbd:`roads_33S` layer from the :kbd:`exercise_data/projected_data`
+  directory, as well as the :kbd:`srtm_41_19.tif` raster found in
+  :kbd:`exercise_data/raster/SRTM/`.
+* Use the :guilabel:`Convex hull(s)` tool (available under
+  :menuselection:`Vector --> Geoprocessing Tools`) to generate an area
+  enclosing all the roads:
 
 .. image:: ../_static/vector_analysis/059.png
    :align: center
 
-Save the output under :kbd:`exercise_data/spatial_statistics/` as
-:kbd:`roads_hull.shp`. Add it to the TOC (:guilabel:`Layers list`) when
-prompted.
+* Save the output under :kbd:`exercise_data/spatial_statistics/` as
+  :kbd:`roads_hull.shp`.
+* Add it to the TOC (:guilabel:`Layers list`) when prompted.
 
 Creating random points
 ...............................................................................
 
-Now create random points in this area using the tool at :menuselection:`Vector
---> Research Tools --> Random points`:
+* Create random points in this area using the tool at :menuselection:`Vector
+  --> Research Tools --> Random points`:
 
 .. image:: ../_static/vector_analysis/060.png
    :align: center
 
-Save the output under :kbd:`exercise_data/spatial_statistics/` as
-:kbd:`random_points.shp`. Add it to the TOC (:guilabel:`Layers list`) when
-prompted:
+* Save the output under :kbd:`exercise_data/spatial_statistics/` as
+  :kbd:`random_points.shp`.
+* Add it to the TOC (:guilabel:`Layers list`) when prompted:
 
 .. image:: ../_static/vector_analysis/061.png
    :align: center
@@ -53,22 +56,25 @@ prompted:
 Sampling the data
 ...............................................................................
 
-To create a sample dataset from the raster, you'll need to use the
-:guilabel:`Point sampling tool` plugin. Refer ahead to the module on plugins if
-necessary. Search for the phrase :kbd:`point sampling` and you will find the
-plugin. Note that it is in a third-party repository at time of writing, so
-you'll need to have third-party repositories enabled.
-
-You will find the tool under :menuselection:`Plugins --> Analyses --> Point
-sampling tool`:
+* To create a sample dataset from the raster, you'll need to use the
+  :guilabel:`Point sampling tool` plugin.
+* Refer ahead to the module on plugins if necessary.
+* Search for the phrase :kbd:`point sampling` in the :guilabel:`Plugin
+  Installer` and you will find the plugin.
+* Note that it is in a third-party repository at time of writing, so you'll
+  need to have third-party repositories enabled.
+* As soon as it has been activated with the :guilabel:`Plugin Manager`, you
+  will find the tool under :menuselection:`Plugins --> Analyses --> Point
+  sampling tool`:
 
 .. image:: ../_static/vector_analysis/063.png
    :align: center
 
-Select :guilabel:`random_points` as the layer containing sampling points, and
-the SRTM raster as the band to get values from. Save the output under
-:kbd:`exercise_data/spatial_statistics/` as :kbd:`random_samples.shp`. Add it
-to the TOC (:guilabel:`Layers list`) when prompted.
+* Select :guilabel:`random_points` as the layer containing sampling points, and
+  the SRTM raster as the band to get values from.
+* Save the output under :kbd:`exercise_data/spatial_statistics/` as
+  :kbd:`random_samples.shp`.
+* Add it to the TOC (:guilabel:`Layers list`) when prompted.
 
 A possible sample layer is shown here:
 
@@ -83,53 +89,60 @@ You'll be using this sample layer for the rest of the statistical exercises.
 |basic| |FA| Basic Statistics
 -------------------------------------------------------------------------------
 
-Now get the basic statistics for this layer by using the :menuselection:`Vector
---> Analysis Tools --> Basic statistics` tool. Use the
-:guilabel:`random_samples` layer as the source and click :guilabel:`OK`. You'll
-get results like this:
+Now get the basic statistics for this layer.
+
+* Click on the :menuselection:`Vector --> Analysis Tools --> Basic statistics`
+  menu entry.
+* In the dialog that appears, specify the :guilabel:`random_samples` layer as
+  the source.
+* Click :guilabel:`OK`. You'll get results like this:
 
 .. image:: ../_static/vector_analysis/062.png
    :align: center
 
-You can copy these results to a spreadsheet. The tool's output uses a colon
-(:kbd:`:`) delimiter.
+.. note:: You can copy and paste the results into a spreadsheet. The data uses
+   a (colon :kbd:`:`) separator.
 
 .. image:: ../_static/vector_analysis/065.png
    :align: center
 
-Close the plugin dialog when done.
+* Close the plugin dialog when done.
 
 |basic| |FA| Compute a Distance Matrix
 -------------------------------------------------------------------------------
 
-Create a new point layer in the same projection as the other datasets
-(:kbd:`WGS 84 / UTM 33S`). Enter edit mode and digitize three point somewhere
-among the other points.
-
-Alternatively, use the same random point generation method as before, but
-specify only three points.
-
-Save your new layer as :kbd:`distance_points.shp`.
+* Create a new point layer in the same projection as the other datasets
+  (:kbd:`WGS 84 / UTM 33S`).
+* Enter edit mode and digitize three point somewhere among the other points.
+* Alternatively, use the same random point generation method as before, but
+  specify only three points.
+* Save your new layer as :kbd:`distance_points.shp`.
 
 In order to compare layers using statistical tools, a layer needs to have a
-unique ID field. Create one for your :guilabel:`random_samples` layer. Open the
-attribute table for this layer, enter edit mode, and open the raster
-calculator. Create a new field called :kbd:`id`, with an integer field type and
-a width of :kbd:`3`. Look in the :guilabel:`Function list` under the category
-:guilabel:`Record`, and double-click on the item :guilabel:`$id`, so that it
-appears in the :guilabel:`Expression` field below. Click :guilabel:`OK` to
-generate a unique ID for this layer.
+unique ID field. Let's create one for your :guilabel:`random_samples` layer.
 
-To generate a distance matrix using these points, open the tool
-:menuselection:`Vector --> Analysis Tools --> Distance matrix`. Select the
-:guilabel:`distance_points` layer as the input layer, and the
-:guilabel:`random_samples` layer as the target layer. Set it up like this:
+* Open the attribute table for this layer.
+* Enter edit mode.
+* Open the raster calculator.
+* Create a new field called :kbd:`id`, with an integer field type and a width
+  of :kbd:`3`.
+* Look in the :guilabel:`Function list` under the category :guilabel:`Record`,
+  and double-click on the item :guilabel:`$id`, so that it appears in the
+  :guilabel:`Expression` field below.
+* Click :guilabel:`OK` to generate a unique ID for this layer.
+
+To generate a distance matrix using these points:
+
+* Open the tool :menuselection:`Vector --> Analysis Tools --> Distance matrix`.
+* Select the :guilabel:`distance_points` layer as the input layer, and the
+  :guilabel:`random_samples` layer as the target layer.
+* Set it up like this:
 
 .. image:: ../_static/spatial_statistics/005.png
    :align: center
 
-Click :guilabel:`OK` to generate the distance matrix. Open it in a spreadsheet
-program to see the results. Here is an example:
+* Click :guilabel:`OK` to generate the distance matrix.
+* Open it in a spreadsheet program to see the results. Here is an example:
 
 .. image:: ../_static/spatial_statistics/006.png
    :align: center
@@ -137,31 +150,41 @@ program to see the results. Here is an example:
 |basic| |FA| Nearest Neighbor Analysis
 -------------------------------------------------------------------------------
 
-To do a nearest neighbor analysis, :menuselection:`Vector --> Analysis Tools
---> Nearest neighbor analysis`. In the dialog that appears, select the
-:guilabel:`random_samples` layer and click :guilabel:`OK`. The results will
-appear in the dialog's text window, for example:
+To do a nearest neighbor analysis:
+
+* Click on the menu item :menuselection:`Vector --> Analysis Tools --> Nearest
+  neighbor analysis`.
+* In the dialog that appears, select the :guilabel:`random_samples` layer and
+  click :guilabel:`OK`.
+* The results will appear in the dialog's text window, for example:
 
 .. image:: ../_static/spatial_statistics/007.png
    :align: center
 
-Note that you can copy and paste the results into a spreadsheet. The data uses
-a (colon :kbd:`:`) separator.
+.. note:: You can copy and paste the results into a spreadsheet. The data uses
+   a (colon :kbd:`:`) separator.
 
 |basic| |FA| Mean Coordinates
 -------------------------------------------------------------------------------
 
-To get the mean coordinates of a dataset, open the :menuselection:`Vector -->
-Analysis Tools --> Mean coordinate(s)` tool. Specify :guilabel:`random_samples`
-as the input layer, but leave the optional choices unchanged. Specify the
-output layer as :kbd:`mean_coords.shp` and click :guilabel:`OK`. Add the layer
-to the :guilabel:`Layers list` when prompted.
+To get the mean coordinates of a dataset:
+
+* Click on the :menuselection:`Vector --> Analysis Tools --> Mean
+  coordinate(s)` menu item.
+* In the dialog that appears, specify :guilabel:`random_samples` as the input
+  layer, but leave the optional choices unchanged.
+* Specify the output layer as :kbd:`mean_coords.shp`.
+* Click :guilabel:`OK`.
+* Add the layer to the :guilabel:`Layers list` when prompted.
 
 Let's compare this to the central coordinate of the polygon that was used to
-create the random sample. Click on :menuselection:`Vector --> Geometry Tools
---> Polygon centroids`. In the dialog that appears, select
-:guilabel:`roads_hull` as the input layer. Save the result as
-:kbd:`center_point` and add it to the :guilabel:`Layers list` when prompted.
+create the random sample.
+
+* Click on the :menuselection:`Vector --> Geometry Tools --> Polygon centroids`
+  menu item.
+* In the dialog that appears, select :guilabel:`roads_hull` as the input layer.
+* Save the result as :kbd:`center_point`.
+* Add it to the :guilabel:`Layers list` when prompted.
 
 As you can see from the example below, the mean coordinates and the center of
 the study area (in orange) don't necessarily coincide:
@@ -176,15 +199,17 @@ The histogram of a dataset shows the distribution of its values. The simplest
 way to demonstrate this in QGIS is via the image histogram, available in the
 :guilabel:`Layer Properties` dialog of any image layer.
 
-In your :guilabel:`Layers list`, right-click on the SRTM DEM layer and select
-:menuselection:`Layer Properties`. Choose the tab :guilabel:`Histogram`. You
-will see a graph describing the frequency of values in the image. You can
-export it as an image:
+* In your :guilabel:`Layers list`, right-click on the SRTM DEM layer.
+* Select :menuselection:`Layer Properties`.
+* Choose the tab :guilabel:`Histogram`. You will see a graph describing the
+  frequency of values in the image.
+* You can export it as an image:
 
 .. image:: ../_static/spatial_statistics/008.png
    :align: center
 
-Now look at the metadata for this layer (under the :guilabel:`Metadata` tab).
+* Look at the metadata for this layer (under the :guilabel:`Metadata` tab).
+
 The mean value is :kbd:`332.8`, and the maximum value is :kbd:`1699`! But those
 values don't show up on the histogram. Why not? It's because there are so few
 of them, compared to the abundance of pixels with values below the mean. That's
@@ -194,7 +219,7 @@ visible red line marking the frequency of values higher than about :kbd:`250`.
 Therefore, keep in mind that a histogram shows you the distribution of values,
 and not all values are necessarily visible on the graph.
 
-(You may now close :guilabel:`Layer Properties`.)
+* (You may now close :guilabel:`Layer Properties`.)
 
 |basic| |FA| Spatial Interpolation
 -------------------------------------------------------------------------------
@@ -240,11 +265,12 @@ can see that the sample dataset is not representative of the terrain.
 |moderate| |TY|
 -------------------------------------------------------------------------------
 
-Use the processes shown above to create a new set of :kbd:`1000` random points,
-then use these points to sample the original DEM. Use the :guilabel:`Spatial
-Interpolation` tool on this new dataset as above. Set the output filename to
-:kbd:`interpolation_1000.tif`, with :guilabel:`Power` and :guilabel:`Smoothing`
-set to :kbd:`5.0` and :kbd:`2.0`, respectively.
+* Use the processes shown above to create a new set of :kbd:`1000` random points.
+* Use these points to sample the original DEM.
+* Use the :guilabel:`Spatial Interpolation` tool on this new dataset as above.
+* Set the output filename to :kbd:`interpolation_1000.tif`, with
+  :guilabel:`Power` and :guilabel:`Smoothing` set to :kbd:`5.0` and :kbd:`2.0`,
+  respectively.
 
 The results (depending on the positioning of your random points) will look more
 or less like this:
@@ -262,9 +288,9 @@ Here is an example of what it looks like with :kbd:`10 000` sample points:
 .. image:: ../_static/spatial_statistics/011.png
    :align: center
 
-It's not recommended that you try doing this if you are not working on a fast
-computer, however, as the size of the sample dataset requires a lot of
-processing time.
+.. note:: It's not recommended that you try doing this with 10 000 sample
+   points if you are not working on a fast computer, as the size of the sample
+   dataset requires a lot of processing time.
 
 |moderate| |FA| Installing SEXTANTE
 -------------------------------------------------------------------------------
@@ -274,9 +300,10 @@ single interface. It is standard in QGIS starting with version 1.8. If you're
 unsure whether you have SEXTANTE, check if it's marked as installed in your
 :guilabel:`Plugin Installer`.
 
-Assuming you have it installed (and enabled in the :guilabel:`Plugin Manager`),
-you can access SEXTANTE by enabling the :menuselection:`View --> Panels -->
-SEXTANTE Toolbox` menu entry. The toolbox looks like this:
+Assuming you have it installed (and enabled in the :guilabel:`Plugin Manager`):
+
+* Activate SEXTANTE by enabling the :menuselection:`View --> Panels -->
+  SEXTANTE Toolbox` menu entry. The toolbox looks like this:
 
 .. image:: ../_static/spatial_statistics/001.png
    :align: center
@@ -296,23 +323,27 @@ On Windows
 ...............................................................................
 
 Included in your course materials you will find the SAGA installer for Windows.
-Start the program and follow its instructions to install SAGA on your Windows
+
+* Start the program and follow its instructions to install SAGA on your Windows
 system. Take note of the path you are installing it under!
 
 Once you have installed SAGA, you'll need to configure SEXTANTE to find the
-path it was installed under. Click on the menu entry :menuselection:`Analysis
---> SAGA options and configuration`. In the dialog that appears, expand the
-:guilabel:`SAGA` item and look for :guilabel:`SAGA folder`. Its value will be
-blank. In this space, insert the path where you installed SAGA.
+path it was installed under.
+
+* Click on the menu entry :menuselection:`Analysis --> SAGA options and
+  configuration`.
+* In the dialog that appears, expand the :guilabel:`SAGA` item and look for
+  :guilabel:`SAGA folder`. Its value will be blank.
+* In this space, insert the path where you installed SAGA.
 
 On Ubuntu
 ...............................................................................
 
-Search for :guilabel:`SAGA GIS` in the :guilabel:`Software Center`, or enter
-the phrase :kbd:`sudo apt-get install saga-gis` in your terminal. You may first
-need to add a SAGA repository to your sources. QGIS will find SAGA
-automatically, although you may need to restart QGIS if it doesn't work
-straight away.
+* Search for :guilabel:`SAGA GIS` in the :guilabel:`Software Center`, or enter
+  the phrase :kbd:`sudo apt-get install saga-gis` in your terminal. (You may
+  first need to add a SAGA repository to your sources.)
+* QGIS will find SAGA automatically, although you may need to restart QGIS if
+  it doesn't work straight away.
 
 After installing
 ...............................................................................
@@ -327,10 +358,12 @@ For a simple indication of the spatial distribution of points in the
 :guilabel:`random_samples` dataset, we can make use of SAGA's
 :guilabel:`Spatial Point Pattern Analysis` tool.
 
-In the :guilabel:`SEXTANTE Toolbox`, find this tool under :menuselection:`SAGA
---> Geostatistics --> Spatial Point Pattern Analysis`. Double-click on it to
-open its dialog. It produces three outputs, and so will require three output
-paths. Save the outputs under :kbd:`exercise_data/spatial_statistics/`.
+* In the :guilabel:`SEXTANTE Toolbox`, find this tool under
+  :menuselection:`SAGA --> Geostatistics --> Spatial Point Pattern Analysis`.
+* Double-click on it to open its dialog.
+* It produces three outputs, and so will require three output paths.
+* Save these three outputs under :kbd:`exercise_data/spatial_statistics/`,
+  using whatever file names you find appropriate.
 
 .. image:: ../_static/spatial_statistics/002.png
    :align: center

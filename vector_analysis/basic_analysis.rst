@@ -57,9 +57,10 @@ particular problem.
 
 So now that we know what we want to do, let's start doing it!
 
-First, start a new QGIS project. Then start adding new layers. They're all to
-be found in the :kbd:`exercise_data/projected_data` folder. Add the
-:kbd:`schools_33S`, :kbd:`roads_33S` and :kbd:`farms_33S` layers.
+* Start a new QGIS project.
+* Start adding new layers. They're all to be found in the
+  :kbd:`exercise_data/projected_data` folder.
+* Add the :kbd:`schools_33S`, :kbd:`roads_33S` and :kbd:`farms_33S` layers.
 
 They'll probably look very familiar. They're the same data we've been working
 with all along, except that they're now in a Projected Coordinate System. This
@@ -67,16 +68,17 @@ is necessary for analysis, for reasons we've covered in the previous lesson.
 (We want to be able to calculate distances in meters and areas in hectares, not
 in degrees.)
 
-Once you've got these layers in your :guilabel:`Layers list`, rename them by
-right-clicking on them and selecting the :guilabel:`Rename` option. Give them
-the new, less messy names :kbd:`roads`, :kbd:`schools` and :kbd:`farms`.
+Once you've got these layers in your :guilabel:`Layers list`:
 
-Save your map under :guilabel:`exercise_data`, as :kbd:`analysis.qgs`.
-
-In your operating system's file manager, create a new folder under
-:guilabel:`exercise_data` and call it :kbd:`residential_development`. This is
-where you'll save the datasets that will be the results of the analysis
-functions.
+* Rename the layers by right-clicking on them and selecting the
+  :guilabel:`Rename` option.
+* Give them the new, less messy names :kbd:`roads`, :kbd:`schools` and
+  :kbd:`farms`.
+* Save your map under :guilabel:`exercise_data`, as :kbd:`analysis.qgs`.
+* In your operating system's file manager, create a new folder under
+  :guilabel:`exercise_data` and call it :kbd:`residential_development`. This is
+  where you'll save the datasets that will be the results of the analysis
+  functions.
 
 Now that we've got the data, let's analyze the problem!
 
@@ -86,32 +88,32 @@ Now that we've got the data, let's analyze the problem!
 The first criterion we're facing is that the farm needs to be in Swellendam.
 So let's tell QGIS to only show us the farms that are, in fact, in Swellendam!
 
-Right-click on the :guilabel:`farms` layer in the :guilabel:`Layers list` and
-select the option :guilabel:`Query...`. This gives you a new dialog:
-
-.. image:: ../_static/vector_analysis/012.png
-   :align: center
-
-Scroll down in the :guilabel:`Fields` list on the left until you see the field
-:kbd:`TOWN`. Click on it once, then click the :guilabel:`All` button underneath
-the :guilabel:`Values` list:
+* Right-click on the :guilabel:`farms` layer in the :guilabel:`Layers list`.
+* Select the option :guilabel:`Query...`. This gives you a new :guilabel:`Query
+  Builder` dialog.
+* Scroll down in the :guilabel:`Fields` list on the left of this dialog until
+  you see the field :kbd:`TOWN`.
+* Click on it once.
+* Click the :guilabel:`All` button underneath the :guilabel:`Values` list:
 
 .. image:: ../_static/vector_analysis/013.png
    :align: center
 
 Now we need to tell QGIS to only show us the farms where the value of
-:kbd:`TOWN` is equal to :kbd:`Swellendam`. To do this, double-click the word
-:kbd:`TOWN` in the :guilabel:`Fields` list. Watch what happens in the
-:guilabel:`SQL where clause` field below:
+:kbd:`TOWN` is equal to :kbd:`Swellendam`.
+
+* Double-click the word :kbd:`TOWN` in the :guilabel:`Fields` list.
+* Watch what happens in the :guilabel:`SQL where clause` field below:
 
 .. image:: ../_static/vector_analysis/014.png
    :align: center
 
-The word :kbd:`"TOWN"` has appeared! To build the rest of the query, click the
-:guilabel:`=` button (under :guilabel:`Operators`), then double-click the value
-:kbd:`Swellendam` in the :guilabel:`Values` list.
+The word :kbd:`"TOWN"` has appeared! To build the rest of the query:
 
-Now your query is this:
+* Click the :guilabel:`=` button (under :guilabel:`Operators`).
+* Double-click the value :kbd:`Swellendam` in the :guilabel:`Values` list.
+
+Your query is this:
 
 .. image:: ../_static/vector_analysis/015.png
    :align: center
@@ -122,16 +124,22 @@ And now your :guilabel:`farms` layer looks like this:
    :align: center
 
 For further analysis, it's better if we've got these farms as a separate layer.
-Right-click on the :guilabel:`farms` layer and click :guilabel:`Save As...`.
-Next to the :guilabel:`Save as` field in the dialog that appears, click the
-:guilabel:`Browse` button and save the layer under
-:kbd:`exercise_data/residential_development/`, as :kbd:`swellendam_farms.shp`.
-Check the :guilabel:`Add saved file to map` box in the :guilabel:`Save vector
-layer as...` dialog and then click :guilabel:`OK`. It will tell you that
-:kbd:`Export to vector file has been completed`. Click :guilabel:`OK`.
+
+* Right-click on the :guilabel:`farms` layer and click :guilabel:`Save As...`.
+* Next to the :guilabel:`Save as` field in the dialog that appears, click the
+  :guilabel:`Browse` button.
+* Save the layer under :kbd:`exercise_data/residential_development/`, as
+  :kbd:`swellendam_farms.shp`.
+* Check the :guilabel:`Add saved file to map` box in the :guilabel:`Save vector
+  layer as...` dialog.
+* Click :guilabel:`OK`. It will tell you that :kbd:`Export to vector file has
+  been completed`.
+* Click :guilabel:`OK`.
 
 Now we've got the :guilabel:`farms` twice, but we only need the one we just
-created. So right-click on the old :guilabel:`farms` layer and remove it.
+created.
+
+* Right-click on the old :guilabel:`farms` layer and remove it.
 
 
 .. _backlink-vector-analysis-basic-1:
@@ -140,13 +148,15 @@ created. So right-click on the old :guilabel:`farms` layer and remove it.
 -------------------------------------------------------------------------------
 
 We have a similar problem with the roads; the only roads we're taking into
-account are the main ones. Build a query for the :guilabel:`roads` layer, like
-you did above for the :guilabel:`farms` layer. You want only the types
-:kbd:`primary`, :kbd:`secondary`, :kbd:`tertiary` and :kbd:`trunk`, so you need
-to build this query:
+account are the main ones.
 
-:kbd:`"TYPE" = 'primary' OR "TYPE" = 'secondary' OR "TYPE" = 'tertiary' OR
-"TYPE" = 'trunk'`
+* Build a query for the :guilabel:`roads` layer, like you did above for the
+  :guilabel:`farms` layer. You want only the types :kbd:`primary`,
+  :kbd:`secondary`, :kbd:`tertiary` and :kbd:`trunk`, so you need to build this
+  query:
+
+  :kbd:`"TYPE" = 'primary' OR "TYPE" = 'secondary' OR "TYPE" = 'tertiary' OR
+  "TYPE" = 'trunk'`
 
 You can either use the approach above, where you double-clicked values and
 clicked buttons, or you can copy and paste the command above.
@@ -156,32 +166,36 @@ clicked buttons, or you can copy and paste the command above.
 |basic| |TY| find high schools
 -------------------------------------------------------------------------------
 
-Your future customers will want to send their children to high schools, so
-use the same approach as before and build this query for the
-:guilabel:`schools` layer:
+Your future customers will want to send their children to high schools.
 
-:kbd:`"has_high_s" = 'y'`
+* Use the same approach as before and build this query for the
+  :guilabel:`schools` layer:
+
+  :kbd:`"has_high_s" = 'y'`
 
 You should have only 3 out of the 4 original schools left.
 
-Save the resulting layer under :kbd:`exercise_data/residential_development/` as
-:kbd:`high_schools.shp`.
+* Save the resulting layer under :kbd:`exercise_data/residential_development/`
+  as :kbd:`high_schools.shp`.
 
 
 |basic| |FA| Analyzing the Problem: Distances From Schools and Roads
 -------------------------------------------------------------------------------
 
-QGIS allows you to calculate distances from any vector object. Make sure that
-only the :guilabel:`important_roads` and :guilabel:`swellendam_farms` layers
-are visible, to simplify the map while you're working.
+QGIS allows you to calculate distances from any vector object.
 
-Next, click on the :menuselection:`Vector --> Geoprocessing Tools -->
-Buffer(s)` tool:
+* Make sure that only the :guilabel:`important_roads` and
+  :guilabel:`swellendam_farms` layers are visible, to simplify the map while
+  you're working.
+* Click on the :menuselection:`Vector --> Geoprocessing Tools --> Buffer(s)`
+  tool:
 
 .. image:: ../_static/vector_analysis/018.png
    :align: center
 
-This gives you a new dialog. Set it up like this:
+This gives you a new dialog.
+
+* Set it up like this:
 
 .. image:: ../_static/vector_analysis/020.png
    :align: center
@@ -189,12 +203,12 @@ This gives you a new dialog. Set it up like this:
 The :guilabel:`Buffer distance` is in meters because our input dataset is in a
 Projected Coordinate System. This is why we needed to use projected data!
 
-Save the resulting layer under :kbd:`exercise_data/residential_development/` as
-:kbd:`important_roads_buffer_500m.shp`.
-
-Click :guilabel:`OK` and it will create the buffer. When it asks you if it
-should "add the new layer to the TOC", click :guilabel:`Yes`. ("TOC" stands for
-"Table of Contents", by which it means the :guilabel:`Layers list`).
+* Save the resulting layer under :kbd:`exercise_data/residential_development/`
+  as :kbd:`important_roads_buffer_500m.shp`.
+* Click :guilabel:`OK` and it will create the buffer.
+* When it asks you if it should "add the new layer to the TOC", click
+  :guilabel:`Yes`. ("TOC" stands for "Table of Contents", by which it means the
+  :guilabel:`Layers list`).
 
 Now you've got this:
 
@@ -210,11 +224,13 @@ road! That's not nice. Remove that layer and let's try again:
 .. image:: ../_static/vector_analysis/022.png
    :align: center
 
-Note that we're now checking the :guilabel:`Dissolve buffer results` box.
-
-Save the output under the same name as before (click :guilabel:`Yes` when it
-asks your permission to overwrite the old one), then click :guilabel:`OK`. Once
-you've added the layer to the :guilabel:`Layers list`, it will look like this:
+* Note that we're now checking the :guilabel:`Dissolve buffer results` box.
+* Save the output under the same name as before (click :guilabel:`Yes` when it
+  asks your permission to overwrite the old one).
+* Click :guilabel:`OK`.
+  
+Once you've added the layer to the :guilabel:`Layers list`, it will look like
+this:
 
 .. image:: ../_static/vector_analysis/023.png
    :align: center
@@ -226,8 +242,9 @@ That's more like it! Now there are no unnecessary subdivisions.
 |basic| |TY| distance from high schools
 -------------------------------------------------------------------------------
 
-Use the same approach as above and create a buffer for your schools. It needs
-to be :kbd:`10 km` in radius, and saved under the usual directory as
+* Use the same approach as above and create a buffer for your schools.
+
+It needs to be :kbd:`10 km` in radius, and saved under the usual directory as
 :kbd:`high_schools_buffer_10km.shp`.
 
 :ref:`Check your results <vector-analysis-basic-2>`
@@ -264,65 +281,73 @@ they overlap, since that's what we really wanted to know in the first place.
 -------------------------------------------------------------------------------
 
 Now you've got the area that the farms must overlap. Next, you want to select
-the farms in that area. Go to :menuselection:`Vector --> Research Tools -->
-Select by location`. A dialog will appear. Set it up like this:
+the farms in that area.
+
+* Click on the menu entry :menuselection:`Vector --> Research Tools --> Select
+  by location`. A dialog will appear.
+* Set it up like this:
 
 .. image:: ../_static/vector_analysis/030.png
    :align: center
 
-Click :guilabel:`OK` and you'll see the results:
+* Click :guilabel:`OK` and you'll see the results:
 
 .. image:: ../_static/vector_analysis/031.png
    :align: center
 
-The yellow farms are the selected ones. Let's save these results by
-right-clicking on the :guilabel:`swellendam_farms` layer in the
-:guilabel:`Layers list` and selecting :guilabel:`Save Selection As...`. Set the
-dialog up like this:
+The yellow farms are the selected ones. Let's save them as a new layer.
+
+* Right-click on the :guilabel:`swellendam_farms` layer in the
+  :guilabel:`Layers list`.
+* Select :guilabel:`Save Selection As...`.
+* Set the dialog up like this:
 
 .. image:: ../_static/vector_analysis/032.png
    :align: center
 
-The file name is :kbd:`well_located_farms.shp`. Click :guilabel:`OK`. Now you
-have the selection as a separate layer.
+* The file name is :kbd:`well_located_farms.shp`.
+* Click :guilabel:`OK`.
+  
+Now you have the selection as a separate layer.
 
 |basic| |FA| Select Farms of the Right Size
 -------------------------------------------------------------------------------
 
 To see which farms are the right area (between 100 and 150 ha), we first need
-to calculate their areas in hectares.  Open the attribute table for the
-:guilabel:`well_located_farms` layer, then enter edit mode:
+to calculate their areas in hectares.
+
+* Open the attribute table for the :guilabel:`well_located_farms` layer.
+* Enter edit mode:
 
 .. image:: ../_static/vector_analysis/033.png
    :align: center
 
-Then start the field calculator:
+* Start the field calculator:
 
 .. image:: ../_static/vector_analysis/034.png
    :align: center
 
-Set it up like this:
+* Set it up like this:
 
 .. image:: ../_static/vector_analysis/035.png
    :align: center
 
-If you can't find :guilabel:`AREA` in the list, try this instead:
+* If you can't find :guilabel:`AREA` in the list, try this instead:
 
 .. image:: ../_static/vector_analysis/036.png
    :align: center
 
-Click :guilabel:`OK`. Scroll to the right of the attribute table; your
-:kbd:`AREA` field now has areas in hectares for all the farms in your
-:guilabel:`well_located_farms` layer.
-
-Click the edit mode button again as above, and save your edits when prompted.
-
-Now do a query again, as before:
+* Click :guilabel:`OK`.
+* Scroll to the right of the attribute table; your :kbd:`AREA` field now has
+  areas in hectares for all the farms in your :guilabel:`well_located_farms`
+  layer.
+* Click the edit mode button again as above, and save your edits when prompted.
+* Do a query:
 
 .. image:: ../_static/vector_analysis/037.png
    :align: center
 
-Click :guilabel:`OK`. Your results should look like this:
+* Click :guilabel:`OK`. Your results should look like this:
 
 .. image:: ../_static/vector_analysis/038.png
    :align: center
@@ -332,9 +357,9 @@ That's it! Those red farms are the ones satisfying your criteria. Well done!
 |basic| |TY|
 -------------------------------------------------------------------------------
 
-Save your solution as a new layer, using the approach you learned above for
-doing so. The file should be saved under the usual directory, with the name
-:kbd:`solution.shp`.
+* Save your solution as a new layer, using the approach you learned above for
+  doing so. The file should be saved under the usual directory, with the name
+  :kbd:`solution.shp`.
 
 |IC|
 -------------------------------------------------------------------------------

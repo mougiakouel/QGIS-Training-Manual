@@ -2,9 +2,8 @@
 ===============================================================================
 
 Calculating the shortest distance between two points is a commonly cited use
-for GIS. QGIS ships with this tool, but it's not visible by default and has a
-trick to getting it started. In this brief lesson, we'll show you what you need
-to get started.
+for GIS. QGIS ships with this tool, but it's not visible by default. In this
+brief lesson, we'll show you what you need to get started.
 
 **The goal for this lesson:** To activate, configure and use the
 :guilabel:`Road Graph` plugin.
@@ -17,18 +16,18 @@ are so useful that they ship along with the program straight out of the box.
 They're still hidden by default, though. So in order to use them, you need to
 activate them first.
 
-To activate the :guilabel:`Road Graph` plugin, start the :guilabel:`Plugin
-Manager` by clicking on the QGIS main window's menu item
-:menuselection:`Plugins --> Manage Plugins`. A dialog appears. Select the
-plugin like this:
+To activate the :guilabel:`Road Graph` plugin:
+
+* Start the :guilabel:`Plugin Manager` by clicking on the QGIS main window's
+  menu item :menuselection:`Plugins --> Manage Plugins`. A dialog appears.
+* Select the plugin like this:
 
 .. image:: ../_static/vector_analysis/039.png
    :align: center
 
-Click :guilabel:`OK` on the :guilabel:`Plugin Manager` dialog.
-
-To see the plugin in your interface, go to :menuselection:`View --> Panels` and
-ensure that :guilabel:`Shortest path` has a check mark next to it.
+* Click :guilabel:`OK` on the :guilabel:`Plugin Manager` dialog.
+* To see the plugin in your interface, go to :menuselection:`View --> Panels`
+  and ensure that :guilabel:`Shortest path` has a check mark next to it.
 
 This panel will appear in your interface:
 
@@ -44,12 +43,11 @@ map and load the layer :guilabel:`exercise_data/projected_data/roads_33S.shp`.
 
 Since so many different configurations are possible when analyzing networks,
 the plugin doesn't assume anything before you've set it up. Unfortunately, this
-means that it won't do anything at all if you don't set it up first. To do
-that, find and click on :menuselection:`Plugins --> Road graph --> Road graph
-settings`.
+means that it won't do anything at all if you don't set it up first.
 
-A dialog will appear. Make sure it's set up like this (use defaults unless
-otherwise specified):
+* Click on the menu item :menuselection:`Plugins --> Road graph --> Road graph
+  settings`. A dialog will appear.
+* Make sure it's set up like this (use defaults unless otherwise specified):
 
 .. image:: ../_static/vector_analysis/040.png
    :align: center
@@ -74,17 +72,16 @@ Let's say you want to get from Barrydale to Bonnievale:
 .. image:: ../_static/vector_analysis/043.png
    :align: center
 
-In the plugin panel, click on the :guilabel:`Capture Point` button next to the
-:guilabel:`Start` field:
+* In the plugin panel, click on the :guilabel:`Capture Point` button next to
+  the :guilabel:`Start` field:
 
 .. image:: ../_static/vector_analysis/044.png
    :align: center
 
-Then click somewhere in Barrydale. Next, use the :guilabel:`Capture Point`
-button next to the :guilabel:`Stop` field and capture a point somewhere in
-Bonnievale.
-
-Now click on the :guilabel:`Calculate` button to see the solution:
+* Click somewhere in Barrydale.
+* Use the :guilabel:`Capture Point` button next to the :guilabel:`Stop` field
+  and capture a point somewhere in Bonnievale.
+* Click on the :guilabel:`Calculate` button to see the solution:
 
 .. image:: ../_static/vector_analysis/045.png
    :align: center
@@ -98,42 +95,43 @@ Now click on the :guilabel:`Calculate` button to see the solution:
 .. note:: Section developed by Linfiniti and S Motala (Cape Peninsula
    University of Technology)
 
-Add the layer :guilabel:`exercise_data/projected_data/places_33S.shp` and the
-aerial photographs under :guilabel:`exercise_data/raster/`, and zoom to the
-Swellendam area (the town / cluster of roads in the center of the map).
-
-Select only the roads that are in the categories :kbd:`trunk`, :kbd:`primary`
-or :kbd:`tertiary` by running this attribute selection query on the road layer:
+* Add the layer :guilabel:`exercise_data/projected_data/places_33S.shp`.
+* Add the aerial photographs under :guilabel:`exercise_data/raster/`.
+* Zoom to the Swellendam area (the town / cluster of roads in the center of the
+  map).
+* Select only the roads that are in the categories :kbd:`trunk`, :kbd:`primary`
+  or :kbd:`tertiary` by running this attribute selection query on the road
+  layer:
 
 ::
 
   "TYPE" = 'trunk' OR "TYPE" = 'primary' OR "TYPE" = 'tertiary'
 
-Right-click on the :guilabel:`roads_33S` layer in the :guilabel:`Layers list`
-and save it out to a new file, :kbd:`roads_subset`. Only the currently visible
-features will be saved. Remove the original :guilabel:`roads_33S` layer from
-the :guilabel:`Layers list`.
-
-Open the attribute table for the :guilabel:`roads_subset` layer and enter edit
-mode:
+* Right-click on the :guilabel:`roads_33S` layer in the :guilabel:`Layers list`.
+* Save it out to a new file, :kbd:`roads_subset`. Only the currently visible
+  features will be saved.
+* Remove the original :guilabel:`roads_33S` layer from the :guilabel:`Layers
+  list`.
+* Open the attribute table for the :guilabel:`roads_subset` layer and enter
+  edit mode:
 
 .. image:: ../_static/vector_analysis/047.png
    :align: center
 
-Add a new column:
+* Add a new column:
 
 .. image:: ../_static/vector_analysis/050.png
    :align: center
 
-Call this new column :kbd:`SPEED`, and give it the type :guilabel:`Whole
-integer (number)` with a width of :kbd:`3`.
-
-In the main window, activate the :guilabel:`Select Features by Rectangle` tool:
+* Call this new column :kbd:`SPEED`, and give it the type :guilabel:`Whole
+  integer (number)` with a width of :kbd:`3`.
+* In the main window, activate the :guilabel:`Select Features by Rectangle`
+  tool:
 
 .. image:: ../_static/vector_analysis/051.png
    :align: center
 
-Select these roads:
+* Select these roads:
 
 .. image:: ../_static/vector_analysis/052.png
    :align: center
@@ -141,35 +139,37 @@ Select these roads:
 (To select more than one road, hold the :kbd:`ctrl` button and drag a box
 across any road that you want to include in the selection.)
 
-In the attribute table, click on the :guilabel:`Show selected only` box. Set
-the :kbd:`SPEED` value for all the selected streets to :kbd:`60`:
+* In the attribute table, click on the :guilabel:`Show selected only` box.
+* Set the :kbd:`SPEED` value for all the selected streets to :kbd:`60`:
 
 .. image:: ../_static/vector_analysis/053.png
    :align: center
 
 In context, this means that you're setting the speed limit on those roads to
-:kbd:`60 km/h`. Next, select the highway outside of town:
+:kbd:`60 km/h`.
+
+* Select the highway outside of town:
 
 .. image:: ../_static/vector_analysis/054.png
    :align: center
 
-Set the :kbd:`SPEED` value for all the selected streets to :kbd:`120`. Close
-the attribute table, save your edits, and exit edit mode.
-
-Check the :menuselection:`Vector --> Road graph --> Road graph settings` to
-ensure that it's set up as explained previously in this lesson.
-
-In the :guilabel:`Shortest path` panel, click the :guilabel:`Start point`
-button, and set the starting point to where the dirt road meets the
-on/off-rqamp at the edge of town on the east. Set the end point to the
-T-junction west of town.
+* Set the :kbd:`SPEED` value for all the selected streets to :kbd:`120`.
+* Close the attribute table, save your edits, and exit edit mode.
+* Check the :menuselection:`Vector --> Road graph --> Road graph settings` to
+  ensure that it's set up as explained previously in this lesson.
+* In the :guilabel:`Shortest path` panel, click the :guilabel:`Start point`
+  button.
+* Set the starting point to where the dirt road meets the on/off-rqamp at the
+  edge of town on the east.
+* Set the end point to the T-junction west of town.
 
 .. image:: ../_static/vector_analysis/055.png
    :align: center
 
-In the :guilabel:`Criterion` drop-down list in the :guilabel:`Shortest path`
-panel, select :guilabel:`Length`, then click :guilabel:`Calculate`. The route
-will be:
+* In the :guilabel:`Criterion` drop-down list in the :guilabel:`Shortest path`
+  panel, select :guilabel:`Length`.
+* Click :guilabel:`Calculate`. The route will be calculated for the shortest
+  distance:
 
 .. image:: ../_static/vector_analysis/048.png
    :align: center
@@ -177,8 +177,9 @@ will be:
 Notice the values of :guilabel:`Length` and :guilabel:`Time` in the
 :guilabel:`Shortest path` panel.
 
-Next, set the :guilabel:`Criterion` to :guilabel:`Time`, then click
-:guilabel:`Calculate` again. The route will be:
+* Set the :guilabel:`Criterion` to :guilabel:`Time`.
+* Click :guilabel:`Calculate` again. The route will be calculated for the
+  shortest time:
 
 .. image:: ../_static/vector_analysis/049.png
    :align: center
@@ -194,8 +195,9 @@ section, rather than the speed limit.
 |moderate| |TY|
 -------------------------------------------------------------------------------
 
-Digitize the roads in Railton. These are the main roads, type
-:guilabel:`tertiary`, speed :kbd:`60`:
+* Digitize the roads in Railton.
+  
+These are the main roads, type :guilabel:`tertiary`, speed :kbd:`60`:
 
 .. image:: ../_static/vector_analysis/056.png
    :align: center
@@ -206,8 +208,8 @@ And these are the smaller streets, type :guilabel:`residential`, speed
 .. image:: ../_static/vector_analysis/057.png
    :align: center
 
-Use the :guilabel:`Shortest path` tool to calculate the shortest and fastest
-ways to get from the southern extreme of town to the highway.
+* Use the :guilabel:`Shortest path` tool to calculate the shortest and fastest
+  ways to get from the southern extreme of town to the highway.
 
 If, on clicking :guilabel:`Calculate`, you're getting an error stating that a
 path could not be found, then make sure that the roads you digitized actually
@@ -219,7 +221,8 @@ the :guilabel:`Split features` tool to "split" roads at their intersections:
 .. image:: ../_static/vector_analysis/058.png
    :align: center
 
-Remember that this tool only works in edit mode on selected features, though!
+Remember that the :guilabel:`Split features` tool only works in edit mode on
+selected features, though!
 
 |IC|
 -------------------------------------------------------------------------------
