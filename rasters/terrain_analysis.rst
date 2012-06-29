@@ -20,21 +20,20 @@ object. To get a better look at the terrain, it is possible to calculate a
 create a 3D-looking image.
 
 To work with DEMs, you should use QGIS' all-in-one :guilabel:`DEM (Terrain
-models)` analysis tool. Go to :menuselection:`Raster --> Analysis --> DEM
-(Terrain models)`. Clicking on this menu item will bring up the tool you need:
+models)` analysis tool.
 
-.. image:: ../_static/rasters/019.png
-   :align: center
-
-Ensure that the :guilabel:`Input file` is the :guilabel:`DEM` layer. Set the
-:guilabel:`Output file` to :kbd:`hillshade.tif` in the directory
-:kbd:`exercise_data/residential_development`. Check the box next to
-:guilabel:`Load into canvas when finished`.
-
-You may leave all the other options unchanged. Click :guilabel:`OK` to generate
-the hillshade. When it tells you that processing is completed, click
-:guilabel:`OK` on the message to get rid of it, then click :guilabel:`Close` on
-the main :guilabel:`DEM (Terrain models)` dialog.
+* Click on the menu item :menuselection:`Raster --> Analysis --> DEM (Terrain
+  models)`.
+* In the dialog that appears, ensure that the :guilabel:`Input file` is the
+  :guilabel:`DEM` layer.
+* Set the :guilabel:`Output file` to :kbd:`hillshade.tif` in the directory
+  :kbd:`exercise_data/residential_development`.
+* Check the box next to :guilabel:`Load into canvas when finished`.
+* You may leave all the other options unchanged.
+* Click :guilabel:`OK` to generate the hillshade.
+* When it tells you that processing is completed, click :guilabel:`OK` on the
+  message to get rid of it.
+* Click :guilabel:`Close` on the main :guilabel:`DEM (Terrain models)` dialog.
 
 You will now have a new layer called :guilabel:`hillshade` that looks like
 this:
@@ -55,51 +54,39 @@ time of day. But it can also be used for aesthetic purposes, to make the map
 look better. The key to this is setting the hillshade to being mostly
 transparent.
 
-First, hide all the layers except the :guilabel:`aerial_photos` layer. Click
-and drag it to be beneath the :guilabel:`hillshade` layer in the
-:guilabel:`Layers list`. :guilabel:`Control rendering order` (beneath the list)
-should be checked as well.
+* Change the symbology of the original :guilabel:`DEM` to use the
+  :guilabel:`Pseudocolor` scheme.
+* Hide all the layers except the :guilabel:`DEM` and :guilabel:`hillshade`
+  layers.
+* Click and drag the :guilabel:`DEM` to be beneath the :guilabel:`hillshade`
+  layer in the :guilabel:`Layers list`. :guilabel:`Control rendering order`
+  (beneath the list) should be checked as well.
+* Set the :guilabel:`hillshade` layer to be transparent.
+* Open its :guilabel:`Layer Properties` and go to the :guilabel:`Transparency`
+  tab.
+* Set the :guilabel:`Global transparency` to :kbd:`50%`:
+* Click :guilabel:`OK` on the :guilabel:`Layer Properties` dialog. You'll get a
+  result like this:
 
-Now set the :guilabel:`hillshade` layer to be transparent. Open its
-:guilabel:`Layer Properties` and go to the :guilabel:`Transparency` tab. Set
-the :guilabel:`Global transparency` to :kbd:`90%`:
+  .. image:: ../_static/rasters/023.png
+     :align: center
 
-.. image:: ../_static/rasters/021.png
-   :align: center
+* Switch the :guilabel:`hillshade` layer off and back on in the
+  :guilabel:`Layers list` to see the difference it makes.
 
-Now click :guilabel:`OK` on the :guilabel:`Layer Properties` dialog. You'll get
-a result like this:
+Using a hillshade in this way, it's possible to enhance the topography of the
+landscape. If the effect doesn't seem strong enough to you, you can change the
+transparency of the :guilabel:`hillshade` layer; but of course, the brighter
+the hillshade becomes, the dimmer the colors behind it will be. You will need
+to find a balance that works for you.
 
-.. image:: ../_static/rasters/022.png
-   :align: center
-
-Switch the :guilabel:`hillshade` layer off and back on in the :guilabel:`Layers
-list` to see the difference it makes. Using a hillshade in this way, it's
-possible to enhance the topography of the landscape, if the light is coming
-from more or less the same angle. If the effect doesn't seem strong enough to
-you, you can set the transparency of the :guilabel:`hillshade` layer to a lower
-value; but of course, the brighter the hillshade becomes, the dimmer the photo
-behind it will be. You will need to find a balance that works for you.
-
-It's also possible to create a nice effect by using the :guilabel:`DEM` layer
-instead of the :guilabel:`aerial_photos` layer. Move the :guilabel:`DEM` to be
-below the :guilabel:`aerial_photos`, then set the symbology of the
-:guilabel:`DEM` to use :guilabel:`Pseudocolor`. Make the :guilabel:`hillshade`
-layer more visible by setting its :guilabel:`Global transparency` to
-:kbd:`50%`. If you now hide the :guilabel:`aerial_photos` layer and make the
-:guilabel:`DEM` visible, you'll get this:
-
-.. image:: ../_static/rasters/023.png
-   :align: center
-
-You can decide which of these two settings you'd prefer to use. When you are
-done, save your map.
+Remember to save your map when you are done.
 
 .. note::  For the next two exercises, please use a new map. Load only the
    :kbd:`DEM` raster dataset into it
    (:kbd:`exercise_data/raster/SRTM/srtm_41_19.tif`). This is to simplify
-   matters while you're working with the raster analysis tools. Save the map as
-   :kbd:`exercise_data/raster_analysis.qgs`.
+   matters while you're working with the raster analysis tools. Save the map
+   as :kbd:`exercise_data/raster_analysis.qgs`.
 
 |moderate| |FA| Calculating the Slope
 -------------------------------------------------------------------------------
@@ -109,34 +96,38 @@ our analysis, you want to build houses on the land there, then you need land
 that is relatively flat. 
 
 To do this, you need to use the :guilabel:`Slope` mode of the :guilabel:`DEM
-(Terain models)` tool. Open the tool as before. This time, under
-:guilabel:`Mode`, select the option :guilabel:`Slope`:
+(Terain models)` tool.
 
-.. image:: ../_static/rasters/024.png
-   :align: center
+* Open the tool as before.
+* Select the :guilabel:`Mode` option :guilabel:`Slope`:
 
-Set the save location to :kbd:`exercise_data/residential_development/slope.tif`
-and enable the :guilabel:`Load into canvas...` checkbox. Click :guilabel:`OK`
-and close the dialog when processing is complete.
+  .. image:: ../_static/rasters/024.png
+     :align: center
 
-You'll see a new raster loaded into your map. With it selected in the
-:guilabel:`Layers list`, click the :guilabel:`Stretch Histogram to Full
-Dataset` button. Now you'll see the slope of the terrain, with black pixels
-being flat terrain and white pixels, steep terrain:
+* Set the save location to
+  :kbd:`exercise_data/residential_development/slope.tif`
+* Enable the :guilabel:`Load into canvas...` checkbox.
+* Click :guilabel:`OK` and close the dialog when processing is complete. You'll
+  see a new raster loaded into your map.
+* With the new raster selected in the :guilabel:`Layers list`, click the
+  :guilabel:`Stretch Histogram to Full Dataset` button. Now you'll see the
+  slope of the terrain, with black pixels being flat terrain and white pixels,
+  steep terrain:
 
-.. image:: ../_static/rasters/025.png
-   :align: center
+  .. image:: ../_static/rasters/025.png
+     :align: center
 
 .. _backlink-raster-analysis-1:
 
 |moderate| |TY| calculating the aspect
 -------------------------------------------------------------------------------
 
-The aspect of terrain refers to the direction it's facing in. Since this study
-is taking place in the Southern Hemisphere, properties should ideally be built
-on a north-facing slope so that they can remain in the sunlight. Use the
-:guilabel:`Aspect` mode of the :guilabel:`DEM (Terain models)` tool to
-calculate the aspect of the terrain.
+The *aspect* of terrain refers to the direction it's facing in. Since this
+study is taking place in the Southern Hemisphere, properties should ideally be
+built on a north-facing slope so that they can remain in the sunlight.
+
+* Use the :guilabel:`Aspect` mode of the :guilabel:`DEM (Terain models)` tool
+  to calculate the aspect of the terrain.
 
 :ref:`Check your results <raster-analysis-1>`
 
@@ -154,28 +145,24 @@ Fortunately, you already have rasters showing you the slope as well as the
 aspect, but you have no way of knowing where both conditions are satisfied at
 once. How could this analysis be done?
 
-The answer lies with the :guilabel:`Raster calculator`. Click on
-:menuselection:`Raster > Raster calculator...` to start this tool.
+The answer lies with the :guilabel:`Raster calculator`.
 
-You will see this dialog:
-
-.. image:: ../_static/rasters/028.png
-   :align: center
-
-To make use of the :guilabel:`aspect` dataset, double-click on the item
-:guilabel:`aspect@1` in the :guilabel:`Raster bands` list on the left. It will
-appear in the :guilabel:`Raster calculator expression` text field below.
+* Click on :menuselection:`Raster > Raster calculator...` to start this tool.
+* To make use of the :guilabel:`aspect` dataset, double-click on the item
+  :guilabel:`aspect@1` in the :guilabel:`Raster bands` list on the left. It
+  will appear in the :guilabel:`Raster calculator expression` text field below.
 
 North is at 0 (zero) degrees, so for the terrain to face north, its aspect
-needs to be greater than 270 degrees and less than 90 degrees. In the
-:guilabel:`Raster calculator expression` field, enter this expression:
+needs to be greater than 270 degrees and less than 90 degrees.
 
-:kbd:`aspect@1 <= 90 OR aspect@1 >= 270`
+* In the :guilabel:`Raster calculator expression` field, enter this expression:
 
-Set the output file to :kbd:`aspect_north.tif` in the directory
-:kbd:`exercise_data/residential_development/`. Finally, ensure that the box
-:guilabel:`Add result to project` is checked. Click :guilabel:`OK` to begin
-processing.
+  :kbd:`aspect@1 <= 90 OR aspect@1 >= 270`
+
+* Set the output file to :kbd:`aspect_north.tif` in the directory
+  :kbd:`exercise_data/residential_development/`.
+* Ensure that the box :guilabel:`Add result to project` is checked.
+* Click :guilabel:`OK` to begin processing.
 
 .. image:: ../_static/rasters/029.png
    :align: center
@@ -192,11 +179,14 @@ Your result will be this:
 -------------------------------------------------------------------------------
 
 Now that you've done the aspect, create two separate new analyses of the
-:guilabel:`DEM` layer. The first will be to identify all areas where the slope
-is less than or equal to 2 degrees. The second is similar, but the slope should
-be less than or equal to 5 degrees. Save them under
-:kbd:`exercise_data/residential_development/` as :kbd:`slope_lte2.tif` and
-:kbd:`slope_lte5.tif`.
+:guilabel:`DEM` layer.
+
+* The first will be to identify all areas where the slope is less than or equal
+  to :kbd:`2` degrees.
+* The second is similar, but the slope should be less than or equal to :kbd:`5`
+  degrees.
+* Save them under :kbd:`exercise_data/residential_development/` as
+  :kbd:`slope_lte2.tif` and :kbd:`slope_lte5.tif`.
 
 :ref:`Check your results <raster-analysis-2>`
 
@@ -206,9 +196,9 @@ be less than or equal to 5 degrees. Save them under
 
 Now you have three new analysis rasters of the :guilabel:`DEM` layer:
 
-- :guilabel:`aspect_north`: the terrain faces north
-- :guilabel:`slope_lte2`: the slope is at or below 2 degrees
-- :guilabel:`slope_lte5`: the slope is at or below 5 degrees
+* :guilabel:`aspect_north`: the terrain faces north
+* :guilabel:`slope_lte2`: the slope is at or below 2 degrees
+* :guilabel:`slope_lte5`: the slope is at or below 5 degrees
 
 Where the conditions of these layers are met, they are equal to :kbd:`1`.
 Elsewhere, they are equal to :kbd:`0`. Therefore, if you multiply one of these
@@ -223,19 +213,21 @@ Therefore, you need to find areas where the slope is at or below 5 degrees
 :kbd:`AND` the terrain is facing north; :kbd:`OR` the slope is at or below 2
 degrees. Such terrain would be suitable for development.
 
-To calculate the areas that satisfy these criteria, open your :guilabel:`Raster
-calculator` again. Use the :guilabel:`Raster bands` list, the
-:guilabel:`Operators` buttons, and your keyboard to build this expression in
-the :guilabel:`Raster calculator expression` text area:
+To calculate the areas that satisfy these criteria:
 
-:kbd:`( aspect_north@1 = 1 AND slope_lte5@1 = 1 )  OR slope_lte2@1 = 1`
+* Open your :guilabel:`Raster calculator` again.
+* Use the :guilabel:`Raster bands` list, the :guilabel:`Operators` buttons, and
+  your keyboard to build this expression in the :guilabel:`Raster calculator
+  expression` text area:
 
-Save the output under :kbd:`exercise_data/residential_development/` as
-:kbd:`all_conditions.tif` and click :guilabel:`OK` on the :guilabel:`Raster
-calculator`. Your results:
+  :kbd:`( aspect_north@1 = 1 AND slope_lte5@1 = 1 )  OR slope_lte2@1 = 1`
 
-.. image:: ../_static/rasters/034.png
-   :align: center
+* Save the output under :kbd:`exercise_data/residential_development/` as
+  :kbd:`all_conditions.tif`.
+* Click :guilabel:`OK` on the :guilabel:`Raster calculator`. Your results:
+
+  .. image:: ../_static/rasters/034.png
+     :align: center
 
 
 |moderate| |FA| Simplifying the Raster
@@ -246,17 +238,13 @@ many, very small areas where the conditions are met. But these aren't really
 useful for our analysis, since they're too small to build anything on. Let's
 get rid of all these tiny unusable areas.
 
-To do this, you'll use the :guilabel:`Sieve` tool (:menuselection:`Raster -->
-Analysis --> Sieve`):
-
-.. image:: ../_static/rasters/035.png
-   :align: center
-
-Set the :guilabel:`Input file` to :kbd:`all_conditions`, and the
-:guilabel:`Output file` to :kbd:`all_conditions_sieve.tif` (under
-:kbd:`exercise_data/residential_development/`, as always). Set both the
-:guilabel:`Threshold` and :guilabel:`Pixel connections` values to :kbd:`8`,
-then run the tool.
+* Open the :guilabel:`Sieve` tool (:menuselection:`Raster --> Analysis -->
+  Sieve`).
+* Set the :guilabel:`Input file` to :kbd:`all_conditions`, and the
+  :guilabel:`Output file` to :kbd:`all_conditions_sieve.tif` (under
+  :kbd:`exercise_data/residential_development/`).
+* Set both the :guilabel:`Threshold` and :guilabel:`Pixel connections` values
+  to :kbd:`8`, then run the tool.
 
 Once processing is done, the new layer will load into the canvas. But when you
 try to use the histogram stretch tool to view the data, this happens:
@@ -264,22 +252,25 @@ try to use the histogram stretch tool to view the data, this happens:
 .. image:: ../_static/rasters/036.png
    :align: center
 
-What's going on? The answer lies in the new raster file's metadata (which you
-can find under the :guilabel:`Metadata` tab of the :guilabel:`Layer Properties`
-dialog). Whereas this raster, like the one it's derived from, should only
+What's going on? The answer lies in the new raster file's metadata.
+
+* View the metadata under the :guilabel:`Metadata` tab of the :guilabel:`Layer
+  Properties` dialog.
+
+Whereas this raster, like the one it's derived from, should only
 feature the values :kbd:`1` and :kbd:`0`, it has the :kbd:`STATISTICS_MINIMUM`
 value of a very large negative number. Investigation of the data shows that
 this number acts as a null value. Since we're only after areas that weren't
 filtered out, let's set these null values to zero.
 
-Open the :guilabel:`Raster Calculator` again, and build this expression:
+* Open the :guilabel:`Raster Calculator` again, and build this expression:
 
-:kbd:`(all_conditions_sieve@1 <= 0) = 0`
+  :kbd:`(all_conditions_sieve@1 <= 0) = 0`
 
-This will maintain all existing zero values, while also setting the negative
-numbers to zero; which will leave all the areas with value :kbd:`1` intact.
-Save the output under :kbd:`exercise_data/residential_development/` as
-:kbd:`all_conditions_simple.tif`.
+  This will maintain all existing zero values, while also setting the negative
+  numbers to zero; which will leave all the areas with value :kbd:`1` intact.
+* Save the output under :kbd:`exercise_data/residential_development/` as
+  :kbd:`all_conditions_simple.tif`.
 
 Your output looks like this:
 

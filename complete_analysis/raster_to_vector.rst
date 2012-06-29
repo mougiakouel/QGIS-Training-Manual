@@ -17,18 +17,17 @@ be used to complete the analysis.
 |moderate| |FA| The :guilabel:`Raster to Vector` Tool
 -------------------------------------------------------------------------------
 
-To access this tool, click on :menuselection:`Raster --> Conversion -->
-Polygonize (Raster to Vector)`.
+* Click on :menuselection:`Raster --> Conversion --> Polygonize (Raster to
+  Vector)`. The tool dialog will appear.
+* Set it up like this:
 
-The tool dialog will appear. Set it up like this:
+  .. image:: ../_static/complete_analysis/001.png
+     :align: center
 
-.. image:: ../_static/complete_analysis/001.png
-   :align: center
-
-Change the field name (describing the values of the raster) to :kbd:`suitable`.
-
-Save the shapefile under :kbd:`exercise_data/residential_development` as
-:kbd:`all_terrain.shp`.
+* Change the field name (describing the values of the raster) to
+  :kbd:`suitable`.
+* Save the shapefile under :kbd:`exercise_data/residential_development` as
+  :kbd:`all_terrain.shp`.
 
 Now you have a vector file which contains all the values of the raster, but
 the only areas you're interested in are those that are suitable; i.e., those
@@ -39,10 +38,12 @@ polygons where the value of :kbd:`suitable` is :kbd:`1`.
 |moderate| |TY|
 -------------------------------------------------------------------------------
 
-Refer back to the module on vector analysis to a create a new vector file that
-contains only the polygons where :kbd:`suitable` has the value of :kbd:`1`.
-Save the new file under :kbd:`exercise_data/residential_development` as
-:guilabel:`suitable_terrain.shp`.
+Refer back to the module on vector analysis.
+
+* Create a new vector file that contains only the polygons where
+  :kbd:`suitable` has the value of :kbd:`1`.
+* Save the new file under :kbd:`exercise_data/residential_development` as
+  :guilabel:`suitable_terrain.shp`.
 
 :ref:`Check your results <complete-analysis-1>`
 
@@ -52,25 +53,26 @@ Save the new file under :kbd:`exercise_data/residential_development` as
 Although unnecessary for our current problem, it's useful to know about the
 opposite conversion from the one performed above.
 
-Click on :menuselection:`Raster --> Conversion --> Rasterize (Vector to
-Raster)` to start this tool, then set it up as in the screenshot below:
+* Click on :menuselection:`Raster --> Conversion --> Rasterize (Vector to
+  Raster)` to start this tool, then set it up as in the screenshot below:
 
 .. image:: ../_static/complete_analysis/003.png
    :align: center
 
-The :guilabel:`Input file` is :guilabel:`all_terrain`; the :guilabel:`Output
-file...` is :kbd:`exercise_data/residential_development/raster_conversion.tif`;
-the :guilabel:`Width` and :guilabel:`Height` are :kbd:`837` and :kbd:`661`,
-respectively.
+* :guilabel:`Input file` is :guilabel:`all_terrain`;
+* :guilabel:`Output file...` is
+  :kbd:`exercise_data/residential_development/raster_conversion.tif`;
+* :guilabel:`Width` and :guilabel:`Height` are :kbd:`837` and :kbd:`661`,
+  respectively.
 
 .. note::  The size of the output image is specified here to be the same as the
    original raster which was vectorized. To view the dimensions of an image,
    open its metadata (:guilabel:`Metadata` tab in the :guilabel:`Layer
    Properties`).
 
-Click :guilabel:`OK` on the dialog to begin the conversion process. When it is
-complete, gauge its success by comparing the new raster with the original one.
-They should match up exactly, pixel for pixel.
+* Click :guilabel:`OK` on the dialog to begin the conversion process.
+* When it is complete, gauge its success by comparing the new raster with the
+  original one.  They should match up exactly, pixel for pixel.
 
 |IC|
 -------------------------------------------------------------------------------

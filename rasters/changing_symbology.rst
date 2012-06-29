@@ -10,11 +10,11 @@ data properly so that it becomes properly visible and useful.
 |basic| |TY|
 -------------------------------------------------------------------------------
 
-Use the :guilabel:`Add Raster Layer` button to load the new raster dataset.
-Into your current map (which, following from the previous lesson, should be
-:kbd:`analysis.qgs`) load the dataset :kbd:`srtm_41_19.tif`, found under the
-directory :kbd:`exercise_data/raster/SRTM/`. Once it appears in the
-:guilabel:`Layers list`, rename it to :kbd:`DEM`.
+* Use the :guilabel:`Add Raster Layer` button to load the new raster dataset.
+* Into your current map (which, following from the previous lesson, should be
+  :kbd:`analysis.qgs`) load the dataset :kbd:`srtm_41_19.tif`, found under the
+  directory :kbd:`exercise_data/raster/SRTM/`.
+* Once it appears in the :guilabel:`Layers list`, rename it to :kbd:`DEM`.
 
 This dataset is a *Digital Elevation Model (DEM)*. It's a map of the elevation
 (altitude) of the terrain, allowing us to see where the mountains and valleys
@@ -34,43 +34,42 @@ needs to be defined. So that's what you should do next.
 |basic| |FA| Changing Raster Layer Symbology
 -------------------------------------------------------------------------------
 
-Open the :guilabel:`Layer Properties` dialog for the :guilabel:`SRTM` layer and
-switch to the :guilabel:`Style` tab:
-
-.. image:: ../_static/rasters/010.png
-   :align: center
+* Open the :guilabel:`Layer Properties` dialog for the :guilabel:`SRTM` layer.
+* Switch to the :guilabel:`Style` tab.
 
 These are the current settings, and as we've seen, they don't give us much
-information on the layer. Does it even have any data in it? Let's see. Change
-the :guilabel:`Color map` to :guilabel:`Pseudocolor`:
+information on the layer. Does it even have any data in it? Let's see.
+
+* Change the :guilabel:`Color map` to :guilabel:`Pseudocolor`:
 
 .. image:: ../_static/rasters/011.png
    :align: center
 
-Now when you click :guilabel:`OK`, you'll see the raster looking like this:
+* Click :guilabel:`OK`.
+
+You'll see the raster looking like this:
 
 .. image:: ../_static/rasters/012.png
    :align: center
 
 That does tell us what we need to know. There is data in this layer. But maybe
-we don't want to symbolize it using these colors. Open :guilabel:`Layer
-Properties` again, and switch the :guilabel:`Color map` back to
-:guilabel:`Grayscale`. But this time, to prevent it from becoming a gray
-rectangle again, let's tell QGIS to "stretch" the color values. This will make
-QGIS use all of the available colors (in :guilabel:`Grayscale`, this is black,
-white and all shades of gray in between).
+we don't want to symbolize it using these colors.
 
-So let's tell it to use :guilabel:`Custom min / max values`:
+* Open :guilabel:`Layer Properties` again.
+* Switch the :guilabel:`Color map` back to :guilabel:`Grayscale`.
+
+But this time, to prevent it from becoming a gray rectangle again, let's tell
+QGIS to "stretch" the color values. This will make QGIS use all of the
+available colors (in :guilabel:`Grayscale`, this is black, white and all shades
+of gray in between).
+
+* Tell it to use :guilabel:`Custom min / max values`:
 
 .. image:: ../_static/rasters/015.png
    :align: center
 
-If you :guilabel:`Apply` changes now, you'll see that this does nothing,
-because QGIS hasn't been told what to use these :guilabel:`Custom min / max
-values` for.
-
-So in the bottom of the dialog, set the value :guilabel:`Current` of
-:guilabel:`Contrast enhancement` to :guilabel:`Stretch To MinMax`:
+* Set the value :guilabel:`Current` of :guilabel:`Contrast enhancement` to
+  :guilabel:`Stretch To MinMax`:
 
 .. image:: ../_static/rasters/013.png
    :align: center
@@ -80,9 +79,11 @@ stretch? The ones that are currently under :guilabel:`Custom min / max values`
 are the same values that just gave us a gray rectangle before. Instead, we
 should be using the minimum and maximum values that are actually in the image,
 right? Fortunately, you can determine those values easily by loading the
-minimum and maximum values of the raster. Under :guilabel:`Load min / max values
-from band`, select :guilabel:`Estimate (faster)` and click the :guilabel:`Load`
-button:
+minimum and maximum values of the raster.
+
+* Under :guilabel:`Load min / max values from band`, select :guilabel:`Estimate
+  (faster)`.
+* Click the :guilabel:`Load` button:
 
 .. image:: ../_static/rasters/014.png
    :align: center
@@ -92,9 +93,10 @@ Notice how the :guilabel:`Custom min / max values` have changed:
 .. image:: ../_static/rasters/016.png
    :align: center
 
-Now when you click :guilabel:`OK`, you'll see the values of the raster properly
-displayed, with the darker colors representing valleys and the lighter ones,
-mountains:
+* Click :guilabel:`OK`.
+
+You'll see the values of the raster properly displayed, with the darker colors
+representing valleys and the lighter ones, mountains:
 
 .. image:: ../_static/rasters/017.png
    :align: center
@@ -105,23 +107,22 @@ But isn't there a quicker way?
 Yes, there is! Now that you understand what needs to be done, you'll be glad to
 know that there's a tool for doing all of this easily.
 
-First, remove the current DEM from the :guilabel:`Layers list`. Then load the
-raster in again, renaming it to :kbd:`DEM` as before. It's a gray rectangle
-again...
+* Remove the current DEM from the :guilabel:`Layers list`.
+* Load the raster in again, renaming it to :kbd:`DEM` as before. It's a gray
+  rectangle again...
+* Enable the tool you'll need by enabling :menuselection:`View --> Toolbars -->
+  Raster`. These icons will appear in the interface:
 
-Now enable the tool you'll need by enabling :menuselection:`View --> Toolbars
---> Raster`. These icons will appear in the interface:
-
-.. image:: ../_static/rasters/018.png
-   :align: center
+  .. image:: ../_static/rasters/018.png
+     :align: center
 
 The button on the right will stretch the minimum and maximum values to give you
 the best contrast in the local area that you're zoomed into. It's useful for
 large datasets. The button on the left will stretch  the minimum and maximum
 values to constant values across the whole image.
 
-Click the button on the left (:guilabel:`Stretch Histogram to Full Dataset`). 
-You'll see the data is now correctly represented as before!
+* Click the button on the left (:guilabel:`Stretch Histogram to Full Dataset`).
+  You'll see the data is now correctly represented as before!
 
 |IC|
 -------------------------------------------------------------------------------
