@@ -4,8 +4,8 @@ Appendix: Contributing To This Manual
 
 To add materials to this course, you must follow the guidelines in this
 Appendix. You are not to alter the conditions in this Appendix except for
-clarification. This is to ensure that the quality of this manual can be
-maintained.
+clarification. This is to ensure that the quality and consistency of this
+manual can be maintained.
 
 Downloading Resources
 ===============================================================================
@@ -26,55 +26,50 @@ how to use these tools are available on their respective sites.
 Adding a Module
 ===============================================================================
 
-To add a new module, first create a new directory (directly under the top-level
-of the :kbd:`qgis-training-manual` directory) with the name of the new module.
-Under this new directory, create a file called :kbd:`index.rst`. Leave this
-file blank for now.
+* To add a new module, first create a new directory (directly under the
+  top-level of the :kbd:`qgis-training-manual` directory) with the name of the
+  new module.
+* Under this new directory, create a file called :kbd:`index.rst`. Leave this
+  file blank for now.
+* Open the :kbd:`index.rst` file under the top-level directory. Its first lines
+  are::
 
-Open the :kbd:`index.rst` file under the top-level directory. Its first lines
-are:
-
-::
-
-  .. toctree::
-     :maxdepth: 2
-     :numbered:
+    .. toctree::
+       :maxdepth: 2
+       :numbered:
  
-     foreword/index
-     introduction/index
+       foreword/index
+       introduction/index
 
 You will note that this is a list of directory names, followed by the name
 :kbd:`index`. This directs the top-level index file to the index files in each
 directory. The order in which they are listed determines the order they will
 have in the document.
 
-Add the name of your new module (i.e., the name you gave the new directory),
-followed by :kbd:`/index`, to this list, wherever you want your module to
-appear. Remember to keep the order of the modules logical, such that later
-modules build on the knowledge presented in earlier modules.
+* Add the name of your new module (i.e., the name you gave the new directory),
+  followed by :kbd:`/index`, to this list, wherever you want your module to
+  appear.
+* Remember to keep the order of the modules logical, such that later modules
+  build on the knowledge presented in earlier modules.
+* Open your new module's own index file (:kbd:`[module name]/index.rst`).
+* Along the top of the page, write a line of 80 asterisks (:kbd:`*`).  This
+  represents a module heading.
+* Follow this with a line containing the markup phrase :kbd:`|MOD|` (which
+  stands for "module"), followed by the name of your module.
+* End this off with another line of 80 asterisks.
+* Leave a line open beneath this.
+* Write a short paragraph explaining the purpose and content of the module.
+* Leave one line open, then add the following text::
 
-Now open your new module's own index file (:kbd:`[module name]/index.rst`).
-Along the top of the page, write a line of 80 asterisks (:kbd:`*`).  This
-represents a module heading. Follow this with a line containing the markup
-phrase :kbd:`|MOD|` (which stands for "module"), followed by the name of your
-module. End this off with another line of 80 asterisks. Leave a line open
-beneath this.
+    .. toctree::
+       :maxdepth: 2
+       :numbered:
 
-Next, write a short paragraph explaining the purpose and content of the module.
+       lesson1
+       lesson2
 
-Leave one line open, then add the following text:
-
-::
-
-  .. toctree::
-     :maxdepth: 2
-     :numbered:
-
-     lesson1
-     lesson2
-
-Where :kbd:`lesson1`, :kbd:`lesson2`, etc., are the names of your planned
-lessons.
+  ... where :kbd:`lesson1`, :kbd:`lesson2`, etc., are the names of your planned
+  lessons.
 
 The module-level index file will look like this:
 
@@ -96,33 +91,33 @@ The module-level index file will look like this:
 Adding a Lesson
 ===============================================================================
 
-To add a lesson to a new or existing module, open the module directory. Open
-the :kbd:`index.rst` file (created above in the case of new modules). Ensure
-that the name of the planned lesson is listed underneath the :kbd:`toctree`
-directive, as shown above.
+To add a lesson to a new or existing module:
 
-Now create a new file under the module directory. Name this file exactly the
-same as the name you provided in the module's :kbd:`index.rst` file, and add
-the extension :kbd:`.rst`. For editing purposes, a :kbd:`.rst` file works
-exactly like a normal text file (:kbd:`.txt`).
+* Open the module directory.
+* Open the :kbd:`index.rst` file (created above in the case of new modules).
+* Ensure that the name of the planned lesson is listed underneath the
+  :kbd:`toctree` directive, as shown above.
+* Create a new file under the module directory.
+* Name this file exactly the same as the name you provided in the module's
+  :kbd:`index.rst` file, and add the extension :kbd:`.rst`.
 
-To begin writing the lesson, write the markup phrase :kbd:`|LS|`, followed by
-the lesson name. In the next line, write a line of 80 equal signs (:kbd:`=`).
-Leave a line open after this.
+.. note:: For editing purposes, a :kbd:`.rst` file works exactly like a normal
+   text file (:kbd:`.txt`).
 
-Now write a short description of the lesson's intended purpose. Include a
-general introduction to the subject matter. See the existing lessons in this
-manual for examples.
+* To begin writing the lesson, write the markup phrase :kbd:`|LS|`, followed by
+  the lesson name.
+* In the next line, write a line of 80 equal signs (:kbd:`=`).
+* Leave a line open after this.
+* Write a short description of the lesson's intended purpose.
+* Include a general introduction to the subject matter. See the existing
+  lessons in this manual for examples.
+* Beneath this, start a new paragraph, beginning with this phrase::
 
-Beneath this, start a new paragraph, beginning with this phrase:
+    **The goal for this lesson:**
 
-::
-
-  **The goal for this lesson:**
-
-Then briefly explain the intended outcome of completing this lesson. If you
-can't describe the goal of the lesson in one or two sentences, consider
-breaking the subject matter up into multiple lessons.
+* Briefly explain the intended outcome of completing this lesson.
+* If you can't describe the goal of the lesson in one or two sentences,
+  consider breaking the subject matter up into multiple lessons.
 
 Each lesson will be subdivided into multiple sections, which will be addressed
 next.
@@ -132,15 +127,14 @@ Adding a Section
 
 There are two types of sections: "follow along" and "try yourself".
 
-A "follow along" section is a detailed set of directions intended to teach the
-reader how to use a given aspect of QGIS. This is typically done by giving
-click-by-click directions as clearly as possible, interspersed with
-screenshots.
-
-A "try yourself" section gives the reader a short assignment to try by
-themselves. It is usually associated with an entry in the answer sheet at the
-end of the documentation, which will show or explain how to complete the
-assignment, and will show the expected outcome if possible.
+* A "follow along" section is a detailed set of directions intended to teach
+  the reader how to use a given aspect of QGIS. This is typically done by
+  giving click-by-click directions as clearly as possible, interspersed with
+  screenshots.
+* A "try yourself" section gives the reader a short assignment to try by
+  themselves. It is usually associated with an entry in the answer sheet at the
+  end of the documentation, which will show or explain how to complete the
+  assignment, and will show the expected outcome if possible.
 
 Every section comes with a difficulty level. An easy section is denoted by
 :kbd:`|basic|`, moderate by :kbd:`|moderate|`, and advanced by :kbd:`|hard|`.
@@ -148,64 +142,69 @@ Every section comes with a difficulty level. An easy section is denoted by
 Adding a "follow along" section
 -------------------------------------------------------------------------------
 
-To start this section, write the markup phrase of the intended difficulty level
-(as shown above). Leave a space and then write :kbd:`|FA|` (for "follow
-along"). Leave another space and write the name of the section (use only an
-initial capital letter, as well as capitals for proper nouns). In the next
-line, write a line of 80 dashes (:kbd:`-`). Ensure that your text editor does
-not replace the default dash character with a long dash or other character.
-
-Write a short introduction to the section, explaining its purpose. Then give
-detailed (click-by-click) instructions on the procedure to be demonstrated.
-
-In each section, include internal links, external links and screenshots as
-needed. Try to end each section with a short paragraph that concludes it and
-leads naturally to the next section, if possible.
+* To start this section, write the markup phrase of the intended difficulty
+  level (as shown above).
+* Leave a space and then write :kbd:`|FA|` (for "follow along").
+* Leave another space and write the name of the section (use only an initial
+  capital letter, as well as capitals for proper nouns).
+* In the next line, write a line of 80 minuses/dashes (:kbd:`-`). Ensure that
+  your text editor does not replace the default minus/dash character with a
+  long dash or other character.
+* Write a short introduction to the section, explaining its purpose. Then give
+  detailed (click-by-click) instructions on the procedure to be demonstrated.
+* In each section, include internal links, external links and screenshots as
+  needed.
+* Try to end each section with a short paragraph that concludes it and leads
+  naturally to the next section, if possible.
 
 Adding a "try yourself" section
 -------------------------------------------------------------------------------
 
-To start this section, write the markup phrase of the intended difficulty level
-(as shown above). Leave a space and then write :kbd:`|TY|` (for "try
-yourself"). In the next line, write a line of 80 dashes (:kbd:`-`). Ensure that
-your text editor does not replace the default dash character with a long dash
-or other character.
-
-Explain the exercise that you want the reader to complete. Refer to previous
-sections, lessons or modules if necessary. Include screenshots to clarify the
-requirements if a plain textual description is not clear.
+* To start this section, write the markup phrase of the intended difficulty
+  level (as shown above).
+* Leave a space and then write :kbd:`|TY|` (for "try yourself").
+* In the next line, write a line of 80 minuses/dashes (:kbd:`-`). Ensure that
+  your text editor does not replace the default minus/dash character with a
+  long dash or other character.
+* Explain the exercise that you want the reader to complete. Refer to previous
+  sections, lessons or modules if necessary.
+* Include screenshots to clarify the requirements if a plain textual
+  description is not clear.
 
 In most cases, you will want to provide an answer regarding how to complete the
 assignment given in this section. To do so, you will need to add an entry in
-the answer sheet. First, decide on a unique name for the answer. Ideally, this
-name will include the name of the lesson and an incrementing number. Then
-create a link for this answer:
+the answer sheet.
 
-::
+* First, decide on a unique name for the answer. Ideally, this name will
+  include the name of the lesson and an incrementing number.
+* Create a link for this answer:
 
-  :ref:`Check your results <answer-name>`
+  ::
 
-Now open the answer sheet (:kbd:`answers/answers.rst`). Create a link to the
-"try yourself" section by writing this line:
+    :ref:`Check your results <answer-name>`
 
-::
+* Open the answer sheet (:kbd:`answers/answers.rst`).
+* Create a link to the "try yourself" section by writing this line:
 
-  .. _answer-name:
+  ::
+  
+    .. _answer-name:
 
-Then write the instructions on how to complete the assignment, using links and
-images where needed. To end it off, include a link back to the "try yourself"
-section by writing this line:
+* Write the instructions on how to complete the assignment, using links and
+  images where needed.
+* To end it off, include a link back to the "try yourself" section by writing
+  this line:
 
-::
+  ::
+  
+    :ref:`Back to text <backlink-answer-name>`
 
-  :ref:`Back to text <backlink-answer-name>`
+* To make this link work, add the following line above the heading to the "try
+  yourself" section:
 
-To make this link work, add the following line above the heading to the "try
-yourself" section:
-
-::
-
-  .. _backlink-answer-name:
+  ::
+  
+    .. _backlink-answer-name:
 
 Remember that each of these lines shown above must have a blank line above and
 below it, otherwise it could cause errors while creating the document.
@@ -213,25 +212,28 @@ below it, otherwise it could cause errors while creating the document.
 Add a Conclusion
 ===============================================================================
 
-To end a lesson, write the phrase :kbd:`|IC|` for "in conclusion", followed by
-a new line of 80 dashes (:kbd:`-`). Write a conclusion for the lesson,
-explaining which concepts have been covered in the lesson.
+* To end a lesson, write the phrase :kbd:`|IC|` for "in conclusion", followed
+  by a new line of 80 minuses/dashes (:kbd:`-`). Write a conclusion for the
+  lesson, explaining which concepts have been covered in the lesson.
 
 Add a Further Reading Section
 ===============================================================================
 
-This section is optional. Write the phrase :kbd:`FR` for "further reading",
-followed by a new line of 80 dashes (:kbd:`-`). Include links to appropriate
-external websites.
+* This section is optional.
+* Write the phrase :kbd:`FR` for "further reading", followed by a new line of
+  80 minuses/dashes (:kbd:`-`).
+* Include links to appropriate external websites.
 
 Add a What's Next Section
 ===============================================================================
 
-Write the phrase :kbd:`|WN|` for "what's next". Explain how this lesson has
-prepared students for the next lesson or module. Remember to change the "what's
-next" section of the previous lesson if necessary, so that it refers to your
-new lesson. This will be necessary if you have inserted a new lesson among
-existing lessons, or after an existing lesson.
+* Write the phrase :kbd:`|WN|` for "what's next", followed by a new line of 80
+  minuses/dashes (:kbd:`-`).
+* Explain how this lesson has prepared students for the next lesson or module.
+* Remember to change the "what's next" section of the previous lesson if
+  necessary, so that it refers to your new lesson. This will be necessary if
+  you have inserted a new lesson among existing lessons, or after an existing
+  lesson.
 
 Using Markup
 ===============================================================================
@@ -242,19 +244,20 @@ markup to your text.
 New concepts
 -------------------------------------------------------------------------------
 
-If you are explaining a new concept, you will need to write the new concept's
-name in italics by enclosing it in asterisks (:kbd:`*`).
+* If you are explaining a new concept, you will need to write the new concept's
+  name in italics by enclosing it in asterisks (:kbd:`*`).
 
-::
-
-  This sample text shows how to introduce a *new concept*.
+  ::
+  
+    This sample text shows how to introduce a *new concept*.
 
 Emphasis
 -------------------------------------------------------------------------------
 
-To emphasize a crucial term which is not a new concept, write the term in bold
-by enclosing it in double asterisks (:kbd:`**`). Use this sparingly! If used
-too much, it can seem to the reader that you are shouting or condescending.
+* To emphasize a crucial term which is not a new concept, write the term in
+  bold by enclosing it in double asterisks (:kbd:`**`).
+* Use this sparingly! If used too much, it can seem to the reader that you are
+  shouting or being condescending.
 
 ::
 
@@ -265,96 +268,80 @@ too much, it can seem to the reader that you are shouting or condescending.
 Images
 -------------------------------------------------------------------------------
 
-When adding an image, save it to the folder :kbd:`_static/lesson_name/`.
-Include it in the document like this:
+* When adding an image, save it to the folder :kbd:`_static/lesson_name/`.
+* Include it in the document like this::
+  
+    .. image:: ../_static/lesson_name/image_file.extension
+       :align: center
 
-::
-
-  .. image:: ../_static/lesson_name/image_file.extension
-     :align: center
-
-Remember to leave a line open above and below the image markup.
+* Remember to leave a line open above and below the image markup.
 
 Internal links
 -------------------------------------------------------------------------------
 
-To create an anchor for a link, write the following line above the place where
-you want the link to point to:
+* To create an anchor for a link, write the following line above the place
+  where you want the link to point to::
 
-::
+    .. _link-name:
 
-  .. _link-name:
+* To create a link, add this line::
 
-To create a link, add this line:
-
-::
-
-  :ref:`Descriptive link text <link-name>`
+    :ref:`Descriptive link text <link-name>`
   
-Remember to leave a line open above and below this line.
+* Remember to leave a line open above and below this line.
 
 External links
 -------------------------------------------------------------------------------
 
-To create an external link, write it out like this:
+* To create an external link, write it out like this::
 
-::
+    `Descriptive link text <link-url>`_
 
-  `Descriptive link text <link-url>`_
-
-Remember to leave a line open above and below this line.
+* Remember to leave a line open above and below this line.
 
 Using monospaced text
 -------------------------------------------------------------------------------
 
-When you are writing text that the user needs to enter, a path name, or the
-name of a database element such as a table or column name, you must write it in
-:kbd:`monospaced text`. For example:
+* When you are writing text that the user needs to enter, a path name, or the
+  name of a database element such as a table or column name, you must write it
+  in :kbd:`monospaced text`. For example::
 
-..
-
-  Enter the following path in the text box: :kbd:`path/to/file`.
+    Enter the following path in the text box: :kbd:`path/to/file`.
 
 Labeling GUI items
 -------------------------------------------------------------------------------
 
-If you are referring to a GUI item, such as a button, you must write its name
-in :guilabel:`the GUI label format`. For example:
+* If you are referring to a GUI item, such as a button, you must write its name
+  in :guilabel:`the GUI label format`. For example::
 
-::
+    To access this tool, click on the :guilabel:`Tool Name` button.
 
-  To access this tool, click on the :guilabel:`Tool Name` button.
-
-This also applies if you are mentioning the name of a tool without requiring
-the user to click a button.
+* This also applies if you are mentioning the name of a tool without requiring
+  the user to click a button.
 
 Menu selections
 -------------------------------------------------------------------------------
 
-If you are guiding a user through menus, you must use the :menuselection:`menu
---> selection --> format`. For example:
+* If you are guiding a user through menus, you must use the
+  :menuselection:`menu --> selection --> format`. For example::
 
-::
-
-  To use the :guilabel:`Tool Name` tool, go to :menuselection:`Plugins --> Tool
-  Type --> Tool Name`.
+    To use the :guilabel:`Tool Name` tool, go to :menuselection:`Plugins -->
+    Tool Type --> Tool Name`.
 
 Adding notes
 -------------------------------------------------------------------------------
 
-You might need to a note in the text, which explains extra details that can't
-easily be made part of the flow of the lesson. This is the markup:
+* You might need to a note in the text, which explains extra details that can't
+  easily be made part of the flow of the lesson. This is the markup::
 
-::
-
-  [Normal paragraph.]
-
-  .. note:: Note text.
-     New line within note.
-
-     New paragraph within note.
-
-  [Unindented text resumes normal paragraph.]
+    [Normal paragraph.]
+  
+    .. note:: Note text.
+       New line within note.
+  
+       New paragraph within note.
+  
+    [Unindented text resumes normal paragraph.]
 
 Adding a sponsorship/authorship note
 -------------------------------------------------------------------------------

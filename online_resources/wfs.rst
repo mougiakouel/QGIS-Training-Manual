@@ -11,48 +11,48 @@ WMS.
 |basic| |FA| Loading a WFS Layer
 -------------------------------------------------------------------------------
 
-Start a new map. This is for demo purposes and won't be saved. Ensure that "on
-the fly" reprojection is switched off.
+* Start a new map. This is for demo purposes and won't be saved.
+* Ensure that "on the fly" reprojection is switched off.
+* Click the :guilabel:`Add WFS Layer` button:
 
-Click the :guilabel:`Add WFS Layer` button:
+  .. image:: ../_static/online_resources/017.png
+     :align: center
 
-.. image:: ../_static/online_resources/017.png
-   :align: center
+* Click the :guilabel:`New` button.
+* In the dialog that appears, enter the :guilabel:`Name` as :kbd:`nsidc.org`
+  and the :guilabel:`URL` as
+  :kbd:`http://nsidc.org/cgi-bin/atlas_south?version=1.1.0`.
 
-This dialog will appear:
+  .. image:: ../_static/online_resources/019.png
+     :align: center
 
-.. image:: ../_static/online_resources/018.png
-   :align: center
+* Click :guilabel:`OK`, and the new connection will appear in your
+  :guilabel:`Server connections`.
+* Click the :guilabel:`Connect`. A list of the available layers will appear:
 
-Click the :guilabel:`New` button. In the dialog that appears, enter the
-:guilabel:`Name` as :kbd:`nsidc.org` and the :guilabel:`URL` as
-:kbd:`http://nsidc.org/cgi-bin/atlas_south?version=1.1.0`.
+  .. image:: ../_static/online_resources/020.png
+     :align: center
 
-.. image:: ../_static/online_resources/019.png
-   :align: center
+* Find the layer :guilabel:`south_poles_wfs`.
+* Click on the layer to select it:
 
-Click :guilabel:`OK`, and the new connection will appear in your
-:guilabel:`Server connections`. Click the :guilabel:`Connect`. A list of the
-available layers will appear:
+  .. image:: ../_static/online_resources/021.png
+     :align: center
 
-.. image:: ../_static/online_resources/020.png
-   :align: center
+* Click :guilabel:`Apply`.
 
-Find the layer :guilabel:`south_poles_wfs` and click on it to select it:
-
-.. image:: ../_static/online_resources/021.png
-   :align: center
-
-Then click :guilabel:`Apply`. It may take a while to load the layer. When it
-has loaded, it will appear in the map. Here it is over the outlines of
-Antarctica (available on the same server, and by the name of
-:guilabel:`antarctica_country_border`):
+It may take a while to load the layer. When it has loaded, it will appear in
+the map. Here it is over the outlines of Antarctica (available on the same
+server, and by the name of :guilabel:`antarctica_country_border`):
 
 .. image:: ../_static/online_resources/022.png
    :align: center
 
-How is this different from having a WMS layer? Well, try opening the
-:guilabel:`south_poles_wfs` layer's attribute table. You should see this:
+How is this different from having a WMS layer? That will become obvious when
+you see the layers' attributes.
+
+* Open the :guilabel:`south_poles_wfs` layer's attribute table. You should see
+  this:
 
 .. image:: ../_static/online_resources/023.png
    :align: center
@@ -63,7 +63,8 @@ can, as well as changing their symbology. Here's an example:
 .. image:: ../_static/online_resources/024.png
    :align: center
 
-Add labels to your layer to take advantage of the attribute data in this layer.
+* Add labels to your layer to take advantage of the attribute data in this
+  layer.
 
 Differences from WMS layers
 ...............................................................................
@@ -96,34 +97,36 @@ South Africa seems a bit wasteful of bandwidth. Depending on your connection,
 this dataset can take several minutes to load.
 
 The alternative is to build the query as a filter before even loading the layer
-from the server. In the :guilabel:`Add WFS Layer ...` dialog, connect to the
-server we used before and you should see the list of available layers.
-Double-click next to the :guilabel:`countries ...` layer in the
-:guilabel:`Filter` field:
+from the server.
 
-.. image:: ../_static/online_resources/025.png
-   :align: center
+* In the :guilabel:`Add WFS Layer ...` dialog, connect to the server we used
+  before and you should see the list of available layers.
+* Double-click next to the :guilabel:`countries ...` layer in the
+  :guilabel:`Filter` field:
 
-In the dialog that appears, build the query :kbd:`"Countryeng" = 'South
-Africa'`:
+  .. image:: ../_static/online_resources/025.png
+     :align: center
 
-.. image:: ../_static/online_resources/026.png
-   :align: center
+* In the dialog that appears, build the query :kbd:`"Countryeng" = 'South
+  Africa'`:
 
-It will appear as the :guilabel:`Filter` value:
+  .. image:: ../_static/online_resources/026.png
+     :align: center
 
-.. image:: ../_static/online_resources/027.png
-   :align: center
+* It will appear as the :guilabel:`Filter` value:
 
-Now click :guilabel:`Apply` with the :guilabel:`countries` layer selected as
-above. Only the country with the :kbd:`Countryeng` value of :kbd:`South Africa`
-will load from that layer:
+  .. image:: ../_static/online_resources/027.png
+     :align: center
 
-.. image:: ../_static/online_resources/028.png
-   :align: center
+* Click :guilabel:`Apply` with the :guilabel:`countries` layer selected as
+  above. Only the country with the :kbd:`Countryeng` value of :kbd:`South
+  Africa` will load from that layer:
 
-If you tried both, you'll notice that this is a lot faster than loading all the
-countries before filtering them!
+  .. image:: ../_static/online_resources/028.png
+     :align: center
+
+You don't have to, but if you tried both methods, you'll notice that this is a
+lot faster than loading all the countries before filtering them!
 
 Notes on WFS availability
 ...............................................................................

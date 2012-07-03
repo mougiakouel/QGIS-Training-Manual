@@ -51,8 +51,10 @@ remember the names and functions of the screen elements.
 |basic| *Shapefiles*
 ...............................................................................
 
-There should be two layers on your map: :guilabel:`places` and
-:guilabel:`streets`.
+There should be two layers on your map:
+
+* :guilabel:`places` and
+* :guilabel:`streets`.
 
 :ref:`Back to text <backlink-vector-load-shapefiles-1>`
 
@@ -81,9 +83,9 @@ nice yet:
 |basic| *Colors*
 ...............................................................................
 
-Verify that the colors are changing as you expect them to change. It is enough
-to change only the :guilabel:`rural` layer for now. An example is below, but
-may look different depending on the color you chose.
+* Verify that the colors are changing as you expect them to change.
+* It is enough to change only the :guilabel:`rural` layer for now. An example
+  is below, but may look different depending on the color you chose.
 
 .. image:: ../_static/symbology/018.png
    :align: center
@@ -106,13 +108,13 @@ Seen together, your rural and urban layers should look more or less like this:
 .. image:: ../_static/symbology/020.png
    :align: center
 
-If you are a Beginner-level user, you may stop here. Use the method above to
-change the colors and styles for all the remaining layers. Try using natural
-colors for the objects. For example, a road should not be red or blue, but can
-be gray or black.
-
-Also feel free to experiment with different :guilabel:`Fill Style` and
-:guilabel:`Border Style` settings for the polygons.
+If you are a Beginner-level user, you may stop here.
+* Use the method above to change the colors and styles for all the remaining
+  layers.
+* Try using natural colors for the objects. For example, a road should not be
+  red or blue, but can be gray or black.
+* Also feel free to experiment with different :guilabel:`Fill Style` and
+  :guilabel:`Border Style` settings for the polygons.
 
 :ref:`Back to text <backlink-symbology-structure-1>`
 
@@ -122,8 +124,8 @@ Also feel free to experiment with different :guilabel:`Fill Style` and
 |moderate| *Symbol Layers*
 ...............................................................................
 
-Customize your layers as you like, but remember that it has to be easy to tell
-different layers apart on the map.
+* Customize your layers as you like, but remember that it has to be easy to
+  tell different layers apart on the map.
 
 Here's an example:
 
@@ -147,21 +149,21 @@ The lowest symbol layer is a broad, solid yellow line. On top of it there is a
 slightly thinner solid dark gray or black line. The symbol layer on top is a
 thin white dashed line.
 
-If your symbol layers resemble the above but you're not getting the result you
-want, check that your symbol levels look something like this:
+* If your symbol layers resemble the above but you're not getting the result
+  you want, check that your symbol levels look something like this:
 
-.. image:: ../_static/symbology/022.png
-   :align: center
+  .. image:: ../_static/symbology/022.png
+     :align: center
 
-Now your symbol should look like this:
+* Now your symbol should look like this:
 
-.. image:: ../_static/symbology/023.png
-   :align: center
+  .. image:: ../_static/symbology/023.png
+     :align: center
 
-Which, on the map, gives you this kind of effect:
+* Which, on the map, gives you this kind of effect:
 
-.. image:: ../_static/symbology/024.png
-   :align: center
+  .. image:: ../_static/symbology/024.png
+     :align: center
 
 :ref:`Back to text <backlink-symbology-levels-1>`
 
@@ -171,14 +173,13 @@ Which, on the map, gives you this kind of effect:
 |hard| *Symbol Levels*
 ...............................................................................
 
-Adjust your symbol levels to these values:
+* Adjust your symbol levels to these values:
 
 .. image:: ../_static/symbology/026.png
    :align: center
 
-Experiment with different values to get different results.
-
-Open your original map again before continuing with the next exercise.
+* Experiment with different values to get different results.
+* Open your original map again before continuing with the next exercise.
 
 :ref:`Back to text <backlink-symbology-levels-2>`
 
@@ -224,15 +225,18 @@ One possible solution has this final product:
 .. image:: ../_static/labels/015.png
    :align: center
 
-To arrive at this result, use the font type :kbd:`Arial` of size :kbd:`10` and
-a :guilabel:`Label distance` of :kbd:`1,5 mm`. In addition, this example uses
-the :guilabel:`Wrap label on character` option:
+To arrive at this result:
 
-.. image:: ../_static/labels/016.png
-   :align: center
+* Use the font type :kbd:`Arial` of size :kbd:`10` and a :guilabel:`Label
+  distance` of :kbd:`1,5 mm`.
+* In addition, this example uses the :guilabel:`Wrap label on character`
+  option:
 
-Enter a :kbd:`space` in this field and click :guilabel:`Apply` to achieve the
-same effect.
+  .. image:: ../_static/labels/016.png
+     :align: center
+
+* Enter a :kbd:`space` in this field and click :guilabel:`Apply` to achieve the
+  same effect.
 
 :ref:`Back to text <backlink-label-tool-1>`
 
@@ -242,19 +246,19 @@ same effect.
 |hard| *Using Data Defined Settings*
 ...............................................................................
 
-Still in edit mode, set the :kbd:`FONT_SIZE` values to whatever you prefer. The
-example uses :kbd:`12` for towns, :kbd:`10` for suburbs and villages, and
-:kbd:`8` for the null entries. (Remember to save changes and exit edit mode.)
+* Still in edit mode, set the :kbd:`FONT_SIZE` values to whatever you prefer.
+  The example uses :kbd:`12` for towns, :kbd:`10` for suburbs and villages, and
+  :kbd:`8` for the null entries.
+* Remember to save changes and exit edit mode.
+* In :guilabel:`Data defined settings`, do this:
 
-In :guilabel:`Data defined settings`, do this:
+  .. image:: ../_static/labels/026.png
+     :align: center
 
-.. image:: ../_static/labels/026.png
-   :align: center
+  Your results, if using the above values, should be this:
 
-Your results, if using the above values, should be this:
-
-.. image:: ../_static/labels/027.png
-   :align: center
+  .. image:: ../_static/labels/027.png
+     :align: center
 
 :ref:`Back to text <backlink-label-data-defined-1>`
 
@@ -267,13 +271,13 @@ Your results, if using the above values, should be this:
 |moderate| *Refine the Classification*
 ...............................................................................
 
-Use the same method as in the first exercise of the lesson to get rid of the
-lines:
+* Use the same method as in the first exercise of the lesson to get rid of the
+  lines:
 
-.. image:: ../_static/classification/027.png
-   :align: center
+  .. image:: ../_static/classification/027.png
+     :align: center
 
-The settings you used may not be the same, but with the values
+The settings you used might not be the same, but with the values
 :guilabel:`Classes` = :kbd:`7` and :guilabel:`Mode` = :guilabel:`Natural Breaks
 (Jenks)` (and using the same colors, of course), the map will look like this:
 
@@ -324,7 +328,7 @@ feature, like this one:
 .. image:: ../_static/create_vector_data/056.png
    :align: center
 
-Undo your edit before continuing with the exercise for the next tool.
+* Undo your edit before continuing with the exercise for the next tool.
 
 :ref:`Back to text <backlink-create-vector-topology-1>`
 
@@ -340,14 +344,13 @@ part on your feature, like this one:
 .. image:: ../_static/create_vector_data/058.png
    :align: center
 
-Note that you first need to select the farm with the selection tool ...
+* Note that you first need to select the farm with the selection tool ...
 
-.. image:: ../_static/create_vector_data/059.png
-   :align: center
+  .. image:: ../_static/create_vector_data/059.png
+     :align: center
 
-... so that QGIS knows which feature to add the new part to.
-
-Undo your edit before continuing with the exercise for the next tool.
+  ... so that QGIS knows which feature to add the new part to.
+* Undo your edit before continuing with the exercise for the next tool.
 
 :ref:`Back to text <backlink-create-vector-topology-2>`
 
@@ -357,21 +360,21 @@ Undo your edit before continuing with the exercise for the next tool.
 |hard| *Merge Features*
 ...............................................................................
 
-Use the feature with the :guilabel:`id` of :kbd:`1237` as the source of your
-attributes (click on its entry in the dialog, then click the :guilabel:`Take
-attributes from selected feature` button):
+* Use the feature with the :guilabel:`id` of :kbd:`1237` as the source of your
+  attributes (click on its entry in the dialog, then click the :guilabel:`Take
+  attributes from selected feature` button):
 
-.. image:: ../_static/create_vector_data/074.png
-   :align: center
+  .. image:: ../_static/create_vector_data/074.png
+     :align: center
 
-Using :guilabel:`Merge Selected Features` will merge the attributes as well as
-the geometries:
+* Using :guilabel:`Merge Selected Features` will merge the attributes as well
+  as the geometries:
 
-.. image:: ../_static/create_vector_data/075.png
-   :align: center
+   .. image:: ../_static/create_vector_data/075.png
+     :align: center
 
-Whereas :guilabel:`Merge Attributes of Selected Features` will keep the
-geometries distinct, but give them the same attributes.
+  Whereas :guilabel:`Merge Attributes of Selected Features` will keep the
+  geometries distinct, but give them the same attributes.
 
 :ref:`Back to text <backlink-create-vector-topology-4>`
 
@@ -383,25 +386,31 @@ geometries distinct, but give them the same attributes.
 
 For the :guilabel:`TYPE`, there is obviously a limited amount of types that a
 road can be, and if you check the attribute table for this layer, you'll see
-that they are predefined. Set the widget to :guilabel:`Unique values` and leave
-:guilabel:`Editable` as :kbd:`False`:
+that they are predefined.
 
-.. image:: ../_static/create_vector_data/030.png
-   :align: center
+* Set the widget to :guilabel:`Unique values` and leave :guilabel:`Editable` as
+  :kbd:`False`:
 
-A road is either a one-way or it isn't, so :guilabel:`ONEWAY` should be a
-:guilabel:`Checkbox`. Looking at the attribute table for :guilabel:`streets`,
-the value for when it's not a one-way seems to be :guilabel:`NULL`, and when it
-is, it's :guilabel:`yes`. Set those values:
+  .. image:: ../_static/create_vector_data/030.png
+     :align: center
 
-.. image:: ../_static/create_vector_data/031.png
-   :align: center
+* A road is either a one-way or it isn't, so :guilabel:`ONEWAY` should be a
+  :guilabel:`Checkbox`.
 
-If you use the :guilabel:`Identify` tool on a street now while edit mode is
-active, the dialog you get should look like this:
+Looking at the attribute table for :guilabel:`streets`, the value for when it's
+not a one-way seems to be :guilabel:`NULL`, and when it is, it's
+:guilabel:`yes`.
 
-.. image:: ../_static/create_vector_data/032.png
-   :align: center
+* Set those values:
+
+  .. image:: ../_static/create_vector_data/031.png
+     :align: center
+
+* If you use the :guilabel:`Identify` tool on a street now while edit mode is
+  active, the dialog you get should look like this:
+
+  .. image:: ../_static/create_vector_data/032.png
+     :align: center
 
 :ref:`Back to text <backlink-create-vector-forms-1>`
 
@@ -419,13 +428,12 @@ Your layer should now have these roads:
 .. image:: ../_static/vector_analysis/017.png
    :align: center
 
-Save this new layer (the same way you did before) under
-:kbd:`exercise_data/residential_development/`, as :kbd:`important_roads.shp`.
-Once the new layer has been added to your map, remove the old layer.
-
-If for some reason it gives you an error message saying that it can't add the
-layer to the map (this can happen), remember that you can add the layer
-yourself by using the :guilabel:`Add Vector Layer` button as you did before.
+* Save this new layer (the same way you did before) under
+  :kbd:`exercise_data/residential_development/`, as :kbd:`important_roads.shp`.
+* Once the new layer has been added to your map, remove the old layer.
+* If for some reason it gives you an error message saying that it can't add the
+  layer to the map (this can happen), remember that you can add the layer
+  yourself by using the :guilabel:`Add Vector Layer` button as you did before.
 
 :ref:`Back to text <backlink-vector-analysis-basic-1>`
 
@@ -434,29 +442,29 @@ yourself by using the :guilabel:`Add Vector Layer` button as you did before.
 |basic| *Distance from High Schools*
 ...............................................................................
 
-Your buffer dialog should look like this:
+* Your buffer dialog should look like this:
 
-.. image:: ../_static/vector_analysis/024.png
-   :align: center
+  .. image:: ../_static/vector_analysis/024.png
+     :align: center
 
-The :guilabel:`Buffer distance` is :kbd:`10000` meters (i.e., :kbd:`10`
-kilometers).
+  The :guilabel:`Buffer distance` is :kbd:`10000` meters (i.e., :kbd:`10`
+  kilometers).
 
-The :guilabel:`Segments to approximate` value is set to :kbd:`20`. This is
-optional, but it's recommended, because it makes the output buffers look
-smoother.  Compare this:
+* The :guilabel:`Segments to approximate` value is set to :kbd:`20`. This is
+  optional, but it's recommended, because it makes the output buffers look
+  smoother.  Compare this:
 
-.. image:: ../_static/vector_analysis/025.png
-   :align: center
+  .. image:: ../_static/vector_analysis/025.png
+     :align: center
 
-To this:
+  To this:
 
-.. image:: ../_static/vector_analysis/026.png
-   :align: center
+  .. image:: ../_static/vector_analysis/026.png
+     :align: center
 
-The red circle is the buffer with :guilabel:`Segments to approximate` set to
-:kbd:`20`; the gray circle on top of it is the buffer with :guilabel:`Segments
-to approximate` set to :kbd:`5`.
+  The red circle is the buffer with :guilabel:`Segments to approximate` set to
+  :kbd:`20`; the gray circle on top of it is the buffer with
+  :guilabel:`Segments to approximate` set to :kbd:`5`.
 
 :ref:`Back to text <backlink-vector-analysis-basic-2>`
 
@@ -469,10 +477,10 @@ to approximate` set to :kbd:`5`.
 |basic| *Calculate Aspect*
 ...............................................................................
 
-Set your :guilabel:`DEM (Terrain analysis)` dialog up like this:
+* Set your :guilabel:`DEM (Terrain analysis)` dialog up like this:
 
-.. image:: ../_static/rasters/026.png
-   :align: center
+  .. image:: ../_static/rasters/026.png
+     :align: center
 
 Your result:
 
@@ -487,25 +495,25 @@ Your result:
 |moderate| *Calculate Slope (less than 2 and 5 degrees)*
 ...............................................................................
 
-Set your :guilabel:`Raster calculator` dialog up like this:
+* Set your :guilabel:`Raster calculator` dialog up like this:
 
-.. image:: ../_static/rasters/031.png
-   :align: center
+  .. image:: ../_static/rasters/031.png
+     :align: center
 
-For the 5 degree version, replace the :kbd:`2` in the expression and file name
-with :kbd:`5`.
+* For the 5 degree version, replace the :kbd:`2` in the expression and file
+  name with :kbd:`5`.
 
 Your results:
 
-- 2 degrees:
+* 2 degrees:
 
-.. image:: ../_static/rasters/032.png
-   :align: center
+  .. image:: ../_static/rasters/032.png
+     :align: center
 
-- 5 degrees:
+* 5 degrees:
 
-.. image:: ../_static/rasters/033.png
-   :align: center
+  .. image:: ../_static/rasters/033.png
+     :align: center
 
 :ref:`Back to text <backlink-raster-analysis-2>`
 
@@ -518,18 +526,20 @@ Your results:
 |moderate| *Raster to Vector*
 ...............................................................................
 
-First, open the :guilabel:`Query` dialog by right-clicking on the
-:guilabel:`all_terrain` layer in the :guilabel:`Layers list`. Then build the
-query :kbd:`"suitable" = 1`. Clicking :guilabel:`OK` will filter out all the
-polygons where this condition isn't met. When viewed over the original raster,
-the areas should overlap perfectly:
+* Open the :guilabel:`Query` dialog by right-clicking on the
+  :guilabel:`all_terrain` layer in the :guilabel:`Layers list`.
+* Then build the query :kbd:`"suitable" = 1`.
+* Click :guilabel:`OK` to filter out all the polygons where this condition
+  isn't met.
+
+When viewed over the original raster, the areas should overlap perfectly:
 
 .. image:: ../_static/complete_analysis/002.png
    :align: center
 
-You can save this layer by right-clicking on the :guilabel:`all_terrain` layer
-in the :guilabel:`Layers list` and choosing :guilabel:`Save As...`, then
-continue as per the instructions.
+* You can save this layer by right-clicking on the :guilabel:`all_terrain`
+  layer in the :guilabel:`Layers list` and choosing :guilabel:`Save As...`,
+  then continue as per the instructions.
 
 :ref:`Back to text <backlink-complete-analysis-1>`
 
@@ -578,38 +588,47 @@ Therefore, you can run an *interior buffer* of 350 meters on your existing
 function, whatever remains of the original layer will represent areas where
 there is suitable terrain for 350 meters beyond.
 
-To demonstrate: if you go to :menuselection:`Vector --> Geoprocessing Tools -->
-Buffer(s)`, you get the Buffer(s) dialog. Set it up like this:
+To demonstrate:
 
-.. image:: ../_static/complete_analysis/009.png
-   :align: center
+* Go to :menuselection:`Vector --> Geoprocessing Tools --> Buffer(s)` to open
+  the Buffer(s) dialog.
+* Set it up like this:
 
-Use the :guilabel:`suitable_terrain` layer with :kbd:`10` segments and a buffer
-distance of :kbd:`-350`. (The distance is automatically in meters because your
-map is using a projected CRS.) Save the output in
-:kbd:`exercise_data/residential_development/` as
-:kbd:`suitable_terrain_continuous350m.shp`.
+  .. image:: ../_static/complete_analysis/009.png
+     :align: center
+
+* Use the :guilabel:`suitable_terrain` layer with :kbd:`10` segments and a
+  buffer distance of :kbd:`-350`. (The distance is automatically in meters
+  because your map is using a projected CRS.)
+* Save the output in :kbd:`exercise_data/residential_development/` as
+  :kbd:`suitable_terrain_continuous350m.shp`.
 
 Your results will look like this:
 
 .. image:: ../_static/complete_analysis/010.png
    :align: center
 
-Now use the "Select by Location" tool (:menuselection:`Vector --> Research
-Tools --> Select by location`), set up like this:
+* Now use the :guilabel:`Select by Location` tool (:menuselection:`Vector -->
+  Research Tools --> Select by location`).
+* Set up like this:
 
-.. image:: ../_static/complete_analysis/011.png
-   :align: center
+  .. image:: ../_static/complete_analysis/011.png
+     :align: center
 
-Select features in :guilabel:`new_solution` that intersect features in
-:guilabel:`suitable_terrain_continuous350m.shp`. This is the result:
+* Select features in :guilabel:`new_solution` that intersect features in
+  :guilabel:`suitable_terrain_continuous350m.shp`.
+
+This is the result:
 
 .. image:: ../_static/complete_analysis/012.png
    :align: center
 
-The yellow farms are selected. Save the selection under
-:kbd:`exercise_data/residential_development/` as :kbd:`final_answer.shp`. The
-farms that meet the revised criteria are here:
+The yellow farms are selected.
+
+* Save the selection under :kbd:`exercise_data/residential_development/` as
+  :kbd:`final_answer.shp`.
+
+The farms that meet the revised criteria are here:
 
 .. image:: ../_static/complete_analysis/013.png
    :align: center
@@ -638,17 +657,17 @@ Your map should look like this:
 |moderate| *Adding a New WMS Server*
 ...............................................................................
 
-Use the same approach as before to add the new server and the appropriate
-layer as hosted on that server:
+* Use the same approach as before to add the new server and the appropriate
+  layer as hosted on that server:
 
-.. image:: ../_static/online_resources/013.png
-   :align: center
+  .. image:: ../_static/online_resources/013.png
+     :align: center
 
-.. image:: ../_static/online_resources/014.png
-   :align: center
+  .. image:: ../_static/online_resources/014.png
+     :align: center
 
-If you zoom into the Swellendam area, you'll notice that this dataset has a low
-resolution:
+* If you zoom into the Swellendam area, you'll notice that this dataset has a
+  low resolution:
 
 .. image:: ../_static/online_resources/015.png
    :align: center
