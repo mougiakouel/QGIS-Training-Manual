@@ -109,6 +109,7 @@ Seen together, your rural and urban layers should look more or less like this:
    :align: center
 
 If you are a Beginner-level user, you may stop here.
+
 * Use the method above to change the colors and styles for all the remaining
   layers.
 * Try using natural colors for the objects. For example, a road should not be
