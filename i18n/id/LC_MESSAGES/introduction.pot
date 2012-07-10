@@ -1,0 +1,435 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, Linfiniti Consulting CC
+# This file is distributed under the same license as the The Free Quantum GIS Training Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The Free Quantum GIS Training Manual 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-10 11:51\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../introduction/index.rst:3
+# b74e74c26a4d408dad42ad3f3b2da3ec
+msgid "|MOD| The Interface"
+msgstr ""
+
+#: ../../../introduction/intro.rst:2
+# da47d2eaaa114eeebc7882cd1c9c4594
+msgid "|LS| A Brief Introduction"
+msgstr ""
+
+#: ../../../introduction/intro.rst:4
+# 64546e5c16644cf384cf8487443984a4
+msgid "Welcome to our course! Over the next few days, we'll be showing you how to use QGIS easily and efficiently. If you're new to GIS, we'll tell you what you need to get started. If you're an experienced user, you'll see how QGIS fulfills all the functions you expect from a GIS program, and more!"
+msgstr ""
+
+#: ../../../introduction/intro.rst:10
+# 2daf254844594777ae3ec6a668f2f8f9
+msgid "In this module we introduce the QGIS project itself, as well as explaining the user interface."
+msgstr ""
+
+#: ../../../introduction/intro.rst:13
+# 9d294dd68d884eb6a2099f9a0fa28d2d
+msgid "After completing this section, you will be able to correctly identify the main elements of the screen in QGIS and know what each of them does, and load a shapefile into QGIS."
+msgstr ""
+
+#: ../../../introduction/intro.rst:20
+# 350234d523dc4157b073bb436b8f40a9
+msgid "This course includes instructions on adding, deleting and altering GIS datasets. We have provided training datasets for this purpose. Before using the techniques described here on your own data, always ensure you have proper backups!"
+msgstr ""
+
+#: ../../../introduction/intro.rst:26
+# 107b3fe88b7a4f5794367c7956ecc0fd
+msgid "How to use this tutorial"
+msgstr ""
+
+#: ../../../introduction/intro.rst:28
+# 0c63ac604be24f4db9b38c4f988fc60a
+msgid "Any text :guilabel:`that looks like this` refers to something on the screen that you can click on."
+msgstr ""
+
+#: ../../../introduction/intro.rst:31
+# a64fbff566ac42518c26b9623d79cef6
+msgid "Text that :menuselection:`looks --> like --> this` directs you through menus."
+msgstr ""
+
+#: ../../../introduction/intro.rst:33
+# 44e72bd2199c4f2ea2220105776700a7
+msgid ":kbd:`This kind of text` refers to something you can type, such as a command, path, or file name."
+msgstr ""
+
+#: ../../../introduction/intro.rst:37
+# 8408b9b942144dcf9f9b4242cc2dc811
+msgid "Tiered course objectives"
+msgstr ""
+
+#: ../../../introduction/intro.rst:39
+# 3bb64bb318ad46849712029aeac4a57c
+msgid "This course caters to different user experience levels. Depending on which category you consider yourself to be in, you can expect a different set of course outcomes. Each category contains information that is essential for the next one, so it's important to do all exercises that are at or below your level of experience."
+msgstr ""
+
+#: ../../../introduction/intro.rst:46
+# 3df2891b85784578bd95835540de2cce
+msgid "|basic| Basic"
+msgstr ""
+
+#: ../../../introduction/intro.rst:48
+# 83e7c0474671413d84ee3bf683c8e784
+msgid "In this category, the course assumes that you have little or no prior experience with theoretical GIS knowledge or the operation of a GIS program."
+msgstr ""
+
+#: ../../../introduction/intro.rst:51
+# 8234b5480e11483488f5c26068e88847
+msgid "Limited theoretical background will be provided to explain the purpose of an action you will be performing in the program, but the emphasis is on learning by doing."
+msgstr ""
+
+#: ../../../introduction/intro.rst:55
+# 35f5f6f5c38347c697d6c4c2a844ea06
+msgid "When you complete the course, you will have a better concept of the possibilities of GIS, and how to harness their power via QGIS."
+msgstr ""
+
+#: ../../../introduction/intro.rst:59
+# 4d97f1f060a8452984c802bb012f4708
+msgid "|moderate| Intermediate"
+msgstr ""
+
+#: ../../../introduction/intro.rst:61
+# 2575fd5c6075449ea355d6b08ca7fa2a
+msgid "In this category, it is assumed that you have working knowledge and experience of the everyday uses of GIS."
+msgstr ""
+
+#: ../../../introduction/intro.rst:64
+# cc4e877fea43491a92f0f6e1db53f511
+msgid "Following the instructions for the beginner level will provide you with familiar ground, as well as to make you aware of the cases where QGIS does things slightly differently from other software you may be used to. You will also learn how to use analysis functions in QGIS."
+msgstr ""
+
+#: ../../../introduction/intro.rst:69
+# ccdc8ad411324ed48fabd89cc40bc706
+msgid "When you complete the course, you should be comfortable with using QGIS for all of the functions you usually need from a GIS for everyday use."
+msgstr ""
+
+#: ../../../introduction/intro.rst:73
+# 97c16f6768e749d69a81599e89ed16dc
+msgid "|hard| Advanced"
+msgstr ""
+
+#: ../../../introduction/intro.rst:75
+# a6fbd488f55842a9b61175d281f5cb7a
+msgid "In this category, the assumption is that you are experienced with GIS, have knowledge of and experience with spatial databases, using data on a remote server, perhaps writing scripts for analysis purposes, etc."
+msgstr ""
+
+#: ../../../introduction/intro.rst:79
+# 01c537b5ed964a20851d6c78fd45539e
+msgid "Following the instructions for the other two levels will familiarize you with the approach that the QGIS interface follows, and will ensure that you know how to access the basic functions that you need. You will also be shown how to make use of QGIS' plugin system, database access system, and so on."
+msgstr ""
+
+#: ../../../introduction/intro.rst:84
+# dbbf7fd187e1474ea56d186aad72da75
+msgid "When you complete the course, you should be well-acquainted with the everyday operation of QGIS, as well as its more advanced functions."
+msgstr ""
+
+#: ../../../introduction/intro.rst:89
+# 593c155bd4ff402c84d491471f3fdb38
+msgid "Why QGIS?"
+msgstr ""
+
+#: ../../../introduction/intro.rst:91
+# 23547a8bb4a64ae68ea7b958230389d4
+msgid "As information becomes increasingly spatially aware, there is no shortage of tools able to fulfill some or all commonly used GIS functions. Why should anyone be using QGIS over some other GIS software package?"
+msgstr ""
+
+#: ../../../introduction/intro.rst:95
+# 6bb4b3cd95a24020a7bb512cc5f5f008
+msgid "Here are only some of the reasons:"
+msgstr ""
+
+#: ../../../introduction/intro.rst:97
+# 8cb9544431fc44e19c1f5e678b1155ea
+msgid "*It's free, as in lunch.* Installing and using the QGIS program costs you a grand total of zero money. No initial fee, no recurring fee, nothing."
+msgstr ""
+
+#: ../../../introduction/intro.rst:100
+# ab00abec1eb548eba302f48a779af5b5
+msgid "*It's free, as in liberty.* If you need extra functionality in QGIS, you can do more than just hope it will be included in the next release. You can sponsor the development of a feature, or add it yourself if you are familiar with programming."
+msgstr ""
+
+#: ../../../introduction/intro.rst:105
+# fc3955a64d6d4e13b74395cd9b73a285
+msgid "*It's constantly developing.* Because anyone can add new features and improve on existing ones, QGIS never stagnates. The development of a new tool can happen as quickly as you need it to."
+msgstr ""
+
+#: ../../../introduction/intro.rst:109
+# a6393f0dcc374510af004e96f4b35048
+msgid "*Extensive help and documentation is available.* If you're stuck with anything, you can turn to the extensive documentation, your fellow QGIS users, or even the developers."
+msgstr ""
+
+#: ../../../introduction/intro.rst:113
+# 17b11192737049649a450511eb554d9c
+msgid "*Cross-platform.* QGIS can be installed on MacOS, Windows and Linux."
+msgstr ""
+
+#: ../../../introduction/intro.rst:115
+# d176e9ff9cc048fbb3949e6db2d7a90a
+msgid "Now that you know why you want to use QGIS, we can show you how. The first lesson will guide you in creating your first QGIS map."
+msgstr ""
+
+#: ../../../introduction/overview.rst:2
+# d435a792eb9049799b5dd0130487238e
+msgid "|LS| An Overview of the Interface"
+msgstr ""
+
+#: ../../../introduction/overview.rst:4
+# 6ce84b12792c4161a1408119f3913845
+msgid "We will explore the QGIS user interface so that you are familiar with the menus, toolbars, map canvas and layers list that form the basic structure of the interface."
+msgstr ""
+
+#: ../../../introduction/overview.rst:8
+# 80453d3ae4514ace8337713c78f982fe
+msgid "**The goal for this lesson:** To understand the basics of the QGIS user interface."
+msgstr ""
+
+#: ../../../introduction/overview.rst:12
+# 5d164267be5e49849d8448afef8c5cc1
+msgid "|basic| |TY|: The Basics"
+msgstr ""
+
+#: ../../../introduction/overview.rst:17
+# 5949c1ed2d5e49048cb213e73da5d678
+msgid "The elements identified in the figure above are:"
+msgstr ""
+
+#: ../../../introduction/overview.rst:19
+# 02157937d7e94b44833b792405870b5b
+msgid "Layers list"
+msgstr ""
+
+#: ../../../introduction/overview.rst:20
+# d7d8211e1081486796fec6181221b9dd
+msgid "Toolbars"
+msgstr ""
+
+#: ../../../introduction/overview.rst:21
+# 842b2458d54347c68a562131fe6a6d75
+msgid "Map canvas"
+msgstr ""
+
+#: ../../../introduction/overview.rst:22
+# 0f1f315a119d4dd49da8d267882c4f12
+msgid "Status bar"
+msgstr ""
+
+#: ../../../introduction/overview.rst:28
+# 146ecad34e29432c8759fee127b74a29
+msgid "|basic| The Layers List"
+msgstr ""
+
+#: ../../../introduction/overview.rst:30
+# 7324f3cea9be4deea9daf51b3daf8e83
+msgid "In the Layers list, you can see a list, at any time, of all the layers available to you."
+msgstr ""
+
+#: ../../../introduction/overview.rst:33
+# 7225893dd8d743c5a260ca779f8db4c6
+msgid "Expanding collapsed items (by clicking the arrow or plus symbol beside them) will provide you with more information on the layer's current appearance."
+msgstr ""
+
+#: ../../../introduction/overview.rst:36
+# 54e3deae7692430c96d97bfa1d18a139
+msgid "Right-clicking on a layer will give you a menu with lots of extra options. You will be using some of them before long, so take a look around!"
+msgstr ""
+
+#: ../../../introduction/overview.rst:39
+# 6c68c98b12e54db0aa4e55d960151d56
+msgid "Some versions of QGIS have a separate :guilabel:`Control rendering order` checkbox just underneath the Layers list. Don't worry if you can't see it. If it is present, ensure that it's checked for now."
+msgstr ""
+
+#: ../../../introduction/overview.rst:43
+# 647ac1941a2a4dd3851c9ff5a1284679
+msgid "A vector layer is a dataset, usually of a specific kind of object, such as roads, trees, etc. A vector layer can consist of either points, lines or polygons."
+msgstr ""
+
+#: ../../../introduction/overview.rst:48
+# cf5a7f3ba09242c9af1b06195243a94f
+msgid "|basic| Toolbars"
+msgstr ""
+
+#: ../../../introduction/overview.rst:50
+# 968d94421bae4bc681e35a71ac8a1d7e
+msgid "Your most oft-used sets of tools can be turned into toolbars for basic access. For example, the File toolbar allows you to save, load, print, and start a new project. You can easily customize the interface to see only the tools you use most often, adding or removing toolbars as necessary via the :menuselection:`View --> Toolbars` menu."
+msgstr ""
+
+#: ../../../introduction/overview.rst:56
+# 6067fe2946a34146b8452279f6ee6e55
+msgid "Even if they are not visible in a toolbar, all of your tools will remain accessible via the menus. For example, if you remove the :guilabel:`File` toolbar (which contains the :guilabel:`Save` button), you can still save your map by clicking on the :guilabel:`File` menu and then clicking on :guilabel:`Save`."
+msgstr ""
+
+#: ../../../introduction/overview.rst:63
+# 4674c25a94fe45da8e5e7312475a59da
+msgid "|basic| The Map Canvas"
+msgstr ""
+
+#: ../../../introduction/overview.rst:65
+# 0f459aec9a30474a8c69f497a3078719
+msgid "This is where the map itself is displayed."
+msgstr ""
+
+#: ../../../introduction/overview.rst:68
+# 3fedebeadb2847e3af864d6741100c29
+msgid "|basic| The Status Bar"
+msgstr ""
+
+#: ../../../introduction/overview.rst:70
+# d915ada5eeb24b939743e5187358c75c
+msgid "Shows you information about the current map. Also allows you to adjust the map scale and see the mouse cursor's coordinates on the map."
+msgstr ""
+
+#: ../../../introduction/overview.rst:77
+# 449cfffc706d4ac9bdf7cde902dad0be
+msgid "|basic| |TY| 1"
+msgstr ""
+
+#: ../../../introduction/overview.rst:79
+# c06985fed5074ac1b9a006f5ea1cf3ce
+msgid "Try to identify the four elements listed above on your own screen, without referring to the diagram above. See if you can identify their names and functions. You will become more familiar with these elements as you use them in the coming days."
+msgstr ""
+
+#: ../../../introduction/overview.rst:84
+# b17ab0df8f394c34871ea7af82673cad
+msgid ":ref:`Check your results <interface-overview-1>`"
+msgstr ""
+
+#: ../../../introduction/overview.rst:90
+# 747c3a4e9b8b428dae2295ca9d741d16
+msgid "|basic| |TY| 2"
+msgstr ""
+
+#: ../../../introduction/overview.rst:92
+# 8c314e097f194a09899a908f6845755a
+msgid "Try to find each of these tools on your screen. What is their purpose?"
+msgstr ""
+
+#: ../../../introduction/overview.rst:109
+# 6cce7f9468384616acbb8df08b2df087
+msgid "If any of these tools is not visible on the screen, try enabling some toolbars that are currently hidden. Also keep in mind that if there isn't enough space on the screen, a toolbar may be shortened by hiding some of its tools. You can see the hidden tools by clicking on the double right arrow button in any such collapsed toolbar. You can see a tooltip with the name of any tool by holding your mouse over the tool for a while."
+msgstr ""
+
+#: ../../../introduction/overview.rst:116
+# e3cc78cdd44b4c99ad80af34c938fb7d
+msgid ":ref:`Check your results <interface-overview-2>`"
+msgstr ""
+
+#: ../../../introduction/overview.rst:119
+#: ../../../introduction/preparation.rst:64
+# e34f2695190a48d2b9d2285407b271ba
+# f1e2253f16144157b5ad61a77b5de3f7
+msgid "|WN|"
+msgstr ""
+
+#: ../../../introduction/overview.rst:121
+# 1a7b224e41ef42fdbc3345395e6d340f
+msgid "Now you've seen how the QGIS interface works, you can use the tools available to you and start improving on your map! This is the topic of the next lesson."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:2
+# 021cdace842b4f5c8ddbbad296e8914d
+msgid "|LS| Adding your first layer"
+msgstr ""
+
+#: ../../../introduction/preparation.rst:4
+# 556ffad8a64247be95ddb5f23697fbcc
+msgid "We will start the application, and create a basic map to use for examples and exercises."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:7
+# 648f713c4dbb48e6b140511943515ac0
+msgid "**The goal for this lesson:** To get started with an example map."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:9
+# 25510b49759e40b98ef5a3969a7ac9b2
+msgid "Before starting this exercise, QGIS must be installed on your computer."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:12
+# 5d88caf820ca4a108e6fea03b31fc86a
+msgid "Launch QGIS from its desktop shortcut, menu item, etc., depending on how you configured its installation."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:15
+# 7735d02a6c3f4101bf804ed662d33d42
+msgid "The screenshots for this course were taken in QGIS 1.8 running on Ubuntu 11.10 and Windows XP. Depending on your setup, the screens you encounter may well appear somewhat different. However, all the same buttons will still be available, and the instructions will work on any OS. You will need QGIS 1.8 (the latest version at time of writing) to use this course."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:21
+# 27cd633f7e8e4b528bf75cde27a49487
+msgid "Let's get started right away!"
+msgstr ""
+
+#: ../../../introduction/preparation.rst:26
+# 8ba368b2707a463881d4244cb0707afc
+msgid "|basic| |FA| Prepare a map"
+msgstr ""
+
+#: ../../../introduction/preparation.rst:28
+# e3ea1aec53ae4ac581d9b02bf65b4a77
+msgid "Open QGIS. You will have a new, blank map."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:30
+# d2bb46b340cc48e4bf52410a722213b6
+msgid "Look for the :guilabel:`Add Vector Layer` button:"
+msgstr ""
+
+#: ../../../introduction/preparation.rst:35
+# c94136585de44422b53fe6802f182507
+msgid "Click on it to open the following dialog:"
+msgstr ""
+
+#: ../../../introduction/preparation.rst:40
+# deded1806ccc46368692f9badbb420de
+msgid "Click on the :guilabel:`Browse` button and navigate to the file :kbd:`exercise_data/streets.shp` (in your course directory). With this file selected, click :guilabel:`Open`. You will see the original dialog, but with the file path filled in. Click :guilabel:`Open` here as well. The data you specified will now load."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:46
+# 2e742c70f04749eab452a312aa4f8beb
+msgid "Congratulations! You now have a basic map. Now would be a good time to save your work."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:49
+# 37445099dc7648bba7b8382a6cbf091d
+msgid "Click on the :guilabel:`Save As` button:"
+msgstr ""
+
+#: ../../../introduction/preparation.rst:54
+# bbb2b00c08d74c15b546ff4dcad95dca
+msgid "Save the map under :kbd:`exercise_data/` and call it :kbd:`basic_map.qgs`."
+msgstr ""
+
+#: ../../../introduction/preparation.rst:56
+# 57bfa3817cf14b0ca9c2db4700322a6c
+msgid ":ref:`Check your results <interface-preparation-1>`"
+msgstr ""
+
+#: ../../../introduction/preparation.rst:59
+# 5c7bfed8e11c4705b217dcc178685e76
+msgid "|IC|"
+msgstr ""
+
+#: ../../../introduction/preparation.rst:61
+# 4f65fae5ec964accba0155e4de4fb0ea
+msgid "You've learned how to add a layer and create a basic map!"
+msgstr ""
+
+#: ../../../introduction/preparation.rst:66
+# 3831dc9cb710461e88a1e678252a5f6a
+msgid "Now you're familiar with the function of the :guilabel:`Add Vector Layer` button, but what about all the others? How does this interface work? Before we go on with the more involved stuff, let's first take a good look at the general layout of the QGIS interface. This is the topic of the next lesson."
+msgstr ""
+

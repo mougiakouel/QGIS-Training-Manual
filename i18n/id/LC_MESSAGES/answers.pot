@@ -1,0 +1,1026 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, Linfiniti Consulting CC
+# This file is distributed under the same license as the The Free Quantum GIS Training Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The Free Quantum GIS Training Manual 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-10 11:51\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../answers/answers.rst:2
+# b3f511b9dbd94ecd985bafdf997adb3b
+msgid "Answer Sheet"
+msgstr ""
+
+#: ../../../answers/answers.rst:5
+# f6391681e7054cd4ad604318e088ad13
+msgid "|RF| *Adding Your First Layer*"
+msgstr ""
+
+#: ../../../answers/answers.rst:10
+# 30753d75e7584204b038d2addc99f79b
+msgid "|basic| *Preparation*"
+msgstr ""
+
+#: ../../../answers/answers.rst:12
+# 363116dd4c0f4035bea0689f9f405d49
+msgid "You should see a lot of lines, symbolizing roads. All these lines are in the vector layer that you just loaded to create a basic map."
+msgstr ""
+
+#: ../../../answers/answers.rst:15
+# 9ca809f33e904f529cacde62ce676122
+msgid ":ref:`Back to text <backlink-interface-preparation-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:19
+# f56997eb039f441d8ea81c1f45a8b514
+msgid "|RF| *An Overview of the Interface*"
+msgstr ""
+
+#: ../../../answers/answers.rst:24
+# 228af54a43ea46c4bcea2fd527fc1182
+msgid "|basic| *Overview* (Part 1)"
+msgstr ""
+
+#: ../../../answers/answers.rst:26
+# 3d6808ed3457490980e0cee0114f9489
+msgid "Refer back to the image showing the interface layout and check that you remember the names and functions of the screen elements."
+msgstr ""
+
+#: ../../../answers/answers.rst:29
+# 596df648291840a4859f932ea0edf977
+msgid ":ref:`Back to text <backlink-interface-overview-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:35
+# 6f735c2e5dfc4ef8b2af7888b0486dbf
+msgid "|basic| *Overview* (Part 2)"
+msgstr ""
+
+#: ../../../answers/answers.rst:37
+# 70bb34e2b36041aa8376e0e637ab2536
+msgid ":guilabel:`Save as`"
+msgstr ""
+
+#: ../../../answers/answers.rst:38
+# 00bf98a6e75d41198e65de91fec9a547
+msgid ":guilabel:`Zoom to layer`"
+msgstr ""
+
+#: ../../../answers/answers.rst:39
+# 4cceab8eddd44ebf8120bc691590d2b8
+msgid ":guilabel:`Help`"
+msgstr ""
+
+#: ../../../answers/answers.rst:40
+# 2d9dccc5f7124d088b92dd3966e08db0
+msgid ":guilabel:`Rendering on/off`"
+msgstr ""
+
+#: ../../../answers/answers.rst:41
+# c09eaf20f0c64164af2e79a226077925
+msgid ":guilabel:`Measure line`"
+msgstr ""
+
+#: ../../../answers/answers.rst:43
+# d48a21ec1c494fb28fd73b9a4ce9e964
+msgid ":ref:`Back to text <backlink-interface-overview-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:47
+# 71bff2fba7ff43aeb0d24c84e369ea07
+msgid "|RF| *Working with Vector Data*"
+msgstr ""
+
+#: ../../../answers/answers.rst:52
+# a689a85d30834436a7226ce37f81c250
+msgid "|basic| *Shapefiles*"
+msgstr ""
+
+#: ../../../answers/answers.rst:54
+# 3b874adb8f9245ee8cb57a885df39a06
+msgid "There should be two layers on your map:"
+msgstr ""
+
+#: ../../../answers/answers.rst:56
+# a6b49e9d8c024e41ba4f5d489fb9bc9e
+msgid ":guilabel:`places` and"
+msgstr ""
+
+#: ../../../answers/answers.rst:57
+# 57051fba43c546dd891b386407d9ad48
+msgid ":guilabel:`streets`."
+msgstr ""
+
+#: ../../../answers/answers.rst:59
+# 0c7f90c8cff741e29d7cf0b2b1234a71
+msgid ":ref:`Back to text <backlink-vector-load-shapefiles-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:65
+# 7359cac088ce4751a4b8247ba9054653
+msgid "|basic| *Databases*"
+msgstr ""
+
+#: ../../../answers/answers.rst:67
+# 8b4f5b9a647e4bacbe772b3c0e8e45f0
+msgid "All the vector layers should be loaded into the map. It probably won't look nice yet:"
+msgstr ""
+
+#: ../../../answers/answers.rst:73
+# a42f139225a94db9968eeef83de188ca
+msgid "(We'll fix the ugly colors later.)"
+msgstr ""
+
+#: ../../../answers/answers.rst:75
+# e68828153e214f879261d6b2b5f53641
+msgid ":ref:`Back to text <backlink-vector-load-from-database-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:79
+# 70cd3e3b251342989c553f8ffe54e3c5
+msgid "|RF| *Symbology*"
+msgstr ""
+
+#: ../../../answers/answers.rst:84
+# be845073883941eda14ca3dd2bc1c5b2
+msgid "|basic| *Colors*"
+msgstr ""
+
+#: ../../../answers/answers.rst:86
+# c5a354771f8c427c912685465ef1da53
+msgid "Verify that the colors are changing as you expect them to change."
+msgstr ""
+
+#: ../../../answers/answers.rst:87
+# ce58380202944579a254013d42f1120e
+msgid "It is enough to change only the :guilabel:`rural` layer for now. An example is below, but may look different depending on the color you chose."
+msgstr ""
+
+#: ../../../answers/answers.rst:93
+# 3c06d96f671d4a969d77f417f5345e72
+msgid "If you want to work on only one layer at a time and don't want the other layers to distract you, you can hide a layer by clicking in the check box next to its name in the Layers list. If the box is blank, then the layer is hidden."
+msgstr ""
+
+#: ../../../answers/answers.rst:98
+# 4fb71c3fe55d448e9f08326b7f3828ab
+msgid ":ref:`Back to text <backlink-symbology-colors-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:104
+# b9a9af2c86e24ae384ebeeb4466c1d81
+msgid "|basic| *Symbol Structure*"
+msgstr ""
+
+#: ../../../answers/answers.rst:106
+# 14eb08e30696402c8f40a2364e34337c
+msgid "Seen together, your rural and urban layers should look more or less like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:111
+# f9fc337fbc4e4ed5a9f4f11c74ea61d6
+msgid "If you are a Beginner-level user, you may stop here."
+msgstr ""
+
+#: ../../../answers/answers.rst:113
+# 978381f14aa141e5a3d4f79325191478
+msgid "Use the method above to change the colors and styles for all the remaining layers."
+msgstr ""
+
+#: ../../../answers/answers.rst:115
+# 261acc33b7694b63b4734797a7047b5e
+msgid "Try using natural colors for the objects. For example, a road should not be red or blue, but can be gray or black."
+msgstr ""
+
+#: ../../../answers/answers.rst:117
+# 05a084852829431f99e5ad5d9562d06a
+msgid "Also feel free to experiment with different :guilabel:`Fill Style` and :guilabel:`Border Style` settings for the polygons."
+msgstr ""
+
+#: ../../../answers/answers.rst:120
+# 5566b69e66a34e06899d33efb60ce8e6
+msgid ":ref:`Back to text <backlink-symbology-structure-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:126
+# 549425ea0c9842d0a8576be307b1a574
+msgid "|moderate| *Symbol Layers*"
+msgstr ""
+
+#: ../../../answers/answers.rst:128
+# 6b79ba9c52234c2999b7bf8fa40dcbf6
+msgid "Customize your layers as you like, but remember that it has to be easy to tell different layers apart on the map."
+msgstr ""
+
+#: ../../../answers/answers.rst:131
+# c3e9f893a2a544bb91acc46bc2ec8d74
+msgid "Here's an example:"
+msgstr ""
+
+#: ../../../answers/answers.rst:136
+# 33838d6cae3a48249a1f346da71453f7
+msgid ":ref:`Back to text <backlink-symbology-layers-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:142
+# df063d2b6721478cb8df7987b8831acb
+msgid "|moderate| *Symbol Levels*"
+msgstr ""
+
+#: ../../../answers/answers.rst:144
+# 53e0f204e1c7436db3226abe5dbff594
+msgid "To make the required symbol, you need at least three symbol layers:"
+msgstr ""
+
+#: ../../../answers/answers.rst:149
+# ab6520ba3e39416bac3624b5e50313ea
+msgid "The lowest symbol layer is a broad, solid yellow line. On top of it there is a slightly thinner solid dark gray or black line. The symbol layer on top is a thin white dashed line."
+msgstr ""
+
+#: ../../../answers/answers.rst:153
+# 09cbb386604f479091cc19430a5c1e09
+msgid "If your symbol layers resemble the above but you're not getting the result you want, check that your symbol levels look something like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:159
+# b8f52c68353b45cfbe3e70474d0728ea
+msgid "Now your symbol should look like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:164
+# df6c1844e8924111ba9115cabeb6482b
+msgid "Which, on the map, gives you this kind of effect:"
+msgstr ""
+
+#: ../../../answers/answers.rst:169
+# 5c8b3bda2bcf4c309d7917c16be89cc6
+msgid ":ref:`Back to text <backlink-symbology-levels-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:175
+# 0799e7963a0b43d589ff1cf9307a134a
+msgid "|hard| *Symbol Levels*"
+msgstr ""
+
+#: ../../../answers/answers.rst:177
+# d207112705744a5d9fd05229e1b712cf
+msgid "Adjust your symbol levels to these values:"
+msgstr ""
+
+#: ../../../answers/answers.rst:182
+# 114591a4fb664c6683dfc97cd73570ba
+msgid "Experiment with different values to get different results."
+msgstr ""
+
+#: ../../../answers/answers.rst:183
+# 406355e799dc4f498c166f895b4c7626
+msgid "Open your original map again before continuing with the next exercise."
+msgstr ""
+
+#: ../../../answers/answers.rst:185
+# 856870a4ed68447d906ef209ac8cea12
+msgid ":ref:`Back to text <backlink-symbology-levels-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:189
+# 88c1687c454b46ef8bce1cc5a6abc04d
+msgid "|RF| *Attribute Data*"
+msgstr ""
+
+#: ../../../answers/answers.rst:194
+# 1d8ced33f6e841b68ce26432968d3566
+msgid "|basic| *Attribute Data*"
+msgstr ""
+
+#: ../../../answers/answers.rst:196
+# b0f3d3c398884af88fcdb7879026de0d
+msgid "The *NAME* field is the most useful to show as labels. This is because all its values are unique for every object, and it contains no \"null\" values (i.e., fields with no value)."
+msgstr ""
+
+#: ../../../answers/answers.rst:200
+# 6e79e02205c449aab85d4cbb82f231e7
+msgid ":ref:`Back to text <backlink-labels-attribute-data-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:204
+# 88918bca7e714fc1bb190c5d01981969
+msgid "|RF| *The Label Tool*"
+msgstr ""
+
+#: ../../../answers/answers.rst:209
+# c8cf5881fb9245caa3eb009675a672bd
+msgid "|moderate| *Label Customization* (Part 1)"
+msgstr ""
+
+#: ../../../answers/answers.rst:211
+#: ../../../answers/answers.rst:313
+#: ../../../answers/answers.rst:648
+# a0f994cce2e5420d9357dd4fd4416752
+# c8ab2a13913f42d89dd9f215216f16a6
+# 4ca95aca987546bfb675f05942115cd7
+msgid "Your map should look like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:216
+#: ../../../answers/answers.rst:242
+# 9c13963e8589418a978534e284554709
+# 87bad5d30a694e31b5bac33ecc7490a4
+msgid ":ref:`Back to text <backlink-label-tool-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:222
+# 6322027017514107a7ef57cc5a523d06
+msgid "|moderate| *Label Customization* (Part 2)"
+msgstr ""
+
+#: ../../../answers/answers.rst:224
+# ff3c4a951fd541b9a709f1ad0a5e7b29
+msgid "One possible solution has this final product:"
+msgstr ""
+
+#: ../../../answers/answers.rst:229
+# 9f8ae997f3224d77a23f9f645c456dba
+msgid "To arrive at this result:"
+msgstr ""
+
+#: ../../../answers/answers.rst:231
+# 46436eb961be4c33ab8763625ce6ec18
+msgid "Use the font type :kbd:`Arial` of size :kbd:`10` and a :guilabel:`Label distance` of :kbd:`1,5 mm`."
+msgstr ""
+
+#: ../../../answers/answers.rst:233
+# 3eafb3d64b0a4a8f9be22c7283c7f1d2
+msgid "In addition, this example uses the :guilabel:`Wrap label on character` option:"
+msgstr ""
+
+#: ../../../answers/answers.rst:239
+# 7a5a20011baf46f5ba29ad9cceef1a81
+msgid "Enter a :kbd:`space` in this field and click :guilabel:`Apply` to achieve the same effect."
+msgstr ""
+
+#: ../../../answers/answers.rst:248
+# 345e3fe4408d4a5eb733e57c80c3a406
+msgid "|hard| *Using Data Defined Settings*"
+msgstr ""
+
+#: ../../../answers/answers.rst:250
+# 658bae627dc74fd98ee28b79f18da789
+msgid "Still in edit mode, set the :kbd:`FONT_SIZE` values to whatever you prefer. The example uses :kbd:`12` for towns, :kbd:`10` for suburbs and villages, and :kbd:`8` for the null entries."
+msgstr ""
+
+#: ../../../answers/answers.rst:253
+# 966ebfb1155e47f5b0ea056647460535
+msgid "Remember to save changes and exit edit mode."
+msgstr ""
+
+#: ../../../answers/answers.rst:254
+# f98c915c4d9f49b391daf7f15f131cc4
+msgid "In :guilabel:`Data defined settings`, do this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:259
+# 56199cd3d3f6448c954ca8f3d5915f1e
+msgid "Your results, if using the above values, should be this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:264
+# 4b3c075b8d894acbba13942482510d0e
+msgid ":ref:`Back to text <backlink-label-data-defined-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:268
+# fab5672591c34563b90369f628904143
+msgid "|RF| *Classification*"
+msgstr ""
+
+#: ../../../answers/answers.rst:273
+# c484ed2a0b944b5d8014d969d5571a93
+msgid "|moderate| *Refine the Classification*"
+msgstr ""
+
+#: ../../../answers/answers.rst:275
+# 35e18af0647a4463a0a5179c10056578
+msgid "Use the same method as in the first exercise of the lesson to get rid of the lines:"
+msgstr ""
+
+#: ../../../answers/answers.rst:281
+# aec127f4502b466b8386bef6db7dac32
+msgid "The settings you used might not be the same, but with the values :guilabel:`Classes` = :kbd:`7` and :guilabel:`Mode` = :guilabel:`Natural Breaks (Jenks)` (and using the same colors, of course), the map will look like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:288
+# 399102578fc84f958d3be2da063a489d
+msgid ":ref:`Back to text <backlink-classification-refine-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:292
+# ba2697139c0745c18da3b0fa82484087
+msgid "|RF| *Creating a New Vector Dataset*"
+msgstr ""
+
+#: ../../../answers/answers.rst:297
+# d9927c13d94c450a9b947754b4d36030
+msgid "|basic| *Digitizing*"
+msgstr ""
+
+#: ../../../answers/answers.rst:299
+# 65069797e5094248bc9b49a446dfe2dd
+msgid "The symbology doesn't matter, but the results should look more or less like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:305
+# e3ed14d452f440cbbdc3ee9a017499a0
+msgid ":ref:`Back to text <backlink-create-vector-digitize-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:311
+# 0a007bc341304336b728cff7e974c412
+msgid "|moderate| *Topology: Avoid Intersections*"
+msgstr ""
+
+#: ../../../answers/answers.rst:318
+# ac7cad9bf8044e779269cb73ba116795
+msgid ":ref:`Back to text <backlink-create-vector-topology-3>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:324
+# 7ab657c3c2ea49349a3c6fa4e17042f3
+msgid "|moderate| *Topology: Add Ring Tool*"
+msgstr ""
+
+#: ../../../answers/answers.rst:326
+# 0b98b5d668e04caa92ae9d13d9555f9c
+msgid "The exact shape doesn't matter, but you should be getting a hole in your feature, like this one:"
+msgstr ""
+
+#: ../../../answers/answers.rst:332
+#: ../../../answers/answers.rst:354
+# 0cb82ae7152a4f449e9fb60e249b765b
+# c2b0d5c6ef224565bf51ec95dba57ca3
+msgid "Undo your edit before continuing with the exercise for the next tool."
+msgstr ""
+
+#: ../../../answers/answers.rst:334
+# 464055c11b9e4cd1bd6cb3b5898d0031
+msgid ":ref:`Back to text <backlink-create-vector-topology-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:340
+# 07b3f8290684426bbfb0f65f15732f5e
+msgid "|moderate| *Topology: Add Part Tool*"
+msgstr ""
+
+#: ../../../answers/answers.rst:342
+# a0c80e76e03643358c2655e157354836
+msgid "The exact shape and location doesn't matter, but you should be getting an extra part on your feature, like this one:"
+msgstr ""
+
+#: ../../../answers/answers.rst:348
+# e4f4c8d90bb1449baaeff8f3f77faa2f
+msgid "Note that you first need to select the farm with the selection tool ..."
+msgstr ""
+
+#: ../../../answers/answers.rst:353
+# a5cbef6a1b7148f7ae4587ef6e0b88c8
+msgid "... so that QGIS knows which feature to add the new part to."
+msgstr ""
+
+#: ../../../answers/answers.rst:356
+# 993791be4b4c4a3385286ea025e110ce
+msgid ":ref:`Back to text <backlink-create-vector-topology-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:362
+# 5832b6b080b2431d9b13f7f194f596d8
+msgid "|hard| *Merge Features*"
+msgstr ""
+
+#: ../../../answers/answers.rst:364
+# 1a7670f3172c4d0e92bda04559e82564
+msgid "Use the feature with the :guilabel:`id` of :kbd:`1237` as the source of your attributes (click on its entry in the dialog, then click the :guilabel:`Take attributes from selected feature` button):"
+msgstr ""
+
+#: ../../../answers/answers.rst:371
+# c2ef6021e6904f089b6a187669707b01
+msgid "Using :guilabel:`Merge Selected Features` will merge the attributes as well as the geometries:"
+msgstr ""
+
+#: ../../../answers/answers.rst:377
+# d8d8985822d3439cbf153e8bc1feeadf
+msgid "Whereas :guilabel:`Merge Attributes of Selected Features` will keep the geometries distinct, but give them the same attributes."
+msgstr ""
+
+#: ../../../answers/answers.rst:380
+# c6c482acadaa48a69b3a1fece7acc96e
+msgid ":ref:`Back to text <backlink-create-vector-topology-4>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:386
+# b2d4582c0e0c4a6bb04e9c2249ee3940
+msgid "|moderate| *Forms*"
+msgstr ""
+
+#: ../../../answers/answers.rst:388
+# 7872a22c66bb47668ba1b67171f984ca
+msgid "For the :guilabel:`TYPE`, there is obviously a limited amount of types that a road can be, and if you check the attribute table for this layer, you'll see that they are predefined."
+msgstr ""
+
+#: ../../../answers/answers.rst:392
+# 2172e1f0a3044fc78a6a1391bb539a9b
+msgid "Set the widget to :guilabel:`Unique values` and leave :guilabel:`Editable` as :kbd:`False`:"
+msgstr ""
+
+#: ../../../answers/answers.rst:398
+# 876365adccd54df992badc209365fc38
+msgid "A road is either a one-way or it isn't, so :guilabel:`ONEWAY` should be a :guilabel:`Checkbox`."
+msgstr ""
+
+#: ../../../answers/answers.rst:401
+# e944dd729d174d9f9fac30400270ffad
+msgid "Looking at the attribute table for :guilabel:`streets`, the value for when it's not a one-way seems to be :guilabel:`NULL`, and when it is, it's :guilabel:`yes`."
+msgstr ""
+
+#: ../../../answers/answers.rst:405
+# 3a1e04e89be64ba1bd997c5a11e86fc6
+msgid "Set those values:"
+msgstr ""
+
+#: ../../../answers/answers.rst:410
+# 5c8b879c844147b3bb1972d1529279cd
+msgid "If you use the :guilabel:`Identify` tool on a street now while edit mode is active, the dialog you get should look like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:416
+# 3ea470ae56ad42d7b1227f8c6fa4b766
+msgid ":ref:`Back to text <backlink-create-vector-forms-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:420
+# 65f3b03957394e2b90e685b4673198cb
+msgid "|RF| *Vector Analysis*"
+msgstr ""
+
+#: ../../../answers/answers.rst:425
+# 2dc99466fea64601960c5e93611f4518
+msgid "|basic| *Find Important Roads*"
+msgstr ""
+
+#: ../../../answers/answers.rst:427
+# 20571aefedc340abba7ad628099d4243
+msgid "Your layer should now have these roads:"
+msgstr ""
+
+#: ../../../answers/answers.rst:432
+# 80f8b0f9834a41ac92d9c9c5b5a9acb2
+msgid "Save this new layer (the same way you did before) under :kbd:`exercise_data/residential_development/`, as :kbd:`important_roads.shp`."
+msgstr ""
+
+#: ../../../answers/answers.rst:434
+# a37298435a974cfe9d832ea9a2dfdd91
+msgid "Once the new layer has been added to your map, remove the old layer."
+msgstr ""
+
+#: ../../../answers/answers.rst:435
+# ba8a8a35d91f459aba430f71497d5c24
+msgid "If for some reason it gives you an error message saying that it can't add the layer to the map (this can happen), remember that you can add the layer yourself by using the :guilabel:`Add Vector Layer` button as you did before."
+msgstr ""
+
+#: ../../../answers/answers.rst:439
+# 3245a9534e2245d4b9b8e11585733005
+msgid ":ref:`Back to text <backlink-vector-analysis-basic-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:444
+# 6be8cac06c4d408ab82911733a77d3e8
+msgid "|basic| *Distance from High Schools*"
+msgstr ""
+
+#: ../../../answers/answers.rst:446
+# b894c3f1d14b483bb573265b700d3ffd
+msgid "Your buffer dialog should look like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:451
+# 0a232f57bfa04f6fb8831a4fe0104609
+msgid "The :guilabel:`Buffer distance` is :kbd:`10000` meters (i.e., :kbd:`10` kilometers)."
+msgstr ""
+
+#: ../../../answers/answers.rst:454
+# af25e1e05bf64277be545d718fe73ff8
+msgid "The :guilabel:`Segments to approximate` value is set to :kbd:`20`. This is optional, but it's recommended, because it makes the output buffers look smoother.  Compare this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:461
+# 2f4107b4367f4295907f2e926407c446
+msgid "To this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:466
+# b74fb3a927ad4c2c938b9dab7ebd4609
+msgid "The red circle is the buffer with :guilabel:`Segments to approximate` set to :kbd:`20`; the gray circle on top of it is the buffer with :guilabel:`Segments to approximate` set to :kbd:`5`."
+msgstr ""
+
+#: ../../../answers/answers.rst:470
+# e5d536f3a4e948b79d360d0f3fc78096
+msgid ":ref:`Back to text <backlink-vector-analysis-basic-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:474
+# 44f4bce0170748b8925537f205429994
+msgid "|RF| *Raster Analysis*"
+msgstr ""
+
+#: ../../../answers/answers.rst:479
+# 02d59252df5e4ee7b6534e8d06978713
+msgid "|basic| *Calculate Aspect*"
+msgstr ""
+
+#: ../../../answers/answers.rst:481
+# 9bbcaf27ff474a02b3f0bd469733e927
+msgid "Set your :guilabel:`DEM (Terrain analysis)` dialog up like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:486
+# ffb5515534764531b8a91344ff53bda7
+msgid "Your result:"
+msgstr ""
+
+#: ../../../answers/answers.rst:491
+# 1ef6b31aa29b4e51954a9ed8ec255ec1
+msgid ":ref:`Back to text <backlink-raster-analysis-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:497
+# ef389fb482224e7cad88caa316c8697f
+msgid "|moderate| *Calculate Slope (less than 2 and 5 degrees)*"
+msgstr ""
+
+#: ../../../answers/answers.rst:499
+# e3f01e66407f40308f86b924daac2dc4
+msgid "Set your :guilabel:`Raster calculator` dialog up like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:504
+# cb22f77a97124023b9ac5bb04878563b
+msgid "For the 5 degree version, replace the :kbd:`2` in the expression and file name with :kbd:`5`."
+msgstr ""
+
+#: ../../../answers/answers.rst:507
+# 112e191ee87644b4b12c5fab0f964292
+msgid "Your results:"
+msgstr ""
+
+#: ../../../answers/answers.rst:509
+# 6cb3b83dc3b3487da6b3a052bd95ee6b
+msgid "2 degrees:"
+msgstr ""
+
+#: ../../../answers/answers.rst:514
+# 1c0eb67250064994b2d2811156b5517f
+msgid "5 degrees:"
+msgstr ""
+
+#: ../../../answers/answers.rst:519
+# f166d5e5bdab4721987dcd78d2f5060f
+msgid ":ref:`Back to text <backlink-raster-analysis-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:523
+# 244c2c890f45467aa6a7eeb8a9528d65
+msgid "|RF| *Completing the Analysis*"
+msgstr ""
+
+#: ../../../answers/answers.rst:528
+# 9f710f2f6934406a85638cbe815e7a4c
+msgid "|moderate| *Raster to Vector*"
+msgstr ""
+
+#: ../../../answers/answers.rst:530
+# 0a693a07a6e64fa986568914fcebb442
+msgid "Open the :guilabel:`Query` dialog by right-clicking on the :guilabel:`all_terrain` layer in the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../answers/answers.rst:532
+# 2ccf28c4fa224f26b06f1f2ea579fa99
+msgid "Then build the query :kbd:`\"suitable\" = 1`."
+msgstr ""
+
+#: ../../../answers/answers.rst:533
+# af14ab652b784a658330ca9febc19fcf
+msgid "Click :guilabel:`OK` to filter out all the polygons where this condition isn't met."
+msgstr ""
+
+#: ../../../answers/answers.rst:536
+# f82f0c0179d04ae0b30d517fbafade6a
+msgid "When viewed over the original raster, the areas should overlap perfectly:"
+msgstr ""
+
+#: ../../../answers/answers.rst:541
+# d4af4d0bb7b641da961043eed99a7a3c
+msgid "You can save this layer by right-clicking on the :guilabel:`all_terrain` layer in the :guilabel:`Layers list` and choosing :guilabel:`Save As...`, then continue as per the instructions."
+msgstr ""
+
+#: ../../../answers/answers.rst:545
+# fb670ab917614c79a4a71f07dc8ae990
+msgid ":ref:`Back to text <backlink-complete-analysis-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:551
+# d6f4a98caa6743daab6fa3224f549570
+msgid "|moderate| *Inspecting the Results*"
+msgstr ""
+
+#: ../../../answers/answers.rst:553
+# 31f3cab53e514e0ab045ba48e8310959
+msgid "In this map, farms that are definitely not suitable are orange; farms that may still be suitable are blue:"
+msgstr ""
+
+#: ../../../answers/answers.rst:559
+# 2ccee8e019d84289b7c534d88f5eab68
+msgid "The orange farms have almost no suitable terrain within them, and so can't be used for the intended purpose."
+msgstr ""
+
+#: ../../../answers/answers.rst:562
+# 6d97b238e2db463d848ba8bea57b2600
+msgid ":ref:`Back to text <backlink-complete-analysis-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:568
+# f2fd3dfd1be44c5284357343f12f269f
+msgid "|moderate| *Refining the Analysis*"
+msgstr ""
+
+#: ../../../answers/answers.rst:570
+# 0b525cd710a94584bbb471cdff1f0d3f
+msgid "At the moment, your analysis should look like this (ignore the symbology):"
+msgstr ""
+
+#: ../../../answers/answers.rst:575
+# 6649c71805804e868a6290fdc8f0922b
+msgid "Consider a circular area, continuous for 350 meters in all directions."
+msgstr ""
+
+#: ../../../answers/answers.rst:580
+# 944b2a4e9cee4d4f9e2909e262ba3b77
+msgid "If it is greater than 350 meters in radius, then subtracting 350 meters from its size (from all directions) will result in a part of it being left in the middle."
+msgstr ""
+
+#: ../../../answers/answers.rst:587
+# 90019c430c2d429097309835514ec2fc
+msgid "Therefore, you can run an *interior buffer* of 350 meters on your existing :guilabel:`suitable_terrain` vector layer. In the output of the buffer function, whatever remains of the original layer will represent areas where there is suitable terrain for 350 meters beyond."
+msgstr ""
+
+#: ../../../answers/answers.rst:592
+# 8a04acc4e06d4742873ecefb12466f13
+msgid "To demonstrate:"
+msgstr ""
+
+#: ../../../answers/answers.rst:594
+# e02729abf36f4aa3855c0c0d73ca79b0
+msgid "Go to :menuselection:`Vector --> Geoprocessing Tools --> Buffer(s)` to open the Buffer(s) dialog."
+msgstr ""
+
+#: ../../../answers/answers.rst:596
+# e6e4bb87169b4a8d8097c77d91715477
+msgid "Set it up like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:601
+# b313c9d7249946a09fbab86d54036a9e
+msgid "Use the :guilabel:`suitable_terrain` layer with :kbd:`10` segments and a buffer distance of :kbd:`-350`. (The distance is automatically in meters because your map is using a projected CRS.)"
+msgstr ""
+
+#: ../../../answers/answers.rst:604
+# 0d1c13fa9c674245ad9fad96a09d6bcc
+msgid "Save the output in :kbd:`exercise_data/residential_development/` as :kbd:`suitable_terrain_continuous350m.shp`."
+msgstr ""
+
+#: ../../../answers/answers.rst:607
+# d949cd13bc2c45a58ed551da33d282d4
+msgid "Your results will look like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:612
+# 6fa7120444534bd9a80bce9b38bb8304
+msgid "Now use the :guilabel:`Select by Location` tool (:menuselection:`Vector --> Research Tools --> Select by location`)."
+msgstr ""
+
+#: ../../../answers/answers.rst:614
+# 92de649ccd564072aba88e6ce2a6b970
+msgid "Set up like this:"
+msgstr ""
+
+#: ../../../answers/answers.rst:619
+# d72e78ed920248d68cdc42d8d740eaf8
+msgid "Select features in :guilabel:`new_solution` that intersect features in :guilabel:`suitable_terrain_continuous350m.shp`."
+msgstr ""
+
+#: ../../../answers/answers.rst:622
+# 2104eaafcd3f49ff94920429b70f9da0
+msgid "This is the result:"
+msgstr ""
+
+#: ../../../answers/answers.rst:627
+# dee932facd874cfcb50c1af4f234b00a
+msgid "The yellow farms are selected."
+msgstr ""
+
+#: ../../../answers/answers.rst:629
+# 514a8e038f4347c7a94e286ef853229a
+msgid "Save the selection under :kbd:`exercise_data/residential_development/` as :kbd:`final_answer.shp`."
+msgstr ""
+
+#: ../../../answers/answers.rst:632
+# 56bf291f00c344d89db03d958275620a
+msgid "The farms that meet the revised criteria are here:"
+msgstr ""
+
+#: ../../../answers/answers.rst:638
+# a9af18d3abfe4f8ab588f4ee69ee8a9e
+msgid ":ref:`Back to text <backlink-complete-analysis-3>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:641
+# 917f637dadc74d60b87ca90436746e7e
+msgid "|RF| *WMS*"
+msgstr ""
+
+#: ../../../answers/answers.rst:646
+# ba15efef898641a2a01b4768f90b6a7c
+msgid "|basic| *Adding Another WMS Layer*"
+msgstr ""
+
+#: ../../../answers/answers.rst:653
+# 0c13a80b533f479bb47a6df1e04f4697
+msgid ":ref:`Back to text <backlink-wms-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:659
+# b767cda8e0dd4a7b9459b2cca90d4df2
+msgid "|moderate| *Adding a New WMS Server*"
+msgstr ""
+
+#: ../../../answers/answers.rst:661
+# b27a498c26b34ed69c6966a3818ba56c
+msgid "Use the same approach as before to add the new server and the appropriate layer as hosted on that server:"
+msgstr ""
+
+#: ../../../answers/answers.rst:670
+# 9fa2e05da6f149f2a19ebbd47baff360
+msgid "If you zoom into the Swellendam area, you'll notice that this dataset has a low resolution:"
+msgstr ""
+
+#: ../../../answers/answers.rst:676
+# fc8d8a1a3f0a47188fe304190f340ede
+msgid "Therefore, it's better not to use this data for the current map. The Blue Marble data is more suitable at global or national scales."
+msgstr ""
+
+#: ../../../answers/answers.rst:679
+# 9d4c47dcbef04d2cbe4d86c0971479d1
+msgid ":ref:`Back to text <backlink-wms-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:685
+# 556245bd8ff241bf815bba0b9ef4368b
+msgid "|moderate| *Finding a WMS Server*"
+msgstr ""
+
+#: ../../../answers/answers.rst:687
+# 05ff23025e854ace9ebb74676c6a5f78
+msgid "You may notice that many WMS servers are not always available. Sometimes this is temporary, sometimes it is permanent. An example of a WMS server that worked at the time of writing is the :guilabel:`World Mineral Deposits` WMS at :kbd:`http://apps1.gdr.nrcan.gc.ca/cgi-bin/worldmin_en-ca_ows`. It does not require fees or have access constraints, and it is global. Therefore, it does satisfy the requirements. Keep in mind, however, that this is merely an example. There are many other WMS servers to choose from."
+msgstr ""
+
+#: ../../../answers/answers.rst:695
+# 01fcafd20a1a445cad88286be55e763c
+msgid ":ref:`Back to text <backlink-wms-3>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:698
+# f2affb2728284515b964091185fbc549
+msgid "|RF| *Spatial Queries*"
+msgstr ""
+
+#: ../../../answers/answers.rst:703
+# f22c4df59a394c4fbf3de38811ad09e9
+msgid "|basic| *The Units Used in Spatial Queries*"
+msgstr ""
+
+#: ../../../answers/answers.rst:705
+# 461e6cb98d8342d4873097b50f8a548c
+msgid "The units being used by the example query are degrees, because the CRS that the layer is using is WGS 84. This is a Geographic CRS, which means that its units are in degrees. A Projected CRS, like the UTM projections, is in meters."
+msgstr ""
+
+#: ../../../answers/answers.rst:709
+# 0849fd428adc4134bc8ada556e901a50
+msgid "Remember that when you write a query, you need to know which units the layer's CRS is in. This will allow you to write a query that will return the results that you expect."
+msgstr ""
+
+#: ../../../answers/answers.rst:713
+# bb2e62d4b4dc40db8e660f5249ab98f2
+msgid ":ref:`Back to text <backlink-spatial-queries-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:719
+# 0c4f90f1ed79441baf7fefe6fbbaf8b5
+msgid "|basic| *Creating a Spatial Index*"
+msgstr ""
+
+#: ../../../answers/answers.rst:727
+# eb10b42541e1497ab02df4b1e79f846b
+msgid ":ref:`Back to text <backlink-spatial-queries-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:731
+# 20d6b14de3a4442fa91d02f8e36f5d95
+msgid "|RF| *Geometry Construction*"
+msgstr ""
+
+#: ../../../answers/answers.rst:737
+# f5c1de2bf5fe4702b8331f28a050ebe4
+msgid "|moderate| *Creating Linestrings*"
+msgstr ""
+
+#: ../../../answers/answers.rst:751
+# cfdbaeb2272040d18199b40011d84f74
+msgid ":ref:`Back to text <backlink-geometry-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:757
+# f207e3c6b6034ed2bf549afba4169d13
+msgid "|moderate| *Linking Tables*"
+msgstr ""
+
+#: ../../../answers/answers.rst:764
+# 4653428e9aa24776ad37feb0f1064d92
+msgid "(capture cities in QGIS)"
+msgstr ""
+
+#: ../../../answers/answers.rst:792
+# 83ec0ae0c1784c519ac4862f95b40f4c
+msgid "If you're getting the following error message:"
+msgstr ""
+
+#: ../../../answers/answers.rst:800
+# 46aaa7dc480b4a66b886377dac9ebf11
+msgid "then it means that while experimenting with creating polygons for the cities table, you must have deleted some of them and started over. Just check the entries in your cities table and use any :kbd:`id` which exists."
+msgstr ""
+
+#: ../../../answers/answers.rst:804
+# 4259382fd6454cdaaa909e3d96caf3ed
+msgid ":ref:`Back to text <backlink-geometry-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:807
+# 96fb8d03bc3d4993af5c7da4dfa84377
+msgid "|RF| *Simple Feature Model*"
+msgstr ""
+
+#: ../../../answers/answers.rst:813
+# 73d3f7033ac24dc982426661e10bcca4
+msgid "|moderate| *Populating Tables*"
+msgstr ""
+
+#: ../../../answers/answers.rst:824
+# f389ea10ff7c4e23bb5cccd6f564f2a1
+msgid ":ref:`Back to text <backlink-simple-feature-1>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:830
+# 22134e8a90e4460c88c765a2ac15b725
+msgid "|moderate| *Populate the Geometry_Columns Table*"
+msgstr ""
+
+#: ../../../answers/answers.rst:837
+# 78de23688d114a31847a5dab4b5b0ff4
+msgid ":ref:`Back to text <backlink-simple-feature-2>`"
+msgstr ""
+
+#: ../../../answers/answers.rst:843
+# 8a0cf641508846a0bb4c9149ad9d362c
+msgid "|hard| *Adding Geometry*"
+msgstr ""
+
+#: ../../../answers/answers.rst:853
+# 4a33357f135c4e309c93b3ed394a47f6
+msgid "Result:"
+msgstr ""
+
+#: ../../../answers/answers.rst:866
+# 467ab537e1b44450855aaf361707e7d8
+msgid "As you can see, our constraint allows nulls to be added into the database."
+msgstr ""
+
+#: ../../../answers/answers.rst:868
+# a644f16076154beabe539e983da125d0
+msgid ":ref:`Back to text <backlink-simple-feature-3>`"
+msgstr ""
+

@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, Linfiniti Consulting CC
+# This file is distributed under the same license as the The Free Quantum GIS Training Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The Free Quantum GIS Training Manual 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-10 11:51\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../index.rst:25
+# 933cd7db36064b3e9f589b0639e19a7f
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../../index.rst:27
+# 5debc7307c574ee897a72acda1437c83
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../../index.rst:28
+# b653fbbd1f9e40508c7cf8fa1e7f95c6
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../../index.rst:29
+# dc0c45c277dc46fc8edd75a6735e02e3
+msgid ":ref:`search`"
+msgstr ""
+

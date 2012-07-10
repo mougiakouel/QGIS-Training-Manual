@@ -1,0 +1,991 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, Linfiniti Consulting CC
+# This file is distributed under the same license as the The Free Quantum GIS Training Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The Free Quantum GIS Training Manual 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-10 11:51\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../vector_classification/attribute_data.rst:2
+# 54e8e8c8e40f4a70a73f194e43f5d417
+msgid "|LS| Attribute Data"
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:4
+# dd3697b4c524464fbfe1337ef0403644
+msgid "Up to now, none of the changes we have made to the map have been influenced by the objects that are being shown. In other words, all the farms look alike, and all the roads look alike. When looking at the map, the viewers don't know anything about the roads they are seeing; only that there is a road of a certain shape in a certain area."
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:10
+# ab72c445df484b328d21a8f50e0d67a1
+msgid "But the whole strength of GIS is that all the objects that are visible on the map, also have attributes. Maps in a GIS aren't just pictures. They represent not only objects in locations, but also information about those objects."
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:14
+# 9215bec00c1c4155bcff1a8084508608
+msgid "**The goal of this lesson:** To explore the attribute data of an object and understand what the various data can be useful for."
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:21
+# 463e61d4d884414ca4915559bf22628e
+msgid "|basic| |FA| Attribute data"
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:23
+# f8f76dc5c6514bb0a4773da199f643ac
+msgid "Open the attribute table for the :guilabel:`places` layer (refer back to the section *\"Working with Vector Data\"* if necessary). Which field would be the most useful to represent in label form, and why?"
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:27
+# a513c9b0579b4b71b01a9c85443d2c25
+msgid ":ref:`Check your results <labels-attribute-data-1>`"
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:30
+#: ../../../vector_classification/classification.rst:309
+#: ../../../vector_classification/label_tool.rst:310
+# 546ef1e078ca46aea047c21d890e0fa8
+# d159801cbcfa4ff0902080dee32538ef
+# 5cac9e0b4f9d45779a374553be0b6d12
+msgid "|IC|"
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:32
+# 7ff9efa5e66b44898651785d6b2f9727
+msgid "You now know how to use the attribute table to see what is actually in the data you're using. Any dataset will only be useful to you if it has the attributes that you care about. If you know which attributes you need, you can quickly decide if you're able to use a given dataset, or if you need to look for another one that has the required attribute data."
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:39
+#: ../../../vector_classification/classification.rst:318
+#: ../../../vector_classification/label_tool.rst:316
+# fc091098eb494ae992f780216eca73b6
+# 4603aad14e54427298aec4bdf241a87a
+# d195ae5e40cb4621b50c3f9eb0b627b7
+msgid "|WN|"
+msgstr ""
+
+#: ../../../vector_classification/attribute_data.rst:41
+# a40a7a8e5e3445a6a3a6cc673db87301
+msgid "Different attributes are useful for different purposes. Some of them can be represented directly as text for the map user to see. You'll learn how to do this in the next lesson."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:2
+# 21bfde427c88494e94584fc63cd30d2d
+msgid "|LS| Classification"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:4
+# abae48d0d6a34a7fb5ac61c11350143e
+msgid "Labels are a good way to communicate information such as the names of individual places, but they can't be used for everything. For example, let's say that someone wants to know which area the farms are in. Using labels, you'd get this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:12
+# 624c20a0edfc4293a5b1f98cca61e682
+msgid "Obviously this is not ideal, so we need another solution. That's what this lesson is about!"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:15
+# 6bc68e1ac9524e2089c6d5e6f0f98b38
+msgid "**The goal for this lesson:** To learn how to classify vector data effectively."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:18
+# 35a67c99f926462994e3eb98a8046f95
+msgid "|basic| |FA| Classifying nominal data"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:20
+# 3d77746bad2945cfb03c388e15bbc601
+msgid "Open :guilabel:`Layer Properties`."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:21
+# 63aaea37cf4340bf8b76a4c5f24f5314
+msgid "Go to the :guilabel:`Style` tab."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:22
+# dfb8ed4e754b4dc0b0100b7ac63ca2a7
+msgid "Click on the dropdown that says :guilabel:`Single Symbol`:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:27
+# 74a4dd446e5d416f96cb47e09f9524e0
+msgid "Change it to :guilabel:`Categorized` and the interface will change:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:32
+# 2edba59059514c69a35e892455fec3b3
+msgid "Change the :guilabel:`Column` to :guilabel:`TOWN` and the :guilabel:`Color ramp` to :guilabel:`random`:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:38
+# 46fb68adf57e4f44b73411df7ad1f215
+msgid "Click the button labeled :guilabel:`Classify` and then click :guilabel:`OK`."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:40
+# 3494104033b34c91a2460922a0caa279
+msgid "You'll see something like this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:45
+# a173e5a65de744fdb6282f6cddc0d49c
+msgid "Click the arrow (or plus sign) next to :guilabel:`rural` in the :guilabel:`Layer list`, you'll see the categories explained:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:51
+# fe6b7da29e3e49448b308841bf3487a1
+msgid "So, this is useful! But it hurts your eyes to look at it, so let's see what we can do about that."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:54
+# 5fdb231877f64e6a8c3ab71ee546d0f5
+msgid "Open :guilabel:`Layer Properties` and go to the :guilabel:`Style` tab again."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:55
+# 744f9a374c86468cb107b96d5ab60695
+msgid "Change the symbol:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:60
+# e082096b3f3a4c4d8b6b847c67dfc5e2
+msgid "Get rid of the outline the same way you did before, and click :guilabel:`OK`. (If you need to, go back to the lesson where we covered this to remember how it's done.)"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:63
+# e8d986e3b58e4058872a243a53c36681
+msgid "Click the :guilabel:`Delete all` button:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:68
+# c61e7d610a3e4a4894853a9ef478c69f
+msgid "This gets rid of the ugly classes so you can try again."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:70
+# 7706182a77d54f83bcba25754fd175e9
+msgid "Click :guilabel:`Classify` again, and the new symbols will appear."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:72
+# 2da5412bd91c482db0c6beb4b21e5b65
+msgid "You'll notice they don't have outlines. This is because because you just removed the outlines!"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:75
+# 41e323d57e144560a3f5cc0f4642d73d
+msgid "Change the color for each town by double-clicking on the colored block representing its symbol:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:81
+# 61ca2875ce8c455ca12dbf02af935f2b
+msgid "Use your own colors, but make sure they're not too bright, so that the resulting map isn't as ugly as the old one. In the example, we'll use these colors:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:88
+# 9c135bda11f84aa8805d256088650a7a
+msgid "This gives us a nice map:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:93
+# a4626675e2614df39229554ffa5c0a14
+msgid "(Only :guilabel:`rural` and :guilabel:`water` are switched on here.)"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:95
+# 3c6ee12d12874d1c81981ee431df13e0
+msgid "By the way, there's one category that's empty:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:100
+# bf09b4d6bba54d5e9973ff9b4b3be4fa
+msgid "Select the empty category."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:101
+# 4d56dc40ce6d4a389b04b8984bd04b26
+msgid "Click the :guilabel:`Delete` button."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:103
+# 63c06e4906a5449e98a761c4d6bee627
+msgid "This only gets rid of the symbol, not the data, so don't worry about messing up; you're not actually deleting anything that you can't recover."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:106
+# 00102a011971426f86213850dc0b5e8d
+msgid "Remember to save your map now so that you don't lose all your hard-earned changes!"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:110
+# 8d17e27cb58e438785a45dbebfaf797b
+msgid "|basic| |TY| More classification"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:112
+# 86deadd1cfad45c9989ebdae8966cde4
+msgid "If you're only following the basic-level content, use the knowledge you gained above to classify the :guilabel:`urban` areas. Use darker colors to set them apart from the farms."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:117
+# 0481d67f8d6d4701969f52f1980af5cc
+msgid "|moderate| |FA| Ratio classification"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:119
+# 3729cb4a32494710904cd65c03ef35c2
+msgid "There are four types of classification: *nominal*, *ordinal*, *interval* and *ratio*."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:122
+# 9f02ea7874c14d029fd6f9bf07c4f3e1
+msgid "In nominal classification, the categories that objects are classified into are name-based; they have no order. For example: town names, district codes, etc."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:125
+# 024e372deffd4a5a91dafde78c07415b
+msgid "In ordinal classification, the categories are arranged in a certain order. For example, world cities are given a rank depending on their importance for world trade, travel, culture, etc."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:129
+# 1621653ac9a2464d8b2225a2b47798ea
+msgid "In interval classification, the numbers are on a scale with positive, negative and zero values. For example: height above/below sea level, temperature above/below freezing (0 degrees Celsius), etc."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:133
+# 6a10da1b814e4471abe4eed9f16e5262
+msgid "In ratio classification, the numbers are on a scale with only positive and zero values. For example: temparature above absolute zero (0 degrees Kelvin), distance from a point, the average amount of traffic on a given street per month, etc."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:138
+# 5886b66625b74095a65be5a8ef78c064
+msgid "In the example above, we used nominal classification to assign each farm to the town that it is administered by. Now we will use ratio classification to classify the farms by area."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:142
+# 9b517d8516ba4850a0f353bc8a557817
+msgid "Save your rural symbology (if you want to keep it) by clicking on the :guilabel:`Save Style ...` button in the :guilabel:`Style` dialog."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:145
+# 81808b8159cb4c82a0605501a8c181b7
+msgid "We're going to reclassify the layer, so existing classes will be lost if not saved."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:148
+# 02dab9c1462240c9868a839f5ec6abc0
+msgid "Close the :guilabel:`Style` dialog."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:149
+# 153e6d45e4e1484f857e898779bce8e5
+msgid "Open the layer attributes for the :guilabel:`rural` layer."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:151
+# b039e3da7663409aa09a3fa93dfccdf6
+msgid "We want to classify these farms by area, but there's a problem: they don't have an area field! We'll have to make one."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:154
+# 4251d21659564b49a2cd574b695e5f17
+msgid "Enter edit mode by clicking this button:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:159
+# e6617a5b4019468f97320c134c6151ee
+msgid "Add a new column with this button:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:164
+# cdd075a8e5cb4e0ca8eb9fe4f263a831
+msgid "Set up the dialog that appears, like this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:169
+#: ../../../vector_classification/classification.rst:198
+#: ../../../vector_classification/classification.rst:240
+#: ../../../vector_classification/label_tool.rst:50
+# b85f2bc6fe1049c8a8c873a25bfbf2f6
+# b23021928a5741c6a9ada58e2d13a691
+# 61468b84d7e749ad89ee9933813932a4
+# f8a00c0c528140538ceb0da9212c57f0
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:171
+# d7f3c4b635b64b1d8de3c61990622e54
+msgid "The new field will be added (at the far right of the table; you may need to scroll horizontally to see it). However, at the moment it is not populated, it just has a lot of :kbd:`NULL` values."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:175
+# 4e57b07a6392453ba4fad0db9b993a44
+msgid "To solve this problem, we'll need to calculate the areas."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:177
+# 70812eff82d94d77b2db23c7848adefa
+msgid "Open the field calculator:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:182
+# 238f09c04a604eb7bb7d7f9b27d39883
+msgid "You'll get this dialog:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:187
+# 33b9484c5c1647d38a36e8c7d0e1ac79
+msgid "Change the values at the top of the dialog to look like this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:192
+# 209ee4c9421d4c7bbfbfd9fa8d2403f1
+msgid "In the :guilabel:`Function List`, select :menuselection:`Geometry --> $area`:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:197
+# 472b15c90e99421fbdab75ac2b96b23d
+msgid "Double-click on it so that it appears in the :guilabel:`Expression` field."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:200
+# 46c0620be6d046e290b8cd2f0153380e
+msgid "Now your :kbd:`AREA` field is populated with values! Admire them, then close the attribute table."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:203
+# f6b462e446214069bec13fdd43266e86
+msgid "These areas are in degrees area. Later, we will compute them in square meters."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:206
+# c9d5900f965c42b78c8c5aeb95b004ad
+msgid "Open the :guilabel:`Layer properties` dialog's :guilabel:`Style` tab."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:207
+# 13f886a8c7ef4290a094ee0be47d407b
+msgid "Change the classification style from :guilabel:`Classified` to :guilabel:`Graduated`:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:213
+# 9d8489e848034d9fb17ec41b939c27c6
+msgid "Change the :guilabel:`Column` to :guilabel:`AREA`:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:218
+# 1e64503dea9547af957dbeda908556af
+msgid "Under :guilabel:`Color ramp`, choose the option :guilabel:`New color ramp...` to get this dialog:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:224
+# 3cb0a746a0cf48aaab29e7ccad762833
+msgid "Choose :guilabel:`Gradient` (if it's not selected already) and click :guilabel:`OK`. You'll see this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:230
+# 6e6ccee8dbc9425eb6620ac9e162da9e
+msgid "You'll be using this to denote area, with small areas as :guilabel:`Color 1` and large areas as :guilabel:`Color 2`."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:233
+# 8f2936ee0dc1471787726c17aefd99fc
+msgid "Choose appropriate colors."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:235
+# dae1401e1813497884f16fac8a385cf3
+msgid "In the example, the result looks like this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:241
+# fa41ca2a944c4c2390c935536398fb73
+msgid "Choose a suitable name for the new color ramp."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:242
+# 191d057db62d435394388dbac3757ceb
+msgid "Click :guilabel:`OK` after filling in the name."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:244
+# 94dca93b6ee649469bd9edb0213c99a5
+msgid "Now you'll have something like this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:249
+# e0836da58c6f4745b8b97f8deb4942a1
+msgid "Leave everything as-is."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:251
+# 044ddf69bb3140988b58a78d6f9ba1af
+msgid "Click :guilabel:`Apply`:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:260
+# b276630d8ee2455ab03597c5f00429a4
+msgid "|moderate| |TY| Refine the classification"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:262
+# 23dd0afced8b48e695113b57d6b3523b
+msgid "Get rid of the lines between the classes."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:263
+# a2f7330da8ae4dfe98d60e202dbc923e
+msgid "Change the values of :guilabel:`Mode` and :guilabel:`Classes` until you get a classification that makes sense."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:266
+# 033e49021fdc49cb847ec860f8460ae1
+msgid ":ref:`Check your results <classification-refine-1>`"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:269
+# 45c5ac11e4f34656b08d2bf57e7fbdb3
+msgid "|hard| |FA| Rule-based classification"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:271
+# 5676d47289134a8a8366c577e216b0db
+msgid "It's often useful to combine multiple criteria for a classification, but unfortunately normal classification only takes one attribute into account. That's where rule-based classification comes in handy."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:275
+# 1fe94495b13f4bce9d34afe398a2b3df
+msgid "Open the :guilabel:`Layer Properties` dialog for the :guilabel:`rural` layer."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:276
+# 252c0ffa3b8d41328222805d8c5ab669
+msgid "Switch to the :guilabel:`Style` tab."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:277
+# 35bd1eb5435041ddacfe6cb5a5d97f3e
+msgid "Switch the classification style to :guilabel:`Rule-based`. You'll get this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:282
+# e503ce4613bc41bda5a937e34794fc6e
+msgid "Click the :guilabel:`Add` button."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:283
+# d2804ebc3e02417896dbe6d87b2c806b
+msgid "A new dialog that appears."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:284
+# 44aa4e3744774c9f8f2a4f029f6edd54
+msgid "Click the ellipsis :guilabel:`...` button next to the :guilabel:`Filter` text area."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:285
+# b7406017c466413cbc9fc2201961a032
+msgid "Using the query builder that appears, enter the criterion :kbd:`AREA >= 0.00085` and choose a dark color for it."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:287
+# 13c1f377f8bb44fdab9b925020b98ac4
+msgid "Add the criterion :kbd:`AREA <= 0.00085` and choose a light color."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:288
+# 18e94bcbd1854bbfbcae3bee0a9902d7
+msgid "Add the criterion :kbd:`TOWN != 'Swellendam Rural'` and assign it the color black, with transparency at :kbd:`85%`."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:290
+# 7c9cfc2bf98f4d68b288fe35b35d8cd8
+msgid "Click on the :kbd:`TOWN ...` criterion in the list of rules, and then on :guilabel:`Increase priority`."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:293
+# 9054e89f63e24672a944e5603b6f968b
+msgid "Your dialog should look like this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:298
+# f2ff3231564b454691953e973c7e3cac
+msgid "Apply this symbology."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:300
+# 7ddbdbd0958b40e4b6379eb160b35877
+msgid "Your map will look like this:"
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:305
+# 0b5ea37a22424bf8a7c4e42581a140fd
+msgid "Now you have two area classes, with the farms in the Swellendam Rural area emphasized."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:311
+# 2f301bfcb5aa485385c5642d710d9d47
+msgid "Symbology allows us to represent the attributes of a layer in an easy-to-read way. It allows us as well as the map reader to understand the significance of features, using any relevat attributes that we choose. Depending on the problems you face, you'll apply different classification techniques to solve them."
+msgstr ""
+
+#: ../../../vector_classification/classification.rst:320
+# 43ed687d8f404d7ebcde5b7fbcb52438
+msgid "Now we have a nice-looking map, but how are we going to get it out of QGIS and into a format we can print out, or make into an image or PDF? That's the topic of the next lesson!"
+msgstr ""
+
+#: ../../../vector_classification/index.rst:3
+# fb8c14b95993498b845f6e2ed47e392b
+msgid "|MOD| Classifying Vector Data"
+msgstr ""
+
+#: ../../../vector_classification/index.rst:5
+# 23160790f0014805859baf2bee954236
+msgid "Classifying vector data allows you to assign different symbols to features (different objects in the same layer), depending on their attributes. This allows someone who uses the map to easily see the attributes of various features."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:2
+# f8ae269b2a3c4ebb9e2af1d5fac4c879
+msgid "|LS| The Label Tool"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:4
+# 5bd605c423894e35979fff2700296d7d
+msgid "Labels can be added to a map to show any information about an object. Any vector layer can have labels associated with it. These labels rely on the attribute data of a layer for their content."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:8
+# 5fc714bcf42847e894d9a41e586e5646
+msgid "The :guilabel:`Layer Properties` dialog does have a :guilabel:`Labels` tab, but for this example we will not be using it. It has too few options and may be difficult to work with, which is why it will probably be taken out of new versions of QGIS (after 1.8). Instead, for this lesson we'll use the separate :guilabel:`Label tool`, which has more options and is more user-friendly."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:15
+# 5ffd65eadb8f4747b93eb92b5c574b2b
+msgid "**The goal for this lesson:** To apply useful and good-looking labels to a layer."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:19
+# 1ce20612f4b84061abddc147cdae5972
+msgid "|basic| |FA| Using labels"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:21
+# 50b0f15313b14a49878a0339265def5f
+msgid "Before being able to access the Label tool, you will need to ensure that it has been activated."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:24
+# 6f7d5ce3a01c4a449cab726480f7ccaf
+msgid "Go to the menu item :menuselection:`View --> Toolbars`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:25
+# 502b8dbb718c4aea8e952aa97f3d64c9
+msgid "Ensure that the :guilabel:`Label` item has a check mark next to it. If it doesn't, click on the :guilabel:`Label` item, and it will be activated."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:27
+# 88e23883be6246549f20c08c93a33a5f
+msgid "Click on the :guilabel:`places` layer in the :guilabel:`Layers list`, so that it is highlighted."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:29
+# 91d8ea288f8d4b19b8ccfcb336212d7f
+msgid "Click on the following toolbar button:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:34
+# f85449e31e364c6a92eda25055005f67
+msgid "This gives you the :guilabel:`Layer labeling settings` dialog."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:36
+# 60c15b1ba9264498bf1669b8bb061ccc
+msgid "Check the box next to :guilabel:`Label this layer with...`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:41
+# c7cd80e78e614ebc82da21971d579e73
+msgid "You'll need to choose which field in the attributes will be used for the labels. In the previous lesson, you decided that the :kbd:`NAME` field was the most suitable one for this purpose."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:45
+# 7da92c22986245a9b44f082b410743ef
+msgid "Select :guilabel:`NAME` from the list:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:52
+# 884db6ddb1a54d14ad5b4beecf7d9854
+msgid "The map should now have labels like this:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:58
+# 5f6cefac5f804dd882c6a3b40ca8e2e6
+msgid "|basic| |FA| Changing label options"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:60
+# 2e80fcff83f04452bd99fe36bf573248
+msgid "What we have so far is good, but as you can see, the labels are overlapping the points that they are associated with. That doesn't look very nice. The text is also a bit larger than it needs to be. Let's fix these problems!"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:64
+# ec6cf395f9014ed8ae05587ce4943907
+msgid "Open the :guilabel:`Label tool` again by clicking on its button as before."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:65
+# 1a2eece636654ef18aa45e11265ea85d
+msgid "Click on the ellipsis (:guilabel:`...`) button to change the text properties:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:70
+# 9f95be26cfd7470c8f9d261cd8e8615d
+msgid "A standard text change dialog appears, similar to those in many other programs. Change the font to :kbd:`Arial` size :kbd:`9`. Your labels will now look like this:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:77
+# a7e3057cfd0a4b91b5ae56b0b3495e09
+msgid "That's the font problem solved! Now let's look at the problem of the labels overlapping the points, but before we do that, let's take a look at the :guilabel:`Buffer` option."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:81
+# 8c897a6fc47c4977a8c2a9be17fb2a01
+msgid "Open the :guilabel:`Label tool` dialog."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:82
+# b403e399843045f585939b502faab2fa
+msgid "Deactivate the label buffer by clicking on the checkbox next to the text that says :guilabel:`Buffer`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:84
+#: ../../../vector_classification/label_tool.rst:104
+# 3bb449b56d914943bf6173621795f8a4
+# 7a6046bd80034b62a01b59bdff3d39aa
+msgid "Click :guilabel:`Apply`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:86
+# a320aae148fe4cf1a64756a00f37e531
+msgid "Note the effects in the map:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:91
+# 602e9fa824424635a1945bd2f414533f
+msgid "Now you can see why we usually need label buffers!"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:93
+# 378906731f1e4b5cb2d6705cf1ac9d44
+msgid "Reactivate the buffers by clicking in the same checkbox as before, and then clicking :guilabel:`Apply`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:96
+# 615ef028fc6343918f379e12d4f34d81
+msgid "Back to the problem of the labels that overlap points."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:98
+# b66e25cc8ca345109fbbb21f63431ecc
+msgid "In the :guilabel:`Label tool` dialog, go to the :guilabel:`Advanced` tab."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:99
+# 924df479c9e949fa85d681a49d2ebc03
+msgid "Change the value of :guilabel:`Label distance` to :kbd:`2`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:106
+# 6582e060ea424c6f9f95c91d4deb7172
+msgid "This is the result:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:112
+# 4b1cd1c607d24705ba9d284fbcd0eb86
+msgid "|moderate| |FA| Using labels instead of layer symbology"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:114
+# 3efe64b62e4b4bddb695fcac98dde3fa
+msgid "In many cases, the location of a point doesn't need to be very specific. For example, most of the points in the :guilabel:`places` layer refer to entire towns or suburbs, and the specific point associated with such features is not that specific on a large scale. In fact, giving a point that is too specific is often confusing for someone reading a map."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:120
+# 19ea344731ea40f08ee7433c3889c5ea
+msgid "To name an example: on a map of the world, the point given for the European Union may be somewhere in Poland, for instance. To someone reading the map, seeing a point labeled *European Union* in Poland, it may seem that the capital of the European Union is therefore in Poland."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:125
+# 9343f4304a2d43fd9e449b5e615aca7a
+msgid "So, to prevent this kind of misunderstanding, it's often useful to deactivate the point symbols and replace them completely with labels."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:128
+# 0c2b6c74f699426ea0475fcba72b39d1
+msgid "In QGIS, you can do this by changing the position of the labels to be rendered directly over the points they refer to."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:131
+# d0257405398f4cc3bcd4b8b5020ffc9d
+msgid "Open the :guilabel:`Layer labeling settings` dialog for the :guilabel:`places` layer."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:133
+# c07cf61ed4ee499b93590094010fa804
+msgid "Go to the :guilabel:`Advanced` tab."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:134
+# 46568fa1700349d594e429a7f48fb5ac
+msgid "Click on the :guilabel:`over point` button."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:139
+# 2a961727ff1f4f9d90bb6dbb67233ae5
+msgid "Hide the point symbols by editing the layer style as usual, and setting the size of points to :kbd:`0`:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:145
+# 701842e898294a629f9cc3a71bfef45b
+msgid "Click :guilabel:`OK` and you'll see this result:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:150
+# 5f72ccec70ae4014bc118a83b4e898db
+msgid "As you can see, some of the labels are now missing to prevent overlap (at this scale). Sometimes this is what you want when dealing with datasets that have many points, but at other times you will lose useful information this way. There is another possibility for handling cases like this, which we'll cover in a later exercise in this lesson."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:160
+# e7e899a376424b3996b6314b4befbc38
+msgid "|moderate| |TY| Customize the labels"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:162
+# 9441a911f45548699b0c5c6e140c6f78
+msgid "Return the label and symbol settings to the way they were before."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:164
+# d8f64abb1e264bc6a3eb53c11a6e3340
+msgid ":ref:`Check your results <label-tool-1>`"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:166
+# 14246c0169be4584962e17a9b28606f7
+msgid "Set the map to the scale :kbd:`1:50000`. You can do this by typing it into the :guilabel:`Scale` box in the :guilabel:`Status Bar`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:168
+# 118cbe212b484f81910fa59a17a5a48a
+msgid "Modify your labels to be suitable for viewing at this scale."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:170
+# e265d3511bae41c683466471bc490499
+msgid ":ref:`Check your results <label-tool-2>`"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:174
+# e713b0e7b3384c038576321119f16839
+msgid "|moderate| |FA| Labeling lines"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:176
+# 5bf187cf395d40a48bd861ca71f76b8c
+msgid "Now that you know how labeling works, there's an additional problem. Points and polygons are easy to label, but what about lines? If you label them the same way as the points, your results would look like this:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:183
+# f6d9208e2af24d21bccc2d6069165052
+msgid "This is not very useful! To make lines behave, we'll need to edit some options."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:185
+# 6a3885327791474ba0e83f27970d327f
+msgid "Hide the :guilabel:`places` layer so that it doesn't distract you."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:186
+# a40bed283c704f4db06ed0ff646602a4
+msgid "Activate labels for the :guilabel:`streets` layer as before. (Remember to use the :guilabel:`Label tool` on the toolbar, not the one in :guilabel:`Label Properties`!)"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:189
+# f7b89b830a634398b3ae4c40f474449b
+msgid "Set the font :guilabel:`Size` to :kbd:`9` so that you can see more labels."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:190
+# 48ddd079e063459092aa8f42ec1c961e
+msgid "Zoom in on the Swellendam town area."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:191
+# b862c546e4bd422cb96edb6a5ff912e2
+msgid "In the :guilabel:`Label tool` dialog's :guilabel:`Advanced` tab, choose the following settings:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:197
+# 7ae7ddb8a3254bbb97e320782f8f8870
+msgid "The map will look somewhat like this, depending on scale:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:202
+# 41a4d451aab34e84a39ebd5dc3e86ed0
+msgid "It's better than before, but still not ideal. For starters, some of the names appear more than once, and that's not always necessary. To prevent that from happening:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:206
+# 45f8d6d495264ebba296800f18422297
+msgid "Enable the option :guilabel:`Merge connected lines to avoid duplicate labels` (also under the :guilabel:`Advanced` tab - you may need to scroll down to see it)."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:210
+# a66b387c3d2e409c879b8eaa60a519cb
+msgid "Another useful function is to prevent labels being drawn for features too short to be of notice."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:213
+# 684aa2839c5741a183c2b376af85f0ea
+msgid "Set the value of :guilabel:`Suppress labeling of features smaller than ...` to :kbd:`5mm` and note the results when you click :guilabel:`Apply`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:216
+# d00ce632603645b3a67c791a53759434
+msgid "Try out different :guilabel:`Placement` settings as well (also under the :guilabel:`Advanced` tab). As we've seen before, the :guilabel:`horizontal` option is not a good idea in this case, so let's try the :guilabel:`curved` option instead!"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:221
+# 7df4f1621a184c16ac580ba6d3eee4ef
+msgid "Select the :guilabel:`curved` option under the :guilabel:`Advanced` tab of the :guilabel:`Layer labeling settings` dialog."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:224
+# 729534c86cce4ad4b767e2c47bf72981
+msgid "Here's the result:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:229
+# 8ca3e8d4bd6e49f39b5ebf2a0fbfff3d
+msgid "As you can see, this hides a lot of the labels that were previously visible, because of the difficulty of making some of them follow twisting street lines and still be legible. You can decide which of these options to use, depending on what you think seems more useful or what looks better."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:235
+# fafa478b4d934eac93d315e7a02f9737
+msgid "|hard| |FA| Data defined settings"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:237
+# f52ce45961764a86a22e008edd16fa61
+msgid "Deactivate labeling for the :guilabel:`streets` layer."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:238
+# 7e949b8033834de6ab86f6eda0ef8c3f
+msgid "Reactivate labeling for the :guilabel:`places` layer."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:239
+#: ../../../vector_classification/label_tool.rst:267
+# 17116c4d49be42e992654d714ac51d8a
+# 3f9d81f6542143cf8585159deb41d051
+msgid "Open the attribute table for :guilabel:`places`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:241
+# 239f12ac043b44a5a661d30056b6226b
+msgid "It has two fields that are of interest to us now: :kbd:`ADDR_CITY` and :kbd:`IN_SWD`. :kbd:`ADDR_CITY` is the city that the feature is in. :kbd:`IN_SWD` is derived from it, and tells you whether or not that feature is in Swellendam (:kbd:`1` if it is, :kbd:`0` if not). We can use this data to influence the label styles."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:247
+# 487ecf323f3e4058bce9c8e9d579918c
+msgid "Navigate to the :guilabel:`Data defined settings` tab."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:248
+# 61529d56aae24f519af589816db1994b
+msgid "In the :guilabel:`Italic` dropdown, select :kbd:`IN_SWD` and click :guilabel:`Apply`."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:251
+# 35142bb80d994e8cb61673391568f3f3
+msgid "Notice its effects:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:260
+# a0572d26d7e54056b1225a4609cbb564
+msgid "|hard| |TY| Using data defined settings"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:262
+# 284879deb5904a8599335f4a561a9204
+msgid "We're jumping ahead a bit here to demonstrate some advanced labeling settings. At the advanced level, it's assumed that you'll know what the following means. If you don't, feel free to leave out this section and come back later when you've covered the requisite materials."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:268
+# 280d822afbda4ffcb5997df226af5db1
+msgid "Enter edit mode by clicking this button (at the lower edge of the attribute table):"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:274
+# dcaaa497ac934b30b51bf3c0edeabcce
+msgid "Add a new column:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:279
+# 6b96b9b72b9f4a248f2573fbc18a3805
+msgid "Configure it like this:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:284
+# c7742e1720cd4660b92c866607bd252a
+msgid "Use this to set custom font sizes for each different type of place (i.e., each key in the :kbd:`PLACE` field)."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:287
+# b8df1e7cb6ae4af4a864593d5b3087df
+msgid ":ref:`Check your results <label-data-defined-1>`"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:291
+# 532256d09d794e1389023292929adb57
+msgid "|hard| Further possibilities with labeling"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:293
+# c96cfa508831403f8ba1a16015eef546
+msgid "We can't cover every option in this course, but be aware that the :guilabel:`Label tool` has many other useful functions. You can set scale-based rendering, alter the rendering priority for labels in a layer, and set every label option using layer attributes. You can even set the rotation, XY position, and other properties of a label (if you have attribute fields allocated for the purpose), then edit these properties using the tools adjacent to the main :guilabel:`Label tool`:"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:304
+# 7dca407237f34d6485411a2de19fffce
+msgid "(These tools will be active if the required attribute fields exist and you are in edit mode.)"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:307
+# a1a3562f4fcd46b0a768911ec89ebae3
+msgid "Feel free to explore more possibilities of the labeling system."
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:312
+# de24ba3cb83a4cbabac0d7057331dd04
+msgid "You've learned how to use layer attributes to create dynamic labels. This can make your map a lot more informative and stylish!"
+msgstr ""
+
+#: ../../../vector_classification/label_tool.rst:318
+# 8a84a58a620345fab6c32548f21b2df0
+msgid "Now that you know how attributes can make a visual difference for your map, how about using them to change the symbology of objects themselves? That's the topic for the next lesson!"
+msgstr ""
+

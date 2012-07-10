@@ -1,0 +1,492 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, Linfiniti Consulting CC
+# This file is distributed under the same license as the The Free Quantum GIS Training Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The Free Quantum GIS Training Manual 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-10 11:51\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../qgis_plugins/fetching_plugins.rst:2
+# a85e4195ea4e40878b39664d7b0f3521
+msgid "|LS| Installing and Managing Plugins"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:4
+# d9640c8837cd4873ad06488c04ec7479
+msgid "To begin using plugins, you need to know how to download, install and activate them. To do this, you will learn how to use the :guilabel:`Plugin Installer` and :guilabel:`Plugin Manager`."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:8
+# 1f79d51b953f476883a7bd11b6a6ef13
+msgid "**The goal for this lesson:** To understand and use QGIS' plugin system."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:11
+# 824e8c771efe45f1ba1616a49ef217b5
+msgid "|basic| |FA| Managing Plugins"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:13
+# 2c11b662bdbf45bebe4014eb80857c2f
+msgid "To open the :guilabel:`Plugin Manager`, click on the menu item :menuselection:`Plugins --> Manage Plugins`."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:15
+# 7793f649f2bb4ef5928835bf8f644f11
+msgid "In the dialog that opens, find the :guilabel:`GdalTools` plugin:"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:20
+# da0652af7aab456bb9a25f697d3d2c0b
+msgid "Click in the box next to this plugin and uncheck it."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:21
+# a3232e88df12408697797af9f5fe5e75
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:22
+# d9b43f839c174a779a5f81bb2a2d830d
+msgid "Look under the :guilabel:`Raster` menu. You will see that many of the functions you have been using before have disappeared! This is because they are part of the :guilabel:`GdalTools` plugin, which needs to be activated for you to use them."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:26
+# 2b89ce3bd952487a9aa7ed6bf6275379
+msgid "Open the :guilabel:`Plugin Manager` again and reactivate the :guilabel:`GdalTools` plugin by clicking in the checkbox next to it."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:28
+# 07d8f57269d04de3bc2a671fa2dfdd69
+msgid "If you open the :guilabel:`Raster` menu again, you'll see that the tools have reappeared."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:31
+# ceca5e8dbe0f437badd063fed155f7e7
+msgid "Importantly, however, the list of plugins that you can activate and deactivate only draws from the plugins that you currently have installed. To install new plugins, you need to use the :guilabel:`Plugin Installer`."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:36
+# 0e444767551e4deeb8bbad963ef9e241
+msgid "|basic| |FA| Installing New Plugins"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:38
+# 2ad1c8489cdd4c6283bc17c678cc85ac
+msgid "To start the :guilabel:`Plugin Installer`, click on the menu item :menuselection:`Plugins --> Fetch Python Plugins`."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:41
+# 55c546337c754220858e7e442111f9ac
+msgid "A dialog will appear. The amount of plugins that you see here will differ, depending on your setup."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:44
+# e1cd1108ac7a4611a74e4447f34087be
+msgid "The plugins that are available to you for installation depend on which *repositories* you are checking."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:47
+# b8a53a6809524441874c80c808bcb89b
+msgid "QGIS plugins are stored online in repositories. By default, only the official repositories are active, meaning that you can only access official plugins. These are usually the first plugins you want, because they have been tested thoroughly and are often included in QGIS by default."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:52
+# 63df64139f8449c6b59f9d3f6a4c7b19
+msgid "It is possible, however, to try out more plugins than the default ones. First, you want to check in all available repositories. To do this:"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:55
+# 05bd7a289aad492a982fe3bd3efb08f9
+msgid "Open the :guilabel:`Repositories` tab on the :guilabel:`Plugin Installer` dialog:"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:61
+# c40e36e005104ce7a449fa3b85b972a0
+msgid "Click the :guilabel:`Add 3rd party repositories` button. A disclaimer will appear."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:63
+# 18e16a164bd9444f9687a14ee359e116
+msgid "Click :guilabel:`OK` to find and add these extra repositories:"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:68
+# 56c946f72e0349cfa201595fe2f92214
+msgid "However, even with these extra repositories enabled, you won't see the plugins that they contain, unless you allow these plugins to be displayed."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:71
+# ef1cda59ed5b41f38e08bd6953edd4ad
+msgid "Open the :guilabel:`Options` tab:"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:76
+# 198ad4630820451e94d9aef7b78af2ed
+msgid "Select the option :guilabel:`Show all plugins except those marked as experimental`."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:78
+# 0afbf2bd07aa413591656a13ca1a216e
+msgid "If you now switch back to the :guilabel:`Plugins` tab, you will see that many more plugins are now available for installation."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:80
+# 81b08646ff7048cab4b8e3c5f2d47778
+msgid "To install a plugin, simply click on it in the list and then click the :guilabel:`Install plugin` button."
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:84
+#: ../../../qgis_plugins/plugin_examples.rst:216
+# da0fd3155e05414cb118ab8320d77c19
+# 7efeb9bdeb8c4274b69060da4730a8ea
+msgid "|IC|"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:86
+# 645c47ea6ec74dbf80647b2c4add5861
+msgid "Installing plugins in QGIS is simple and effective!"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:89
+#: ../../../qgis_plugins/plugin_examples.rst:223
+# 8695af04ffe049e388c726573303dcfc
+# fa015d3308744b95b235a69f08963730
+msgid "|WN|"
+msgstr ""
+
+#: ../../../qgis_plugins/fetching_plugins.rst:91
+# d50b46d5a7b247808d7f86c3fe786079
+msgid "Next we'll introduce you to some useful plugins as examples."
+msgstr ""
+
+#: ../../../qgis_plugins/index.rst:3
+# 57b3439f990f493f809dc61b571520f2
+msgid "|MOD| Plugins"
+msgstr ""
+
+#: ../../../qgis_plugins/index.rst:5
+# 3bf3ccee86614444b32be1b0df1750f2
+msgid "Plugins allow you to extend the functionality QGIS offers. In this module, you'll be shown how to activate and use plugins."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:2
+# df96eb8cb67444aebe48dce0a28b7b3b
+msgid "|LS| Useful QGIS Plugins"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:4
+# 75110054b56f49f4abc27ff6232733bc
+msgid "Now you can install, enable and disable plugins. Let's see how this can help you in practice by looking at some examples of useful plugins."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:7
+# 589b1173fa4f4505a9fe412f8c62f708
+msgid "**The goal for this lesson:** To familiarize yourself with the plugin interface and get acquainted with some useful plugins."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:11
+# 85b1347fe0564003bcca5a1fc4a89cb1
+msgid "|basic| |FA| The Raster Terrain Analysis Plugin"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:13
+# 57a42a3479174e5d81f3196236fd91b1
+msgid "Start a new map with only the :guilabel:`srtm_41_19.tif` raster dataset in it (look in :kbd:`exercise_data/raster/SRTM`)."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:16
+# 3e7a0688d95f4313b0758d7e4b619f5c
+msgid "From the lesson on raster analysis, you're already familiar with raster analysis functions. You used GDAL tools (accessible via :guilabel:`Raster --> Analysis`) for this. However, you should also know about the Raster Terrain Analysis plugin. This ships standard with newer versions of QGIS, and so you don't need to install it separately."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:22
+# 770b6977b48847cc825d2996d8522813
+msgid "Open the :guilabel:`Plugin Manager` and check that the Raster Terrain Analysis plugin is enabled:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:28
+# a66a88a245174de59ce60c31824842ff
+msgid "Open the :menuselection:`Raster` menu. You should see a :menuselection:`Terrain analysis` submenu."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:30
+# 3e00bf928a244cbab383c4e6cd8f4943
+msgid "Click on :menuselection:`Terrain analysis --> Relief` to open this dialog:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:35
+# 2b0e59d480b94aaf89c6e966119cd3eb
+msgid "Save the new file under :kbd:`exercise_data/plugins/relief.tif` (create a new folder if necessary)."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:37
+# 7920c149c50f4c6fbef5347f4f2649c4
+msgid "Leave the :guilabel:`Output format` and :guilabel:`Z factor` unchanged."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:38
+# e5ddd96c3b3e4eb591899b1cb7baf967
+msgid "Check the box :guilabel:`Add result to project`."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:39
+# 9eb1bb8c07b94004adb6eb0e0b8cb727
+msgid "Click the :guilabel:`Create automatically` button. The list below will be populated:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:45
+# 73f4d021a381489a94978644c46e213a
+msgid "These are the colors that the plugin will use to create the relief."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:46
+# 28170d68db39403b8d0ec2d2adbb34cc
+msgid "If you like, you can change these colors now. For example:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:51
+# 36c3970556bc45e697dc36558ebc4b6f
+msgid "Click :guilabel:`OK` and the relief will be created:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:56
+# 3ed01231581a4402ab5bc50eed27a783
+msgid "This achieves a similar effect to when you used the semi-transparent hillshade as an overlay over another raster layer. The advantage of this plugin is that it creates this effect using only one layer."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:61
+# 7d25c14b98a04e2e96f0e307864fd8dc
+msgid "|basic| |FA| The Google Layers Plugin"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:63
+# f628799bb16245e7bfcd2aa6e3587afb
+msgid "Start a new map with only the :guilabel:`streets` layer in it."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:64
+# f831ea18b7a343248ddb69b51941bd34
+msgid "Zoom in over the Swellendam area."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:65
+# 964454594e084b3d855c74877d888292
+msgid "Using the :guilabel:`Plugin Installer`, find the plugin by entering the word :kbd:`Google` in the :guilabel:`Filter` field."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:67
+# 1ce81671ecaf47bca5596ab7240b091e
+msgid "Select the Google Layers plugin from the filtered list:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:72
+# 355a48072dbe4612b8f834596b1c3af0
+msgid "Click the :guilabel:`Install plugin` button to install."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:73
+# bff7070fb346494ca88613f8d1fc14a8
+msgid "When it's done, close the :guilabel:`Plugin Installer`."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:74
+# 653c62e15e5341568d3e85037399149d
+msgid "Open the :guilabel:`Plugin Manager`."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:75
+# b18ee80137eb4fc098cc50a1bb33a844
+msgid "Enable the new plugin:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:80
+# 0cc451373def4490b49d9f4b9576b3ef
+msgid "Check the box beside it."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:81
+# 6256ed8786b94f7781213a84f6d35c0a
+msgid "Now click :guilabel:`OK` to enable the plugin."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:83
+# 556d48473e2a4c5496982e7a7b502864
+msgid "Before using it, make sure that both your map and the plugin are configured properly:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:86
+# 8001ad7c7dc246e68cc763a89e1b5d7c
+msgid "Open the plugin's settings by clicking on :menuselection:`Plugins --> Google Layers --> Settings`."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:88
+# 88bf5424a50c4284a4ee05effb32bafe
+msgid "Use the dialog to choose a map type you want. In this example, we'll use the \"Hybrid\" type map, but you can choose any others if you want."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:90
+# 346ced31b21b429b846407f4c2abc500
+msgid "Enable \"on the fly\" projection and use the Google Mercator projection:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:95
+# 57843fbbed894f569ce9721946840283
+msgid "Now use the plugin to give you a Google map of the area! You can click on :menuselection:`Plugins --> Google Layers --> Google Layers` to run it. Or, if you have the :guilabel:`Plugins` toolbar enabled, you can click on its icon:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:103
+# fd4a55f46f50440fb180b66f8fe65f37
+msgid "This will load a new raster image in from Google that you can use as a backdrop, or to help you find out where you are on the map. Here is such a layer, with our own vector road layer as overlay:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:111
+# 4498aa03a2e945bc974a5fbc7fae3a1b
+msgid "|moderate| |FA| The OpenStreetMap Plugin"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:113
+# 752a4bdeee2f496d92760d3a60657ec5
+msgid "Since we're using OpenStreetMap (OSM) data in our examples, it would be instructive to know where it comes from. QGIS has a plugin that allows you to download and edit this kind of data easily."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:117
+# 46f98289f2d2410283add81e7126f643
+msgid "First, ensure that you have the plugin installed by opening the :guilabel:`Plugin Installer` and filtering on the word :kbd:`street`:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:123
+# a0ca7c12e18343e68276e76470175780
+msgid "The :guilabel:`OpenStreetMap plugin` should be installed by default, but if it isn't, you can get it by clicking the :guilabel:`Install plugin` button."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:125
+# b34a375a8fbb4d7897da2890bf7333d4
+msgid "Once it's installed, activate it via the :guilabel:`Plugin Manager`."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:126
+# 16ff9d119a184dd885cef5b0082daffc
+msgid "A new panel and new buttons will be added to your interface:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:131
+# 633f8f3359d94fbb85b5662c9db2b03f
+msgid "Let's download data for Swellendam. The plugin will download data for the area currently on your map."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:134
+# e3599bd739074c0f935bd30b623a469f
+msgid "Zoom in to the Swellendam area."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:135
+# a136f0f78d7a484b921164b0c1c2c2e2
+msgid "To add data, click on the :guilabel:`Download OSM data` button:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:140
+# 100b6b60721d45a181f94505f2dc3a5e
+msgid "You may see a message stating that the latitude, longitude, or both extents are too large. This is because the OSM server doesn't have the capacity to continually give people data about the whole world. To prevent people trying to download too much data, there's a limit to the size of the area for which you can download data. If you get one of these error messages, zoom in to a smaller area on the map."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:147
+# 41a2d7ffb6434d5ca640b313bc37b60d
+msgid "If you have an acceptable area, you can leave the other options as default and click the :guilabel:`Download` button."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:149
+# bdd1e786ae724048bc2adb6cef5d3ee1
+msgid "After a while, the data will be downloaded, and will be shown in your map automatically. Here's an example:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:155
+# c0205be7541b4c43a4c31732ad776d9a
+msgid "(The labels are added from our local data for identification purposes.)"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:157
+# 0ae5c9690a0640339ab5c6c9208c5e11
+msgid "With any of the OSM layers selected in your :guilabel:`Layers list`, the buttons in the plugin's dock panel will become active:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:163
+# 60655bce1c574d039613d30a9f617aee
+msgid "Using the plugin's own :guilabel:`Identify feature` tool (at the far left of the above buttons), click on any feature in the OSM layers to retrieve its data and see it displayed in the plugin interface. For example, clicking on the river that runs through town gives you this:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:171
+# 98deeca5338245bb93d841ba72fe96ce
+msgid "You can create new features (point, lines, polygons) as well as edit a feature that you have identified. For example, using the plugin's :guilabel:`Identify feature` tool as before, you can click on this street:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:178
+# a3cf9918a7714209b3d49cf413c37f3f
+msgid "Looking at its attributes, it doesn't have a name:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:183
+# 41901a23ded54a2689d597e221f4749a
+msgid "Double-click in the :guilabel:`<new tag here>` field."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:184
+# 5217ae0333364971b7a372de73a0aacb
+msgid "Select a new tag (attribute) from a list. Let's choose :guilabel:`name`:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:189
+# 33ae2556fdd342c8b85d354712acb60f
+msgid "Double-click in the :guilabel:`Value` field:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:194
+# 5c61b38012a9485db4eebb8521b104fc
+msgid "You can save your changes to the original source data, too. This makes the changes available internationally on the OSM server."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:197
+# 2addff5a21cc4e9797c69180cdc3f8ad
+msgid "Click the :guilabel:`Upload OSM data` button:"
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:202
+# eaf1050b05c043158ec56411d1e859c0
+msgid "This gives you a dialog, which you can fill in as needed."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:203
+# 974d24f410ae424385ec4a0d598cf153
+msgid "If you have a user account at OSM, you can enter your credentials in the spaces provided and click the :guilabel:`Upload` button to save those changes."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:207
+# 91d4611751254049abbe1516e7ebfc63
+msgid "Note that the plugin has many other functions: for example, you can also save OSM layers to a local directory, load data from saved OSM layers, and export OSM data as shapefiles."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:211
+# a6e37e9884414b4e97adfc5d9586e6a9
+msgid "OSM's data comes from, and is maintained by, the efforts of their users. Contributing data using this plugin allows you to help improve the quality of the OSM data you depend on."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:218
+# 7e888d18658c4265a983d3ec8e731452
+msgid "There are many useful plugins available for QGIS. Using the built-in tools for installing and managing these plugins, you can find new plugins and make optimum use of them."
+msgstr ""
+
+#: ../../../qgis_plugins/plugin_examples.rst:225
+# 1c873309065d4592b1574c6bb163a7d5
+msgid "Next we'll look at how to use layers that are hosted on remote servers in real time."
+msgstr ""
+

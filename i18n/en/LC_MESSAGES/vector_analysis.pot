@@ -1,0 +1,2176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, Linfiniti Consulting CC
+# This file is distributed under the same license as the The Free Quantum GIS Training Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The Free Quantum GIS Training Manual 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-10 11:51\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../vector_analysis/basic_analysis.rst:2
+# 1c1104ed684045cc9abab0aeb12bb443
+msgid "|LS| Vector Analysis"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:4
+# a1f73be24e264531b660e19a2266da46
+msgid "Vector data can also be analyzed to reveal how different features interact with each other in space. There are many different analysis-related functions in GIS, so we won't go through them all. Rather, we'll pose a question and try to solve it using the tools that QGIS provides."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:9
+# 606fba9a042345809883b7785204c8c6
+msgid "**The goal for this lesson:** To ask a question and solve it using analysis tools."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:14
+# 6c4c8da4c321412084e1a7bd788029a9
+msgid "|basic| The GIS Process"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:16
+# 16ab701966e04d46b746cb7c254e750e
+msgid "Before we start, it would be useful to give a brief overview of a process that can be used to solve any GIS problem. The way to go about it is:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:19
+# f2b2b49e0b0447b49ee8475714ccb67b
+msgid "State the Problem"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:20
+# b72257f102ff4c7783706326a67bf8b0
+msgid "Get the Data"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:21
+# e7c7d2e6351240bd97cbf3aa0ba70cb1
+msgid "Analyze the Problem"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:22
+# f126164023964524bd1dd09ac891094d
+msgid "Present the Results"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:25
+# 72fd40875b304d479bfd3c8df475c7ab
+msgid "|basic| The problem"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:27
+# f1e300cbb0174dafaeb9d4b4d6b3ce95
+msgid "Let's start off the process by deciding on a problem to solve. Let's say you're a property developer, and you need to buy a farm to build a new residential development for people who have had enough of Cape Town and Johannesburg. You've done some market research, and you've come up with the following requirements that a farm needs to satisfy:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:33
+# 36393892ec954c20add6b5a59a95c6f5
+msgid "It needs to be in Swellendam."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:34
+# eaeb105ce5254713978d57d002f35f28
+msgid "You don't want to have to build a long access road (maximum distance 500 meters), and it has to be easily accessible from main routes."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:36
+# e9ba22ed33e7440b8b51973e7a55ce6d
+msgid "The people who make up the target market will probably have children, so it must be within a reasonable distance (by car) from a school."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:38
+# 3bd5f67763f04034a5fca61f27a8154e
+msgid "The farm must be between 100 and 150 hectares in area."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:41
+# fed3c0e91f7c4114942a2903386f8fe9
+msgid "|basic| The data"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:43
+# 0fb6580aeedd4aac85d2d9f854f7127f
+msgid "To answer these questions, we're going to need the following data:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:45
+# 3983e34dcefe475cbb88070fbf984143
+msgid "The farms we're going to be choosing from."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:46
+# 257e43c098ce4c53b85b7b66504fe96d
+msgid "The roads that need to be running through these farms."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:47
+# e9514382d7c34387978d2664f9ba8224
+msgid "The location of schools."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:49
+# 09aba0f1d7134407b2c34cad79d85e12
+msgid "For this exercise the data has been provided already, but in reality you may need to find a provider for the datasets in question. In South Africa, the Surveyor-General's Office is a good source of the kind of data you'd find on 1: 50 000 topographic map sheets, which includes all of the data we need for this particular problem."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:56
+# dbbd1711ca0f4e0ba83a0e4fe0bc75a9
+msgid "|basic| |FA| Start a Project"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:58
+# b2208c12da4d424494e2682176e0576e
+msgid "So now that we know what we want to do, let's start doing it!"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:60
+# f90864e9b37044e1aedc74c8fc9e110a
+msgid "Start a new QGIS project."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:61
+# aa7e95fa09e44317bb1bc4e84f8f6eb1
+msgid "Start adding new layers. They're all to be found in the :kbd:`exercise_data/projected_data` folder."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:63
+# 35701074a97e493ea3ca460993d39061
+msgid "Add the :kbd:`schools_33S`, :kbd:`roads_33S` and :kbd:`farms_33S` layers."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:65
+# 2dd103de789c4bca92b017db47c487a9
+msgid "They'll probably look very familiar. They're the same data we've been working with all along, except that they're now in a Projected Coordinate System. This is necessary for analysis, for reasons we've covered in the previous lesson. (We want to be able to calculate distances in meters and areas in hectares, not in degrees.)"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:71
+# efa7f9ccd0f04866815e8d9de401fe71
+msgid "Once you've got these layers in your :guilabel:`Layers list`:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:73
+# 5bcb7e5a8d5f4512b61f9ce577e27b54
+msgid "Rename the layers by right-clicking on them and selecting the :guilabel:`Rename` option."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:75
+# 3e9e0cd4d31745f19d9f4327b085e2ce
+msgid "Give them the new, less messy names :kbd:`roads`, :kbd:`schools` and :kbd:`farms`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:77
+# 1c64c9ad5e8346798b026454c62218ca
+msgid "Save your map under :guilabel:`exercise_data`, as :kbd:`analysis.qgs`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:78
+# a396e55632204f0a9b00e94e93089f49
+msgid "In your operating system's file manager, create a new folder under :guilabel:`exercise_data` and call it :kbd:`residential_development`. This is where you'll save the datasets that will be the results of the analysis functions."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:83
+# 5eb965e35d4a47c584f14f93e0ca2cd3
+msgid "Now that we've got the data, let's analyze the problem!"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:86
+# 5a9a235873fe484eb1e3c8c4ff74f152
+msgid "|basic| |FA| Analyzing the Problem: Farms in Swellendam"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:88
+# 0ebde73615e641168a5fa2c4a036caa0
+msgid "The first criterion we're facing is that the farm needs to be in Swellendam. So let's tell QGIS to only show us the farms that are, in fact, in Swellendam!"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:91
+# d3a1a875a99e412ba6437048b0cd763c
+msgid "Right-click on the :guilabel:`farms` layer in the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:92
+# 68c12e87e2f44cde856b810f57afb3e4
+msgid "Select the option :guilabel:`Query...`. This gives you a new :guilabel:`Query Builder` dialog."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:94
+# 5d79416cb3d84745a5ee97699cbd7a85
+msgid "Scroll down in the :guilabel:`Fields` list on the left of this dialog until you see the field :kbd:`TOWN`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:96
+# c4de055eb67c4792bf6062debbf831a7
+msgid "Click on it once."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:97
+# 9c5fac01f72e47798edc681a81292900
+msgid "Click the :guilabel:`All` button underneath the :guilabel:`Values` list:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:102
+# d2a9f39ab9b44c74822b50e82c95379d
+msgid "Now we need to tell QGIS to only show us the farms where the value of :kbd:`TOWN` is equal to :kbd:`Swellendam`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:105
+# 47eb3a88f736427eb1e70f95e81da394
+msgid "Double-click the word :kbd:`TOWN` in the :guilabel:`Fields` list."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:106
+# c430f4bb13fe4e82a251b261b3cf37e3
+msgid "Watch what happens in the :guilabel:`SQL where clause` field below:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:111
+# 7487ab7c8046406cacafa7dbe351db15
+msgid "The word :kbd:`\"TOWN\"` has appeared! To build the rest of the query:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:113
+# 505cdf665b744cca810f0c1b3178e6d4
+msgid "Click the :guilabel:`=` button (under :guilabel:`Operators`)."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:114
+# d68f31ad2864413190ecade91191a342
+msgid "Double-click the value :kbd:`Swellendam` in the :guilabel:`Values` list."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:116
+# 70621696bcab4d6cb73d342be46f2a57
+msgid "Your query is this:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:121
+# 8e95ed9bc9844720ae530ec394b76382
+msgid "And now your :guilabel:`farms` layer looks like this:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:126
+# 97c047132a56487f9f443ee7df4e6246
+msgid "For further analysis, it's better if we've got these farms as a separate layer."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:128
+# 5f900c97f383405da16af8028623e4df
+msgid "Right-click on the :guilabel:`farms` layer and click :guilabel:`Save As...`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:129
+# 9ac4d62bc4be47dcb87dd95ebdfe9fb5
+msgid "Next to the :guilabel:`Save as` field in the dialog that appears, click the :guilabel:`Browse` button."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:131
+# 6f8e467f2f234701b4e36d4a05faa394
+msgid "Save the layer under :kbd:`exercise_data/residential_development/`, as :kbd:`swellendam_farms.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:133
+# a2363a4f54614ca498fa4df617de7e0c
+msgid "Check the :guilabel:`Add saved file to map` box in the :guilabel:`Save vector layer as...` dialog."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:135
+# 4bdde5c660164b539fea0b6cc7e79251
+msgid "Click :guilabel:`OK`. It will tell you that :kbd:`Export to vector file has been completed`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:137
+#: ../../../vector_analysis/basic_analysis.rst:230
+#: ../../../vector_analysis/basic_analysis.rst:309
+#: ../../../vector_analysis/basic_analysis.rst:340
+#: ../../../vector_analysis/reproject_transform.rst:162
+#: ../../../vector_analysis/reproject_transform.rst:174
+#: ../../../vector_analysis/reproject_transform.rst:236
+#: ../../../vector_analysis/spatial_statistics.rst:177
+# 5bbf7433b4be489dabebce14c546a6f3
+# e32e12489ca649828a003206f37824dc
+# 883f9522cd0d47a6b05a0225eb37d3b3
+# d8ccd9c1d2db458ba96af08e2764e341
+# bb37c6d9338f44b29cc74c168781658b
+# 5e53760c1bbb47e389cd1f161212c346
+# 8ae6f4a122b04b2e956f27530739b39b
+# 2d5354ed217f4021bc985c643f41746e
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:139
+# 7c1cf2bc6a3b4ab29df2462edd1d3d04
+msgid "Now we've got the :guilabel:`farms` twice, but we only need the one we just created."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:142
+# 689f480d76504a18a4554a7d469a1574
+msgid "Right-click on the old :guilabel:`farms` layer and remove it."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:148
+# 73134068cf3745bbbd43e4216baed03e
+msgid "|basic| |TY| find important roads"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:150
+# 3880ac1da8a14d458320bcff8120d053
+msgid "We have a similar problem with the roads; the only roads we're taking into account are the main ones."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:153
+# 9512b2410f94465da093aca703c9a689
+msgid "Build a query for the :guilabel:`roads` layer, like you did above for the :guilabel:`farms` layer. You want only the types :kbd:`primary`, :kbd:`secondary`, :kbd:`tertiary` and :kbd:`trunk`, so you need to build this query:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:158
+# 4ca29d18bbbd46c7a63908f85d6e6fdc
+msgid ":kbd:`\"TYPE\" = 'primary' OR \"TYPE\" = 'secondary' OR \"TYPE\" = 'tertiary' OR \"TYPE\" = 'trunk'`"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:161
+# 6681db552a94409ea938114285f9d06f
+msgid "You can either use the approach above, where you double-clicked values and clicked buttons, or you can copy and paste the command above."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:164
+# 194afbafb21841d89f201284e23664e9
+msgid ":ref:`Check your results <vector-analysis-basic-1>`"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:167
+# 7d8f7aab6c8147c989cd5c9b127f0dba
+msgid "|basic| |TY| find high schools"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:169
+# 14b6fb2f5e8f4f148696b87c41568ddc
+msgid "Your future customers will want to send their children to high schools."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:171
+# b0048972339c4daca980b2c69cfdc046
+msgid "Use the same approach as before and build this query for the :guilabel:`schools` layer:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:174
+# 76b6f094ecac435ca8bb63649778f038
+msgid ":kbd:`\"has_high_s\" = 'y'`"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:176
+# 0301661c81264f148211aa87babd3cc0
+msgid "You should have only 3 out of the 4 original schools left."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:178
+# 9794879d32b0432fbc4404e15d99d93b
+msgid "Save the resulting layer under :kbd:`exercise_data/residential_development/` as :kbd:`high_schools.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:183
+# dee6e2d3950c422b9f1cbfb8dd1bf59a
+msgid "|basic| |FA| Analyzing the Problem: Distances From Schools and Roads"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:185
+# 7c6423d1935440ee8c236f25aa81ae9e
+msgid "QGIS allows you to calculate distances from any vector object."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:187
+# 82b40d2968f5403bb37fc20de14d3299
+msgid "Make sure that only the :guilabel:`important_roads` and :guilabel:`swellendam_farms` layers are visible, to simplify the map while you're working."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:190
+# 802193d67b2b41e0bea59883288089c0
+msgid "Click on the :menuselection:`Vector --> Geoprocessing Tools --> Buffer(s)` tool:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:196
+# 3f2bc841ce524fb4a92fdef68846ebdb
+msgid "This gives you a new dialog."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:198
+#: ../../../vector_analysis/basic_analysis.rst:288
+#: ../../../vector_analysis/basic_analysis.rst:330
+#: ../../../vector_analysis/spatial_statistics.rst:139
+# 18a9220038e048ee886799a9bef8af8c
+# 4f311955bdd0449b85ef46bb16ef8032
+# 655e23b173474c678fcfc42d4917c2d2
+# 34c2c1e5ccd34d32ae8f4c2a334731ec
+msgid "Set it up like this:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:203
+# e751180a7dcf4d8d9f163a9b8e07eb6a
+msgid "The :guilabel:`Buffer distance` is in meters because our input dataset is in a Projected Coordinate System. This is why we needed to use projected data!"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:206
+# 95101ffd54014eb1b403c15213c92a98
+msgid "Save the resulting layer under :kbd:`exercise_data/residential_development/` as :kbd:`important_roads_buffer_500m.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:208
+# 50eb80a5af934014bc6d97273a42cade
+msgid "Click :guilabel:`OK` and it will create the buffer."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:209
+# dc6cee2b8fa747f1a9c4ba05864875f2
+msgid "When it asks you if it should \"add the new layer to the TOC\", click :guilabel:`Yes`. (\"TOC\" stands for \"Table of Contents\", by which it means the :guilabel:`Layers list`)."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:213
+# 78cb05b6cf3a4610ac232db2b10443ff
+msgid "Now you've got this:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:218
+# a6c5b1f344ff4abcb4573932868767e2
+msgid "OK, that looks interesting! Those are all the areas that are within 500 meters of an important road."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:221
+# 3250825718f14fbca1c5f66d4aa3d8e0
+msgid "But look closer: it looks like there are joins between different sections of road! That's not nice. Remove that layer and let's try again:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:227
+# 6c90b80f85d64593a8e2a4cca621e8d0
+msgid "Note that we're now checking the :guilabel:`Dissolve buffer results` box."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:228
+# 60bfabba859a4a51ba72747918bb82c1
+msgid "Save the output under the same name as before (click :guilabel:`Yes` when it asks your permission to overwrite the old one)."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:232
+# 9f359626d4e5497b8717fe74b122bb18
+msgid "Once you've added the layer to the :guilabel:`Layers list`, it will look like this:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:238
+# 3d24450d883c4ad688a7ac2d7684d5d9
+msgid "That's more like it! Now there are no unnecessary subdivisions."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:243
+# 3ff48cbeffca4356b9c65494a8f98862
+msgid "|basic| |TY| distance from high schools"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:245
+# 77741ded9aea45c1a55081d4b6fd540a
+msgid "Use the same approach as above and create a buffer for your schools."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:247
+# ca142cd5315f4675b7be95881937ee6b
+msgid "It needs to be :kbd:`10 km` in radius, and saved under the usual directory as :kbd:`high_schools_buffer_10km.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:250
+# a398d1092a9246098e7c58813f0a4777
+msgid ":ref:`Check your results <vector-analysis-basic-2>`"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:253
+# 8599ff31989847bdbeea7aa3e8181b61
+msgid "|basic| |FA| Overlapping Areas"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:255
+# a5c33ad9208e43df97de6f51f94f472d
+msgid "Now we have areas where the road in 500 meters away and there's a school within 10 km (as the crow flies). But obviously, we only want the areas where both of these criteria are satisfied at once! To do that, we'll need to use the :guilabel:`Intersect` tool. Find it under :menuselection:`Vector --> Geoprocessing Tools --> Intersect`. Set it up like this:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:264
+# 48947c0c48c64087b7ad4f5a430e5960
+msgid "The two input layers are the two buffers; the save location is as usual; and the file name is :kbd:`road_school_buffers_intersect.shp`. Once it's set up like this, click :guilabel:`OK` and add the layer to the :guilabel:`Layers list` when prompted."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:269
+# 2fe12e05b52f40c2b3f11b20ce018c7d
+msgid "In the image below, the blue areas show us where both distance criteria are satisfied at once!"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:275
+# 7e7d7f29df35474c9f1a588abd987c65
+msgid "You may remove the two buffer layers and only keep the one that shows where they overlap, since that's what we really wanted to know in the first place."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:281
+# fc5670671aa8487f967d70954a0ba6e8
+msgid "|basic| |FA| Select the Farms"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:283
+# ee014bb021eb43fa86282a193c316a45
+msgid "Now you've got the area that the farms must overlap. Next, you want to select the farms in that area."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:286
+# e1d86c80da544fb9a26ea70befece55e
+msgid "Click on the menu entry :menuselection:`Vector --> Research Tools --> Select by location`. A dialog will appear."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:293
+# 1bfa72364b494151a4586dba71580c11
+msgid "Click :guilabel:`OK` and you'll see the results:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:298
+# 6ccbc2e50ce14fc0a478666223d4a7c1
+msgid "The yellow farms are the selected ones. Let's save them as a new layer."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:300
+# 17ad55de4c974bb5a4c0de3bcbcb7815
+msgid "Right-click on the :guilabel:`swellendam_farms` layer in the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:302
+# 1724467a5e474f639ec8fd63e34fe3f8
+msgid "Select :guilabel:`Save Selection As...`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:303
+# eba1258f925c4e16a67048a68461a46d
+msgid "Set the dialog up like this:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:308
+# 34e8831c17d74e44908b3230a525fca6
+msgid "The file name is :kbd:`well_located_farms.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:311
+# 47f00dd8db0a4bbf94082129824db752
+msgid "Now you have the selection as a separate layer."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:314
+# 4a7ecdb667694442859cdae7ac463d6d
+msgid "|basic| |FA| Select Farms of the Right Size"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:316
+# e196de4b27f54fb0b1efca28f65713aa
+msgid "To see which farms are the right area (between 100 and 150 ha), we first need to calculate their areas in hectares."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:319
+# c342a40fe9ad40078a27551c0730d2a2
+msgid "Open the attribute table for the :guilabel:`well_located_farms` layer."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:320
+# 9369eb4cb51a48d88a43740f073da6de
+msgid "Enter edit mode:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:325
+# 05a560957a7b4ca093befa21514d6064
+msgid "Start the field calculator:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:335
+# 8b824fbb73b04808b242732112a78ae5
+msgid "If you can't find :guilabel:`AREA` in the list, try this instead:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:341
+# 980c4388b88d447caea0a651e20eed61
+msgid "Scroll to the right of the attribute table; your :kbd:`AREA` field now has areas in hectares for all the farms in your :guilabel:`well_located_farms` layer."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:344
+# 03a379cbfa104117955a012900c62646
+msgid "Click the edit mode button again as above, and save your edits when prompted."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:345
+# f0d9c503954d49c9955151ae7e6dc8f0
+msgid "Do a query:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:350
+# 3edec23d83d64d5383083038bd604caf
+msgid "Click :guilabel:`OK`. Your results should look like this:"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:355
+# 5d3f82832fb149e3a656a83c3a13bbfd
+msgid "That's it! Those red farms are the ones satisfying your criteria. Well done!"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:358
+# f6abb671b86b4096951d9aad034fe063
+msgid "|basic| |TY|"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:360
+# 258988595b16491aa452541d6caa40ee
+msgid "Save your solution as a new layer, using the approach you learned above for doing so. The file should be saved under the usual directory, with the name :kbd:`solution.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:365
+#: ../../../vector_analysis/network_analysis.rst:228
+#: ../../../vector_analysis/reproject_transform.rst:246
+#: ../../../vector_analysis/spatial_statistics.rst:404
+# 9338e578221649a5a2cb3460455d082b
+# ec1293a546cc4d95a672a791163db92d
+# b73e6af81a0b4f899906a31feea95fd9
+# c871c0bd4cb04dd787d64528e112c551
+msgid "|IC|"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:367
+# 831b23ba57a444149d89a6ba8b0b582a
+msgid "Using the GIS problem-solving approach together with QGIS vector analysis tools, you were able to solve a problem with multiple criteria quickly and easily."
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:372
+#: ../../../vector_analysis/network_analysis.rst:234
+#: ../../../vector_analysis/reproject_transform.rst:262
+#: ../../../vector_analysis/spatial_statistics.rst:410
+# bf7b88a4e72e457cbd99e7608daf4528
+# 8298b0a8746b46b7bd537bcbf0ed3984
+# df9af68f99db49acb9ba8165c698fb27
+# 58f62d2697f94b779e113e08f72603b9
+msgid "|WN|"
+msgstr ""
+
+#: ../../../vector_analysis/basic_analysis.rst:374
+# 03f6f6a0802942c68982483f92846fb7
+msgid "In the next lesson, we'll look at how to calculate the shortest distance along the road from one point to another."
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:3
+# d7867548b1344a5f8c0377a6b726072f
+msgid "|MOD| Vector Analysis"
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:5
+# 09892a1713854eb29f2733719e8590b8
+msgid "Now that you have edited a few features, you must want to know what else one can do with them. Having features with attributes is nice, but when all is said and done, this doesn't really tell you anything that a normal, non-GIS map can't."
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:10
+# ec103ee830454e67890e5eb227558834
+msgid "The key advantage of a GIS is this: *a GIS can answer questions.*"
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:12
+# 5ac907b8311b47ed9ce09b3ae6db4a57
+msgid "For the next three modules, we'll endeavor to answer a *research question* using GIS functions. Suppose you are a property developer, and you want to build a new residential development. You need to buy a farm to build it on. Your market research has given you the following criteria. The farm must:"
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:17
+# fdc69c576134412c97d7f662c49573ab
+msgid "be at least a certain area in size;"
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:18
+# 0aa41f0eb26c4e21b8bfd63b07e3d26a
+msgid "be within the Swellendam town region;"
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:19
+# 09a84a813a634fc0a90b97298c15ada9
+msgid "have a road running through it for easy access;"
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:20
+# f22fe3d9b90542f1b75a527362da596e
+msgid "be within a certain distance from a school;"
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:21
+# c32609128d794a66ab7749c91b8a83d3
+msgid "be on a flat surface for easy construction of new buildings; and"
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:22
+# 203b87f90826436eb6bc031b07b95da3
+msgid "stay out of the shadow of the mountains in winter."
+msgstr ""
+
+#: ../../../vector_analysis/index.rst:24
+# a0227ceed1da46afad0b7e4282d7e5b0
+msgid "Within the next few modules, we'll harness the power of GIS analysis tools to locate suitable farm properties for this new residential development."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:2
+# 5bd3802a2f2b468c8ff0503369543933
+msgid "|LS| Network Analysis"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:4
+# 37e539a0d7ed496cb5d1209bdf0fef53
+msgid "Calculating the shortest distance between two points is a commonly cited use for GIS. QGIS ships with this tool, but it's not visible by default. In this brief lesson, we'll show you what you need to get started."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:8
+# 7d6188e80d724fa8b3ce8bab492f6b7d
+msgid "**The goal for this lesson:** To activate, configure and use the :guilabel:`Road Graph` plugin."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:12
+# bdffa9203f524ad4965ddb5328409bfd
+msgid "|basic| |FA| Activate the Tool"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:14
+# 462be1729c764687a74528368124f766
+msgid "QGIS has many plugins that add to its basic functions. Many of these plugins are so useful that they ship along with the program straight out of the box. They're still hidden by default, though. So in order to use them, you need to activate them first."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:19
+# b35ce153bea34672bb3c0387ffb0efb3
+msgid "To activate the :guilabel:`Road Graph` plugin:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:21
+# 5dbe56f764204e90a3db523c4a0099f9
+msgid "Start the :guilabel:`Plugin Manager` by clicking on the QGIS main window's menu item :menuselection:`Plugins --> Manage Plugins`. A dialog appears."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:23
+# 40d343a7fd714c6c9262067ac11305a1
+msgid "Select the plugin like this:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:28
+# b4e5ef6964e54b6ca70ea8275ee530c7
+msgid "Click :guilabel:`OK` on the :guilabel:`Plugin Manager` dialog."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:29
+# c7bc5deaeda24f2497f0dc71e6944478
+msgid "To see the plugin in your interface, go to :menuselection:`View --> Panels` and ensure that :guilabel:`Shortest path` has a check mark next to it."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:32
+# 21b8455a3375411ea69cfbffcf7498f9
+msgid "This panel will appear in your interface:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:39
+# ab9ccb1755674912aebab2a78d32632c
+msgid "|basic| |FA| Configure the Tool"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:41
+# 259359c7dc184e09b97e011c45a6359f
+msgid "To have a layer to calculate on, first save your current map. Then create a new map and load the layer :guilabel:`exercise_data/projected_data/roads_33S.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:44
+# a9bf7a7719384f50bae26e7e8f245671
+msgid "Since so many different configurations are possible when analyzing networks, the plugin doesn't assume anything before you've set it up. Unfortunately, this means that it won't do anything at all if you don't set it up first."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:48
+# 0dcdeb8df8b144d093368b84c7073a44
+msgid "Click on the menu item :menuselection:`Plugins --> Road graph --> Road graph settings`. A dialog will appear."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:50
+# cee1813c148545a7bd6d989e534b8e5e
+msgid "Make sure it's set up like this (use defaults unless otherwise specified):"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:55
+# 88e455be22964cc785e28c1b035f5af6
+msgid ":guilabel:`Time unit`: :guilabel:`hour`"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:56
+# 966f42c3b8964e64ac6dbb0a1be596ff
+msgid ":guilabel:`Distance unit`: :guilabel:`kilometer`"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:57
+# a416e1b153254f669b5eead16ea2f5e1
+msgid ":guilabel:`Layer`: :guilabel:`roads_33S`"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:58
+# 13aca21f0c1b41f5be12d2d7967e08a5
+msgid ":guilabel:`Speed field`: :guilabel:`Always use default` / :guilabel:`km/h`"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:63
+# ff1fff56453a4ddf87e6e15f83677790
+msgid ":guilabel:`Direction`: :guilabel:`Two-way direction`"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:64
+# 383ada0399ab4e9c921dc2932cb2c42f
+msgid ":guilabel:`Speed`: :guilabel:`60`"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:68
+# de362c1a0eaf45aba06a2cd9537e1e63
+msgid "|basic| |FA| Use the Tool"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:70
+# d70bfd6eceeb4c2a8cbeeec6f80f020a
+msgid "Let's say you want to get from Barrydale to Bonnievale:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:75
+# b71a7fbce442480ab69f1898af52d859
+msgid "In the plugin panel, click on the :guilabel:`Capture Point` button next to the :guilabel:`Start` field:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:81
+# f24f3e94d6784373b34494baef407774
+msgid "Click somewhere in Barrydale."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:82
+# e480d3f3baa3489b8a15208510aa71fa
+msgid "Use the :guilabel:`Capture Point` button next to the :guilabel:`Stop` field and capture a point somewhere in Bonnievale."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:84
+# 8c8924c324bf4ec9a547d6d21d2517fd
+msgid "Click on the :guilabel:`Calculate` button to see the solution:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:93
+# 24e0e85bc8534898922e06c297ea5b36
+msgid "|moderate| |FA| Using Criteria"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:95
+# fb5d6aa4877e42e1b35581ad16fc4cf4
+msgid "Section developed by Linfiniti and S Motala (Cape Peninsula University of Technology)"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:98
+# a611711f96c747b9bd4c97e773a5c1d8
+msgid "Add the layer :guilabel:`exercise_data/projected_data/places_33S.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:99
+# a516531852f64e659b22f6f5856d4ec2
+msgid "Add the aerial photographs under :guilabel:`exercise_data/raster/`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:100
+# e6311ab94ee249c8a8ea140cf8d0b6a1
+msgid "Zoom to the Swellendam area (the town / cluster of roads in the center of the map)."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:102
+# 304cc1fad789429385488d3bfe64483f
+msgid "Select only the roads that are in the categories :kbd:`trunk`, :kbd:`primary` or :kbd:`tertiary` by running this attribute selection query on the road layer:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:110
+# 9d6a84f3e18b4f5286dc6a0df74319ed
+msgid "Right-click on the :guilabel:`roads_33S` layer in the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:111
+# 91b29e6017b847e69f5874aa21f938c0
+msgid "Save it out to a new file, :kbd:`roads_subset`. Only the currently visible features will be saved."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:113
+# 5bf901cd96b44d1a85bde5d7c8cde19d
+msgid "Remove the original :guilabel:`roads_33S` layer from the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:115
+# 961363e9c40445f7a96ae7b1358cb0a6
+msgid "Open the attribute table for the :guilabel:`roads_subset` layer and enter edit mode:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:121
+# 4faf0ce6098d457c916f5f61eecbb4da
+msgid "Add a new column:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:126
+# d48cc02d692a4c13a28995661a59d0a5
+msgid "Call this new column :kbd:`SPEED`, and give it the type :guilabel:`Whole integer (number)` with a width of :kbd:`3`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:128
+# 2a0f950167584b0082cff2799b959d7c
+msgid "In the main window, activate the :guilabel:`Select Features by Rectangle` tool:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:134
+# 6f0e44a532444f28aa884bee8a10a102
+msgid "Select these roads:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:139
+# 4d0aa629979d4dffa7567014969b0843
+msgid "(To select more than one road, hold the :kbd:`ctrl` button and drag a box across any road that you want to include in the selection.)"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:142
+# 361d50c1464749189cfac0a7cb228f31
+msgid "In the attribute table, click on the :guilabel:`Show selected only` box."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:143
+# 4a2edfa0639f4824ac5bf8954438cd07
+msgid "Set the :kbd:`SPEED` value for all the selected streets to :kbd:`60`:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:148
+# ccef0339c91d409ea2c41a9b2ea2e6d7
+msgid "In context, this means that you're setting the speed limit on those roads to :kbd:`60 km/h`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:151
+# 53f205cf8b8e4e6eb9d7bcf0a3429088
+msgid "Select the highway outside of town:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:156
+# db20d9f314fc4065b6ced4aef4ebbaff
+msgid "Set the :kbd:`SPEED` value for all the selected streets to :kbd:`120`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:157
+# e697bd492c1245bc8ac01db1bb04aa8a
+msgid "Close the attribute table, save your edits, and exit edit mode."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:158
+# 0b534c7bba6b444fa5328eeea0b66530
+msgid "Check the :menuselection:`Vector --> Road graph --> Road graph settings` to ensure that it's set up as explained previously in this lesson."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:160
+# cdf46ebaaed344e59c47e3064873d98d
+msgid "In the :guilabel:`Shortest path` panel, click the :guilabel:`Start point` button."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:162
+# ff54f1425a4b48d4bdfb3e47293936fc
+msgid "Set the starting point to where the dirt road meets the on/off-rqamp at the edge of town on the east."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:164
+# 497c8735f25e4b87bfc488e699b3d5d1
+msgid "Set the end point to the T-junction west of town."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:169
+# 81c5f283324047c1a801d042cbe15472
+msgid "In the :guilabel:`Criterion` drop-down list in the :guilabel:`Shortest path` panel, select :guilabel:`Length`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:171
+# ad74ee42ce254aa7a7e94aabac0ab558
+msgid "Click :guilabel:`Calculate`. The route will be calculated for the shortest distance:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:177
+# 1e29dbb738c843e1b8aeff2d78a0da36
+msgid "Notice the values of :guilabel:`Length` and :guilabel:`Time` in the :guilabel:`Shortest path` panel."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:180
+# 09286a5e06644acf8128ec9d120f570f
+msgid "Set the :guilabel:`Criterion` to :guilabel:`Time`."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:181
+# 4643a22a88544f6e995141f3f57b3a4b
+msgid "Click :guilabel:`Calculate` again. The route will be calculated for the shortest time:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:187
+# 4015115c7d6944bfbb46f8164957916c
+msgid "You can switch back and forth between these criteria, recalculating each time, and note the changes in the :guilabel:`Length` and :guilabel:`Time` taken. Remember that the assumption being made to arrive at the time taken to travel a route does not account for acceleration, and assumes that you will be traveling at the speed limit at all times. In a real situation, you may want to split roads into smaller sections and note the average or expected speed in each section, rather than the speed limit."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:196
+#: ../../../vector_analysis/spatial_statistics.rst:266
+# 93460b7a68354a7e8621355b915745f2
+# 3681c718db734db2bc6c82277f1cde6a
+msgid "|moderate| |TY|"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:198
+# 9be79282a5c54020aa92a633f192c975
+msgid "Digitize the roads in Railton."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:200
+# 5d84910da64d4cbc81f79a2afbcc93c9
+msgid "These are the main roads, type :guilabel:`tertiary`, speed :kbd:`60`:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:205
+# 0db286c4184c4ddfbd478865b09121ae
+msgid "And these are the smaller streets, type :guilabel:`residential`, speed :kbd:`40`:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:211
+# 0d4c92cfb9ae433db971c494ccbaa142
+msgid "Use the :guilabel:`Shortest path` tool to calculate the shortest and fastest ways to get from the southern extreme of town to the highway."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:214
+# 89e03fe4683f4ac5a1aba18259cf3663
+msgid "If, on clicking :guilabel:`Calculate`, you're getting an error stating that a path could not be found, then make sure that the roads you digitized actually meet each other. If they're not quite touching, either fix them by modifying the features, or set the :guilabel:`Topology tolerance` (:guilabel:`Road graph plugin settings`). If they're passing over each other without intersecting, use the :guilabel:`Split features` tool to \"split\" roads at their intersections:"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:224
+# b43bb282a19a4b7c9365183700722a4d
+msgid "Remember that the :guilabel:`Split features` tool only works in edit mode on selected features, though!"
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:230
+# 55c8bf28304543dbad45a8875f402a1a
+msgid "Now you know how to use the :guilabel:`Road Graph` plugin to solve shortest-path problems."
+msgstr ""
+
+#: ../../../vector_analysis/network_analysis.rst:236
+# 9577dc8569d245a48bedd2f4071c0722
+msgid "Next you'll see how to run spatial statistics algorithms on vector datasets."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:2
+# b3f500284b6543fa88ac44dfe0541a8f
+msgid "|LS| Reprojecting and Transforming Data"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:4
+# 16cd71a9388c49b09e45efb26f50fbf9
+msgid "Let's talk about Coordinate Reference Systems (CRSs) again. We've touched on this briefly before, but haven't discussed what it means practically."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:7
+# bf949f7b2ab3474aa7fc68fbd5d3f56a
+msgid "**The goal for this lesson:** To reproject and transform vector datasets."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:10
+# b7af24d6d2234ef490ab4a0d54cd8b46
+msgid "|basic| |FA| Projections"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:12
+# b1b81f38d7db42f7b83aad5b6224b8b5
+msgid "The CRS that all the data as well as the map itself are in right now is called WGS84. This is a very common Geographic Coordinate System (GCS) for representing data. But there's a problem, as we will see."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:16
+# 0ca3061775fe46da9b26853e421fe61b
+msgid "Save your current map."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:17
+# 30a5c77683fe48a080bc1bb8d3e57324
+msgid "Then open the map of the world which you'll find under :kbd:`exercise_data/world/world.qgs`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:19
+# f86588913e00444bbd256007e28d6c1c
+msgid "Zoom in to South Africa by using the :guilabel:`Zoom In` tool."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:20
+# 84764d9888fa406cbfe6f1050338b54f
+msgid "Try setting a scale in the :guilabel:`Scale` field, which is in the :guilabel:`Status Bar` along the bottom of the screen. While over South Africa, set this value to :kbd:`1:5000000` (one to five million)."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:23
+# 9b8fd37c1b544799bdd5118ef6bc373a
+msgid "Pan around the map while keeping an eye on the :guilabel:`Scale` field."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:25
+# ff4f9e182bff43b899c23b7ce1fde566
+msgid "Notice the scale changing? That's because you're moving away from the one point that you zoomed into at :kbd:`1:5000000`, which was at the center of your screen. All around that point, the scale is different."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:29
+# 0a4ce8f25113422bbda03723eb068751
+msgid "To understand why, think about a globe of the Earth. It has lines running along it from North to South. These longitude lines are far apart at the equator, but they meet at the poles."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:33
+# d783913e85ad40578fa4978eb7dbf52b
+msgid "In a GCS, you're working on this sphere, but your screen is flat. When you try to represent the sphere on a flat surface, distortion occurs, similar to what would happen if you cut open a tennis ball and tried to flatten it out. What this means on a map is that the longitude lines stay equally far apart from each other, even at the poles (where they are supposed to meet). This means that, as you travel away from the equator on your map, the scale of the objects that you see gets larger and larger. What this means for us, practically, is that there is no constant scale on our map!"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:42
+# f458f240263e450ab90f08515549c219
+msgid "To solve this, let's use a Projected Coordinate System (PCS) instead. A PCS \"projects\" or converts the data in a way that makes allowance for the scale change and corrects it. Therefore, to keep the scale constant, we should reproject our data to use a PCS."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:48
+# 321b7d751752496c9dc938e371551088
+msgid "|basic| |FA| \"On the Fly\" Reprojection"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:50
+# 95eb7c88e7d848e1a073c3716ccca4d6
+msgid "QGIS allows you to reproject data \"on the fly\". What this means is that even if the data itself is in another CRS, QGIS can project it as if it were in a CRS of your choice."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:54
+# d3cee479d1f74a999bc50c4e71696b37
+msgid "To enable \"on the fly\" projection, click on the :guilabel:`CRS Status` button in the :guilabel:`Status Bar` along the bottom of the QGIS window:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:60
+# 0e95cfe397fa4b059ae25864c0a7235c
+msgid "In the dialog that appears, check the box next to :guilabel:`Enable 'on the fly' CRS transformation`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:62
+# 177e77f7d462431da449d98c58f7a303
+msgid "Type the word :kbd:`global` into the :guilabel:`Filter` field. One CRS (:guilabel:`NSIDC EASE-Grid Global`) will appear in the list below."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:64
+# 64bb457b635745f9867e3d704941de5e
+msgid "Click on it to select it, then click :kbd:`OK`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:66
+# 86605978e8be4921a2a95bb12d749018
+msgid "Notice how the shape of South Africa changes. All projections work by changing the apparent shapes of objects on Earth."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:68
+# 4c831b1855c64558bb87f85353141ab9
+msgid "Zoom in to a scale of :kbd:`1:5000000` again, as before."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:69
+# b776e1b8b26b49f0996580d60c106865
+msgid "Pan around the map."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:70
+# 2be09626da124515a24845be5c71df1b
+msgid "Notice how the scale stays the same!"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:72
+# 42d99aac9bdc4416a5ab9fe8ca058090
+msgid "\"On the fly\" reprojection is also used for combining datasets that are in different CRSs."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:75
+# 364f39f65a3b49cdaaa2aa7f1c5708e1
+msgid "Deactivate \"on the fly\" reprojection again:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:77
+# e79ec2401ac446f48bf59a972f9e86f8
+msgid "Click on the :guilabel:`CRS Status` button again."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:78
+# c2d1054f04624f17af7fa228581a4f5e
+msgid "Uncheck the :guilabel:`Enable 'on the fly' CRS transformation` box."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:79
+# 2698fe9cf4b64c828007a63ad7df126a
+msgid "Clicking :guilabel:`OK`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:81
+# 1c926882a2a6490cb56b447e7996de3c
+msgid "Add another vector layer to your map which has the data for South Africa only.  You'll find it as :kbd:`exercise_data/world/RSA.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:84
+# 53148a7b4a0b4323a1881b62878fa749
+msgid "What do you notice?"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:86
+# 851001dfbf964668ac823c4d8e9aa2c4
+msgid "The layer isn't visible! But that's easy to fix, right?"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:88
+# 6c70e177c98d48beae2e8e67eb2e4896
+msgid "Right-click on the layer in the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:89
+# 419d5a49a68d4a6e83d2cf4d625253b7
+msgid "Select :guilabel:`Zoom to Layer Extent`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:91
+# 9e2511ba832444a68d39d57092e2c47a
+msgid "OK, so now we see South Africa... but where is the rest of the world?"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:93
+# 4b77a95b5e3e44399c61ac4925334666
+msgid "It turns out that we can zoom between these two layers, but we can't ever see them at the same time. That's because their Coordinate Reference Systems are so different. The :guilabel:`continents` dataset is in *degrees*, but the :guilabel:`RSA` dataset is in *meters*. So, let's say that a given point in Cape Town in the :guilabel:`RSA` dataset is about :kbd:`4 100 000` meters away from the equator. But in the :guilabel:`continents` dataset, that same point is about :kbd:`33.9` degrees away from the equator."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:101
+# 043d712a57af4bbea13df7f4788bc754
+msgid "This is the same distance - but QGIS doesn't know that! You haven't told it to reproject the data. So as far as it's concerned, the version of South Africa that we see in the :guilabel:`RSA` dataset has Cape Town at the correct distance of :kbd:`4 100 000` meters from the equator. But in the :guilabel:`continents` dataset, Cape Town is only :kbd:`33.9` *meters* away from the equator! You can see why this is a problem."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:108
+# ae98a1d352154d538ebe4193daba47ac
+msgid "QGIS doesn't know where Cape Town is *supposed* to be - that's what the data should be telling it. If the data tells QGIS that Cape Town is :kbd:`34` meters away from the equator and that South Africa is only about :kbd:`12` meters from north to south, then that is what QGIS will draw."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:113
+# 4c918018f817498aacfaf0088c9ed02c
+msgid "To correct this:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:115
+# 88f8ef2ec22640e59b8970727f15874c
+msgid "Switch :guilabel:`Enable 'on the fly' CRS transformation` on again as before."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:116
+# 43ed6037bdae49cfbaf4bc7b8a091e3e
+msgid "Zoom to the extents of the :guilabel:`RSA` dataset."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:118
+# 07eeb8a5d72745d0856e3389ad8f6a0b
+msgid "Now, because they're made to project in the same CRS, the two datasets fit perfectly:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:124
+# a1aa573377e24a41bbe69f618d0a904c
+msgid "When combining data from different sources, it's important to remember that they might not be in the same CRS. \"On the fly\" reprojection helps you to display them together."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:129
+# 20f1d36884ac4c99a0460061f5cbee68
+msgid "|moderate| |FA| Saving a Dataset to Another CRS"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:131
+# b29456a1e7f14b4f952d719b28f548ff
+msgid "Remember when you calculated areas for the farms in the :guilabel:`Classification` lesson? You did it so that you could classify the farms according to area."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:135
+# 3ab96ebc2e1d4ea1b5c3b084f65058be
+msgid "Open your usual map again (containing the Swellendam data)."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:136
+# 492cf98c0dd64bfbbd784f198c6555ac
+msgid "Open the attribute table for the :guilabel:`rural` layer."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:137
+# a7c0b4f67e04411eadf92cdb9c62ab1b
+msgid "Scroll to the right until you see the :kbd:`AREA` field."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:139
+# 903229f89b2f4bbfabd56a2cc636d27f
+msgid "Notice how the areas are all very small; basically zero. This is because these areas are given in degrees - the data isn't in a Projected Coordinate System. In order to calculate the area for the farms in square meters, the data has to be in square meters as well. So, we'll need to reproject it."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:144
+# 26a9e6579869496eafe8b44b6705b8ba
+msgid "But it won't help to just use \"on the fly\" reprojection. \"On the fly\" does what it says - it doesn't change the data, it just reprojects the layers as they appear on the map. To truly reproject the data itself, you need to export it to a new file using a new projection."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:149
+# 4b78c8b2cffb48fab91ba62e1bb23473
+msgid "Right-click on the :guilabel:`rural` layer in the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:150
+# e4b7bb2f9906415c8d4ad6b2c2382cc7
+msgid "Select :guilabel:`Save As...` in the menu that appears. You will be shown the :guilabel:`Save vector layer as...` dialog."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:152
+# 62db63c341e047f1b43c67b5b142b62d
+msgid "Click on the :guilabel:`Browse` button next to the :guilabel:`Save as` field."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:153
+# 220aff8798e845dfb30b304aee889c9d
+msgid "Navigate to :kbd:`exercise_data/` and specify the name of the new layer as :kbd:`rural_reprojected.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:155
+# 6f9e692e26f241e3a7e65b5ce1336f7a
+msgid "Leave the :guilabel:`Encoding` unchanged."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:156
+# a5bdd434c555484da0825762f31b99d7
+msgid "Change the value of the :guilabel:`Layer CRS` dropdown to :guilabel:`Selected CRS`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:158
+# 524363ffbf654506951894f09dc75bfd
+msgid "Click the :guilabel:`Browse` button beneath the dropdown."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:159
+# 4b12cba5e110424d8c1b50e9ba3f2f37
+msgid "The :guilabel:`CRS Selector` dialog will now appear."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:160
+# 296504d0674d41bd90192aae6d232eac
+msgid "In its :guilabel:`Filter` field, search for :kbd:`33S`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:161
+# 6c4fa663595c48cf88d8619b546390de
+msgid "Choose :guilabel:`WGS 84 / UTM zone 33S` from the list."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:164
+# f262aebe776d4d8bb77bd31a04108d2a
+msgid "The :guilabel:`Save vector layer as...` dialog now looks like this:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:169
+# fe10cd6a8d044f41be92ecd8bad86cdd
+msgid "Click :guilabel:`OK` and after an instant, you should be presented with:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:175
+# 6830ec1c5aed49f08eff66bb28ff9e4f
+msgid "Start a new map:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:180
+# 8999e0343db14526bafb44672754db80
+msgid "Refer back to the lesson on :guilabel:`Classification` to remember how you calculated areas."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:183
+# 841adcade53c41a3866b5d7743643be3
+msgid "Update the :kbd:`AREAS` field by running the same expression as before:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:188
+# a1d17e0618a44281ad83f4e588c0a204
+msgid "This will update the :kbd:`AREAS` field with the areas of the farms in square meters."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:191
+# e2bc918cd82e4e868a376a4fea9f2985
+msgid "To calculate the area in hectares, do this:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:196
+# 39b94c0244224db2aa1a1450ca9b2e5d
+msgid "Look at the new values in your attribute table. This is much more useful, as people actually quote property areas in hectares, not in degrees. And projecting the data in an appropriate projection before calculating the area will actually give you the area in hectares. This is why it's a good idea to reproject your data, if necessary, before calculating areas, distances, and other values that are dependent on the spatial properties of the layer."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:204
+# 52ff23fffef74a23a3ccd9862cafe07b
+msgid "|hard| |FA| Creating Your Own Projection"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:206
+# df3f5c479a864ee991517365d97e3bf6
+msgid "There are many more projections than just those included in QGIS by default. You can also create your own projections."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:209
+# b989e04906c3436cb5fa30cfa6dc6668
+msgid "Start a new map."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:210
+# 617fa416bf854d72a01ca5cf7c5ce056
+msgid "Load the :kbd:`world/oceans.shp` dataset."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:211
+# 61c58a1ccc8d406cb95e3f9bdf020c6d
+msgid "Go to :menuselection:`Settings --> Custom CRS...` and you'll see this dialog:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:216
+# d0e09987c2114cc38bc9418793ac578a
+msgid "Click on the button with the star icon to create a new projection. You'll notice that the name and parameters are now blank."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:219
+# 97b54e7550b24d97a7d876498a7ece25
+msgid "An interesting projection to use is called :kbd:`Van der Grinten I`."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:221
+# 684dd3c9099a4e3dad802084afa7c093
+msgid "Enter its name in the :guilabel:`Name` field."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:223
+# da487ffc377740b78f707c2496c5ca9d
+msgid "This projection represents the Earth on a circular field instead of a rectangular one, as most other projections do."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:226
+# 2189daecdf38486daa519344a4888cc2
+msgid "For its parameters, use the following string:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:228
+# 1f3fa35ed3a94cd78637448ffee4c3a4
+msgid ":kbd:`+proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +a=6371000 +b=6371000 +units=m +no_defs`"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:231
+# 8be37ab493294496ae3c7f0490b892e7
+msgid "Click the :guilabel:`Save` button:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:237
+# 6bd33d09d0e84883a98e57bdfe5eb872
+msgid "Enable \"on the fly\" reprojection."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:238
+# 15050a98c4664ae7b0d22a37f4d03dc0
+msgid "Choose your newly defined projection (search for its name in the :guilabel:`Filter` field)."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:240
+# 9b36f65b462e46bd8c8c712fec9893f6
+msgid "On applying this projection, the map will be reprojected thus:"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:248
+# 100d7aeb7fc846de990b5c8079081006
+msgid "Different projections are useful for different purposes. By choosing the correct projection, you can ensure that the features on your map are being represented accurately."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:253
+# 7bbe36d7811e4b04bc1d65494293b77c
+msgid "|FR|"
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:255
+# 880e71657bc14662a2acb90478c8c14f
+msgid "Materials for the *Advanced* section of this lesson were taken from `this article <http://tinyurl.com/75b92np>`_."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:258
+# 24b5cf8714874b58a5fb581103c7459a
+msgid "Further information on Coordinate Reference Systems is available `here <http://linfiniti.com/dla/worksheets/7_CRS.pdf>`_."
+msgstr ""
+
+#: ../../../vector_analysis/reproject_transform.rst:264
+# eb8fdef629a1414ab8650b2297a1ce8c
+msgid "In the next lesson you'll learn how to analyze vector data using QGIS' various vector analysis tools."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:2
+# 8f972f9118b04eb993f0aab31e789074
+msgid "|LS| Spatial Statistics"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:4
+# fc3d43f9771f4f489074acdde886b10a
+msgid "Lesson developed by Linfiniti and S Motala (Cape Peninsula University of Technology)"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:7
+# ebf33c18e15c43f2a8cb7ca513603555
+msgid "Spatial statistics allow you to analyze and understand what is going on in a given vector dataset. QGIS includes several standard tools for statistical analysis which prove useful in this regard."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:11
+# 9f81cf9e9f0348a782bd8519b466b661
+msgid "**The goal for this lesson:** To know how to use QGIS' spatial statistics tools."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:15
+# c5fbbc4146744ac0adf5cf96cbdb374d
+msgid "|basic| |FA| Create a Test Dataset"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:17
+# ed6cb6424aac458690e99df607cc0083
+msgid "In order to get a point dataset to work with, we'll need a point dataset. In order to mimic a real dataset, let's create a random set of points."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:20
+# cc2cecfa160541ffa58f98a59295a7c9
+msgid "To do so, you'll need a polygon dataset defining the extents of the area you want to create the points in."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:23
+# 83d964e52e8043c0be83b96eeed722b6
+msgid "We'll use the area covered by streets."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:25
+# 05423f33e2c84666a1cf36d27fe2cf7a
+msgid "Create a new empty map."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:26
+# 1621019765224c8e987a4969d19173b7
+msgid "Add the :kbd:`roads_33S` layer from the :kbd:`exercise_data/projected_data` directory, as well as the :kbd:`srtm_41_19.tif` raster found in :kbd:`exercise_data/raster/SRTM/`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:29
+# 69a5d1ccac534d75bbef48cf8c5bdf6d
+msgid "Use the :guilabel:`Convex hull(s)` tool (available under :menuselection:`Vector --> Geoprocessing Tools`) to generate an area enclosing all the roads:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:36
+# 3e80d69a9df54826b053110f92d2e77a
+msgid "Save the output under :kbd:`exercise_data/spatial_statistics/` as :kbd:`roads_hull.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:38
+#: ../../../vector_analysis/spatial_statistics.rst:77
+# eaeb5855843e4224b7f464700ef66885
+# 5b6ce2bd163647e1ae95f09b8d4ddded
+msgid "Add it to the TOC (:guilabel:`Layers list`) when prompted."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:41
+# 6839698829d34af2a980deff4b6dada2
+msgid "Creating random points"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:43
+# 7c4a02b135f341ef920c89ae1c05d838
+msgid "Create random points in this area using the tool at :menuselection:`Vector --> Research Tools --> Random points`:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:49
+# 5e1f7db773da4ccbabf05c8a501054f3
+msgid "Save the output under :kbd:`exercise_data/spatial_statistics/` as :kbd:`random_points.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:51
+# c3e55f5779654d4aa900186d4ceb9d38
+msgid "Add it to the TOC (:guilabel:`Layers list`) when prompted:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:57
+# 40c5e95190d24802a86c962124665b72
+msgid "Sampling the data"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:59
+# 0a289397f9c041fdb0f09a9d109edef2
+msgid "To create a sample dataset from the raster, you'll need to use the :guilabel:`Point sampling tool` plugin."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:61
+# b2457763a6444792b085a10dfae863d5
+msgid "Refer ahead to the module on plugins if necessary."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:62
+# 8952443c04054011a543849aaa047c11
+msgid "Search for the phrase :kbd:`point sampling` in the :guilabel:`Plugin Installer` and you will find the plugin."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:64
+# 00e310f857294ba2aae2fed2b13e5bd0
+msgid "Note that it is in a third-party repository at time of writing, so you'll need to have third-party repositories enabled."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:66
+# 3a6233d080fa4d349cc20df623b7e9c4
+msgid "As soon as it has been activated with the :guilabel:`Plugin Manager`, you will find the tool under :menuselection:`Plugins --> Analyses --> Point sampling tool`:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:73
+# 1098facc919142e6b08269c0e5449cc6
+msgid "Select :guilabel:`random_points` as the layer containing sampling points, and the SRTM raster as the band to get values from."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:75
+# 9882d796425245aab8c491e5e0a19af7
+msgid "Save the output under :kbd:`exercise_data/spatial_statistics/` as :kbd:`random_samples.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:79
+# ffda7cb1739c4c4bb06db7b0c236b325
+msgid "A possible sample layer is shown here:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:84
+# e949b9be6503477c8d91cf40336261a0
+msgid "The sample points are classified by their value such that darker points are at a lower altitude."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:87
+# a667472883a441d78e807daded99c5f5
+msgid "You'll be using this sample layer for the rest of the statistical exercises."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:90
+# 7f5c4878942d4747b8f3503752a0d116
+msgid "|basic| |FA| Basic Statistics"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:92
+# 7d7a573c391745cb97dc8301519f2f56
+msgid "Now get the basic statistics for this layer."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:94
+# e23ac115e21544beb12667004a6ffa10
+msgid "Click on the :menuselection:`Vector --> Analysis Tools --> Basic statistics` menu entry."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:96
+# 83d31e8b73f74167bdcbc50910f37483
+msgid "In the dialog that appears, specify the :guilabel:`random_samples` layer as the source."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:98
+# a3a1e667401443d19d19aebd39238228
+msgid "Click :guilabel:`OK`. You'll get results like this:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:103
+#: ../../../vector_analysis/spatial_statistics.rst:164
+# 7a4061db4efc40659c1b86dc2adaa0ee
+# 1fc69bc0fc8548739babd9a43c89e5d6
+msgid "You can copy and paste the results into a spreadsheet. The data uses a (colon :kbd:`:`) separator."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:109
+# 8733e735191b4a4a8be570e3f9debd83
+msgid "Close the plugin dialog when done."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:112
+# 4018511838434b13ab1867a06b620526
+msgid "|basic| |FA| Compute a Distance Matrix"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:114
+# c412e52ed4d2437db5bf3e726b9e1443
+msgid "Create a new point layer in the same projection as the other datasets (:kbd:`WGS 84 / UTM 33S`)."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:116
+# a9ee3d63656d4d5fbca626d4d38723b2
+msgid "Enter edit mode and digitize three point somewhere among the other points."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:117
+# 2f4021db69ec4a3fafa578234b9f6839
+msgid "Alternatively, use the same random point generation method as before, but specify only three points."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:119
+# 02c45b1c4e2b4b5b90fceb6521c87c24
+msgid "Save your new layer as :kbd:`distance_points.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:121
+# 9189ad48601a4f92a40f5504ae438dd8
+msgid "In order to compare layers using statistical tools, a layer needs to have a unique ID field. Let's create one for your :guilabel:`random_samples` layer."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:124
+# 3743639de8674867b6580ede604c0f34
+msgid "Open the attribute table for this layer."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:125
+# 3957de2a3f184248951a173c1ad732a1
+msgid "Enter edit mode."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:126
+# c644a0c3535b43f1be3567c4a9d7aca8
+msgid "Open the raster calculator."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:127
+# fee8bc8d075a42b6a47dbeaedfafec9b
+msgid "Create a new field called :kbd:`id`, with an integer field type and a width of :kbd:`3`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:129
+# 8bba36994ca24f9a8c9371baa1e84203
+msgid "Look in the :guilabel:`Function list` under the category :guilabel:`Record`, and double-click on the item :guilabel:`$id`, so that it appears in the :guilabel:`Expression` field below."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:132
+# dd5a01c22987432098db01e4cb283cc7
+msgid "Click :guilabel:`OK` to generate a unique ID for this layer."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:134
+# d03a1b07f7064f5a9187d34fa0a2639e
+msgid "To generate a distance matrix using these points:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:136
+# 18b04cc0090f4ae0a512c7273d80567b
+msgid "Open the tool :menuselection:`Vector --> Analysis Tools --> Distance matrix`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:137
+# 63d9d0ebf96441fcbf7b81cb7f8d1841
+msgid "Select the :guilabel:`distance_points` layer as the input layer, and the :guilabel:`random_samples` layer as the target layer."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:144
+# 76c944f1af0a4dca9cac241aa3364280
+msgid "Click :guilabel:`OK` to generate the distance matrix."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:145
+# 91d1b5158fc04972936ef7dca5d1f72e
+msgid "Open it in a spreadsheet program to see the results. Here is an example:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:151
+# ec55147406df41e69f25216f12760d55
+msgid "|basic| |FA| Nearest Neighbor Analysis"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:153
+# 8dc0791b71d04174bea0c871447d3cea
+msgid "To do a nearest neighbor analysis:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:155
+# 6253c0a3abc8426090e5df3fcd0cd3e4
+msgid "Click on the menu item :menuselection:`Vector --> Analysis Tools --> Nearest neighbor analysis`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:157
+# 007d5a49bf6441408c716d157dc451ed
+msgid "In the dialog that appears, select the :guilabel:`random_samples` layer and click :guilabel:`OK`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:159
+# b500e83c137a4d5cb8ea95ae20803575
+msgid "The results will appear in the dialog's text window, for example:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:168
+# b8bffe26512e4b018ceb17130b646652
+msgid "|basic| |FA| Mean Coordinates"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:170
+# a248bcb807464abbb06d8beba5edcc64
+msgid "To get the mean coordinates of a dataset:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:172
+# 61c8a7942f3c43f09effd46d7939d99b
+msgid "Click on the :menuselection:`Vector --> Analysis Tools --> Mean coordinate(s)` menu item."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:174
+# b2ca78b3510e4b1894d97bfb7540b926
+msgid "In the dialog that appears, specify :guilabel:`random_samples` as the input layer, but leave the optional choices unchanged."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:176
+# 7b43acfe5fd74f049a4de508161ac20f
+msgid "Specify the output layer as :kbd:`mean_coords.shp`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:178
+# 28d3869e53c0401d92d87f1e2755c539
+msgid "Add the layer to the :guilabel:`Layers list` when prompted."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:180
+# f80424e3cc9741c2b959febbf5ad2d02
+msgid "Let's compare this to the central coordinate of the polygon that was used to create the random sample."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:183
+# bf9b5421f2224b16b11896f280638af5
+msgid "Click on the :menuselection:`Vector --> Geometry Tools --> Polygon centroids` menu item."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:185
+# 4b4684744aa947e89d306aea1cc8875b
+msgid "In the dialog that appears, select :guilabel:`roads_hull` as the input layer."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:186
+# 721d690ff96a43c59ff361e0e74d4b9b
+msgid "Save the result as :kbd:`center_point`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:187
+# 5ecac3fb6c1841df8df9dd498deb2ca5
+msgid "Add it to the :guilabel:`Layers list` when prompted."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:189
+# ab95d3f3288e4bc5aa50df851ec3ec3b
+msgid "As you can see from the example below, the mean coordinates and the center of the study area (in orange) don't necessarily coincide:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:196
+# 40378e0413e3435aab39980ea1657ed0
+msgid "|basic| |FA| Image Histograms"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:198
+# 24c574be9e214b068418bc93f0adac16
+msgid "The histogram of a dataset shows the distribution of its values. The simplest way to demonstrate this in QGIS is via the image histogram, available in the :guilabel:`Layer Properties` dialog of any image layer."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:202
+# 1dfdd7eb44974c1dbe9c07b2156c2364
+msgid "In your :guilabel:`Layers list`, right-click on the SRTM DEM layer."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:203
+# 5da03bd36354466499d1b18a34262eb5
+msgid "Select :menuselection:`Layer Properties`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:204
+# b1167be0689b48efa3e7a0f27cdb2367
+msgid "Choose the tab :guilabel:`Histogram`. You will see a graph describing the frequency of values in the image."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:206
+# 7f37341c9fcd4c29acbd97661a1562e0
+msgid "You can export it as an image:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:211
+# 14b41c7c0a804a3383adcc6ee9e4b8b3
+msgid "Look at the metadata for this layer (under the :guilabel:`Metadata` tab)."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:213
+# 0e74fc48b1fa4c25ba0fed0bc6068ecb
+msgid "The mean value is :kbd:`332.8`, and the maximum value is :kbd:`1699`! But those values don't show up on the histogram. Why not? It's because there are so few of them, compared to the abundance of pixels with values below the mean. That's also why the histogram extends so far to the right, even though there is no visible red line marking the frequency of values higher than about :kbd:`250`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:219
+# 5cb494759cf64f078df2840f6d0bdb6f
+msgid "Therefore, keep in mind that a histogram shows you the distribution of values, and not all values are necessarily visible on the graph."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:222
+# 1d35bf78a9af43eda2a7f0c10f2060c7
+msgid "(You may now close :guilabel:`Layer Properties`.)"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:225
+# d340ad891f45471cac6cb553d9eec5dc
+msgid "|basic| |FA| Spatial Interpolation"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:227
+# e0d5535ed4634091890a8ab9e1f767b4
+msgid "Let's say you have a collection of sample points from which you would like to extrapolate data. For example, you might have access to the :guilabel:`random_samples` dataset we created earlier, and would like to have some idea of what the terrain looks like."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:232
+# eb1cd5bdac774e21af5674f916b7c204
+msgid "To start, launch the :guilabel:`Grid (Interpolation)` tool by clicking on the :menuselection:`Raster --> Analysis --> Grid (Interpolation)` menu item."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:235
+# f60055a816424c09b4ff8ca18b8d42c3
+msgid "In the :guilabel:`Input file` field, select :kbd:`random_samples`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:236
+# 95658e33d34242c1a6acc27c724e865d
+msgid "Check the :guilabel:`Z Field` box, and select the value field (not the :kbd:`id` field)."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:238
+# e7b134d801eb4c608cb01f838c36dbdb
+msgid "Set the :guilabel:`Output file` location to :kbd:`exercise_data/spatial_statistics/interpolation.tif`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:240
+# efe367afa88940079c3e9b7fd202f657
+msgid "Check the :guilabel:`Algorithm` box and select :guilabel:`Inverse distance to a power`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:242
+# e37e6450f70c446ba45b8471f57f6f92
+msgid "Set the :guilabel:`Power` to :kbd:`5.0` and the :guilabel:`Smoothing` to :kbd:`2.0`. Leave the other values as-is."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:244
+# b6640d3a1b884967b3f3c7cf298945ad
+msgid "Check the :guilabel:`Load into canvas when finished` box and click :guilabel:`OK`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:246
+# 3f89aa4f31a142d1a73ea7dd093af127
+msgid "When it's done, click :guilabel:`OK` on the dialog that says :kbd:`Process completed`, click :guilabel:`OK` on the dialog showing feedback information (if it has appeared), and click :guilabel:`Close` on the :guilabel:`Grid (Interpolation)` dialog."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:251
+# 001908c574054dffb2ea427d01410923
+msgid "Here's a comparison of the original dataset (left) to the one constructed from our sample points (right). Yours may look different due to the random nature of the location of the sample points."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:258
+# c719a9de5dff473eb27ffd022863a7f6
+msgid "As you can see, 100 sample points aren't really enough to get a detailed impression of the terrain. It gives a very general idea, but it can be misleading as well. For example, in the image above, it is not clear that there is a high, unbroken mountain running from east to west; rather, the image seems to show a valley, with high peaks to the west. Just using visual inspection, we can see that the sample dataset is not representative of the terrain."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:268
+# 536a7edfbf1b45f8873f552cb19be5d7
+msgid "Use the processes shown above to create a new set of :kbd:`1000` random points."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:269
+# a9a32e1920e741db81a06073c08d25f3
+msgid "Use these points to sample the original DEM."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:270
+# 030e69a1efc64a40ac07dcfad7953dd2
+msgid "Use the :guilabel:`Spatial Interpolation` tool on this new dataset as above."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:271
+# d04c926a2b0f4612b6493d95a1fbff8d
+msgid "Set the output filename to :kbd:`interpolation_1000.tif`, with :guilabel:`Power` and :guilabel:`Smoothing` set to :kbd:`5.0` and :kbd:`2.0`, respectively."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:275
+# b8586125c3bf4b91945b8e3f56740b82
+msgid "The results (depending on the positioning of your random points) will look more or less like this:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:281
+# 58951f776be74d7c825817bd1a02bb5c
+msgid "The border shows the :guilabel:`roads_hull` layer (which represents the boundary of the random sample points) to explain the sudden lack of detail beyond its edges. This is a much better representation of the terrain, due to the much greater density of sample points."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:286
+# 254b2dd8ea274c2da8fde36c3dadaa5a
+msgid "Here is an example of what it looks like with :kbd:`10 000` sample points:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:291
+# c24a491f723140a2afdb7f9ec3530b63
+msgid "It's not recommended that you try doing this with 10 000 sample points if you are not working on a fast computer, as the size of the sample dataset requires a lot of processing time."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:296
+# 843eeef3c74d4295afe7a98b94352ce3
+msgid "|moderate| |FA| Installing SEXTANTE"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:298
+# 157588a7c7d3479db5cad1098a536100
+msgid "The SEXTANTE plugin allows you to access various plugin tools from within a single interface. It is standard in QGIS starting with version 1.8. If you're unsure whether you have SEXTANTE, check if it's marked as installed in your :guilabel:`Plugin Installer`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:303
+# e8eaca4090884a629030cca78a009973
+msgid "Assuming you have it installed (and enabled in the :guilabel:`Plugin Manager`):"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:305
+# 96fe0416bdbd4624a16ac92df38b55e4
+msgid "Activate SEXTANTE by enabling the :menuselection:`View --> Panels --> SEXTANTE Toolbox` menu entry. The toolbox looks like this:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:311
+# 495aee796bb241ffafaafabfc91c64d7
+msgid "You will probably see it docked in QGIS to the right of the map. Note that the tools listed here are links to the actual tools. SEXTANTE doesn't have many tools of its own. To have access to spatial statistics tools, you will need to install the SAGA GIS program."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:317
+# f733ee1240b045b59ffad0bbf2b12d0f
+msgid "|moderate| |FA| Installing SAGA"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:319
+# 1e55559353aa4032846a7470aec78cf6
+msgid "SAGA is a GIS program with many useful analysis functions. To make use of these functions in QGIS via SEXTANTE, you need to install SAGA first."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:323
+# 3a051cd1f10644e3b07a119eaffd4067
+msgid "On Windows"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:325
+# 01b0b4f1e3c246afb4e11ae67f685528
+msgid "Included in your course materials you will find the SAGA installer for Windows."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:327
+# 26d6b4feef1f43cd887230820035530e
+msgid "Start the program and follow its instructions to install SAGA on your Windows system. Take note of the path you are installing it under!"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:330
+# 8917f89c3ebf4a6fa58b244c2a97178d
+msgid "Once you have installed SAGA, you'll need to configure SEXTANTE to find the path it was installed under."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:333
+# bceb61234ed546ed9f1cb7d61d654def
+msgid "Click on the menu entry :menuselection:`Analysis --> SAGA options and configuration`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:335
+# b22176b10a75497fa12061f86c1537ba
+msgid "In the dialog that appears, expand the :guilabel:`SAGA` item and look for :guilabel:`SAGA folder`. Its value will be blank."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:337
+# d08af37619844e2a96a00c93dbf1a106
+msgid "In this space, insert the path where you installed SAGA."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:340
+# 7ba2f1ee24af46928060bc0801de65eb
+msgid "On Ubuntu"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:342
+# 6596c9ce6f8d4b878969d94252d5cbee
+msgid "Search for :guilabel:`SAGA GIS` in the :guilabel:`Software Center`, or enter the phrase :kbd:`sudo apt-get install saga-gis` in your terminal. (You may first need to add a SAGA repository to your sources.)"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:345
+# 15033805c97d4fe18cd18592356655e6
+msgid "QGIS will find SAGA automatically, although you may need to restart QGIS if it doesn't work straight away."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:349
+# 9ea2572a83f04a868b4a5f058c2c2064
+msgid "After installing"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:351
+# 557da614bbb44e268edab83495a70ae3
+msgid "Now that you have installed and configured SAGA, its functions will become accessible to you."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:355
+# 71a296917a4e422181bad96445c1f914
+msgid "|moderate| |FA| Spatial Point Pattern Analysis"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:357
+# cf68db639da94d7488ff3f7cb5f923d7
+msgid "For a simple indication of the spatial distribution of points in the :guilabel:`random_samples` dataset, we can make use of SAGA's :guilabel:`Spatial Point Pattern Analysis` tool."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:361
+# 1947d0de244a4d318336a316fe5f4e89
+msgid "In the :guilabel:`SEXTANTE Toolbox`, find this tool under :menuselection:`SAGA --> Geostatistics --> Spatial Point Pattern Analysis`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:363
+# c24d44d1bf2a4ea8b5ef148e51a41f1b
+msgid "Double-click on it to open its dialog."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:364
+# 63c8ed5153184119a4ace1202cee7751
+msgid "It produces three outputs, and so will require three output paths."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:365
+# d6f002d29e0f4e90b1128a3cdbbdab20
+msgid "Save these three outputs under :kbd:`exercise_data/spatial_statistics/`, using whatever file names you find appropriate."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:371
+# 54f40681b5694504a4d6d8753e029548
+msgid "The output will look like this (the symbology was changed for this example):"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:376
+# 1cd328cbedb346fe8f63fb547eb042aa
+msgid "The red dot is the mean center; the large circle is the standard distance, which gives an indication of how closely the points are distributed around the mean center; and the rectangle is the bounding box, describing the smallest possible rectangle which will still enclose all the points."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:382
+# b04afd78370a43d6b14785cbbdcd097d
+msgid "|moderate| |FA| Minimum Distance Analysis"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:384
+# b3ba8300102840a2a5d1711a236b0c3d
+msgid "Often, the output of an algorithm will not be a shapefile, but rather a table summarizing the statistical properties of a dataset. One of these is the :guilabel:`Minimum Distance Analysis` tool."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:388
+# 07cc924c0bc54a44858a6562141e6544
+msgid "Find this tool in the :guilabel:`SEXTANTE Toolbox` as :menuselection:`SAGA --> Geostatistics --> Minimum Distance Analysis`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:391
+# 39db69eda5b4412d8e39064cfb346529
+msgid "It does not require any other input besides specifying the vector point dataset to be analyzed."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:394
+# 8464a26361e3461db04521eb0b305ef7
+msgid "Choose the :guilabel:`random_points` dataset."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:395
+# bcb983f79b7a4192b63c0e60a9fce6e4
+msgid "Click :guilabel:`OK`. On completion, a DBF table will appear in the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:397
+# c320e1357c23473cb0f7eed6e1b54839
+msgid "Select it, then open its attribute table. Although the figures may vary, your results will be in this format:"
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:406
+# f5b03a77e836430583782b89db373b6c
+msgid "QGIS allows many possibilities for analyzing the spatial statistical properties of datasets."
+msgstr ""
+
+#: ../../../vector_analysis/spatial_statistics.rst:412
+# b680e85df6624eaeb2b75993315ac20c
+msgid "Now that we've covered vector analysis, why not see what can be done with rasters? That's what we'll do in the next module!"
+msgstr ""
+

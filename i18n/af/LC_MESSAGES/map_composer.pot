@@ -1,0 +1,567 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, Linfiniti Consulting CC
+# This file is distributed under the same license as the The Free Quantum GIS Training Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The Free Quantum GIS Training Manual 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-10 11:51\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../map_composer/day_1_assignment.rst:2
+# 3f326f35f38047568769a46216362f5b
+msgid "Assignment 1"
+msgstr ""
+
+#: ../../../map_composer/day_1_assignment.rst:4
+# 4a26cd23d92a413fa681f9266bfab109
+msgid "Open your existing map project and revise it thoroughly. If you have noticed small errors or things you'd have liked to fix earlier, do so now."
+msgstr ""
+
+#: ../../../map_composer/day_1_assignment.rst:7
+# c3936f48043e4870aecee47019bb9061
+msgid "If you are following this course at a *Basic* or *Intermediate* level, try to understand and implement techniques taught at a higher level."
+msgstr ""
+
+#: ../../../map_composer/day_1_assignment.rst:10
+# 3128d7dd15e24099b9df26a4e60bbf4d
+msgid "While customizing your map, keep asking yourself questions. Is this map easy to read and understand for someone who's unfamiliar with the data? If I saw this map on the Internet, or on a poster, or in a magazine, would it capture my attention? Would I want to read this map if it wasn't mine?"
+msgstr ""
+
+#: ../../../map_composer/day_1_assignment.rst:15
+# 31f7770b2bf44dc0b84b58c544528543
+msgid "If you're doing this course at a |basic| Basic or |moderate| Intermediate level, read up on techniques from the more advanced sections. If you see something you'd like to do in your map, why not try to implement it?"
+msgstr ""
+
+#: ../../../map_composer/day_1_assignment.rst:19
+# cd5225e53fac4c2a8349e13d3688ab00
+msgid "If this course is being presented to you, the course presenter may require you to submit a final version of your map, exported to PDF, for evaluation. If you're doing this course by yourself, it's recommended that you evaluate your own map using the same criteria. Your map will be evaluated on the overall appearance and symbology of the map itself, as well as the appearance and layout of the map page and elements.  Remember that the emphasis for evaluating the appearance of maps will always be *ease of use*. The nicer the map is to look at and the easier it is to understand at a glance, the better."
+msgstr ""
+
+#: ../../../map_composer/day_1_assignment.rst:28
+# 171f79d9047241ed9951ae18ae8909c1
+msgid "Happy customizing! :)"
+msgstr ""
+
+#: ../../../map_composer/day_1_assignment.rst:31
+#: ../../../map_composer/map_composer.rst:324
+# 98be2f8d943e498aa2ce1b9f3c3cb552
+# e023f8d1bac74e7181897a718de6e0a8
+msgid "|IC|"
+msgstr ""
+
+#: ../../../map_composer/day_1_assignment.rst:33
+# 9eeceb7fc50d4af38c749681104f4a77
+msgid "The first four modules have taught you how to create and style a vector map. In the next four modules, you'll learn how to use QGIS for a complete GIS analysis. This will include creating and editing vector data; analyzing vector data; using and analyzing raster data; and using GIS to solve a problem from start to finish, using both raster and vector data sources."
+msgstr ""
+
+#: ../../../map_composer/index.rst:3
+# ef0ea92067994faa9a28acc294a6389b
+msgid "|MOD| Creating Maps"
+msgstr ""
+
+#: ../../../map_composer/index.rst:5
+# 14574f728d17404dbad9e1e33d14e39c
+msgid "In this module, you'll learn how to use the QGIS Map Composer to produce quality maps with all the requisite map components."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:2
+# b8c8f07048e7434fbc7c2cce20e3647c
+msgid "|LS| Using Map Composer"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:4
+# 6db4fbef60384ce391b1d3dd665f3e85
+msgid "Now that you've got a map, you need to be able to print it or to export it to a document. The reason is, a GIS map file is not an image! Rather, it saves the state of the GIS program, with references to all the layers, their labels, colors, etc. So for someone who doesn't have the data or the same GIS program (such as QGIS), the map file will be useless. Luckily, QGIS can export its map file to a format that anyone's computer can read, as well as printing out the map if you have a printer connected. Both exporting and printing is handled via the Map Composer."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:13
+# 04feefec9d5443998cade132febeb61a
+msgid "**The goal for this lesson:** To use the QGIS Map Composer to create a basic map with all the required settings."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:17
+# 6e9338fb55974059a95706ee72bb06b2
+msgid "|basic| |FA| The Composer Manager"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:19
+# 5fbd653561ce439fba3aa6c19cde04ca
+msgid "QGIS allows you to create multiple maps using the same map file. For this reason, it has a tool called the :guilabel:`Composer Manager`."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:22
+# 18fad89e01764ceeb3628f82be298ba3
+msgid "Click on the :menuselection:`File --> Composer Manager` menu entry to open this tool.  You'll see a blank :guilabel:`Composer manager` dialog appear."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:24
+# 659a09bf38ad41af849b53f41792f236
+msgid "Click the :guilabel:`Add` button and a new composer will be added called :guilabel:`Composer 1` (it may be another number if you have tried using the :guilabel:`Composer Manager` before now)."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:27
+# 855df0857abc46aa8bdb06c0278ec228
+msgid "With your new composer selected, click on the :guilabel:`Rename` button and rename it to :kbd:`Swellendam`."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:29
+# 24814ad4dab54938b7a195a3a3271e64
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:30
+# 88828e2c284f4e6eabc86ec8422644dc
+msgid "Click the :guilabel:`Show` button."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:32
+# 08142c700d20432490c57af9534e1726
+msgid "(You could also close the dialog and navigate to a composer via the :menuselection:`File --> Print Composers` menus, as in the image below.)"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:38
+# a8c32951e7214124b7f1c7fdcf42daa1
+msgid "Whichever route you take to get there, you will now see the :guilabel:`Print Composer` window."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:42
+# 17e2bce3b95a422486dafe732f2521c8
+msgid "|basic| |FA| Basic Map Composition"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:44
+# dffacb8b6d1542438a22b40aa02ebe5a
+msgid "In this example, the composition was already the way we wanted it. Ensure that yours is as well."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:47
+# 1a6a8f11172d4a33b4bf002c32c6f526
+msgid "Check that the values under :menuselection:`General --> Composition --> Paper and Quality` are set to the following:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:50
+# bd4cd8e3c9fe4407a961dcbea83b5dfa
+msgid ":guilabel:`Size`: :kbd:`A4 (210x297mm)`"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:51
+# 930cdaa31040482a90d4b13dd352916e
+msgid ":guilabel:`Orientation`: :kbd:`Landscape`"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:52
+# 222bb09d77684e7faec7a47a1519226d
+msgid ":guilabel:`Quality`: :kbd:`300dpi`"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:54
+# 06fa91ccbed04b71bd56aad9b2ac9699
+msgid "Now you've got the page layout the way you wanted it, but this page is still blank. It clearly lacks a map. Let's fix that!"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:57
+# 73e604e2d3174ea281b423ef796873af
+msgid "Click on the :guilabel:`Add New Map` button:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:62
+# 39cc77418a79411f80e72559ab0c4716
+msgid "With this tool activated, you'll be able to place a map on the page."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:64
+# 336b614b13b1421e95d2f2a8cccc0f17
+msgid "Click and drag a box on the blank page:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:69
+# f5215bde8140432d94f12c5e397ddff7
+msgid "The map will appear on the page."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:71
+# 941855c97de942c88a8d78a575922945
+msgid "Move the map by clicking and dragging it around:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:76
+# d9e7456ea1264340a4c88614da2404c1
+msgid "Resize it by clicking and dragging the boxes in the corners:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:81
+# 9dd2e65c76da46b9bf97163575d047ba
+msgid "Your map may look a lot different, of course! This depends on how your own project is set up. But not to worry! These instructions are general, so they will work the same regardless of what the map itself looks like."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:86
+# 68d34a01ea92404daa136f03019bce6c
+msgid "Be sure to leave margins along the edges, and a space along the top for the title:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:92
+# 3322b1914c794fc5941f712635dee84b
+msgid "Zoom in and out on the page (but not the map!) by using these buttons:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:97
+# 9f112e49c12d4217bccaec1165c7c090
+msgid "Zoom and pan the map in the main QGIS window. You can also pan the map using the :guilabel:`Move item content` tool:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:103
+# e4d6622b5ac24101a368386ab026ac50
+msgid "When zooming in, the map view will not refresh by itself. This is so that it doesn't waste your time redrawing the map while you're zooming the page to where you want it, but it also means that if you zoom in or out, the map will be at the wrong resolution and will look ugly or unreadable."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:108
+# 8c11c3baf46c48b4ae32a356d9e4b85b
+msgid "Force the map to refresh by clicking this button:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:113
+# 548b2de3b72f4a91a5fd7698644ecdd3
+msgid "Remember that the size and position you've given the map doesn't need to be final. You can always come back and change it later if you're not satisfied. For now, you need to ensure that you've saved your work on this map. Because a :guilabel:`Composer` in QGIS is part of the main map file, you'll need to save your main project. Go to the main QGIS window (the one with the :guilabel:`Layers list` and all the other familiar elements you were working with before), and save your project from there as usual."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:122
+# 26c0a313ee8c4bc58eb035c999ba74e3
+msgid "|basic| |FA| Adding a Title"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:124
+# 61da4f546ea0481c995e76d74694fdf6
+msgid "Now your map is looking good on the page, but the reader is not being told what's going on yet. They need some context, which is what you'll provide for them by adding map elements. First, let's add a title."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:128
+#: ../../../map_composer/map_composer.rst:227
+# adc8b7e22a724d2990d93d898ddbba8b
+# 428b41d891004f458108409bad653ec8
+msgid "Click on this button:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:133
+# 2034790244bd47be949ea8615bc94d0d
+msgid "Click on the page, and a label will appear:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:138
+# b9e87a11fac0455587f05e3b992d6116
+msgid "Resize it and place it in the top center of the page. It can be resized and moved in the same way that you resized and moved the map."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:144
+# f350ca722a004625b99cf2f8c115220c
+msgid "But if you tried it, you'll see that it's difficult to align the label to be completely centered to the map! Luckily, there's a tool for that."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:147
+# cd02507f1fd8497fb99ca66989e786a3
+msgid "Click the map to select it."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:148
+# d403949c43cf4c819881e20dd9f2689b
+msgid "Hold in :kbd:`shift` on your keyboard and click on the label."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:149
+# 708f1505736843078af9fedfce2080da
+msgid "Look for this tool (but don't click it yet):"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:154
+# fdde25928f3048f7bd48816026a958d2
+msgid "Click on the downwards arrow next to the button."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:155
+# a4fff9bf9e374e78b568872ca5af6a71
+msgid "Click :guilabel:`Align center`:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:160
+# 905f14d888e448198d05edebf57d8406
+msgid "To make sure that you don't accidentally move these elements around now that you've aligned them:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:163
+# 9f5f0aaae92945bfb818f4f9e4b3600c
+msgid "Right-click on both the map and the label."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:165
+# 0604a6d0599e4337947a7ab2c6f8e12a
+msgid "A small lock icon will appear in the corner to tell you that an element can't be dragged right now. You can always right-click on an element again to unlock it, though."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:169
+# f65e78371ce24ab19f72a5f52c211917
+msgid "Now the label is centered to the map, but not the contents. To center the contents of the label:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:172
+# c7f5e2480c8a4a6aa92c9044db7c367a
+msgid "Select the label by clicking on it."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:173
+# 9e20faa5c8714c8b8d62ed7d6461028c
+msgid "Click on the :guilabel:`Item` tab in the side panel of the :guilabel:`Composer` window."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:175
+# b9197c963a06475ebfd2cfca859388cf
+msgid "Change the text of the label to \"Swellendam\":"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:180
+# d2dfa417390a45ea8701e2586f0a9b2d
+msgid "Use this interface to set the font and alignment options:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:185
+# 48e4c9ff5fae4131b91f40c25583069a
+msgid "Choose a large but sensible font (the example will use the default font with a size of :kbd:`48`), and keep the color subdued."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:188
+# 59b5bf213ba44ab3b7bb7f69b41aa2e9
+msgid "In fact, it's probably best to keep it black as per the default. The key is that the font should not be distracting, otherwise people who see the page will be looking at the heading instead of reading the map!"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:192
+# 84255609c20d48ac825637e9a044f504
+msgid "Set the :guilabel:`Horizontal Alignment` to :guilabel:`Center`, so that the heading is properly centered within the label."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:198
+# 630e3c0c06b841bebf775af81aeb9ccc
+msgid "This is progressing nicely, but the label still has an unnecessary frame around it:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:204
+# 778862af55da410b8f8706652efd54d6
+msgid "Let's get rid of it."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:206
+# 6d20fa24ee7a4014bec29ae6fcbbf2c8
+msgid "Click on the :guilabel:`General options` slider at the bottom of the :guilabel:`Item` tab. The :guilabel:`Label` slider will slide away and you will see a new interface."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:209
+# 4cf2a764646949c1a2e007c84917f338
+msgid "Click the :guilabel:`Show frame` checkbox to disable the frame:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:214
+# 971496af8d364ba1a8d58a4eb24011f1
+msgid "Here is our page so far:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:220
+# 57ca2f5c36c54b4db3e99a63346e2832
+msgid "|basic| |FA| Adding a Legend"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:222
+# 88987f58cff14bc6a5531d2fe41989d0
+msgid "The map reader also needs to be able to see what various things on the map actually mean. In some cases, like the place names, this is quite obvious. In other cases, it's more difficult to guess, like the colors of the farms. Let's add a new legend."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:232
+# 2d37bcbb7b884d24b9300b4cc59ee8cb
+msgid "Click on the page to place the legend, and move it to where you want it:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:238
+# 56b7758551114f979818c14f82266636
+msgid "|moderate| |FA| Customizing Legend Items"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:240
+# 597388fe9ff74fb1b163e6bb27315183
+msgid "Not everything on the legend is necessary, so let's remove some unwanted items."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:242
+# 64386377dc764ed6b424cf27c6129c38
+msgid "In the :guilabel:`Item` tab, click on the :guilabel:`Legend items` slider."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:243
+# cf677c28c47947bd80168be8de86668b
+msgid "Select the :guilabel:`places` entry."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:244
+# 2cc27e1dc79c436786cf4be94e3c59b5
+msgid "Delete it from the legend by clicking the :guilabel:`minus` button:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:249
+# 4a7302aa7f624e62bbcb0560e5a77a45
+msgid "You can also rename items."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:251
+# ca7d284264ef413d9a6fd598cec93cc0
+msgid "Select a layer from the same list."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:252
+# 1aad4a4066194e438c680aea3bd105ac
+msgid "Click the :guilabel:`Edit` button:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:257
+# 0a57511c977e478798c797576f4899bc
+msgid "Rename the layers to :kbd:`Roads and Streets`, :kbd:`Surface Water`, :kbd:`Urban Areas`, and :kbd:`Farms`."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:259
+# 164e4b26396348ed9aa7367cfbbb6fcf
+msgid "Click the down arrow next to any item with multiple classes to rename the classes (using the same method as above)."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:262
+# 429669bd3b82483ca1db9ee6df4b766c
+msgid "In the example, the :guilabel:`Farms` layer's areas were computed in units that aren't easy to convert to land area directly.  If your farms are classified by area or some other criteria, you should rename those classes to something that would make sense to the map reader. In the example, we renamed the smallest class :kbd:`small area` and the largest one :kbd:`large area`, with the one in the middle :kbd:`moderate area` and the rest blanked out."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:269
+# 3a56dc97b72b432db544f4c98cbe75af
+msgid "This is the result:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:275
+# bcc9ee21843448e7a80fe2542ebc8216
+msgid "|basic| |FA| Exporting Your Map"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:277
+# 9be2fcd709a341adbe92108d238fd478
+msgid "Did you remember to save your work often?"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:279
+# 73a7437282e5452e9e6d1c1d99f69de9
+msgid "Finally the map is ready for export! You'll see the export buttons near the top left corner of the :guilabel:`Composer` window:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:285
+# e339a791077d4235a969a5727867f10a
+msgid "The button on the right is the :guilabel:`Print` button, which interfaces with a printer. Since the printer options will differ depending on the model of printer that you're working with, it's probably better to consult the printer manual or a general guide to printing for more information on this topic."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:290
+# c22310634fd04b9bb64205b466f11249
+msgid "The other three buttons allow you to export the map page to a file. There are three export formats to choose from:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:293
+# 9313b25166a14ed3b40c451df9de29bd
+msgid ":guilabel:`Export as Image`"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:294
+# 6970de6c5bad426e9f8524a2c86a7ead
+msgid ":guilabel:`Export as PDF`"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:295
+# b246c35efa0c4f6ea7c241336940d845
+msgid ":guilabel:`Export as SVG`"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:297
+# 3586eed6ae44459799c35855f2e32c3a
+msgid "Exporting as an image will give you a selection of various common image formats to choose from. This is probably the simplest option, but the image it creates is \"dead\" and difficult to edit."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:301
+# ad5213e32bfa4a34b7009472bc5300f5
+msgid "The other two options are more common."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:303
+# 553351f1146246e0a91992414b5b6a67
+msgid "If you're sending the map to a cartographer (who may want to edit the map for publication), it's best to export as an SVG. SVG stands for \"Scalable Vector Graphic\", and can be imported to programs like Inkscape or other vector image editing software."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:308
+# 58d8f0387cfa4f8f82f67fe09f88aa55
+msgid "If you need to send the map to a client, it's most common to use a PDF, because it's easier to set up printing options for a PDF. Some cartographers may prefer PDF as well, if they have a program that allows them to import and edit this format."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:313
+# b80df279c87745e294e7f5244fe7e706
+msgid "For our purposes, we're going to use PDF."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:315
+# 7f495f093bac48a9956060f36b0c7caf
+msgid "Click the :guilabel:`Export as PDF` button:"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:320
+# 90a4623d0d2b4e19893b0197c89a4d6c
+msgid "Choose a save location and a file name as usual."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:321
+# c873a61d6bbe4ea4aaa436c89ce7b31d
+msgid "Click :guilabel:`Save`."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:326
+# d872db95974f4f1ea589e1639ab8140b
+msgid "Close the :guilabel:`Composer` window."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:327
+# 40d63fcafd4a4b0992733bf15dbd0f62
+msgid "Save your map."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:328
+# 3962c5711ec0467392b2602840470da7
+msgid "Find your exported PDF using your operating system's file manager."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:329
+# e6cdd84fc22a449396112081ae24b9fa
+msgid "Open it."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:330
+# 96934cf7ba184c199ef3bb405c68c152
+msgid "Bask in its glory."
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:332
+# a402ae1c0cd1438494e5e637fee58587
+msgid "Congratulations on your first completed QGIS map project!"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:335
+# dd58611f912b4c6fa6a8e3d22a6f3b68
+msgid "|WN|"
+msgstr ""
+
+#: ../../../map_composer/map_composer.rst:337
+# 691708fc0b2e4041ad7d54cc163f07da
+msgid "On the next page, you will be given an assignment to complete. This will allow you to practice the techniques you have learned so far."
+msgstr ""
+

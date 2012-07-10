@@ -1,0 +1,925 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, Linfiniti Consulting CC
+# This file is distributed under the same license as the The Free Quantum GIS Training Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The Free Quantum GIS Training Manual 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-10 11:51\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../rasters/changing_symbology.rst:2
+# 7317fcdeba534073ad4cf12f6c6c727e
+msgid "|LS| Changing Raster Symbology"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:4
+# 98bdc9213f6f4653a93ff47d416a28a8
+msgid "Not all raster data consists of aerial photographs. There are many other forms of raster data, and in many of those cases, it's essential to symbolize the data properly so that it becomes properly visible and useful."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:8
+# a355a4469a0649d2b2a40fb71f8142aa
+msgid "**The goal for this lesson:** To change the symbology for a raster layer."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:11
+# 633b5b2e893540fc9ce270649d376b1a
+msgid "|basic| |TY|"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:13
+# 3c36b71cb85a40a6824b08900b67456e
+msgid "Use the :guilabel:`Add Raster Layer` button to load the new raster dataset."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:14
+# 7008e393844641f5a34166a179f3c3b1
+msgid "Into your current map (which, following from the previous lesson, should be :kbd:`analysis.qgs`) load the dataset :kbd:`srtm_41_19.tif`, found under the directory :kbd:`exercise_data/raster/SRTM/`."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:17
+# 7450478cc12a4a558364c20f37887f24
+msgid "Once it appears in the :guilabel:`Layers list`, rename it to :kbd:`DEM`."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:19
+# 83d60efae2df46728e8d7e1b886f1bad
+msgid "This dataset is a *Digital Elevation Model (DEM)*. It's a map of the elevation (altitude) of the terrain, allowing us to see where the mountains and valleys are, for example."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:23
+# a2c783e3bb62477a9863eff9fd5b80d1
+msgid "Once it's loaded, you'll notice that it's basically a gray rectangle. It's seen here with the vector layers on top:"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:29
+# 86bbe640ffe3432baf194ed6c1ea3a22
+msgid "That's because its symbology hasn't been customized. In a color aerial photograph, everything is already defined. But if you load a raster and it's just a gray rectangle, then you know there's no symbology for it yet. It still needs to be defined. So that's what you should do next."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:35
+# 1369d720d82343f081bae6d65adb6e1d
+msgid "|basic| |FA| Changing Raster Layer Symbology"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:37
+# d74d8f13deb64bfb82e11dc6a9641a1d
+msgid "Open the :guilabel:`Layer Properties` dialog for the :guilabel:`SRTM` layer."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:38
+# cc0371fd007d4f4191bb28c686e9feff
+msgid "Switch to the :guilabel:`Style` tab."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:40
+# 19c292f806fc4800ac9c617eef4f5c8e
+msgid "These are the current settings, and as we've seen, they don't give us much information on the layer. Does it even have any data in it? Let's see."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:43
+# 43334b6d408244d9b6638d8cdf55a08e
+msgid "Change the :guilabel:`Color map` to :guilabel:`Pseudocolor`:"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:48
+#: ../../../rasters/changing_symbology.rst:96
+#: ../../../rasters/data_manipulation.rst:47
+# e92f60e8dd8c4b9fa35bed65af1198eb
+# a4e027124cde4ca79f158ae6dc42cf8f
+# 2fc32e805c184ed4aad7a8ebaef10bcf
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:50
+# beeff114c64d496ca63d7ba2e332c3b0
+msgid "You'll see the raster looking like this:"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:55
+# 29ff781bf85940fa884d39eca93f0dc7
+msgid "That does tell us what we need to know. There is data in this layer. But maybe we don't want to symbolize it using these colors."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:58
+# 27f29657605945ae902306bcd4ade861
+msgid "Open :guilabel:`Layer Properties` again."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:59
+# cdfab503549a4db8992211b40dab3abb
+msgid "Switch the :guilabel:`Color map` back to :guilabel:`Grayscale`."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:61
+# 9b063d29cdc74a9c851f6bfe171110ac
+msgid "But this time, to prevent it from becoming a gray rectangle again, let's tell QGIS to \"stretch\" the color values. This will make QGIS use all of the available colors (in :guilabel:`Grayscale`, this is black, white and all shades of gray in between)."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:66
+# 8cf32148bfa64f6fbc9fa056fd0cb7a8
+msgid "Tell it to use :guilabel:`Custom min / max values`:"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:71
+# 947afbbd25c34e3f835dd4117bb3e726
+msgid "Set the value :guilabel:`Current` of :guilabel:`Contrast enhancement` to :guilabel:`Stretch To MinMax`:"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:77
+# 40c8303982284c4a896e331f4842326e
+msgid "But what are the minimum and maximum values that should be used for the stretch? The ones that are currently under :guilabel:`Custom min / max values` are the same values that just gave us a gray rectangle before. Instead, we should be using the minimum and maximum values that are actually in the image, right? Fortunately, you can determine those values easily by loading the minimum and maximum values of the raster."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:84
+# e94f582e721746f191505b5554eb6cb4
+msgid "Under :guilabel:`Load min / max values from band`, select :guilabel:`Estimate (faster)`."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:86
+# 2f0fe9e89ea54564830f4f96bc8fec07
+msgid "Click the :guilabel:`Load` button:"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:91
+# 0fb95e0cd05346b4926d7823bfae1f6e
+msgid "Notice how the :guilabel:`Custom min / max values` have changed:"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:98
+# aa58f4d78fe54e04a8bc97911d5b4a81
+msgid "You'll see the values of the raster properly displayed, with the darker colors representing valleys and the lighter ones, mountains:"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:105
+# ead1f44ad8f0458a89ecbbff4c344f00
+msgid "But isn't there a quicker way?"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:107
+# 6f0850dccf9946389275d4bde010feca
+msgid "Yes, there is! Now that you understand what needs to be done, you'll be glad to know that there's a tool for doing all of this easily."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:110
+# cdc09a6b31734ad2bb03a5ccfd5ce1dc
+msgid "Remove the current DEM from the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:111
+# 01a1fc77024f48fb9f084267c22cde92
+msgid "Load the raster in again, renaming it to :kbd:`DEM` as before. It's a gray rectangle again..."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:113
+# 90d5171e9c854dfdacd3b642d240d396
+msgid "Enable the tool you'll need by enabling :menuselection:`View --> Toolbars --> Raster`. These icons will appear in the interface:"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:119
+# ea5aad75d463413faecff91b92f3117b
+msgid "The button on the right will stretch the minimum and maximum values to give you the best contrast in the local area that you're zoomed into. It's useful for large datasets. The button on the left will stretch  the minimum and maximum values to constant values across the whole image."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:124
+# 85d2725eefe04bb3af4736ef8f3c53f2
+msgid "Click the button on the left (:guilabel:`Stretch Histogram to Full Dataset`). You'll see the data is now correctly represented as before!"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:128
+#: ../../../rasters/data_manipulation.rst:136
+#: ../../../rasters/terrain_analysis.rst:286
+# ba44bc05b0c040ec98cb33a7a9895743
+# 8e992c58ceea448aa7cbdc363380a7ce
+# bf5a11f2703749148daf07ad17e20f25
+msgid "|IC|"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:130
+# 797a5be5106c4a82b4ea6b5fed45d423
+msgid "These are only the basic functions to get you started with raster symbology. QGIS also allows you many other options, such as symbolizing a layer using standard deviations, or representing different bands with different colors in a multispectral image."
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:136
+# 43035717a79941f3a7d3fcd7f3863c9f
+msgid "Reference"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:138
+# a969eb66d51f4ebfb580b0cba20965c4
+msgid "The SRTM dataset was obtained from `http://srtm.csi.cgiar.org/ <http://srtm.csi.cgiar.org/>`_"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:142
+#: ../../../rasters/data_manipulation.rst:141
+#: ../../../rasters/terrain_analysis.rst:293
+# 409ce4b53bee480b8779faed87851ddb
+# 5ea54473ae1d4dbeb9021bb0bec38835
+# 4d4b8c5bcc4f49028f3cbd6a55cff3ca
+msgid "|WN|"
+msgstr ""
+
+#: ../../../rasters/changing_symbology.rst:144
+# 60b768654c014a619231bcdd2eb106af
+msgid "Now that we can see our data displayed properly, let's investigate how we can analyze it further."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:2
+# b8c68685c5fa4b7da3f60a0853d0301f
+msgid "|LS| Working with Raster Data"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:4
+# 56d9975c08424fefba77bab21c7cd1f2
+msgid "Raster data is quite different from vector data. Vector data has discrete features constructed out of vertices, and perhaps connected with lines and/or areas. Raster data, however, is like any image. Although it may portray various properties of objects in the real world, these objects don't exist as separate objects; rather, they are represented using pixels of various different color values."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:11
+# f2795b72426d4ea38c487f387fbc48ee
+msgid "During this module you're going to use raster data to supplement your existing GIS analysis."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:14
+# bb63b6f03ecf462c831c368fe1b1dcff
+msgid "**The goal for this lesson:** To learn how to work with raster data in the QGIS environment."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:18
+# aa3e4728566a4e57a86bc1756772c53e
+msgid "|basic| |FA| Loading Raster Data"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:20
+# 13e1752a4a6f4664a11d8dc9576c16f6
+msgid "Open your :kbd:`analysis.qgs` map."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:21
+# 4f7b865853b1440ab7091084c0dbfb27
+msgid "Deactivate all the layers except the :guilabel:`solution` and :guilabel:`important_roads` layers."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:23
+# 3de6f91796c747c19ac965165f4055df
+msgid "Click on the :guilabel:`Load Raster Layer` button:"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:28
+# f36e2289313b4c359219af5df5c67d69
+msgid "The :guilabel:`Load Raster Layer` dialog will open. The data for this project is in :kbd:`exercise_data/rasters`."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:31
+# 86674ce744cc4f7a907a9d548f57c7e5
+msgid "Either load them all in separately, or hold down :kbd:`ctrl` and click on all four of them in turn, then open them at the same time."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:34
+# 0d7155b873f946269843bea57018cb34
+msgid "The first thing you'll notice is that nothing seems to be happening in your map. Are the rasters not loading? Well, there they are in the :guilabel:`Layers list`, so obviously they did load. The problem is that they're not in the same projection. Luckily, we've already seen what to do in this situation."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:39
+# bb355e3b05aa4193a79aeaf77681fc3b
+msgid "Click on the :guilabel:`CRS Status` button:"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:44
+# 5c3288e100cd4d17b5b5d308e202ebe2
+msgid "Enable \"on the fly\" reprojection."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:45
+# e55c33dd4765440bbf50fae4d66d9dfb
+msgid "Set it to the same projection as the rest of your data (:kbd:`WGS 84 / UTM zone 33S`)."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:49
+# b6621b43dd384dbb887d88fa7ae00f64
+msgid "The rasters should fit nicely:"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:54
+# 004d975981bd4c9398c315d247c6ae98
+msgid "There we have it - four aerial photographs covering our whole study area."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:57
+# c763ea847f9645e6a7a6e564fb017bef
+msgid "|basic| |FA| Create a Virtual Raster"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:59
+# c7d51ba970814877b9c8c73d424d5449
+msgid "Now as you can see from this, your solution layer lies across all four photographs. What this means is that you're going to have to work with four rasters all the time. That's not ideal; it would be better to have one file for one (composite) image, right?"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:64
+# 8ac99a0ae1994d3692a11122db13cc0b
+msgid "Luckily, QGIS allows you to do exactly this, and without needing to actually create a new raster file, which could take up a lot of space. Instead, you can create a *Virtual Raster*. This is also often called a *Catalog*, which explains its function. It's not really a new raster. Rather, it's a way to organize your existing rasters into one catalog: one file for easy access."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:70
+# c5f22f9125e74f2483c80143e36d9fda
+msgid "To make a catalog:"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:72
+# b85f095f985f459f92bc5dd1e8abd962
+msgid "Click on the menu item :menuselection:`Raster --> Miscellaneous --> Build Virtual Raster (Catalog)`."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:74
+# 5e6cbbf2c179447c96cb9a4160bd69f8
+msgid "In the dialog that appears, check the box next to :guilabel:`Use visible raster layers for input`."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:76
+# dc380978e6bc41689348665af2acf4e8
+msgid "Anter :kbd:`exercise_data/residential_development` as the output location."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:77
+# 9ecdd71e19244b57b0553a0b45d5b74f
+msgid "Enter :kbd:`aerial_photos.vrt` as the file name."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:78
+# 921cd7a1433248f8a299f1f1bd857dca
+msgid "Check the :guilabel:`Load into canvas when finished` button."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:80
+# 69879a487bd8461c900565a083f0fefc
+msgid "Notice the text field below. What this dialog is actually doing is that it's writing that text for you. It's a long command that QGIS is going to run."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:83
+# 3b24e0acf8244e429122381ff8f644a0
+msgid "|hard| Keep in mind that the command text is editable, so you can customize the command further if preferred. Search online for the initial command (in this case, :kbd:`gdalbuildvrt`) for help on the syntax."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:87
+# dada97a25b4d4f23816c4c77e48d348e
+msgid "Click :guilabel:`OK` to run the command."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:89
+# b0be3e39bc2f4e42b196362156edd155
+msgid "It may take a while to complete. When it's done, it will tell you so with a message box."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:92
+# 99d47b5cc6524eb18a6581721f681173
+msgid "Click :guilabel:`OK` to chase the message away."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:93
+# 4d54330d706c4b51abfec6378da19043
+msgid "Click :guilabel:`Close` on the :guilabel:`Build Virtual Raster (Catalog)` dialog.  (Don't click :guilabel:`OK` again, otherwise it's going to start running that command again!)"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:96
+# 52073a991dcf46a5b09070cc6e6a3844
+msgid "You can now remove the original four rasters from the :guilabel:`Layers list`."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:98
+# f844368edea74113bfaccb4d1a00e8ec
+msgid "If necessary, click and drag the new :guilabel:`aerial_photos` raster catalog layer to the bottom of the :guilabel:`Layers list` so that the other activated layers become visible."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:103
+# ebd19ab2279b4727ada274761c05630a
+msgid "|hard| Transforming Raster Data"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:105
+# 7d49c56850984cb781eceb7b3f37f7b6
+msgid "The above methods allow you to virtually merge datasets using a catalog, and to reproject them \"on the fly\". However, if you are setting up data that you'll be using for quite a while, it may be more efficient to create new rasters that are already merged and reprojected. This improves performance while using the rasters in a map, but it may take some time to set up initially."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:112
+# b173a60faf03428aa7dfdc467e730227
+msgid "Reprojecting rasters"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:114
+# 96c1fd45543d423881d74c006883da05
+msgid "Click on the menu item :menuselection:`Raster --> Projection --> Warp (Reproject)`."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:117
+# a355c0b4c95949b8a5fa41f83bd627a2
+msgid "Note that this tool features a handy batch option for reprojecting the contents of whole directories. You can also reproject virtual rasters (catalogs), as well as enabling a multithreaded processing mode."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:122
+# b4963e11e77448b59a247e8673194c27
+msgid "Merging rasters"
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:124
+# e6ec69fa4ded46bd8c78cd0e54e3130f
+msgid "Click on the menu item :menuselection:`Raster --> Miscellaneous --> Merge`."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:126
+# bd20459f924a40639a29796ab18e7def
+msgid "You can choose to process entire directories instead of single files, giving you a very useful built-in batch processing capability. You can specify a virtual raster as input file, too, and all of the rasters that it consists of will be processed."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:131
+# 3bcec702f8ab496b877e3ff2a3aba7e3
+msgid "You can also add your own command line options using the :guilabel:`Creation Options` checkbox and list. This only applies if you have knowledge of the GDAL library's operation."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:138
+# 9d9e21937fe44835979c44a11133c3c5
+msgid "QGIS makes it easy to include raster data into your existing projects."
+msgstr ""
+
+#: ../../../rasters/data_manipulation.rst:143
+# 827e2dd8bb654f669613d2d7fd78d35f
+msgid "Next, we'll use raster data that isn't aerial imagery, and see how symbolization is useful in the case of rasters as well!"
+msgstr ""
+
+#: ../../../rasters/index.rst:3
+# 3f490d6889344caf98d408799cb5a0f5
+msgid "|MOD| Rasters"
+msgstr ""
+
+#: ../../../rasters/index.rst:5
+# e785902eab3b49d686e83f2321ef8429
+msgid "We've used rasters for digitizing before, but raster data can also be used directly. In this module, you'll see how it's done in QGIS."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:2
+# a604ffc4e77844a299ada30b763204e8
+msgid "|LS| Terrain Analysis"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:4
+# 18e279fbf6bb472386c7f71251b35b23
+msgid "Certain types of rasters allow you to gain more insight into the terrain that they represent. Digital Elevation Models (DEMs) are particularly useful in this regard. In this lesson you will use terrain analysis tools to find out more about the study area for the proposed residential development from earlier."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:9
+# 9e6a2ebc633a46e684b84a6abc9eb64f
+msgid "**The goal for this lesson:** To use terrain analysis tools for more information on terrain."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:13
+# 06cf5e1debde42daa1d5d1a2bbe28c6e
+msgid "|basic| |FA| Calculating a Hillshade"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:15
+# 6b866642e6e24de4aad37812e34d1665
+msgid "The DEM you have on your map right now does show you the elevation of the terrain, but it can sometimes seem a little abstract. It contains all the 3D information about the terrain that you need, but it doesn't look like a 3D object. To get a better look at the terrain, it is possible to calculate a *hillshade*, which is a raster that maps the terrain using light and shadow to create a 3D-looking image."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:22
+# ee24634831df459b85edab3920567559
+msgid "To work with DEMs, you should use QGIS' all-in-one :guilabel:`DEM (Terrain models)` analysis tool."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:25
+# 5ab33bd97a934ef1a2d0adf87b97f99d
+msgid "Click on the menu item :menuselection:`Raster --> Analysis --> DEM (Terrain models)`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:27
+# 5c00f72b9df54f388947903f09834da5
+msgid "In the dialog that appears, ensure that the :guilabel:`Input file` is the :guilabel:`DEM` layer."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:29
+# 5d713fee5952444c9710679385410e2a
+msgid "Set the :guilabel:`Output file` to :kbd:`hillshade.tif` in the directory :kbd:`exercise_data/residential_development`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:31
+# 10c9860a254844ed974cd2a9e70bff77
+msgid "Check the box next to :guilabel:`Load into canvas when finished`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:32
+# f6ef55ecf37342a1a65dc041b703c96e
+msgid "You may leave all the other options unchanged."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:33
+# d0122e6d30d948f9af89510e7130e5b5
+msgid "Click :guilabel:`OK` to generate the hillshade."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:34
+# 6900dc7d68cc4632bc28a554c6999934
+msgid "When it tells you that processing is completed, click :guilabel:`OK` on the message to get rid of it."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:36
+# b07086c475fc4c3689a561d71bbe4367
+msgid "Click :guilabel:`Close` on the main :guilabel:`DEM (Terrain models)` dialog."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:38
+# b5ae8d154e894f00b0d830324f438ee7
+msgid "You will now have a new layer called :guilabel:`hillshade` that looks like this:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:44
+# c6f1b4c1e8174bafa421514bb202dadb
+msgid "That looks nice and 3D, but can we improve on this? On its own, the hillshade looks like a plaster cast. Can't we use it together with our other, more colorful rasters somehow? Of course we can, by using the hillshade as an overlay."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:50
+# ae69613266394dde9894c60f5ea51f33
+msgid "|basic| |FA| Using a Hillshade as an Overlay"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:52
+# 3861b00ac28b4ce9b489db49350840a0
+msgid "A hillshade can provide very useful information about the sunlight at a given time of day. But it can also be used for aesthetic purposes, to make the map look better. The key to this is setting the hillshade to being mostly transparent."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:57
+# b4e96de11e21416aa06241d3c4f24642
+msgid "Change the symbology of the original :guilabel:`DEM` to use the :guilabel:`Pseudocolor` scheme."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:59
+# d30a208ef1334ac3ac2063e7a0c51c39
+msgid "Hide all the layers except the :guilabel:`DEM` and :guilabel:`hillshade` layers."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:61
+# 9766a9f2392e4aefb881e86f5211a3bc
+msgid "Click and drag the :guilabel:`DEM` to be beneath the :guilabel:`hillshade` layer in the :guilabel:`Layers list`. :guilabel:`Control rendering order` (beneath the list) should be checked as well."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:64
+# 530d16f2c5de4665bb41f74a17b101ba
+msgid "Set the :guilabel:`hillshade` layer to be transparent."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:65
+# 3f685711f5184c3c96af3431c09be615
+msgid "Open its :guilabel:`Layer Properties` and go to the :guilabel:`Transparency` tab."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:67
+# 69ecec4b91ab4256b2d0939b739c94f2
+msgid "Set the :guilabel:`Global transparency` to :kbd:`50%`:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:68
+# 5886274778a24a2e92142ea26db6a94e
+msgid "Click :guilabel:`OK` on the :guilabel:`Layer Properties` dialog. You'll get a result like this:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:74
+# 33a844d4c4b54226b25a5ae9aa842c86
+msgid "Switch the :guilabel:`hillshade` layer off and back on in the :guilabel:`Layers list` to see the difference it makes."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:77
+# 5a6d73a070e04b56a55655252c194055
+msgid "Using a hillshade in this way, it's possible to enhance the topography of the landscape. If the effect doesn't seem strong enough to you, you can change the transparency of the :guilabel:`hillshade` layer; but of course, the brighter the hillshade becomes, the dimmer the colors behind it will be. You will need to find a balance that works for you."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:83
+# 41ef74b8c6ad477c9fe0bc95cf75249f
+msgid "Remember to save your map when you are done."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:85
+# 386b73a07ac54ffea779d0230d5f2f13
+msgid "For the next two exercises, please use a new map. Load only the :kbd:`DEM` raster dataset into it (:kbd:`exercise_data/raster/SRTM/srtm_41_19.tif`). This is to simplify matters while you're working with the raster analysis tools. Save the map as :kbd:`exercise_data/raster_analysis.qgs`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:92
+# 8117b3f104504c88b5775659514b5c1c
+msgid "|moderate| |FA| Calculating the Slope"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:94
+# cf9abb223b65438abae75e2f205d6b02
+msgid "Another useful thing to know about the terrain is how steep it is. If, as in our analysis, you want to build houses on the land there, then you need land that is relatively flat."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:98
+# 733b70ab76fc4b878441773d374d36b7
+msgid "To do this, you need to use the :guilabel:`Slope` mode of the :guilabel:`DEM (Terain models)` tool."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:101
+# daea2185317640dcac20d060b93cd152
+msgid "Open the tool as before."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:102
+# 323f1a6f989b46c2be38c36c5a0b779c
+msgid "Select the :guilabel:`Mode` option :guilabel:`Slope`:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:107
+# cd84ae67a3e4459c93bb4723018ca19c
+msgid "Set the save location to :kbd:`exercise_data/residential_development/slope.tif`"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:109
+# 53f32e385f734a88beb6429c4bff97c2
+msgid "Enable the :guilabel:`Load into canvas...` checkbox."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:110
+# 3d5ea90c601f450fbf034379072ee713
+msgid "Click :guilabel:`OK` and close the dialog when processing is complete. You'll see a new raster loaded into your map."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:112
+# a08d025180fe49479a9cb99b874df399
+msgid "With the new raster selected in the :guilabel:`Layers list`, click the :guilabel:`Stretch Histogram to Full Dataset` button. Now you'll see the slope of the terrain, with black pixels being flat terrain and white pixels, steep terrain:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:123
+# 9e770da690af4ac994379b7c38686f14
+msgid "|moderate| |TY| calculating the aspect"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:125
+# f6756dfe14674f1495afa58edbf586b8
+msgid "The *aspect* of terrain refers to the direction it's facing in. Since this study is taking place in the Southern Hemisphere, properties should ideally be built on a north-facing slope so that they can remain in the sunlight."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:129
+# b044086c9f9146efb389f6eb841c2808
+msgid "Use the :guilabel:`Aspect` mode of the :guilabel:`DEM (Terain models)` tool to calculate the aspect of the terrain."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:132
+# fc3e03e6ee4f40a6807ddc99019fd9e9
+msgid ":ref:`Check your results <raster-analysis-1>`"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:135
+# de85c6e78fac445b8add30a176b3289c
+msgid "|moderate| |FA| Using the Raster Calculator"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:137
+# a682b346ca514fc5bf115f6107c631f4
+msgid "Think back to the residential property development problem, which we last addressed in the *Vector Analysis* lesson. So far, you've identified several farms that would be suitable, but without taking the terrain into account. Let's say that an ideal farm for development needs to have areas on it that are north-facing, and with a slope of less than five degrees. But if the slope is less than 2 degrees, then the aspect doesn't matter."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:144
+# c2a7c37bf40647b1b22f2fc97effdc0b
+msgid "Fortunately, you already have rasters showing you the slope as well as the aspect, but you have no way of knowing where both conditions are satisfied at once. How could this analysis be done?"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:148
+# b0374c8186204798aba581dcb39a30e1
+msgid "The answer lies with the :guilabel:`Raster calculator`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:150
+# 7d252ffecdc74fad96bc68fdee3f68ef
+msgid "Click on :menuselection:`Raster > Raster calculator...` to start this tool."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:151
+# d283bc4ebd8c4692b3cddb95e71216e1
+msgid "To make use of the :guilabel:`aspect` dataset, double-click on the item :guilabel:`aspect@1` in the :guilabel:`Raster bands` list on the left. It will appear in the :guilabel:`Raster calculator expression` text field below."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:155
+# 8a23ebdafd3e4198befba0d9698e2eed
+msgid "North is at 0 (zero) degrees, so for the terrain to face north, its aspect needs to be greater than 270 degrees and less than 90 degrees."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:158
+# 817233cc4931482384eb5e46cabbb515
+msgid "In the :guilabel:`Raster calculator expression` field, enter this expression:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:160
+# 6ca676c1fff34ec9920c578226ac95cf
+msgid ":kbd:`aspect@1 <= 90 OR aspect@1 >= 270`"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:162
+# 875c4c26e4f144d39d2b7ff6da9a0afe
+msgid "Set the output file to :kbd:`aspect_north.tif` in the directory :kbd:`exercise_data/residential_development/`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:164
+# ff059e1861584c2fb84fb558c58cc66e
+msgid "Ensure that the box :guilabel:`Add result to project` is checked."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:165
+# 7edf103a05e544a181be5981832b6d87
+msgid "Click :guilabel:`OK` to begin processing."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:170
+# 19536ab857c74623bfe784e55daa2e3e
+msgid "Your result will be this:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:179
+# e55ce5d12f544f65adaec2da74556543
+msgid "|moderate| |TY|"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:181
+# f2c47c26f1694cde89f2fbe546c197e6
+msgid "Now that you've done the aspect, create two separate new analyses of the :guilabel:`DEM` layer."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:184
+# 009df0ef1b5649f3bc9b1a6944272513
+msgid "The first will be to identify all areas where the slope is less than or equal to :kbd:`2` degrees."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:186
+# f84331f973014d9b98676d473b35e48c
+msgid "The second is similar, but the slope should be less than or equal to :kbd:`5` degrees."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:188
+# 1b03897d508c443db416485bbbe7693d
+msgid "Save them under :kbd:`exercise_data/residential_development/` as :kbd:`slope_lte2.tif` and :kbd:`slope_lte5.tif`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:191
+# f16e4c9be2684730b2261311f6120ea6
+msgid ":ref:`Check your results <raster-analysis-2>`"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:195
+# 7fcc4166006149aea5050640c4627563
+msgid "|moderate| |FA| Combining Raster Analysis Results"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:197
+# 769e65feaba84f34b26cdf8a40f9a38d
+msgid "Now you have three new analysis rasters of the :guilabel:`DEM` layer:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:199
+# aa7000daa6124180b7c09a8458b63e9b
+msgid ":guilabel:`aspect_north`: the terrain faces north"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:200
+# b410fcbd8457477c97c041aac1096237
+msgid ":guilabel:`slope_lte2`: the slope is at or below 2 degrees"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:201
+# 3139c786fec34ed8ba06295b6b0022d3
+msgid ":guilabel:`slope_lte5`: the slope is at or below 5 degrees"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:203
+# 7fbf08fa9d9944b8a8c0943d76cb1f27
+msgid "Where the conditions of these layers are met, they are equal to :kbd:`1`. Elsewhere, they are equal to :kbd:`0`. Therefore, if you multiply one of these rasters by another one, you will get the areas where both of them are equal to :kbd:`1`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:208
+# c09331889ed043bc9d0184976c7e88f4
+msgid "The conditions to be met are: at or below 5 degrees of slope, the terrain must face north; but at or below 2 degrees of slope, the direction that the terrain faces in does not matter."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:212
+# 6b674433763449d9903b7bf68e01cbf3
+msgid "Therefore, you need to find areas where the slope is at or below 5 degrees :kbd:`AND` the terrain is facing north; :kbd:`OR` the slope is at or below 2 degrees. Such terrain would be suitable for development."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:216
+# 13a3de67e5274f9e86f026ddaeeac22f
+msgid "To calculate the areas that satisfy these criteria:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:218
+# c4114083277a4eee958d9b289ce9c1ac
+msgid "Open your :guilabel:`Raster calculator` again."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:219
+# 93d72965b606464992b38ae2a736928d
+msgid "Use the :guilabel:`Raster bands` list, the :guilabel:`Operators` buttons, and your keyboard to build this expression in the :guilabel:`Raster calculator expression` text area:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:223
+# f740b31f0ff74da280bbdb27f3446fd8
+msgid ":kbd:`( aspect_north@1 = 1 AND slope_lte5@1 = 1 )  OR slope_lte2@1 = 1`"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:225
+# add27bdf6280472eb75835e7d3005948
+msgid "Save the output under :kbd:`exercise_data/residential_development/` as :kbd:`all_conditions.tif`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:227
+# 9b4156f45d71473895cdb89e0f11b8f6
+msgid "Click :guilabel:`OK` on the :guilabel:`Raster calculator`. Your results:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:234
+# 2f3f43c7b0a64954b8b0bbea02bb2126
+msgid "|moderate| |FA| Simplifying the Raster"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:236
+# b19d0ec8fee14e0a85506319dd8a8664
+msgid "As you can see from the image above, the combined analysis has left us with many, very small areas where the conditions are met. But these aren't really useful for our analysis, since they're too small to build anything on. Let's get rid of all these tiny unusable areas."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:241
+# ceaaf493eb4944d9a63648fca2be42cb
+msgid "Open the :guilabel:`Sieve` tool (:menuselection:`Raster --> Analysis --> Sieve`)."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:243
+# 750fa2d1bec24d89a14fa5e0c958a6d3
+msgid "Set the :guilabel:`Input file` to :kbd:`all_conditions`, and the :guilabel:`Output file` to :kbd:`all_conditions_sieve.tif` (under :kbd:`exercise_data/residential_development/`)."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:246
+# 712c40f9c6354ad4b5223ae1c81ed959
+msgid "Set both the :guilabel:`Threshold` and :guilabel:`Pixel connections` values to :kbd:`8`, then run the tool."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:249
+# 5f3db42b623946f683fbaf7011050a14
+msgid "Once processing is done, the new layer will load into the canvas. But when you try to use the histogram stretch tool to view the data, this happens:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:255
+# ab2f2bc931a244f898a15cbabd36715b
+msgid "What's going on? The answer lies in the new raster file's metadata."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:257
+# 6284471de1af485e977b3ae4c1cce935
+msgid "View the metadata under the :guilabel:`Metadata` tab of the :guilabel:`Layer Properties` dialog."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:260
+# 2984f8536e1b476e87c87d2f94b04fcb
+msgid "Whereas this raster, like the one it's derived from, should only feature the values :kbd:`1` and :kbd:`0`, it has the :kbd:`STATISTICS_MINIMUM` value of a very large negative number. Investigation of the data shows that this number acts as a null value. Since we're only after areas that weren't filtered out, let's set these null values to zero."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:266
+# f6f5f7c1be524b90a96e1340751cf97a
+msgid "Open the :guilabel:`Raster Calculator` again, and build this expression:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:268
+# b0ad2dd6cb7f49b48ad841bf0288308f
+msgid ":kbd:`(all_conditions_sieve@1 <= 0) = 0`"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:270
+# 51a8174a8ca843d58372eb6cce2ec4cf
+msgid "This will maintain all existing zero values, while also setting the negative numbers to zero; which will leave all the areas with value :kbd:`1` intact."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:272
+# 4431580a94124ffd946f70f5b3ecbc3e
+msgid "Save the output under :kbd:`exercise_data/residential_development/` as :kbd:`all_conditions_simple.tif`."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:275
+# c2addcc1a8b642c8aa8dd7c80dd28659
+msgid "Your output looks like this:"
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:280
+# 973acca187f04bfea805391aaf2bfd9c
+msgid "This is what was expected: a simplified version of the earlier results. Remember that if the results you get from a tool aren't what you expected, viewing the metadata (and vector attributes, if applicable) can prove essential to solving the problem."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:288
+# 04a0b5614b0f46ba86b57c991012eb79
+msgid "You've seen how to derive all kinds of analysis products from a DEM. These include hillshade, slope and aspect calculations. You've also seen how to use the raster calculator to further analyze and combine these results."
+msgstr ""
+
+#: ../../../rasters/terrain_analysis.rst:295
+# d0371d987fdf4e939c947c5a42915858
+msgid "Now you have two analyses: the vector analysis which shows you the potentially suitable farms, and the raster analysis that shows you the potentially suitable terrain. How can these be combined to arrive at a final result for this problem? That's the topic for the next lesson, starting in the next module."
+msgstr ""
+

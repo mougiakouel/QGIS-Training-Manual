@@ -1,0 +1,1076 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, Linfiniti Consulting CC
+# This file is distributed under the same license as the The Free Quantum GIS Training Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The Free Quantum GIS Training Manual 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-10 11:51\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../postgis/geometry.rst:2
+# b717215f33694f4d8e4f28f193069b89
+msgid "|LS| Geometry Construction"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:4
+# efc63061d3c5437597199c973658e5c6
+msgid "In this section we are going to delve a little deeper into how simple geometries are constructed in SQL. In reality, you will probably use a GIS like QGIS to create complex geometries using their digitising tools; however, understanding how they are formulated can be handy for writing queries and understanding how the database is assembled."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:10
+# 6dc66c3a3eba4ac29e2e7c29f5032e14
+msgid "**The goal of this lesson:** To better understand how to create spatial entities directly in PostgreSQL/PostGIS."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:16
+# e9ce7fd0aa6548be8406e170e9564ef5
+msgid "Creating Linestrings"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:18
+# b0410f3563bf4ada970d690737f451fe
+msgid "Before we start, let's get our streets table matching the others; i.e., having a constraint on the geometry, an index and an entry in the geometry_columns table."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:22
+# ce03eeeb83274c6799e0e9bdbe07c07c
+msgid "Exercise:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:24
+# 5f554a442993494da33b980bff32cc3e
+msgid "Modify the streets table so that it has a geometry column of type ST_LineString."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:26
+# afb8c7ec48484342bc79ddd05c4411c5
+msgid "Don't forget to do the accompanying update to the geometry columns table!"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:28
+# 54f404423bac4e0ebdee9d3a6d1c7df4
+msgid "Also add a constraint to prevent any geometries being added that are not LINESTRINGS or null."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:30
+# 40b12872e043433ab4ef8298377be6c6
+msgid "Create a spatial index on the new geometry column"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:57
+# 1e7f66208fac41349e8b487c2b921387
+msgid ":ref:`Check your results <geometry-1>`"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:59
+# 1d1e038ac9cd4c6a8efdaea91457bd5f
+msgid "Now let's insert a linestring into our streets table. In this case I am going to update an existing street record:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:67
+# 39bc4c7173714a058b056b101fe95e5d
+msgid "Take a look at the results in QGIS. (You may need to right-click on the streets layer in the 'Layers' panel, and choose 'Zoom to layer extent'.)"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:70
+# fc3ea267964d46d79d8d0883480956c1
+msgid "Now create some more streets entries - some in QGIS and some from the command line."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:75
+# 1a77f4bbe28e4da1868e355281890e6a
+msgid "Creating Polygons"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:77
+# e3c1293d581c40f68fc121984c8753c8
+msgid "Creating polygons is just as easy. One thing to remember is that by definition, polygons have at least four vertices, with the last and first being co-located."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:85
+# 90bd7ba6e9a5424daba9332c5ad86933
+msgid "A polygon requires double brackets around its coordinate list; this is to allow you to add complex polygons with multiple unconnected areas. For instance:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:95
+# 7faa8d386d0f4574a0ac7675a15c4941
+msgid "If you followed this step, you can check what it did by loading the cities dataset into QGIS, opening its attribute table, and selecting the new entry. Note how the two new polygons behave like one polygon."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:103
+# 34c53438d7b0427d80265da9bf83564f
+msgid "Exercise: Linking Cities to People"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:105
+# c95378f4a4b04ef8bcc283e2b8912332
+msgid "For this exercise you should do the following:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:107
+# 7b9230a7d4014450af73b76c38ffdb87
+msgid "Delete all data from your people table. Add a foreign key column to people that references the primary key of the cities table. Use QGIS to capture some cities. Use SQL to insert some new people records, ensuring that each has an associated street and city."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:114
+# 314d5965a36944a8ac50d4c0bde07367
+msgid "Your updated people schema should look something like this:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:171
+# f9f98d713e8e4146b68a71bb66d6eb93
+msgid ":ref:`Check your results <geometry-2>`"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:175
+# bff2ecf31ac64f7a9de078ed635179ea
+msgid "Looking at our schema"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:177
+# 0db45483e3b444a79839fee38e0e1231
+msgid "By now our schema should be looking like this:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:196
+# 924d3b067fa34b278cd3806690eede65
+msgid "Access Subobjects"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:198
+# 9e475a3b5fd84f2cb25eb2f6ceaa9d4f
+msgid "With the SFS-Model functions, you have a wide variety of options to access subobjects of SFS Geometries. When you want to select the first vertex point of every polygon geometry in the table myPolygonTable, you have to do this in this way:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:203
+# a79c7293de1d4b50b75136d48450e128
+msgid "Transform the polygon boundary to a linestring:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:209
+# 0afe3d05abf04cadbc4eb378a888deea
+msgid "select the first vertex point of the resultant linestring:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:219
+# 1cd82c6416f949df809bb944d97e2966
+msgid "Data Processing"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:221
+# cff22565d95b4797b980b1df9064a74b
+msgid "PostGIS supports all OGC SFS/MM standard conform functions. All these functions start with ``ST_``."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:225
+# bb1a5340601646e59eee03497e791d3e
+msgid "Clipping"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:227
+# cafb1c9add014575a4bf3c2c11027e9a
+msgid "To clip a subpart of your data you can use the :kbd:`ST_INTERSECT()` function. To avoid empty geometries, use:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:248
+# ec2fe420d3ca446da358ec6286e0de05
+msgid "Building Geometries from Other Geometries"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:250
+# c40e4e450be845f5a6fc2ddbeb8e90ca
+msgid "From a given point table, you want to generate a linestring. The order of the points is defined by their :kbd:`id`. Another ordering method could be a timestamp, such as the one you get when you capture waypoints with a GPS receiver."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:258
+# c842d3857ba446018b499101015e59a9
+msgid "To create a linestring from a new point layer called 'points', you can run the following command:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:270
+# 3ba47427333f4c5c82e655a47ebe239c
+msgid "To see how it works without creating a new layer, you could also run this command on the 'people' layer, although of course it would make little real-world sense to do this."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:278
+# 2101d88a38174621bf8f1bcbc787d42b
+msgid "Geometry Cleaning"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:280
+# fb17cb05a0e54dab8319c35ee211eac7
+msgid "You can get more information for this topic in `this blog entry <http://linfiniti.com/?s=cleangeometry>`_."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:284
+# 3a9d4eff478d4360aa73ce02c2a83342
+msgid "Differences between tables"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:286
+# b5fb8e9ece944ef3906b170f10e3ca3f
+msgid "To detect the difference between two tables with the same structure, you can use the PostgreSQL keyword :kbd:`EXCEPT`."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:295
+# ee023b2952ec4ad08ab8c28cc1ca8681
+msgid "As the result, you will get all records from table_a which are not stored in table_b."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:299
+# bfb7a514a0904393a7ae0b40cf270627
+msgid "Tablespaces"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:301
+# 7e2e224fe3a845f5b78f052d3775fa6e
+msgid "You can define where postgres should store its data on disk by creating tablespaces."
+msgstr ""
+
+#: ../../../postgis/geometry.rst:308
+# be403242b1a5483583766c53d003e91f
+msgid "When you create a database, you can then specify which tablespace to use e.g.:"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:315
+#: ../../../postgis/import_export.rst:91
+#: ../../../postgis/simple_feature_model.rst:251
+#: ../../../postgis/spatial_functions.rst:243
+#: ../../../postgis/spatial_queries.rst:392
+# 4975ed95af004da286ce231259108605
+# 1e7d4050e8a44286a5024bf59a0f16e2
+# a0038987a9bd44a6a86a45058c76aa59
+# f197b5862cbb45418daebe8071187236
+# 87d27ee76f6e44a0869be922e46e30be
+msgid "|IC|"
+msgstr ""
+
+#: ../../../postgis/geometry.rst:317
+# e405bb3bd5614c66a3d2f836a3e9f2ec
+msgid "You've learned how to create more complex geometries using PostGIS statements. Keep in mind that this is mostly to improve your tacit knowledge when working with geo-enabled databases through a GIS frontend. You usually won't need to actually enter these statements manually, but having a general idea of their structure will help you when using a GIS, especially if you encounter errors that would otherwise seem cryptic."
+msgstr ""
+
+#: ../../../postgis/import_export.rst:2
+# 9b63164a4b714a62861afdab43c1f8d4
+msgid "|LS| Import and Export"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:4
+# 4f51d4ec8f264e89b2625ddc92c00f31
+msgid "Of course, a database with no easy way to migrate data into it and out of it would be no fun. Even more so for spatial data! Fortunately, there are a number of tools that will let you easily move data into and out of PostGIS."
+msgstr ""
+
+#: ../../../postgis/import_export.rst:9
+# f931ec269ed048099d4e7454f5a970eb
+msgid "shp2pgsql"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:11
+# d298b626185f4cf5bf0253600d3363c3
+msgid "shp2pgsql is a commandline tool to import ESRI shapefiles to the database. Under Unix, you can use the following command for importing a new PostGIS table:"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:20
+# 7cf12cf153404c4f828f1950407106ef
+msgid "Under Windows, you have to perform the import process in two steps:"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:27
+# 9386e3b6fa7a4c238e8c51644fd671fa
+msgid "You may encounter this error:"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:34
+# 27453da179a44fc09198fa365ef5e16d
+msgid "This is a known issue regarding the creation *in situ* of a spatial index for the data you're importing. To avoid the error, exclude the :kbd:`-I` parameter. This will mean that no spatial index is being created directly, and you'll need to create it in the database after the data have been imported. (The creation of a spatial index will be covered in the next lesson.)"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:41
+# de2607ecf5814a5d83b252d479f73f9c
+msgid "pgsql2shp"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:43
+# 497a82aab2574892a91062d3bbd76bde
+msgid "pgsql2shp is a commandline tool to export PostGIS Tables, Views or SQL select queries. To do this under Unix:"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:51
+# fe6276a70c044c139440580688893e2e
+msgid "To export the data using a query:"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:59
+# b2d516d3f5a44bd0bed1181ea60f37c1
+msgid "ogr2ogr"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:61
+# 9ea07379bd2b40eca003fcb742a1355c
+msgid "ogr2ogr is a very powerful tool to convert data into and from postgis to many data formats. ogr2ogr is part of the GDAL/OGR Software and has to be installed separately. To export a table from PostGIS to GML, you can use this command:"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:71
+# 30e5468b8c5442a2b98ffdb06307cb6e
+msgid "SPIT"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:73
+# 3c01620c5a8143069bb161fd25becd6f
+msgid "SPIT is a QGIS plugin which is delivered with QGIS. You can use SPIT for uploading ESRI shapefiles to PostGIS."
+msgstr ""
+
+#: ../../../postgis/import_export.rst:76
+# bbf2346dc18448acb609075f73caca5f
+msgid "Once you've added the SPIT plugin via the :guilabel:`Plugin Manager`, look for this button:"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:82
+# 0c6dccc46d8c470892a887567ae9878a
+msgid "Clicking on it will give you the SPIT dialog:"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:87
+# b300180251d44c97b9147cbd2559be53
+msgid "You can add shapefiles to the database by clicking the :guilabel:`Add` button, which will give you a file browser window."
+msgstr ""
+
+#: ../../../postgis/import_export.rst:93
+# 449c31ab8dd347449a4c481afabb5ab4
+msgid "Importing and exporting data to and from the database can be done in many various ways. Especially when using disparate data sources, you will probably use these functions (or others like them) on a regular basis."
+msgstr ""
+
+#: ../../../postgis/import_export.rst:98
+#: ../../../postgis/simple_feature_model.rst:257
+#: ../../../postgis/spatial_functions.rst:249
+#: ../../../postgis/spatial_queries.rst:398
+# 8f286844f12144d58f8e33a8398375fd
+# fe23ebf0f39748f4b94a8b8504fd45c3
+# 8fcc594214f645759913f196c97fbcaa
+# 0bb27baad8c5446090a91ce30c1d38bd
+msgid "|WN|"
+msgstr ""
+
+#: ../../../postgis/import_export.rst:100
+# 7654c1a48d184e6d9b4505533ce8d042
+msgid "Next we'll look at how to query the data we've created before."
+msgstr ""
+
+#: ../../../postgis/index.rst:3
+# a14d0fe7ba414506a391d766398ea3ab
+msgid "|MOD| PostGIS"
+msgstr ""
+
+#: ../../../postgis/index.rst:5
+# 8671596321fd4821875de346f5885dcd
+msgid "PostGIS is an extension to PostgreSQL which allows it to handle and process geographic data. In this module, we'll learn how to set up and use the geographic functions that PostGIS offers."
+msgstr ""
+
+#: ../../../postgis/index.rst:9
+# 36480a1ad9724879b26a05747425682d
+msgid "While working through this section, you may want to keep a copy of the `PostGIS cheat sheet <../_static/postgis/postgis_cheatsheet.pdf>`_ available at `Boston GIS user group <http://www.bostongis.com/postgis_quickguide.bqg>`_. Another good friend is the `online <http://postgis.refractions.net/documentation/manual-1.5/>`_ PostGIS documentation."
+msgstr ""
+
+#: ../../../postgis/index.rst:16
+# 6c0929df381f4e689f21b33b590880cb
+msgid "See also `PostGIS online <http://postgisonline.org/>`_."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:2
+# 3a3ad220437048e7907250300b215ed7
+msgid "|LS| Simple Feature Model"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:4
+# 0daf54e4cfc44804aad9872ae6a3e52c
+msgid "How can we store and represent geographic features in a database? In this lesson we'll cover one approach, the Simple Feature Model as defined by the OGC."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:8
+# e1c77eece35049ef81acfd14062643f9
+msgid "**The goal for this lesson:** To learn what the SFS Model is and how to use it."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:11
+# fc68ffad02dc492b87001f9977bfe930
+msgid "What is OGC"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:13
+# 8eb2ed93aa9941e9b8278bc9ec49573b
+msgid "The Open Geospatial Consortium (OGC), an international voluntary consensus standards organization, originated in 1994. In the OGC, more than 370+ commercial, governmental, nonprofit and research organizations worldwide collaborate in an open consensus process encouraging development and implementation of standards for geospatial content and services, GIS data processing and data sharing. *- Wikipedia*"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:21
+# 0d186495225b47c38fe867fa9b66d5f3
+msgid "What is the SFS Model"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:23
+# 742cab4c5a244e148cf936a3687bcbb6
+msgid "The Simple Feature for SQL (SFS) Model is a *non-topological* way to store geospatial data in a database and defines functions for accessing, operating, and constructing these data."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:30
+# f3a05c7a06df4b689b8ac2b5be48f838
+msgid "The model defines geospatial data from Point, Linestring, and Polygon types (and aggregations of them to Multi objects)."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:33
+# 3221bcd1e74940da9931b7d16008aa12
+msgid "For further information, have a look at the `OGC Simple Feature for SQL <http://www.opengeospatial.org/standards/sfs>`_ standard."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:37
+# a80b8a7b3fcc4173b116f31af6cb55dc
+msgid "Add a geometry field to table"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:39
+# 4203003bb7dd497b9ad49d29f1495e2d
+msgid "Let's add a point field to our people table:"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:49
+# 6e05547122d34b488be7d7157b012e98
+msgid "Add a constraint based on geometry type"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:51
+# 6ccdbf4eeeea4a0abda334b47d25b2e2
+msgid "You will notice that the geometry field type does not implicitly specify what *type* of geometry for the field - for that we need a constraint."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:60
+# c03f530b6be544d287824b5ff463a4d0
+msgid "What does that do? It adds a constraint to the table that prevents anything except a point geometry or a null."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:63
+# a0adced2b87a40eb94d9a644586ac2bb
+msgid "Now you try:"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:65
+# e1c7b203c4934edc9dcf2fdee1b53eef
+msgid "Create a new table called cities and give it some appropriate columns, including a geometry field for storing polygons (the city boundaries). Make sure it has a constraint enforcing geometries to be polygons."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:98
+# 21aefb5dc2a447b3ae154e592ef9eddb
+msgid ":ref:`Check your results <simple-feature-1>`"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:104
+# 1a4a05bea6b74789835d27ac0ecabfb8
+msgid "Populate geometry_columns table"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:106
+# b9a80dc9805c424a90d62978531067e0
+msgid "At this point you should also add an entry into the :kbd:`geometry_columns` table:"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:114
+# 0babcf8631964fd8a8b32d62bee82b0a
+msgid "Why? :kbd:`geometry_columns` is used by certain applications to be aware of which tables in the database contain geometry data."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:117
+# 02d3843b181b44fb8e14d8d66df67ac8
+msgid "If the above :kbd:`INSERT` statement causes a complaint, run this query first:"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:124
+# cd8f77068d7c44daba5eaeffcae473cd
+msgid "If the column :kbd:`f_table_name` contains the value :kbd:`people`, then this table has already been registered and you don't need to do anything more."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:128
+# 79fb3216eebd45f6b15b225d2891e21f
+msgid "The value :kbd:`2` refers to the number of dimensions; in this case, two: **x** and **y**."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:131
+# 715371b0cc9141f2a7c9300d8a97148b
+msgid "The value :kbd:`4326` refers to the projection we are using; in this case, WGS 84, which is referred to by the number 4326 (refer to the earlier discussion about the EPSG)."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:135
+# 6efb5ef20a234c4f8128dcf62741a9b9
+msgid "Add an appropriate geometry_columns entry for your new cities layer"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:156
+# a943dc28e89d4757b943a484ffd9f692
+msgid ":ref:`Check your results <simple-feature-2>`"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:162
+# a33ce62e0b7d460285e80836d3a92397
+msgid "Add geometry record to table using SQL"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:164
+# 253dbed449bc4b80a1f2a395c5551641
+msgid "Now that our tables are geo-enabled, we can store geometries in them!"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:175
+# 1271a584591e4e72914700bb09526973
+msgid "In the new entry above, you will need to specify which projection (SRID) you want to use. This is because you entered the geometry of the new point using a plain string of text, which does not automatically add the correct projection information. Obviously, the new point needs to use the same SRID as the dataset it is being added to, so you need to specify it."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:181
+# 3ef44276c19b4fc9b7727d532868e263
+msgid "If at this point you were using a graphical interface, for example, specifying the projection for each point would be automatic. In other words, you usually won't need to worry about using the correct projection for every point you want to add if you've already specified it for that dataset, as we did earlier."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:187
+# 0fed2eb416a3456f9d921cca3199b316
+msgid "Now is probably a good time to fire up QGIS and try to view your :kbd:`people` table. Also, we should try editing / adding / deleting records and then performing select queries in the database to see how the data has changed."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:191
+# 4f09083564ce4e46b6d8eb63b65d707c
+msgid "To load a PostGIS layer in QGIS, use the :menuselection:`Layer --> Add PostGIS Layers` menu option or toolbar button:"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:197
+# c9a42353032849feaf25e7bd1f45594d
+msgid "This will open the dialog:"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:202
+# 7dfd1a832b804e5ea8ae97bad402d139
+msgid "Click on the :guilabel:`New` button to open this dialog:"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:207
+# cc2f543b608e4935bc05669de7761c82
+msgid "Then define a new connection, e.g.:"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:219
+# 01262e01c4ea4d4fadcf22a8e7e6d097
+msgid "To see whether QGIS has found the :kbd:`address` database and that your username and password are correct, click :guilabel:`Test Connect`. If it works, check the boxes next to :guilabel:`Save Username` and :guilabel:`Save Password`. Then click :guilabel:`OK` to create this connection."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:224
+# cad82c42c29047199ddafd87330a977b
+msgid "Back in the :guilabel:`Add PostGIS Layers` dialog, click :guilabel:`Connect` and add layers to your project as usual."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:227
+# daad1466b80f4261b22d0a524dd9cad9
+msgid "Formulate a query that shows a person's name, street name and position (from the the_geom column) as plain text."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:248
+# 0c39b2c35c6f4b409932ffb0fe4e77a5
+msgid ":ref:`Check your results <simple-feature-3>`"
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:253
+# eff4e54871f84812b1c9fc38a19c51ba
+msgid "You have seen how to add spatial objects to your database and view them in GIS software."
+msgstr ""
+
+#: ../../../postgis/simple_feature_model.rst:259
+# 165ff103f9de4eae89c3057f0a8cdaa2
+msgid "Next you'll see how to import data into, and export data from, your database."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:2
+# 93de1897e4714ae6bb4cbe9c77250c3c
+msgid "|LS| PostGIS Setup"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:4
+# f20ef7c1b56c48ff9636b7597d21403e
+msgid "Setting up PostGIS functions will allow you to access spatial functions from within PostgreSQL."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:7
+# b93addb29337422690173e507d94abbe
+msgid "**The goal for this lesson:** To install spatial functions and briefly demo their effects."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:11
+# fba7500b85384de39e5c36e0dad5d9ff
+msgid "Installing under Ubuntu"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:13
+# fd003d42afea438f853d2c155fe759cb
+msgid "Postgis is easily installed from apt."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:20
+# 4da07659554b4ddb8e195cfc73ffd56f
+msgid "Really, it's that easy..."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:23
+# 16850163bbff492ba5ae08a23ddba1b8
+msgid "Installing under Windows"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:25
+# 30da4f465cbb4984a9b2be882d51bad0
+msgid "Visit `the download page <http://www.postgresql.org/download/>`_."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:27
+# 347f6cd078b84408a21d5aadfee6002f
+msgid "Now follow `this guide <http://www.bostongis.com/PrinterFriendly.aspx?content_name=postgis_tut01>`_."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:30
+# 9e070ca702694283840f3492a1e47e24
+msgid "A little more complicated, but still not hard. Note that you need to be online to install the postgis stack."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:34
+# 253af0d227984d8d8d01854935140fd8
+msgid "Install plpgsql"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:36
+# 566f3487977548d0944d60a474421079
+msgid "You can ensure that any database created on your system automatically gets these spatial extensions by running these commands (from this and the next two sections) on the :kbd:`template1` system database *before* you create any of your own databases."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:41
+# b47afd2eadfd4dfa9a5dbf191d4243ed
+msgid "PostgreSQL can use various procedural languages. What is a procedural language? It is an 'in database' language that can be used to extend the functionality of the database. For example you can write database functions that are called when events happen - such as when a record is inserted into the database. (Recall when this was done in the previous module.)"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:47
+# fa80e88003a14bf68d08c18fc21ba7dc
+msgid "PostGIS requires the PLPGSQL procedural language to be installed. So do this:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:55
+# 0c358db5d47c41ed8cb5d43087153aac
+msgid "Where the third argument is the name of the database that the procedural language should be installed into."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:58
+# 425f522e6b3446a4be08a9b71d565fad
+msgid "You will need administrative permissions for your database to be able to do this."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:62
+# 68a66274708f4fd4bf832f2ea2ff0156
+msgid "Install postgis.sql"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:64
+# 294e73a63e1d41e5a1f0bd49ea28b76e
+msgid "PostGIS can be thought of as a collection of in database functions that extend the core capabilities of PostgreSQL so that it can deal with spatial data. By 'deal with', we mean store, retrieve, query and manipulate. In order to do this, a number of functions are installed into the database. Do this:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:73
+# 0c71a95eb16a4afe8806f30d3bdd488c
+msgid "or"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:79
+# 92a2b4f22aa34a7d8cdb9b6985cfdaf3
+msgid "depending on which PostGIS version you have installed. Now do:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:85
+# 836b8a5ba14d4216b73d3202ad6b53b4
+msgid "and, once you're in the psql prompt:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:91
+# 682f285c8fe34bf6a5b4b3246b9b7e24
+msgid "We will discuss these functions in more detail as we proceed with this course."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:94
+# 6073caecd4074f7a8d8de4fd38954bab
+msgid "Install spatial_refsys.sql"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:96
+# 98af7d41af3743cd9d70b176aea7e104
+msgid "In addition to the PostGIS functions, a second helper SQL script needs to be run that will load the database with a collection of spatial reference system (SRS) definitions as defined by the European Petroleum Survey Group (EPSG). These are used during operations such as coordinate reference system (CRS) conversions."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:102
+# 8f0d19a327e94e65b122a758f3858d2a
+msgid "You can add more to the SRS list later if needed, but the list provided should cover just about every SRS you will need (Google Mercator and lo are notable exceptions)."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:106
+# 7b7554102b7e4011b5ab9fecb9b423ad
+msgid "To load the SRS table, first ensure that you're at a normal prompt (i.e., quit the database first with :kbd:`\\q`), then do this:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:113
+# 677a8fd62edf4700afb328013c1a5e09
+msgid "replacing :kbd:`1.5` with :kbd:`2.0` if necessary."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:115
+# 0b1ebe5feada4e669e16a814918c5e6b
+msgid "The above command adds a table to our database. We can see the schema of this table by entering the following command in the psql prompt:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:122
+# 2815b5baabbf40468eeb5f1a4fb19153
+msgid "The result should be this:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:137
+# 23e174a1523d4eeca9c83902dc94db47
+msgid "You can use standard SQL queries (as we have learned from our introductory sections), to view and manipulate this table - though we suggest you do not update or delete any records unless you know what you are doing."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:141
+# 25d334a4788e4104a14a9c5f3e840a9e
+msgid "One SRID you may be interested in is EPSG:4326 - the geographic / lat lon reference system using the WGS 84 ellipsoid. Let's take a look at it:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:148
+# fd43c3c7857e4df0a6607edfbca7617c
+msgid "Result"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:162
+# 287a4ed7b1d14d1699ae98a0afc7ffd8
+msgid "The srtext is the projection definition in well known text (you may recognise this from .prj files in your shapefile collection)."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:166
+# d3abd87c79254285b750cb8071e7320a
+msgid "Looking at the installed PostGIS functions"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:168
+# add74cfd8bcd40e9b364f28b106999f0
+msgid "Good - our PostgreSQL database is now geospatially enabled, thanks to PostGIS. We are going to delve a lot deeper into this in the coming days, but let's give you a quick little taster. Let's say we want to create a point from text. First we use the psql command to find functions relating to point:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:177
+# f56aa1bbddd942ceb60e5e90384ad4a8
+msgid "Here is one that caught my eye: :kbd:`st_pointfromtext`"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:179
+# 7dc9c132ce3d4d2ebe427ae2e6ceddd3
+msgid "So let's give that a try:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:185
+#: ../../../postgis/spatial_functions.rst:219
+#: ../../../postgis/spatial_queries.rst:25
+#: ../../../postgis/spatial_queries.rst:58
+#: ../../../postgis/spatial_queries.rst:179
+#: ../../../postgis/spatial_queries.rst:219
+#: ../../../postgis/spatial_queries.rst:320
+# d6e80416b2254936b92c61ca3c5b13df
+# c721ccf58da140b1ab9c266055469ddb
+# bc4940d501974b10a63a530465981141
+# c30e27ef61464180816b95c96197927d
+# 79eaa699c9334dad9d5570f5ee311555
+# 7ceb9b42d21142e38d700ced3fb2f4aa
+# a648c1b625ce4cc481b235cdd90321d9
+msgid "Result:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:194
+# 32407397906a4a25813db405de41280f
+msgid "So there are a couple of interesting things going on here:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:196
+# 32836d91f5834a61bf68c7ee3f2870ba
+msgid "we defined a point at position 1,1 (EPSG:4326 is assumed) using :kbd:`POINT(1 1)`"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:198
+# fdd724840a814a278a0c8dec3f2bb732
+msgid "we ran an sql statement, but not on any table, just on data entered from the SQL prompt"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:200
+# 9917ffa9bdf5483990db58f011a840b6
+msgid "the resulting row looks kinda strange"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:202
+# 576cd318c3b64e5199784dd4aaf2c441
+msgid "The resulting row is looking strange because its in the OGC format called 'Well Known Binary' (WKB) - more on that coming in the next section."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:205
+# 99d3043383314ad69c477e5659b78368
+msgid "To get the results back as text, I do a quick scan through the function list for something that returns text:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:212
+# 582765def4774c15878a4ee0e093b228
+msgid "One that catches my eye is :kbd:`st_astext`. Let's combine it with the previous query:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:228
+# 0fa9b770e9c44ecdb40e096e9691103e
+msgid "So what's happened here? We entered the string :kbd:`POINT(1,1)`, turned it into a point using :kbd:`st_pointfromtext()`, and turned it back into a human-readable form with :kbd:`st_astext()`, which gave us back our original string."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:233
+# 29aba9ba64fd44b1b5f96b98074571b9
+msgid "One last example before we really get into the detail of using PostGIS:"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:239
+# e05f85ea71c94878985b51d0022193bc
+msgid "What did that do? It created a buffer of 1 degree around our point, and returned it as text. Nifty hey?"
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:245
+# a1a077b2720c4799b854b1df089fa4fb
+msgid "You now have PostGIS functions installed in your copy of PostgreSQL. With this you'll be able to make use of PostGIS' extensive spatial functions."
+msgstr ""
+
+#: ../../../postgis/spatial_functions.rst:251
+# 539e7a4bf1ae455281fcad7acd033e07
+msgid "Next you'll learn how spatial features are represented in a database."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:2
+# 41e32789778b4e67aaa483095372e6b7
+msgid "|LS| Spatial Queries"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:4
+# 5c6add79900b4dbb834aa7663ca14d3b
+msgid "Spatial queries are no different from other database queries. You can use the geometry column like any other database column. With the installation of PostGIS in our database, we have additional functions to query our database."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:8
+# cace6f5f7d3f4e4e8a3298a764f7fac2
+msgid "**The goal for this lesson:** To see how spatial functions are implemented similarly to \"normal\" non-spatial functions."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:14
+# df1319084d5841719caf742e680d592b
+msgid "Spatial Operators"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:16
+# 750dd51d832c4b168e8548f5f9d5bff6
+msgid "When you want to know which points are within a distance of 2 degrees to a point(X,Y) you can do this with:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:34
+# 3cb47633a8184f72acdfc12b55dbbb95
+msgid "the_geom value above was truncated for space on this page. If you want to see the point in human-readable coordinates, try something similar to what you did in the section \"View a point as WKT\", above."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:38
+# 9f38977edfef431c8595128f06e5cada
+msgid "How do we know that the query above returns all the points within 2 *degrees*? Why not 2 *meters*? Or any other unit, for that matter?"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:41
+# 2c2b57a339164f34a5dec50828f1fd83
+msgid ":ref:`Check your results <spatial-queries-1>`"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:46
+# 59fa0b74061a44b4aab9deecb6193d33
+msgid "Spatial Indexes"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:48
+# e44b5bb37d694e32b60367fe9e50ea4e
+msgid "We also can define spatial indexes. A spatial index makes your spatial queries much faster. To create a spatial index on the geometry column use:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:85
+# 0dd0f1d4a4a64f4b94769aab6bdbcb9f
+msgid "Now you try - modify the cities table so its geometry column is spatially indexed."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:115
+# de782f9a66c94d3fab9d4f5bf15cc907
+msgid ":ref:`Check your results <spatial-queries-2>`"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:119
+# b987888fbd814e9dbfcbfb6a8b375056
+msgid "PostGIS Spatial Functions Demo"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:121
+# 551cbb32891540178490335fa5eaf4eb
+msgid "In order to demo PostGIS spatial functions, we'll create a new database containing some (fictional) data."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:124
+# 26955aa7f73041f2b39bc793f6227b86
+msgid "To start, create a new database:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:130
+# c8c7d775c30f4563900f7e3c75336a34
+msgid "Remember to install PLPGSQL:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:136
+# 3e791d73be474a379339026a1c799807
+msgid "Then install the PostGIS functions and the spatial reference system. For example, on Linux with PostgreSQL 9.1 and PostGIS 1.5:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:144
+# 068b84e41785487aafc8ddbe4293a5a7
+msgid "Next, import the data provided in the :kbd:`exercise_data/postgis/` directory. Refer back to the previous lesson for instructions. You can import from the terminal or via SPIT. Import the files into the following database tables:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:148
+# 37a6eabb844b43679445e28258f1183b
+msgid ":kbd:`points.shp` = :kbd:`building`"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:149
+# d94f7f6678224725a47de65f89ad4bad
+msgid ":kbd:`lines.shp` = :kbd:`road`"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:150
+# 1e66b16c1b584be1b9f928fa694bfe49
+msgid ":kbd:`polygons.shp` = :kbd:`region`"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:152
+# d6db7b15faa94178af85cf35b99377e0
+msgid "Load these three database layers into QGIS via the :guilabel:`Add PostGIS Layers` dialog, as usual. When you open their attribute tables, you'll note that they have both an :kbd:`id` field and a :kbd:`gid` field created by the PostGIS import."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:157
+# 590dbf6bdfbc4ff29bf21bfb2e680f2e
+msgid "Now that the tables are imported, we can use PostGIS to query the data. Go back to your terminal (command line) and enter the psql prompt by doing:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:164
+# 18ad7b1331b84d358dead03f77126497
+msgid "We'll demo some of these select statements by creating views from them, so that you can open them in QGIS and see the results."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:168
+# f35a78541ece4054ba650e984427b267
+msgid "Select by location"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:170
+# 67beec4d0a89419b8f0c3641f01fe43a
+msgid "Get all the buildings in the KwaZulu region."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:192
+# fc95be7c0ae04a6daba85f4ea727c711
+msgid "Or, if we create a view from it:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:202
+# bb8c39026c84405481453a21b0cc76cb
+msgid "And view it in QGIS:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:208
+# 099e65789d2148acaa391a23841e998b
+msgid "Select neighbors"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:210
+# a89665e7ac6944a2ac39721e88b23d12
+msgid "Show a list of all the names of regions adjoining the Hokkaido region."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:230
+# 2b9cd0185c5d405f9950c590ae818eee
+msgid "As a view:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:240
+#: ../../../postgis/spatial_queries.rst:285
+# 5056c0213b89483f98b3238b0069c908
+# 832de32c1f77415c876fc93db2d6aa70
+msgid "In QGIS:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:245
+# 6e9e4868db01408798369f0fb0958187
+msgid "Note the missing region (Queensland). This may be due to a topology error. Artifacts such as this can alert us to potential problems in the data. To solve this enigma without getting caught up in the anomalies the data may have, we could use a buffer intersect instead:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:257
+# 4e84614d97bc4cc7aa32c361c558a4d4
+msgid "This creates a buffer of 100 meters around the region Hokkaido."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:259
+# 3cb84642f4ff4476a0e3de2a0b30a1db
+msgid "The darker area is the buffer:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:264
+# bf130317cb584b6a8448513f5559de1d
+msgid "Select using the buffer:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:279
+# 0ba299f98a784dd3b3a9ff84daa9b1c7
+msgid "In this query, the original buffer view is used as any other table would be. It is given the alias :kbd:`a`, and its geometry field, :kbd:`a.the_geom`, is used to select any polygon in the :kbd:`region` table (alias :kbd:`b`) that intersects it. However, Hokkaido itself is excluded from this select statement, because we don't want it; we only want the regions adjoining it."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:290
+# a1ca4b59bef14781ae8c7696249b10f1
+msgid "It is also possible to select all objects within a given distance, without the extra step of creating a buffer:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:302
+# 6a7af3140dac4c5cb541541dc0f4d4d4
+msgid "This achieves the same result, without need for the interim buffer step:"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:309
+# 0758870c058f45e4b111f37e8bd302b0
+msgid "Select uniques"
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:311
+# 2c6ac5b997944a16aaf862f89fd69973
+msgid "Show a list of unique town names for all buildings in the Queensland region."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:333
+# 8777fbcd8a85477f956b3cecf8a5ed26
+msgid "Further examples ..."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:394
+# 808dc512234741238ab847b26e800f36
+msgid "You have seen how to query spatial objects using the new database functions from PostGIS."
+msgstr ""
+
+#: ../../../postgis/spatial_queries.rst:400
+# e11303c796ef4b4f96196c269cd52d0c
+msgid "Next we're going to investigate the structures of more complex geometries and how to create them using PostGIS."
+msgstr ""
+

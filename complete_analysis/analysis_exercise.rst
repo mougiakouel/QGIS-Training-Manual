@@ -276,36 +276,22 @@ Clean up the map
   :guilabel:`Layers list`. This will make the map render faster and will save
   you some time.
 
-In order to create the hillshade, you will need a plugin that was written for
-this purpose.
+In order to create the hillshade, you will need to use a plugin that was
+written for this purpose.
 
-Adding a plugin
+Activating the :guilabel:`Raster Terrain Analysis` plugin
 -------------------------------------------------------------------------------
 
-* Click on the menu item :menuselection:`Plugins -> Fetch Python Plugins...`.
-* In the dialog that appears, select the :guilabel:`Repositories` tab.
-* Click :guilabel:`Add 3rd party repositories`.
-* Click the :guilabel:`Plugins` tab.
-* In the :guilabel:`Filter` field, enter the word :kbd:`shade`. This will limit
-  the plugins shown in the list below to those containing the filter term.
-* In this list, click the entry :guilabel:`DEM relief shader`.
-* Click :guilabel:`Install plugin`. If the button is called
-  :guilabel:`Reinstall plugin`, then you already have the plugin, although you
-  may choose to reinstall it anyway to ensure that everything works properly.
-* Click :guilabel:`Close`.
+This plugin is included by default in QGIS 1.8. However, it may not be
+immediately visible. To check if it is accessible on your system:
 
-Now that the plugin is installed, you will need to activate it so that it can
-be used in QGIS.
-
-Activating a plugin
--------------------------------------------------------------------------------
-
-* Ensure that the menu item :menuselection:`View --> Toolbars --> Plugins` is
-  selected.
 * Click on the menu item :guilabel:`Plugins --> Manage Plugins...`.
-* Ensure that the box next to :guilabel:`DEM relief shader` is selected.
-* Click :guilabel:`OK`. Note the new :guilabel:`Shaded Relief` toolbar button
-  that has appeared in your QGIS interface.
+* Ensure that the box next to :guilabel:`Raster Terrain Analysis plugin` is
+  selected.
+* Click :guilabel:`OK`.
+
+You will now have access to this plugin via the :menuselection:`Raster -->
+Terrain analysis` menu item.
 
 Remember that plugins may sometimes depend on certain Python modules being
 installed on your system.  Should a plugin refuse to work while complaining of
@@ -316,16 +302,17 @@ Create the hillshade
 
 * In the :guilabel:`Layers list`, ensure that the :guilabel:`DEM` is the active
   layer (i.e., it is highlighted by having been clicked on).
-* Click on the :guilabel:`Shaded Relief` toolbar button to open the
-  :guilabel:`Shaded Relief` dialog.
-* Leave the settings unchanged and click :guilabel:`OK`.
-* Save the image in an appropriate location and call it :guilabel:`hillshade`.
-  Wait for it to finish processing.
+* Click on the :menuselection:`Raster --> Terrain analysis --> Hillshade` menu
+  item to open the :guilabel:`Hillshade` dialog.
+* Specify an appropriate location for the output layer and call it
+  :guilabel:`hillshade`.
+* Check the :guilabel:`Add result to project` box.
+* Click :guilabel:`OK`.
+* Wait for it to finish processing.
 
 The new :guilabel:`hillshade` layer has appeared in your :guilabel:`Layers
 list`.
 
-* Click :guilabel:`Close` on the :guilabel:`Shaded Relief` dialog.
 * Right-click on the :guilabel:`hillshade` layer in your :guilabel:`Layers
   list` and bring up the :guilabel:`Properties` dialog.
 * Click on the :guilabel:`Transparency` tab and set the transparency slider to
@@ -337,8 +324,7 @@ list`.
 Slope
 -------------------------------------------------------------------------------
 
-* Click on the menu item :menuselection:`Raster --> Raster based terrain
-  analysis --> Raster based terrain analysis`.
+* Click on the menu item :menuselection:`Raster --> Terrain analysis`.
 * Select the :guilabel:`Slope` analysis type, with the clipped DEM as the input
   layer.
 * Specify an appropriate file name and location for output purposes.
